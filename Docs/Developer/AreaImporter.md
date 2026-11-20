@@ -35,8 +35,31 @@ Exit codes: `0` success, `1` data error (nothing written), `2` usage error.
 The original `.are` files are **not committed** to this repository. Point
 `--source` at a local ROM 2.4b6 checkout when refreshing the initial snapshot.
 
-## Mapping rules
+## Legacy tokenizer
 
+`VibeROM.AreaImporter.Legacy.LegacyAreaReader` mirrors ROM's `fread_*`
+functions and tracks 1-based line/column positions:
+
+| Method | ROM equivalent | Behaviour |
+| --- | --- | --- |
+| `ReadLetter()` | `fread_letter` | Skips whitespace and returns one character |
+| `ReadWord()` | `fread_word` | Quoted (`'…'`, `"…"`) or whitespace-delimited word; max 4096 chars |
+| `ReadNumber()` | `fread_number` | Optional sign, decimal digits, `|` additive form (`1\|64\|1048576`); leaves non-space delimiters unread |
+| `ReadFlag()` | `fread_flag` | Letter bits (`A`..`Z`, `a`..`z`), numbers, signs and `|` sums; returns `long` |
+| `ReadString()` | `fread_string` | Skips leading whitespace, reads to `~`, normalizes CR/LF to `\n`; `~` alone is empty |
+| `ReadToEndOfLine()` | `fread_to_eol` | Consumes the comment and any immediately following newlines, leaving the next non-newline character |
+
+- Errors throw `LegacyFormatException` with `FileName`, `Line`, `Column`,
+  `Offset` and a message formatted as `file:line:column: detail`.
+- Unterminated strings/quotes, missing numbers, invalid digits, number overflow
+  and over-long words are hard errors.
+- `ReadFlag` does not map letters to canonical names; that mapping belongs to
+  T009 using `RomFlags`/`RomTables`.
+- A valid fixture lives at
+  `VibeROM.AreaImporter.Tests/Fixtures/tokenizer.are`; edge cases are covered by
+  `LegacyAreaReaderTests`.
+
+## Mapping rules
 - **Bit letters → canonical names.** `A`/`B`/`C` act bits become
   `"Aggressive"`, `"StayArea"`, … via the shared name registry (T005). The
   importer must never emit raw letters or bitmasks.

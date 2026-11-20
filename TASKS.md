@@ -47,19 +47,13 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T008 — Legacy area tokenizer (importer only)
-- Depends on: T004
-- In `VibeROM.AreaImporter`, implement `fread_letter/word/number/string/to_eol`
-  semantics: `~`-terminated strings, `|`-summed numbers, comments, negative
-  numbers, EOF handling, and precise file/line/offset error reporting.
-- **Done when:** malformed and edge-case fixtures produce exact error messages,
-  and valid fixtures round-trip; the server project contains no such parser.
-
 ### [ ] T009 — Legacy section parsers (importer only)
 - Depends on: T006, T008
 - Parse `#AREA`, `#AREADATA`, `#HELPS`, `#MOBILES`, `#MOBOLD`, `#OBJECTS`,
   `#OBJOLD`, `#ROOMS`, `#RESETS` (`M/O/P/G/E/D/R`), `#SHOPS`, `#SPECIALS`,
   `#SOCIALS`, including OLC `VNUMs`/`End` blocks.
+- Use `LegacyAreaReader` for all tokens and propagate `LegacyFormatException`
+  with source locations.
 - Map everything into the shared domain model and report unknown names,
   duplicate vnums and dangling references with source locations.
 - Resolve legacy letters and words through importer-only maps into the canonical
@@ -584,3 +578,7 @@ Last reviewed: 2026-11-20
   `World` prototype/runtime indexes, top counters, help lookup, create/move/
   equip/destroy lifecycle helpers, ownership back-reference validation and a
   5,000-operation fuzz test.
+- **T008 — Legacy area tokenizer (importer only)** (2026-11-20)
+  `LegacyAreaReader` with ROM `fread_*` semantics, `~` strings, `|` numbers and
+  flags, comments, CR/LF normalization and precise file/line/column errors;
+  malformed-input and fixture tests.
