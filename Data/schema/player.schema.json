@@ -1,0 +1,721 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viberom.local/schema/player.schema.json",
+  "title": "VibeROM player save",
+  "description": "One file per player in Data/players. Passwords are stored only as PBKDF2 hashes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "formatVersion",
+    "name",
+    "passwordHash",
+    "race",
+    "class",
+    "sex",
+    "level",
+    "roomVnum",
+    "vitals",
+    "attributes",
+    "money",
+    "position",
+    "conditions"
+  ],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 20,
+      "pattern": "^[A-Za-z][A-Za-z0-9]*$"
+    },
+    "passwordHash": {
+      "type": "string",
+      "minLength": 1
+    },
+    "race": {
+      "$ref": "#/$defs/race"
+    },
+    "class": {
+      "$ref": "#/$defs/class"
+    },
+    "sex": {
+      "$ref": "#/$defs/sex"
+    },
+    "trueSex": {
+      "$ref": "#/$defs/sex"
+    },
+    "clan": {
+      "type": "string"
+    },
+    "level": {
+      "$ref": "#/$defs/level"
+    },
+    "trust": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "security": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9
+    },
+    "roomVnum": {
+      "$ref": "#/$defs/vnum"
+    },
+    "vitals": {
+      "$ref": "#/$defs/vitals"
+    },
+    "attributes": {
+      "$ref": "#/$defs/attributes"
+    },
+    "money": {
+      "$ref": "#/$defs/money"
+    },
+    "experience": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "practice": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "train": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "savingThrow": {
+      "type": "integer"
+    },
+    "alignment": {
+      "type": "integer",
+      "minimum": -1000,
+      "maximum": 1000
+    },
+    "hitRoll": {
+      "type": "integer"
+    },
+    "damageRoll": {
+      "type": "integer"
+    },
+    "armor": {
+      "$ref": "#/$defs/armor"
+    },
+    "wimpy": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "position": {
+      "$ref": "#/$defs/position"
+    },
+    "conditions": {
+      "$ref": "#/$defs/conditions"
+    },
+    "invisLevel": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "incogLevel": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "lastLevel": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "points": {
+      "type": "integer"
+    },
+    "played": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "lines": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "bamfin": {
+      "type": "string"
+    },
+    "bamfout": {
+      "type": "string"
+    },
+    "playerFlags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/playerFlag"
+      }
+    },
+    "communicationFlags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/communicationFlag"
+      }
+    },
+    "wiznetFlags": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/wiznetFlag"
+      }
+    },
+    "affectedBy": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/affectFlag"
+      }
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/alias"
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/skill"
+      }
+    },
+    "groups": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "affects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/playerAffect"
+      }
+    },
+    "inventory": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/itemInstance"
+      }
+    },
+    "equipment": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/equippedItem"
+      }
+    },
+    "pet": {
+      "$ref": "#/$defs/pet"
+    },
+    "lastLogoff": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lastSaved": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "$defs": {
+    "vnum": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "race": {
+      "enum": ["Human", "Elf", "Dwarf", "Giant"]
+    },
+    "class": {
+      "enum": ["Mage", "Cleric", "Thief", "Warrior"]
+    },
+    "sex": {
+      "enum": ["Neutral", "Male", "Female"]
+    },
+    "position": {
+      "enum": [
+        "Dead",
+        "Mortal",
+        "Incap",
+        "Stunned",
+        "Sleeping",
+        "Resting",
+        "Sitting",
+        "Fighting",
+        "Standing"
+      ]
+    },
+    "affectFlag": {
+      "enum": [
+        "Blind",
+        "Invisible",
+        "DetectEvil",
+        "DetectInvis",
+        "DetectMagic",
+        "DetectHidden",
+        "DetectGood",
+        "Sanctuary",
+        "FaerieFire",
+        "Infrared",
+        "Curse",
+        "Poison",
+        "ProtectEvil",
+        "ProtectGood",
+        "Sneak",
+        "Hide",
+        "Sleep",
+        "Charm",
+        "Flying",
+        "PassDoor",
+        "Haste",
+        "Calm",
+        "Plague",
+        "Weaken",
+        "DarkVision",
+        "Berserk",
+        "Swim",
+        "Regeneration",
+        "Slow"
+      ]
+    },
+    "applyLocation": {
+      "enum": [
+        "None",
+        "Strength",
+        "Dexterity",
+        "Intelligence",
+        "Wisdom",
+        "Constitution",
+        "Sex",
+        "Class",
+        "Level",
+        "Age",
+        "Height",
+        "Weight",
+        "Mana",
+        "Hit",
+        "Move",
+        "Gold",
+        "Experience",
+        "ArmorClass",
+        "HitRoll",
+        "DamageRoll",
+        "Saves",
+        "SavingRod",
+        "SavingPetrification",
+        "SavingBreath",
+        "SavingSpell",
+        "SpellAffect"
+      ]
+    },
+    "affectWhere": {
+      "enum": ["Object", "Affect", "Immune", "Resist", "Vulnerable"]
+    },
+    "playerFlag": {
+      "enum": [
+        "AutoAssist",
+        "AutoExit",
+        "AutoLoot",
+        "AutoSac",
+        "AutoGold",
+        "AutoSplit",
+        "HolyLight",
+        "CanLoot",
+        "NoSummon",
+        "NoFollow",
+        "Permit",
+        "Log",
+        "Deny",
+        "Freeze",
+        "Thief",
+        "Killer"
+      ]
+    },
+    "communicationFlag": {
+      "enum": [
+        "Quiet",
+        "Deaf",
+        "NoWiz",
+        "NoAuction",
+        "NoGossip",
+        "NoQuestion",
+        "NoMusic",
+        "NoClan",
+        "NoQuote",
+        "ShoutsOff",
+        "Compact",
+        "Brief",
+        "Prompt",
+        "Combine",
+        "TelnetGa",
+        "ShowAffects",
+        "NoGrats",
+        "NoEmote",
+        "NoShout",
+        "NoTell",
+        "NoChannels",
+        "SnoopProof",
+        "Afk"
+      ]
+    },
+    "wiznetFlag": {
+      "enum": [
+        "On",
+        "Ticks",
+        "Logins",
+        "Sites",
+        "Links",
+        "Deaths",
+        "Resets",
+        "MobDeaths",
+        "Flags",
+        "Penalties",
+        "Saccing",
+        "Levels",
+        "Secure",
+        "Switches",
+        "Snoops",
+        "Restore",
+        "Load",
+        "Newbie",
+        "Prefix",
+        "Spam"
+      ]
+    },
+    "vitals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hit", "mana", "move", "maxHit", "maxMana", "maxMove"],
+      "properties": {
+        "hit": {
+          "type": "integer"
+        },
+        "mana": {
+          "type": "integer"
+        },
+        "move": {
+          "type": "integer"
+        },
+        "maxHit": {
+          "type": "integer"
+        },
+        "maxMana": {
+          "type": "integer"
+        },
+        "maxMove": {
+          "type": "integer"
+        }
+      }
+    },
+    "attributes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "strength",
+        "dexterity",
+        "intelligence",
+        "wisdom",
+        "constitution"
+      ],
+      "properties": {
+        "strength": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "dexterity": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "intelligence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "wisdom": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "constitution": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gold", "silver"],
+      "properties": {
+        "gold": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "silver": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "conditions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["drunk", "full", "thirst", "hunger"],
+      "properties": {
+        "drunk": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        },
+        "full": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        },
+        "thirst": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        },
+        "hunger": {
+          "type": "integer",
+          "minimum": -100,
+          "maximum": 100
+        }
+      }
+    },
+    "armor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pierce", "bash", "slash", "exotic"],
+      "properties": {
+        "pierce": {
+          "type": "integer"
+        },
+        "bash": {
+          "type": "integer"
+        },
+        "slash": {
+          "type": "integer"
+        },
+        "exotic": {
+          "type": "integer"
+        }
+      }
+    },
+    "alias": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "replacement"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "replacement": {
+          "type": "string"
+        }
+      }
+    },
+    "skill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "proficiency"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "proficiency": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "playerAffect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "level", "duration", "location", "modifier"],
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/affectFlag"
+        },
+        "where": {
+          "$ref": "#/$defs/affectWhere"
+        },
+        "level": {
+          "$ref": "#/$defs/level"
+        },
+        "duration": {
+          "type": "integer"
+        },
+        "location": {
+          "$ref": "#/$defs/applyLocation"
+        },
+        "modifier": {
+          "type": "integer"
+        }
+      }
+    },
+    "extraDescription": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["keywords", "description"],
+      "properties": {
+        "keywords": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "itemAffect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "level", "duration", "location", "modifier"],
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/affectFlag"
+        },
+        "where": {
+          "$ref": "#/$defs/affectWhere"
+        },
+        "level": {
+          "$ref": "#/$defs/level"
+        },
+        "duration": {
+          "type": "integer"
+        },
+        "location": {
+          "$ref": "#/$defs/applyLocation"
+        },
+        "modifier": {
+          "type": "integer"
+        }
+      }
+    },
+    "itemInstance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vnum"],
+      "properties": {
+        "vnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "condition": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "timer": {
+          "type": "integer"
+        },
+        "contents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/itemInstance"
+          }
+        },
+        "affects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/itemAffect"
+          }
+        },
+        "extraDescriptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/extraDescription"
+          }
+        }
+      }
+    },
+    "equippedItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["wearLocation", "item"],
+      "properties": {
+        "wearLocation": {
+          "enum": [
+            "Light",
+            "FingerLeft",
+            "FingerRight",
+            "Neck1",
+            "Neck2",
+            "Body",
+            "Head",
+            "Legs",
+            "Feet",
+            "Hands",
+            "Arms",
+            "Shield",
+            "About",
+            "Waist",
+            "WristLeft",
+            "WristRight",
+            "Wield",
+            "Hold",
+            "Float"
+          ]
+        },
+        "item": {
+          "$ref": "#/$defs/itemInstance"
+        }
+      }
+    },
+    "pet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vnum", "name", "level"],
+      "properties": {
+        "vnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shortDescription": {
+          "type": "string"
+        },
+        "longDescription": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "level": {
+          "$ref": "#/$defs/level"
+        },
+        "sex": {
+          "$ref": "#/$defs/sex"
+        },
+        "race": {
+          "$ref": "#/$defs/race"
+        }
+      }
+    }
+  }
+}

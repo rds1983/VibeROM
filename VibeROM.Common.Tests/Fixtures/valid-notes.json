@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "board": "Notes",
+  "notes": [
+    {
+      "id": 1,
+      "sender": "Thanos",
+      "date": "2026-11-20T10:00:00Z",
+      "recipients": ["all"],
+      "subject": "Welcome to VibeROM",
+      "text": "The example board entry.",
+      "expiresAt": "2026-12-04T10:00:00Z"
+    }
+  ]
+}

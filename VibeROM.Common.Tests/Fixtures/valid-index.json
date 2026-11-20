@@ -1,0 +1,9 @@
+{
+  "formatVersion": 1,
+  "source": {
+    "project": "ROM",
+    "version": "2.4b6",
+    "releaseDate": "1998-05-29"
+  },
+  "areas": ["example.json"]
+}

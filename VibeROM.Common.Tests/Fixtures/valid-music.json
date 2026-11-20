@@ -1,0 +1,15 @@
+{
+  "formatVersion": 1,
+  "songs": [
+    {
+      "group": "U2",
+      "name": "Bullet the Blue Sky",
+      "lyrics": "In the howling wind comes a stinging rain"
+    },
+    {
+      "group": "Frank Zappa",
+      "name": "Camarillo Brillo",
+      "lyrics": "She had that Camarillo brillo"
+    }
+  ]
+}

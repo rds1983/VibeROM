@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viberom.local/schema/notes.schema.json",
+  "title": "VibeROM note board",
+  "description": "One file per board: notes, ideas, penalties, news or changes.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "board", "notes"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "board": {
+      "enum": ["Notes", "Ideas", "Penalties", "News", "Changes"]
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/note"
+      }
+    }
+  },
+  "$defs": {
+    "note": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "sender", "date", "recipients", "subject", "text"],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sender": {
+          "type": "string",
+          "minLength": 1
+        },
+        "date": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "recipients": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "subject": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "expiresAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

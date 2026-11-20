@@ -1,0 +1,448 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "example.are",
+  "name": "Example Area",
+  "credits": "VibeROM schema example",
+  "vnumRange": {
+    "low": 1000,
+    "high": 1099
+  },
+  "security": 9,
+  "builders": "VibeROM",
+  "helps": [
+    {
+      "keywords": "example",
+      "level": 0,
+      "text": "This area exists to exercise the schema."
+    }
+  ],
+  "mobiles": [
+    {
+      "vnum": 1000,
+      "keywords": "guard example",
+      "shortDescription": "the example guard",
+      "longDescription": "An example guard stands here.",
+      "description": "The guard looks bored but alert.",
+      "race": "Human",
+      "actFlags": ["Sentinel", "Train", "Practice"],
+      "affectedBy": ["Infrared"],
+      "alignment": 500,
+      "group": 0,
+      "level": 20,
+      "hitRoll": 5,
+      "hitDice": {
+        "count": 10,
+        "size": 8,
+        "bonus": 100
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 8,
+        "bonus": 50
+      },
+      "damage": {
+        "count": 2,
+        "size": 6,
+        "bonus": 2,
+        "attackType": "Slash"
+      },
+      "armor": {
+        "pierce": 2,
+        "bash": 2,
+        "slash": 2,
+        "exotic": 2
+      },
+      "offensiveFlags": ["Bash", "Kick"],
+      "immunities": ["Poison"],
+      "resistances": ["Fire"],
+      "vulnerabilities": ["Cold"],
+      "form": ["Biped", "Sentient"],
+      "parts": ["Head", "Arms", "Legs"],
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 10,
+      "size": "Medium",
+      "material": "human"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 1001,
+      "keywords": "sword example",
+      "shortDescription": "an example sword",
+      "longDescription": "An example sword lies here.",
+      "material": "iron",
+      "itemType": "Weapon",
+      "extraFlags": ["Glow"],
+      "wearFlags": ["Take", "Wield"],
+      "level": 10,
+      "weightPounds": 5,
+      "costCopper": 100,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 2,
+        "diceSize": 6,
+        "attackType": "Slash",
+        "specialFlags": ["Flaming"]
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 1002,
+      "keywords": "plate armor",
+      "shortDescription": "a suit of plate",
+      "longDescription": "A suit of plate mail is here.",
+      "material": "steel",
+      "itemType": "Armor",
+      "wearFlags": ["Take", "Body"],
+      "level": 10,
+      "weightPounds": 25,
+      "costCopper": 500,
+      "condition": 90,
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 5
+      }
+    },
+    {
+      "vnum": 1003,
+      "keywords": "backpack",
+      "shortDescription": "a leather backpack",
+      "longDescription": "A leather backpack has been left here.",
+      "material": "leather",
+      "itemType": "Container",
+      "wearFlags": ["Take", "About"],
+      "level": 1,
+      "weightPounds": 2,
+      "costCopper": 15,
+      "condition": 100,
+      "container": {
+        "capacity": 50,
+        "flags": ["Closeable", "Closed"],
+        "keyVnum": 0
+      }
+    },
+    {
+      "vnum": 1004,
+      "keywords": "torch",
+      "shortDescription": "a burning torch",
+      "longDescription": "A torch burns brightly here.",
+      "material": "wood",
+      "itemType": "Light",
+      "wearFlags": ["Take", "Hold"],
+      "level": 1,
+      "weightPounds": 1,
+      "costCopper": 5,
+      "condition": 100,
+      "light": {
+        "duration": -1
+      }
+    },
+    {
+      "vnum": 1005,
+      "keywords": "scroll healing",
+      "shortDescription": "a healing scroll",
+      "longDescription": "A scroll lies here.",
+      "material": "paper",
+      "itemType": "Scroll",
+      "wearFlags": ["Take"],
+      "level": 10,
+      "weightPounds": 0.1,
+      "costCopper": 200,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": ["Cure Light", "Cure Serious"]
+      }
+    },
+    {
+      "vnum": 1006,
+      "keywords": "potion healing",
+      "shortDescription": "a healing potion",
+      "longDescription": "A potion lies here.",
+      "material": "glass",
+      "itemType": "Potion",
+      "wearFlags": ["Take"],
+      "level": 10,
+      "weightPounds": 0.5,
+      "costCopper": 150,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": ["Cure Light"]
+      }
+    },
+    {
+      "vnum": 1007,
+      "keywords": "wand magic",
+      "shortDescription": "a wand of magic missile",
+      "longDescription": "A wand lies here.",
+      "material": "wood",
+      "itemType": "Wand",
+      "wearFlags": ["Take", "Hold"],
+      "level": 10,
+      "weightPounds": 0.5,
+      "costCopper": 300,
+      "condition": 100,
+      "charges": {
+        "level": 10,
+        "total": 5,
+        "remaining": 5,
+        "spell": "Magic Missile"
+      }
+    },
+    {
+      "vnum": 1008,
+      "keywords": "drink flask",
+      "shortDescription": "a water flask",
+      "longDescription": "A flask lies here.",
+      "material": "leather",
+      "itemType": "DrinkContainer",
+      "wearFlags": ["Take", "Hold"],
+      "level": 1,
+      "weightPounds": 1,
+      "costCopper": 10,
+      "condition": 100,
+      "drink": {
+        "capacity": 5,
+        "remaining": 5,
+        "liquid": "Water",
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 1009,
+      "keywords": "fountain",
+      "shortDescription": "a stone fountain",
+      "longDescription": "A stone fountain bubbles here.",
+      "material": "stone",
+      "itemType": "Fountain",
+      "level": 1,
+      "weightPounds": 1000,
+      "costCopper": 0,
+      "condition": 100,
+      "fountain": {
+        "capacity": 100,
+        "remaining": 100,
+        "liquid": "Water",
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 1010,
+      "keywords": "bread food",
+      "shortDescription": "a loaf of bread",
+      "longDescription": "A loaf of bread lies here.",
+      "material": "food",
+      "itemType": "Food",
+      "wearFlags": ["Take"],
+      "level": 1,
+      "weightPounds": 0.5,
+      "costCopper": 2,
+      "condition": 100,
+      "food": {
+        "hours": 10,
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 1011,
+      "keywords": "coins money",
+      "shortDescription": "a pile of coins",
+      "longDescription": "A pile of coins lies here.",
+      "material": "gold",
+      "itemType": "Money",
+      "wearFlags": ["Take"],
+      "level": 1,
+      "weightPounds": 0.5,
+      "costCopper": 100,
+      "condition": 100,
+      "money": {
+        "gold": 10
+      }
+    },
+    {
+      "vnum": 1012,
+      "keywords": "bench furniture",
+      "shortDescription": "a wooden bench",
+      "longDescription": "A wooden bench is here.",
+      "material": "wood",
+      "itemType": "Furniture",
+      "level": 1,
+      "weightPounds": 50,
+      "costCopper": 20,
+      "condition": 100,
+      "furniture": {
+        "maxPeople": 4,
+        "flags": ["StandAt", "StandOn"]
+      }
+    },
+    {
+      "vnum": 1013,
+      "keywords": "portal gate",
+      "shortDescription": "a shimmering portal",
+      "longDescription": "A shimmering portal hovers here.",
+      "material": "energy",
+      "itemType": "Portal",
+      "level": 1,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "portal": {
+        "exitFlags": ["IsDoor"],
+        "gateFlags": ["NormalExit"],
+        "toRoomVnum": 1001
+      }
+    },
+    {
+      "vnum": 1014,
+      "keywords": "map",
+      "shortDescription": "a worn map",
+      "longDescription": "A worn map lies here.",
+      "material": "paper",
+      "itemType": "Map",
+      "wearFlags": ["Take"],
+      "level": 1,
+      "weightPounds": 0.1,
+      "costCopper": 5,
+      "condition": 100,
+      "map": {
+        "roomVnum": 1001
+      }
+    },
+    {
+      "vnum": 1015,
+      "keywords": "gem",
+      "shortDescription": "a sparkling gem",
+      "longDescription": "A sparkling gem lies here.",
+      "material": "gem",
+      "itemType": "Gem",
+      "wearFlags": ["Take"],
+      "level": 1,
+      "weightPounds": 0.1,
+      "costCopper": 500,
+      "condition": 100
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 1000,
+      "name": "The Example Temple",
+      "description": "A clean, well-lit example room.",
+      "roomFlags": ["Indoors", "Safe"],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1001,
+          "flags": ["IsDoor", "Closed", "Locked"],
+          "keyVnum": 1016,
+          "description": "A heavy oak door."
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "altar",
+          "description": "A simple stone altar stands at the back."
+        }
+      ]
+    },
+    {
+      "vnum": 1001,
+      "name": "The Example Hall",
+      "description": "A long hall with a polished floor.",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1000,
+          "flags": ["IsDoor", "Closed", "Locked"],
+          "keyVnum": 1016,
+          "description": "A heavy oak door."
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Mobile",
+      "mobileVnum": 1000,
+      "roomVnum": 1000,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 1003,
+      "roomVnum": 1000
+    },
+    {
+      "type": "Put",
+      "objectVnum": 1005,
+      "containerVnum": 1003
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1007,
+      "mobileVnum": 1000
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1001,
+      "mobileVnum": 1000,
+      "wearLocation": "Wield"
+    },
+    {
+      "type": "Door",
+      "ifFlag": false,
+      "roomVnum": 1000,
+      "direction": "North",
+      "state": "Locked"
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 1001,
+      "door": 2
+    }
+  ],
+  "shops": [
+    {
+      "keeperVnum": 1000,
+      "buyTypes": ["Weapon", "Armor", "Light"],
+      "profitBuy": 120,
+      "profitSell": 120,
+      "openHour": 0,
+      "closeHour": 23
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 1000,
+      "procedure": "Guard"
+    }
+  ],
+  "socials": [
+    {
+      "name": "smile",
+      "charNoArgument": "You smile happily.",
+      "othersNoArgument": "$n smiles happily.",
+      "charFound": "You smile at $N.",
+      "othersFound": "$n smiles at $N.",
+      "victimFound": "$n smiles at you.",
+      "charAuto": "You smile at yourself.",
+      "othersAuto": "$n smiles at $mself."
+    }
+  ]
+}

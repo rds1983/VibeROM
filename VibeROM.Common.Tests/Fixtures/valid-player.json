@@ -1,0 +1,128 @@
+{
+  "formatVersion": 1,
+  "name": "Alander",
+  "passwordHash": "pbkdf2-sha256$100000$c2FsdA==$aGFzaA==",
+  "race": "Human",
+  "class": "Warrior",
+  "sex": "Male",
+  "trueSex": "Male",
+  "clan": "none",
+  "level": 10,
+  "trust": 0,
+  "security": 0,
+  "roomVnum": 1000,
+  "vitals": {
+    "hit": 120,
+    "mana": 100,
+    "move": 110,
+    "maxHit": 120,
+    "maxMana": 100,
+    "maxMove": 110
+  },
+  "attributes": {
+    "strength": 18,
+    "dexterity": 16,
+    "intelligence": 13,
+    "wisdom": 13,
+    "constitution": 15
+  },
+  "money": {
+    "gold": 10,
+    "silver": 25
+  },
+  "experience": 45000,
+  "practice": 3,
+  "train": 1,
+  "savingThrow": 0,
+  "alignment": 350,
+  "hitRoll": 4,
+  "damageRoll": 6,
+  "armor": {
+    "pierce": 20,
+    "bash": 20,
+    "slash": 20,
+    "exotic": 20
+  },
+  "wimpy": 20,
+  "position": "Standing",
+  "conditions": {
+    "drunk": 0,
+    "full": 20,
+    "thirst": 20,
+    "hunger": 20
+  },
+  "invisLevel": 0,
+  "incogLevel": 0,
+  "lastLevel": 9,
+  "points": 0,
+  "played": 3600,
+  "lines": 24,
+  "prompt": "<%h/%H %m/%M %v/%V> ",
+  "title": "Alander the Example",
+  "bamfin": "Alander appears in a flash of light.",
+  "bamfout": "Alander vanishes in a flash of light.",
+  "playerFlags": ["AutoAssist", "AutoExit", "AutoLoot"],
+  "communicationFlags": ["Brief", "Combine"],
+  "wiznetFlags": [],
+  "affectedBy": ["Infrared"],
+  "aliases": [
+    {
+      "name": "n",
+      "replacement": "north"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Sword",
+      "proficiency": 85
+    },
+    {
+      "name": "Parry",
+      "proficiency": 60
+    }
+  ],
+  "groups": ["warrior basics", "warrior default"],
+  "affects": [
+    {
+      "type": "Sanctuary",
+      "where": "Affect",
+      "level": 10,
+      "duration": 5,
+      "location": "None",
+      "modifier": 0
+    }
+  ],
+  "inventory": [
+    {
+      "vnum": 1003,
+      "condition": 100,
+      "contents": [
+        {
+          "vnum": 1005,
+          "condition": 100
+        }
+      ]
+    }
+  ],
+  "equipment": [
+    {
+      "wearLocation": "Wield",
+      "item": {
+        "vnum": 1001,
+        "condition": 100
+      }
+    }
+  ],
+  "pet": {
+    "vnum": 1000,
+    "name": "guard",
+    "shortDescription": "the example guard",
+    "longDescription": "An example guard stands here.",
+    "description": "The guard looks bored but alert.",
+    "level": 10,
+    "sex": "Male",
+    "race": "Human"
+  },
+  "lastLogoff": "2026-11-20T12:00:00Z",
+  "lastSaved": "2026-11-20T11:59:00Z"
+}

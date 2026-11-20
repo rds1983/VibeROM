@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viberom.local/schema/music.schema.json",
+  "title": "VibeROM song catalogue",
+  "description": "Replaces the original music.txt. Played by jukebox objects.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "songs"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "songs": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/song"
+      }
+    }
+  },
+  "$defs": {
+    "song": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["group", "name", "lyrics"],
+      "properties": {
+        "group": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "lyrics": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

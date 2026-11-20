@@ -1,0 +1,1875 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viberom.local/schema/area.schema.json",
+  "title": "VibeROM area",
+  "description": "One area file: metadata plus helps, mobiles, objects, rooms, resets, shops, specials and socials.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "name", "vnumRange"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "legacyFile": {
+      "type": "string",
+      "pattern": "^[^/\\\\]+\\.are$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "credits": {
+      "type": "string"
+    },
+    "vnumRange": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["low", "high"],
+      "properties": {
+        "low": {
+          "$ref": "#/$defs/vnum"
+        },
+        "high": {
+          "$ref": "#/$defs/vnum"
+        }
+      }
+    },
+    "security": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9
+    },
+    "builders": {
+      "type": "string"
+    },
+    "helps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/help"
+      }
+    },
+    "mobiles": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mobile"
+      }
+    },
+    "objects": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/object"
+      }
+    },
+    "rooms": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/room"
+      }
+    },
+    "resets": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reset"
+      }
+    },
+    "shops": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/shop"
+      }
+    },
+    "specials": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/special"
+      }
+    },
+    "socials": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/social"
+      }
+    }
+  },
+  "$defs": {
+    "vnum": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2147483647
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "actFlag": {
+      "enum": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea",
+        "Wimpy",
+        "Train",
+        "Practice",
+        "Undead",
+        "Cleric",
+        "Mage",
+        "Thief",
+        "Warrior",
+        "NoAlign",
+        "NoPurge",
+        "Outdoors",
+        "Indoors",
+        "IsHealer",
+        "Gain",
+        "UpdateAlways",
+        "IsChanger"
+      ]
+    },
+    "affectFlag": {
+      "enum": [
+        "Blind",
+        "Invisible",
+        "DetectEvil",
+        "DetectInvis",
+        "DetectMagic",
+        "DetectHidden",
+        "DetectGood",
+        "Sanctuary",
+        "FaerieFire",
+        "Infrared",
+        "Curse",
+        "Poison",
+        "ProtectEvil",
+        "ProtectGood",
+        "Sneak",
+        "Hide",
+        "Sleep",
+        "Charm",
+        "Flying",
+        "PassDoor",
+        "Haste",
+        "Calm",
+        "Plague",
+        "Weaken",
+        "DarkVision",
+        "Berserk",
+        "Swim",
+        "Regeneration",
+        "Slow"
+      ]
+    },
+    "offensiveFlag": {
+      "enum": [
+        "AreaAttack",
+        "Backstab",
+        "Bash",
+        "Berserk",
+        "Disarm",
+        "Dodge",
+        "Fade",
+        "Fast",
+        "Kick",
+        "KickDirt",
+        "Parry",
+        "Rescue",
+        "Tail",
+        "Trip",
+        "Crush"
+      ]
+    },
+    "immFlag": {
+      "enum": [
+        "Summon",
+        "Charm",
+        "Magic",
+        "Weapon",
+        "Bash",
+        "Pierce",
+        "Slash",
+        "Fire",
+        "Cold",
+        "Lightning",
+        "Acid",
+        "Poison",
+        "Negative",
+        "Holy",
+        "Energy",
+        "Mental",
+        "Disease",
+        "Drowning",
+        "Light",
+        "Sound",
+        "Wood",
+        "Silver",
+        "Iron"
+      ]
+    },
+    "formFlag": {
+      "enum": [
+        "Edible",
+        "Poison",
+        "Magical",
+        "InstantDecay",
+        "Other",
+        "Animal",
+        "Sentient",
+        "Undead",
+        "Construct",
+        "Mist",
+        "Intangible",
+        "Biped",
+        "Centaur",
+        "Insect",
+        "Spider",
+        "Crustacean",
+        "Worm",
+        "Blob",
+        "Mammal",
+        "Bird",
+        "Reptile",
+        "Snake",
+        "Dragon",
+        "Amphibian",
+        "Fish",
+        "ColdBlood"
+      ]
+    },
+    "partFlag": {
+      "enum": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye",
+        "LongTongue",
+        "Eyestalks",
+        "Tentacles",
+        "Fins",
+        "Wings",
+        "Tail",
+        "Claws",
+        "Fangs",
+        "Horns",
+        "Scales",
+        "Tusks"
+      ]
+    },
+    "race": {
+      "enum": ["Unique", "Human", "Elf", "Dwarf", "Giant"]
+    },
+    "sex": {
+      "enum": ["Neutral", "Male", "Female"]
+    },
+    "size": {
+      "enum": ["Tiny", "Small", "Medium", "Large", "Huge", "Giant"]
+    },
+    "position": {
+      "enum": [
+        "Dead",
+        "Mortal",
+        "Incap",
+        "Stunned",
+        "Sleeping",
+        "Resting",
+        "Sitting",
+        "Fighting",
+        "Standing"
+      ]
+    },
+    "itemType": {
+      "enum": [
+        "Light",
+        "Scroll",
+        "Wand",
+        "Staff",
+        "Weapon",
+        "Treasure",
+        "Armor",
+        "Potion",
+        "Clothing",
+        "Furniture",
+        "Trash",
+        "Container",
+        "DrinkContainer",
+        "Key",
+        "Food",
+        "Money",
+        "Boat",
+        "NpcCorpse",
+        "PcCorpse",
+        "Fountain",
+        "Pill",
+        "Protect",
+        "Map",
+        "Portal",
+        "WarpStone",
+        "RoomKey",
+        "Gem",
+        "Jewelry",
+        "Jukebox"
+      ]
+    },
+    "extraFlag": {
+      "enum": [
+        "Glow",
+        "Hum",
+        "Dark",
+        "Lock",
+        "Evil",
+        "Invis",
+        "Magic",
+        "NoDrop",
+        "Bless",
+        "AntiGood",
+        "AntiEvil",
+        "AntiNeutral",
+        "NoRemove",
+        "Inventory",
+        "NoPurge",
+        "RotDeath",
+        "VisDeath",
+        "NonMetal",
+        "NoLocate",
+        "MeltDrop",
+        "HadTimer",
+        "SellExtract",
+        "BurnProof",
+        "NoUncurse"
+      ]
+    },
+    "wearFlag": {
+      "enum": [
+        "Take",
+        "Finger",
+        "Neck",
+        "Body",
+        "Head",
+        "Legs",
+        "Feet",
+        "Hands",
+        "Arms",
+        "Shield",
+        "About",
+        "Waist",
+        "Wrist",
+        "Wield",
+        "Hold",
+        "NoSac",
+        "Float"
+      ]
+    },
+    "wearLocation": {
+      "enum": [
+        "Light",
+        "FingerLeft",
+        "FingerRight",
+        "Neck1",
+        "Neck2",
+        "Body",
+        "Head",
+        "Legs",
+        "Feet",
+        "Hands",
+        "Arms",
+        "Shield",
+        "About",
+        "Waist",
+        "WristLeft",
+        "WristRight",
+        "Wield",
+        "Hold",
+        "Float"
+      ]
+    },
+    "applyLocation": {
+      "enum": [
+        "None",
+        "Strength",
+        "Dexterity",
+        "Intelligence",
+        "Wisdom",
+        "Constitution",
+        "Sex",
+        "Class",
+        "Level",
+        "Age",
+        "Height",
+        "Weight",
+        "Mana",
+        "Hit",
+        "Move",
+        "Gold",
+        "Experience",
+        "ArmorClass",
+        "HitRoll",
+        "DamageRoll",
+        "Saves",
+        "SavingRod",
+        "SavingPetrification",
+        "SavingBreath",
+        "SavingSpell",
+        "SpellAffect"
+      ]
+    },
+    "affectWhere": {
+      "enum": ["Object", "Affect", "Immune", "Resist", "Vulnerable"]
+    },
+    "affectOrImmFlag": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/affectFlag"
+        },
+        {
+          "$ref": "#/$defs/immFlag"
+        }
+      ]
+    },
+    "roomFlag": {
+      "enum": [
+        "Dark",
+        "NoMob",
+        "Indoors",
+        "Private",
+        "Safe",
+        "Solitary",
+        "PetShop",
+        "NoRecall",
+        "ImpOnly",
+        "GodOnly",
+        "HeroesOnly",
+        "NewbiesOnly",
+        "Law",
+        "NoWhere"
+      ]
+    },
+    "sector": {
+      "enum": [
+        "Inside",
+        "City",
+        "Field",
+        "Forest",
+        "Hills",
+        "Mountain",
+        "WaterSwim",
+        "WaterNoSwim",
+        "Air",
+        "Desert"
+      ]
+    },
+    "exitFlag": {
+      "enum": [
+        "IsDoor",
+        "Closed",
+        "Locked",
+        "PickProof",
+        "NoPass",
+        "Easy",
+        "Hard",
+        "Infuriating",
+        "NoClose",
+        "NoLock"
+      ]
+    },
+    "containerFlag": {
+      "enum": ["Closeable", "PickProof", "Closed", "Locked", "PutOn"]
+    },
+    "furnitureFlag": {
+      "enum": ["StandAt", "StandOn", "StandIn"]
+    },
+    "gateFlag": {
+      "enum": ["NormalExit", "NoCurse", "GoWith", "Buggy", "Random"]
+    },
+    "liquid": {
+      "enum": [
+        "Water",
+        "Beer",
+        "RedWine",
+        "Ale",
+        "DarkAle",
+        "Whisky",
+        "Lemonade",
+        "Firebreather",
+        "LocalSpecialty",
+        "SlimeMoldJuice",
+        "Milk",
+        "Tea",
+        "Coffee",
+        "Blood",
+        "SaltWater",
+        "Coke",
+        "RootBeer",
+        "ElvishWine",
+        "WhiteWine",
+        "Champagne",
+        "Mead",
+        "RoseWine",
+        "BenedictineWine",
+        "Vodka",
+        "CranberryJuice",
+        "OrangeJuice",
+        "Absinthe",
+        "Brandy",
+        "Aquavit",
+        "Schnapps",
+        "Icewine",
+        "Amontillado",
+        "Sherry",
+        "Framboise",
+        "Rum",
+        "Cordial"
+      ]
+    },
+    "weaponClass": {
+      "enum": [
+        "Exotic",
+        "Sword",
+        "Dagger",
+        "Spear",
+        "Mace",
+        "Axe",
+        "Flail",
+        "Whip",
+        "Polearm"
+      ]
+    },
+    "attackType": {
+      "enum": [
+        "Hit",
+        "Slice",
+        "Stab",
+        "Slash",
+        "Whip",
+        "Claw",
+        "Blast",
+        "Pound",
+        "Crush",
+        "Grep",
+        "Bite",
+        "Pierce",
+        "Suction",
+        "Beating",
+        "Digestion",
+        "Charge",
+        "Slap",
+        "Punch",
+        "Wrath",
+        "Magic",
+        "DivinePower",
+        "Cleave",
+        "Scratch",
+        "PeckPierce",
+        "PeckBash",
+        "Chop",
+        "Sting",
+        "Smash",
+        "ShockingBite",
+        "FlamingBite",
+        "FreezingBite",
+        "AcidicBite",
+        "Chomp",
+        "Drain",
+        "Thrust",
+        "Slime",
+        "Shock",
+        "Thwack",
+        "Flame",
+        "Chill"
+      ]
+    },
+    "weaponSpecialFlag": {
+      "enum": [
+        "Flaming",
+        "Frost",
+        "Vampiric",
+        "Sharp",
+        "Vorpal",
+        "TwoHands",
+        "Shocking",
+        "Poison"
+      ]
+    },
+    "direction": {
+      "enum": ["North", "East", "South", "West", "Up", "Down"]
+    },
+    "doorState": {
+      "enum": ["Open", "Closed", "Locked"]
+    },
+    "specialProcedure": {
+      "enum": [
+        "BreathAny",
+        "BreathAcid",
+        "BreathFire",
+        "BreathFrost",
+        "BreathGas",
+        "BreathLightning",
+        "CastAdept",
+        "CastCleric",
+        "CastJudge",
+        "CastMage",
+        "CastUndead",
+        "Executioner",
+        "Fido",
+        "Guard",
+        "Janitor",
+        "Mayor",
+        "Poison",
+        "Thief",
+        "Nasty",
+        "TrollMember",
+        "OgreMember",
+        "Patrolman"
+      ]
+    },
+    "dice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "size", "bonus"],
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "size": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bonus": {
+          "type": "integer"
+        }
+      }
+    },
+    "damage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "size", "bonus", "attackType"],
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "size": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bonus": {
+          "type": "integer"
+        },
+        "attackType": {
+          "$ref": "#/$defs/attackType"
+        }
+      }
+    },
+    "armor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pierce", "bash", "slash", "exotic"],
+      "properties": {
+        "pierce": {
+          "type": "integer"
+        },
+        "bash": {
+          "type": "integer"
+        },
+        "slash": {
+          "type": "integer"
+        },
+        "exotic": {
+          "type": "integer"
+        }
+      }
+    },
+    "extraDescription": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["keywords", "description"],
+      "properties": {
+        "keywords": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "affect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["location", "modifier"],
+      "properties": {
+        "where": {
+          "$ref": "#/$defs/affectWhere"
+        },
+        "location": {
+          "$ref": "#/$defs/applyLocation"
+        },
+        "modifier": {
+          "type": "integer"
+        },
+        "flags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/affectOrImmFlag"
+          }
+        }
+      }
+    },
+    "help": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["keywords", "level", "text"],
+      "properties": {
+        "keywords": {
+          "type": "string",
+          "minLength": 1
+        },
+        "level": {
+          "$ref": "#/$defs/level"
+        },
+        "text": {
+          "type": "string"
+        }
+      }
+    },
+    "mobile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vnum",
+        "keywords",
+        "shortDescription",
+        "longDescription",
+        "description",
+        "race",
+        "alignment",
+        "group",
+        "level",
+        "hitRoll",
+        "hitDice",
+        "manaDice",
+        "damage",
+        "armor",
+        "startPosition",
+        "defaultPosition",
+        "sex",
+        "gold",
+        "size",
+        "material"
+      ],
+      "properties": {
+        "vnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "keywords": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shortDescription": {
+          "type": "string"
+        },
+        "longDescription": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "race": {
+          "$ref": "#/$defs/race"
+        },
+        "actFlags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/actFlag"
+          }
+        },
+        "affectedBy": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/affectFlag"
+          }
+        },
+        "offensiveFlags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/offensiveFlag"
+          }
+        },
+        "immunities": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/immFlag"
+          }
+        },
+        "resistances": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/immFlag"
+          }
+        },
+        "vulnerabilities": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/immFlag"
+          }
+        },
+        "form": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/formFlag"
+          }
+        },
+        "parts": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/partFlag"
+          }
+        },
+        "alignment": {
+          "type": "integer",
+          "minimum": -1000,
+          "maximum": 1000
+        },
+        "group": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "level": {
+          "$ref": "#/$defs/level"
+        },
+        "hitRoll": {
+          "type": "integer"
+        },
+        "hitDice": {
+          "$ref": "#/$defs/dice"
+        },
+        "manaDice": {
+          "$ref": "#/$defs/dice"
+        },
+        "damage": {
+          "$ref": "#/$defs/damage"
+        },
+        "armor": {
+          "$ref": "#/$defs/armor"
+        },
+        "startPosition": {
+          "$ref": "#/$defs/position"
+        },
+        "defaultPosition": {
+          "$ref": "#/$defs/position"
+        },
+        "sex": {
+          "$ref": "#/$defs/sex"
+        },
+        "gold": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "size": {
+          "$ref": "#/$defs/size"
+        },
+        "material": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "objectBase": {
+      "type": "object",
+      "required": [
+        "vnum",
+        "keywords",
+        "shortDescription",
+        "longDescription",
+        "material",
+        "itemType",
+        "level",
+        "weightPounds",
+        "costCopper",
+        "condition"
+      ],
+      "properties": {
+        "vnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "keywords": {
+          "type": "string",
+          "minLength": 1
+        },
+        "shortDescription": {
+          "type": "string"
+        },
+        "longDescription": {
+          "type": "string"
+        },
+        "material": {
+          "type": "string",
+          "minLength": 1
+        },
+        "itemType": {
+          "$ref": "#/$defs/itemType"
+        },
+        "extraFlags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/extraFlag"
+          }
+        },
+        "wearFlags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/wearFlag"
+          }
+        },
+        "level": {
+          "$ref": "#/$defs/level"
+        },
+        "weightPounds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "costCopper": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "condition": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "affects": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/affect"
+          }
+        },
+        "extraDescriptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/extraDescription"
+          }
+        }
+      }
+    },
+    "weaponData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["class", "diceCount", "diceSize", "attackType"],
+      "properties": {
+        "class": {
+          "$ref": "#/$defs/weaponClass"
+        },
+        "diceCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "diceSize": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "attackType": {
+          "$ref": "#/$defs/attackType"
+        },
+        "specialFlags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/weaponSpecialFlag"
+          }
+        }
+      }
+    },
+    "armorData": {
+      "$ref": "#/$defs/armor"
+    },
+    "containerData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capacity", "flags", "keyVnum"],
+      "properties": {
+        "capacity": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "flags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/containerFlag"
+          }
+        },
+        "keyVnum": {
+          "$ref": "#/$defs/vnum"
+        }
+      }
+    },
+    "drinkData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["capacity", "remaining", "liquid", "poisoned"],
+      "properties": {
+        "capacity": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "remaining": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "liquid": {
+          "$ref": "#/$defs/liquid"
+        },
+        "poisoned": {
+          "type": "boolean"
+        }
+      }
+    },
+    "chargesData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "total", "remaining", "spell"],
+      "properties": {
+        "level": {
+          "$ref": "#/$defs/level"
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "remaining": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "spell": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "spellsData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "names"],
+      "properties": {
+        "level": {
+          "$ref": "#/$defs/level"
+        },
+        "names": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "foodData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["hours", "poisoned"],
+      "properties": {
+        "hours": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "poisoned": {
+          "type": "boolean"
+        }
+      }
+    },
+    "moneyData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gold"],
+      "properties": {
+        "gold": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "furnitureData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["maxPeople", "flags"],
+      "properties": {
+        "maxPeople": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "flags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/furnitureFlag"
+          }
+        }
+      }
+    },
+    "portalData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exitFlags", "gateFlags", "toRoomVnum"],
+      "properties": {
+        "exitFlags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/exitFlag"
+          }
+        },
+        "gateFlags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/gateFlag"
+          }
+        },
+        "toRoomVnum": {
+          "$ref": "#/$defs/vnum"
+        }
+      }
+    },
+    "mapData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["roomVnum"],
+      "properties": {
+        "roomVnum": {
+          "$ref": "#/$defs/vnum"
+        }
+      }
+    },
+    "lightData": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["duration"],
+      "properties": {
+        "duration": {
+          "type": "integer",
+          "minimum": -1
+        }
+      }
+    },
+    "objectPlain": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "properties": {
+            "itemType": {
+              "enum": [
+                "Treasure",
+                "Clothing",
+                "Trash",
+                "Key",
+                "Boat",
+                "NpcCorpse",
+                "PcCorpse",
+                "Protect",
+                "WarpStone",
+                "RoomKey",
+                "Gem",
+                "Jewelry",
+                "Jukebox"
+              ]
+            },
+            "rawValues": {
+              "type": "array",
+              "minItems": 5,
+              "maxItems": 5,
+              "items": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectWeapon": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "weapon"],
+          "properties": {
+            "itemType": {
+              "const": "Weapon"
+            },
+            "weapon": {
+              "$ref": "#/$defs/weaponData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectArmor": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "armor"],
+          "properties": {
+            "itemType": {
+              "const": "Armor"
+            },
+            "armor": {
+              "$ref": "#/$defs/armorData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectContainer": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "container"],
+          "properties": {
+            "itemType": {
+              "const": "Container"
+            },
+            "container": {
+              "$ref": "#/$defs/containerData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectDrink": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "drink"],
+          "properties": {
+            "itemType": {
+              "const": "DrinkContainer"
+            },
+            "drink": {
+              "$ref": "#/$defs/drinkData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectFountain": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "fountain"],
+          "properties": {
+            "itemType": {
+              "const": "Fountain"
+            },
+            "fountain": {
+              "$ref": "#/$defs/drinkData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectCharges": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "charges"],
+          "properties": {
+            "itemType": {
+              "enum": ["Wand", "Staff"]
+            },
+            "charges": {
+              "$ref": "#/$defs/chargesData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectSpells": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "spells"],
+          "properties": {
+            "itemType": {
+              "enum": ["Scroll", "Potion", "Pill"]
+            },
+            "spells": {
+              "$ref": "#/$defs/spellsData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectFood": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "food"],
+          "properties": {
+            "itemType": {
+              "const": "Food"
+            },
+            "food": {
+              "$ref": "#/$defs/foodData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectMoney": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "money"],
+          "properties": {
+            "itemType": {
+              "const": "Money"
+            },
+            "money": {
+              "$ref": "#/$defs/moneyData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectFurniture": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "furniture"],
+          "properties": {
+            "itemType": {
+              "const": "Furniture"
+            },
+            "furniture": {
+              "$ref": "#/$defs/furnitureData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectPortal": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "portal"],
+          "properties": {
+            "itemType": {
+              "const": "Portal"
+            },
+            "portal": {
+              "$ref": "#/$defs/portalData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectMap": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "map"],
+          "properties": {
+            "itemType": {
+              "const": "Map"
+            },
+            "map": {
+              "$ref": "#/$defs/mapData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "objectLight": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/objectBase"
+        },
+        {
+          "required": ["itemType", "light"],
+          "properties": {
+            "itemType": {
+              "const": "Light"
+            },
+            "light": {
+              "$ref": "#/$defs/lightData"
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "object": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/objectPlain"
+        },
+        {
+          "$ref": "#/$defs/objectWeapon"
+        },
+        {
+          "$ref": "#/$defs/objectArmor"
+        },
+        {
+          "$ref": "#/$defs/objectContainer"
+        },
+        {
+          "$ref": "#/$defs/objectDrink"
+        },
+        {
+          "$ref": "#/$defs/objectFountain"
+        },
+        {
+          "$ref": "#/$defs/objectCharges"
+        },
+        {
+          "$ref": "#/$defs/objectSpells"
+        },
+        {
+          "$ref": "#/$defs/objectFood"
+        },
+        {
+          "$ref": "#/$defs/objectMoney"
+        },
+        {
+          "$ref": "#/$defs/objectFurniture"
+        },
+        {
+          "$ref": "#/$defs/objectPortal"
+        },
+        {
+          "$ref": "#/$defs/objectMap"
+        },
+        {
+          "$ref": "#/$defs/objectLight"
+        }
+      ]
+    },
+    "exit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["toRoom"],
+      "properties": {
+        "toRoom": {
+          "$ref": "#/$defs/vnum"
+        },
+        "flags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/exitFlag"
+          }
+        },
+        "keyVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "room": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "vnum",
+        "name",
+        "description",
+        "sector",
+        "healRate",
+        "manaRate",
+        "clan"
+      ],
+      "properties": {
+        "vnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string"
+        },
+        "roomFlags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/roomFlag"
+          }
+        },
+        "sector": {
+          "$ref": "#/$defs/sector"
+        },
+        "healRate": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "manaRate": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "clan": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "exits": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "north": {
+              "$ref": "#/$defs/exit"
+            },
+            "east": {
+              "$ref": "#/$defs/exit"
+            },
+            "south": {
+              "$ref": "#/$defs/exit"
+            },
+            "west": {
+              "$ref": "#/$defs/exit"
+            },
+            "up": {
+              "$ref": "#/$defs/exit"
+            },
+            "down": {
+              "$ref": "#/$defs/exit"
+            }
+          }
+        },
+        "extraDescriptions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/extraDescription"
+          }
+        }
+      }
+    },
+    "resetIfFlag": {
+      "type": "boolean"
+    },
+    "mobileReset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "mobileVnum", "roomVnum", "maxInWorld"],
+      "properties": {
+        "type": {
+          "const": "Mobile"
+        },
+        "ifFlag": {
+          "$ref": "#/$defs/resetIfFlag"
+        },
+        "mobileVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "roomVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "maxInWorld": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "objectReset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "objectVnum", "roomVnum"],
+      "properties": {
+        "type": {
+          "const": "Object"
+        },
+        "ifFlag": {
+          "$ref": "#/$defs/resetIfFlag"
+        },
+        "objectVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "roomVnum": {
+          "$ref": "#/$defs/vnum"
+        }
+      }
+    },
+    "putReset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "objectVnum", "containerVnum"],
+      "properties": {
+        "type": {
+          "const": "Put"
+        },
+        "ifFlag": {
+          "$ref": "#/$defs/resetIfFlag"
+        },
+        "objectVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "containerVnum": {
+          "$ref": "#/$defs/vnum"
+        }
+      }
+    },
+    "giveReset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "objectVnum", "mobileVnum"],
+      "properties": {
+        "type": {
+          "const": "Give"
+        },
+        "ifFlag": {
+          "$ref": "#/$defs/resetIfFlag"
+        },
+        "objectVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "mobileVnum": {
+          "$ref": "#/$defs/vnum"
+        }
+      }
+    },
+    "equipReset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "objectVnum", "mobileVnum", "wearLocation"],
+      "properties": {
+        "type": {
+          "const": "Equip"
+        },
+        "ifFlag": {
+          "$ref": "#/$defs/resetIfFlag"
+        },
+        "objectVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "mobileVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "wearLocation": {
+          "$ref": "#/$defs/wearLocation"
+        }
+      }
+    },
+    "doorReset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "roomVnum", "direction", "state"],
+      "properties": {
+        "type": {
+          "const": "Door"
+        },
+        "ifFlag": {
+          "$ref": "#/$defs/resetIfFlag"
+        },
+        "roomVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "direction": {
+          "$ref": "#/$defs/direction"
+        },
+        "state": {
+          "$ref": "#/$defs/doorState"
+        }
+      }
+    },
+    "randomizeReset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "roomVnum", "door"],
+      "properties": {
+        "type": {
+          "const": "Randomize"
+        },
+        "ifFlag": {
+          "$ref": "#/$defs/resetIfFlag"
+        },
+        "roomVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "door": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 6
+        }
+      }
+    },
+    "reset": {
+      "oneOf": [
+        {
+          "$ref": "#/$defs/mobileReset"
+        },
+        {
+          "$ref": "#/$defs/objectReset"
+        },
+        {
+          "$ref": "#/$defs/putReset"
+        },
+        {
+          "$ref": "#/$defs/giveReset"
+        },
+        {
+          "$ref": "#/$defs/equipReset"
+        },
+        {
+          "$ref": "#/$defs/doorReset"
+        },
+        {
+          "$ref": "#/$defs/randomizeReset"
+        }
+      ]
+    },
+    "shop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "keeperVnum",
+        "buyTypes",
+        "profitBuy",
+        "profitSell",
+        "openHour",
+        "closeHour"
+      ],
+      "properties": {
+        "keeperVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "buyTypes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/itemType"
+          }
+        },
+        "profitBuy": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "profitSell": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "openHour": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 23
+        },
+        "closeHour": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 23
+        }
+      }
+    },
+    "special": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["mobileVnum", "procedure"],
+      "properties": {
+        "mobileVnum": {
+          "$ref": "#/$defs/vnum"
+        },
+        "procedure": {
+          "$ref": "#/$defs/specialProcedure"
+        }
+      }
+    },
+    "social": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "charNoArgument",
+        "othersNoArgument",
+        "charFound",
+        "othersFound",
+        "victimFound",
+        "charAuto",
+        "othersAuto"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*$"
+        },
+        "charNoArgument": {
+          "type": "string"
+        },
+        "othersNoArgument": {
+          "type": "string"
+        },
+        "charFound": {
+          "type": "string"
+        },
+        "othersFound": {
+          "type": "string"
+        },
+        "victimFound": {
+          "type": "string"
+        },
+        "charAuto": {
+          "type": "string"
+        },
+        "othersAuto": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

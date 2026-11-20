@@ -47,27 +47,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T002 — Define the JSON data format and schemas
-- Depends on: T001
-- Specify the on-disk format for areas, the world index, players, notes, gods
-  and music. Rules:
-  - `"formatVersion": 1` in every file; breaking changes bump it.
-  - camelCase properties, string enums, flags as arrays of canonical names,
-    JSON arrays instead of linked lists, `~`-free strings.
-  - Item-type-specific objects (`weapon`, `container`, `food`, `light`, …)
-    instead of opaque `value[4]`; document a `rawValues` fallback.
-  - Exits keyed by direction; resets as an ordered array with a `type`
-    discriminator; references use numeric vnums.
-  - One JSON file per area plus `Data/areas/index.json` for load order and
-    source provenance.
-  - UTF-8 without BOM, LF line endings, 2-space indent, deterministic ordering
-    (entities by vnum, resets in original order).
-- Add JSON Schema files under `Data/schema/` (`area`, `index`, `player`).
-- Document the format with a complete example in
-  `Docs/Developer/DataFormats.md`.
-- **Done when:** schemas validate a hand-written sample, invalid samples fail
-  with a useful JSON path, and the format doc covers every field.
-
 ### [ ] T003 — Configuration and NLog setup
 - Depends on: T001
 - Config object (JSON or env vars): port, bind address, data paths, log level,
@@ -157,13 +136,13 @@ Last reviewed: 2026-11-20
   `--report <file>`, `--strict`, `--check`. Import all files listed in
   `area.lst` (supporting a `--file` override for single areas).
 - Emit one JSON file per area plus `index.json` carrying source provenance
-  (ROM 2.4b6, 1998-05-29, legacy filenames). Write atomically; never leave a
-  partial data set. Print/write counts, warnings and unknown names; exit
-  non-zero on errors.
+  (ROM 2.4b6, 1998-05-29, legacy filenames), validated against
+  `Data/schema/*.schema.json`. Write atomically; never leave a partial data set.
+  Print/write counts, warnings and unknown names; exit non-zero on errors.
 - Log via NLog; no server startup, no network.
-- **Done when:** importing a fixture twice is byte-identical, `--check` detects
-  drift, failure paths exit non-zero with actionable messages, and the tool is
-  covered by tests.
+- **Done when:** importing a fixture twice is byte-identical, generated JSON
+  validates against the schemas, `--check` detects drift, failure paths exit
+  non-zero with actionable messages, and the tool is covered by tests.
 
 ### [ ] T012 — Migrate the ROM 2.4b6 corpus to JSON
 - Depends on: T011
@@ -336,15 +315,15 @@ Last reviewed: 2026-11-20
 - Depends on: T030
 - note/read/unread/replay, idea, penalty, news, changes, board expiry, immortal
   forwarding and author filtering. Persist to `Data/notes/*.json` with atomic
-  writes and schema validation.
+  writes and `notes.schema.json` validation.
 - **Done when:** persistence across restart, expiry rules, schema rejection and
   permission tests pass for mortal/immortal boards.
 
 ### [ ] T037 — Music data and jukebox (JSON)
 - Depends on: T002, T003
 - Convert the original `music.txt` into `Data/music/songs.json` (one-time
-  conversion, committed as JSON; no `.txt` at runtime). Load, list, play and
-  drive jukebox objects.
+  conversion, committed as JSON; no `.txt` at runtime), validated against
+  `music.schema.json`. Load, list, play and drive jukebox objects.
 - **Done when:** all bundled songs are present, the JSON validates, and
   playback/listing are snapshot tested.
 
@@ -487,7 +466,8 @@ Last reviewed: 2026-11-20
 - Depends on: T063
 - advance, trust, deny, freeze, log, snoop, switch/return, peace, violate,
   load/mload/oload/clone, purge, restore, set, string, flag, title, wizlock,
-  wiznet, memory, sockets, asave.
+  wiznet, memory, sockets, asave. Persist god summaries to `Data/gods/*.json`
+  using `god.schema.json`.
 - **Done when:** each command has permission tests and cannot corrupt player,
   area or world state in failure paths.
 
@@ -597,3 +577,7 @@ Last reviewed: 2026-11-20
   `VibeROM.AreaImporter` and three xUnit test projects; centralized package
   versions, NLog, layering tests, clean build/test/format, and importer
   `--help` verified.
+- **T002 — Define the JSON data format and schemas** (2026-11-20)
+  Six JSON Schemas (area, index, player, notes, music, god), complete format
+  documentation, valid fixtures and negative schema tests; canonical flag
+  names, typed item data and strict unknown-property handling finalized.

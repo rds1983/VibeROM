@@ -58,8 +58,9 @@ C idioms.
    directly. Re-running the importer over edited data requires explicit review
    and must not silently overwrite authored content.
 6. **Never commit legacy game data.** Original `.are` files are not stored in
-   this repository. Small, hand-written fixtures for importer tests are allowed
-   under `VibeROM.AreaImporter.Tests/Fixtures/`.
+   this repository. Small, hand-written `.are` fixtures for importer tests are
+   allowed under `VibeROM.AreaImporter.Tests/Fixtures/`; JSON schema fixtures
+   belong in `VibeROM.Common.Tests/Fixtures/`.
 7. **Schema every change.** A format change updates the JSON Schema, the format
    doc, the serializer/loader and the importer in the same task.
 

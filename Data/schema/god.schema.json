@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://viberom.local/schema/god.schema.json",
+  "title": "VibeROM god summary",
+  "description": "One file per immortal in Data/gods, used for the in-game wizlist.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["formatVersion", "name", "level", "trust"],
+  "properties": {
+    "formatVersion": {
+      "const": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "trust": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    }
+  }
+}
