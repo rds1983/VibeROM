@@ -1,8 +1,8 @@
 # Data Formats
 
-Status: **format version 1** — defined by T002. The JSON Schemas in
-`Data/schema/` are the authoritative field lists; this page explains the model
-and the decisions behind it.
+Status: **format version 1** — defined by T002; canonical reader/writer added
+by T010. The JSON Schemas in `Data/schema/` are the authoritative field lists;
+this page explains the model and the decisions behind it.
 
 All runtime game data is human-readable JSON. The legacy ROM `.are` format,
 pfiles and `music.txt` are import input only; the server never reads them.
@@ -189,9 +189,10 @@ monster races such as `Bat`, `Dragon` and `Wyvern`; player saves use only the
 four PC races. `offensiveFlags` includes both `OFF_*` combat bits and the
 `ASSIST_*` bits (`AssistAll` … `AssistVnum`).
 
-`armor` values use the original area-file units. The loader multiplies them by
-10, matching ROM's internal AC scale. `damage.attackType` is the attack noun
-(`Slash`, `Pierce`, …), from which the engine derives the damage type.
+`armor` values use the original area-file units in JSON. The runtime model
+stores ROM's internal AC scale (ten times the file value), so the deserializer
+multiplies by 10 and the writer divides by 10. `damage.attackType` is the attack
+noun (`Slash`, `Pierce`, …), from which the engine derives the damage type.
 
 ### Objects
 
@@ -208,7 +209,7 @@ Common fields for every item:
 | `extraFlags` | enum[] | no | `Glow`, `Hum`, `NoDrop`, … |
 | `wearFlags` | enum[] | no | `Take`, `Finger`, `Wield`, `Hold`, … |
 | `level` | integer 0–100 | yes | Object level |
-| `weightPounds` | number ≥ 0 | yes | Human units; loader converts to tenths |
+| `weightPounds` | number ≥ 0 | yes | Human units; model stores tenths |
 | `costCopper` | integer ≥ 0 | yes | Cost in copper coins |
 | `condition` | integer 0–100 | yes | Condition percentage |
 | `affects` | affect[] | no | Object affects / flag affects |
@@ -480,6 +481,35 @@ One file per immortal in `Data/gods/<Name>.json`.
 - Schema validation is local and structural. Cross-file checks — duplicate
   vnums, dangling exits/resets/shops, vnum ranges — belong to the loader
   (T014).
+
+## Serialization API
+
+`VibeROM.Common.Serialization.AreaJson` is the single reader/writer for area
+files:
+
+| Member | Purpose |
+| --- | --- |
+| `AreaJson.Serialize(AreaData)` | Canonical string with one trailing `\n` |
+| `AreaJson.Deserialize(string, JsonSchema?)` | Parse and validate; throws `DataFormatException` |
+| `AreaJson.Options` | `JsonSerializerOptions` with the area converter, 2-space indent and LF |
+| `JsonSchemaValidator.Load(path)` | Load and cache one schema file |
+| `JsonSchemaValidator.Validate(schema, json)` | Return `"{json-pointer}: {detail}"` errors |
+| `JsonSchemaValidator.ValidateOrThrow(...)` | Throw a `DataFormatException` with every error |
+
+Canonical output follows the conventions above: schema property order,
+mobiles/objects/rooms by vnum, helps by keyword, socials by name, resets in
+original order, empty optional values omitted and `formatVersion` first.
+`AreaJson.Deserialize` resolves every flag and enum name through `RomFlags` and
+`RomTables`; unknown or non-persisted names throw a `DataFormatException` whose
+`Path` is the JSON Pointer of the offending value (for example
+`/mobiles/0/race`).
+
+Two values differ between JSON and the runtime model:
+
+- `weightPounds` is a human-readable number (`0.1`) and the model stores
+  `WeightTenths` (`1`).
+- Mobile `armor` is in area-file units and the model stores ROM's internal
+  scale (ten times larger).
 
 ## Versioning and migration
 

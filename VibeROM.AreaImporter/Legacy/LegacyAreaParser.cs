@@ -273,12 +273,13 @@ public sealed class LegacyAreaParser
         var damageDice = ReadDice(reader);
         var attackType = LegacyLookup.ToAttackType(reader.ReadWord(), reader);
         // ROM stores mobile AC internally at ten times the area-file value;
-        // the JSON keeps the original area-file units (see DataFormats.md).
+        // JSON keeps the area-file value and the runtime model stores the
+        // internal value (see DataFormats.md).
         var armor = new ArmorValues(
-            reader.ReadNumber(),
-            reader.ReadNumber(),
-            reader.ReadNumber(),
-            reader.ReadNumber());
+            reader.ReadNumber() * 10,
+            reader.ReadNumber() * 10,
+            reader.ReadNumber() * 10,
+            reader.ReadNumber() * 10);
         var offensiveFlags = ReadMask(reader, RomFlags.Offensive, "offensiveFlags", warnings);
         var immunities = ReadMask(reader, RomFlags.Immunity, "immunities", warnings);
         var resistances = ReadMask(reader, RomFlags.Immunity, "resistances", warnings);

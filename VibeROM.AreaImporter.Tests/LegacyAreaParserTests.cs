@@ -51,7 +51,7 @@ public sealed class LegacyAreaParserTests
         Assert.Equal(new Dice(1, 4, 1), mobile.ManaDice);
         Assert.Equal(new Dice(1, 8, 2), mobile.Damage.Dice);
         Assert.Equal("Slash", mobile.Damage.AttackType);
-        Assert.Equal(new ArmorValues(-2, -2, -2, -2), mobile.Armor);
+        Assert.Equal(new ArmorValues(-20, -20, -20, -20), mobile.Armor);
         Assert.Equal(Position.Standing, mobile.StartPosition);
         Assert.Equal(Position.Standing, mobile.DefaultPosition);
         Assert.Equal(Sex.Male, mobile.Sex);

@@ -133,6 +133,8 @@ boot. The shipped 2.4b6 corpus contains no `#MOBOLD`/`#OBJOLD` sections.
 
 - Same input -> byte-identical output (2-space indent, LF, UTF-8 without BOM,
   stable property order, entities sorted by vnum, resets in original order).
+  T011 writes files through `AreaJson.Serialize`, the canonical writer described
+  in [DataFormats.md](DataFormats.md).
 - Running the importer twice must produce no diff.
 - `--check` re-imports into a temporary directory and compares bytes with the
   committed data. Drift means either the importer changed or the JSON was
@@ -163,5 +165,7 @@ boot. The shipped 2.4b6 corpus contains no `#MOBOLD`/`#OBJOLD` sections.
 - `VIBEROM_ROM_AREA_DIR=<rom>/area dotnet test` additionally parses all 53
   original `.are` files, validates every area and asserts the counts for
   `proto.are`, `rom.are` (27 helps), `help.are` (141 helps) and `social.are`
-  (244 socials). The tests skip when the environment variable is absent, so no
-  legacy game data is committed to the repository.
+  (244 socials). The same run serializes every parsed area through
+  `AreaJson.Serialize`, validates it against `area.schema.json` and asserts a
+  byte-identical round-trip. The tests skip when the environment variable is
+  absent, so no legacy game data is committed to the repository.

@@ -47,21 +47,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T010 — JSON serializer, deserializer and converters
-- Depends on: T002, T006
-- Implement System.Text.Json configuration and converters in
-  `VibeROM.Common`: enum names, flag arrays, item-type-specific objects, reset
-  polymorphism, canonical property order, deterministic output, omitted
-  nulls/empties.
-- Use `RomFlags` and `RomTables` to resolve and validate every name; unknown
-  names fail with the JSON path.
-- Convert `weightPounds` to `WeightTenths` and mobile armor values to ROM's
-  internal AC units (`×10`).
-- Provide the runtime deserializer + schema validation used by the server and
-  the writer used by the importer.
-- **Done when:** domain → JSON → domain round-trips exactly; snapshots are
-  stable across runs; unknown enum/flag names fail with the JSON path.
-
 ### [ ] T011 — AreaImporter CLI
 - Depends on: T008, T009, T010
 - Command line: `--source <ROM area dir>`, `--output <Data/areas>`,
@@ -95,11 +80,11 @@ Last reviewed: 2026-11-20
 
 ### [ ] T013 — JSON world loader
 - Depends on: T010, T012
-- Load `Data/areas/index.json` then each area JSON in order; validate against
-  the schema and reject duplicate vnums or invalid references with precise
-  messages. Deserialize into `AreaData`/prototype records, build a `World`,
-  then apply ROM fix-ups (object levels, material defaults, shop keeper
-  indexing, weight/armor unit conversions) and run `World.Validate()`.
+- Load `Data/areas/index.json` then each area JSON in order through
+  `AreaJson.Deserialize(json, areaSchema)`; reject duplicate vnums or invalid
+  references with precise messages. Build a `World`, then apply ROM fix-ups
+  (object levels, material defaults, shop keeper indexing) and run
+  `World.Validate()`.
 - **Done when:** the server loads the full JSON corpus with zero errors, and the
   server assembly has no reference to legacy `.are` parsing.
 
@@ -578,3 +563,9 @@ Last reviewed: 2026-11-20
   prefix lookups, typed item data, old-format conversion, cross-area reference
   validation with positions, modern/old/social fixtures and a full-corpus test
   covering all 53 `.are` files.
+- **T010 — JSON serializer, deserializer and converters** (2026-11-20)
+  Canonical `AreaJson` reader/writer with schema property order, sorted
+  entities, LF/2-space output, flag and enum name resolution with JSON-pointer
+  errors, typed item data, reset polymorphism, weight/AC conversions and
+  `JsonSchemaValidator`; snapshot, round-trip and full-corpus serialization
+  tests.

@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <None Update="Fixtures\*.are" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\Data\schema\*.json" Link="schema\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>
