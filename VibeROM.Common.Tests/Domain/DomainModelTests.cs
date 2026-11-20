@@ -174,14 +174,14 @@ public sealed class DomainModelTests
     public void ResetVariants_ValidateTheirFields()
     {
         Assert.Contains(
-            new EquipReset(false, 1, 2, WearSlot.None).Validate("equip"),
+            new EquipReset(false, 1, WearSlot.None, 1).Validate("equip"),
             error => error.Contains("wearLocation", StringComparison.Ordinal));
 
         Assert.Contains(
             new RandomizeReset(false, 1, 7).Validate("random"),
             error => error.Contains("door", StringComparison.Ordinal));
 
-        Assert.Empty(new MobileReset(false, 1, 2, 1).Validate("mobile"));
+        Assert.Empty(new MobileReset(false, 1, 2, 1, 1).Validate("mobile"));
     }
 
     [Fact]
@@ -239,13 +239,13 @@ public sealed class DomainModelTests
             Rooms: [room, room2],
             Resets:
             [
-                new MobileReset(false, mobile.Vnum, room.Vnum, 1),
-                new ObjectReset(false, obj.Vnum, room.Vnum),
-                new EquipReset(false, obj.Vnum, mobile.Vnum, WearSlot.Wield),
+                new MobileReset(false, mobile.Vnum, room.Vnum, 1, 1),
+                new ObjectReset(false, obj.Vnum, room.Vnum, 1),
+                new EquipReset(false, obj.Vnum, WearSlot.Wield, 1),
                 new DoorReset(false, room.Vnum, Direction.North, DoorState.Locked),
                 new RandomizeReset(false, room.Vnum, 1),
-                new PutReset(false, obj.Vnum, obj.Vnum),
-                new GiveReset(false, obj.Vnum, mobile.Vnum)
+                new PutReset(false, obj.Vnum, obj.Vnum, 1),
+                new GiveReset(false, obj.Vnum, 1)
             ],
             Shops: [new ShopData(mobile.Vnum, [ItemType.Weapon], 120, 120, 0, 23)],
             Specials: [new SpecialData(mobile.Vnum, "Guard")],
@@ -258,6 +258,7 @@ public sealed class DomainModelTests
                     "You smile at $N.",
                     "$n smiles at $N.",
                     "$n smiles at you.",
+                    "You don't see them.",
                     "You smile at yourself.",
                     "$n smiles at $mself.")
             ]);

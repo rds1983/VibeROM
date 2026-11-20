@@ -47,20 +47,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T009 — Legacy section parsers (importer only)
-- Depends on: T006, T008
-- Parse `#AREA`, `#AREADATA`, `#HELPS`, `#MOBILES`, `#MOBOLD`, `#OBJECTS`,
-  `#OBJOLD`, `#ROOMS`, `#RESETS` (`M/O/P/G/E/D/R`), `#SHOPS`, `#SPECIALS`,
-  `#SOCIALS`, including OLC `VNUMs`/`End` blocks.
-- Use `LegacyAreaReader` for all tokens and propagate `LegacyFormatException`
-  with source locations.
-- Map everything into the shared domain model and report unknown names,
-  duplicate vnums and dangling references with source locations.
-- Resolve legacy letters and words through importer-only maps into the canonical
-  `RomFlags`/`RomTables` names; unknown legacy values are errors.
-- **Done when:** `proto.are`, `rom.are`, `help.are` and `social.are` parse with
-  zero errors and asserted entity counts, including old-format sections.
-
 ### [ ] T010 — JSON serializer, deserializer and converters
 - Depends on: T002, T006
 - Implement System.Text.Json configuration and converters in
@@ -96,9 +82,13 @@ Last reviewed: 2026-11-20
   `.are` files are import input and are **not committed** to this repository).
 - Commit `Data/areas/*.json` and `Data/areas/index.json`; resolve the missing
   `thanos.are` reference and the unlisted `proto.are` explicitly.
-- Review counts, unknown flags (must be zero), duplicate vnums, sample areas,
-  and human readability of the output. Document the exact import command and
-  source provenance in `Data/README.md`.
+- Review counts, unknown canonical flag names (must be zero; reserved unnamed
+  bits are reported and dropped), duplicate vnums, sample areas, and human
+  readability of the output. Document the exact import command and source
+  provenance in `Data/README.md`.
+- T009 reference validation found 10 dangling exit-key references in the
+  current corpus (see the T009 report); resolve them here, including the
+  objects expected from the missing `thanos.are`.
 - **Done when:** all 52 areas referenced by `area.lst` (including `help.json`
   and `social.json`) exist, the report is clean, and a spot-check of large and
   small areas is approved.
@@ -582,3 +572,9 @@ Last reviewed: 2026-11-20
   `LegacyAreaReader` with ROM `fread_*` semantics, `~` strings, `|` numbers and
   flags, comments, CR/LF normalization and precise file/line/column errors;
   malformed-input and fixture tests.
+- **T009 — Legacy section parsers (importer only)** (2026-11-20)
+  Full `#AREA`/`#AREADATA`/`#HELPS`/`#MOBILES`/`#MOBOLD`/`#OBJECTS`/`#OBJOLD`/
+  `#ROOMS`/`#RESETS`/`#SHOPS`/`#SPECIALS`/`#SOCIALS` parser, importer-only
+  prefix lookups, typed item data, old-format conversion, cross-area reference
+  validation with positions, modern/old/social fixtures and a full-corpus test
+  covering all 53 `.are` files.

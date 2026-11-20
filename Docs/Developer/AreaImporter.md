@@ -47,39 +47,91 @@ functions and tracks 1-based line/column positions:
 | `ReadNumber()` | `fread_number` | Optional sign, decimal digits, `|` additive form (`1\|64\|1048576`); leaves non-space delimiters unread |
 | `ReadFlag()` | `fread_flag` | Letter bits (`A`..`Z`, `a`..`z`), numbers, signs and `|` sums; returns `long` |
 | `ReadString()` | `fread_string` | Skips leading whitespace, reads to `~`, normalizes CR/LF to `\n`; `~` alone is empty |
+| `ReadStringEol()` | `fread_string_eol` | Skips leading whitespace, reads one line and consumes its ending; used by socials |
 | `ReadToEndOfLine()` | `fread_to_eol` | Consumes the comment and any immediately following newlines, leaving the next non-newline character |
+| `PeekNonWhitespaceChar()` | - | Looks ahead across whitespace without consuming, for section terminators such as `S` and `#0` |
 
 - Errors throw `LegacyFormatException` with `FileName`, `Line`, `Column`,
   `Offset` and a message formatted as `file:line:column: detail`.
 - Unterminated strings/quotes, missing numbers, invalid digits, number overflow
   and over-long words are hard errors.
 - `ReadFlag` does not map letters to canonical names; that mapping belongs to
-  T009 using `RomFlags`/`RomTables`.
+  `LegacyLookup` using `RomFlags`/`RomTables`.
 - A valid fixture lives at
   `VibeROM.AreaImporter.Tests/Fixtures/tokenizer.are`; edge cases are covered by
   `LegacyAreaReaderTests`.
 
+## Section parsers
+
+`LegacyAreaParser` reads a whole file and switches on the uppercase section
+name, matching `boot_db()` in `db.c`:
+
+| Section | Behaviour |
+| --- | --- |
+| `#AREA` | Legacy header: file, display name, credits, low/high vnum |
+| `#AREADATA` | OLC header: `Name`, `Builders`, `VNUMs`, `Security`, `Credits`, `End` |
+| `#HELPS` | `level keyword~ text~`; a keyword beginning with `$` terminates the section |
+| `#MOBILES` | Modern mobile prototype, including `F <field> <flags>` removals |
+| `#MOBOLD` | Old mobile prototype, converted with ROM's `convert_mobile()` rules |
+| `#OBJECTS` | Modern object prototype and item-type-specific values |
+| `#OBJOLD` | Old object prototype with numeric item type and fixed value layout |
+| `#ROOMS` | Room, sector, flags, `H`/`M`/`C`/`O`/`D`/`E` fields and `S` terminator |
+| `#RESETS` | `M`, `O`, `P`, `G`, `E`, `D`, `R`; `*` comments; `S` terminator |
+| `#SHOPS` | Keeper, five buy types, profit and hours; `0` terminator |
+| `#SPECIALS` | `M <vnum> <procedure>`; `*` comments; `S` terminator |
+| `#SOCIALS` | Eight `fread_string_eol` message fields; `#` ends one social, `#0` the section |
+
+A file with no `#AREA`/`#AREADATA` header (for example `help.are` and
+`social.are`) produces a synthetic area whose name comes from the file name and
+whose `legacyFile` records the original name. Trailing whitespace at end of
+file is ignored.
+
+Every parse result also carries a `References` list (mobile/object/room vnums
+plus the source position that named them). `LegacyAreaParser.ValidateReferences`
+takes the results of a whole import and reports targets that no area defines;
+this must run after every file has been parsed because exits, resets, shops,
+specials, container keys, portals and maps may point into another area.
+
 ## Mapping rules
-- **Bit letters → canonical names.** `A`/`B`/`C` act bits become
-  `"Aggressive"`, `"StayArea"`, … via the shared name registry (T005). The
-  importer must never emit raw letters or bitmasks.
-- **Numbers → enums.** Sex, size, position, sector, item type, weapon class,
+
+- **Bit letters -> canonical names.** `A`/`B`/`C` act bits become
+  `"Sentinel"`, `"Scavenger"`, ... through `RomFlags`. The importer never emits
+  raw letters or bitmasks. Bits with no entry in the flag table (real data
+  contains several reserved gaps) and non-persisted runtime bits (`IsNpc`,
+  `Pet`) are dropped with a `LegacyParseWarning`; they have no ROM behaviour.
+- **Numbers -> enums.** Sex, size, position, sector, item type, weapon class,
   attack type, wear location, apply location, liquid, reset type, door state,
-  shop buy types, and special procedure names.
-- **Strings → plain JSON strings.** Leading spaces and `~` terminators are
+  shop buy types and special procedure names resolve through `RomTables`, using
+  ROM's case-insensitive prefix lookup where the C loader does.
+- **Strings -> plain JSON strings.** Leading spaces and `~` terminators are
   removed exactly as the C loader does. Original spelling, colour codes and
-  line breaks are preserved.
-- **`value[0..3]` → typed objects** per item type (`weapon`, `container`,
-  `food`, …). Prove each mapping against `const.c`, OLC and sample areas.
-- **Resets → ordered array** with a `type` discriminator. Preserve order and
-  the legacy conditional flag.
-- **One area file → one JSON file.** Keep the legacy base name and record it as
+  line breaks are preserved. Mobiles uppercase the first character of the long
+  description and description, as ROM does.
+- **`value[0..4]` -> typed objects** per item type (`weapon`, `armor`,
+  `container`, `drink`, `food`, `money`, ...). Unmapped types keep
+  `rawValues`. `money` maps `value[0]` to silver and `value[1]` to gold.
+- **Resets -> ordered array** with a `type` discriminator. The legacy
+  conditional flag is preserved and `-1` max counts are kept (ROM means "no
+  limit").
+- **One area file -> one JSON file.** Keep the legacy base name and record it as
   `legacyFile`.
-- **`area.lst` → `index.json`.** Preserve load order and add source provenance.
+- **`area.lst` -> `index.json`.** Preserve load order and add source provenance.
+
+### Old-format conversion
+
+Old mobiles pass through the equivalent of `convert_mobile()`: level-derived
+hit/mana/damage dice, AC interpolation, wealth scaling, `Warrior` act flag,
+race defaults and a material of `none`. ROM picks the converted damage type
+randomly; the importer chooses `Slash`, `Pound` or `Pierce` from `vnum % 3` so
+migration stays deterministic (recorded in `ParityNotes.md`).
+
+Old objects keep their four stored values, apply ROM's armour value fixup and
+use a level of `0`, because ROM derives old-object levels from reset context at
+boot. The shipped 2.4b6 corpus contains no `#MOBOLD`/`#OBJOLD` sections.
 
 ## Determinism
 
-- Same input → byte-identical output (2-space indent, LF, UTF-8 without BOM,
+- Same input -> byte-identical output (2-space indent, LF, UTF-8 without BOM,
   stable property order, entities sorted by vnum, resets in original order).
 - Running the importer twice must produce no diff.
 - `--check` re-imports into a temporary directory and compares bytes with the
@@ -88,21 +140,28 @@ functions and tracks 1-based line/column positions:
 
 ## Error policy
 
-- Unknown flag letters, enum names, specials, item types or malformed sections:
-  record file, line, column and raw value.
-- In `--strict` mode (default in CI), any unknown value is a failure and no
-  output is written. In non-strict mode they are reported and the affected
-  value is omitted only if the schema allows it; silent loss is forbidden.
-- Duplicate vnums, dangling exit/reset/shop references and invalid vnum ranges
-  are errors.
+- Unknown enum names, specials, item types, malformed numbers, duplicate vnums
+  and unexpected section markers throw `LegacyFormatException` with file, line,
+  column and the offending value.
+- Flag bits with no canonical name are dropped with a warning because ROM
+  defines no behaviour for them. Non-persisted bits (`IsNpc`, `Pet`) are dropped
+  because the runtime derives them.
+- Data quirks with a single ROM interpretation are repaired with a warning:
+  a non-numeric `#AREA` vnum range becomes `0 0`, unknown sectors become
+  `Inside`, and negative money/food values clamp to `0`.
+- `--strict` (T011) turns warnings into failures and writes no output.
 - No partial output: write to a temporary directory and swap on success.
 
 ## Tests
 
 - Tokenizer edge cases (`~` strings, `|` sums, comments, EOF, negatives).
-- Golden import of small hand-written `.are` fixtures under
-  `VibeROM.AreaImporter.Tests/Fixtures/`.
-- Old-format `#MOBOLD`/`#OBJOLD` and OLC `#AREADATA` fixtures.
-- Byte-identical re-run and `--check` drift detection.
-- Full-corpus import is run locally and summarized in `Data/README.md`; CI
-  validates the committed JSON instead of shipping legacy game data.
+- Section parsers against hand-written modern, old-format and social fixtures
+  under `VibeROM.AreaImporter.Tests/Fixtures/`; these fixtures are committed.
+- `LegacyAreaParserTests` asserts every mapped entity, reset, shop, special and
+  social field, plus failure paths (duplicate vnums, unknown sections, race,
+  reset command, malformed dice) with source positions.
+- `VIBEROM_ROM_AREA_DIR=<rom>/area dotnet test` additionally parses all 53
+  original `.are` files, validates every area and asserts the counts for
+  `proto.are`, `rom.are` (27 helps), `help.are` (141 helps) and `social.are`
+  (244 socials). The tests skip when the environment variable is absent, so no
+  legacy game data is committed to the repository.

@@ -31,6 +31,18 @@ public sealed class LegacyAreaReader
 
     public char? PeekChar() => AtEnd ? null : _text[_index];
 
+    /// <summary>Peeks at the next non-whitespace character without consuming it.</summary>
+    public char? PeekNonWhitespaceChar()
+    {
+        var index = _index;
+        while (index < _text.Length && char.IsWhiteSpace(_text[index]))
+        {
+            index++;
+        }
+
+        return index < _text.Length ? _text[index] : null;
+    }
+
     /// <summary>Skips whitespace and returns the next non-whitespace character.</summary>
     public char ReadLetter()
     {
@@ -266,6 +278,47 @@ public sealed class LegacyAreaReader
             Advance();
         }
     }
+
+    /// <summary>
+    /// Reads a line-terminated string (ROM's <c>fread_string_eol</c>), used by
+    /// socials. Leading whitespace is skipped and the line ending is consumed.
+    /// </summary>
+    public string ReadStringEol()
+    {
+        SkipWhitespace();
+        var start = Position;
+        if (AtEnd)
+        {
+            throw Error("Expected a line string but reached end of file.", start);
+        }
+
+        var builder = new StringBuilder();
+        while (!AtEnd && PeekChar() is not ('\n' or '\r'))
+        {
+            builder.Append(Advance());
+        }
+
+        if (!AtEnd)
+        {
+            if (PeekChar() == '\r')
+            {
+                Advance();
+            }
+
+            if (!AtEnd && PeekChar() == '\n')
+            {
+                Advance();
+            }
+        }
+
+        return builder.ToString();
+    }
+
+    public LegacyFormatException CreateError(string message) =>
+        new(message, _fileName, Position);
+
+    public LegacyFormatException CreateError(string message, LegacyPosition position) =>
+        new(message, _fileName, position);
 
     private void SkipWhitespace()
     {

@@ -22,7 +22,7 @@ Pages (some are still planned):
 - `SaveFormat.md` — player JSON schema and versioning (planned)
 - `CommandParity.md` — all 242 commands and implementation status (planned)
 - `SpellParity.md` — all 98 spells, skills and special procedures (planned)
-- `ParityNotes.md` — deliberate deviations from ROM behaviour (planned)
+- [ParityNotes.md](ParityNotes.md) — deliberate deviations from ROM behaviour (**available**)
 - `Testing.md` — unit, integration, full-corpus and soak tests (planned)
 - `Performance.md` — benchmarks and targets (planned)
 - `Contributing.md` — workflow, style and review checklist (planned)

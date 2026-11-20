@@ -12,9 +12,9 @@ public sealed record HelpEntry(string Keywords, int Level, string Text)
             errors.Add($"{field}.keywords must not be empty.");
         }
 
-        if (Level is < 0 or > 100)
+        if (Level is < -1 or > 100)
         {
-            errors.Add($"{field}.level must be between 0 and 100.");
+            errors.Add($"{field}.level must be between -1 and 100.");
         }
 
         return errors;
@@ -42,6 +42,7 @@ public sealed record SocialData(
     string CharFound,
     string OthersFound,
     string VictimFound,
+    string CharNotFound,
     string CharAuto,
     string OthersAuto)
 {

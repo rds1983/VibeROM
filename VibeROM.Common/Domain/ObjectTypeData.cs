@@ -28,7 +28,7 @@ public sealed record DrinkData(int Capacity, int Remaining, string Liquid, bool 
 
 public sealed record FoodData(int Hours, bool Poisoned) : ObjectTypeData;
 
-public sealed record MoneyData(int Gold) : ObjectTypeData;
+public sealed record MoneyData(int Gold, int Silver) : ObjectTypeData;
 
 public sealed record FurnitureData(int MaxPeople, int Flags) : ObjectTypeData;
 

@@ -1,0 +1,208 @@
+#AREADATA
+Name        Testland~
+Builders    Tester~
+VNUMs       1000 1099
+Security    7
+Credits     { Test } Example~
+End
+
+
+#HELPS
+-1 TEST~
+A test help entry.
+~
+-1 $~
+
+
+#MOBILES
+#1000
+guard test~
+the test guard~
+A test guard stands here.
+~
+A guard used by the importer tests.
+~
+human~
+ABV D 500 0
+10 5 2d6+3 1d4+1 1d8+2 slash
+-2 -2 -2 -2
+ACD ABC 0 0
+stand stand male 100
+AHMV ABCDEFGHIJK medium steel
+F act B
+F off C
+#0
+
+
+#OBJECTS
+#1000
+sword test~
+a test sword~
+A test sword lies here.~
+steel~
+weapon 0 A
+sword 2 6 slash 0
+0 50 100 P
+
+#1001
+plate test~
+a test plate~
+A test plate lies here.~
+steel~
+armor 0 A
+BC BC BC AB 0
+0 100 200 P
+
+#1002
+bag test~
+a test bag~
+A test bag lies here.~
+leather~
+container 0 A
+50 0 1003 10 5
+0 20 30 P
+
+#1003
+key test~
+a test key~
+A test key lies here.~
+iron~
+key 0 A
+0 0 0 0 0
+0 1 1 P
+
+#1004
+bottle test~
+a test bottle~
+A test bottle lies here.~
+glass~
+drink 0 A
+20 20 'beer' 0 0
+0 5 6 P
+
+#1005
+wand test~
+a test wand~
+A test wand lies here.~
+wood~
+wand 0 A
+5 3 2 'magic missile' 0
+0 5 100 P
+
+#1006
+scroll test~
+a test scroll~
+A test scroll lies here.~
+paper~
+scroll 0 A
+5 'cure light' 'bless' none none
+0 1 50 P
+
+#1007
+torch test~
+a test torch~
+A test torch lies here.~
+wood~
+light 0 A
+0 0 -1 0 0
+0 1 5 P
+
+#1008
+bread test~
+a test bread~
+A test bread lies here.~
+wheat~
+food 0 A
+10 10 0 0 0
+0 1 2 P
+
+#1009
+coins test~
+some test coins~
+Some test coins lie here.~
+silver~
+money 0 A
+0 25 0 0 0
+0 1 25 P
+
+#1010
+chair test~
+a test chair~
+A test chair is here.~
+wood~
+furniture 0 A
+2 0 1 0 0
+0 10 10 P
+
+#1011
+portal test~
+a test portal~
+A shimmering test portal is here.~
+energy~
+portal 0 A
+0 3 0 1000 0
+0 1 100 P
+
+#1012
+map test~
+a test map~
+A test map lies here.~
+paper~
+map 0 A
+1000 0 0 0 0
+0 1 1 P
+
+#1013
+gem test~
+a test gem~
+A test gem lies here.~
+crystal~
+treasure 0 A
+0 0 0 0 0
+0 1 500 P
+
+#0
+
+
+#ROOMS
+#1000
+Test Room~
+A plain test room.
+~
+0 0 1
+D0
+North into the void.
+~
+~
+0 -1 1001
+E
+note~
+A note is pinned here.
+~
+S
+#1001
+Second Room~
+Another test room.
+~
+0 0 1
+S
+#0
+
+
+#RESETS
+M 0 1000 1 1000 2
+O 0 1002 1 1000
+P 0 1002 0 1002 1
+G 0 1000 -1
+E 0 1000 -1 16
+D 0 1000 0 1
+R 0 1000 0
+S
+
+#SHOPS
+1000 5 9 1 0 0 120 110 6 20
+0
+
+#SPECIALS
+M 1000 spec_guard
+S

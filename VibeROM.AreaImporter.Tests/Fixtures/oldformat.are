@@ -1,0 +1,54 @@
+#AREA
+oldformat.are~
+Old Format Area~
+{ 1 2} Legacy Credits~
+1000 1099
+
+
+#MOBOLD
+#1000
+goblin~
+the goblin~
+A goblin stands here.
+~
+A small goblin.
+~
+AB 0 0
+S
+5 0 0 3d5+10 0d0+0 2000 4 8 8 1
+#0
+
+
+#OBJOLD
+#1000
+sword~
+a sword~
+A sword lies here.~
+~
+5 0 A
+1 2 3 0
+50 100 0
+
+#0
+
+
+#ROOMS
+#1000
+Old Room~
+An old room.
+~
+0 0 0
+S
+#0
+
+
+#RESETS
+S
+
+#SHOPS
+0
+
+#SPECIALS
+S
+
+#$

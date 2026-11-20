@@ -77,7 +77,9 @@ The model uses strong references, not vnums, for live objects:
 - `Character.Master` / `Followers` model charm/follow chains; `Leader` is the
   group leader. `Pet` is the player's pet.
 - Prototypes reference each other by vnum in resets/exits/shops/specials.
-  Cross-file/link resolution is T013/T014's job, not the model's.
+  Cross-file/link resolution is T011/T013's job, not the model's;
+  `LegacyAreaParser.ValidateReferences` reports missing targets across a legacy
+  import with source positions.
 
 ## Validation
 
@@ -89,8 +91,8 @@ The model uses strong references, not vnums, for live objects:
   condition, affects and extra descriptions.
 - `RoomPrototype.Validate()` checks room flags, rates, exits (direction keys
   match) and extra descriptions.
-- `Reset` variants check non-negative vnums, wear slots, door states and the
-  randomize door range.
+- `Reset` variants check non-negative vnums, wear slots, door states, the
+  randomize door range and `-1` (no limit) max counts.
 - `Character.Validate()` checks NPC/player consistency, vitals, inventory and
   equipment references, and affects.
 - `GameObject.Validate()` checks condition, flags, owner uniqueness, container

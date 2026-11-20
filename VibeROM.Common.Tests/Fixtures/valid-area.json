@@ -267,7 +267,8 @@
       "costCopper": 100,
       "condition": 100,
       "money": {
-        "gold": 10
+        "gold": 10,
+        "silver": 0
       }
     },
     {
@@ -381,28 +382,31 @@
       "type": "Mobile",
       "mobileVnum": 1000,
       "roomVnum": 1000,
-      "maxInWorld": 1
+      "maxInWorld": 1,
+      "maxInRoom": 1
     },
     {
       "type": "Object",
       "objectVnum": 1003,
-      "roomVnum": 1000
+      "roomVnum": 1000,
+      "maxInWorld": 1
     },
     {
       "type": "Put",
       "objectVnum": 1005,
-      "containerVnum": 1003
+      "containerVnum": 1003,
+      "maxInWorld": 1
     },
     {
       "type": "Give",
       "objectVnum": 1007,
-      "mobileVnum": 1000
+      "maxInWorld": 1
     },
     {
       "type": "Equip",
       "objectVnum": 1001,
-      "mobileVnum": 1000,
-      "wearLocation": "Wield"
+      "wearLocation": "Wield",
+      "maxInWorld": 1
     },
     {
       "type": "Door",
@@ -441,6 +445,7 @@
       "charFound": "You smile at $N.",
       "othersFound": "$n smiles at $N.",
       "victimFound": "$n smiles at you.",
+      "charNotFound": "You don't see them.",
       "charAuto": "You smile at yourself.",
       "othersAuto": "$n smiles at $mself."
     }

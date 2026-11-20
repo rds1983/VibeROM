@@ -5,7 +5,12 @@ public abstract record Reset(bool IfFlag)
     public abstract IReadOnlyList<string> Validate(string field);
 }
 
-public sealed record MobileReset(bool IfFlag, int MobileVnum, int RoomVnum, int MaxInWorld)
+public sealed record MobileReset(
+    bool IfFlag,
+    int MobileVnum,
+    int RoomVnum,
+    int MaxInWorld,
+    int MaxInRoom)
     : Reset(IfFlag)
 {
     public override IReadOnlyList<string> Validate(string field)
@@ -13,12 +18,17 @@ public sealed record MobileReset(bool IfFlag, int MobileVnum, int RoomVnum, int 
         var errors = new List<string>();
         if (MobileVnum < 0) errors.Add($"{field}.mobileVnum must not be negative.");
         if (RoomVnum < 0) errors.Add($"{field}.roomVnum must not be negative.");
-        if (MaxInWorld < 0) errors.Add($"{field}.maxInWorld must not be negative.");
+        if (MaxInWorld < -1) errors.Add($"{field}.maxInWorld must be -1 or greater.");
+        if (MaxInRoom < -1) errors.Add($"{field}.maxInRoom must be -1 or greater.");
         return errors;
     }
 }
 
-public sealed record ObjectReset(bool IfFlag, int ObjectVnum, int RoomVnum)
+public sealed record ObjectReset(
+    bool IfFlag,
+    int ObjectVnum,
+    int RoomVnum,
+    int MaxInWorld)
     : Reset(IfFlag)
 {
     public override IReadOnlyList<string> Validate(string field)
@@ -26,11 +36,16 @@ public sealed record ObjectReset(bool IfFlag, int ObjectVnum, int RoomVnum)
         var errors = new List<string>();
         if (ObjectVnum < 0) errors.Add($"{field}.objectVnum must not be negative.");
         if (RoomVnum < 0) errors.Add($"{field}.roomVnum must not be negative.");
+        if (MaxInWorld < -1) errors.Add($"{field}.maxInWorld must be -1 or greater.");
         return errors;
     }
 }
 
-public sealed record PutReset(bool IfFlag, int ObjectVnum, int ContainerVnum)
+public sealed record PutReset(
+    bool IfFlag,
+    int ObjectVnum,
+    int ContainerVnum,
+    int MaxInWorld)
     : Reset(IfFlag)
 {
     public override IReadOnlyList<string> Validate(string field)
@@ -38,31 +53,36 @@ public sealed record PutReset(bool IfFlag, int ObjectVnum, int ContainerVnum)
         var errors = new List<string>();
         if (ObjectVnum < 0) errors.Add($"{field}.objectVnum must not be negative.");
         if (ContainerVnum < 0) errors.Add($"{field}.containerVnum must not be negative.");
+        if (MaxInWorld < -1) errors.Add($"{field}.maxInWorld must be -1 or greater.");
         return errors;
     }
 }
 
-public sealed record GiveReset(bool IfFlag, int ObjectVnum, int MobileVnum)
+public sealed record GiveReset(bool IfFlag, int ObjectVnum, int MaxInWorld)
     : Reset(IfFlag)
 {
     public override IReadOnlyList<string> Validate(string field)
     {
         var errors = new List<string>();
         if (ObjectVnum < 0) errors.Add($"{field}.objectVnum must not be negative.");
-        if (MobileVnum < 0) errors.Add($"{field}.mobileVnum must not be negative.");
+        if (MaxInWorld < -1) errors.Add($"{field}.maxInWorld must be -1 or greater.");
         return errors;
     }
 }
 
-public sealed record EquipReset(bool IfFlag, int ObjectVnum, int MobileVnum, WearSlot WearLocation)
+public sealed record EquipReset(
+    bool IfFlag,
+    int ObjectVnum,
+    WearSlot WearLocation,
+    int MaxInWorld)
     : Reset(IfFlag)
 {
     public override IReadOnlyList<string> Validate(string field)
     {
         var errors = new List<string>();
         if (ObjectVnum < 0) errors.Add($"{field}.objectVnum must not be negative.");
-        if (MobileVnum < 0) errors.Add($"{field}.mobileVnum must not be negative.");
         if (WearLocation == WearSlot.None) errors.Add($"{field}.wearLocation must not be None.");
+        if (MaxInWorld < -1) errors.Add($"{field}.maxInWorld must be -1 or greater.");
         return errors;
     }
 }

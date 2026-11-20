@@ -25,10 +25,7 @@ public sealed record ObjectPrototype(
         DomainValidation.ValidateVnum(errors, "vnum", Vnum);
         DomainValidation.ValidateKeywords(errors, "keywords", Keywords);
 
-        if (string.IsNullOrWhiteSpace(Material))
-        {
-            errors.Add("material must not be empty.");
-        }
+        // ROM allows an empty material on objects such as donation pits.
 
         if (!Enum.IsDefined(ItemType))
         {
@@ -114,7 +111,7 @@ public sealed record ObjectPrototype(
 
             case ContainerData container:
                 if (container.Capacity < 0) errors.Add("container.capacity must not be negative.");
-                if (container.KeyVnum < 0) errors.Add("container.keyVnum must not be negative.");
+                if (container.KeyVnum < -1) errors.Add("container.keyVnum must be -1 or greater.");
                 DomainValidation.ValidateMask(errors, "container.flags", container.Flags, RomFlags.Container);
                 break;
 
@@ -133,7 +130,7 @@ public sealed record ObjectPrototype(
                 break;
 
             case MoneyData money:
-                if (money.Gold < 0) errors.Add("money.gold must not be negative.");
+                if (money.Gold < 0 || money.Silver < 0) errors.Add("money values must not be negative.");
                 break;
 
             case FurnitureData furniture:

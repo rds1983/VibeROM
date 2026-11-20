@@ -18,7 +18,7 @@ public sealed record ExitPrototype(
         }
 
         DomainValidation.ValidateVnum(errors, $"{field}.toRoom", ToRoomVnum);
-        DomainValidation.ValidateVnum(errors, $"{field}.keyVnum", KeyVnum);
+        if (KeyVnum < -1) errors.Add($"{field}.keyVnum must be -1 or greater.");
         DomainValidation.ValidateMask(errors, $"{field}.flags", Flags, RomFlags.Exit);
         return errors;
     }

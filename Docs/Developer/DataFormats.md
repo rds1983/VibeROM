@@ -143,7 +143,7 @@ loader (T014), not by the schema.
 | Field | Type | Required | Meaning |
 | --- | --- | --- | --- |
 | `keywords` | string | yes | Help keywords |
-| `level` | integer 0–100 | yes | Minimum level |
+| `level` | integer -1..100 | yes | Minimum level; `-1` means available to all |
 | `text` | string | yes | Help body, no `~` |
 
 ### Mobiles
@@ -203,7 +203,7 @@ Common fields for every item:
 | `keywords` | string | yes | Lookup keywords |
 | `shortDescription` | string | yes | "a long sword" |
 | `longDescription` | string | yes | Room line |
-| `material` | string | yes | Free-form material name |
+| `material` | string | yes | Free-form material name; may be empty |
 | `itemType` | enum | yes | `Weapon`, `Container`, … |
 | `extraFlags` | enum[] | no | `Glow`, `Hum`, `NoDrop`, … |
 | `wearFlags` | enum[] | no | `Take`, `Finger`, `Wield`, `Hold`, … |
@@ -241,7 +241,7 @@ object is rejected by `unevaluatedProperties`.
 | `DrinkContainer` | `drink` | `capacity`, `remaining`, `liquid`, `poisoned` |
 | `Fountain` | `fountain` | same shape as `drink` |
 | `Food` | `food` | `hours`, `poisoned` |
-| `Money` | `money` | `gold` |
+| `Money` | `money` | `gold`, `silver` |
 | `Furniture` | `furniture` | `maxPeople`, `flags` |
 | `Portal` | `portal` | `exitFlags`, `gateFlags`, `toRoomVnum` |
 | `Map` | `map` | `roomVnum` |
@@ -302,7 +302,7 @@ Example:
 | --- | --- | --- | --- |
 | `toRoom` | vnum | yes | Destination room (`0` = unlinked) |
 | `flags` | enum[] | no | `IsDoor`, `Closed`, `Locked`, `PickProof`, … |
-| `keyVnum` | vnum | no | Key object (`0` = none) |
+| `keyVnum` | vnum | no | Key object (`-1` or `0` = none) |
 | `description` | string | no | Door description |
 
 ### Resets
@@ -311,16 +311,17 @@ Resets are an ordered array; order is preserved and evaluated top to bottom.
 
 | `type` | Required fields | Meaning |
 | --- | --- | --- |
-| `Mobile` | `mobileVnum`, `roomVnum`, `maxInWorld` | Load a mobile |
-| `Object` | `objectVnum`, `roomVnum` | Load an object in a room |
-| `Put` | `objectVnum`, `containerVnum` | Put an object into a container |
-| `Give` | `objectVnum`, `mobileVnum` | Give an object to a mobile |
-| `Equip` | `objectVnum`, `mobileVnum`, `wearLocation` | Equip a mobile |
+| `Mobile` | `mobileVnum`, `roomVnum`, `maxInWorld`, `maxInRoom` | Load a mobile |
+| `Object` | `objectVnum`, `roomVnum`, `maxInWorld` | Load an object in a room |
+| `Put` | `objectVnum`, `containerVnum`, `maxInWorld` | Put an object into a container |
+| `Give` | `objectVnum`, `maxInWorld` | Give an object to a mobile |
+| `Equip` | `objectVnum`, `wearLocation`, `maxInWorld` | Equip a mobile |
 | `Door` | `roomVnum`, `direction`, `state` | Set a door state |
 | `Randomize` | `roomVnum`, `door` | Randomize a room door |
 
 Optional `ifFlag` (boolean, default `false`) preserves the legacy conditional
-marker. `state` is `Open`, `Closed` or `Locked`; `door` is an integer `0–6`.
+marker. `maxInWorld` and `maxInRoom` are counts; `-1` means no limit. `state` is
+`Open`, `Closed` or `Locked`; `door` is an integer `0–6`.
 
 ### Shops
 
@@ -356,10 +357,12 @@ The 22 allowed names are `BreathAny`, `BreathAcid`, `BreathFire`,
 | `charFound` | string | yes | To the actor, with target |
 | `othersFound` | string | yes | To the room, with target |
 | `victimFound` | string | yes | To the target |
+| `charNotFound` | string | yes | Actor's target was not found |
 | `charAuto` | string | yes | To the actor, targeting self |
 | `othersAuto` | string | yes | To the room, targeting self |
 
-All seven message fields may be empty strings.
+All eight message fields may be empty strings; ROM uses an empty field for a
+missing message.
 
 A complete area fixture lives at
 `VibeROM.Common.Tests/Fixtures/valid-area.json`.

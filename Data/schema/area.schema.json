@@ -102,6 +102,11 @@
       "minimum": 0,
       "maximum": 100
     },
+    "helpLevel": {
+      "type": "integer",
+      "minimum": -1,
+      "maximum": 100
+    },
     "actFlag": {
       "enum": [
         "Sentinel",
@@ -768,7 +773,7 @@
           "minLength": 1
         },
         "level": {
-          "$ref": "#/$defs/level"
+          "$ref": "#/$defs/helpLevel"
         },
         "text": {
           "type": "string"
@@ -955,7 +960,7 @@
         },
         "material": {
           "type": "string",
-          "minLength": 1
+          "description": "Free-form material name; may be empty."
         },
         "itemType": {
           "$ref": "#/$defs/itemType"
@@ -1052,7 +1057,9 @@
           }
         },
         "keyVnum": {
-          "$ref": "#/$defs/vnum"
+          "type": "integer",
+          "minimum": -1,
+          "maximum": 2147483647
         }
       }
     },
@@ -1135,9 +1142,13 @@
     "moneyData": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["gold"],
+      "required": ["gold", "silver"],
       "properties": {
         "gold": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "silver": {
           "type": "integer",
           "minimum": 0
         }
@@ -1552,7 +1563,9 @@
           }
         },
         "keyVnum": {
-          "$ref": "#/$defs/vnum"
+          "type": "integer",
+          "minimum": -1,
+          "maximum": 2147483647
         },
         "description": {
           "type": "string"
@@ -1642,7 +1655,7 @@
     "mobileReset": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "mobileVnum", "roomVnum", "maxInWorld"],
+      "required": ["type", "mobileVnum", "roomVnum", "maxInWorld", "maxInRoom"],
       "properties": {
         "type": {
           "const": "Mobile"
@@ -1658,14 +1671,18 @@
         },
         "maxInWorld": {
           "type": "integer",
-          "minimum": 0
+          "minimum": -1
+        },
+        "maxInRoom": {
+          "type": "integer",
+          "minimum": -1
         }
       }
     },
     "objectReset": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "objectVnum", "roomVnum"],
+      "required": ["type", "objectVnum", "roomVnum", "maxInWorld"],
       "properties": {
         "type": {
           "const": "Object"
@@ -1678,13 +1695,17 @@
         },
         "roomVnum": {
           "$ref": "#/$defs/vnum"
+        },
+        "maxInWorld": {
+          "type": "integer",
+          "minimum": -1
         }
       }
     },
     "putReset": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "objectVnum", "containerVnum"],
+      "required": ["type", "objectVnum", "containerVnum", "maxInWorld"],
       "properties": {
         "type": {
           "const": "Put"
@@ -1697,13 +1718,17 @@
         },
         "containerVnum": {
           "$ref": "#/$defs/vnum"
+        },
+        "maxInWorld": {
+          "type": "integer",
+          "minimum": -1
         }
       }
     },
     "giveReset": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "objectVnum", "mobileVnum"],
+      "required": ["type", "objectVnum", "maxInWorld"],
       "properties": {
         "type": {
           "const": "Give"
@@ -1714,15 +1739,16 @@
         "objectVnum": {
           "$ref": "#/$defs/vnum"
         },
-        "mobileVnum": {
-          "$ref": "#/$defs/vnum"
+        "maxInWorld": {
+          "type": "integer",
+          "minimum": -1
         }
       }
     },
     "equipReset": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "objectVnum", "mobileVnum", "wearLocation"],
+      "required": ["type", "objectVnum", "wearLocation", "maxInWorld"],
       "properties": {
         "type": {
           "const": "Equip"
@@ -1733,11 +1759,12 @@
         "objectVnum": {
           "$ref": "#/$defs/vnum"
         },
-        "mobileVnum": {
-          "$ref": "#/$defs/vnum"
-        },
         "wearLocation": {
           "$ref": "#/$defs/wearLocation"
+        },
+        "maxInWorld": {
+          "type": "integer",
+          "minimum": -1
         }
       }
     },
@@ -1876,6 +1903,7 @@
         "charFound",
         "othersFound",
         "victimFound",
+        "charNotFound",
         "charAuto",
         "othersAuto"
       ],
@@ -1897,6 +1925,9 @@
           "type": "string"
         },
         "victimFound": {
+          "type": "string"
+        },
+        "charNotFound": {
           "type": "string"
         },
         "charAuto": {
