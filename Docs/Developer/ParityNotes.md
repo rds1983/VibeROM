@@ -92,14 +92,13 @@ entries short and link to the code or task that owns them.
   the port stores `pbkdf2-sha256$iterations$salt$hash` so saves are portable and
   not brute-forceable with the same ease. Verification still uses a constant-
   time comparison.
-- **New characters are a baseline until T023.** Completing the new-name branch
-  creates a Human Warrior in `gameplay.startingRoomVnum`; race/class/stat
-  selection, outfit and starting skills belong to T023. The account (name,
-  password hash, email) is already final and saved.
 - **Bans come from configuration.** `gameplay.bannedSites` is a host-prefix list
   and `gameplay.bannedNames` an exact name list; ROM reads `siteban` and
   banned-name files. The behaviour at the prompt is the same, the storage is
   JSON config.
+- **Email confirmation is a port addition.** ROM 2.4b6 does not ask for an
+  email address during creation; the port keeps the account email in the JSON
+  save for administration.
 - **Reconnect closes the old session immediately.** ROM marks the old descriptor
   linkdead and resolves the duplicate at the next input. The port saves and
   detaches the old character before loading it for the new connection, so only
@@ -107,3 +106,23 @@ entries short and link to the code or task that owns them.
 - **Three wrong passwords disconnect.** ROM counts failures the same way but the
   threshold lives in `LoginService` as a simple constant until a configurable
   access-control task exists.
+
+## T023 - Character creation
+
+- **No stat rolling.** ROM 2.4b6's `nanny()` copies `pc_race_table[race].stats`
+  when the race is chosen and adds +3 to the class prime attribute at entry;
+  there is no `CON_ROLL_STATS` state. The port follows that exactly rather than
+  inventing rerolls.
+- **Race stats are stored in character stat order.** ROM's `pc_race_table`
+  arrays are strength, intelligence, wisdom, dexterity, constitution; the port
+  stores strength, dexterity, intelligence, wisdom, constitution and remaps the
+  three non-human rows. The resulting character stats are identical.
+- **The customize menu is deferred (T029).** Answering `Y` prints a notice and
+  uses the default package; `N` behaves like ROM. The default package, weapon
+  choice, outfit, map, title, prime bonus, train/practice and experience match
+  `CON_READ_MOTD`.
+- **Race help prints the race list.** ROM calls `do_help "race help"`; the help
+  command and its content arrive with T031/T062, so the login prompt repeats the
+  available races instead.
+- **The school room is configurable.** ROM hard-codes `ROOM_VNUM_SCHOOL` (3700);
+  the port uses `gameplay.startingRoomVnum`, which defaults to 3700.

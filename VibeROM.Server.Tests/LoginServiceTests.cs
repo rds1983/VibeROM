@@ -40,7 +40,20 @@ public sealed class LoginServiceTests
         await SendLineAsync(client.GetStream(), "a@example.com");
         await ReadUntilAsync(client.GetStream(), "correct");
         await SendLineAsync(client.GetStream(), "y");
-        await ReadUntilAsync(client.GetStream(), "Welcome, Alander");
+        await ReadUntilAsync(client.GetStream(), "What is your race");
+        await SendLineAsync(client.GetStream(), "human");
+        await ReadUntilAsync(client.GetStream(), "What is your sex");
+        await SendLineAsync(client.GetStream(), "m");
+        await ReadUntilAsync(client.GetStream(), "Select a class");
+        await SendLineAsync(client.GetStream(), "warrior");
+        await ReadUntilAsync(client.GetStream(), "Which alignment");
+        await SendLineAsync(client.GetStream(), "n");
+        await ReadUntilAsync(client.GetStream(), "Customize");
+        await SendLineAsync(client.GetStream(), "n");
+        await ReadUntilAsync(client.GetStream(), "pick a weapon");
+        await SendLineAsync(client.GetStream(), "sword");
+        var welcome = await ReadUntilAsync(client.GetStream(), "Welcome, Alander");
+        Assert.Contains("equipped by Mota", welcome, StringComparison.Ordinal);
 
         var descriptor = Assert.Single(server.Connections);
         Assert.Equal(ConnectionState.Playing, descriptor.State);
@@ -48,6 +61,23 @@ public sealed class LoginServiceTests
         var loaded = store.Load("Alander", CreateWorld());
         Assert.Equal("a@example.com", loaded.Player!.Email);
         Assert.True(PasswordHasher.IsHash(loaded.Player.PasswordHash));
+        Assert.Equal(Race.Human, loaded.Race);
+        Assert.Equal(PlayerClass.Warrior, loaded.Class);
+        Assert.Equal(Sex.Male, loaded.Sex);
+        Assert.Equal(16, loaded.GetPermanentStat(0));
+        Assert.Equal(1, loaded.Level);
+        Assert.Equal(1000, loaded.Experience);
+        Assert.Equal(3, loaded.Train);
+        Assert.Equal(5, loaded.Practice);
+        Assert.Equal("the Swordpupil", loaded.Player.Title);
+        Assert.Equal(40, loaded.Player.GetSkill("sword"));
+        Assert.Equal(50, loaded.Player.GetSkill("recall"));
+        Assert.Equal(CharacterCreation.SchoolRoomVnum, loaded.InRoom!.Prototype.Vnum);
+        Assert.Equal(3716, loaded.Equipment[WearSlot.Light].Vnum);
+        Assert.Equal(3703, loaded.Equipment[WearSlot.Body].Vnum);
+        Assert.Equal(3702, loaded.Equipment[WearSlot.Wield].Vnum);
+        Assert.Equal(3704, loaded.Equipment[WearSlot.Shield].Vnum);
+        Assert.Contains(loaded.Inventory, item => item.Vnum == CharacterCreation.SchoolMapVnum);
     }
 
     [Fact]
@@ -78,11 +108,116 @@ public sealed class LoginServiceTests
         await SendLineAsync(client.GetStream(), "a@example.com");
         await ReadUntilAsync(client.GetStream(), "correct");
         await SendLineAsync(client.GetStream(), "y");
+        await ReadUntilAsync(client.GetStream(), "What is your race");
+        await SendLineAsync(client.GetStream(), "human");
+        await ReadUntilAsync(client.GetStream(), "What is your sex");
+        await SendLineAsync(client.GetStream(), "m");
+        await ReadUntilAsync(client.GetStream(), "Select a class");
+        await SendLineAsync(client.GetStream(), "warrior");
+        await ReadUntilAsync(client.GetStream(), "Which alignment");
+        await SendLineAsync(client.GetStream(), "n");
+        await ReadUntilAsync(client.GetStream(), "Customize");
+        await SendLineAsync(client.GetStream(), "n");
+        await ReadUntilAsync(client.GetStream(), "pick a weapon");
+        await SendLineAsync(client.GetStream(), "sword");
         await ReadUntilAsync(client.GetStream(), "Welcome, Alander");
 
         var loaded = store.Load("Alander", CreateWorld());
         Assert.True(PasswordHasher.Verify("correct", loaded.Player!.PasswordHash));
         Assert.False(PasswordHasher.Verify("secret", loaded.Player.PasswordHash));
+    }
+
+    [Fact]
+    public async Task InvalidCreationInputRepromptsSafely()
+    {
+        using var temp = new TempDirectory();
+        await using var server = CreateServer();
+        var store = new PlayerStore(temp.Path, SchemaDirectory);
+        using var login = new LoginService(server, CreateWorld(), store, new GameplayOptions());
+        await server.StartAsync();
+        using var client = new TcpClient();
+        await client.ConnectAsync(IPAddress.Loopback, server.Port);
+        await ReadUntilAsync(client.GetStream(), "By what name");
+        await SendLineAsync(client.GetStream(), "Alander");
+        await ReadUntilAsync(client.GetStream(), "Did I get that right");
+        await SendLineAsync(client.GetStream(), "y");
+        await ReadUntilAsync(client.GetStream(), "Choose a password");
+        await SendLineAsync(client.GetStream(), "secret");
+        await ReadUntilAsync(client.GetStream(), "again");
+        await SendLineAsync(client.GetStream(), "secret");
+        await ReadUntilAsync(client.GetStream(), "Email address");
+        await SendLineAsync(client.GetStream(), "a@example.com");
+        await ReadUntilAsync(client.GetStream(), "correct");
+        await SendLineAsync(client.GetStream(), "y");
+
+        await ReadUntilAsync(client.GetStream(), "What is your race");
+        await SendLineAsync(client.GetStream(), "unicorn");
+        Assert.Contains(
+            "not a valid race",
+            await ReadUntilAsync(client.GetStream(), "not a valid race"),
+            StringComparison.Ordinal);
+        await SendLineAsync(client.GetStream(), "elf");
+        await ReadUntilAsync(client.GetStream(), "What is your sex");
+
+        await SendLineAsync(client.GetStream(), "x");
+        Assert.Contains(
+            "not a sex",
+            await ReadUntilAsync(client.GetStream(), "not a sex"),
+            StringComparison.Ordinal);
+        await SendLineAsync(client.GetStream(), "f");
+        await ReadUntilAsync(client.GetStream(), "Select a class");
+
+        await SendLineAsync(client.GetStream(), "paladin");
+        Assert.Contains(
+            "not a class",
+            await ReadUntilAsync(client.GetStream(), "not a class"),
+            StringComparison.Ordinal);
+        await SendLineAsync(client.GetStream(), "mage");
+        await ReadUntilAsync(client.GetStream(), "Which alignment");
+
+        await SendLineAsync(client.GetStream(), "x");
+        Assert.Contains(
+            "not a valid alignment",
+            await ReadUntilAsync(client.GetStream(), "not a valid alignment"),
+            StringComparison.Ordinal);
+        await SendLineAsync(client.GetStream(), "g");
+        await ReadUntilAsync(client.GetStream(), "Customize");
+
+        await SendLineAsync(client.GetStream(), "maybe");
+        Assert.Contains(
+            "answer (Y/N)",
+            await ReadUntilAsync(client.GetStream(), "answer (Y/N)"),
+            StringComparison.Ordinal);
+        await SendLineAsync(client.GetStream(), "y");
+        Assert.Contains(
+            "not available",
+            await ReadUntilAsync(client.GetStream(), "not available"),
+            StringComparison.Ordinal);
+
+        await SendLineAsync(client.GetStream(), "sword");
+        Assert.Contains(
+            "not a valid selection",
+            await ReadUntilAsync(client.GetStream(), "not a valid selection"),
+            StringComparison.Ordinal);
+        await SendLineAsync(client.GetStream(), "dagger");
+        await ReadUntilAsync(client.GetStream(), "Welcome, Alander");
+
+        var loaded = store.Load("Alander", CreateWorld());
+        Assert.Equal(Race.Elf, loaded.Race);
+        Assert.Equal(PlayerClass.Mage, loaded.Class);
+        Assert.Equal(Sex.Female, loaded.Sex);
+        Assert.Equal(750, loaded.Alignment);
+        Assert.Equal(12, loaded.GetPermanentStat(0));
+        Assert.Equal(15, loaded.GetPermanentStat(1));
+        Assert.Equal(17, loaded.GetPermanentStat(2));
+        Assert.Equal(13, loaded.GetPermanentStat(3));
+        Assert.Equal(11, loaded.GetPermanentStat(4));
+        Assert.Equal("the Apprentice of Magic", loaded.Player!.Title);
+        Assert.Equal(40, loaded.Player.GetSkill("dagger"));
+        Assert.Equal(3716, loaded.Equipment[WearSlot.Light].Vnum);
+        Assert.Equal(3703, loaded.Equipment[WearSlot.Body].Vnum);
+        Assert.Equal(3701, loaded.Equipment[WearSlot.Wield].Vnum);
+        Assert.Equal(3704, loaded.Equipment[WearSlot.Shield].Vnum);
     }
 
     [Fact]
@@ -281,7 +416,7 @@ public sealed class LoginServiceTests
 
     private static World CreateWorld()
     {
-        var room = new RoomPrototype(
+        var temple = new RoomPrototype(
             3001,
             "The Temple",
             "A quiet temple.",
@@ -292,24 +427,128 @@ public sealed class LoginServiceTests
             0,
             new Dictionary<Direction, ExitPrototype>(),
             []);
+        var school = new RoomPrototype(
+            CharacterCreation.SchoolRoomVnum,
+            "The Mud School",
+            "A dusty school room.",
+            0,
+            Sector.Inside,
+            100,
+            100,
+            0,
+            new Dictionary<Direction, ExitPrototype>(),
+            []);
         var area = new AreaData(
             "Login Test",
             "tests",
-            3001,
-            3099,
+            3000,
+            3799,
             9,
             "tests",
             "login.are",
             [],
             [],
-            [],
-            [room],
+            CreateSchoolObjects(),
+            [temple, school],
             [],
             [],
             [],
             []);
         return new World([area]);
     }
+
+    private static IReadOnlyList<ObjectPrototype> CreateSchoolObjects() =>
+    [
+        Weapon(3700, WeaponClass.Mace, "mace"),
+        Weapon(3701, WeaponClass.Dagger, "dagger"),
+        Weapon(3702, WeaponClass.Sword, "sword"),
+        Armor(3703, WearSlot.Body, "vest"),
+        Armor(3704, WearSlot.Shield, "shield"),
+        Light(3716, "banner"),
+        Weapon(3717, WeaponClass.Spear, "spear"),
+        Weapon(3718, WeaponClass.Spear, "staff", RomFlags.WeaponSpecial.Get("TwoHands").Bit),
+        Weapon(3719, WeaponClass.Axe, "axe"),
+        Weapon(3720, WeaponClass.Flail, "flail"),
+        Weapon(3721, WeaponClass.Whip, "whip"),
+        Weapon(3722, WeaponClass.Polearm, "polearm", RomFlags.WeaponSpecial.Get("TwoHands").Bit),
+        Map(CharacterCreation.SchoolMapVnum)
+    ];
+
+    private static ObjectPrototype Weapon(
+        int vnum,
+        WeaponClass weaponClass,
+        string name,
+        int specialFlags = 0) =>
+        new(
+            vnum,
+            name,
+            $"a {name}",
+            $"A {name} lies here.",
+            "steel",
+            ItemType.Weapon,
+            0,
+            RomFlags.Wear.GetMask(["Take", "Wield"]),
+            1,
+            30,
+            100,
+            100,
+            new WeaponData(weaponClass, 1, 6, "Slash", specialFlags),
+            [],
+            []);
+
+    private static ObjectPrototype Armor(int vnum, WearSlot slot, string name) =>
+        new(
+            vnum,
+            name,
+            $"a {name}",
+            $"A {name} lies here.",
+            "cloth",
+            ItemType.Armor,
+            0,
+            RomFlags.Wear.GetMask(["Take", slot.ToString()]),
+            1,
+            10,
+            50,
+            100,
+            new ArmorData(new ArmorValues(1, 1, 1, 1)),
+            [],
+            []);
+
+    private static ObjectPrototype Light(int vnum, string name) =>
+        new(
+            vnum,
+            name,
+            $"a {name}",
+            $"A {name} lies here.",
+            "cloth",
+            ItemType.Light,
+            0,
+            RomFlags.Wear.GetMask(["Take"]),
+            1,
+            10,
+            50,
+            100,
+            new LightData(0),
+            [],
+            []);
+
+    private static ObjectPrototype Map(int vnum) =>
+        new(
+            vnum,
+            "map",
+            "a map",
+            "A map lies here.",
+            "paper",
+            ItemType.Map,
+            0,
+            RomFlags.Wear.GetMask(["Take"]),
+            1,
+            10,
+            50,
+            100,
+            new MapData(1),
+            [],
+            []);
 
     private static void SavePlayer(PlayerStore store, string name, string password)
     {

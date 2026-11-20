@@ -81,7 +81,10 @@ Generated from the ROM source and checked by `RomTables.Validate()`:
   `0..60` and uses the female column only for `Sex.Female`.
 - `ClassDefinitions`, `PcRaceDefinitions`, `WeaponDefinitions`,
   `LiquidDefinitions`, `AttackTypeDefinitions`, `WiznetDefinitions`,
-  `SpecialDefinitions`.
+  `SpecialDefinitions`. `PcRaceDefinitions.BaseStats`/`MaxStats` use character
+  stat order (strength, dexterity, intelligence, wisdom, constitution); the
+  C table's strength/intelligence/wisdom/dexterity/constitution order is
+  remapped when the table is generated.
 
 `FindSkill` and `FindGroup` reproduce ROM's prefix lookup (`skill_lookup`,
 `group_lookup`): the first table entry whose name starts with the requested

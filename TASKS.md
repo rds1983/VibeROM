@@ -52,13 +52,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 1 — Server, login and interaction
 
-### [ ] T023 — Character creation
-- Depends on: T022, T005
-- Race/class/sex selection, stat rolling and reroll limits, weapon choice,
-  starting groups/skills, starting room, outfit and initial affects.
-- **Done when:** created characters match the C defaults for every race/class
-  combination (table-driven test), and invalid input re-prompts safely.
-
 ### [ ] T024 — Game loop and pulses
 - Depends on: T021
 - 250 ms pulse with named tick counters; drive descriptor flushing, character,
@@ -102,6 +95,14 @@ Last reviewed: 2026-11-20
   with the player.
 - **Done when:** preferences persist across save/load and each toggle has a
   behavioural test.
+
+### [ ] T029 — Character customization (point-buy)
+- Depends on: T023
+- ROM's "Do you wish to customize this character?" menu: `list`, `learned`,
+  `premise`, `add`, `drop`, `info`, `help` and `done`, with creation points,
+  class/race multipliers and experience-per-level accounting.
+- **Done when:** the menu can spend and refund points like `parse_gen_groups`,
+  invalid choices re-prompt, and `exp_per_level` matches the C formula.
 
 ---
 
@@ -512,3 +513,10 @@ Last reviewed: 2026-11-20
   banned sites/names, wizlock, max-online, immediate reconnect replacement and
   login-time save/cleanup; end-to-end login tests for every branch and a live
   server check.
+- **T023 — Character creation** (2026-11-20)
+  Race/sex/class/alignment selection with ROM prefix lookups, fixed racial
+  stats and +3 prime attribute, race affects and bonus skills, default group
+  package, weapon choice, school outfit (two-handed aware), map, starting room,
+  title and starting vitals; table-driven tests for all 16 race/class
+  combinations, invalid-input re-prompts and player-facing Getting Started,
+  Races and Classes pages.

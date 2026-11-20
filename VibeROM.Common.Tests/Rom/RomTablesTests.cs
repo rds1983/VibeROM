@@ -34,6 +34,23 @@ public sealed class RomTablesTests
     }
 
     [Fact]
+    public void PcRaceStats_UseCharacterStatOrder()
+    {
+        // ROM pc_race_table order is STR, INT, WIS, DEX, CON; the port stores
+        // stats as STR, DEX, INT, WIS, CON.
+        var elf = RomTables.PcRaceDefinitions.Single(race => race.Race == Race.Elf);
+        var dwarf = RomTables.PcRaceDefinitions.Single(race => race.Race == Race.Dwarf);
+        var giant = RomTables.PcRaceDefinitions.Single(race => race.Race == Race.Giant);
+
+        Assert.Equal([12, 15, 14, 13, 11], elf.BaseStats);
+        Assert.Equal([16, 21, 18, 20, 15], elf.MaxStats);
+        Assert.Equal([14, 10, 12, 14, 15], dwarf.BaseStats);
+        Assert.Equal([20, 14, 16, 19, 21], dwarf.MaxStats);
+        Assert.Equal([16, 11, 11, 13, 14], giant.BaseStats);
+        Assert.Equal([22, 15, 15, 18, 20], giant.MaxStats);
+    }
+
+    [Fact]
     public void RaceDefinitions_HaveExpectedFlags()
     {
         var human = RomTables.RaceDefinitions.Single(race => race.Race == Race.Human);

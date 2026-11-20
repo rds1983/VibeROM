@@ -1,4 +1,5 @@
 using System.Net;
+using VibeROM.Common.Domain;
 
 namespace VibeROM.Common.Configuration;
 
@@ -203,7 +204,7 @@ public sealed record GameplayOptions
 
     public int MaxOnline { get; init; }
 
-    public int StartingRoomVnum { get; init; } = 3001;
+    public int StartingRoomVnum { get; init; } = CharacterCreation.SchoolRoomVnum;
 
     public IReadOnlyList<string> BannedSites { get; init; } = [];
 

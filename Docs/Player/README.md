@@ -4,16 +4,24 @@ Guides for people playing VibeROM: connecting, character creation, commands,
 classes, races, skills, magic, combat, equipment, economy, communication and
 death.
 
-This section is being written alongside the port. Until the game is playable,
-the authoritative record of player-facing work is [TASKS.md](../../TASKS.md)
-(Milestones 1–5 and T076).
+## Available now
 
-Planned pages:
+- [Getting started](GettingStarted.md) — connect, create a character and
+  understand the starting package.
+- [Races](Races.md) — the four playable races, their stats, traits and costs.
+- [Classes](Classes.md) — prime attributes, weapons, starting skills and
+  titles.
 
-- `GettingStarted.md` — connect, create a character, first steps
+## Planned pages
+
+These are being written as the matching game systems are ported:
+
 - `Commands.md` — full command reference
-- `Classes.md`, `Races.md`, `Skills.md`, `Magic.md`
+- `Skills.md`, `Magic.md`
 - `Combat.md`, `Equipment.md`, `Economy.md`
 - `Communication.md`, `Death.md`, `Clans.md`, `Rules.md`
+
+Until a system is ported, the authoritative record of player-facing work is
+[TASKS.md](../../TASKS.md) (Milestones 1–5 and T076).
 
 See the [project README](../../README.md) for an overview.

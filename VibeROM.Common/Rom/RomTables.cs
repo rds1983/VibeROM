@@ -92,12 +92,19 @@ public static partial class RomTables
         new(PlayerClass.Warrior, "War", "Strength", 3702, [3022, 9633], 75, 20, -10, 11, 15, false, "warrior basics", "warrior default")
     ];
 
+    /// <summary>
+    /// Playable race creation data. <c>BaseStats</c> and <c>MaxStats</c> are in
+    /// character stat order: strength, dexterity, intelligence, wisdom,
+    /// constitution. ROM's <c>pc_race_table</c> stores them as strength,
+    /// intelligence, wisdom, dexterity, constitution, so the values below are
+    /// remapped from the C table.
+    /// </summary>
     public static IReadOnlyList<PcRaceDefinition> PcRaceDefinitions { get; } =
     [
         new(Race.Human, "Human", 0, [100, 100, 100, 100], [], [13, 13, 13, 13, 13], [18, 18, 18, 18, 18], Size.Medium),
-        new(Race.Elf, " Elf ", 5, [100, 125, 100, 120], ["sneak", "hide"], [12, 14, 13, 15, 11], [16, 20, 18, 21, 15], Size.Small),
-        new(Race.Dwarf, "Dwarf", 8, [150, 100, 125, 100], ["berserk"], [14, 12, 14, 10, 15], [20, 16, 19, 14, 21], Size.Medium),
-        new(Race.Giant, "Giant", 6, [200, 150, 150, 105], ["bash", "fast healing"], [16, 11, 13, 11, 14], [22, 15, 18, 15, 20], Size.Large)
+        new(Race.Elf, " Elf ", 5, [100, 125, 100, 120], ["sneak", "hide"], [12, 15, 14, 13, 11], [16, 21, 18, 20, 15], Size.Small),
+        new(Race.Dwarf, "Dwarf", 8, [150, 100, 125, 100], ["berserk"], [14, 10, 12, 14, 15], [20, 14, 16, 19, 21], Size.Medium),
+        new(Race.Giant, "Giant", 6, [200, 150, 150, 105], ["bash", "fast healing"], [16, 11, 11, 13, 14], [22, 15, 15, 18, 20], Size.Large)
     ];
 
     public static IReadOnlyList<WeaponDefinition> WeaponDefinitions { get; } =

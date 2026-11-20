@@ -157,7 +157,7 @@ public sealed class LoginService : IDisposable
             case ConnectionState.ConfirmNewEmail:
                 if (IsYes(value))
                 {
-                    CompleteNewPlayer(descriptor, context);
+                    BeginRaceSelection(descriptor);
                 }
                 else if (IsNo(value))
                 {
@@ -169,6 +169,30 @@ public sealed class LoginService : IDisposable
                     _ = _server.SendAsync(descriptor, "Please answer yes or no (y/n): ");
                 }
 
+                break;
+
+            case ConnectionState.GetNewRace:
+                HandleNewRace(descriptor, context, value);
+                break;
+
+            case ConnectionState.GetNewSex:
+                HandleNewSex(descriptor, context, value);
+                break;
+
+            case ConnectionState.GetNewClass:
+                HandleNewClass(descriptor, context, value);
+                break;
+
+            case ConnectionState.GetAlignment:
+                HandleAlignment(descriptor, context, value);
+                break;
+
+            case ConnectionState.DefaultChoice:
+                HandleDefaultChoice(descriptor, context, value);
+                break;
+
+            case ConnectionState.PickWeapon:
+                HandleWeaponChoice(descriptor, context, value);
                 break;
         }
     }
@@ -194,7 +218,6 @@ public sealed class LoginService : IDisposable
         context.Name = name;
         if (_store.Exists(name))
         {
-            context.IsNew = false;
             descriptor.State = ConnectionState.GetOldPassword;
             _ = _server.SendAsync(descriptor, "Password: ");
             return;
@@ -214,10 +237,175 @@ public sealed class LoginService : IDisposable
             return;
         }
 
-        context.IsNew = true;
         descriptor.State = ConnectionState.ConfirmNewName;
         _ = _server.SendAsync(descriptor, $"Did I get that right, {name}? (y/n): ");
     }
+
+    private void BeginRaceSelection(Descriptor descriptor)
+    {
+        descriptor.State = ConnectionState.GetNewRace;
+        _ = _server.SendAsync(descriptor, RacePrompt());
+    }
+
+    private static string RacePrompt() =>
+        "The following races are available:\r\n  "
+        + string.Join(' ', CharacterCreation.RaceNames)
+        + "\r\nWhat is your race (help for more information)? ";
+
+    private static string RaceRetryPrompt() =>
+        "The following races are available:\r\n  "
+        + string.Join(' ', CharacterCreation.RaceNames)
+        + "\r\nWhat is your race? (help for more information) ";
+
+    private void HandleNewRace(Descriptor descriptor, LoginContext context, string value)
+    {
+        if (value.Equals("help", StringComparison.OrdinalIgnoreCase)
+            || value.StartsWith("help ", StringComparison.OrdinalIgnoreCase))
+        {
+            _ = _server.SendAsync(descriptor, RaceRetryPrompt());
+            return;
+        }
+
+        if (!CharacterCreation.TryLookupRace(value, out var race))
+        {
+            _ = _server.SendAsync(
+                descriptor,
+                "That is not a valid race.\r\n" + RaceRetryPrompt());
+            return;
+        }
+
+        context.Race = race;
+        descriptor.State = ConnectionState.GetNewSex;
+        _ = _server.SendAsync(descriptor, "What is your sex (M/F)? ");
+    }
+
+    private void HandleNewSex(Descriptor descriptor, LoginContext context, string value)
+    {
+        var sex = value.Length == 0 ? '\0' : char.ToUpperInvariant(value[0]);
+        switch (sex)
+        {
+            case 'M':
+                context.Sex = Sex.Male;
+                break;
+
+            case 'F':
+                context.Sex = Sex.Female;
+                break;
+
+            default:
+                _ = _server.SendAsync(descriptor, "That's not a sex.\r\nWhat IS your sex? ");
+                return;
+        }
+
+        descriptor.State = ConnectionState.GetNewClass;
+        _ = _server.SendAsync(
+            descriptor,
+            $"Select a class [{string.Join(' ', CharacterCreation.ClassNames)}]: ");
+    }
+
+    private void HandleNewClass(Descriptor descriptor, LoginContext context, string value)
+    {
+        if (!CharacterCreation.TryLookupClass(value, out var playerClass))
+        {
+            _ = _server.SendAsync(descriptor, "That's not a class.\r\nWhat IS your class? ");
+            return;
+        }
+
+        context.Class = playerClass;
+        descriptor.State = ConnectionState.GetAlignment;
+        _ = _server.SendAsync(
+            descriptor,
+            "\r\nYou may be good, neutral, or evil.\r\nWhich alignment (G/N/E)? ");
+    }
+
+    private void HandleAlignment(Descriptor descriptor, LoginContext context, string value)
+    {
+        var alignment = value.Length == 0 ? '\0' : char.ToUpperInvariant(value[0]);
+        context.Alignment = alignment switch
+        {
+            'G' => 750,
+            'N' => 0,
+            'E' => -750,
+            _ => int.MinValue
+        };
+
+        if (context.Alignment == int.MinValue)
+        {
+            _ = _server.SendAsync(
+                descriptor,
+                "That's not a valid alignment.\r\nWhich alignment (G/N/E)? ");
+            return;
+        }
+
+        descriptor.State = ConnectionState.DefaultChoice;
+        _ = _server.SendAsync(
+            descriptor,
+            "\r\nDo you wish to customize this character?\r\n"
+            + "Customization takes time, but allows a wider range of skills and abilities.\r\n"
+            + "Customize (Y/N)? ");
+    }
+
+    private void HandleDefaultChoice(Descriptor descriptor, LoginContext context, string value)
+    {
+        if (IsYes(value))
+        {
+            // ROM opens the point-buy menu here. It is tracked by T029; until
+            // then Y is accepted but the default package is used.
+            _ = _server.SendAsync(
+                descriptor,
+                "Customization is not available yet; using the default package.\r\n");
+        }
+        else if (!IsNo(value))
+        {
+            _ = _server.SendAsync(descriptor, "Please answer (Y/N)? ");
+            return;
+        }
+
+        BeginWeaponChoice(descriptor, context);
+    }
+
+    private void BeginWeaponChoice(Descriptor descriptor, LoginContext context)
+    {
+        var choices = CharacterCreation.DefaultWeaponChoices(context.Race, context.Class);
+        if (choices.Count == 0)
+        {
+            Logger.Error(
+                "No weapon choices for race {Race} class {Class}.",
+                context.Race,
+                context.Class);
+            _ = _server.SendAsync(descriptor, "No weapon choices are available.\r\n");
+            _server.DisconnectAfterFlush(descriptor);
+            return;
+        }
+
+        descriptor.State = ConnectionState.PickWeapon;
+        _ = _server.SendAsync(
+            descriptor,
+            "Please pick a weapon from the following choices:\r\n"
+            + WeaponChoices(choices)
+            + "\r\nYour choice? ");
+    }
+
+    private void HandleWeaponChoice(Descriptor descriptor, LoginContext context, string value)
+    {
+        var choices = CharacterCreation.DefaultWeaponChoices(context.Race, context.Class);
+        var weapon = CharacterCreation.FindWeapon(value);
+        if (weapon is null || choices.All(choice => choice.Name != weapon.Name))
+        {
+            _ = _server.SendAsync(
+                descriptor,
+                "That's not a valid selection. Choices are:\r\n"
+                + WeaponChoices(choices)
+                + "\r\nYour choice? ");
+            return;
+        }
+
+        context.Weapon = weapon.Name;
+        CompleteNewPlayer(descriptor, context);
+    }
+
+    private static string WeaponChoices(IReadOnlyList<WeaponDefinition> choices) =>
+        string.Join(' ', choices.Select(choice => choice.Name)) + " ";
 
     private void HandleOldPassword(Descriptor descriptor, LoginContext context, string password)
     {
@@ -299,24 +487,21 @@ public sealed class LoginService : IDisposable
             var character = _world.CreatePlayer(
                 player,
                 name,
-                Race.Human,
-                PlayerClass.Warrior,
-                Sex.Neutral);
-            character.Level = 1;
-            character.Trust = 1;
-            character.Position = Position.Standing;
-            character.StartPosition = Position.Standing;
-            character.DefaultPosition = Position.Standing;
-
-            var room = _world.TryGetRoom(_options.StartingRoomVnum, out var startingRoom)
-                ? startingRoom
-                : _world.Rooms.Values.FirstOrDefault();
-            if (room is not null)
+                context.Race,
+                context.Class,
+                context.Sex);
+            character.Alignment = context.Alignment;
+            CharacterCreation.ApplyRace(character);
+            CharacterCreation.ApplyDefaultPackage(character);
+            if (!CharacterCreation.TryChooseWeapon(character, context.Weapon!, out _))
             {
-                _world.MoveCharacterToRoom(character, room);
+                throw new InvalidOperationException(
+                    $"Weapon '{context.Weapon}' was not available for {name}.");
             }
 
+            CharacterCreation.Complete(_world, character, _options.StartingRoomVnum);
             _store.Save(character);
+            _ = _server.SendAsync(descriptor, "You have been equipped by Mota.\r\n");
             Attach(descriptor, character);
         }
         catch (Exception exception) when (exception is IOException or DataFormatException or WorldDataException)
@@ -405,8 +590,16 @@ public sealed class LoginService : IDisposable
 
         public string? Email { get; set; }
 
-        public bool IsNew { get; set; }
-
         public int PasswordAttempts { get; set; }
+
+        public Race Race { get; set; } = Race.Human;
+
+        public Sex Sex { get; set; } = Sex.Neutral;
+
+        public PlayerClass Class { get; set; }
+
+        public int Alignment { get; set; }
+
+        public string? Weapon { get; set; }
     }
 }
