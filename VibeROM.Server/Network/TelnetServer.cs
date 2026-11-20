@@ -32,6 +32,10 @@ public sealed class TelnetServer : IAsyncDisposable
 
     public event Action<Descriptor, string>? LineReceived;
 
+    public event Action<Descriptor>? ConnectionOpened;
+
+    public event Action<Descriptor>? ConnectionClosed;
+
     public IReadOnlyCollection<Descriptor> Connections
     {
         get
@@ -151,7 +155,7 @@ public sealed class TelnetServer : IAsyncDisposable
                     continue;
                 }
 
-                session = new ClientSession(client, _options, HandleLine);
+                session = new ClientSession(client, _options, HandleLine, HandleOpened);
                 _sessions.Add(session);
             }
 
@@ -160,10 +164,65 @@ public sealed class TelnetServer : IAsyncDisposable
         }
     }
 
+    public Task SendAsync(Descriptor descriptor, string text)
+    {
+        ClientSession? session;
+        lock (_gate)
+        {
+            session = _sessions.FirstOrDefault(candidate => candidate.Descriptor == descriptor);
+        }
+
+        return session?.SendTextAsync(text) ?? Task.CompletedTask;
+    }
+
+    public void Disconnect(Descriptor descriptor)
+    {
+        ClientSession? session;
+        lock (_gate)
+        {
+            session = _sessions.FirstOrDefault(candidate => candidate.Descriptor == descriptor);
+        }
+
+        session?.Stop();
+    }
+
+    public void DisconnectAfterFlush(Descriptor descriptor)
+    {
+        ClientSession? session;
+        lock (_gate)
+        {
+            session = _sessions.FirstOrDefault(candidate => candidate.Descriptor == descriptor);
+        }
+
+        if (session is not null)
+        {
+            _ = session.CloseAfterOutputAsync();
+        }
+    }
+
+    private void HandleOpened(Descriptor descriptor)
+    {
+        try
+        {
+            ConnectionOpened?.Invoke(descriptor);
+        }
+        catch (Exception exception)
+        {
+            Logger.Warn(exception, "Connection-open handler failed for {Host}.", descriptor.Host);
+        }
+    }
+
     private void HandleLine(Descriptor descriptor, string line)
     {
         Logger.Debug("Input from {Host}: {Line}", descriptor.Host, Colour.Strip(line));
-        LineReceived?.Invoke(descriptor, line);
+        try
+        {
+            LineReceived?.Invoke(descriptor, line);
+        }
+        catch (Exception exception)
+        {
+            Logger.Error(exception, "Line handler failed for {Host}.", descriptor.Host);
+        }
     }
 
     private async Task RunSessionAsync(ClientSession session)
@@ -180,6 +239,14 @@ public sealed class TelnetServer : IAsyncDisposable
             }
 
             Logger.Info("Disconnected {Host}", session.Descriptor.Host);
+            try
+            {
+                ConnectionClosed?.Invoke(session.Descriptor);
+            }
+            catch (Exception exception)
+            {
+                Logger.Warn(exception, "Connection-close handler failed for {Host}.", session.Descriptor.Host);
+            }
         }
     }
 

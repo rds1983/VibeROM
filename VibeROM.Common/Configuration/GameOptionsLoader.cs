@@ -25,6 +25,11 @@ public static class GameOptionsEnvironment
     public const string LoggingFilePrefix = "VIBEROM_LOGGING__FILE_PREFIX";
     public const string LoggingMaxArchiveFiles = "VIBEROM_LOGGING__MAX_ARCHIVE_FILES";
     public const string GameAutosaveIntervalSeconds = "VIBEROM_GAMEPLAY__AUTOSAVE_INTERVAL_SECONDS";
+    public const string GameWizlock = "VIBEROM_GAMEPLAY__WIZLOCK";
+    public const string GameMaxOnline = "VIBEROM_GAMEPLAY__MAX_ONLINE";
+    public const string GameStartingRoomVnum = "VIBEROM_GAMEPLAY__STARTING_ROOM_VNUM";
+    public const string GameBannedSites = "VIBEROM_GAMEPLAY__BANNED_SITES";
+    public const string GameBannedNames = "VIBEROM_GAMEPLAY__BANNED_NAMES";
 }
 
 /// <summary>A validated configuration plus the location it was loaded from.</summary>
@@ -240,6 +245,31 @@ public static class GameOptionsLoader
             gameplay = gameplay with { AutosaveIntervalSeconds = autosave };
         }
 
+        if (GetBool(environment, GameOptionsEnvironment.GameWizlock, problems) is { } wizlock)
+        {
+            gameplay = gameplay with { Wizlock = wizlock };
+        }
+
+        if (GetInt(environment, GameOptionsEnvironment.GameMaxOnline, problems) is { } maxOnline)
+        {
+            gameplay = gameplay with { MaxOnline = maxOnline };
+        }
+
+        if (GetInt(environment, GameOptionsEnvironment.GameStartingRoomVnum, problems) is { } startingRoom)
+        {
+            gameplay = gameplay with { StartingRoomVnum = startingRoom };
+        }
+
+        if (GetList(environment, GameOptionsEnvironment.GameBannedSites) is { } bannedSites)
+        {
+            gameplay = gameplay with { BannedSites = bannedSites };
+        }
+
+        if (GetList(environment, GameOptionsEnvironment.GameBannedNames) is { } bannedNames)
+        {
+            gameplay = gameplay with { BannedNames = bannedNames };
+        }
+
         errors = problems;
         return options with
         {
@@ -254,6 +284,40 @@ public static class GameOptionsLoader
         environment.TryGetValue(name, out var value) && !string.IsNullOrWhiteSpace(value)
             ? value
             : null;
+
+    private static bool? GetBool(
+        IReadOnlyDictionary<string, string?> environment,
+        string name,
+        ICollection<string> errors)
+    {
+        if (Get(environment, name) is not { } text)
+        {
+            return null;
+        }
+
+        if (bool.TryParse(text, out var value))
+        {
+            return value;
+        }
+
+        errors.Add($"environment variable {name} must be true or false (was '{text}').");
+        return null;
+    }
+
+    private static IReadOnlyList<string>? GetList(
+        IReadOnlyDictionary<string, string?> environment,
+        string name)
+    {
+        if (Get(environment, name) is not { } text)
+        {
+            return null;
+        }
+
+        return text
+            .Split([',', ';'], StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .ToArray();
+    }
 
     private static int? GetInt(
         IReadOnlyDictionary<string, string?> environment,

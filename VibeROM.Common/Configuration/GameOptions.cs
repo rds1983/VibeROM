@@ -83,6 +83,26 @@ public sealed record GameOptions
                 $"gameplay.autosaveIntervalSeconds must be 0 or greater (was {Gameplay.AutosaveIntervalSeconds}).");
         }
 
+        if (Gameplay.MaxOnline < 0)
+        {
+            errors.Add($"gameplay.maxOnline must be 0 or greater (was {Gameplay.MaxOnline}).");
+        }
+
+        if (Gameplay.StartingRoomVnum < 1)
+        {
+            errors.Add($"gameplay.startingRoomVnum must be at least 1 (was {Gameplay.StartingRoomVnum}).");
+        }
+
+        if (Gameplay.BannedSites.Any(string.IsNullOrWhiteSpace))
+        {
+            errors.Add("gameplay.bannedSites must not contain empty entries.");
+        }
+
+        if (Gameplay.BannedNames.Any(string.IsNullOrWhiteSpace))
+        {
+            errors.Add("gameplay.bannedNames must not contain empty entries.");
+        }
+
         return errors;
     }
 
@@ -178,6 +198,16 @@ public sealed record LoggingOptions
 public sealed record GameplayOptions
 {
     public int AutosaveIntervalSeconds { get; init; } = 300;
+
+    public bool Wizlock { get; init; }
+
+    public int MaxOnline { get; init; }
+
+    public int StartingRoomVnum { get; init; } = 3001;
+
+    public IReadOnlyList<string> BannedSites { get; init; } = [];
+
+    public IReadOnlyList<string> BannedNames { get; init; } = [];
 }
 
 /// <summary>Absolute paths derived from configuration and the config file location.</summary>

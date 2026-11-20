@@ -85,3 +85,25 @@ entries short and link to the code or task that owns them.
   `rs_flags` during file loading and `reset_room` merely restores it. The engine
   performs the same runtime update from the typed `DoorReset` and restores the
   prototype flags at the start of every room reset.
+
+## T022 - Login flow
+
+- **Passwords use PBKDF2-SHA256, not `crypt`.** ROM stores a DES `crypt` hash;
+  the port stores `pbkdf2-sha256$iterations$salt$hash` so saves are portable and
+  not brute-forceable with the same ease. Verification still uses a constant-
+  time comparison.
+- **New characters are a baseline until T023.** Completing the new-name branch
+  creates a Human Warrior in `gameplay.startingRoomVnum`; race/class/stat
+  selection, outfit and starting skills belong to T023. The account (name,
+  password hash, email) is already final and saved.
+- **Bans come from configuration.** `gameplay.bannedSites` is a host-prefix list
+  and `gameplay.bannedNames` an exact name list; ROM reads `siteban` and
+  banned-name files. The behaviour at the prompt is the same, the storage is
+  JSON config.
+- **Reconnect closes the old session immediately.** ROM marks the old descriptor
+  linkdead and resolves the duplicate at the next input. The port saves and
+  detaches the old character before loading it for the new connection, so only
+  one session can ever own a character.
+- **Three wrong passwords disconnect.** ROM counts failures the same way but the
+  threshold lives in `LoginService` as a simple constant until a configurable
+  access-control task exists.

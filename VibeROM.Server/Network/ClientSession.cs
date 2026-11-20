@@ -15,6 +15,7 @@ internal sealed class ClientSession
     private readonly NetworkStream _stream;
     private readonly TelnetServerOptions _options;
     private readonly Action<Descriptor, string> _lineReceived;
+    private readonly Action<Descriptor> _opened;
     private readonly Channel<byte[]> _output = Channel.CreateBounded<byte[]>(
         new BoundedChannelOptions(64)
         {
@@ -24,6 +25,7 @@ internal sealed class ClientSession
         });
     private readonly CancellationTokenSource _cts = new();
     private readonly TaskCompletionSource _closed = new(TaskCreationOptions.RunContinuationsAsynchronously);
+    private Task? _writerTask;
 
     private TelnetState _state = TelnetState.Data;
     private byte _subOption;
@@ -33,12 +35,14 @@ internal sealed class ClientSession
     public ClientSession(
         TcpClient client,
         TelnetServerOptions options,
-        Action<Descriptor, string> lineReceived)
+        Action<Descriptor, string> lineReceived,
+        Action<Descriptor> opened)
     {
         _client = client;
         _stream = client.GetStream();
         _options = options;
         _lineReceived = lineReceived;
+        _opened = opened;
         var remote = client.Client.RemoteEndPoint as System.Net.IPEndPoint;
         Descriptor = new Descriptor
         {
@@ -54,10 +58,12 @@ internal sealed class ClientSession
     public async Task RunAsync()
     {
         var writer = WriteLoopAsync();
+        _writerTask = writer;
         try
         {
             await SendNegotiationAsync();
             await SendTextAsync(_options.Greeting);
+            _opened(Descriptor);
             await ReadLoopAsync(_cts.Token);
         }
         catch (Exception exception) when (exception is IOException or ObjectDisposedException or OperationCanceledException)
@@ -87,6 +93,27 @@ internal sealed class ClientSession
             _client.Dispose();
             _closed.TrySetResult();
         }
+    }
+
+    public async Task CloseAfterOutputAsync()
+    {
+        _output.Writer.TryComplete();
+        if (_writerTask is not null)
+        {
+            try
+            {
+                await _writerTask.WaitAsync(TimeSpan.FromSeconds(1));
+            }
+            catch (Exception exception) when (exception is IOException
+                                               or ObjectDisposedException
+                                               or OperationCanceledException
+                                               or TimeoutException)
+            {
+                // The client may already be gone.
+            }
+        }
+
+        Stop();
     }
 
     public void Stop()
@@ -336,7 +363,7 @@ internal sealed class ClientSession
         return Task.CompletedTask;
     }
 
-    private Task SendTextAsync(string text)
+    public Task SendTextAsync(string text)
     {
         var normalized = text.Replace("\r\n", "\n", StringComparison.Ordinal).Replace("\n", "\r\n", StringComparison.Ordinal);
         var rendered = Colour.ToAnsi(normalized, Descriptor.ColourEnabled);

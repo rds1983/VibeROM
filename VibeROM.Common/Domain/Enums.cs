@@ -60,6 +60,8 @@ public enum ConnectionState
     ConfirmNewName,
     GetNewPassword,
     ConfirmNewPassword,
+    GetNewEmail,
+    ConfirmNewEmail,
     GetNewRace,
     GetNewSex,
     GetNewClass,

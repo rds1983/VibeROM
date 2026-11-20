@@ -9,7 +9,7 @@ internal static class PlayerJsonReader
 {
     private static readonly HashSet<string> RootProperties = new(StringComparer.Ordinal)
     {
-        "formatVersion", "name", "passwordHash", "race", "class", "sex", "trueSex",
+        "formatVersion", "name", "passwordHash", "email", "race", "class", "sex", "trueSex",
         "clan", "level", "trust", "security", "colourEnabled", "rent", "roomVnum",
         "vitals", "attributes", "money", "experience", "practice", "train",
         "savingThrow", "alignment", "hitRoll", "damageRoll", "armor", "wimpy",
@@ -100,6 +100,7 @@ internal static class PlayerJsonReader
         var player = new PlayerData
         {
             PasswordHash = ReadString(root, "passwordHash", string.Empty),
+            Email = ReadOptionalString(root, "email", string.Empty) ?? string.Empty,
             Clan = ReadOptionalString(root, "clan", string.Empty) ?? "none",
             Security = ReadOptionalInt(root, "security", 0, string.Empty),
             ColourEnabled = ReadOptionalBool(root, "colourEnabled", true, string.Empty),

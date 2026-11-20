@@ -4,6 +4,7 @@ using VibeROM.Common.Configuration;
 using VibeROM.Common.Logging;
 using VibeROM.Common.Rom;
 using VibeROM.Common.Serialization;
+using VibeROM.Server.Login;
 using VibeROM.Server.Network;
 
 namespace VibeROM.Server;
@@ -122,6 +123,12 @@ public static class Program
                     loaded.Options.Server.Port,
                     loaded.Options.Server.MaxConnections,
                     IdleTimeout: TimeSpan.FromSeconds(loaded.Options.Server.IdleTimeoutSeconds)));
+            var playerStore = new PlayerStore(paths.PlayersDirectory, paths.SchemaDirectory);
+            using var login = new LoginService(
+                server,
+                bootstrap.World,
+                playerStore,
+                loaded.Options.Gameplay);
             try
             {
                 await server.RunAsync(shutdown.Token);

@@ -21,6 +21,11 @@
     "maxArchiveFiles": 14
   },
   "gameplay": {
-    "autosaveIntervalSeconds": 300
+    "autosaveIntervalSeconds": 300,
+    "wizlock": false,
+    "maxOnline": 0,
+    "startingRoomVnum": 3001,
+    "bannedSites": [],
+    "bannedNames": []
   }
 }

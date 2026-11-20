@@ -40,6 +40,64 @@ public sealed class ConfigurationTests
     }
 
     [Fact]
+    public void JsonFile_LoadsLoginGameplaySettings()
+    {
+        using var temp = new TempDirectory();
+        var configPath = temp.GetPath("VibeROM.json");
+        File.WriteAllText(
+            configPath,
+            """
+            {
+              "gameplay": {
+                "wizlock": true,
+                "maxOnline": 50,
+                "startingRoomVnum": 3005,
+                "bannedSites": ["10.0.0."],
+                "bannedNames": ["Badname"]
+              }
+            }
+            """);
+
+        var loaded = GameOptionsLoader.Load(configPath, requireFile: true, TestEnvironment.Empty);
+
+        Assert.True(loaded.Options.Gameplay.Wizlock);
+        Assert.Equal(50, loaded.Options.Gameplay.MaxOnline);
+        Assert.Equal(3005, loaded.Options.Gameplay.StartingRoomVnum);
+        Assert.Equal(["10.0.0."], loaded.Options.Gameplay.BannedSites);
+        Assert.Equal(["Badname"], loaded.Options.Gameplay.BannedNames);
+    }
+
+    [Fact]
+    public void Environment_OverridesLoginGameplaySettings()
+    {
+        var environment = TestEnvironment.Of(
+            (GameOptionsEnvironment.GameWizlock, "true"),
+            (GameOptionsEnvironment.GameMaxOnline, "12"),
+            (GameOptionsEnvironment.GameStartingRoomVnum, "3010"),
+            (GameOptionsEnvironment.GameBannedSites, "10.0.0., 192.168.1."),
+            (GameOptionsEnvironment.GameBannedNames, "Badname; Cheater"));
+
+        var loaded = GameOptionsLoader.Load(null, requireFile: false, environment);
+
+        Assert.True(loaded.Options.Gameplay.Wizlock);
+        Assert.Equal(12, loaded.Options.Gameplay.MaxOnline);
+        Assert.Equal(3010, loaded.Options.Gameplay.StartingRoomVnum);
+        Assert.Equal(["10.0.0.", "192.168.1."], loaded.Options.Gameplay.BannedSites);
+        Assert.Equal(["Badname", "Cheater"], loaded.Options.Gameplay.BannedNames);
+    }
+
+    [Fact]
+    public void InvalidEnvironmentBoolean_FailsWithVariableName()
+    {
+        var environment = TestEnvironment.Of((GameOptionsEnvironment.GameWizlock, "maybe"));
+
+        var exception = Assert.Throws<GameConfigurationException>(
+            () => GameOptionsLoader.Load(null, requireFile: false, environment));
+
+        Assert.Contains(GameOptionsEnvironment.GameWizlock, exception.Message, StringComparison.Ordinal);
+    }
+
+    [Fact]
     public void Environment_OverridesJson()
     {
         using var temp = new TempDirectory();
@@ -88,6 +146,10 @@ public sealed class ConfigurationTests
     [InlineData("""{ "data": { "areas": "/areas" } }""", "data.areas")]
     [InlineData("""{ "logging": { "filePrefix": "sub/dir" } }""", "logging.filePrefix")]
     [InlineData("""{ "gameplay": { "autosaveIntervalSeconds": -1 } }""", "gameplay.autosaveIntervalSeconds")]
+    [InlineData("""{ "gameplay": { "maxOnline": -1 } }""", "gameplay.maxOnline")]
+    [InlineData("""{ "gameplay": { "startingRoomVnum": 0 } }""", "gameplay.startingRoomVnum")]
+    [InlineData("""{ "gameplay": { "bannedSites": [""] } }""", "gameplay.bannedSites")]
+    [InlineData("""{ "gameplay": { "bannedNames": ["Badname", ""] } }""", "gameplay.bannedNames")]
     public void InvalidConfig_FailsWithFieldName(string json, string expectedField)
     {
         using var temp = new TempDirectory();

@@ -380,6 +380,7 @@ One file per player in `Data/players/<Name>.json`.
 | `formatVersion` | integer | yes | Always `1` |
 | `name` | string | yes | Character name (`^[A-Za-z][A-Za-z0-9]*$`) |
 | `passwordHash` | string | yes | PBKDF2 hash; never plaintext |
+| `email` | string | no | Contact address from character creation |
 | `race` | enum | yes | `Human`, `Elf`, `Dwarf`, `Giant` |
 | `class` | enum | yes | `Mage`, `Cleric`, `Thief`, `Warrior` |
 | `sex` | enum | yes | `Neutral`, `Male`, `Female` |

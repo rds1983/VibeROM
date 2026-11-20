@@ -48,7 +48,12 @@ The repository ships [`VibeROM.json`](../../VibeROM.json):
     "maxArchiveFiles": 14
   },
   "gameplay": {
-    "autosaveIntervalSeconds": 300
+    "autosaveIntervalSeconds": 300,
+    "wizlock": false,
+    "maxOnline": 0,
+    "startingRoomVnum": 3001,
+    "bannedSites": [],
+    "bannedNames": []
   }
 }
 ```
@@ -111,6 +116,11 @@ logging is reconfigured with the file's settings.
 | Key | Type | Default | Environment variable | Meaning |
 | --- | --- | --- | --- | --- |
 | `gameplay.autosaveIntervalSeconds` | integer ≥ 0 | `300` | `VIBEROM_GAMEPLAY__AUTOSAVE_INTERVAL_SECONDS` | Automatic save interval; `0` disables |
+| `gameplay.wizlock` | boolean | `false` | `VIBEROM_GAMEPLAY__WIZLOCK` | Reject new character names |
+| `gameplay.maxOnline` | integer ≥ 0 | `0` | `VIBEROM_GAMEPLAY__MAX_ONLINE` | Maximum logged-in players; `0` unlimited |
+| `gameplay.startingRoomVnum` | vnum | `3001` | `VIBEROM_GAMEPLAY__STARTING_ROOM_VNUM` | New-character starting room |
+| `gameplay.bannedSites` | string[] | `[]` | `VIBEROM_GAMEPLAY__BANNED_SITES` | Rejected host prefixes |
+| `gameplay.bannedNames` | string[] | `[]` | `VIBEROM_GAMEPLAY__BANNED_NAMES` | Rejected character names |
 
 ## Environment overrides
 
@@ -121,6 +131,9 @@ variable name in the message.
 
 `VIBEROM_CONFIG` selects the configuration file itself and is not part of the
 configuration schema.
+
+List values (`bannedSites`, `bannedNames`) are split on commas or semicolons:
+`$env:VIBEROM_GAMEPLAY__BANNED_SITES = "10.0.0.,192.168.1."`.
 
 Shell example (PowerShell):
 
@@ -152,6 +165,9 @@ Rules:
 - `logging.filePrefix` must be a simple name without path separators.
 - `logging.maxArchiveFiles` must be at least `1`.
 - `gameplay.autosaveIntervalSeconds` must be `0` or greater.
+- `gameplay.maxOnline` must be `0` or greater.
+- `gameplay.startingRoomVnum` must be at least `1`.
+- `gameplay.bannedSites` and `gameplay.bannedNames` must not contain empty entries.
 - Unknown properties and invalid JSON abort startup.
 
 ## Command line

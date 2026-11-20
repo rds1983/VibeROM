@@ -34,6 +34,9 @@
       "type": "string",
       "minLength": 1
     },
+    "email": {
+      "type": "string"
+    },
     "race": {
       "$ref": "#/$defs/race"
     },

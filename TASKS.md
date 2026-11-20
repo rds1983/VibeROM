@@ -52,26 +52,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 1 — Server, login and interaction
 
-### [~] T020 — TCP server and telnet protocol
-- Depends on: T003, T007
-- Async listener bound to the configured `server.bindAddress` and
-  `server.port`, descriptor per connection, output buffering, greeting, telnet
-  negotiation (IAC, WILL/WONT/DO/DONT, NAWS, TTYPE, terminal type), ANSI colour.
-- Use `Colour.ToAnsi` for socket output and `Colour.Strip` for logs.
-- **Done when:** integration tests connect, negotiate, receive the greeting and
-  disconnect cleanly; slow/garbage clients cannot crash the server.
-
-
-### [ ] T022 — Login flow
-- Depends on: T021, T030 (player save/load; the returning-character branch
-  cannot be completed before persistence exists)
-- Greeting → MOTD/rules → name → password (PBKDF2, never `crypt`) → email →
-  confirmation → enter world. Include the new-character branch, ban/site
-  checks, wizlock, max-online enforcement and reconnect to an existing
-  character.
-- **Done when:** end-to-end tests cover new, returning, bad password, banned,
-  wizlocked and reconnecting clients; login screen contains required credits.
-
 ### [ ] T023 — Character creation
 - Depends on: T022, T005
 - Race/class/sex selection, stat rolling and reroll limits, weapon choice,
@@ -526,3 +506,9 @@ Last reviewed: 2026-11-20
   Line editing/backspace, line events, configurable idle timeout, max
   connections, host/address handling, link-dead cleanup, reconnect tests and
   live listener startup with Ctrl+C shutdown.
+- **T022 — Login flow** (2026-11-20)
+  Diku/Merc/ROM credits, MOTD/rules, name and new-name confirmation, PBKDF2
+  password entry/confirmation, verified email, returning-character load,
+  banned sites/names, wizlock, max-online, immediate reconnect replacement and
+  login-time save/cleanup; end-to-end login tests for every branch and a live
+  server check.

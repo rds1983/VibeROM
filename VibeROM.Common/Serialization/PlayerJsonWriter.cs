@@ -21,6 +21,11 @@ internal static class PlayerJsonWriter
         writer.WriteNumber("formatVersion", GameInfo.DataFormatVersion);
         writer.WriteString("name", character.Name);
         writer.WriteString("passwordHash", player.PasswordHash);
+        if (!string.IsNullOrEmpty(player.Email))
+        {
+            writer.WriteString("email", player.Email);
+        }
+
         writer.WriteString("race", RomTables.PcRaces.Get((int)character.Race).Name);
         writer.WriteString("class", (character.Class ?? PlayerClass.Warrior).ToString());
         writer.WriteString("sex", character.Sex.ToString());
