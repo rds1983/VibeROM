@@ -194,13 +194,6 @@ public sealed class DomainModelTests
     }
 
     [Fact]
-    public void GameTime_ValidatesRanges()
-    {
-        Assert.Empty(new GameTime(12, 1, 1, 0).Validate());
-        Assert.Contains(new GameTime(24, 1, 1, 0).Validate(), error => error.Contains("hour", StringComparison.Ordinal));
-    }
-
-    [Fact]
     public void Descriptor_DefaultsToNameEntry()
     {
         var descriptor = new Descriptor();

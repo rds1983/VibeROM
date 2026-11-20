@@ -8,7 +8,9 @@ Agent workflow and coding standards are in [AGENTS.md](../../AGENTS.md).
 
 Pages (some are still planned):
 
-- `Architecture.md` — projects, layers, game loop, dependency rules (planned)
+- `Architecture.md` — projects, layers, dependency rules (planned)
+- [GameLoop.md](GameLoop.md) — 4 Hz pulses, named ticks, time, autosave and
+  exception isolation (**available**)
 - [DomainModel.md](DomainModel.md) — entities, ownership, invariants and
   validation (**available**)
 - [DataFormats.md](DataFormats.md) — JSON layout, naming rules, schemas,

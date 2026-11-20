@@ -126,3 +126,18 @@ entries short and link to the code or task that owns them.
   available races instead.
 - **The school room is configurable.** ROM hard-codes `ROOM_VNUM_SCHOOL` (3700);
   the port uses `gameplay.startingRoomVnum`, which defaults to 3700.
+
+## T024 - Game loop and pulses
+
+- **No copyover.** ROM 2.4b6 contains no copyover command, state file or
+  `execv`; a graceful save/stop/restart procedure belongs to operations and is
+  tracked by T075.
+- **Output is not batched per pulse.** ROM flushes descriptor buffers every
+  250 ms. The port's session writer drains a channel continuously, which keeps
+  prompts responsive; the pulse schedule only drives subsystem updates.
+- **Only the calendar is ported here.** The tick advances `time_info` and
+  sunlight per `weather_update`, but pressure, temperature, sky changes and
+  area repop remain T060.
+- **Counters start at zero.** This matches ROM's static `update_handler`
+  counters, so the first pulse fires every named update (including the first
+  area pulse) before the intervals begin.

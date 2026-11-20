@@ -34,20 +34,6 @@ public sealed record NoteData(
 
 public sealed record BanData(string Name, int Flags, int Level);
 
-/// <summary>ROM calendar time.</summary>
-public sealed record GameTime(int Hour, int Day, int Month, int Year)
-{
-    public IReadOnlyList<string> Validate()
-    {
-        var errors = new List<string>();
-        if (Hour is < 0 or > 23) errors.Add("hour must be between 0 and 23.");
-        if (Day < 1) errors.Add("day must be at least 1.");
-        if (Month is < 1 or > 12) errors.Add("month must be between 1 and 12.");
-        if (Year < 0) errors.Add("year must not be negative.");
-        return errors;
-    }
-}
-
 public sealed class Weather
 {
     public int Pressure { get; set; } = 960;

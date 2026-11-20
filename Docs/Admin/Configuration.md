@@ -115,7 +115,7 @@ logging is reconfigured with the file's settings.
 
 | Key | Type | Default | Environment variable | Meaning |
 | --- | --- | --- | --- | --- |
-| `gameplay.autosaveIntervalSeconds` | integer ≥ 0 | `300` | `VIBEROM_GAMEPLAY__AUTOSAVE_INTERVAL_SECONDS` | Automatic save interval; `0` disables |
+| `gameplay.autosaveIntervalSeconds` | integer ≥ 0 | `300` | `VIBEROM_GAMEPLAY__AUTOSAVE_INTERVAL_SECONDS` | Save online players every N seconds; `0` disables |
 | `gameplay.wizlock` | boolean | `false` | `VIBEROM_GAMEPLAY__WIZLOCK` | Reject new character names |
 | `gameplay.maxOnline` | integer ≥ 0 | `0` | `VIBEROM_GAMEPLAY__MAX_ONLINE` | Maximum logged-in players; `0` unlimited |
 | `gameplay.startingRoomVnum` | vnum | `3700` | `VIBEROM_GAMEPLAY__STARTING_ROOM_VNUM` | New-character starting room |

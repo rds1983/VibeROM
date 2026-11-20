@@ -40,5 +40,6 @@ The `gameplay` configuration controls login policy:
 Existing online characters can reconnect; the older connection is saved,
 detached and closed before the new one is loaded.
 
-The server writes a save on logout and on reconnect replacement. Saves use the
+The server writes a save on logout, periodically (every
+`gameplay.autosaveIntervalSeconds`) and on reconnect replacement. Saves use the
 atomic temp-file/rename path from `PlayerJson`.

@@ -4,6 +4,7 @@ using VibeROM.Common.Configuration;
 using VibeROM.Common.Logging;
 using VibeROM.Common.Rom;
 using VibeROM.Common.Serialization;
+using VibeROM.Server.Game;
 using VibeROM.Server.Login;
 using VibeROM.Server.Network;
 
@@ -129,6 +130,18 @@ public static class Program
                 bootstrap.World,
                 playerStore,
                 loaded.Options.Gameplay);
+
+            var pulses = new PulseEngine();
+            pulses.Register(new GameClockPulseHandler(bootstrap.World));
+            pulses.Register(new AutosavePulseHandler(
+                login.SaveOnlinePlayers,
+                loaded.Options.Gameplay.AutosaveIntervalSeconds));
+            using var loopShutdown = CancellationTokenSource.CreateLinkedTokenSource(shutdown.Token);
+            var pulseTask = pulses.RunAsync(TimeProvider.System, loopShutdown.Token);
+            logger.Info(
+                "Game loop started at {Pulses} pulses per second.",
+                PulseEngine.PulsesPerSecond);
+
             try
             {
                 await server.RunAsync(shutdown.Token);
@@ -138,6 +151,9 @@ public static class Program
             finally
             {
                 Console.CancelKeyPress -= cancelHandler;
+                loopShutdown.Cancel();
+                await pulseTask;
+                login.SaveOnlinePlayers();
                 await server.DisposeAsync();
             }
         }

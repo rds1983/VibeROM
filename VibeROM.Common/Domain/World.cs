@@ -16,10 +16,11 @@ public sealed class World
     private readonly Dictionary<string, List<HelpEntry>> _helpIndex =
         new(StringComparer.OrdinalIgnoreCase);
 
-    public World(IEnumerable<AreaData> areas)
+    public World(IEnumerable<AreaData> areas, DateTimeOffset? bootTime = null)
     {
         ArgumentNullException.ThrowIfNull(areas);
 
+        Time = GameTime.FromTime(bootTime ?? DateTimeOffset.UtcNow);
         var areaList = areas.ToArray();
         var errors = new List<string>();
         var mobiles = new Dictionary<int, MobilePrototype>();
@@ -96,6 +97,9 @@ public sealed class World
     }
 
     public IReadOnlyList<AreaData> Areas { get; }
+
+    /// <summary>Game calendar, advanced by the tick pulse.</summary>
+    public GameTime Time { get; }
 
     public IReadOnlyDictionary<int, MobilePrototype> Mobiles { get; }
 

@@ -242,6 +242,35 @@ public sealed class LoginServiceTests
     }
 
     [Fact]
+    public async Task AutosaveSavesOnlinePlayerWithoutDetaching()
+    {
+        using var temp = new TempDirectory();
+        var store = new PlayerStore(temp.Path, SchemaDirectory);
+        SavePlayer(store, "Alander", "secret");
+
+        await using var server = CreateServer();
+        using var login = new LoginService(server, CreateWorld(), store, new GameplayOptions());
+        await server.StartAsync();
+        using var client = new TcpClient();
+        await client.ConnectAsync(IPAddress.Loopback, server.Port);
+        await ReadUntilAsync(client.GetStream(), "By what name");
+        await SendLineAsync(client.GetStream(), "Alander");
+        await ReadUntilAsync(client.GetStream(), "Password");
+        await SendLineAsync(client.GetStream(), "secret");
+        await ReadUntilAsync(client.GetStream(), "Welcome, Alander");
+
+        var descriptor = Assert.Single(server.Connections);
+        descriptor.Character!.Level = 7;
+
+        login.SaveOnlinePlayers();
+
+        var loaded = store.Load("Alander", CreateWorld());
+        Assert.Equal(7, loaded.Level);
+        Assert.Equal(ConnectionState.Playing, descriptor.State);
+        Assert.Same(descriptor, Assert.Single(server.Connections));
+    }
+
+    [Fact]
     public async Task WrongPasswordDoesNotEnterWorld()
     {
         using var temp = new TempDirectory();

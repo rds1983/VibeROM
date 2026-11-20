@@ -52,14 +52,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 1 — Server, login and interaction
 
-### [ ] T024 — Game loop and pulses
-- Depends on: T021
-- 250 ms pulse with named tick counters; drive descriptor flushing, character,
-  object, area and weather updates, time advancement, autosave using
-  `gameplay.autosaveIntervalSeconds`, and copyover.
-- **Done when:** a 60-second accelerated test proves ticks fire at the expected
-  cadence and survive an exception in one subsystem.
-
 ### [ ] T025 — Channels, socials and emotes
 - Depends on: T022, T013
 - say, tell, reply, gossip, quote, yell, shout, gtell, immtalk, question, answer,
@@ -385,8 +377,11 @@ Last reviewed: 2026-11-20
   `VibeROM.json` and `Data/` alongside the binary, data-folder copy step,
   version stamping, optional container image. The AreaImporter ships separately
   as a developer tool.
+- Document a graceful restart/copyover procedure: saves all online players,
+  stops the listener, restarts the process and lets clients reconnect. ROM
+  2.4b6 has no copyover code, so this is a port operations feature.
 - **Done when:** a clean machine can build, run and connect using only
-  `Docs/Admin/Building.md`.
+  `Docs/Admin/Building.md`, and the restart procedure is verified.
 
 ### [ ] T076 — Documentation completion
 - Depends on: Milestones 1–6
@@ -520,3 +515,8 @@ Last reviewed: 2026-11-20
   title and starting vitals; table-driven tests for all 16 race/class
   combinations, invalid-input re-prompts and player-facing Getting Started,
   Races and Classes pages.
+- **T024 — Game loop and pulses** (2026-11-20)
+  4 Hz `PulseEngine` with ROM's named counters, combined pulse flags,
+  exception-isolated handlers and continuous output; ROM calendar/sunlight
+  advancement, online-player autosave and shutdown save; accelerated pulse,
+  calendar, autosave and handler-failure tests. Copyover deferred to T075.

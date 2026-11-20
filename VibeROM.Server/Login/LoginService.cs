@@ -1,3 +1,4 @@
+using System.Collections.Concurrent;
 using System.Text.Json;
 using NLog;
 using VibeROM.Common.Configuration;
@@ -32,8 +33,9 @@ public sealed class LoginService : IDisposable
     private readonly PlayerStore _store;
     private readonly GameplayOptions _options;
     private readonly TimeProvider _timeProvider;
-    private readonly Dictionary<Guid, LoginContext> _contexts = [];
+    private readonly ConcurrentDictionary<Guid, LoginContext> _contexts = new();
     private readonly Dictionary<string, Descriptor> _online = new(StringComparer.OrdinalIgnoreCase);
+    private readonly object _onlineGate = new();
     private bool _disposed;
 
     public LoginService(
@@ -65,6 +67,85 @@ public sealed class LoginService : IDisposable
         _server.ConnectionOpened -= OnOpened;
         _server.ConnectionClosed -= OnClosed;
         _server.LineReceived -= OnLine;
+    }
+
+    /// <summary>
+    /// Saves every logged-in character without detaching it. Used by the
+    /// autosave pulse and graceful shutdown.
+    /// </summary>
+    public void SaveOnlinePlayers()
+    {
+        Descriptor[] descriptors;
+        lock (_onlineGate)
+        {
+            descriptors = _online.Values.ToArray();
+        }
+
+        var saved = 0;
+        foreach (var descriptor in descriptors)
+        {
+            if (descriptor.Character is not { Player: not null } character
+                || !TryGetOnline(character.Name, out var current)
+                || !ReferenceEquals(current, descriptor))
+            {
+                continue;
+            }
+
+            try
+            {
+                character.Player.LastSaved = _timeProvider.GetUtcNow();
+                _store.Save(character);
+                saved++;
+            }
+            catch (Exception exception) when (exception is IOException or DataFormatException)
+            {
+                Logger.Error(exception, "Could not autosave player {Player}.", character.Name);
+            }
+        }
+
+        if (saved > 0)
+        {
+            Logger.Debug("Autosaved {Count} online players.", saved);
+        }
+    }
+
+    private int OnlineCount
+    {
+        get
+        {
+            lock (_onlineGate)
+            {
+                return _online.Count;
+            }
+        }
+    }
+
+    private bool TryGetOnline(string name, out Descriptor descriptor)
+    {
+        lock (_onlineGate)
+        {
+            return _online.TryGetValue(name, out descriptor!);
+        }
+    }
+
+    private void SetOnline(string name, Descriptor descriptor)
+    {
+        lock (_onlineGate)
+        {
+            _online[name] = descriptor;
+        }
+    }
+
+    private void RemoveOnline(string name, Descriptor descriptor)
+    {
+        lock (_onlineGate)
+        {
+            if (_online.TryGetValue(name, out var current)
+                && ReferenceEquals(current, descriptor))
+            {
+                _online.Remove(name);
+            }
+        }
     }
 
     private void OnOpened(Descriptor descriptor)
@@ -230,7 +311,7 @@ public sealed class LoginService : IDisposable
             return;
         }
 
-        if (_options.MaxOnline > 0 && _online.Count >= _options.MaxOnline)
+        if (_options.MaxOnline > 0 && OnlineCount >= _options.MaxOnline)
         {
             _ = _server.SendAsync(descriptor, "The game is full. Try again later.\r\n");
             _server.DisconnectAfterFlush(descriptor);
@@ -446,12 +527,11 @@ public sealed class LoginService : IDisposable
     private void CompleteReturningPlayer(Descriptor descriptor, LoginContext context)
     {
         var name = context.Name!;
-        if (_online.TryGetValue(name, out var oldDescriptor) && oldDescriptor != descriptor)
+        if (TryGetOnline(name, out var oldDescriptor) && oldDescriptor != descriptor)
         {
             SaveAndDetach(oldDescriptor);
             _server.Disconnect(oldDescriptor);
         }
-
         try
         {
             var character = _store.Load(name, _world);
@@ -468,7 +548,7 @@ public sealed class LoginService : IDisposable
     private void CompleteNewPlayer(Descriptor descriptor, LoginContext context)
     {
         var name = context.Name!;
-        if (_options.MaxOnline > 0 && _online.Count >= _options.MaxOnline)
+        if (_options.MaxOnline > 0 && OnlineCount >= _options.MaxOnline)
         {
             _ = _server.SendAsync(descriptor, "The game is full. Try again later.\r\n");
             _server.DisconnectAfterFlush(descriptor);
@@ -516,7 +596,7 @@ public sealed class LoginService : IDisposable
     {
         descriptor.Character = character;
         descriptor.State = ConnectionState.Playing;
-        _online[character.Name] = descriptor;
+        SetOnline(character.Name, descriptor);
         character.Player!.LastLogoff = null;
         _ = _server.SendAsync(
             descriptor,
@@ -525,9 +605,9 @@ public sealed class LoginService : IDisposable
 
     private void OnClosed(Descriptor descriptor)
     {
-        _contexts.Remove(descriptor.Id);
+        _contexts.TryRemove(descriptor.Id, out _);
         if (descriptor.Character is not { Player: not null } character
-            || !_online.TryGetValue(character.Name, out var current)
+            || !TryGetOnline(character.Name, out var current)
             || current != descriptor)
         {
             return;
@@ -539,7 +619,7 @@ public sealed class LoginService : IDisposable
     private void SaveAndDetach(Descriptor descriptor)
     {
         if (descriptor.Character is not { Player: not null } character
-            || !_online.TryGetValue(character.Name, out var current)
+            || !TryGetOnline(character.Name, out var current)
             || current != descriptor)
         {
             return;
@@ -556,7 +636,7 @@ public sealed class LoginService : IDisposable
             Logger.Error(exception, "Could not save player {Player} on logout.", character.Name);
         }
 
-        _online.Remove(character.Name);
+        RemoveOnline(character.Name, descriptor);
         _world.DestroyCharacter(character);
         descriptor.Character = null;
     }
