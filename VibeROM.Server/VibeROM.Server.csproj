@@ -12,8 +12,4 @@
     <PackageReference Include="NLog" Version="$(NLogVersion)" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="NLog.config" CopyToOutputDirectory="PreserveNewest" />
-  </ItemGroup>
-
 </Project>

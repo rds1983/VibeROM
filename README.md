@@ -39,6 +39,7 @@ VibeROM.Common.Tests/        xUnit tests for shared code
 VibeROM.Server.Tests/        xUnit tests for the server
 VibeROM.AreaImporter.Tests/  xUnit tests for the importer
 VibeROM.slnx                 Solution
+VibeROM.json                 Server configuration
 logs/                        Runtime logs (generated, ignored by git)
 ```
 
@@ -85,7 +86,11 @@ dotnet run --project VibeROM.AreaImporter -- --source <rom>/area --output Data/a
 ```
 
 Run `dotnet run --project VibeROM.AreaImporter -- --help` for all importer
-options. Full build, configuration and administration instructions live in
+options. Server configuration defaults live in `VibeROM.json`; every key,
+environment override and validation rule is documented in
+[Docs/Admin/Configuration.md](Docs/Admin/Configuration.md).
+
+Full build, configuration and administration instructions live in
 [Docs/Admin/](Docs/Admin/).
 
 ## Documentation

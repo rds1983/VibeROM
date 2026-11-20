@@ -47,16 +47,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T003 — Configuration and NLog setup
-- Depends on: T001
-- Config object (JSON or env vars): port, bind address, data paths, log level,
-  max connections, autosave interval. Validate on startup with clear errors.
-- NLog: console + rolling file in `logs/`, category per subsystem, no secrets
-  or passwords in logs.
-- Document every key in `Docs/Admin/Configuration.md`.
-- **Done when:** invalid config fails fast with an actionable message; log file
-  rotation is verified by a test.
-
 ### [ ] T004 — Core utilities and text engine
 - Depends on: T001
 - Port `one_argument`/argument parsing, `str_cmp` semantics (case-insensitive,
@@ -206,15 +196,17 @@ Last reviewed: 2026-11-20
 
 ### [ ] T020 — TCP server and telnet protocol
 - Depends on: T003, T007
-- Async listener, descriptor per connection, output buffering, greeting, telnet
+- Async listener bound to the configured `server.bindAddress` and
+  `server.port`, descriptor per connection, output buffering, greeting, telnet
   negotiation (IAC, WILL/WONT/DO/DONT, NAWS, TTYPE, terminal type), ANSI colour.
 - **Done when:** integration tests connect, negotiate, receive the greeting and
   disconnect cleanly; slow/garbage clients cannot crash the server.
 
 ### [ ] T021 — Connection lifecycle
 - Depends on: T020
-- Connection states, input line editing/backspace, idle timeout, max connections,
-  host resolution, link-dead handling, logging of connects/disconnects.
+- Connection states, input line editing/backspace, idle timeout, max connections
+  from configuration, host resolution, link-dead handling, logging of
+  connects/disconnects.
 - **Done when:** tests cover simultaneous connects, abrupt disconnects, idle
   timeouts and reconnect within the grace window.
 
@@ -238,7 +230,8 @@ Last reviewed: 2026-11-20
 ### [ ] T024 — Game loop and pulses
 - Depends on: T021
 - 250 ms pulse with named tick counters; drive descriptor flushing, character,
-  object, area and weather updates, time advancement, autosave and copyover.
+  object, area and weather updates, time advancement, autosave using
+  `gameplay.autosaveIntervalSeconds`, and copyover.
 - **Done when:** a 60-second accelerated test proves ticks fire at the expected
   cadence and survive an exception in one subsystem.
 
@@ -535,9 +528,10 @@ Last reviewed: 2026-11-20
 
 ### [ ] T075 — Packaging and release
 - Depends on: T074
-- Framework-dependent and self-contained builds for Windows/Linux, sample
-  config, data-folder copy step, version stamping, optional container image.
-  The AreaImporter ships separately as a developer tool.
+- Framework-dependent and self-contained builds for Windows/Linux, ship
+  `VibeROM.json` and `Data/` alongside the binary, data-folder copy step,
+  version stamping, optional container image. The AreaImporter ships separately
+  as a developer tool.
 - **Done when:** a clean machine can build, run and connect using only
   `Docs/Admin/Building.md`.
 
@@ -581,3 +575,7 @@ Last reviewed: 2026-11-20
   Six JSON Schemas (area, index, player, notes, music, god), complete format
   documentation, valid fixtures and negative schema tests; canonical flag
   names, typed item data and strict unknown-property handling finalized.
+- **T003 — Configuration and NLog setup** (2026-11-20)
+  `VibeROM.json` with validated server/data/logging/gameplay sections,
+  environment overrides, config search order and shared console + daily rolling
+  file logging; invalid configuration fails fast with every field error.

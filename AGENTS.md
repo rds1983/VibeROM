@@ -29,6 +29,7 @@ C idioms.
 | `VibeROM.Common.Tests/` | xUnit tests for shared code |
 | `VibeROM.Server.Tests/` | xUnit tests for the server |
 | `VibeROM.AreaImporter.Tests/` | xUnit tests for the importer |
+| `VibeROM.json` | Server configuration and defaults |
 | `Data/areas/` | Area JSON (one file per area) + `index.json` |
 | `Data/players/` | Player save files (`*.json`) |
 | `Data/notes/` | Notes, ideas, penalties, news, changes (`*.json`) |
@@ -199,6 +200,9 @@ A task is done only when **all** of these are true:
 - Treat warnings as errors; keep the build warning-free.
 - Package versions are defined once in `Directory.Build.props` and referenced
   as `$(PackageVersion)`; never hardcode a version in a csproj.
+- Configuration lives in `VibeROM.json`, is documented in
+  `Docs/Admin/Configuration.md`, and is validated at startup. Add new keys to
+  the options record, validation, docs and tests together.
 - Use `TimeProvider` instead of `DateTime.Now`/timers in testable code.
 - Logging via NLog (`LogManager.GetCurrentClassLogger()`), structured messages,
   correct levels. Never log passwords, password hashes or full save files.

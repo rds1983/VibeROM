@@ -1,4 +1,6 @@
 using NLog;
+using VibeROM.Common.Configuration;
+using VibeROM.Common.Logging;
 
 namespace VibeROM.AreaImporter;
 
@@ -21,6 +23,10 @@ public static class Program
                 Console.Error.WriteLine(Usage.Text);
                 return 2;
             }
+
+            LoggingSetup.Configure(
+                LoggingOptions.Default with { FilePrefix = "areaimport" },
+                AppContext.BaseDirectory);
 
             Logger.Warn("Area import is not implemented yet (T011). No files were written.");
             Console.Error.WriteLine("vibrom-areaimport: import pipeline is not implemented yet (T011).");
