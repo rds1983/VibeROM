@@ -62,6 +62,13 @@
       "minimum": 0,
       "maximum": 9
     },
+    "colourEnabled": {
+      "type": "boolean"
+    },
+    "rent": {
+      "type": "integer",
+      "minimum": 0
+    },
     "roomVnum": {
       "$ref": "#/$defs/vnum"
     },
@@ -226,6 +233,29 @@
     "lastSaved": {
       "type": "string",
       "format": "date-time"
+    },
+    "lastNote": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "lastIdea": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "lastPenalty": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "lastNews": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "lastChanges": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "confirmDelete": {
+      "type": "boolean"
     }
   },
   "$defs": {
@@ -241,6 +271,15 @@
     },
     "race": {
       "enum": ["Human", "Elf", "Dwarf", "Giant"]
+    },
+    "petRace": {
+      "enum": [
+        "Unique", "Human", "Elf", "Dwarf", "Giant", "Bat", "Bear", "Cat",
+        "Centipede", "Dog", "Doll", "Dragon", "Fido", "Fox", "Goblin",
+        "Hobgoblin", "Kobold", "Lizard", "Modron", "Orc", "Pig", "Rabbit",
+        "SchoolMonster", "Snake", "SongBird", "Troll", "WaterFowl", "Wolf",
+        "Wyvern"
+      ]
     },
     "class": {
       "enum": ["Mage", "Cleric", "Thief", "Warrior"]
@@ -555,10 +594,20 @@
     "playerAffect": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "level", "duration", "location", "modifier"],
+      "required": ["level", "duration", "location", "modifier"],
       "properties": {
         "type": {
           "$ref": "#/$defs/affectFlag"
+        },
+        "skill": {
+          "type": "string"
+        },
+        "flags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/affectFlag"
+          }
         },
         "where": {
           "$ref": "#/$defs/affectWhere"
@@ -594,10 +643,20 @@
     "itemAffect": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["type", "level", "duration", "location", "modifier"],
+      "required": ["level", "duration", "location", "modifier"],
       "properties": {
         "type": {
           "$ref": "#/$defs/affectFlag"
+        },
+        "skill": {
+          "type": "string"
+        },
+        "flags": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/affectFlag"
+          }
         },
         "where": {
           "$ref": "#/$defs/affectWhere"
@@ -713,7 +772,7 @@
           "$ref": "#/$defs/sex"
         },
         "race": {
-          "$ref": "#/$defs/race"
+          "$ref": "#/$defs/petRace"
         }
       }
     }

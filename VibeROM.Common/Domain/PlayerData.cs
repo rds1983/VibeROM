@@ -9,6 +9,10 @@ public sealed class PlayerData
 {
     public string PasswordHash { get; set; } = string.Empty;
 
+    public string Clan { get; set; } = "none";
+
+    public int Rent { get; set; }
+
     public string Title { get; set; } = string.Empty;
 
     public string Bamfin { get; set; } = string.Empty;

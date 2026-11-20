@@ -47,16 +47,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T030 - JSON player save/load
-- Depends on: T010
-- New JSON player format (`Data/players/*.json`, `player.schema.json`): all
-  original pfile fields - aliases, affects, skills, conditions, pet, clans,
-  colours, rent. Atomic writes, crash safety and schema validation.
-- Map to/from `Character` and `PlayerData` from the domain model.
-- No legacy pfile support at runtime; a legacy pfile importer stays in the
-  backlog. Password hashes are not migrated; imported players get a reset flow.
-- **Done when:** save → load → save is stable, schema-invalid saves are rejected
-  with a clear message, and a killed process never corrupts a save.
 
 ---
 
@@ -531,3 +521,7 @@ Last reviewed: 2026-11-20
   `WorldBootstrap` loads and resets the full corpus, reports per-area and total
   inventories, logs startup runtime counts and validates the world; full-corpus
   integration test and `DataInventory.md`.
+- **T030 — JSON player save/load** (2026-11-20)
+  Canonical player JSON with schema validation, full `Character`/`PlayerData`
+  mapping, recursive inventory/equipment and pet data, and atomic
+  temp-file/rename saves; round-trip, path-error and crash-safety tests.

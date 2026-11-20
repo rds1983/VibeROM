@@ -388,6 +388,8 @@ One file per player in `Data/players/<Name>.json`.
 | `level` | integer 0–100 | yes | Level |
 | `trust` | integer 0–100 | no | Trust level |
 | `security` | integer 0–9 | no | OLC security |
+| `colourEnabled` | boolean | no | Colour output enabled (default `true`) |
+| `rent` | integer ≥ 0 | no | Retained rent value |
 | `roomVnum` | vnum | yes | Saved room |
 | `vitals` | object | yes | `hit`, `mana`, `move`, `maxHit`, `maxMana`, `maxMove` |
 | `attributes` | object | yes | `strength`, `dexterity`, `intelligence`, `wisdom`, `constitution` |
@@ -420,12 +422,18 @@ One file per player in `Data/players/<Name>.json`.
 | `aliases` | array | no | `{name, replacement}` |
 | `skills` | array | no | `{name, proficiency}` (0–100) |
 | `groups` | string[] | no | Skill group names |
-| `affects` | array | no | `{type, where?, level, duration, location, modifier}` |
+| `affects` | array | no | `{type?/flags?, skill?, where?, level, duration, location, modifier}` |
 | `inventory` | itemInstance[] | no | Carried items |
 | `equipment` | equippedItem[] | no | `{wearLocation, item}` |
 | `pet` | object | no | `{vnum, name, level, sex?, race?, …}` |
 | `lastLogoff` | date-time | no | Last logout |
 | `lastSaved` | date-time | no | Last save |
+| `lastNote` | integer ≥ 0 | no | Last note timestamp |
+| `lastIdea` | integer ≥ 0 | no | Last idea timestamp |
+| `lastPenalty` | integer ≥ 0 | no | Last penalty timestamp |
+| `lastNews` | integer ≥ 0 | no | Last news timestamp |
+| `lastChanges` | integer ≥ 0 | no | Last changes timestamp |
+| `confirmDelete` | boolean | no | Pending delete confirmation |
 
 `itemInstance` is recursive: `{ "vnum", "condition"?, "timer"?, "contents"?,
 "affects"?, "extraDescriptions"? }`. `equipment.wearLocation` is `Light`,
@@ -435,6 +443,13 @@ One file per player in `Data/players/<Name>.json`.
 
 A complete player fixture lives at
 `VibeROM.Common.Tests/Fixtures/valid-player.json`.
+
+`VibeROM.Common.Serialization.PlayerJson` provides `Serialize`, `Deserialize`,
+`Save` and `Load`. Saves are canonical JSON validated against
+`player.schema.json`; `Save` writes a sibling temporary file, flushes it to
+disk and atomically renames it over the target, so a killed process leaves
+either the old save or the new one, never a partial file. A schema-invalid
+character is rejected before the target file is touched.
 
 ## Notes
 
