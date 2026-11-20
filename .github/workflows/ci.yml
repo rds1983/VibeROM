@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build-test-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore VibeROM.slnx
+
+      - name: Build
+        run: dotnet build VibeROM.slnx --no-restore
+
+      - name: Test
+        run: dotnet test VibeROM.slnx --no-build
+
+      - name: Check formatting
+        run: dotnet format VibeROM.slnx --verify-no-changes --no-restore
+
+      - name: Validate committed world data
+        run: dotnet run --project VibeROM.Server --no-build -- --validate-data

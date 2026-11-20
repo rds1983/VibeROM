@@ -94,6 +94,87 @@ public sealed class WorldLoaderTests
         Assert.Equal(1000, result.World.GetShop(1000).KeeperVnum);
     }
 
+    [Fact]
+    public void RejectsPrototypesOutsideTheirAreaVnumRange()
+    {
+        using var temp = new TempDirectory();
+        var areas = temp.CreateDirectory("areas");
+        WriteArea(areas, "range.json", CreateArea("Range", low: 2000, high: 2999));
+        WriteIndex(areas, "range.json");
+
+        var exception = Assert.Throws<WorldDataException>(
+            () => WorldLoader.Load(areas, SchemaDirectory));
+
+        Assert.Contains(exception.Errors, error =>
+            error.Contains("outside its vnum range 2000-2999", StringComparison.Ordinal));
+    }
+
+    [Fact]
+    public void RejectsOverlappingAreaVnumRanges()
+    {
+        using var temp = new TempDirectory();
+        var areas = temp.CreateDirectory("areas");
+        WriteArea(areas, "first.json", CreateArea("First", vnum: 1000, low: 1000, high: 1999));
+        WriteArea(areas, "second.json", CreateArea("Second", vnum: 2000, low: 1500, high: 2499));
+        WriteIndex(areas, "first.json", "second.json");
+
+        var exception = Assert.Throws<WorldDataException>(
+            () => WorldLoader.Load(areas, SchemaDirectory));
+
+        Assert.Contains(exception.Errors, error =>
+            error.Contains("overlaps", StringComparison.Ordinal)
+            && error.Contains("Second", StringComparison.Ordinal));
+    }
+
+    [Fact]
+    public void TruncatedAreaJsonFailsAsDataFormatException()
+    {
+        using var temp = new TempDirectory();
+        var areas = temp.CreateDirectory("areas");
+        File.WriteAllText(Path.Combine(areas, "broken.json"), "{ \"formatVersion\": ");
+        WriteIndex(areas, "broken.json");
+
+        var exception = Assert.Throws<DataFormatException>(
+            () => WorldLoader.Load(areas, SchemaDirectory));
+
+        Assert.Contains("broken.json", exception.Message, StringComparison.Ordinal);
+        Assert.Contains("Invalid JSON", exception.Message, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public void TruncatedIndexJsonFailsAsDataFormatException()
+    {
+        using var temp = new TempDirectory();
+        var areas = temp.CreateDirectory("areas");
+        File.WriteAllText(Path.Combine(areas, "index.json"), "{ \"formatVersion\": ");
+
+        var exception = Assert.Throws<DataFormatException>(
+            () => WorldLoader.Load(areas, SchemaDirectory));
+
+        Assert.Contains("index.json", exception.Message, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public void UnknownEnumNameFailsWithJsonPathAndFileName()
+    {
+        using var temp = new TempDirectory();
+        var areas = temp.CreateDirectory("areas");
+        var area = CreateArea("Names");
+        var json = AreaJson.Serialize(area).Replace(
+            "\"race\": \"Human\"",
+            "\"race\": \"Wizard\"",
+            StringComparison.Ordinal);
+        File.WriteAllText(Path.Combine(areas, "names.json"), json);
+        WriteIndex(areas, "names.json");
+
+        var exception = Assert.Throws<DataFormatException>(
+            () => WorldLoader.Load(areas, SchemaDirectory));
+
+        Assert.Contains("names.json", exception.Message, StringComparison.Ordinal);
+        Assert.Contains(exception.Errors, error =>
+            error.Contains("/mobiles/0/race", StringComparison.Ordinal));
+    }
+
     private static void WriteIndex(string areasDirectory, params string[] names) =>
         File.WriteAllText(
             Path.Combine(areasDirectory, "index.json"),
@@ -116,17 +197,20 @@ public sealed class WorldLoaderTests
         string name,
         bool badExit = false,
         bool emptyMaterial = false,
-        bool withShop = false)
+        bool withShop = false,
+        int vnum = 1000,
+        int low = 1000,
+        int high = 1999)
     {
         var mobile = new MobilePrototype(
-            1000, "guard", "the guard", "A guard stands here.", "A guard.",
+            vnum + 0, "guard", "the guard", "A guard stands here.", "A guard.",
             Race.Human, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0,
             new Dice(1, 4, 0), new Dice(1, 4, 0),
             new DamageDice(new Dice(1, 4, 0), "Slash"),
             new ArmorValues(0, 0, 0, 0),
             Position.Standing, Position.Standing, Sex.Male, 0, Size.Medium, "human");
         var obj = new ObjectPrototype(
-            1001, "gem", "a gem", "A gem lies here.", emptyMaterial ? string.Empty : "gem",
+            vnum + 1, "gem", "a gem", "A gem lies here.", emptyMaterial ? string.Empty : "gem",
             ItemType.Treasure, 0, 0, 1, 1, 1, 100,
             new PlainObjectData(), [], []);
         var exits = new Dictionary<Direction, ExitPrototype>();
@@ -136,12 +220,12 @@ public sealed class WorldLoaderTests
         }
 
         var room = new RoomPrototype(
-            1002, "Room", "A room.", 0, Sector.Inside, 100, 100, 0, exits, []);
+            vnum + 2, "Room", "A room.", 0, Sector.Inside, 100, 100, 0, exits, []);
         return new AreaData(
             name,
             "tests",
-            1000,
-            1999,
+            low,
+            high,
             9,
             "tests",
             "test.are",
@@ -150,7 +234,7 @@ public sealed class WorldLoaderTests
             [obj],
             [room],
             [],
-            withShop ? [new ShopData(1000, [ItemType.Treasure], 100, 100, 0, 23)] : [],
+            withShop ? [new ShopData(vnum, [ItemType.Treasure], 100, 100, 0, 23)] : [],
             [],
             []);
     }

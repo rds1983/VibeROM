@@ -123,8 +123,9 @@ ownership:
 - `GetMobile`, `GetObjectPrototype`, `GetRoomPrototype`, `GetRoom` and
   `GetShop` throw `KeyNotFoundException` and log a warning for unknown vnums.
 - `WorldReferenceValidator` checks exits, keys, container/portal/map
-  destinations, reset targets, shop keepers and specials after a load.
-  `WorldLoader` uses it before returning a validated world.
+  destinations, reset targets, shop keepers, specials, prototype vnum ranges
+  and overlapping area ranges. `WorldLoader` uses it before returning a
+  validated world.
   `TryGetRoom` is the non-throwing variant.
 - `FindHelp(keyword)` is a case-insensitive keyword index built from every token
   in help keywords.

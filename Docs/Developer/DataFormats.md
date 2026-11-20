@@ -529,8 +529,10 @@ is the runtime entry point:
 
 `WorldReferenceValidator` checks exits, exit keys, container keys, portal/map
 destinations, every reset target, shop keepers and special-procedure mobiles,
-and reports the area, room/reset and missing vnum. The server calls the loader
-during startup and logs the entity totals; no legacy `.are` parsing is involved.
+and reports the area, room/reset and missing vnum. It also verifies that every
+mobile/object/room lies inside its area's `vnumRange` and that non-empty area
+ranges do not overlap. The server calls the loader during startup and logs the
+entity totals; no legacy `.are` parsing is involved.
 
 Object levels are already final prototype data in JSON. ROM's
 `convert_objects()` only rewrites old-format objects; the imported 2.4b6 corpus

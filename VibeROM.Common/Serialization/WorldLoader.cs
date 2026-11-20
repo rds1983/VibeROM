@@ -36,7 +36,26 @@ public static class WorldLoader
             throw new WorldDataException([$"Area index '{indexFile}' does not exist."]);
         }
 
-        var index = AreaIndexJson.Deserialize(File.ReadAllText(indexFile), indexSchema);
+        string indexJson;
+        try
+        {
+            indexJson = File.ReadAllText(indexFile);
+        }
+        catch (Exception exception) when (exception is IOException or UnauthorizedAccessException)
+        {
+            throw new WorldDataException([$"Area index '{indexFile}' could not be read: {exception.Message}"]);
+        }
+
+        AreaIndexDocument index;
+        try
+        {
+            index = AreaIndexJson.Deserialize(indexJson, indexSchema);
+        }
+        catch (DataFormatException exception)
+        {
+            throw new DataFormatException(exception.Path ?? "/", $"index.json: {exception.Message}");
+        }
+
         ValidateNames(index.Areas);
 
         var areas = new List<AreaData>(index.Areas.Count);
@@ -48,13 +67,29 @@ public static class WorldLoader
                 throw new WorldDataException([$"Area file '{name}' listed in index.json does not exist."]);
             }
 
+            string json;
             try
             {
-                areas.Add(AreaJson.Deserialize(File.ReadAllText(path), areaSchema));
+                json = File.ReadAllText(path);
+            }
+            catch (Exception exception) when (exception is IOException or UnauthorizedAccessException)
+            {
+                throw new WorldDataException([$"Area file '{name}' could not be read: {exception.Message}"]);
+            }
+
+            try
+            {
+                areas.Add(AreaJson.Deserialize(json, areaSchema));
             }
             catch (DataFormatException exception)
             {
-                throw new DataFormatException(exception.Path ?? "/", $"{name}: {exception.Message}");
+                if (exception.Path is not null)
+                {
+                    throw new DataFormatException(exception.Path, $"{name}: {exception.Message}");
+                }
+
+                throw new DataFormatException(
+                    exception.Errors.Select(error => $"{name}: {error}").ToArray());
             }
         }
 

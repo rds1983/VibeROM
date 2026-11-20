@@ -8,6 +8,7 @@ public static class WorldReferenceValidator
     public static IReadOnlyList<string> Validate(World world)
     {
         var errors = new List<string>();
+        ValidateVnumRanges(world, errors);
 
         foreach (var area in world.Areas)
         {
@@ -112,6 +113,73 @@ public static class WorldReferenceValidator
         }
 
         return errors;
+    }
+
+    private static void ValidateVnumRanges(World world, ICollection<string> errors)
+    {
+        var ranges = new List<(AreaData Area, int Low, int High)>();
+        foreach (var area in world.Areas)
+        {
+            var hasEntities = area.Mobiles.Count + area.Objects.Count + area.Rooms.Count > 0;
+            var hasRange = area.LowVnum > 0 && area.HighVnum > 0;
+            if (hasEntities && !hasRange)
+            {
+                errors.Add($"Area '{area.Name}' has prototypes but no positive vnum range.");
+            }
+
+            if (!hasRange)
+            {
+                continue;
+            }
+
+            ranges.Add((area, area.LowVnum, area.HighVnum));
+            foreach (var mobile in area.Mobiles)
+            {
+                CheckRange(area, "mobile", mobile.Vnum, errors);
+            }
+
+            foreach (var obj in area.Objects)
+            {
+                CheckRange(area, "object", obj.Vnum, errors);
+            }
+
+            foreach (var room in area.Rooms)
+            {
+                CheckRange(area, "room", room.Vnum, errors);
+            }
+        }
+
+        var ordered = ranges.OrderBy(range => range.Low).ThenBy(range => range.High).ToArray();
+        if (ordered.Length == 0)
+        {
+            return;
+        }
+
+        var highest = ordered[0];
+        for (var index = 1; index < ordered.Length; index++)
+        {
+            var current = ordered[index];
+            if (current.Low <= highest.High)
+            {
+                errors.Add(
+                    $"Area '{current.Area.Name}' vnum range {current.Low}-{current.High} overlaps " +
+                    $"area '{highest.Area.Name}' range {highest.Low}-{highest.High}.");
+            }
+
+            if (current.High > highest.High)
+            {
+                highest = current;
+            }
+        }
+    }
+
+    private static void CheckRange(AreaData area, string kind, int vnum, ICollection<string> errors)
+    {
+        if (vnum < area.LowVnum || vnum > area.HighVnum)
+        {
+            errors.Add(
+                $"Area '{area.Name}': {kind} {vnum} is outside its vnum range {area.LowVnum}-{area.HighVnum}.");
+        }
     }
 
     private static void CheckMobile(

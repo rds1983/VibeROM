@@ -36,8 +36,20 @@ public static class JsonSchemaValidator
 
     public static IReadOnlyList<string> Validate(JsonSchema schema, string json)
     {
-        using var document = JsonDocument.Parse(json);
-        return Validate(schema, document.RootElement);
+        JsonDocument document;
+        try
+        {
+            document = JsonDocument.Parse(json);
+        }
+        catch (JsonException exception)
+        {
+            throw new DataFormatException("/", $"Invalid JSON: {exception.Message}");
+        }
+
+        using (document)
+        {
+            return Validate(schema, document.RootElement);
+        }
     }
 
     public static IReadOnlyList<string> Validate(JsonSchema schema, JsonElement instance)

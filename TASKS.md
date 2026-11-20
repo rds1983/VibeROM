@@ -47,15 +47,7 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T014 - Data validation and hardening
-- Depends on: T013
-- Extend `WorldReferenceValidator` with vnum-range/overlap checks; fail on
-  unknown enum/flag names; add corrupt/truncated JSON and schema-violation
-  fixtures. Provide a `--check` / startup `--validate-data` mode.
-- **Done when:** the full corpus validates, corrupt-input tests never throw
-  unhandled exceptions, and CI runs data validation.
-
-### [ ] T015 — Reset engine
+### [ ] T015 - Reset engine
 - Depends on: T007, T012
 - Port `reset_area`/`reset_room`: mob/object/put/give/equip/door resets,
   percent and random resets, "last mob" references, and reset state cleanup on
@@ -543,3 +535,8 @@ Last reviewed: 2026-11-20
   cross-reference validation, material/shop fix-ups, `World.Shops` indexing,
   server startup load and full-corpus load tests; server has no importer
   dependency.
+- **T014 — Data validation and hardening** (2026-11-20)
+  Vnum-range and overlap validation, hardened malformed/truncated JSON errors,
+  `--validate-data` startup mode, corrupt-input and schema-violation tests, and
+  a GitHub Actions workflow that builds, tests, formats and validates the
+  committed corpus.

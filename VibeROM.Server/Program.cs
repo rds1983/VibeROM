@@ -11,22 +11,24 @@ public static class Program
 {
     private const string Usage =
         """
-        Usage: VibeROM.Server [--config <path>]
+        Usage: VibeROM.Server [--config <path>] [--validate-data]
 
         Options:
-          --config <path>  Configuration file (default: search for VibeROM.json)
-          -h, --help       Show this help
+          --config <path>   Configuration file (default: search for VibeROM.json)
+          --validate-data   Load and validate JSON data, then exit
+          --check           Alias for --validate-data
+          -h, --help        Show this help
         """;
 
     public static int Main(string[] args)
     {
-        if (args.Length == 1 && args[0] is "--help" or "-h")
+        if (args.Any(argument => argument is "--help" or "-h"))
         {
             Console.Out.WriteLine(Usage);
             return 0;
         }
 
-        if (!TryParseConfigArgument(args, out var explicitConfigPath, out var argumentError))
+        if (!TryParseArguments(args, out var serverArguments, out var argumentError))
         {
             Console.Error.WriteLine(argumentError);
             Console.Error.WriteLine(Usage);
@@ -50,12 +52,12 @@ public static class Program
 
             var environmentConfigPath = Environment.GetEnvironmentVariable(GameOptionsEnvironment.ConfigPath);
             var usesEnvironmentConfig = !string.IsNullOrWhiteSpace(environmentConfigPath);
-            var configPath = explicitConfigPath
+            var configPath = serverArguments.ConfigPath
                 ?? (usesEnvironmentConfig ? environmentConfigPath : null)
                 ?? GameOptionsLoader.FindConfigFile(Environment.CurrentDirectory, AppContext.BaseDirectory);
             var loaded = GameOptionsLoader.Load(
                 configPath,
-                requireFile: explicitConfigPath is not null || usesEnvironmentConfig);
+                requireFile: serverArguments.ConfigPath is not null || usesEnvironmentConfig);
 
             LoggingSetup.Configure(loaded.Options.Logging, loaded.BaseDirectory);
 
@@ -95,6 +97,12 @@ public static class Program
                 loadedWorld.World.Areas.Sum(area => area.Specials.Count),
                 loadedWorld.World.TopHelp);
 
+            if (serverArguments.ValidateData)
+            {
+                logger.Info("Data validation succeeded.");
+                return 0;
+            }
+
             logger.Info("Scaffold only: server bootstrap is implemented in T020 and T024.");
             return 0;
         }
@@ -116,36 +124,58 @@ public static class Program
         }
     }
 
-    private static bool TryParseConfigArgument(
+    private static bool TryParseArguments(
         string[] args,
-        out string? configPath,
+        out ServerArguments arguments,
         out string error)
     {
-        configPath = null;
+        arguments = new ServerArguments(null, false);
         error = string.Empty;
 
-        if (args.Length == 0)
-        {
-            return true;
-        }
+        string? configPath = null;
+        var validateData = false;
 
-        if (args.Length == 2 && args[0] == "--config")
+        for (var index = 0; index < args.Length; index++)
         {
-            configPath = args[1];
-            return true;
-        }
-
-        if (args.Length == 1 && args[0].StartsWith("--config=", StringComparison.Ordinal))
-        {
-            var value = args[0]["--config=".Length..];
-            if (!string.IsNullOrWhiteSpace(value))
+            var argument = args[index];
+            if (argument is "--validate-data" or "--check")
             {
-                configPath = value;
-                return true;
+                validateData = true;
+                continue;
             }
+
+            if (argument == "--config")
+            {
+                if (index + 1 >= args.Length || args[index + 1].StartsWith('-'))
+                {
+                    error = "--config requires a value.";
+                    return false;
+                }
+
+                configPath = args[++index];
+                continue;
+            }
+
+            if (argument.StartsWith("--config=", StringComparison.Ordinal))
+            {
+                var value = argument["--config=".Length..];
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    error = "--config requires a value.";
+                    return false;
+                }
+
+                configPath = value;
+                continue;
+            }
+
+            error = $"Unknown or incomplete argument '{argument}'.";
+            return false;
         }
 
-        error = "Unknown or incomplete arguments.";
-        return false;
+        arguments = new ServerArguments(configPath, validateData);
+        return true;
     }
+
+    private sealed record ServerArguments(string? ConfigPath, bool ValidateData);
 }
