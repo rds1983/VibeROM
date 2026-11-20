@@ -4,6 +4,7 @@ using VibeROM.Common.Configuration;
 using VibeROM.Common.Logging;
 using VibeROM.Common.Rom;
 using VibeROM.Common.Serialization;
+using VibeROM.Server.Network;
 
 namespace VibeROM.Server;
 
@@ -20,7 +21,7 @@ public static class Program
           -h, --help        Show this help
         """;
 
-    public static int Main(string[] args)
+    public static async Task<int> Main(string[] args)
     {
         if (args.Any(argument => argument is "--help" or "-h"))
         {

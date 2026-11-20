@@ -11,8 +11,8 @@ Planned pages:
 - `Building.md` — prerequisites, build, publish, run (planned)
 - [Configuration.md](Configuration.md) — every configuration key, default and
   environment override (**available**)
+- [Networking.md](Networking.md) — TCP listener, telnet negotiation and shutdown (**available**)
 - [DataLayout.md](DataLayout.md) — JSON areas, players, notes, gods, music, schemas, logs (**available**)
-  (planned)
 - [ImportingLegacyData.md](ImportingLegacyData.md) — using `VibeROM.AreaImporter` once (**available**)
 - `Operations.md` — startup, shutdown, restart, copyover, backups (planned)
 - `Administration.md` — accounts, bans, wizlock, immortals (planned)

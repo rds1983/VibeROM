@@ -27,5 +27,7 @@ public sealed class Descriptor
 
     public int TerminalHeight { get; set; } = 24;
 
+    public string TerminalType { get; set; } = string.Empty;
+
     public DateTimeOffset ConnectedAt { get; } = DateTimeOffset.UtcNow;
 }

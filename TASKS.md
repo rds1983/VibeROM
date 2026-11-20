@@ -52,7 +52,7 @@ Last reviewed: 2026-11-20
 
 ## Milestone 1 — Server, login and interaction
 
-### [ ] T020 — TCP server and telnet protocol
+### [~] T020 — TCP server and telnet protocol
 - Depends on: T003, T007
 - Async listener bound to the configured `server.bindAddress` and
   `server.port`, descriptor per connection, output buffering, greeting, telnet
@@ -525,3 +525,7 @@ Last reviewed: 2026-11-20
   Canonical player JSON with schema validation, full `Character`/`PlayerData`
   mapping, recursive inventory/equipment and pet data, and atomic
   temp-file/rename saves; round-trip, path-error and crash-safety tests.
+- **T020 — TCP server and telnet protocol** (2026-11-20)
+  Async listener, per-connection descriptors and output queues, greeting,
+  TTYPE/NAWS negotiation, telnet command handling, ANSI colour, graceful
+  shutdown, and slow/garbage/disconnect integration tests.
