@@ -175,7 +175,13 @@
         "Rescue",
         "Tail",
         "Trip",
-        "Crush"
+        "Crush",
+        "AssistAll",
+        "AssistAlign",
+        "AssistRace",
+        "AssistPlayers",
+        "AssistGuard",
+        "AssistVnum"
       ]
     },
     "immFlag": {
@@ -262,7 +268,37 @@
       ]
     },
     "race": {
-      "enum": ["Unique", "Human", "Elf", "Dwarf", "Giant"]
+      "enum": [
+        "Unique",
+        "Human",
+        "Elf",
+        "Dwarf",
+        "Giant",
+        "Bat",
+        "Bear",
+        "Cat",
+        "Centipede",
+        "Dog",
+        "Doll",
+        "Dragon",
+        "Fido",
+        "Fox",
+        "Goblin",
+        "Hobgoblin",
+        "Kobold",
+        "Lizard",
+        "Modron",
+        "Orc",
+        "Pig",
+        "Rabbit",
+        "SchoolMonster",
+        "Snake",
+        "SongBird",
+        "Troll",
+        "WaterFowl",
+        "Wolf",
+        "Wyvern"
+      ]
     },
     "sex": {
       "enum": ["Neutral", "Male", "Female"]

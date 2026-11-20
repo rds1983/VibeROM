@@ -155,10 +155,10 @@ loader (T014), not by the schema.
 | `shortDescription` | string | yes | "the guard" |
 | `longDescription` | string | yes | Room line |
 | `description` | string | yes | Look description |
-| `race` | enum | yes | `Unique`, `Human`, `Elf`, `Dwarf`, `Giant` |
+| `race` | enum | yes | `Unique`, `Human`, `Elf`, `Dwarf`, `Giant`, and all monster races |
 | `actFlags` | enum[] | no | `Sentinel`, `Aggressive`, … |
 | `affectedBy` | enum[] | no | Permanent affect flags |
-| `offensiveFlags` | enum[] | no | Combat behaviours |
+| `offensiveFlags` | enum[] | no | Combat behaviours, including `Assist*` bits |
 | `immunities` | enum[] | no | Damage/source immunities |
 | `resistances` | enum[] | no | Resistances |
 | `vulnerabilities` | enum[] | no | Vulnerabilities |
@@ -183,6 +183,11 @@ loader (T014), not by the schema.
 `vulnerabilities`, `form` and `parts` are the flags written in the area file.
 The loader adds the race defaults afterwards, exactly like ROM. They are not
 duplicated in the JSON.
+
+The `race` enum contains all 29 distinct `race_table` entries, including
+monster races such as `Bat`, `Dragon` and `Wyvern`; player saves use only the
+four PC races. `offensiveFlags` includes both `OFF_*` combat bits and the
+`ASSIST_*` bits (`AssistAll` … `AssistVnum`).
 
 `armor` values use the original area-file units. The loader multiplies them by
 10, matching ROM's internal AC scale. `damage.attackType` is the attack noun

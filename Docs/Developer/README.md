@@ -16,6 +16,8 @@ Pages (some are still planned):
   rules (**available**)
 - [TextEngine.md](TextEngine.md) — argument parsing, strings, colour, dice and
   `act()` tokens (**available**)
+- [CanonicalNames.md](CanonicalNames.md) — flag/value registries, table
+  validation and schema alignment (**available**)
 - `SaveFormat.md` — player JSON schema and versioning (planned)
 - `CommandParity.md` — all 242 commands and implementation status (planned)
 - `SpellParity.md` — all 98 spells, skills and special procedures (planned)

@@ -2,6 +2,7 @@ using NLog;
 using VibeROM.Common;
 using VibeROM.Common.Configuration;
 using VibeROM.Common.Logging;
+using VibeROM.Common.Rom;
 
 namespace VibeROM.Server;
 
@@ -67,6 +68,14 @@ public static class Program
                 loaded.Options.Server.MaxConnections);
             logger.Info("Data directory: {DataDirectory}", paths.DataDirectory);
             logger.Info("Log directory: {LogsDirectory}", paths.LogsDirectory);
+
+            RomTables.ValidateOrThrow();
+            logger.Info(
+                "ROM tables validated: {RaceCount} races, {SkillCount} skills, {GroupCount} groups.",
+                RomTables.RaceDefinitions.Count,
+                RomTables.Skills.Count,
+                RomTables.Groups.Count);
+
             logger.Info("Scaffold only: server bootstrap is implemented in T020 and T024.");
             return 0;
         }

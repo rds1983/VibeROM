@@ -47,27 +47,14 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T005 — Canonical names, constants and flags
-- Depends on: T004
-- Port the lookup/flag tables from `const.c`, `tables.c`, `flags.c`, `bit.c`:
-  races, PC races, classes, titles, skills, groups, weapons, attack types,
-  item types, liquids, wiznet, sectors, positions, sizes, and all bit flags
-  (act, affect, apply, wear, room, exit, extra, container, weapon, form, part,
-  imm/res/vuln, off).
-- Define the **canonical JSON names** for every value (PascalCase, e.g.
-  `ACT_AGGRESSIVE` → `"Aggressive"`, `AFF_INFRARED` → `"Infrared"`,
-  `DAM_SLASH` → `"Slash"`). One registry in `VibeROM.Common` powers the
-  importer, serializer, loader and docs; importer-only legacy letters stay in
-  the importer.
-- **Done when:** round-trip tests prove every name maps to the correct bit or
-  value, no name is duplicated, and the registry has no unmapped entries.
-
 ### [ ] T006 — Domain data model
 - Depends on: T005
 - Implement the entity model in `VibeROM.Common`: area, room index, exit,
   mobile index, object index, reset, shop, help, affect, extra description,
   character, object, PC data, descriptor, kill/memory/generation data, note,
   ban, time, weather.
+- Use `RomFlags`, `RomTables` enums and definitions for every flag and value
+  field; do not redefine race/class/item/flag lists in the domain.
 - Model ownership and references explicitly (no raw pointers). Prefer immutable
   template data for prototypes and separate mutable instances.
 - Characters and objects expose the data needed by `IActActor`/`IActObject`,
@@ -99,6 +86,8 @@ Last reviewed: 2026-11-20
   `#SOCIALS`, including OLC `VNUMs`/`End` blocks.
 - Map everything into the shared domain model and report unknown names,
   duplicate vnums and dangling references with source locations.
+- Resolve legacy letters and words through importer-only maps into the canonical
+  `RomFlags`/`RomTables` names; unknown legacy values are errors.
 - **Done when:** `proto.are`, `rom.are`, `help.are` and `social.are` parse with
   zero errors and asserted entity counts, including old-format sections.
 
@@ -108,6 +97,8 @@ Last reviewed: 2026-11-20
   `VibeROM.Common`: enum names, flag arrays, item-type-specific objects, reset
   polymorphism, canonical property order, deterministic output, omitted
   nulls/empties.
+- Use `RomFlags` and `RomTables` to resolve and validate every name; unknown
+  names fail with the JSON path.
 - Provide the runtime deserializer + schema validation used by the server and
   the writer used by the importer.
 - **Done when:** domain → JSON → domain round-trips exactly; snapshots are
@@ -346,6 +337,8 @@ Last reviewed: 2026-11-20
   sneak, steal, pick, fast healing, meditation, haggle, lore, recall, scrolls,
   staves, wands, hand-to-hand, berserk, dirt, enhanced damage, parry, dodge.
 - Use `DiceRoller` for every roll and `ArgumentParser` for command arguments.
+- Resolve skills/groups through `RomTables.FindSkill`/`FindGroup` and use the
+  `Skills` definitions for levels, ratings, mana and lag.
 - **Done when:** each skill has success/failure tests at low, mid and cap
   proficiency, including lag and positional requirements.
 
@@ -361,6 +354,8 @@ Last reviewed: 2026-11-20
 - Depends on: T042, T041
 - Casting pipeline: target resolution, mana, cast lag, spell level, saves,
   damage, messages, group spells, object-cast spells, and failure/backfire paths.
+- Read cast metadata from the `Skills` table (`SkillTarget`, `Position`,
+  `MinMana`, `Beats`, messages).
 - **Done when:** the pipeline is tested with stub spells for every target type
   (offensive, defensive, room, object, self, group).
 
@@ -388,6 +383,7 @@ Last reviewed: 2026-11-20
   resistances, criticals, death, corpses, loot, XP awards, PvP rules, wimpy,
   flee and combat lag.
 - Use `DiceRoller` for every combat roll; do not introduce ad-hoc RNG.
+- Classify damage with `RomTables.DamageTypes`/`AttackTypes`.
 - **Done when:** seeded simulation over thousands of fights stays within
   expected damage ranges and never violates invariants (no dead attackers,
   no negative HP, no orphaned corpses).
@@ -405,6 +401,8 @@ Last reviewed: 2026-11-20
 - Depends on: T050, T015
 - Mobile update: wandering, scavenging, aggressive/pursuit, follower recall,
   special-room behaviour, charm/fear, and idle/mob act flags.
+- Apply `RaceDefinitions` defaults (act/affect/offensive/immunity/resistance/
+  vulnerability/form/part masks) when mobiles are created.
 - **Done when:** scenario tests show mobs wander within their area, pursue
   correctly, return home and never leak from the world.
 
@@ -412,6 +410,7 @@ Last reviewed: 2026-11-20
 - Depends on: T052
 - Port the 22 `spec_*` functions from `special.c` (this ROM build has no
   mob/object/room programs) and register them by canonical name from JSON.
+- Use `SpecialDefinitions` names as the canonical/legacy mapping.
 - **Done when:** each special has a test, is registered in the parity table,
   and an unknown special in JSON fails validation.
 
@@ -561,6 +560,8 @@ Last reviewed: 2026-11-20
 
 - Legacy pfile importer (JSON output, forced password reset).
 - JSON format migration tooling for `formatVersion` bumps.
+- Reproducible generator for race/skill/group/title tables from the original
+  ROM source (current tables are checked-in generated data).
 - CI workflow (GitHub Actions): build, test, format, JSON validation and
   importer determinism.
 - Optional web client or WebSocket gateway.
@@ -587,3 +588,7 @@ Last reviewed: 2026-11-20
   Argument parsing, string helpers, brace colour→ANSI conversion, money
   formatting, dice/random helpers and the full `act()` token expander with
   visibility, pronouns, placeholders and deterministic tests.
+- **T005 — Canonical names, constants and flags** (2026-11-20)
+  17 flag registries, 15 value tables and the race/skill/group/title/class
+  definitions; schema-alignment and round-trip tests guarantee canonical names,
+  bit values and table completeness.

@@ -120,6 +120,7 @@ Every task updates the documentation it invalidates. At minimum:
 | JSON schema, field names, flags, item data | `Docs/Developer/DataFormats.md` |
 | Importer behaviour, options, mapping, errors | `Docs/Developer/AreaImporter.md` |
 | Argument parsing, strings, colour, dice, `act()` tokens | `Docs/Developer/TextEngine.md` |
+| Flags, canonical names, value tables, schema alignment | `Docs/Developer/CanonicalNames.md` |
 | New data folder or file format | `Data/README.md` + `Docs/Developer/` |
 | Task-level decisions and deviations from ROM | `Docs/Developer/ParityNotes.md` |
 
