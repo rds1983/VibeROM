@@ -9,7 +9,8 @@ Agent workflow and coding standards are in [AGENTS.md](../../AGENTS.md).
 Pages (some are still planned):
 
 - `Architecture.md` — projects, layers, game loop, dependency rules (planned)
-- `DomainModel.md` — entities, ownership and lifecycle (planned)
+- [DomainModel.md](DomainModel.md) — entities, ownership, invariants and
+  validation (**available**)
 - [DataFormats.md](DataFormats.md) — JSON layout, naming rules, schemas,
   examples (**available**)
 - [AreaImporter.md](AreaImporter.md) — legacy `.are` → JSON tool and mapping

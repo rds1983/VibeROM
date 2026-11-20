@@ -47,29 +47,19 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T006 — Domain data model
-- Depends on: T005
-- Implement the entity model in `VibeROM.Common`: area, room index, exit,
-  mobile index, object index, reset, shop, help, affect, extra description,
-  character, object, PC data, descriptor, kill/memory/generation data, note,
-  ban, time, weather.
-- Use `RomFlags`, `RomTables` enums and definitions for every flag and value
-  field; do not redefine race/class/item/flag lists in the domain.
-- Model ownership and references explicitly (no raw pointers). Prefer immutable
-  template data for prototypes and separate mutable instances.
-- Characters and objects expose the data needed by `IActActor`/`IActObject`,
-  with visibility hooks for `ActVisibility`.
-- Include item-type-specific object data and typed reset variants.
-- **Done when:** the model compiles with nullable enabled, invariants are
-  documented in `Docs/Developer/DomainModel.md`, and construction tests pass.
-
 ### [ ] T007 — World indexes and entity lifecycle
 - Depends on: T006
 - Vnum lookups for mobiles/objects/rooms/helps, `top_*` counters, area list,
   object/character create-destroy paths, equipment/container unlinking, affect
   cleanup.
+- Create live `Room`/`Character`/`GameObject` instances from prototypes and
+  enforce the ownership/back-reference invariants in
+  `Docs/Developer/DomainModel.md`.
+- Build vnum -> prototype indexes from `AreaData`, plus attach/detach helpers
+  for room, inventory, container and equipment moves.
 - **Done when:** fuzz-style tests create and destroy thousands of entities with
-  no leaked references or inconsistent counters; lookup errors are logged.
+  no leaked references or inconsistent counters; attach/detach operations
+  maintain every back-reference; lookup errors are logged.
 
 ### [ ] T008 — Legacy area tokenizer (importer only)
 - Depends on: T004
@@ -99,6 +89,8 @@ Last reviewed: 2026-11-20
   nulls/empties.
 - Use `RomFlags` and `RomTables` to resolve and validate every name; unknown
   names fail with the JSON path.
+- Convert `weightPounds` to `WeightTenths` and mobile armor values to ROM's
+  internal AC units (`×10`).
 - Provide the runtime deserializer + schema validation used by the server and
   the writer used by the importer.
 - **Done when:** domain → JSON → domain round-trips exactly; snapshots are
@@ -135,8 +127,9 @@ Last reviewed: 2026-11-20
 - Depends on: T010, T012
 - Load `Data/areas/index.json` then each area JSON in order; validate against
   the schema and reject duplicate vnums or invalid references with precise
-  messages. Apply ROM fix-ups (object levels, material defaults, shop keeper
-  indexing) after deserialization.
+  messages. Deserialize into `AreaData`/prototype records, then create runtime
+  `Room` instances and apply ROM fix-ups (object levels, material defaults,
+  shop keeper indexing, weight/armor unit conversions).
 - **Done when:** the server loads the full JSON corpus with zero errors, and the
   server assembly has no reference to legacy `.are` parsing.
 
@@ -153,6 +146,7 @@ Last reviewed: 2026-11-20
 - Port `reset_area`/`reset_room`: mob/object/put/give/equip/door resets,
   percent and random resets, "last mob" references, and reset state cleanup on
   area repop.
+- Consume the typed `Reset` variants from `AreaData.Resets`.
 - **Done when:** deterministic seeded tests reproduce reset graphs for several
   real areas; repop twice yields an identical world snapshot.
 
@@ -167,8 +161,9 @@ Last reviewed: 2026-11-20
 ### [ ] T030 — JSON player save/load
 - Depends on: T010
 - New JSON player format (`Data/players/*.json`, `player.schema.json`): all
-  original pfile fields — aliases, affects, skills, conditions, pet, clans,
+  original pfile fields - aliases, affects, skills, conditions, pet, clans,
   colours, rent. Atomic writes, crash safety and schema validation.
+- Map to/from `Character` and `PlayerData` from the domain model.
 - No legacy pfile support at runtime; a legacy pfile importer stays in the
   backlog. Password hashes are not migrated; imported players get a reset flow.
 - **Done when:** save → load → save is stable, schema-invalid saves are rejected
@@ -241,8 +236,8 @@ Last reviewed: 2026-11-20
 - Depends on: T026
 - `can_see`, light sources, darkness, invis/hide/sneak, infravision, room
   description/contents/exits, look in/at, examine, extra descriptions.
-- Build `ActVisibility` from the visibility rules and format messages per
-  recipient.
+- Implement `IVisibilityService`; build `ActVisibility` from the rules and
+  format messages per recipient.
 - **Done when:** visibility truth tables and room rendering snapshots pass for
   day/night, blind, invis and hidden actors.
 
@@ -592,3 +587,7 @@ Last reviewed: 2026-11-20
   17 flag registries, 15 value tables and the race/skill/group/title/class
   definitions; schema-alignment and round-trip tests guarantee canonical names,
   bit values and table completeness.
+- **T006 — Domain data model** (2026-11-20)
+  Immutable area/mobile/object/room/exit/reset/shop/help/social prototypes,
+  typed item data and resets, mutable characters/objects/rooms/descriptors,
+  ownership invariants, `IActActor`/`IActObject` adapters and visibility hooks.

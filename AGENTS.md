@@ -117,6 +117,7 @@ Every task updates the documentation it invalidates. At minimum:
 | Player-visible behaviour, commands, classes, races, skills | `Docs/Player/` |
 | Configuration, ports, paths, build/run, operations, OLC admin | `Docs/Admin/` |
 | Architecture, domain model, formats, parity reports, testing | `Docs/Developer/` |
+| Domain entities, ownership, invariants | `Docs/Developer/DomainModel.md` |
 | JSON schema, field names, flags, item data | `Docs/Developer/DataFormats.md` |
 | Importer behaviour, options, mapping, errors | `Docs/Developer/AreaImporter.md` |
 | Argument parsing, strings, colour, dice, `act()` tokens | `Docs/Developer/TextEngine.md` |
