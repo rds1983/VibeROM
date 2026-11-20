@@ -29,7 +29,8 @@ The repository ships [`VibeROM.json`](../../VibeROM.json):
   "server": {
     "bindAddress": "0.0.0.0",
     "port": 4000,
-    "maxConnections": 100
+    "maxConnections": 100,
+    "idleTimeoutSeconds": 600
   },
   "data": {
     "directory": "Data",
@@ -62,6 +63,7 @@ instead of being ignored.
 | `server.bindAddress` | string | `0.0.0.0` | `VIBEROM_SERVER__BIND_ADDRESS` | `*`, `localhost`, or an IP address |
 | `server.port` | integer 1–65535 | `4000` | `VIBEROM_SERVER__PORT` | Telnet listen port |
 | `server.maxConnections` | integer ≥ 1 | `100` | `VIBEROM_SERVER__MAX_CONNECTIONS` | Maximum simultaneous connections |
+| `server.idleTimeoutSeconds` | integer 1-86400 | `600` | `VIBEROM_SERVER__IDLE_TIMEOUT_SECONDS` | Idle connection timeout |
 
 ## Data paths
 
@@ -143,6 +145,7 @@ Rules:
 - `server.bindAddress` must be `*`, `localhost`, or a valid IP address.
 - `server.port` must be in `1..65535`.
 - `server.maxConnections` must be at least `1`.
+- `server.idleTimeoutSeconds` must be between `1` and `86400`.
 - Data and log directories must not be empty; data subfolders must be relative
   and must not contain `..`.
 - `logging.level` must be one of the listed levels.

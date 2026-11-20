@@ -39,6 +39,12 @@ public sealed record GameOptions
             errors.Add($"server.maxConnections must be at least 1 (was {Server.MaxConnections}).");
         }
 
+        if (Server.IdleTimeoutSeconds is < 1 or > 86400)
+        {
+            errors.Add(
+                $"server.idleTimeoutSeconds must be between 1 and 86400 (was {Server.IdleTimeoutSeconds}).");
+        }
+
         ValidatePath("data.directory", Data.Directory, allowAbsolute: true, errors);
         ValidatePath("data.areas", Data.Areas, allowAbsolute: false, errors);
         ValidatePath("data.players", Data.Players, allowAbsolute: false, errors);
@@ -132,6 +138,8 @@ public sealed record ServerOptions
     public int Port { get; init; } = 4000;
 
     public int MaxConnections { get; init; } = 100;
+
+    public int IdleTimeoutSeconds { get; init; } = 600;
 }
 
 public sealed record DataOptions

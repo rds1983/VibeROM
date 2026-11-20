@@ -92,8 +92,119 @@ public sealed class TelnetServerTests
         }
     }
 
-    private static TelnetServer CreateServer() =>
-        new(new TelnetServerOptions(IPAddress.Loopback, 0, MaxConnections: 8));
+    [Fact]
+    public async Task InputLineEditingHandlesBackspaceAndCarriageReturn()
+    {
+        await using var server = CreateServer();
+        var line = new TaskCompletionSource<string>(TaskCreationOptions.RunContinuationsAsynchronously);
+        server.LineReceived += (_, value) => line.TrySetResult(value);
+        await server.StartAsync();
+        using var client = new TcpClient();
+        await client.ConnectAsync(IPAddress.Loopback, server.Port);
+        await ReadUntilAsync(client.GetStream(), "Welcome to VibeROM");
+
+        await SendAsync(
+            client.GetStream(),
+            Encoding.Latin1.GetBytes("ab\bcd\r\n"));
+
+        var received = await line.Task.WaitAsync(TimeSpan.FromSeconds(5));
+        Assert.Equal("acd", received);
+    }
+
+    [Fact]
+    public async Task SimultaneousConnectionsAllReceiveGreetings()
+    {
+        await using var server = CreateServer();
+        await server.StartAsync();
+        var clients = Enumerable.Range(0, 3).Select(_ => new TcpClient()).ToArray();
+        try
+        {
+            foreach (var client in clients)
+            {
+                await client.ConnectAsync(IPAddress.Loopback, server.Port);
+            }
+
+            foreach (var client in clients)
+            {
+                var greeting = await ReadUntilAsync(client.GetStream(), "Welcome to VibeROM");
+                Assert.Contains("Welcome to VibeROM", greeting, StringComparison.Ordinal);
+            }
+
+            Assert.Equal(3, server.Connections.Count);
+        }
+        finally
+        {
+            foreach (var client in clients)
+            {
+                client.Dispose();
+            }
+        }
+    }
+
+    [Fact]
+    public async Task IdleTimeoutSendsNoticeAndClosesTheConnection()
+    {
+        await using var server = CreateServer(idleTimeout: TimeSpan.FromMilliseconds(200));
+        await server.StartAsync();
+        using var client = new TcpClient();
+        await client.ConnectAsync(IPAddress.Loopback, server.Port);
+        await ReadUntilAsync(client.GetStream(), "Welcome to VibeROM");
+
+        var response = await ReadUntilAsync(client.GetStream(), "Idle timeout");
+        Assert.Contains("Idle timeout", response, StringComparison.Ordinal);
+
+        using var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(5));
+        while (server.Connections.Count > 0)
+        {
+            await Task.Delay(20, timeout.Token);
+        }
+    }
+
+    [Fact]
+    public async Task MaxConnectionsRejectsAdditionalClients()
+    {
+        await using var server = CreateServer(maxConnections: 1);
+        await server.StartAsync();
+        using var first = new TcpClient();
+        await first.ConnectAsync(IPAddress.Loopback, server.Port);
+        await ReadUntilAsync(first.GetStream(), "Welcome to VibeROM");
+
+        using var second = new TcpClient();
+        await second.ConnectAsync(IPAddress.Loopback, server.Port);
+        using var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(2));
+        var buffer = new byte[64];
+        var read = await second.GetStream().ReadAsync(buffer, timeout.Token);
+        Assert.Equal(0, read);
+        Assert.Single(server.Connections);
+    }
+
+    [Fact]
+    public async Task ReconnectAfterDisconnectIsAccepted()
+    {
+        await using var server = CreateServer();
+        await server.StartAsync();
+
+        using (var first = new TcpClient())
+        {
+            await first.ConnectAsync(IPAddress.Loopback, server.Port);
+            await ReadUntilAsync(first.GetStream(), "Welcome to VibeROM");
+        }
+
+        using var second = new TcpClient();
+        await second.ConnectAsync(IPAddress.Loopback, server.Port);
+        var greeting = await ReadUntilAsync(second.GetStream(), "Welcome to VibeROM");
+        Assert.Contains("Welcome to VibeROM", greeting, StringComparison.Ordinal);
+        Assert.Contains(server.Connections, descriptor => descriptor.Host == "127.0.0.1");
+    }
+
+    private static TelnetServer CreateServer(
+        int maxConnections = 8,
+        TimeSpan? idleTimeout = null) =>
+        new(new TelnetServerOptions(
+            IPAddress.Loopback,
+            0,
+            maxConnections,
+            IdleTimeout: idleTimeout));
 
     private static async Task<string> ReadUntilAsync(
         NetworkStream stream,

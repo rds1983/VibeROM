@@ -24,8 +24,11 @@ public sealed record TelnetServerOptions(
     System.Net.IPAddress BindAddress,
     int Port,
     int MaxConnections = 100,
-    bool ColourEnabled = true)
+    bool ColourEnabled = true,
+    TimeSpan? IdleTimeout = null)
 {
+    public TimeSpan EffectiveIdleTimeout { get; } = IdleTimeout ?? TimeSpan.FromMinutes(10);
+
     public string Greeting { get; init; } =
         "\r\n{W}Welcome to VibeROM{x}\r\nROM 2.4b6 (1998-05-29)\r\n\r\n";
 }

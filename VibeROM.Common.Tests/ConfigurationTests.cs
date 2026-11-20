@@ -33,6 +33,7 @@ public sealed class ConfigurationTests
         Assert.Equal("127.0.0.1", loaded.Options.Server.BindAddress);
         Assert.Equal(5000, loaded.Options.Server.Port);
         Assert.Equal(25, loaded.Options.Server.MaxConnections);
+        Assert.Equal(600, loaded.Options.Server.IdleTimeoutSeconds);
         Assert.Equal("GameData", loaded.Options.Data.Directory);
         Assert.Equal("Debug", loaded.Options.Logging.Level);
         Assert.Equal(60, loaded.Options.Gameplay.AutosaveIntervalSeconds);
@@ -47,12 +48,14 @@ public sealed class ConfigurationTests
 
         var environment = TestEnvironment.Of(
             (GameOptionsEnvironment.ServerPort, "6000"),
+            (GameOptionsEnvironment.ServerIdleTimeoutSeconds, "120"),
             (GameOptionsEnvironment.LoggingLevel, "Warn"),
             (GameOptionsEnvironment.DataAreas, "world"));
 
         var loaded = GameOptionsLoader.Load(configPath, requireFile: true, environment);
 
         Assert.Equal(6000, loaded.Options.Server.Port);
+        Assert.Equal(120, loaded.Options.Server.IdleTimeoutSeconds);
         Assert.Equal("Warn", loaded.Options.Logging.Level);
         Assert.Equal("world", loaded.Options.Data.Areas);
     }
@@ -78,6 +81,7 @@ public sealed class ConfigurationTests
     [Theory]
     [InlineData("""{ "server": { "port": 70000 } }""", "server.port")]
     [InlineData("""{ "server": { "maxConnections": 0 } }""", "server.maxConnections")]
+    [InlineData("""{ "server": { "idleTimeoutSeconds": 0 } }""", "server.idleTimeoutSeconds")]
     [InlineData("""{ "loggging": { "level": "Info" } }""", "loggging")]
     [InlineData("""{ "logging": { "level": "Loud" } }""", "logging.level")]
     [InlineData("""{ "data": { "areas": "../areas" } }""", "data.areas")]

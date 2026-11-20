@@ -108,8 +108,31 @@ public static class Program
                 return 0;
             }
 
-            logger.Info("Scaffold only: server bootstrap is implemented in T020 and T024.");
-            return 0;
+            using var shutdown = new CancellationTokenSource();
+            ConsoleCancelEventHandler cancelHandler = (_, eventArgs) =>
+            {
+                eventArgs.Cancel = true;
+                shutdown.Cancel();
+            };
+            Console.CancelKeyPress += cancelHandler;
+
+            var server = new TelnetServer(
+                new TelnetServerOptions(
+                    TelnetServer.ResolveBindAddress(loaded.Options.Server.BindAddress),
+                    loaded.Options.Server.Port,
+                    loaded.Options.Server.MaxConnections,
+                    IdleTimeout: TimeSpan.FromSeconds(loaded.Options.Server.IdleTimeoutSeconds)));
+            try
+            {
+                await server.RunAsync(shutdown.Token);
+                logger.Info("Server stopped.");
+                return 0;
+            }
+            finally
+            {
+                Console.CancelKeyPress -= cancelHandler;
+                await server.DisposeAsync();
+            }
         }
         catch (GameConfigurationException exception)
         {

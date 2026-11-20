@@ -22,7 +22,13 @@ creates one `Descriptor` per client:
 - renders `{r}`-style colour codes with `Colour.ToAnsi` when ANSI colour is
   enabled; logs use plain text
 - queues output per connection so one slow client cannot block another
+- limits input lines, supports backspace/CR/LF line editing and emits a
+  `LineReceived` event for later login/command handling
+- times out idle clients after `server.idleTimeoutSeconds` (default 600) with
+  a notice and clean disconnect
 - contains malformed/telnet garbage input without taking down the listener
+- removes link-dead descriptors and accepts reconnects immediately
+- enforces `server.maxConnections`
 
 Login, line editing and world commands are implemented by later tasks; the
 current greeting is followed by an open connection waiting for input.

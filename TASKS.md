@@ -61,13 +61,6 @@ Last reviewed: 2026-11-20
 - **Done when:** integration tests connect, negotiate, receive the greeting and
   disconnect cleanly; slow/garbage clients cannot crash the server.
 
-### [ ] T021 — Connection lifecycle
-- Depends on: T020
-- Connection states, input line editing/backspace, idle timeout, max connections
-  from configuration, host resolution, link-dead handling, logging of
-  connects/disconnects.
-- **Done when:** tests cover simultaneous connects, abrupt disconnects, idle
-  timeouts and reconnect within the grace window.
 
 ### [ ] T022 — Login flow
 - Depends on: T021, T030 (player save/load; the returning-character branch
@@ -529,3 +522,7 @@ Last reviewed: 2026-11-20
   Async listener, per-connection descriptors and output queues, greeting,
   TTYPE/NAWS negotiation, telnet command handling, ANSI colour, graceful
   shutdown, and slow/garbage/disconnect integration tests.
+- **T021 — Connection lifecycle** (2026-11-20)
+  Line editing/backspace, line events, configurable idle timeout, max
+  connections, host/address handling, link-dead cleanup, reconnect tests and
+  live listener startup with Ctrl+C shutdown.

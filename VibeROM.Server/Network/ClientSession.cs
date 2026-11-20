@@ -14,6 +14,7 @@ internal sealed class ClientSession
     private readonly TcpClient _client;
     private readonly NetworkStream _stream;
     private readonly TelnetServerOptions _options;
+    private readonly Action<Descriptor, string> _lineReceived;
     private readonly Channel<byte[]> _output = Channel.CreateBounded<byte[]>(
         new BoundedChannelOptions(64)
         {
@@ -29,14 +30,19 @@ internal sealed class ClientSession
     private bool _subOptionRead;
     private readonly List<byte> _subData = [];
 
-    public ClientSession(TcpClient client, TelnetServerOptions options)
+    public ClientSession(
+        TcpClient client,
+        TelnetServerOptions options,
+        Action<Descriptor, string> lineReceived)
     {
         _client = client;
         _stream = client.GetStream();
         _options = options;
+        _lineReceived = lineReceived;
+        var remote = client.Client.RemoteEndPoint as System.Net.IPEndPoint;
         Descriptor = new Descriptor
         {
-            Host = client.Client.RemoteEndPoint?.ToString() ?? "unknown",
+            Host = remote?.Address.ToString() ?? "unknown",
             ColourEnabled = options.ColourEnabled
         };
     }
@@ -64,17 +70,20 @@ internal sealed class ClientSession
         }
         finally
         {
-            _cts.Cancel();
             _output.Writer.TryComplete();
             try
             {
-                await writer;
+                await writer.WaitAsync(TimeSpan.FromSeconds(1));
             }
-            catch (Exception exception) when (exception is IOException or ObjectDisposedException or OperationCanceledException)
+            catch (Exception exception) when (exception is IOException
+                                               or ObjectDisposedException
+                                               or OperationCanceledException
+                                               or TimeoutException)
             {
-                // Expected when the socket is gone.
+                // Expected when the socket is gone or the client stopped reading.
             }
 
+            _cts.Cancel();
             _client.Dispose();
             _closed.TrySetResult();
         }
@@ -98,12 +107,28 @@ internal sealed class ClientSession
         var buffer = new byte[4096];
         while (!cancellationToken.IsCancellationRequested)
         {
-            var read = await _stream.ReadAsync(buffer, cancellationToken);
+            var readTask = _stream.ReadAsync(buffer, cancellationToken).AsTask();
+            using var timeoutCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
+            var timeoutTask = Task.Delay(_options.EffectiveIdleTimeout, timeoutCts.Token);
+            var completed = await Task.WhenAny(readTask, timeoutTask);
+            if (ReferenceEquals(completed, timeoutTask))
+            {
+                if (!cancellationToken.IsCancellationRequested)
+                {
+                    await SendTextAsync("\r\nIdle timeout.\r\n");
+                }
+
+                return;
+            }
+
+            timeoutCts.Cancel();
+            var read = await readTask;
             if (read == 0)
             {
                 return;
             }
 
+            Descriptor.LastActivity = DateTimeOffset.UtcNow;
             for (var index = 0; index < read; index++)
             {
                 ProcessByte(buffer[index]);
@@ -197,16 +222,37 @@ internal sealed class ClientSession
         }
     }
 
+    private bool _lastWasCarriageReturn;
+
     private void ProcessTextByte(byte value)
     {
         if (value == (byte)'\r')
         {
+            CompleteLine();
+            _lastWasCarriageReturn = true;
             return;
         }
 
         if (value == (byte)'\n')
         {
-            Descriptor.InputBuffer = string.Empty;
+            if (_lastWasCarriageReturn)
+            {
+                _lastWasCarriageReturn = false;
+                return;
+            }
+
+            CompleteLine();
+            return;
+        }
+
+        _lastWasCarriageReturn = false;
+        if (value is 8 or 127)
+        {
+            if (Descriptor.InputBuffer.Length > 0)
+            {
+                Descriptor.InputBuffer = Descriptor.InputBuffer[..^1];
+            }
+
             return;
         }
 
@@ -217,6 +263,25 @@ internal sealed class ClientSession
         else if (Descriptor.InputBuffer.Length >= 4096)
         {
             Descriptor.InputBuffer = string.Empty;
+        }
+    }
+
+    private void CompleteLine()
+    {
+        var line = Descriptor.InputBuffer;
+        Descriptor.InputBuffer = string.Empty;
+        if (line.Length == 0)
+        {
+            return;
+        }
+
+        try
+        {
+            _lineReceived(Descriptor, line);
+        }
+        catch (Exception exception)
+        {
+            Logger.Warn(exception, "Input handler failed for {Host}.", Descriptor.Host);
         }
     }
 

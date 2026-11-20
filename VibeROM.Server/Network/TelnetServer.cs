@@ -2,6 +2,7 @@ using System.Net;
 using System.Net.Sockets;
 using NLog;
 using VibeROM.Common.Domain;
+using VibeROM.Common.Text;
 
 namespace VibeROM.Server.Network;
 
@@ -28,6 +29,8 @@ public sealed class TelnetServer : IAsyncDisposable
     }
 
     public int Port { get; private set; }
+
+    public event Action<Descriptor, string>? LineReceived;
 
     public IReadOnlyCollection<Descriptor> Connections
     {
@@ -148,13 +151,19 @@ public sealed class TelnetServer : IAsyncDisposable
                     continue;
                 }
 
-                session = new ClientSession(client, _options);
+                session = new ClientSession(client, _options, HandleLine);
                 _sessions.Add(session);
             }
 
             Logger.Info("Connection from {Host}", session.Descriptor.Host);
             _ = RunSessionAsync(session);
         }
+    }
+
+    private void HandleLine(Descriptor descriptor, string line)
+    {
+        Logger.Debug("Input from {Host}: {Line}", descriptor.Host, Colour.Strip(line));
+        LineReceived?.Invoke(descriptor, line);
     }
 
     private async Task RunSessionAsync(ClientSession session)

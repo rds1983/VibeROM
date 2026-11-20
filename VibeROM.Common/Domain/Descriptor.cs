@@ -30,4 +30,6 @@ public sealed class Descriptor
     public string TerminalType { get; set; } = string.Empty;
 
     public DateTimeOffset ConnectedAt { get; } = DateTimeOffset.UtcNow;
+
+    public DateTimeOffset LastActivity { get; set; } = DateTimeOffset.UtcNow;
 }

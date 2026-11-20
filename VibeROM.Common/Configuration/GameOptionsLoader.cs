@@ -12,6 +12,7 @@ public static class GameOptionsEnvironment
     public const string ServerBindAddress = "VIBEROM_SERVER__BIND_ADDRESS";
     public const string ServerPort = "VIBEROM_SERVER__PORT";
     public const string ServerMaxConnections = "VIBEROM_SERVER__MAX_CONNECTIONS";
+    public const string ServerIdleTimeoutSeconds = "VIBEROM_SERVER__IDLE_TIMEOUT_SECONDS";
     public const string DataDirectory = "VIBEROM_DATA__DIRECTORY";
     public const string DataAreas = "VIBEROM_DATA__AREAS";
     public const string DataPlayers = "VIBEROM_DATA__PLAYERS";
@@ -169,6 +170,11 @@ public static class GameOptionsLoader
         if (GetInt(environment, GameOptionsEnvironment.ServerMaxConnections, problems) is { } maxConnections)
         {
             server = server with { MaxConnections = maxConnections };
+        }
+
+        if (GetInt(environment, GameOptionsEnvironment.ServerIdleTimeoutSeconds, problems) is { } idleTimeout)
+        {
+            server = server with { IdleTimeoutSeconds = idleTimeout };
         }
 
         var data = options.Data;
