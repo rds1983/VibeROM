@@ -4,6 +4,8 @@ using VibeROM.Common.Configuration;
 using VibeROM.Common.Logging;
 using VibeROM.Common.Rom;
 using VibeROM.Common.Serialization;
+using VibeROM.Server.Commands;
+using VibeROM.Server.Communication;
 using VibeROM.Server.Game;
 using VibeROM.Server.Login;
 using VibeROM.Server.Network;
@@ -125,11 +127,17 @@ public static class Program
                     loaded.Options.Server.MaxConnections,
                     IdleTimeout: TimeSpan.FromSeconds(loaded.Options.Server.IdleTimeoutSeconds)));
             var playerStore = new PlayerStore(paths.PlayersDirectory, paths.SchemaDirectory);
+            var online = new OnlinePlayers();
+            var output = new TelnetPlayerOutput(server);
+            var wiznet = new WiznetService(online, output);
+            var dispatcher = new CommandDispatcher(bootstrap.World, online, output, wiznet);
             using var login = new LoginService(
                 server,
                 bootstrap.World,
                 playerStore,
-                loaded.Options.Gameplay);
+                loaded.Options.Gameplay,
+                online: online,
+                commandHandler: dispatcher);
 
             var pulses = new PulseEngine();
             pulses.Register(new GameClockPulseHandler(bootstrap.World));

@@ -5,6 +5,7 @@ using VibeROM.Common.Configuration;
 using VibeROM.Common.Domain;
 using VibeROM.Common.Rom;
 using VibeROM.Common.Security;
+using VibeROM.Server.Commands;
 using VibeROM.Server.Login;
 using VibeROM.Server.Network;
 
@@ -268,6 +269,43 @@ public sealed class LoginServiceTests
         Assert.Equal(7, loaded.Level);
         Assert.Equal(ConnectionState.Playing, descriptor.State);
         Assert.Same(descriptor, Assert.Single(server.Connections));
+    }
+
+    [Fact]
+    public async Task PlayingInputIsRoutedToTheCommandHandler()
+    {
+        using var temp = new TempDirectory();
+        var store = new PlayerStore(temp.Path, SchemaDirectory);
+        SavePlayer(store, "Alander", "secret");
+        var commands = new RecordingCommandHandler();
+
+        await using var server = CreateServer();
+        using var login = new LoginService(
+            server,
+            CreateWorld(),
+            store,
+            new GameplayOptions(),
+            commandHandler: commands);
+        await server.StartAsync();
+        using var client = new TcpClient();
+        await client.ConnectAsync(IPAddress.Loopback, server.Port);
+        await ReadUntilAsync(client.GetStream(), "By what name");
+        await SendLineAsync(client.GetStream(), "Alander");
+        await ReadUntilAsync(client.GetStream(), "Password");
+        await SendLineAsync(client.GetStream(), "secret");
+        await ReadUntilAsync(client.GetStream(), "Welcome, Alander");
+
+        await SendLineAsync(client.GetStream(), "say hello");
+
+        using var timeout = new CancellationTokenSource(TimeSpan.FromSeconds(5));
+        while (commands.Messages.Count == 0)
+        {
+            await Task.Delay(20, timeout.Token);
+        }
+
+        var (character, input) = Assert.Single(commands.Messages);
+        Assert.Equal("Alander", character.Name);
+        Assert.Equal("say hello", input);
     }
 
     [Fact]
@@ -630,6 +668,14 @@ public sealed class LoginServiceTests
         }
 
         return builder.ToString();
+    }
+
+    private sealed class RecordingCommandHandler : IPlayerCommandHandler
+    {
+        public List<(Character Character, string Input)> Messages { get; } = [];
+
+        public void Execute(Character character, string input) =>
+            Messages.Add((character, input));
     }
 
     private sealed class TempDirectory : IDisposable

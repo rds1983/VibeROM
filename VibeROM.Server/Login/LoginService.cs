@@ -6,6 +6,8 @@ using VibeROM.Common.Domain;
 using VibeROM.Common.Rom;
 using VibeROM.Common.Security;
 using VibeROM.Common.Serialization;
+using VibeROM.Server.Commands;
+using VibeROM.Server.Communication;
 using VibeROM.Server.Network;
 
 namespace VibeROM.Server.Login;
@@ -33,9 +35,8 @@ public sealed class LoginService : IDisposable
     private readonly PlayerStore _store;
     private readonly GameplayOptions _options;
     private readonly TimeProvider _timeProvider;
+    private readonly IPlayerCommandHandler? _commands;
     private readonly ConcurrentDictionary<Guid, LoginContext> _contexts = new();
-    private readonly Dictionary<string, Descriptor> _online = new(StringComparer.OrdinalIgnoreCase);
-    private readonly object _onlineGate = new();
     private bool _disposed;
 
     public LoginService(
@@ -43,18 +44,24 @@ public sealed class LoginService : IDisposable
         World world,
         PlayerStore store,
         GameplayOptions options,
-        TimeProvider? timeProvider = null)
+        TimeProvider? timeProvider = null,
+        OnlinePlayers? online = null,
+        IPlayerCommandHandler? commandHandler = null)
     {
         _server = server ?? throw new ArgumentNullException(nameof(server));
         _world = world ?? throw new ArgumentNullException(nameof(world));
         _store = store ?? throw new ArgumentNullException(nameof(store));
         _options = options ?? throw new ArgumentNullException(nameof(options));
         _timeProvider = timeProvider ?? TimeProvider.System;
+        _commands = commandHandler;
+        Online = online ?? new OnlinePlayers();
 
         _server.ConnectionOpened += OnOpened;
         _server.ConnectionClosed += OnClosed;
         _server.LineReceived += OnLine;
     }
+
+    public OnlinePlayers Online { get; }
 
     public void Dispose()
     {
@@ -75,17 +82,13 @@ public sealed class LoginService : IDisposable
     /// </summary>
     public void SaveOnlinePlayers()
     {
-        Descriptor[] descriptors;
-        lock (_onlineGate)
-        {
-            descriptors = _online.Values.ToArray();
-        }
+        var descriptors = Online.Snapshot();
 
         var saved = 0;
         foreach (var descriptor in descriptors)
         {
             if (descriptor.Character is not { Player: not null } character
-                || !TryGetOnline(character.Name, out var current)
+                || !Online.TryGet(character.Name, out var current)
                 || !ReferenceEquals(current, descriptor))
             {
                 continue;
@@ -109,45 +112,6 @@ public sealed class LoginService : IDisposable
         }
     }
 
-    private int OnlineCount
-    {
-        get
-        {
-            lock (_onlineGate)
-            {
-                return _online.Count;
-            }
-        }
-    }
-
-    private bool TryGetOnline(string name, out Descriptor descriptor)
-    {
-        lock (_onlineGate)
-        {
-            return _online.TryGetValue(name, out descriptor!);
-        }
-    }
-
-    private void SetOnline(string name, Descriptor descriptor)
-    {
-        lock (_onlineGate)
-        {
-            _online[name] = descriptor;
-        }
-    }
-
-    private void RemoveOnline(string name, Descriptor descriptor)
-    {
-        lock (_onlineGate)
-        {
-            if (_online.TryGetValue(name, out var current)
-                && ReferenceEquals(current, descriptor))
-            {
-                _online.Remove(name);
-            }
-        }
-    }
-
     private void OnOpened(Descriptor descriptor)
     {
         if (IsBannedSite(descriptor.Host))
@@ -164,6 +128,16 @@ public sealed class LoginService : IDisposable
 
     private void OnLine(Descriptor descriptor, string line)
     {
+        if (descriptor.State == ConnectionState.Playing)
+        {
+            if (descriptor.Character is { } playing)
+            {
+                _commands?.Execute(playing, line);
+            }
+
+            return;
+        }
+
         if (!_contexts.TryGetValue(descriptor.Id, out var context))
         {
             return;
@@ -311,7 +285,7 @@ public sealed class LoginService : IDisposable
             return;
         }
 
-        if (_options.MaxOnline > 0 && OnlineCount >= _options.MaxOnline)
+        if (_options.MaxOnline > 0 && Online.Count >= _options.MaxOnline)
         {
             _ = _server.SendAsync(descriptor, "The game is full. Try again later.\r\n");
             _server.DisconnectAfterFlush(descriptor);
@@ -527,7 +501,7 @@ public sealed class LoginService : IDisposable
     private void CompleteReturningPlayer(Descriptor descriptor, LoginContext context)
     {
         var name = context.Name!;
-        if (TryGetOnline(name, out var oldDescriptor) && oldDescriptor != descriptor)
+        if (Online.TryGet(name, out var oldDescriptor) && oldDescriptor != descriptor)
         {
             SaveAndDetach(oldDescriptor);
             _server.Disconnect(oldDescriptor);
@@ -548,7 +522,7 @@ public sealed class LoginService : IDisposable
     private void CompleteNewPlayer(Descriptor descriptor, LoginContext context)
     {
         var name = context.Name!;
-        if (_options.MaxOnline > 0 && OnlineCount >= _options.MaxOnline)
+        if (_options.MaxOnline > 0 && Online.Count >= _options.MaxOnline)
         {
             _ = _server.SendAsync(descriptor, "The game is full. Try again later.\r\n");
             _server.DisconnectAfterFlush(descriptor);
@@ -596,7 +570,8 @@ public sealed class LoginService : IDisposable
     {
         descriptor.Character = character;
         descriptor.State = ConnectionState.Playing;
-        SetOnline(character.Name, descriptor);
+        character.Descriptor = descriptor;
+        Online.Add(descriptor);
         character.Player!.LastLogoff = null;
         _ = _server.SendAsync(
             descriptor,
@@ -607,7 +582,7 @@ public sealed class LoginService : IDisposable
     {
         _contexts.TryRemove(descriptor.Id, out _);
         if (descriptor.Character is not { Player: not null } character
-            || !TryGetOnline(character.Name, out var current)
+            || !Online.TryGet(character.Name, out var current)
             || current != descriptor)
         {
             return;
@@ -619,7 +594,7 @@ public sealed class LoginService : IDisposable
     private void SaveAndDetach(Descriptor descriptor)
     {
         if (descriptor.Character is not { Player: not null } character
-            || !TryGetOnline(character.Name, out var current)
+            || !Online.TryGet(character.Name, out var current)
             || current != descriptor)
         {
             return;
@@ -636,7 +611,8 @@ public sealed class LoginService : IDisposable
             Logger.Error(exception, "Could not save player {Player} on logout.", character.Name);
         }
 
-        RemoveOnline(character.Name, descriptor);
+        Online.Remove(descriptor);
+        character.Descriptor = null;
         _world.DestroyCharacter(character);
         descriptor.Character = null;
     }

@@ -15,6 +15,7 @@ public sealed class World
     private readonly HashSet<GameObject> _objects = new(ReferenceEqualityComparer.Instance);
     private readonly Dictionary<string, List<HelpEntry>> _helpIndex =
         new(StringComparer.OrdinalIgnoreCase);
+    private readonly Dictionary<int, AreaData> _roomAreas = new();
 
     public World(IEnumerable<AreaData> areas, DateTimeOffset? bootTime = null)
     {
@@ -28,6 +29,7 @@ public sealed class World
         var rooms = new Dictionary<int, RoomPrototype>();
         var shops = new Dictionary<int, ShopData>();
         var helps = new List<HelpEntry>();
+        var socials = new List<SocialData>();
 
         foreach (var area in areaList)
         {
@@ -55,6 +57,10 @@ public sealed class World
                 {
                     errors.Add($"Duplicate room vnum {room.Vnum} in area '{area.Name}'.");
                 }
+                else
+                {
+                    _roomAreas[room.Vnum] = area;
+                }
             }
 
             foreach (var shop in area.Shops)
@@ -66,6 +72,7 @@ public sealed class World
             }
 
             helps.AddRange(area.Helps);
+            socials.AddRange(area.Socials);
         }
 
         if (errors.Count > 0)
@@ -79,6 +86,7 @@ public sealed class World
         RoomPrototypes = rooms;
         Shops = shops;
         Helps = helps;
+        Socials = socials;
         Rooms = rooms.ToDictionary(pair => pair.Key, pair => new Room(pair.Value));
 
         foreach (var help in helps)
@@ -114,6 +122,8 @@ public sealed class World
     public IReadOnlyDictionary<int, Room> Rooms { get; }
 
     public IReadOnlyList<HelpEntry> Helps { get; }
+
+    public IReadOnlyList<SocialData> Socials { get; }
 
     public IReadOnlyCollection<Character> Characters => _characters;
 
@@ -201,6 +211,16 @@ public sealed class World
 
         return _helpIndex.TryGetValue(keyword, out var entries) ? entries : [];
     }
+
+    /// <summary>Prefix lookup over the social table, like ROM's <c>check_social</c>.</summary>
+    public SocialData? FindSocial(string name) =>
+        string.IsNullOrWhiteSpace(name)
+            ? null
+            : Socials.FirstOrDefault(
+                social => social.Name.StartsWith(name, StringComparison.OrdinalIgnoreCase));
+
+    public AreaData? GetAreaForRoom(int roomVnum) =>
+        _roomAreas.TryGetValue(roomVnum, out var area) ? area : null;
 
     public Character CreateMobile(MobilePrototype prototype, Room? room = null)
     {

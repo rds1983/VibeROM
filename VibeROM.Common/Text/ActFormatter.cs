@@ -145,6 +145,11 @@ public static class ActFormatter
             return Placeholder;
         }
 
+        if (ReferenceEquals(target, viewer))
+        {
+            return "you";
+        }
+
         if (!visibility.CanSeeActor(viewer, target))
         {
             return "someone";

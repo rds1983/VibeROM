@@ -163,11 +163,17 @@ public sealed class DomainModelTests
             PlayerClass.Warrior,
             Sex.Male);
         var obj = new GameObject(CreateWeapon());
-        var visibility = AllVisibleVisibilityService.Instance.ToActVisibility(player);
+        var observer = new Character(
+            new PlayerData(),
+            "Bob",
+            Race.Human,
+            PlayerClass.Warrior,
+            Sex.Male);
+        var visibility = AllVisibleVisibilityService.Instance.ToActVisibility(observer);
 
         Assert.Equal(
             "Alander drops a sword.",
-            ActFormatter.Format("$n drops $p.", new ActMessageContext(player, Object1: obj), player, visibility));
+            ActFormatter.Format("$n drops $p.", new ActMessageContext(player, Object1: obj), observer, visibility));
     }
 
     [Fact]

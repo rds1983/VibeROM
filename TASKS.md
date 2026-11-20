@@ -52,16 +52,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 1 — Server, login and interaction
 
-### [ ] T025 — Channels, socials and emotes
-- Depends on: T022, T013
-- say, tell, reply, gossip, quote, yell, shout, gtell, immtalk, question, answer,
-  music, emote, pose, smote, pmote, socials (from `social.json`), channels,
-  deaf/quiet/nochannels, wiznet and snoop plumbing.
-- Expand every message through `ActFormatter` so `$n`/`$N`/`$p` visibility and
-  pronouns match ROM.
-- **Done when:** every channel has tests for sender/receiver/ignored/deaf
-  audiences and prefix matching of social names.
-
 ### [ ] T026 — Movement and doors
 - Depends on: T024, T016
 - Walk in six directions, `go`, exits, doors (open/close/lock/unlock/pick),
@@ -520,3 +510,10 @@ Last reviewed: 2026-11-20
   exception-isolated handlers and continuous output; ROM calendar/sunlight
   advancement, online-player autosave and shutdown save; accelerated pulse,
   calendar, autosave and handler-failure tests. Copyover deferred to T075.
+- **T025 — Channels, socials and emotes** (2026-11-21)
+  ROM `interpret` command/pipeline, social fallback and snoop input;
+  say/tell/reply, gossip/quote/Q&A/music/auction/grats, shout/yell/gtell,
+  immtalk, AFK/replay, channels and communication flags; emote/pmote/smote/
+  pose/socials with audience-aware `ActDelivery`; wiznet, snoop and
+  nochannels staff tooling; channel, audience, prefix and position tests,
+  player communication docs and a live server check.

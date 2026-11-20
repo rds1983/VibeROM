@@ -141,3 +141,31 @@ entries short and link to the code or task that owns them.
 - **Counters start at zero.** This matches ROM's static `update_handler`
   counters, so the first pulse fires every named update (including the first
   area pulse) before the intervals begin.
+
+## T025 - Channels, socials and emotes
+
+- **Social NPC auto-responses are deferred.** ROM's `check_social` sometimes
+  makes an awake NPC echo the social or slap the player. That needs mobile AI
+  (T052); the player/victim messages themselves match ROM.
+- **AFK tells are runtime-only.** ROM buffers tells in the player buffer; the
+  port keeps `Character.TellBuffer` in memory (not in the JSON save), and
+  `replay` prints and clears it.
+- **Link-dead tell branches are simplified.** Every online character has a
+  descriptor, so the "misplaced link" path only triggers for a stale `reply`
+  target.
+- **Snoop private-room checks are deferred.** Trust, snoop-proof, busy and loop
+  checks are implemented; room-owner/private-room checks wait for room flags and
+  ownership (T027/T061).
+- **Shout wait state is not applied.** ROM sets a 12-beat wait after shouting;
+  combat/timing arrives with T050.
+- **Pmote/smote personalization matches intent, not the C walker bug.** A
+  viewer's name becomes "you", `Name's` becomes "your", and a trailing `Name`s`
+  drops the plural `s`.
+- **Clan talk is deferred.** `clantalk` needs clans (T061); it is not part of
+  T025's channel list.
+- **Auction and grats are included.** They are ROM channels and appear in the
+  `channels` table, so their commands were ported alongside the listed
+  channels.
+- **Snoop/wiznet are plumbing plus commands.** Output forwarding, wiznet
+  filtering and the trust-gated commands exist; login/logout wiznet events are
+  wired in later tasks.

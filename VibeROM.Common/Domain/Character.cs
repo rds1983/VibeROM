@@ -205,6 +205,9 @@ public sealed class Character : IActActor
 
     public Character? Reply { get; set; }
 
+    /// <summary>AFK tells waiting for <c>replay</c> (runtime only, not saved).</summary>
+    public List<string> TellBuffer { get; } = [];
+
     public Character? Pet { get; set; }
 
     public GameObject? On { get; set; }

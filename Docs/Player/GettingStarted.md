@@ -48,7 +48,8 @@ default).
 ## What happens next
 
 Saving and reconnecting already work: your character is written to
-`Data/players/<Name>.json` when you disconnect. The movement, communication
-and interaction commands are being ported in the following tasks, so the
-in-game command list will grow over time. See the [project README](../../README.md)
-and [administrator documentation](../Admin/README.md) for running a server.
+`Data/players/<Name>.json` when you disconnect. Speaking, emotes, tells,
+channels and socials are available (see [Communication](Communication.md));
+movement and the remaining interaction commands are being ported in the
+following tasks. See the [project README](../../README.md) and
+[administrator documentation](../Admin/README.md) for running a server.

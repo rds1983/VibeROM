@@ -100,9 +100,10 @@ Notes:
 ## `act()` messages
 
 `ActFormatter.Format(format, context, viewer, visibility)` is a pure port of
-ROM's `act_new` token expansion. Delivery to `TO_CHAR`, `TO_ROOM`, `TO_VICT`,
-`TO_NOTVICT` or `TO_ALL` is handled by the server layer (T025/T027), which
-builds one message per recipient because visibility varies.
+ROM's `act_new` token expansion. Delivery to `TO_CHAR`, `TO_ROOM`, `TO_VICT`
+and `TO_NOTVICT` is handled by `VibeROM.Server.Communication.ActDelivery`,
+which builds one message per recipient, applies the minimum position and
+forwards output to snoopers.
 
 Tokens:
 
@@ -110,7 +111,7 @@ Tokens:
 | --- | --- | --- |
 | `$t` | `Text1` | Free text |
 | `$T` | `Text2` | Free text |
-| `$n` | actor | PC name or NPC short description; `someone` if not visible |
+| `$n` | actor | `you` for the actor's own view; otherwise PC name or NPC short description; `someone` if not visible |
 | `$N` | victim | Same visibility rules |
 | `$e` / `$E` | actor / victim | he/she/it |
 | `$m` / `$M` | actor / victim | him/her/it |

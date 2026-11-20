@@ -20,7 +20,7 @@ public sealed class ActFormatterTests
         "north gate");
 
     [Theory]
-    [InlineData("$n", "Alander")]
+    [InlineData("$n", "You")]
     [InlineData("$N", "The guard")]
     [InlineData("$e", "He")]
     [InlineData("$E", "She")]
@@ -33,15 +33,22 @@ public sealed class ActFormatterTests
     [InlineData("$t", "Hello there")]
     [InlineData("$T", "Goodbye")]
     [InlineData("$d", "North")]
-    [InlineData("$n gives $p to $N.", "Alander gives a long sword to the guard.")]
-    [InlineData("$n says '$t'.", "Alander says 'hello there'.")]
+    [InlineData("$n gives $p to $N.", "You gives a long sword to the guard.")]
+    [InlineData("$n says '$t'.", "You says 'hello there'.")]
     [InlineData("$N says '$T'.", "The guard says 'goodbye'.")]
     [InlineData("The $d is closed.", "The north is closed.")]
-    [InlineData("$n hugs $M.", "Alander hugs her.")]
-    [InlineData("$n hugs $m.", "Alander hugs him.")]
+    [InlineData("$n hugs $M.", "You hugs her.")]
+    [InlineData("$n hugs $m.", "You hugs him.")]
     public void Format_ExpandsKnownTokens(string format, string expected)
     {
         Assert.Equal(expected, ActFormatter.Format(format, Context, Actor));
+    }
+
+    [Fact]
+    public void Format_SelfUsesYou()
+    {
+        Assert.Equal("You", ActFormatter.Format("$n", Context, Actor));
+        Assert.Equal("You", ActFormatter.Format("$N", new ActMessageContext(Actor, Actor), Actor));
     }
 
     [Fact]
@@ -67,7 +74,7 @@ public sealed class ActFormatterTests
     {
         var visibility = new ActVisibility((_, _) => false, (_, _) => true);
 
-        Assert.Equal("Someone", ActFormatter.Format("$n", Context, Actor, visibility));
+        Assert.Equal("Someone", ActFormatter.Format("$n", Context, Victim, visibility));
     }
 
     [Fact]
@@ -136,7 +143,7 @@ public sealed class ActFormatterTests
     [Fact]
     public void FormatLine_AppendsTelnetLineEnding()
     {
-        Assert.Equal("Alander\r\n", ActFormatter.FormatLine("$n", Context, Actor));
+        Assert.Equal("You\r\n", ActFormatter.FormatLine("$n", Context, Actor));
     }
 
     private sealed record TestActor(

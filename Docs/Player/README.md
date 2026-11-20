@@ -11,6 +11,8 @@ death.
 - [Races](Races.md) — the four playable races, their stats, traits and costs.
 - [Classes](Classes.md) — prime attributes, weapons, starting skills and
   titles.
+- [Communication](Communication.md) — say, tell, channels, socials, emotes,
+  AFK and staff communication.
 
 ## Planned pages
 
