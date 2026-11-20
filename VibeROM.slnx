@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="VibeROM.Common/VibeROM.Common.csproj" />
+  <Project Path="VibeROM.Server/VibeROM.Server.csproj" />
+  <Project Path="VibeROM.AreaImporter/VibeROM.AreaImporter.csproj" />
+  <Project Path="VibeROM.Common.Tests/VibeROM.Common.Tests.csproj" />
+  <Project Path="VibeROM.Server.Tests/VibeROM.Server.Tests.csproj" />
+  <Project Path="VibeROM.AreaImporter.Tests/VibeROM.AreaImporter.Tests.csproj" />
+</Solution>

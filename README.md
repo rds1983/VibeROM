@@ -32,11 +32,14 @@ Data/
   gods/        God/wizlist files (*.json)
   music/       songs.json
   schema/      JSON Schemas for all data files
-VibeROM/              Application source and csproj
-VibeROM.AreaImporter/ Console tool: original .are files → JSON
-VibeROM.Tests/        xUnit test project
-VibeROM.slnx          Solution
-logs/                 Runtime logs (generated, ignored by git)
+VibeROM.Common/              Shared domain, tables, JSON model and serialization
+VibeROM.Server/              Game server source and csproj
+VibeROM.AreaImporter/        Console tool: original .are files → JSON
+VibeROM.Common.Tests/        xUnit tests for shared code
+VibeROM.Server.Tests/        xUnit tests for the server
+VibeROM.AreaImporter.Tests/  xUnit tests for the importer
+VibeROM.slnx                 Solution
+logs/                        Runtime logs (generated, ignored by git)
 ```
 
 All runtime game data is JSON and never compiled into the binary. Flags and
@@ -53,16 +56,26 @@ input for `VibeROM.AreaImporter`, which is the only component allowed to
 understand the legacy format. After migration, the JSON files are the source of
 truth and are edited/validated directly.
 
+`VibeROM.Common` is shared by the server and the importer. The server never
+references the importer; dependencies point inward to `VibeROM.Common`.
+
 ## Getting started
 
-Requires the [.NET 10 SDK](https://dotnet.microsoft.com/).
-
-The project scaffold is the first roadmap task (T001). Once it exists:
+Requires the [.NET 10 SDK](https://dotnet.microsoft.com/). The SDK version is
+pinned by `global.json`.
 
 ```sh
 dotnet build VibeROM.slnx
 dotnet test VibeROM.slnx
-dotnet run --project VibeROM
+dotnet run --project VibeROM.Server
+```
+
+The server entry point is currently a scaffold: it initializes NLog, logs its
+version and exits. The game loop and telnet listener arrive in T020/T024. Once
+available, the server will listen on port `4000`:
+
+```sh
+telnet localhost 4000
 ```
 
 Import the original areas (once, from a local ROM 2.4b6 checkout):
@@ -71,14 +84,8 @@ Import the original areas (once, from a local ROM 2.4b6 checkout):
 dotnet run --project VibeROM.AreaImporter -- --source <rom>/area --output Data/areas
 ```
 
-The server listens for telnet connections on port `4000` by default. Connect
-with any telnet/MUD client:
-
-```sh
-telnet localhost 4000
-```
-
-Full build, configuration and administration instructions live in
+Run `dotnet run --project VibeROM.AreaImporter -- --help` for all importer
+options. Full build, configuration and administration instructions live in
 [Docs/Admin/](Docs/Admin/).
 
 ## Documentation

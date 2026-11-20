@@ -2,8 +2,8 @@
 
 `VibeROM.AreaImporter` is a one-way migration tool that converts the original
 ROM 2.4b6 `.are` files into the JSON format described in
-[DataFormats.md](DataFormats.md). It is a development tool, not part of the
-server, and the server never references it.
+[DataFormats.md](DataFormats.md). It depends only on `VibeROM.Common`; it is a
+development tool, not part of the server, and the server never references it.
 
 ## Why a separate tool
 
@@ -78,7 +78,7 @@ The original `.are` files are **not committed** to this repository. Point
 
 - Tokenizer edge cases (`~` strings, `|` sums, comments, EOF, negatives).
 - Golden import of small hand-written `.are` fixtures under
-  `VibeROM.Tests/Fixtures/`.
+  `VibeROM.AreaImporter.Tests/Fixtures/`.
 - Old-format `#MOBOLD`/`#OBJOLD` and OLC `#AREADATA` fixtures.
 - Byte-identical re-run and `--check` drift detection.
 - Full-corpus import is run locally and summarized in `Data/README.md`; CI

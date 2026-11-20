@@ -14,7 +14,8 @@ C idioms.
 - All runtime game data is human-readable JSON in `Data/` (areas, players,
   notes, gods, music, schemas).
 - `VibeROM.AreaImporter` is the only component that understands the original
-  `.are` format. The server never contains a legacy parser.
+  `.are` format; the server never contains a legacy parser. It depends only on
+  `VibeROM.Common` and is not referenced by the server.
 - The original C project may be available locally (for example
   `D:\Projects\chaos\ROM`) for reference. It is not part of this repository.
 
@@ -22,9 +23,12 @@ C idioms.
 
 | Path | Purpose |
 | --- | --- |
-| `VibeROM/` | Game server source and `VibeROM.csproj` |
+| `VibeROM.Common/` | Shared domain, tables, JSON model and serialization |
+| `VibeROM.Server/` | Game server source and `VibeROM.Server.csproj` |
 | `VibeROM.AreaImporter/` | Console tool: original `.are` → JSON |
-| `VibeROM.Tests/` | xUnit tests for all projects |
+| `VibeROM.Common.Tests/` | xUnit tests for shared code |
+| `VibeROM.Server.Tests/` | xUnit tests for the server |
+| `VibeROM.AreaImporter.Tests/` | xUnit tests for the importer |
 | `Data/areas/` | Area JSON (one file per area) + `index.json` |
 | `Data/players/` | Player save files (`*.json`) |
 | `Data/notes/` | Notes, ideas, penalties, news, changes (`*.json`) |
@@ -55,7 +59,7 @@ C idioms.
    and must not silently overwrite authored content.
 6. **Never commit legacy game data.** Original `.are` files are not stored in
    this repository. Small, hand-written fixtures for importer tests are allowed
-   under `VibeROM.Tests/Fixtures/`.
+   under `VibeROM.AreaImporter.Tests/Fixtures/`.
 7. **Schema every change.** A format change updates the JSON Schema, the format
    doc, the serializer/loader and the importer in the same task.
 
@@ -76,8 +80,9 @@ C idioms.
 - Prefer small, focused classes over large static functions. Use dependency
   injection where it improves testability; avoid new mutable global state.
 - Keep user-visible text as close to the original as practical.
-- Keep the importer one-way: it may reference the server project, never the
-  reverse. The server must build and run without the importer.
+- Keep dependencies pointing inward: `VibeROM.Server` and
+  `VibeROM.AreaImporter` may reference `VibeROM.Common`; `VibeROM.Common`
+  references neither, and the server never references the importer.
 
 ### 3. Test thoroughly
 
@@ -191,6 +196,8 @@ A task is done only when **all** of these are true:
 - .NET 10, nullable reference types on, file-scoped namespaces, async APIs with
   `CancellationToken` where I/O is involved.
 - Treat warnings as errors; keep the build warning-free.
+- Package versions are defined once in `Directory.Build.props` and referenced
+  as `$(PackageVersion)`; never hardcode a version in a csproj.
 - Use `TimeProvider` instead of `DateTime.Now`/timers in testable code.
 - Logging via NLog (`LogManager.GetCurrentClassLogger()`), structured messages,
   correct levels. Never log passwords, password hashes or full save files.

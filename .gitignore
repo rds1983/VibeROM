@@ -1,0 +1,31 @@
+# Build output
+bin/
+obj/
+artifacts/
+[Dd]ebug/
+[Rr]elease/
+
+# IDE
+.vs/
+.vscode/
+*.user
+*.suo
+*.DotSettings.user
+
+# Test results and coverage
+TestResults/
+*.trx
+coverage/
+coverage.*
+
+# Logs
+logs/
+*.log
+
+# Runtime player saves (seed/sample files must be force-added deliberately)
+Data/players/*.json
+!Data/players/.gitkeep
+
+# OS noise
+.DS_Store
+Thumbs.db

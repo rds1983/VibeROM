@@ -47,22 +47,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T001 — Scaffold projects and build pipeline
-- Depends on: none
-- Create `VibeROM.slnx` with:
-  - `VibeROM/` — game server (net10.0 console executable);
-  - `VibeROM.AreaImporter/` — console tool for `.are` → JSON migration;
-  - `VibeROM.Tests/` — xUnit tests for all projects.
-- Add `Directory.Build.props` (nullable, warnings-as-errors, deterministic),
-  `global.json`, `.editorconfig`, `.gitignore` (`bin/`, `obj/`, `logs/`, test
-  results, live player saves).
-- Add NLog to the server and importer; minimal `Program.cs` that starts, logs
-  and exits; a smoke test and a CI-ready `dotnet test` command.
-- References are one-way: importer → server project; the server never references
-  the importer. If shared code outgrows this, extract `VibeROM.Core` later.
-- **Done when:** `dotnet build VibeROM.slnx` and `dotnet test VibeROM.slnx`
-  succeed on a clean clone with no warnings, and the importer runs `--help`.
-
 ### [ ] T002 — Define the JSON data format and schemas
 - Depends on: T001
 - Specify the on-disk format for areas, the world index, players, notes, gods
@@ -112,16 +96,18 @@ Last reviewed: 2026-11-20
   imm/res/vuln, off).
 - Define the **canonical JSON names** for every value (PascalCase, e.g.
   `ACT_AGGRESSIVE` → `"Aggressive"`, `AFF_INFRARED` → `"Infrared"`,
-  `DAM_SLASH` → `"Slash"`). One registry powers the importer, serializer,
-  loader and docs; importer-only legacy letters stay in the importer.
+  `DAM_SLASH` → `"Slash"`). One registry in `VibeROM.Common` powers the
+  importer, serializer, loader and docs; importer-only legacy letters stay in
+  the importer.
 - **Done when:** round-trip tests prove every name maps to the correct bit or
   value, no name is duplicated, and the registry has no unmapped entries.
 
 ### [ ] T006 — Domain data model
 - Depends on: T005
-- Implement the entity model: area, room index, exit, mobile index, object
-  index, reset, shop, help, affect, extra description, character, object, PC
-  data, descriptor, kill/memory/generation data, note, ban, time, weather.
+- Implement the entity model in `VibeROM.Common`: area, room index, exit,
+  mobile index, object index, reset, shop, help, affect, extra description,
+  character, object, PC data, descriptor, kill/memory/generation data, note,
+  ban, time, weather.
 - Model ownership and references explicitly (no raw pointers). Prefer immutable
   template data for prototypes and separate mutable instances.
 - Include item-type-specific object data and typed reset variants.
@@ -156,9 +142,10 @@ Last reviewed: 2026-11-20
 
 ### [ ] T010 — JSON serializer, deserializer and converters
 - Depends on: T002, T006
-- Implement System.Text.Json configuration and converters: enum names, flag
-  arrays, item-type-specific objects, reset polymorphism, canonical property
-  order, deterministic output, omitted nulls/empties.
+- Implement System.Text.Json configuration and converters in
+  `VibeROM.Common`: enum names, flag arrays, item-type-specific objects, reset
+  polymorphism, canonical property order, deterministic output, omitted
+  nulls/empties.
 - Provide the runtime deserializer + schema validation used by the server and
   the writer used by the importer.
 - **Done when:** domain → JSON → domain round-trips exactly; snapshots are
@@ -596,7 +583,8 @@ Last reviewed: 2026-11-20
 
 - Legacy pfile importer (JSON output, forced password reset).
 - JSON format migration tooling for `formatVersion` bumps.
-- Extract `VibeROM.Core` if the importer/server shared surface grows.
+- CI workflow (GitHub Actions): build, test, format, JSON validation and
+  importer determinism.
 - Optional web client or WebSocket gateway.
 - Docker Compose deployment with persistent data volume.
 - JSON data linter beyond schema validation (cross-area consistency).
@@ -604,4 +592,8 @@ Last reviewed: 2026-11-20
 
 ## Completed
 
-_(nothing yet)_
+- **T001 — Scaffold projects and build pipeline** (2026-11-20)
+  `VibeROM.slnx` with `VibeROM.Common`, `VibeROM.Server`,
+  `VibeROM.AreaImporter` and three xUnit test projects; centralized package
+  versions, NLog, layering tests, clean build/test/format, and importer
+  `--help` verified.
