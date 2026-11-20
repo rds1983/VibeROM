@@ -102,6 +102,11 @@ The model uses strong references, not vnums, for live objects:
 
 ## Validation
 
+- `WorldBootstrap.Load(areasDirectory, schemaDirectory, DiceRoller?)` loads the
+  full corpus, applies every area reset and returns the world plus a
+  `WorldInventory` containing totals and per-area prototype counts. The server
+  logs this summary at startup; the committed inventory lives in
+  [DataInventory.md](DataInventory.md).
 - `AreaData.Validate()` checks metadata, vnum range, duplicate vnums per entity
   type, and validates every nested prototype/reset/shop/special/social/help.
 - `MobilePrototype.Validate()` checks masks against `RomFlags`, dice, positions

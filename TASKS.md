@@ -47,15 +47,7 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T016 - World bootstrap and full-load test
-- Depends on: T013, T015
-- Build the world from JSON, report totals per entity type and per area using
-  `World` counters, and assert the complete corpus in an integration test.
-  Record inventory in `Docs/Developer/DataInventory.md`.
-- **Done when:** every area loads and resets in one test run; totals are
-  asserted; a startup smoke test logs a clean world summary.
-
-### [ ] T030 — JSON player save/load
+### [ ] T030 - JSON player save/load
 - Depends on: T010
 - New JSON player format (`Data/players/*.json`, `player.schema.json`): all
   original pfile fields - aliases, affects, skills, conditions, pet, clans,
@@ -535,3 +527,7 @@ Last reviewed: 2026-11-20
   stock, runtime doors/exits and deterministic seeded repops; unit and
   real-corpus snapshot tests for Midgaard, Holy Grove, Troll Den and Astral
   Plane.
+- **T016 — World bootstrap and full-load test** (2026-11-20)
+  `WorldBootstrap` loads and resets the full corpus, reports per-area and total
+  inventories, logs startup runtime counts and validates the world; full-corpus
+  integration test and `DataInventory.md`.

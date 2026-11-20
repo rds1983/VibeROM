@@ -79,23 +79,27 @@ public static class Program
                 RomTables.Skills.Count,
                 RomTables.Groups.Count);
 
-            var loadedWorld = WorldLoader.Load(paths.AreasDirectory, paths.SchemaDirectory);
-            foreach (var warning in loadedWorld.Warnings)
+            var bootstrap = WorldBootstrap.Load(paths.AreasDirectory, paths.SchemaDirectory);
+            foreach (var warning in bootstrap.Warnings)
             {
                 logger.Warn("{WorldWarning}", warning);
             }
 
+            logger.Info("World loaded and reset: {Summary}", bootstrap.Inventory.Summary);
             logger.Info(
-                "World loaded: {Areas} areas, {Mobiles} mobiles, {Objects} objects, {Rooms} rooms, " +
-                "{Resets} resets, {Shops} shops, {Specials} specials, {Helps} helps.",
-                loadedWorld.World.TopArea,
-                loadedWorld.World.TopMobIndex,
-                loadedWorld.World.TopObjectIndex,
-                loadedWorld.World.TopRoom,
-                loadedWorld.World.Areas.Sum(area => area.Resets.Count),
-                loadedWorld.World.Shops.Count,
-                loadedWorld.World.Areas.Sum(area => area.Specials.Count),
-                loadedWorld.World.TopHelp);
+                "Runtime after resets: {Characters} characters, {Objects} objects.",
+                bootstrap.World.Characters.Count,
+                bootstrap.World.GameObjects.Count);
+            foreach (var area in bootstrap.Inventory.Areas)
+            {
+                logger.Debug(
+                    "Area {Area}: {Mobiles} mobiles, {Objects} objects, {Rooms} rooms, {Resets} resets.",
+                    area.Name,
+                    area.Mobiles,
+                    area.Objects,
+                    area.Rooms,
+                    area.Resets);
+            }
 
             if (serverArguments.ValidateData)
             {
