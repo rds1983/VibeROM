@@ -47,20 +47,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T011 — AreaImporter CLI
-- Depends on: T008, T009, T010
-- Command line: `--source <ROM area dir>`, `--output <Data/areas>`,
-  `--report <file>`, `--strict`, `--check`. Import all files listed in
-  `area.lst` (supporting a `--file` override for single areas).
-- Emit one JSON file per area plus `index.json` carrying source provenance
-  (ROM 2.4b6, 1998-05-29, legacy filenames), validated against
-  `Data/schema/*.schema.json`. Write atomically; never leave a partial data set.
-  Print/write counts, warnings and unknown names; exit non-zero on errors.
-- Log via NLog; no server startup, no network.
-- **Done when:** importing a fixture twice is byte-identical, generated JSON
-  validates against the schemas, `--check` detects drift, failure paths exit
-  non-zero with actionable messages, and the tool is covered by tests.
-
 ### [ ] T012 — Migrate the ROM 2.4b6 corpus to JSON
 - Depends on: T011
 - Run the importer against the original ROM 2.4b6 area directory (the legacy
@@ -569,3 +555,8 @@ Last reviewed: 2026-11-20
   errors, typed item data, reset polymorphism, weight/AC conversions and
   `JsonSchemaValidator`; snapshot, round-trip and full-corpus serialization
   tests.
+- **T011 — AreaImporter CLI** (2026-11-20)
+  `area.lst`/`--file` import pipeline, canonical area JSON and `index.json`,
+  schema validation, atomic directory swap, `--check` drift detection,
+  `--strict` warning promotion, JSON import report, NLog diagnostics and
+  CLI/runner tests.

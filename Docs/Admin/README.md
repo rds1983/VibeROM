@@ -13,7 +13,7 @@ Planned pages:
   environment override (**available**)
 - `DataLayout.md` — JSON areas, players, notes, gods, music, schemas, logs
   (planned)
-- `ImportingLegacyData.md` — using `VibeROM.AreaImporter` once (planned)
+- [ImportingLegacyData.md](ImportingLegacyData.md) — using `VibeROM.AreaImporter` once (**available**)
 - `Operations.md` — startup, shutdown, restart, copyover, backups (planned)
 - `Administration.md` — accounts, bans, wizlock, immortals (planned)
 - `OLC.md`, `BuildingAreas.md` — in-game editing and hand-editing JSON areas

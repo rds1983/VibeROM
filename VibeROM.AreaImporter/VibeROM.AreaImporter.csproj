@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="..\Data\schema\*.json" Link="schema\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
     <PackageReference Include="NLog" Version="$(NLogVersion)" />
   </ItemGroup>
 

@@ -15,7 +15,7 @@ public static class Usage
           --file <name>     Import a single area, bypassing area.lst.
           --report <path>   Write a JSON import report.
           --check           Re-import to a temporary directory and compare.
-          --strict          Treat unknown names and dangling references as errors.
+          --strict          Treat every warning as an error and write no output.
           -h, --help        Show this help.
         """;
 }

@@ -32,6 +32,50 @@ dotnet run --project VibeROM.AreaImporter -- \
 
 Exit codes: `0` success, `1` data error (nothing written), `2` usage error.
 
+### Output and atomicity
+
+- Reads files in `area.lst` order until `$`. `--file` bypasses the list.
+- Writes one `<legacy-base>.json` per area plus `index.json` with source
+  provenance (`ROM`, `2.4b6`, `1998-05-29`) and the load order.
+- Builds the complete output in a temporary sibling directory, validates every
+  area and the index against `Data/schema/`, then swaps the directory into
+  place. A failure never leaves a partial data set; the previous output is
+  restored on swap failure.
+- `index.json` and every area file are byte-deterministic; the only
+  run-specific path is in the separate import report.
+
+### Report
+
+`--report <path>` writes a deterministic JSON report:
+
+```json
+{
+  "source": "ROM",
+  "version": "2.4b6",
+  "releaseDate": "1998-05-29",
+  "sourceDirectory": "...",
+  "areas": [
+    { "legacyFile": "midgaard.are", "jsonFile": "midgaard.json", "mobiles": 65, ... }
+  ],
+  "warnings": [
+    { "file": "tohell.are", "line": 168, "column": 7, "message": "..." }
+  ],
+  "errors": []
+}
+```
+
+Counts are per area; warnings and errors carry file, line and column when the
+source location is known. The report is written even when the import fails.
+
+### Check and strict modes
+
+- `--check` builds the output in a temporary directory and compares every
+  expected `*.json` byte-for-byte. Missing, changed and unexpected JSON files
+  are drift and exit `1`; the committed output is never modified.
+- `--strict` promotes every warning (unknown reserved flag bits, clamped
+  values, dangling references, alternative sector fallbacks) to an error and
+  writes no output.
+
 The original `.are` files are **not committed** to this repository. Point
 `--source` at a local ROM 2.4b6 checkout when refreshing the initial snapshot.
 
@@ -162,6 +206,11 @@ boot. The shipped 2.4b6 corpus contains no `#MOBOLD`/`#OBJOLD` sections.
 - `LegacyAreaParserTests` asserts every mapped entity, reset, shop, special and
   social field, plus failure paths (duplicate vnums, unknown sections, race,
   reset command, malformed dice) with source positions.
+- `CommandLineTests` covers option syntax, required values and unknown options.
+- `ImportRunnerTests` imports a temporary fixture area set twice and asserts
+  byte-identical area files and index, schema validity, report contents, check
+  drift, strict promotion, missing-file failure, single-file mode and that a
+  failed import leaves the previous output untouched.
 - `VIBEROM_ROM_AREA_DIR=<rom>/area dotnet test` additionally parses all 53
   original `.are` files, validates every area and asserts the counts for
   `proto.are`, `rom.are` (27 helps), `help.are` (141 helps) and `social.are`

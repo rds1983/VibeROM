@@ -295,15 +295,26 @@ internal static class AreaJsonReader
 
     private static int ReadMobileArmor(JsonElement element, string name, string path)
     {
-        var value = ReadInt(element, name, path);
-        try
+        var valuePath = PropertyPath(path, name);
+        if (!element.TryGetProperty(name, out var value) || value.ValueKind != JsonValueKind.Number)
         {
-            return checked(value * 10);
+            throw Fail(valuePath, $"Mobile armor '{name}' must be a number.");
         }
-        catch (OverflowException)
+
+        if (!value.TryGetDecimal(out var fileValue))
         {
-            throw Fail(PropertyPath(path, name), "Mobile armor value is too large.");
+            throw Fail(valuePath, "Mobile armor value is not a valid number.");
         }
+
+        var internalValue = fileValue * 10m;
+        if (internalValue != decimal.Truncate(internalValue)
+            || internalValue < int.MinValue
+            || internalValue > int.MaxValue)
+        {
+            throw Fail(valuePath, "Mobile armor must convert to a whole internal AC value.");
+        }
+
+        return (int)internalValue;
     }
 
     private static IReadOnlyList<ObjectPrototype> ReadObjects(JsonElement root)

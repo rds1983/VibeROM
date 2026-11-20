@@ -235,7 +235,7 @@ public sealed class AreaJsonTests
     }
 
     [Fact]
-    public void WriterRejectsMobileArmorNotInInternalUnits()
+    public void WriterSupportsFractionalFileUnitArmor()
     {
         var area = WorldFixtures.CreateArea() with
         {
@@ -243,14 +243,17 @@ public sealed class AreaJsonTests
             [
                 WorldFixtures.CreateMobile() with
                 {
-                    Armor = new ArmorValues(5, 0, 0, 0)
+                    Armor = new ArmorValues(69, 0, -5, 10)
                 }
             ]
         };
 
-        var exception = Assert.Throws<DataFormatException>(() => AreaJson.Serialize(area));
+        var json = AreaJson.Serialize(area);
 
-        Assert.Equal("/mobiles/0/armor", exception.Path);
+        Assert.Contains("\"pierce\": 6.9", json, StringComparison.Ordinal);
+        Assert.Contains("\"slash\": -0.5", json, StringComparison.Ordinal);
+        var roundTripped = AreaJson.Deserialize(json);
+        Assert.Equal(new ArmorValues(69, 0, -5, 10), roundTripped.Mobiles[0].Armor);
     }
 
     [Fact]

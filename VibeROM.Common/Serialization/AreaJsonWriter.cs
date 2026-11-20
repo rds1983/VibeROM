@@ -124,7 +124,7 @@ internal static class AreaJsonWriter
         WriteDice(writer, "hitDice", mobile.HitDice);
         WriteDice(writer, "manaDice", mobile.ManaDice);
         WriteDamage(writer, mobile.Damage);
-        WriteMobileArmor(writer, mobile.Armor, path);
+        WriteMobileArmor(writer, mobile.Armor);
         writer.WriteString("startPosition", mobile.StartPosition.ToString());
         writer.WriteString("defaultPosition", mobile.DefaultPosition.ToString());
         writer.WriteString("sex", mobile.Sex.ToString());
@@ -134,24 +134,28 @@ internal static class AreaJsonWriter
         writer.WriteEndObject();
     }
 
-    private static void WriteMobileArmor(Utf8JsonWriter writer, ArmorValues armor, string path)
+    private static void WriteMobileArmor(Utf8JsonWriter writer, ArmorValues armor)
     {
-        if (armor.Pierce % 10 != 0
-            || armor.Bash % 10 != 0
-            || armor.Slash % 10 != 0
-            || armor.Exotic % 10 != 0)
+        writer.WriteStartObject("armor");
+        WriteMobileArmorValue(writer, "pierce", armor.Pierce);
+        WriteMobileArmorValue(writer, "bash", armor.Bash);
+        WriteMobileArmorValue(writer, "slash", armor.Slash);
+        WriteMobileArmorValue(writer, "exotic", armor.Exotic);
+        writer.WriteEndObject();
+    }
+
+    private static void WriteMobileArmorValue(
+        Utf8JsonWriter writer,
+        string name,
+        int internalValue)
+    {
+        if (internalValue % 10 == 0)
         {
-            throw new DataFormatException(
-                path + "/armor",
-                "Mobile armor must be stored in ROM internal units (multiples of 10).");
+            writer.WriteNumber(name, internalValue / 10);
+            return;
         }
 
-        writer.WriteStartObject("armor");
-        writer.WriteNumber("pierce", armor.Pierce / 10);
-        writer.WriteNumber("bash", armor.Bash / 10);
-        writer.WriteNumber("slash", armor.Slash / 10);
-        writer.WriteNumber("exotic", armor.Exotic / 10);
-        writer.WriteEndObject();
+        writer.WriteNumber(name, internalValue / 10m);
     }
 
     private static void WriteObjects(Utf8JsonWriter writer, IReadOnlyList<ObjectPrototype> objects)

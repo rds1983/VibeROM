@@ -191,8 +191,11 @@ four PC races. `offensiveFlags` includes both `OFF_*` combat bits and the
 
 `armor` values use the original area-file units in JSON. The runtime model
 stores ROM's internal AC scale (ten times the file value), so the deserializer
-multiplies by 10 and the writer divides by 10. `damage.attackType` is the attack
-noun (`Slash`, `Pierce`, …), from which the engine derives the damage type.
+multiplies by 10 and the writer divides by 10. New-format areas have integer
+values; old-format conversion (`convert_mobile()`) can leave a fractional
+file-unit value such as `6.9`, so mobile armor JSON numbers are not required to
+be integral. `damage.attackType` is the attack noun (`Slash`, `Pierce`, …),
+from which the engine derives the damage type.
 
 ### Objects
 
