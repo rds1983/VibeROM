@@ -47,17 +47,7 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T015 - Reset engine
-- Depends on: T007, T012
-- Port `reset_area`/`reset_room`: mob/object/put/give/equip/door resets,
-  percent and random resets, "last mob" references, and reset state cleanup on
-  area repop.
-- Consume the typed `Reset` variants from `AreaData.Resets` and the `World`
-  create/attach helpers for mob/object/equip/put/door resets.
-- **Done when:** deterministic seeded tests reproduce reset graphs for several
-  real areas; repop twice yields an identical world snapshot.
-
-### [ ] T016 — World bootstrap and full-load test
+### [ ] T016 - World bootstrap and full-load test
 - Depends on: T013, T015
 - Build the world from JSON, report totals per entity type and per area using
   `World` counters, and assert the complete corpus in an integration test.
@@ -540,3 +530,8 @@ Last reviewed: 2026-11-20
   `--validate-data` startup mode, corrupt-input and schema-violation tests, and
   a GitHub Actions workflow that builds, tests, formats and validates the
   committed corpus.
+- **T015 — Reset engine** (2026-11-20)
+  Per-room `M/O/P/G/E/D/R` resets with last-mob/object/level tracking, shop
+  stock, runtime doors/exits and deterministic seeded repops; unit and
+  real-corpus snapshot tests for Midgaard, Holy Grove, Troll Den and Astral
+  Plane.

@@ -67,3 +67,21 @@ entries short and link to the code or task that owns them.
 - **Empty object materials become `none` at runtime.** The JSON may keep an
   empty string (donation pits, fountains); the loader logs a warning and uses
   `none` in the prototype instance.
+
+## T015 - Reset engine
+
+- **`O` resets use `MaxInWorld` (the file's second field).** This ROM's
+  `reset_room` reads `pReset->arg4` for `O`, but `load_resets` leaves `arg4`
+  zero for `O`; taken literally no object reset could ever run. The typed model
+  already calls the field `MaxInWorld` and the OLC writer emits it as the limit,
+  so the engine uses it. Documented rather than reproducing an unusable bug.
+- **`ifFlag` is ignored.** ROM reads and discards the first reset number; it is
+  not a percentage and does not gate execution in 2.4b6.
+- **Area repops clear reset-created contents.** ROM only calls `reset_area` for
+  empty areas; the engine additionally destroys NPCs/objects in the area before
+  repopulating so repeated tests and repops start from the same state. Players
+  still suppress the repop.
+- **`D` resets update runtime exit flags.** ROM applies the door state to
+  `rs_flags` during file loading and `reset_room` merely restores it. The engine
+  performs the same runtime update from the typed `DoorReset` and restores the
+  prototype flags at the start of every room reset.

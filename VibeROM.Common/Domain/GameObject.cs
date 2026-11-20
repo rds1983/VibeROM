@@ -13,6 +13,7 @@ public sealed class GameObject : IActObject
         WearFlags = prototype.WearFlags;
         Level = prototype.Level;
         Condition = prototype.Condition;
+        CostCopper = prototype.CostCopper;
     }
 
     public ObjectPrototype Prototype { get; }
@@ -41,7 +42,7 @@ public sealed class GameObject : IActObject
 
     public int WeightTenths => Prototype.WeightTenths;
 
-    public int CostCopper => Prototype.CostCopper;
+    public int CostCopper { get; set; }
 
     public int Condition { get; set; }
 

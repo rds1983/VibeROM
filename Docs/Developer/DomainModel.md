@@ -81,6 +81,25 @@ The model uses strong references, not vnums, for live objects:
   `LegacyAreaParser.ValidateReferences` reports missing targets across a legacy
   import with source positions.
 
+## Reset engine
+
+`ResetEngine` ports `reset_area`/`reset_room`:
+
+- Resets are grouped by owning room exactly as `load_resets` assigns them
+  (`M` room, `O` room, `P` after the last object room, `G`/`E` after the last
+  mob room, `D`/`R` explicit).
+- Rooms run in vnum order; each room starts with `last=false`, no last mob or
+  object, and level `0`. `M` sets the last mob and `level = mob.level - 2`.
+- `M`/`O`/`P` check world/room limits; `P` uses the last object container;
+  `G`/`E` require a successful preceding reset and the last mob, with shop
+  stock levels and `Inventory` flags.
+- `D` updates runtime door flags; `R` randomizes runtime exits.
+- Areas containing player characters are skipped. Before an empty-area repop,
+  NPCs and objects in the area are destroyed so repeated repops are
+  deterministic.
+- `ResetEngine` takes a seeded `DiceRoller`; tests reset the same area twice
+  with the same seed and compare complete snapshots.
+
 ## Validation
 
 - `AreaData.Validate()` checks metadata, vnum range, duplicate vnums per entity
@@ -154,5 +173,5 @@ ownership:
   variants.
 - T013 adds the validated JSON world loader and reference checks; T014 hardens
   startup validation and corrupt-input handling.
-- T015/T052 apply resets and race defaults.
+- T015 adds the reset engine; T052 applies race defaults.
 - T027 replaces `AllVisibleVisibilityService` with real visibility rules.
