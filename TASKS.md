@@ -47,15 +47,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T004 — Core utilities and text engine
-- Depends on: T001
-- Port `one_argument`/argument parsing, `str_cmp` semantics (case-insensitive,
-  prefix matching), `smash_tilde`, `capitalize`, colour code handling (`{x`),
-  money formatting, dice (`number_dice`, `dice`, `number_percent`, `number_range`),
-  and the `act()` message expander (`$n`, `$N`, `$p`, `$t`, `$T`, `$s`, `$e`, `$m`…).
-- **Done when:** table-driven xUnit tests cover every `$` token, colour codes,
-  prefix matching and RNG boundaries; `act()` output matches expected strings.
-
 ### [ ] T005 — Canonical names, constants and flags
 - Depends on: T004
 - Port the lookup/flag tables from `const.c`, `tables.c`, `flags.c`, `bit.c`:
@@ -79,6 +70,8 @@ Last reviewed: 2026-11-20
   ban, time, weather.
 - Model ownership and references explicitly (no raw pointers). Prefer immutable
   template data for prototypes and separate mutable instances.
+- Characters and objects expose the data needed by `IActActor`/`IActObject`,
+  with visibility hooks for `ActVisibility`.
 - Include item-type-specific object data and typed reset variants.
 - **Done when:** the model compiles with nullable enabled, invariants are
   documented in `Docs/Developer/DomainModel.md`, and construction tests pass.
@@ -199,6 +192,7 @@ Last reviewed: 2026-11-20
 - Async listener bound to the configured `server.bindAddress` and
   `server.port`, descriptor per connection, output buffering, greeting, telnet
   negotiation (IAC, WILL/WONT/DO/DONT, NAWS, TTYPE, terminal type), ANSI colour.
+- Use `Colour.ToAnsi` for socket output and `Colour.Strip` for logs.
 - **Done when:** integration tests connect, negotiate, receive the greeting and
   disconnect cleanly; slow/garbage clients cannot crash the server.
 
@@ -240,6 +234,8 @@ Last reviewed: 2026-11-20
 - say, tell, reply, gossip, quote, yell, shout, gtell, immtalk, question, answer,
   music, emote, pose, smote, pmote, socials (from `social.json`), channels,
   deaf/quiet/nochannels, wiznet and snoop plumbing.
+- Expand every message through `ActFormatter` so `$n`/`$N`/`$p` visibility and
+  pronouns match ROM.
 - **Done when:** every channel has tests for sender/receiver/ignored/deaf
   audiences and prefix matching of social names.
 
@@ -254,6 +250,8 @@ Last reviewed: 2026-11-20
 - Depends on: T026
 - `can_see`, light sources, darkness, invis/hide/sneak, infravision, room
   description/contents/exits, look in/at, examine, extra descriptions.
+- Build `ActVisibility` from the visibility rules and format messages per
+  recipient.
 - **Done when:** visibility truth tables and room rendering snapshots pass for
   day/night, blind, invis and hidden actors.
 
@@ -262,6 +260,8 @@ Last reviewed: 2026-11-20
 - prompt, colour, brief/compact, autoassist/autoexit/autogold/autolist/autoloot/
   autosac/autosplit, nofollow, noloot, nosummon, afk, wimpy, aliases and
   `unalias`.
+- Colour preference controls `Colour.ToAnsi(..., enabled)` and is persisted
+  with the player.
 - **Done when:** preferences persist across save/load and each toggle has a
   behavioural test.
 
@@ -345,6 +345,7 @@ Last reviewed: 2026-11-20
   shield block, bash, trip, kick, disarm, backstab, rescue, envenom, hide,
   sneak, steal, pick, fast healing, meditation, haggle, lore, recall, scrolls,
   staves, wands, hand-to-hand, berserk, dirt, enhanced damage, parry, dodge.
+- Use `DiceRoller` for every roll and `ArgumentParser` for command arguments.
 - **Done when:** each skill has success/failure tests at low, mid and cap
   proficiency, including lag and positional requirements.
 
@@ -386,6 +387,7 @@ Last reviewed: 2026-11-20
 - Combat rounds, THAC0/AC, hit/dam rolls, multi-attacks, damage types and
   resistances, criticals, death, corpses, loot, XP awards, PvP rules, wimpy,
   flee and combat lag.
+- Use `DiceRoller` for every combat roll; do not introduce ad-hoc RNG.
 - **Done when:** seeded simulation over thousands of fights stays within
   expected damage ranges and never violates invariants (no dead attackers,
   no negative HP, no orphaned corpses).
@@ -394,6 +396,8 @@ Last reviewed: 2026-11-20
 - Depends on: T050
 - bash, trip, kick, backstab, disarm, rescue, envenom, berserk, dirt, shield
   block, parry/dodge interactions, assist and tanking.
+- Format the three audience messages through `ActFormatter` and real
+  `ActVisibility`.
 - **Done when:** each tactic has success/failure/lag tests and correct messages
   to all three audiences (actor, victim, room).
 
@@ -579,3 +583,7 @@ Last reviewed: 2026-11-20
   `VibeROM.json` with validated server/data/logging/gameplay sections,
   environment overrides, config search order and shared console + daily rolling
   file logging; invalid configuration fails fast with every field error.
+- **T004 — Core utilities and text engine** (2026-11-20)
+  Argument parsing, string helpers, brace colour→ANSI conversion, money
+  formatting, dice/random helpers and the full `act()` token expander with
+  visibility, pronouns, placeholders and deterministic tests.
