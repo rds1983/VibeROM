@@ -1,0 +1,1556 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "dream.are",
+  "name": "Machine Dreams",
+  "credits": "{ 1  5} Furey   Machine Dreams",
+  "vnumRange": {
+    "low": 8600,
+    "high": 8699
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 8600,
+      "keywords": "oldstyle keeper",
+      "shortDescription": "the keeper",
+      "longDescription": "The keeper of the Morris equipment is here.\n",
+      "description": "Her job is to set the level for this equipment.\n",
+      "race": "Human",
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 1000,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 5,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 8600,
+      "keywords": "bells morris leggings",
+      "shortDescription": "morris bells",
+      "longDescription": "A set of leggings with a dozen brass bells sewn on has been left here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Legs"
+      ],
+      "level": 3,
+      "weightPounds": 5,
+      "costCopper": 310,
+      "condition": 100,
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 0
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "motto",
+          "description": "'Time on the ground is time wasted.'\n"
+        },
+        {
+          "keywords": "bells morris",
+          "description": "These are a set of sturdy leather leggings with small brass bells sewn on.\nThey look like the leggings worn by Morris dancers.  There is a motto tooled\ninto the leather.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8601,
+      "keywords": "handkerchief hankie kerchief morris",
+      "shortDescription": "a morris handkerchief",
+      "longDescription": "A white handkerchief is here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Wrist"
+      ],
+      "level": 3,
+      "weightPounds": 5,
+      "costCopper": 310,
+      "condition": 100,
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 0
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "handkerchief hankie kerchief",
+          "description": "This is a fine linen handkerchief used for ritual Morris dances.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8602,
+      "keywords": "sash morris white",
+      "shortDescription": "a morris sash",
+      "longDescription": "A white sash is here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Waist"
+      ],
+      "level": 3,
+      "weightPounds": 5,
+      "costCopper": 310,
+      "condition": 100,
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 0
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sash",
+          "description": "This is a fine linen sash used for ritual Morris dances.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8603,
+      "keywords": "staff morris",
+      "shortDescription": "a morris staff",
+      "longDescription": "A short, stout staff made of polished wood is here.",
+      "material": "oldstyle",
+      "itemType": "Staff",
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 6,
+      "weightPounds": 5,
+      "costCopper": 1460,
+      "condition": 100,
+      "charges": {
+        "level": 10,
+        "total": 4,
+        "remaining": 4,
+        "spell": "protection evil"
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "stick staff",
+          "description": "Made from the wood of a Yule Tree, this staff is about one meter long and\nhighly polished.  It looks more like a ritual device than a weapon.\n"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 8600,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8606,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8601,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8603,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8602,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8610,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8620,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8601,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8607,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8602,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8604,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8600,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8611,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8621,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8602,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8608,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8600,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8605,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8601,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8612,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8622,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8603,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8600,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8604,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8606,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8605,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8613,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8623,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8604,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoMob",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8601,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8605,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8607,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8603,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8614,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 3050,
+          "description": "You see an abandoned warehouse.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8605,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8602,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8603,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8608,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8604,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8615,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8625,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8606,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8603,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8607,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8600,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8608,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8616,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8626,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8607,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8604,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8608,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8601,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8606,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8617,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8627,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8608,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8605,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8606,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8602,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8607,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8618,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8628,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8610,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8616,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8611,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8613,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8612,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8620,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8600,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8611,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8630,
+          "description": "You see the Road to Newfane.\n"
+        },
+        "east": {
+          "toRoom": 8612,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8614,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8610,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8621,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8601,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8612,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8618,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8610,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8615,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8611,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8622,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8602,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8613,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8610,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8614,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8616,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8636,
+          "description": "You see a road by a pond.\n"
+        },
+        "up": {
+          "toRoom": 8623,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8603,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8614,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8611,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8615,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8617,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8613,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8624,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8604,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8615,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8612,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8632,
+          "description": "You see a large dance hall.\n"
+        },
+        "south": {
+          "toRoom": 8618,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8614,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8625,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8605,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8616,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8613,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8617,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8610,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8618,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8626,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8606,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8617,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8614,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8618,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8634,
+          "description": "You see a small hall.\n"
+        },
+        "west": {
+          "toRoom": 8616,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8627,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8607,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8618,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8615,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8616,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8612,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8617,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8628,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8608,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8620,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8626,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8621,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8623,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8622,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8600,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8610,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8621,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8627,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8622,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8624,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8620,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8601,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8611,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8622,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8628,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8620,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8625,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8621,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8602,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8612,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8623,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8620,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8624,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8626,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8625,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8603,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8613,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8624,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8621,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8625,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8627,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8623,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8638,
+          "description": "You see a mountain ridge against the sky.\n"
+        },
+        "down": {
+          "toRoom": 8614,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8625,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8622,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8623,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8628,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8624,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8605,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8615,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8626,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8623,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8627,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8620,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8628,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8606,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8616,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8627,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8624,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8628,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8621,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8626,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8607,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8617,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8628,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8625,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "east": {
+          "toRoom": 8626,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "south": {
+          "toRoom": 8622,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8627,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "up": {
+          "toRoom": 8608,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "down": {
+          "toRoom": 8618,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8630,
+      "name": "Road to Newfane",
+      "description": "You are on a gently curving north-south road.  On your east side a youthful\nriver sparkles blue and rushes in the sunlight.  On the west, green leaves and\ngreen ferns burst against the rich brown earth.  You feel the heat of your\nhealthy muscles as you travel swiftly down the well-paved road.\nYou may recall now if you like.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8631,
+          "description": "You see a village square.\n"
+        },
+        "south": {
+          "toRoom": 8611,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8631,
+      "name": "Newfane Village Square",
+      "description": "You are on the lawn of the village square of Newfane, resting against an oak\nafter your vigorous journey.  The late spring breeze feels warm and sensuous\non your body.  An Ale is in progress: you spy more than a dozen fiddlers and\nhundreds of Morris Dancers dressed in white cotton and wearing colorful hats\nand bells.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 8630,
+          "description": "You see the Road to Newfane.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8632,
+      "name": "A Large Dance Hall",
+      "description": "You are inside a large dance hall with a very polished, very slippery wooden\nfloor.  You see three long lines of dancers, alternating men and women, in\nsome sort of progressive country dance.  Two fiddlers, a flautist, and a\nharpsichord player provide the music.  You hear scattered screams of joy\nfrom the dancers.\nYou may recall now if you like.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 8615,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "dancer dancers",
+          "description": "The dancers have been here all night and intend to dance until dawn.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8634,
+      "name": "A Small Hall",
+      "description": "You are inside a small hall with a rough wooden floor.  You see dozens of\npeople in the hall chasing one poor man who is yelling at the top of\nhis lungs.  Wait a minute.  These people are all holding hands and smiling!\nThe man in front is leading them in a spiral!  They're DANCING!  And you\nthought people didn't dance like this any more!\nYou may recall now if you like.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8617,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8636,
+      "name": "Road by a Pond",
+      "description": "You are passing by a large pond, almost a small lake.  You notice a small\nwooden shack by the side of the road.\nYou may recall now if you like.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8613,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        },
+        "west": {
+          "toRoom": 8637,
+          "description": "You see a wooden church set back among the trees.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "shack",
+          "description": "The shack looks hand-made by an amateur.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8637,
+      "name": "An Old Wooden Church",
+      "description": "As you enter the hall, you see the largest crowd of people you've ever seen in\nyour life.  They're also the noisiest crowd you've ever heard, and as they\npress around you, the SWEATIEST crowd you've ever felt!  At the front of the\nhall, a group of musicians are playing 'Chorus Jig'.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8636,
+          "description": "You see a road by a pond.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8638,
+      "name": "Mountain Road",
+      "description": "You are following a road at the top of a mountain ridge with sky all around\nyou.  Distant valleys are spread out below you on both sides.  There are\nmany horsemen and horsewomen on this road, riding hell-for-leather out of\nsheer exhilaration.  You wish you had a horse!\nYou may recall now if you like.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 8639,
+          "description": "You see several acres of thickly planted, very young Yule Trees.\n"
+        },
+        "down": {
+          "toRoom": 8624,
+          "description": "You see machine dreams and taste violet phosphor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8639,
+      "name": "Yule Tree Farm",
+      "description": "This is the Yule Tree Farm at the top of Mountain Road.  All around you,\nyoung Yule Trees saturate your senses with dark green needles and pine\nessence.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "down": {
+          "toRoom": 8638,
+          "description": "You see a mountain ridge against the sky.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8699,
+      "name": "The Void",
+      "description": "You are suspended in cool electric space above a translucent plain.  You feel\nsynesthesia invading your nerves and reshuffling your senses.  The sky is the\nsame obsidian color as the ground and you can't find a horizon.\n",
+      "roomFlags": [
+        "NoMob",
+        "Solitary"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0
+    }
+  ],
+  "resets": [
+    {
+      "type": "Randomize",
+      "roomVnum": 8600,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8601,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8602,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8603,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8604,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8605,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8606,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8607,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8608,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8610,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8611,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8612,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8613,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8614,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8615,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8616,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8617,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8618,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8620,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8621,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8622,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8623,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8624,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8625,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8626,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8627,
+      "door": 6
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8628,
+      "door": 6
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8600,
+      "roomVnum": 8631,
+      "maxInWorld": 80
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8601,
+      "roomVnum": 8632,
+      "maxInWorld": 80
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8601,
+      "roomVnum": 8634,
+      "maxInWorld": 80
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8602,
+      "roomVnum": 8637,
+      "maxInWorld": 80
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8603,
+      "roomVnum": 8639,
+      "maxInWorld": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8600,
+      "roomVnum": 8699,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    }
+  ]
+}

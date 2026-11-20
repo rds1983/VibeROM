@@ -1,0 +1,873 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "redferne.are",
+  "name": "Redferne's",
+  "credits": "{20 30} Diku    Redferne's Residence",
+  "vnumRange": {
+    "low": 7900,
+    "high": 7999
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 7900,
+      "keywords": "oldstyle grand knight paladin",
+      "shortDescription": "the Grand Knight of paladins",
+      "longDescription": "The Grand Knight is standing here, waiting for someone to help.\n",
+      "description": "The Knight is standing here, smiling at you. He is dressed all in\nwhite, blue and silver. He looks VERY strong, as he stands here, ready to\nhelp the innocent.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Sanctuary"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 1000,
+      "group": 0,
+      "level": 29,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 778
+      },
+      "manaDice": {
+        "count": 29,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 5,
+        "size": 4,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -9,
+        "bash": -9,
+        "slash": -9,
+        "exotic": 4
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 7909,
+      "keywords": "treasure coins",
+      "shortDescription": "a huge treasure",
+      "longDescription": "A huge treasure is lying here, looking very valuable.",
+      "material": "oldstyle",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 0,
+        "silver": 0
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "writing letters",
+          "description": "It reads: \"Hi Conan.  No more coins from here, pal. :) Signed, Redferne\".\n"
+        },
+        {
+          "keywords": "treasure",
+          "description": "Looks like a LOT of coins.  One of them has writing on it.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 7910,
+      "keywords": "chest",
+      "shortDescription": "a wooden chest",
+      "longDescription": "A wooden chest stands in the corner.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 400,
+      "costCopper": 100,
+      "condition": 100,
+      "container": {
+        "capacity": 100,
+        "flags": [
+          "Closeable",
+          "PickProof",
+          "Closed",
+          "Locked"
+        ],
+        "keyVnum": 7911
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "chest",
+          "description": "It is a robust chest made from short, heavy planks that have been fastened\ntogether with tenons.  It is equipped with a simple brass lock.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 7911,
+      "keywords": "key",
+      "shortDescription": "a small brass key",
+      "longDescription": "A small brass key lies here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        7910,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "key",
+          "description": "It is a small, simple brass key with no inscriptions or marks of any kind.\n"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 7900,
+      "name": "Outside Redferne's residence",
+      "description": "A huge cloud forms the plateau on which you are now standing. The wind here\nis absolutely quiet and the sun is shining warmly upon you. From under the\ncloud you can hear the faint sounds of Midgaard. Right before you to the\nnorth lies the grand Mansion of Naris, the residence of the Greater God\nRedferne.\n",
+      "roomFlags": [
+        "NoMob",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7901,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "You see a HUGE arched gate leading into this magnificent building.\n"
+        },
+        "south": {
+          "toRoom": 9101,
+          "description": "You see some pretty clouds!\n"
+        },
+        "down": {
+          "toRoom": 7918,
+          "description": "You see a Huge Chain that anchors the Mansion of Naris to the ground.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7901,
+      "name": "The Southern end of the hall",
+      "description": "You are standing in a vast hall that is dimly lit, but wherefrom the\nlight comes, is a mystery. The walls seem to radiate warmth and give\nthe pleasant feeling of being welcome here. A large portrait is hanging\non one of the walls. A large wooden staircase leads up into the tower.\nTo the east there is a high passage away from the hall. This ends\nshortly after by a tall oak door. The enormous hall extends further\nnorth from here. To the south you can see a huge, and VERY heavy-\nlooking iron-wrought door. It looks like this is the only exit from\nthis magnificent old house. To the west you can see a large ashen door.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7904,
+          "description": "The hallway continues that way. You can see more doorways under the\nwooden staircase in that direction.\n"
+        },
+        "east": {
+          "toRoom": 7910,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "You see there a tall oak door. It looks quite tightly closed to you.\nOn it little runes are chiselled into the wood.\n"
+        },
+        "south": {
+          "toRoom": 7900,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "Here you see a REAL door. It would be more proper to call this a\n\"GATE\", rather than a \"door\". It's really HUGE! On it hangs a large\nsign with very large letters spelling : \"EMERGENCY EXIT\".\n"
+        },
+        "west": {
+          "toRoom": 7902,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "This looks like a \"door\" in the meaning of the word. The ashen wood\nis painted in a peculiar yellow colour. Small letters are written\nwith black on it.\n"
+        },
+        "up": {
+          "toRoom": 7909,
+          "description": "You see the staircase extending upwards into the very high tower.\nIt ends in what seems like a large bedroom up there.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "letters",
+          "description": "They read \"LIBRARY\".\n"
+        },
+        {
+          "keywords": "runes",
+          "description": "These runes are utterly strange to you, but you are in luck today: Under\nthe runes you can just make out a sentence in Common. It goes : \" Stay out,\nif you treasure your life. That is if you are mortal.\".\n"
+        }
+      ]
+    },
+    {
+      "vnum": 7902,
+      "name": "Redferne's Library",
+      "description": "This is truly a magnificent place! Books and scrolls lie together on every\nshelf. A large globe, with the map of the Mud-world upon it, stands in the\ndimly lit north-western corner of the room. Two large and comfortable-\nlooking leather arm-chairs adorn the center of the library together with\na huge oak desk. Dim light radiates from an enormous crystal chandelier\nhanging down from the ceiling approximately 10 feet off the floor. To the\neast there is a great old ashen door. A large glass window is set in the\nwest wall.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7901,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "You can see an old ashen door, painted in a peculiar yellow colour.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "river",
+          "description": "You see a large and winding river cut through the landscape, starting at an\nenormous inland lake, it seeps through Midgaard and finally ends up in the\nGrand Sea on the West-coast of the land.\n"
+        },
+        {
+          "keywords": "out outside beyond",
+          "description": "The clouds muster and form the ground on which this entire building is set.\nThrough the thinnest of the clouds you can just make out MIDGAARD with all\nit's magnificent activity.\n"
+        },
+        {
+          "keywords": "window glass",
+          "description": "These windows are really BIG! They reach from about 20 inches above the\nfloor to approximately 10 inches under the ceiling. If you try and\n\"look out\", you might see what might lie beyond these windows.\n"
+        },
+        {
+          "keywords": "chairs leather arm-chairs",
+          "description": "These two chair are exactly alike one another. They look incredibly\ncomfortable. They're both made from old leather, and yet they seem so worn\nthat they can be nothing but a perfect place for a long needed rest.\n"
+        },
+        {
+          "keywords": "midgaard town city",
+          "description": "You see a small speck with woods on the west from it, plains to the east\nfrom it and mountains to the north from it. To the south from it you can\nsee a thin trail lead to a large castle. Finally you notice a rather large\nriver pour in from the east and go through Midgaard in the middle.\n"
+        },
+        {
+          "keywords": "globe world map",
+          "description": "You see a large world map stretch out on the enormous globe. It has towns\ndrawn in every spot available for such. In the middle of the map you can\nspot a large town with the name 'MIDGAARD' written over it. The rest is\nmountains, woods, plains and water.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 7903,
+      "name": "The Artifact room of Naris",
+      "description": "This is gloomy and dark room with only a faint light radiating from the\nwalls. A bunch of funny-looking items fill the center of the room. There are\nno furniture here what-so-ever. The only way out seems to be west, through\nthe low steel door.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0
+    },
+    {
+      "vnum": 7904,
+      "name": "The Northern end of the hall",
+      "description": "You are standing in the northern end of the huge hall. This part is under\nthe grand wooden staircase so the light seems a little less bright here,\nbut this doesn't bother your sight at all. To the north lies the kitchen.\nTo the south lies the Southern end of the hall. To the east there is a huge\nmetal door. To the west there is a large aspenwood door.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7906
+        },
+        "east": {
+          "toRoom": 7913,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "You see a huge metal door. From it a foul stench emanates. The smell is the\nmost awful experience in your entire life. A thought seeps through this\nterrible stench and into your mind : \"Monsters\", you feel BAD about opening\nthat door.\n"
+        },
+        "south": {
+          "toRoom": 7901,
+          "description": "The rest of the hall lies in that direction, and so does the exit.\n"
+        },
+        "west": {
+          "toRoom": 7905,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "The door has \"SITTING ROOM\" written on it. It is made from Aspenwood and\nis beautifully carven with small elves as main issue of sculpture.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7905,
+      "name": "The Sitting room of Naris",
+      "description": "You are standing in the middle of a really comfortable place. The walls are\ndecorated with paintings of smiling Kings and Queens. The most attractive\npicture is one of a Prince in shiny armour. By one of the walls there is an\nold arm-chair. The only exit is through the aspenwood door to the east.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7904,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "The door seems to be a very HEAVY door, carved completely from the trunk of\nan Aspen tree.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "chair arm-chair",
+          "description": "This is truly a wonderful relic of the past. In it is a large cushion.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 7906,
+      "name": "The Kitchen of Naris",
+      "description": "This must be the place of food and drink. You can hear the faint noise of \nrats feasting on meat and bread from somewhere undeterminable. The sound\nmakes you feel the agony of HUNGER. The only visible exit is south to the\nNorthern end of the hall. To the north there is a larder, and to the east\nstands a fridge.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7907,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "It's dark in there,  but the sounds from there are unmistakably from rats.\n"
+        },
+        "east": {
+          "toRoom": 7908,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "You can see the fridge from here. In it are drinks all over.\n"
+        },
+        "south": {
+          "toRoom": 7904,
+          "description": "You can see the northern end of the hall.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7907,
+      "name": "The Larder",
+      "description": "You can see food all over. Among the heaps of food you notice HUGE rats\nscuttering around, nibbling pieces off the heaps here and there.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7906,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ]
+        }
+      }
+    },
+    {
+      "vnum": 7908,
+      "name": "The Fridge",
+      "description": "This place is LOADED with drink, water and booze.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 7906,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ]
+        }
+      }
+    },
+    {
+      "vnum": 7909,
+      "name": "On the stairs",
+      "description": "You can see up and down the stairway. It seems to take forever, either going\nup OR down. It's just a seemingly insurmountable climb, either way. Up is the \nbedroom of Redferne, and Down leads to the Southern end of the hall.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 7911
+        },
+        "down": {
+          "toRoom": 7901
+        }
+      }
+    },
+    {
+      "vnum": 7910,
+      "name": "The Treasure room",
+      "description": "This place is gloomy.  The only visible exit is west, through the oak door.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 7901,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "You see a tall oak door.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7911,
+      "name": "Redferne's Bedroom",
+      "description": "This is a snugly set bedroom with all the necessities for a romantic evening.\nA large fireplace adorns the east wall, and sizzling away is the wood that\nis ablaze within.  The bed is enormous, covering at least HALF of this great\nroom.  This stretches at least 300 square feet, so can you imagine the BED?\nA large staircase leads down to the hall.  A couple of doors open up to a\nbroad balcony to the south. \n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7912,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "The sun seems to shine out there, warmly and comforting.\n"
+        },
+        "down": {
+          "toRoom": 7909
+        }
+      }
+    },
+    {
+      "vnum": 7912,
+      "name": "The Balcony of Redferne's Residence",
+      "description": "You see a splendid view of the most of this world. The valleys stretch as far\nas the eye can see to the south. Down below you can see the entrance\nof this magnificent building. To the north are the doors to Redferne's Bedroom.\n",
+      "roomFlags": [
+        "NoMob",
+        "Private"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7911,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "You see the comfortable bedroom of Naris, the mansion of Redferne the Greater\nGod.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7913,
+      "name": "The Monster Pen",
+      "description": "This looks like the cage in which a large carnivore is being kept. Judging by\nthe state the walls are in, this could very well be a large AGGRESSIVE animal. \nThis makes you pretty insecure, this stating your feeling about the place, \nquite mildly.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 7904,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "This looks like the only exit from here.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7914,
+      "name": "On the Huge Chain",
+      "description": "This place has quite a good view over Midgaard. Your possibilities of movement\nseems to extend only to up and down. Unless you want to let go of the secure\nand seemingly unmoveable chain, then those are the directions you should take\nfrom here.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 7916,
+          "description": "Up the way you see the chain disappearing into the clouds above.\n"
+        },
+        "down": {
+          "toRoom": 3120,
+          "description": "Down below you see the huge chain anchored to the ground in the Road Crossing.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7916,
+      "name": "On the Great Chain of Naris",
+      "description": "You are approximately on the middle of the treacherous Chain. One false step\nand death will come and collect you quickly. The chain leads upwards and down.\nNo way are you going to descend now ... you've only just begun your climb.\nBesides it could cost you your life.  Look down and you'll see why.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 7918,
+          "description": "There seems to be only one way from here and that's up.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7918,
+      "name": "The Mighty Chain of Naris",
+      "description": "This place offers a splendid view of the WHOLE COUNTRY SIDE!!! A magnificent\nlight shines upon you and the way up through the clouds is opened. Up there\nyou can now see the Mansion of Naris, Residence of the Greater God Redferne.\nThe chain beneath you seems to evaporate in the mustering clouds that\nsurround you by now.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 7900,
+          "description": "You see the sunny top of the clouds. Beyond these, the Mansion towers before\nyour eyes. Beautiful!!\n"
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Door",
+      "roomVnum": 7900,
+      "direction": "North",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7901,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7901,
+      "direction": "South",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7901,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7902,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7904,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7904,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7905,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7906,
+      "direction": "North",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7906,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7907,
+      "direction": "South",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7908,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7910,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7911,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7912,
+      "direction": "North",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7913,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7900,
+      "roomVnum": 7900,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5221,
+      "wearLocation": "Wield",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7217,
+      "wearLocation": "Body",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7218,
+      "wearLocation": "Legs",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7219,
+      "wearLocation": "Hands",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7220,
+      "wearLocation": "Head",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7221,
+      "wearLocation": "Shield",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7223,
+      "wearLocation": "Arms",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7222,
+      "wearLocation": "Feet",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7224,
+      "wearLocation": "About",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Give",
+      "objectVnum": 7911,
+      "maxInWorld": 99
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7909,
+      "roomVnum": 7903,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Object",
+      "objectVnum": 6013,
+      "roomVnum": 7908,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7910,
+      "roomVnum": 7910,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 7298,
+      "containerVnum": 7910,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 7208,
+      "containerVnum": 7910,
+      "maxInWorld": 1
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 7900,
+      "procedure": "CastCleric"
+    }
+  ]
+}

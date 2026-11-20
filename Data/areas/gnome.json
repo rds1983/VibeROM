@@ -1,0 +1,5140 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "gnome.are",
+  "name": "Gnome Village",
+  "credits": "{ 5 15} Vougon  Gnome Village",
+  "vnumRange": {
+    "low": 1500,
+    "high": 1599
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 1500,
+      "keywords": "oldstyle child gnome",
+      "shortDescription": "a gnome child",
+      "longDescription": "A gnome child is playing around here.\n",
+      "description": "The little tyke looks so innocent playing with his boomerang that you \njust want to pick him up and hug him.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 600,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 2,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1501,
+      "keywords": "oldstyle woman gnome",
+      "shortDescription": "a gnome woman",
+      "longDescription": "A gnome woman is standing here, trying to look beautiful.\n",
+      "description": "The woman is short and gnarled, but acts like a woman several times her beauty.\nShe's starting to look pretty attractive to you ...\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 600,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 25,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1502,
+      "keywords": "oldstyle man gnome",
+      "shortDescription": "a gnome man",
+      "longDescription": "A gnome man is walking here, on his way to work.\n",
+      "description": "This is a prime example of a gnome.  He looks short and weak, but at the\nsame time an intelligent creature who could outsmart you.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 500,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 22,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1503,
+      "keywords": "oldstyle scientist gnome",
+      "shortDescription": "a gnome scientist",
+      "longDescription": "A scientist wanders around deep in thought.\n",
+      "description": "You see a gnome who is lost deep into some invention that he is about\nto make.  His hair is white, but he looks fairly strong.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Mage"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 500,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 7,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 50,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1504,
+      "keywords": "oldstyle guard gnome",
+      "shortDescription": "a gnome guard",
+      "longDescription": "A gnome guard stands here guarding something.\n",
+      "description": "This is a well trained gnome.  He might not have a lot of strength but\nhe makes up for it with his weapons skill.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 400,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 75,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1505,
+      "keywords": "oldstyle chief gnome",
+      "shortDescription": "the chief gnome",
+      "longDescription": "A powerful looking gnome stands here wearing ornate clothes.\n",
+      "description": "The Chief looks like he could whap you hard.  He looks not only powerful\nbut wise and resourceful.  You better not mess with him.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Cleric"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 550,
+      "group": 0,
+      "level": 15,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 208
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 5,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -2,
+        "bash": -2,
+        "slash": -2,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 400,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1507,
+      "keywords": "oldstyle troll small",
+      "shortDescription": "a small troll",
+      "longDescription": "A small troll grunts as he takes a swing at you.\n",
+      "description": "The small troll is a short and stocky beast with a human-like face\nbut with the eyes and fangs of a wild beast.\n",
+      "race": "Troll",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectHidden",
+        "Infrared",
+        "Regeneration"
+      ],
+      "offensiveFlags": [
+        "Berserk",
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm",
+        "Bash"
+      ],
+      "vulnerabilities": [
+        "Fire",
+        "Acid"
+      ],
+      "form": [
+        "Edible",
+        "Poison",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye",
+        "Claws",
+        "Fangs"
+      ],
+      "alignment": -900,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 40,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1508,
+      "keywords": "oldstyle mouse field",
+      "shortDescription": "a field mouse",
+      "longDescription": "A small mouse runs across your foot.\n",
+      "description": "The Mouse is a cute little creature.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 1,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 10
+      },
+      "manaDice": {
+        "count": 0,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 4,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1509,
+      "keywords": "oldstyle rat",
+      "shortDescription": "a rat",
+      "longDescription": "A small rat shrieks and runs around.\n",
+      "description": "The rat is a little evil creature that deserves death.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -200,
+      "group": 0,
+      "level": 2,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 21
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1510,
+      "keywords": "oldstyle rat large",
+      "shortDescription": "a large rat",
+      "longDescription": "A large rat runs up to you and nibbles on your boots.\n",
+      "description": "You have the urge to kill this vile creature.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -200,
+      "group": 0,
+      "level": 4,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 46
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1511,
+      "keywords": "oldstyle rat giant",
+      "shortDescription": "a giant rat",
+      "longDescription": "A giant rat growls at you and prepares to attack.\n",
+      "description": "This rat has grown up to be the size of an average dog.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -200,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1512,
+      "keywords": "oldstyle troll",
+      "shortDescription": "the troll",
+      "longDescription": "A giant troll lumbers around.\n",
+      "description": "You see before you a huge mass of living flesh.  You cringe in fear as\nhe lifts his powerful arm to bludgeon you.\n",
+      "race": "Troll",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectHidden",
+        "Infrared",
+        "Regeneration"
+      ],
+      "offensiveFlags": [
+        "Berserk",
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm",
+        "Bash"
+      ],
+      "vulnerabilities": [
+        "Fire",
+        "Acid"
+      ],
+      "form": [
+        "Edible",
+        "Poison",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye",
+        "Claws",
+        "Fangs"
+      ],
+      "alignment": -800,
+      "group": 0,
+      "level": 14,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 190
+      },
+      "manaDice": {
+        "count": 7,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 12,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -1,
+        "bash": -1,
+        "slash": -1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 450,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1513,
+      "keywords": "oldstyle bat black",
+      "shortDescription": "a black bat",
+      "longDescription": "A black bat hangs from the ceiling.\n",
+      "description": "The bat is a grotesque little creature with large wings and fangs.\n",
+      "race": "Bat",
+      "affectedBy": [
+        "Flying",
+        "DarkVision"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Fast",
+        "Trip",
+        "AssistRace"
+      ],
+      "vulnerabilities": [
+        "Light"
+      ],
+      "form": [
+        "Edible",
+        "Animal",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Feet",
+        "Ear",
+        "Eye",
+        "Wings"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1514,
+      "keywords": "oldstyle zombie gnome",
+      "shortDescription": "the zombie gnome",
+      "longDescription": "A zombie gnome shuffles his way towards you.\n",
+      "description": "This is a creature which has passed away long ago.  His body has been\npulled out of its resting place by some evil force.\n",
+      "race": "Human",
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -700,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 34,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1515,
+      "keywords": "oldstyle bat fire",
+      "shortDescription": "the fire bat",
+      "longDescription": "The fire bat flames brightly and prepares to attack.\n",
+      "description": "You see a huge flame which resembles the shape of a bat.  The creature\nhangs from the ceiling and bites at you.\n",
+      "race": "Bat",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Flying",
+        "DarkVision"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Fast",
+        "Trip",
+        "AssistRace"
+      ],
+      "vulnerabilities": [
+        "Light"
+      ],
+      "form": [
+        "Edible",
+        "Animal",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Feet",
+        "Ear",
+        "Eye",
+        "Wings"
+      ],
+      "alignment": -900,
+      "group": 0,
+      "level": 12,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 150
+      },
+      "manaDice": {
+        "count": 6,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 0,
+        "bash": 0,
+        "slash": 0,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 300,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1516,
+      "keywords": "oldstyle guard hobgoblin",
+      "shortDescription": "the hobgoblin guard",
+      "longDescription": "The hobgoblin guard attacks first, thinks later.\n",
+      "description": "This is an extra large, extra ugly goblin like creature.  He grins evilly\nas he attempts to brain you.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -700,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 37,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1517,
+      "keywords": "oldstyle soldier hobgoblin",
+      "shortDescription": "the hobgoblin soldier",
+      "longDescription": "A hobgoblin soldier stands here.\n",
+      "description": "This is just a low life hobgoblin, who couldn't make it to the ranks\nof the elite guards.  He looks pissed.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -600,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 10,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1518,
+      "keywords": "oldstyle bodyguard hobgoblin",
+      "shortDescription": "the hobgoblin bodyguard",
+      "longDescription": "A hobgoblin bodyguard guards the king with his life.\n",
+      "description": "This is one of the elite hobgoblin guards.  He stands tall for his short\nstature.  He grins a toothy grin as he prepares to attack.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 30,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1519,
+      "keywords": "oldstyle king hobgoblin",
+      "shortDescription": "the king of the hobgoblins",
+      "longDescription": "There is a great king here, sitting in his throne.\n",
+      "description": "The king is a silly looking hobgoblin whose muscles bulge out of his robes,\ndestroying the sophisticated effect he was trying to create.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Mage"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 12,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 8,
+        "bonus": 134
+      },
+      "manaDice": {
+        "count": 12,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 6
+      },
+      "startPosition": "Sitting",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 300,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1520,
+      "keywords": "oldstyle miner hobgoblin",
+      "shortDescription": "a hobgoblin miner",
+      "longDescription": "A hobgoblin miner stands here looking for gold.\n",
+      "description": "The miner is totally covered in dust.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -400,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 35,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1521,
+      "keywords": "oldstyle treasurer hobgoblin",
+      "shortDescription": "the treasurer",
+      "longDescription": "A treasurer is here counting out money.\n",
+      "description": "The hobgoblin treasurer is an old goblin with glasses.  It appears that he\ncan only see a couple feet in front of him.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -200,
+      "group": 0,
+      "level": 10,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 121
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 4,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 250,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1522,
+      "keywords": "oldstyle prisoner gnome",
+      "shortDescription": "a gnome prisoner",
+      "longDescription": "A gnome prisoner is here resting in the straw.\n",
+      "description": "The prisoner is just barely alive.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Resting",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1523,
+      "keywords": "oldstyle prisoner human",
+      "shortDescription": "a human prisoner",
+      "longDescription": "A human prisoner is here resting in the straw.\n",
+      "description": "The prisoner is just barely alive.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Resting",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1524,
+      "keywords": "oldstyle hermit crab",
+      "shortDescription": "a hermit",
+      "longDescription": "A hermit crab crawls towards you.\n",
+      "description": "The hermit crab is about 5 feet high and looks mad that you had the nerve\nto wake it up.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -10,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 10,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1526,
+      "keywords": "oldstyle cook hobgoblin",
+      "shortDescription": "the cook",
+      "longDescription": "A hobgoblin cook stands here cooking something.\n",
+      "description": "The cook is a dirty and fat hobgoblin.  He burps as he stirs up something\nin a pot.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -300,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 130,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 1500,
+      "keywords": "key bloody",
+      "shortDescription": "a bloody key",
+      "longDescription": "A bloody key is stuck to the floor.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 1501,
+      "keywords": "key dirty",
+      "shortDescription": "a dirty key",
+      "longDescription": "A dirty key lies here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 1502,
+      "keywords": "toy boomerang",
+      "shortDescription": "a toy boomerang",
+      "longDescription": "A toy boomerang wants to be picked up.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 5,
+      "weightPounds": 5,
+      "costCopper": 730,
+      "condition": 100,
+      "weapon": {
+        "class": "Exotic",
+        "diceCount": 2,
+        "diceSize": 4,
+        "attackType": "Pound"
+      }
+    },
+    {
+      "vnum": 1503,
+      "keywords": "staff gnarled",
+      "shortDescription": "a gnarled staff",
+      "longDescription": "A gnarled staff is here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 5,
+      "weightPounds": 15,
+      "costCopper": 730,
+      "condition": 100,
+      "weapon": {
+        "class": "Exotic",
+        "diceCount": 1,
+        "diceSize": 9,
+        "attackType": "Pound"
+      }
+    },
+    {
+      "vnum": 1504,
+      "keywords": "sword gnome",
+      "shortDescription": "a gnome sword",
+      "longDescription": "A gnome sword catches your eye.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 7,
+      "weightPounds": 15,
+      "costCopper": 610,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 3,
+        "diceSize": 3,
+        "attackType": "Slash"
+      }
+    },
+    {
+      "vnum": 1505,
+      "keywords": "shield studded",
+      "shortDescription": "a studded shield",
+      "longDescription": "A studded wooden shield lies here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Shield"
+      ],
+      "level": 5,
+      "weightPounds": 16,
+      "costCopper": 750,
+      "condition": 100,
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 1
+      }
+    },
+    {
+      "vnum": 1506,
+      "keywords": "potion bloody",
+      "shortDescription": "a bloody potion",
+      "longDescription": "A bloody potion lies here.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 7,
+      "weightPounds": 22,
+      "costCopper": 480,
+      "condition": 100,
+      "spells": {
+        "level": 15,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 1507,
+      "keywords": "cloak bloody",
+      "shortDescription": "a bloody cloak",
+      "longDescription": "A bloody cloak lies in a corner.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Neck"
+      ],
+      "level": 5,
+      "weightPounds": 15,
+      "costCopper": 480,
+      "condition": 100,
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 0
+      }
+    },
+    {
+      "vnum": 1508,
+      "keywords": "ring bat",
+      "shortDescription": "a bat ring",
+      "longDescription": "A ring in the shape of a bat lies here.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Finger"
+      ],
+      "level": 10,
+      "weightPounds": 2,
+      "costCopper": 270,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Move",
+          "modifier": 15
+        }
+      ]
+    },
+    {
+      "vnum": 1509,
+      "keywords": "necklace bead",
+      "shortDescription": "a bead necklace",
+      "longDescription": "A string of beads is here.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "wearFlags": [
+        "Take",
+        "Neck"
+      ],
+      "level": 5,
+      "weightPounds": 8,
+      "costCopper": 220,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 1510,
+      "keywords": "sword electrum",
+      "shortDescription": "an electrum sword",
+      "longDescription": "An electrum sword lies here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Glow",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 12,
+      "weightPounds": 20,
+      "costCopper": 930,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 4,
+        "diceSize": 3,
+        "attackType": "Slash"
+      }
+    },
+    {
+      "vnum": 1511,
+      "keywords": "basket wicker",
+      "shortDescription": "a wicker basket",
+      "longDescription": "A wicker basket sits here.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 5,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 90,
+        "flags": [],
+        "keyVnum": 0
+      }
+    },
+    {
+      "vnum": 1512,
+      "keywords": "peanuts",
+      "shortDescription": "some peanuts",
+      "longDescription": "Peanuts lie here.",
+      "material": "oldstyle",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 9,
+      "costCopper": 0,
+      "condition": 100,
+      "food": {
+        "hours": 16,
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 1513,
+      "keywords": "grain",
+      "shortDescription": "some grain",
+      "longDescription": "There is some grain here.",
+      "material": "oldstyle",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 8,
+      "costCopper": 0,
+      "condition": 100,
+      "food": {
+        "hours": 15,
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 1514,
+      "keywords": "skiff",
+      "shortDescription": "a skiff",
+      "longDescription": "A small skiff is here.",
+      "material": "oldstyle",
+      "itemType": "Boat",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 24,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 1515,
+      "keywords": "boots gnome",
+      "shortDescription": "a pair of gnome boots",
+      "longDescription": "You notice a pair of Gnome Boots.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Feet"
+      ],
+      "level": 7,
+      "weightPounds": 12,
+      "costCopper": 610,
+      "condition": 100,
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 0
+      },
+      "affects": [
+        {
+          "location": "Move",
+          "modifier": 10
+        }
+      ]
+    },
+    {
+      "vnum": 1516,
+      "keywords": "coins",
+      "shortDescription": "a pile of coins",
+      "longDescription": "A pile of coins.",
+      "material": "oldstyle",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 0,
+        "silver": 100
+      }
+    },
+    {
+      "vnum": 1517,
+      "keywords": "coins",
+      "shortDescription": "a pile of coins",
+      "longDescription": "A pile of coins.",
+      "material": "oldstyle",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 0,
+        "silver": 500
+      }
+    },
+    {
+      "vnum": 1519,
+      "keywords": "shield stone",
+      "shortDescription": "a stone shield",
+      "longDescription": "A stone slab lies here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Shield"
+      ],
+      "level": 16,
+      "weightPounds": 35,
+      "costCopper": 3700,
+      "condition": 100,
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Strength",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 1520,
+      "keywords": "mail heavy banded",
+      "shortDescription": "heavy banded mail",
+      "longDescription": "A large suit of heavy banded mail is here",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Body"
+      ],
+      "level": 15,
+      "weightPounds": 30,
+      "costCopper": 2100,
+      "condition": 100,
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 0
+      }
+    },
+    {
+      "vnum": 1521,
+      "keywords": "club large two-handed",
+      "shortDescription": "a large club",
+      "longDescription": "A large club sits here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 6,
+      "weightPounds": 22,
+      "costCopper": 460,
+      "condition": 100,
+      "weapon": {
+        "class": "Mace",
+        "diceCount": 1,
+        "diceSize": 12,
+        "attackType": "Pound",
+        "specialFlags": [
+          "TwoHands"
+        ]
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": -1
+        }
+      ]
+    },
+    {
+      "vnum": 1522,
+      "keywords": "banana",
+      "shortDescription": "a banana",
+      "longDescription": "There is a banana here.",
+      "material": "oldstyle",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 5,
+      "costCopper": 0,
+      "condition": 100,
+      "food": {
+        "hours": 6,
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 1523,
+      "keywords": "life potion",
+      "shortDescription": "a potion of life healing",
+      "longDescription": "A potion of life healing has left here.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "NoDrop"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 6,
+      "weightPounds": 1,
+      "costCopper": 630,
+      "condition": 100,
+      "spells": {
+        "level": 32,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 1524,
+      "keywords": "club wooden",
+      "shortDescription": "a wooden club",
+      "longDescription": "A wooden club sits here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 3,
+      "weightPounds": 10,
+      "costCopper": 220,
+      "condition": 100,
+      "weapon": {
+        "class": "Mace",
+        "diceCount": 2,
+        "diceSize": 3,
+        "attackType": "Pound"
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": -1
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 1501,
+      "name": "Entrance to Gnome Village",
+      "description": "You stand on a dusty path that leads north and east.  To the east you hear\nthe sounds of a small village.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3526,
+          "description": "A dusty path heads towards the eastern road.\n"
+        },
+        "east": {
+          "toRoom": 1502,
+          "description": "You see a dusty path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1502,
+      "name": "A Dusty Path",
+      "description": "This is a path leading into the village.  It continues east and west and\nthere is a small house to the north.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1509,
+          "description": "You see a small house.\n"
+        },
+        "east": {
+          "toRoom": 1503,
+          "description": "You see a road.\n"
+        },
+        "west": {
+          "toRoom": 1501,
+          "description": "You see a path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1503,
+      "name": "A Road in the Village",
+      "description": "This road runs north and south through the center of the village.  There\nare a few people moving around, but not many.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1505,
+          "description": "You see a road.\n"
+        },
+        "east": {
+          "toRoom": 1504,
+          "description": "You see a path.\n"
+        },
+        "south": {
+          "toRoom": 1507,
+          "description": "You see a road.\n"
+        },
+        "west": {
+          "toRoom": 1502,
+          "description": "You see a road.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1504,
+      "name": "A Dusty Path",
+      "description": "You are on a dusty path on the far side of the village.  Houses are to the\nnorth and south, while the path continues east.  There is a sign here.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1512,
+          "description": "You see a house.\n"
+        },
+        "east": {
+          "toRoom": 1559,
+          "description": "You see a path.\n"
+        },
+        "south": {
+          "toRoom": 1513,
+          "description": "You see a house.\n"
+        },
+        "west": {
+          "toRoom": 1503,
+          "description": "You see a road.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sign",
+          "description": "Warning:  The area to the east was written mostly by Vougon\n                    (giggle)    - Sandman\n"
+        }
+      ]
+    },
+    {
+      "vnum": 1505,
+      "name": "A Road in the Village",
+      "description": "This road runs north and south through the center of the village.  There\nare a few people moving around, but not many.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1506,
+          "description": "You see a road.\n"
+        },
+        "east": {
+          "toRoom": 1511,
+          "description": "You see a house.\n"
+        },
+        "south": {
+          "toRoom": 1503,
+          "description": "You see a road.\n"
+        },
+        "west": {
+          "toRoom": 1510,
+          "description": "You see a house.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1506,
+      "name": "A Road in the Village",
+      "description": "This road runs north and south through the center of the village.  There\nare a few people moving around, but not many.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1526,
+          "description": "You see a road.\n"
+        },
+        "south": {
+          "toRoom": 1505,
+          "description": "You see a road.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1507,
+      "name": "A Road in the Village",
+      "description": "This road runs north and south through the center of the village.  There\nare a few people moving around, but not many.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1503,
+          "description": "You see a road.\n"
+        },
+        "south": {
+          "toRoom": 1508,
+          "description": "You see a road.\n"
+        },
+        "west": {
+          "toRoom": 1514,
+          "description": "You see a shop.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1508,
+      "name": "A Road in the Village",
+      "description": "This road runs north and south through the center of the village.  There\nare a few people moving around, but not many.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1507,
+          "description": "You see a road.\n"
+        },
+        "east": {
+          "toRoom": 1516,
+          "description": "You see a shop.\n"
+        },
+        "south": {
+          "toRoom": 1517,
+          "description": "You see a small path.\n"
+        },
+        "west": {
+          "toRoom": 1515,
+          "description": "You see a shop.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1509,
+      "name": "A Small Gnome House",
+      "description": "This is a small suburban house made from quality wood.  You can see the\nexpert workmanship that went into making it, but it lacks creativity.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1502,
+          "description": "You see a path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1510,
+      "name": "A Small Gnome House",
+      "description": "This is a small suburban house made from quality wood.  You can see the\nexpert workmanship that went into making it, but it lacks creativity.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1505,
+          "description": "You see a path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1511,
+      "name": "A Small Gnome House",
+      "description": "This is a small suburban house made from quality wood.  You can see the\nexpert workmanship that went into making it, but it lacks creativity.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1505,
+          "description": "You see a path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1512,
+      "name": "A Small Gnome House",
+      "description": "This is a small suburban house made from quality wood.  You can see the\nexpert workmanship that went into making it, but it lacks creativity.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1504,
+          "description": "You see a path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1513,
+      "name": "A Small Gnome House",
+      "description": "This is a small suburban house made from quality wood.  You can see the\nexpert workmanship that went into making it, but it lacks creativity.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1504,
+          "description": "You see a path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1514,
+      "name": "A Gnome Shop",
+      "description": "You are in one of the several shops of this fine town.  The wares look fine,\nbut unfortunately the gnomes don't do business with outsiders.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1507,
+          "description": "You see a road.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1515,
+      "name": "A Gnome Shop",
+      "description": "You are in one of the several shops of this fine town.  The wares look fine,\nbut unfortunately the gnomes don't do business with outsiders.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1508,
+          "description": "You see a road.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1516,
+      "name": "A Gnome Shop",
+      "description": "You are in one of the several shops of this fine town.  The wares look fine,\nbut unfortunately the gnomes don't do business with outsiders.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1508,
+          "description": "You see a road.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1517,
+      "name": "Path by a Stream",
+      "description": "You are on a small path leading north and west, that is surrounded on the\nother two sides by a small stream.  The water looks mighty cold.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1508,
+          "description": "You see a road.\n"
+        },
+        "south": {
+          "toRoom": 1520,
+          "description": "You see the stream.\n"
+        },
+        "west": {
+          "toRoom": 1518,
+          "description": "You see a small path.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "stream",
+          "description": "The stream is pretty small, but it looks too cold to swim.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 1518,
+      "name": "Path by a Stream",
+      "description": "You are on a small east-west path.  The path shows new grass, as if it\nhas stopped being used sometime in the recent past.  A river is to the south,\nand a small hut is to the west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1517,
+          "description": "You see a small path.\n"
+        },
+        "south": {
+          "toRoom": 1521,
+          "description": "You see the stream.\n"
+        },
+        "west": {
+          "toRoom": 1519,
+          "description": "You see a small hut that is starting to fall apart.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "hut",
+          "description": "The hut looks well built, but it seems to have taken some damage.\n"
+        },
+        {
+          "keywords": "stream",
+          "description": "The stream is pretty small, but it looks too cold to swim.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 1519,
+      "name": "A Small Hut",
+      "description": "The hut is a mess!  Blood has stained the grass walls into a dark rich\ncrimson color.  Torn clothes and trash lie all around, and you think you\nsee a skeleton in the corner.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1518,
+          "description": "You see a small path.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "skeleton",
+          "description": "The skeleton still has a little flesh clinging to it and it is definitely\nhumanoid.  The skull has been cracked open, but it is otherwise undamaged,\nexcept by time.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 1520,
+      "name": "On the Stream",
+      "description": "The stream is cold and frigid, yet it supports plenty of life beneath its\nsurface.  The current trickles west and there is a field to the south.\n",
+      "sector": "WaterNoSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1517,
+          "description": "You see a small path.\n"
+        },
+        "south": {
+          "toRoom": 1522,
+          "description": "You see a grassy field.\n"
+        },
+        "west": {
+          "toRoom": 1521,
+          "description": "You see a small stream.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1521,
+      "name": "On the Stream",
+      "description": "The current here flows from the east, but a logjam blocks you from \ncontinuing onward.\n",
+      "sector": "WaterNoSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1518,
+          "description": "You see a small path.\n"
+        },
+        "east": {
+          "toRoom": 1520,
+          "description": "You see a small stream.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1522,
+      "name": "The Field of Mice's Dreams",
+      "description": "This is a large green field of waist high grass.  You feel something\nscurry over your feet.  There is a cave to the east.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1520,
+          "description": "You see a small stream.\n"
+        },
+        "east": {
+          "toRoom": 1523,
+          "description": "You see a dark mysterious cave.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1523,
+      "name": "The Dark Cave",
+      "description": "The cave gleams as your light reflects off of it.  As you squint your eyes\nand try to look ahead, you think you see something move.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1524
+        },
+        "west": {
+          "toRoom": 1522,
+          "description": "You see a grassy field.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1524,
+      "name": "Darker Cave",
+      "description": "The cave gets even darker as your terror grows stronger.  You fear for your\nlife as something emerges out of the shadows.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1523
+        }
+      }
+    },
+    {
+      "vnum": 1526,
+      "name": "A Dusty Path",
+      "description": "You are on a well traveled path that leads in many directions.  To the north\nis a large house, and to the west is a fortress.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1558,
+          "description": "You see a large white house.\n"
+        },
+        "south": {
+          "toRoom": 1506,
+          "description": "You see a road.\n"
+        },
+        "west": {
+          "toRoom": 1527,
+          "description": "You see the gateway to a large fortress.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "fortress",
+          "description": "The fortress is a large gnome stronghold to defend the city.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 1527,
+      "name": "The Iron Gateway",
+      "description": "You stand at the entrance to the gnome fortress.  The place seems to be\nwell fortified.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1526,
+          "description": "You see a small path.\n"
+        },
+        "west": {
+          "toRoom": 1528,
+          "description": "You see a long hallway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1528,
+      "name": "A Long Hallway",
+      "description": "You are now inside of the fortress; you must be lucky that the guards \nhaven't killed you.  As you glance around, you notice that the walls and\nfloors are spotlessly cleaned.  The barracks are to the north and a\nstorage room is to the south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1530,
+          "description": "You see the barracks.\n"
+        },
+        "east": {
+          "toRoom": 1527,
+          "description": "You see the gateway.\n"
+        },
+        "south": {
+          "toRoom": 1532,
+          "description": "You see a storage room.\n"
+        },
+        "west": {
+          "toRoom": 1529,
+          "description": "You see a long hallway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1529,
+      "name": "A Long Hallway",
+      "description": "You are now inside of the fortress; you must be lucky that the guards \nhaven't killed you.  As you glance around, you notice that the walls and\nfloors are spotlessly cleaned.  A mess hall is to the south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1528,
+          "description": "You see a long hallway.\n"
+        },
+        "south": {
+          "toRoom": 1534,
+          "description": "You see the mess hall.\n"
+        },
+        "west": {
+          "toRoom": 1535,
+          "description": "You see a small room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1530,
+      "name": "The Barracks",
+      "description": "You now stand in the sleeping quarters of the gnome guards.  Every bed is\nmade perfectly, and not single article of clothing is on the floor.  There\nis a small storage room to the east.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1531,
+          "description": "You see a small storage room.\n"
+        },
+        "south": {
+          "toRoom": 1528,
+          "description": "You see a long hallway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1531,
+      "name": "A Small Storage Room",
+      "description": "This is where the gnomes store all their spare clothing and armor.\nThere is not much here, but you might come up with something.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1530,
+          "description": "You see the barracks.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1532,
+      "name": "A Small Storage Room",
+      "description": "This is where the gnomes store all their spare weapons.  A door leads off\nto the east.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1528,
+          "description": "You see a long hallway.\n"
+        },
+        "east": {
+          "toRoom": 1533,
+          "description": "You see a small room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1533,
+      "name": "A Small Storage Room",
+      "description": "This is yet another room for storing gnome stuff.  Maps and battle plans\nare stored in neat stacks on the shelves.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1532,
+          "description": "You see a small room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1534,
+      "name": "The Mess Hall",
+      "description": "You are in the room where the guards come to get their grub.  The benches \nand tables are neatly cleaned and straightened, while shiny plates line\nthe walls.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1529,
+          "description": "You see a long hallway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1535,
+      "name": "A Small Room",
+      "description": "This is a small plain room.  Its only interesting feature is a ladder down.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1529,
+          "description": "You see a long hallway.\n"
+        },
+        "down": {
+          "toRoom": 1536,
+          "description": "You see darkness.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1536,
+      "name": "A Small Unused Room",
+      "description": "You stand in a small room in an unused section of the fortress.  The whole\nroom is coated with dust and cobwebs.  The ladder leads back up, and\na rusty door is to the east.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1537,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 1500,
+          "description": "You see a rusty door.\n"
+        },
+        "up": {
+          "toRoom": 1535,
+          "description": "You see a small room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1537,
+      "name": "Dark Hallway",
+      "description": "You find yourself in a very old section of the fortress.  You must be the\nfirst person to pass through here in years.  The hallway continues south\nand a door leads off to the east.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1538
+        },
+        "south": {
+          "toRoom": 1539
+        },
+        "west": {
+          "toRoom": 1536,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 1500,
+          "description": "You see a rusty door.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1538,
+      "name": "Torture Chamber",
+      "description": "This is a room that was once used to extract lies out of helpless victims.\nThe machines look unused, but could still work.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1537
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "machine",
+          "description": "The machine consists of a large rack with winches on each end.  You can \nalmost feel them pulling your arms out of their sockets.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 1539,
+      "name": "Dark Hallway",
+      "description": "The hall continues in a north-south direction.  The floor is coated with\nsome kind of molded slime.  Doors lead east and west.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1537
+        },
+        "east": {
+          "toRoom": 1542
+        },
+        "south": {
+          "toRoom": 1540
+        },
+        "west": {
+          "toRoom": 1541
+        }
+      }
+    },
+    {
+      "vnum": 1540,
+      "name": "Dark Hallway",
+      "description": "The hall continues in a north-south direction.  The floor is coated with\nsome kind of molded slime.  Doors lead east and west.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1539
+        },
+        "east": {
+          "toRoom": 1544
+        },
+        "south": {
+          "toRoom": 1543
+        },
+        "west": {
+          "toRoom": 1545
+        }
+      }
+    },
+    {
+      "vnum": 1541,
+      "name": "Prison Cell",
+      "description": "You are in a dark and nasty prison cell.  Bodies lying on the floor give off\nan unbearable stench.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1539
+        }
+      }
+    },
+    {
+      "vnum": 1542,
+      "name": "Prison Cell",
+      "description": "You are in a dark and nasty prison cell.  Bodies lying on the floor give off\nan unbearable stench.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1539
+        }
+      }
+    },
+    {
+      "vnum": 1543,
+      "name": "Prison Cell",
+      "description": "You are in a dark and nasty prison cell.  Bodies lying on the floor give off\nan unbearable stench.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1540
+        }
+      }
+    },
+    {
+      "vnum": 1544,
+      "name": "Prison Cell",
+      "description": "You are in a dark and nasty prison cell.  Bodies lying on the floor give off\nan unbearable stench.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1540
+        }
+      }
+    },
+    {
+      "vnum": 1545,
+      "name": "End of the Dark Hallway",
+      "description": "You have reached the end of the dark hallway and maybe the end of your puny\nlife.  Something lumbers its way out of the shadows.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1540
+        },
+        "west": {
+          "toRoom": 1546,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 1501,
+          "description": "You see a decaying door.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1546,
+      "name": "A Ladder",
+      "description": "You have come into a vertical tunnel with a ladder.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1545,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 1501,
+          "description": "You see a decaying door.\n"
+        },
+        "down": {
+          "toRoom": 1547
+        }
+      }
+    },
+    {
+      "vnum": 1547,
+      "name": "Lair",
+      "description": "You have entered a new lair in the fortress.  Anything could be lurking\naround the corner.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1548
+        },
+        "up": {
+          "toRoom": 1546
+        }
+      }
+    },
+    {
+      "vnum": 1548,
+      "name": "A Damp Hallway",
+      "description": "You are wandering in a dark, damp, twisting hallway.  The temperature\nseems to be greater here, as well as your fear.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1547
+        },
+        "east": {
+          "toRoom": 1549
+        },
+        "west": {
+          "toRoom": 1551
+        }
+      }
+    },
+    {
+      "vnum": 1549,
+      "name": "A Damp Hallway",
+      "description": "You are wandering in a dark, damp, twisting hallway.  The temperature\nseems to be greater here, as well as your fear.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1550
+        },
+        "west": {
+          "toRoom": 1548
+        }
+      }
+    },
+    {
+      "vnum": 1550,
+      "name": "A Damp Hallway",
+      "description": "You are wandering in a dark, damp, twisting hallway.  The temperature\nseems to be greater here, as well as your fear.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1549
+        },
+        "south": {
+          "toRoom": 1555
+        }
+      }
+    },
+    {
+      "vnum": 1551,
+      "name": "A Damp Hallway",
+      "description": "You are wandering in a dark, damp, twisting hallway.  The temperature\nseems to be greater here, as well as your fear.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1548
+        },
+        "south": {
+          "toRoom": 1552
+        }
+      }
+    },
+    {
+      "vnum": 1552,
+      "name": "A Damp Hallway",
+      "description": "You are wandering in a dark, damp, twisting hallway.  The temperature\nseems to be greater here, as well as your fear.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1551
+        },
+        "south": {
+          "toRoom": 1553
+        }
+      }
+    },
+    {
+      "vnum": 1553,
+      "name": "A Damp Hallway",
+      "description": "You are wandering in a dark, damp, twisting hallway.  The temperature\nseems to be greater here, as well as your fear.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1552
+        },
+        "east": {
+          "toRoom": 1554
+        }
+      }
+    },
+    {
+      "vnum": 1554,
+      "name": "A Damp Hallway",
+      "description": "You are wandering in a dark, damp, twisting hallway.  The temperature\nseems to be greater here, as well as your fear.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1556
+        },
+        "east": {
+          "toRoom": 1555
+        },
+        "west": {
+          "toRoom": 1553
+        }
+      }
+    },
+    {
+      "vnum": 1555,
+      "name": "A Damp Hallway",
+      "description": "You are wandering in a dark, damp, twisting hallway.  The temperature\nseems to be greater here, as well as your fear.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1550
+        },
+        "west": {
+          "toRoom": 1554
+        }
+      }
+    },
+    {
+      "vnum": 1556,
+      "name": "The End of the Hallway",
+      "description": "You make your way out of the hallway, just to find yourself in greater\ndanger.  Before you looms the source of the great heat.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1557
+        },
+        "south": {
+          "toRoom": 1554
+        }
+      }
+    },
+    {
+      "vnum": 1557,
+      "name": "The Altar",
+      "description": "You finally reach the end of the maze.  There is a great altar here in the\nshape of a bat.  A passageway leads off to the west.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1556
+        }
+      }
+    },
+    {
+      "vnum": 1558,
+      "name": "The Chief's House",
+      "description": "You enter into a large and luxurious house.  The floor is coated with carpets\nand the walls are covered in paintings.  You feel privileged just for stepping\ninside.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1526,
+          "description": "You see a path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1559,
+      "name": "The Unused Path",
+      "description": "You are now on a fairly unused path that leads east out of the village.  \nYou wonder what could be out this way.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1560,
+          "description": "You see a path.\n"
+        },
+        "west": {
+          "toRoom": 1504,
+          "description": "You see a path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1560,
+      "name": "The Overgrown Path",
+      "description": "As the path continues on, the grass grows higher.  You can't imagine\nwhat could possibly be out this way.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1561,
+          "description": "You see a clearing.\n"
+        },
+        "west": {
+          "toRoom": 1559,
+          "description": "You see a path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1561,
+      "name": "The Clearing",
+      "description": "Your progress is suddenly stopped by mountains on all sides.  The path leads\nback to the west, and there appears to be an old mine shaft to the north.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1562,
+          "description": "You see a mine shaft.\n"
+        },
+        "west": {
+          "toRoom": 1560,
+          "description": "You see a path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1562,
+      "name": "Entrance to the Mine Shaft",
+      "description": "As you enter the mine shaft, you get a sudden fear of the walls closing\nin on you.  You are surprised to notice that you don't need a light.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1563,
+          "description": "You see the shaft.\n"
+        },
+        "south": {
+          "toRoom": 1561,
+          "description": "You see the clearing.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1563,
+      "name": "Mine Shaft",
+      "description": "This mine shaft looks stable, at least in this area.  The wooden supports are\nthick and strong.  Torches line the walls.  Exits lead in all directions.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1582,
+          "description": "You see a small mine shaft.\n"
+        },
+        "east": {
+          "toRoom": 1564,
+          "description": "You see the shaft.\n"
+        },
+        "south": {
+          "toRoom": 1574,
+          "description": "You see the shaft.\n"
+        },
+        "west": {
+          "toRoom": 1562,
+          "description": "You see the entrance.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1564,
+      "name": "Mine Shaft",
+      "description": "This mine shaft looks stable, at least in this area.  The wooden supports are\nthick and strong.  Torches line the walls.  Exits lead in all directions.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1583,
+          "description": "You see a large room.\n"
+        },
+        "east": {
+          "toRoom": 1565,
+          "description": "You see the shaft.\n"
+        },
+        "south": {
+          "toRoom": 1573,
+          "description": "You see a large room.\n"
+        },
+        "west": {
+          "toRoom": 1563,
+          "description": "You see the shaft.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1565,
+      "name": "Mine Shaft",
+      "description": "This mine shaft looks stable, at least in this area.  The wooden supports are\nthick and strong.  Torches line the walls.  Exits lead in all directions\nexcept north.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1566,
+          "description": "You see the walkway.\n"
+        },
+        "south": {
+          "toRoom": 1572,
+          "description": "You see a large room.\n"
+        },
+        "west": {
+          "toRoom": 1564,
+          "description": "You see the shaft.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1566,
+      "name": "Walkway",
+      "description": "You are on a well built path in the middle of a mountain.  You sense something\ngreat up ahead, considering the hard work that must have gone into creating\nthis passage.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1567,
+          "description": "You see the walkway.\n"
+        },
+        "west": {
+          "toRoom": 1565,
+          "description": "You see the shaft.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1567,
+      "name": "Walkway",
+      "description": "You are on a well built path in the middle of a mountain.  You sense something\ngreat up ahead, considering the hard work that must have gone into creating\nthis passage.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1566,
+          "description": "You see the walkway.\n"
+        },
+        "south": {
+          "toRoom": 1568,
+          "description": "You see a large hall.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1568,
+      "name": "The Grand Hall",
+      "description": "You have stepped into the Grand Hall of the hobgoblin kingdom; your luck\nmust be running low by now.  Golden pillars span the hallway, and you\nnotice a red carpet beneath your feet.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1567,
+          "description": "You see the walkway.\n"
+        },
+        "south": {
+          "toRoom": 1569,
+          "description": "You see a large room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1569,
+      "name": "The Throne Room",
+      "description": "This is large bright room filled with Hobgoblins.  To the south there is\na large golden throne against the wall.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1568,
+          "description": "You see a large hall.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1570,
+      "name": "The Treasury",
+      "description": "You are inside the hobgoblin's treasury.  Your eyes are almost blinded by the\ngold, silver and copper coins.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1571,
+          "description": "You see a large room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1571,
+      "name": "Guarded Room",
+      "description": "You are inside a well guarded room.  The place is slightly better built than\nthe mine shafts, and is lit by lanterns.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1572,
+          "description": "You see a large room.\n"
+        },
+        "south": {
+          "toRoom": 1570,
+          "description": "You see a large room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1572,
+      "name": "Guarded Room",
+      "description": "You are inside a well guarded room.  The place is slightly better built than\nthe mine shafts, and is lit by lanterns.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1565,
+          "description": "You see a large room.\n"
+        },
+        "south": {
+          "toRoom": 1571,
+          "description": "You see a large room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1573,
+      "name": "Hobgoblin Armory",
+      "description": "The guards store their spare weapons and armor here.  There are rusty swords\non rotting shelves, and armor hanging from hooks or laying on the floor.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1564,
+          "description": "You see the shaft.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1574,
+      "name": "Mine Shaft",
+      "description": "You enter a part of the mine shaft where the torches have grown dim\nand are almost ready to go out.  From what you can see, there are plenty\nof cobwebs on the walls and rats at your feet.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1563,
+          "description": "You see the shaft.\n"
+        },
+        "south": {
+          "toRoom": 1575,
+          "description": "You see a dark and nasty room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1575,
+      "name": "Entrance to a Dungeon",
+      "description": "The floor dips slightly as you walk into this dark and nasty place.  Your\nskin crawls as you look at the filth on the walls and see it move.  Most\nof the exits lead into jail cells.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1574,
+          "description": "You see the shaft.\n"
+        },
+        "east": {
+          "toRoom": 1577,
+          "description": "You see a cell.\n"
+        },
+        "south": {
+          "toRoom": 1576,
+          "description": "You see a dark and nasty room.\n"
+        },
+        "west": {
+          "toRoom": 1581,
+          "description": "You see a cell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1576,
+      "name": "A Dungeon",
+      "description": "You are in the deepest and darkest part of the mine shafts.  The light from\nthe torches barely reaches to where you are.  Most directions from here\nlead to jail cells.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1575,
+          "description": "You see a dark and nasty room.\n"
+        },
+        "east": {
+          "toRoom": 1578,
+          "description": "You see a cell.\n"
+        },
+        "south": {
+          "toRoom": 1579,
+          "description": "You see a cell.\n"
+        },
+        "west": {
+          "toRoom": 1580,
+          "description": "You see a cell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1577,
+      "name": "A Jail Cell",
+      "description": "You are in a musty, dark jail cell.  Wet and dirty straw covers the floor.\nThe walls glisten with slime.  You see something stir in the straw.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1575,
+          "description": "You see a dark and nasty room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1578,
+      "name": "The Jail Cell",
+      "description": "You are in a musty, dark jail cell.  Wet and dirty straw covers the floor.\nThe walls glisten with slime.  You see something stir in the straw.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1576,
+          "description": "You see a dark and nasty room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1579,
+      "name": "The Jail Cell",
+      "description": "You are in a musty, dark jail cell.  Wet and dirty straw covers the floor.\nThe walls glisten with slime.  You see something stir in the straw.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1576,
+          "description": "You see a dark and nasty room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1580,
+      "name": "The Jail Cell",
+      "description": "You are in a musty, dark jail cell.  Wet and dirty straw covers the floor.\nThe walls glisten with slime.  You see something stir in the straw.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1576,
+          "description": "You see a dark and nasty room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1581,
+      "name": "The Jail Cell",
+      "description": "You are in a musty, dark jail cell.  Wet and dirty straw covers the floor.\nThe walls glisten with slime.  You see something stir in the straw.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1575,
+          "description": "You see a dark and nasty room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1582,
+      "name": "Small Mine Shaft",
+      "description": "You are in a small extension of the mine shaft.  The dust on the floor is\nundisturbed by footprints.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1588,
+          "description": "You see a small mine shaft.\n"
+        },
+        "south": {
+          "toRoom": 1563,
+          "description": "You see the shaft.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1583,
+      "name": "Hobgoblin Barracks",
+      "description": "You are suddenly surrounded by a small army of hobgoblin guards.  The room\nitself is a mess with clothes and armor everywhere.  The beds are unmade and\nstained.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1584,
+          "description": "You see a large room.\n"
+        },
+        "east": {
+          "toRoom": 1585,
+          "description": "You see the mess hall.\n"
+        },
+        "south": {
+          "toRoom": 1564,
+          "description": "You see the mine shaft.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1584,
+      "name": "Hobgoblin Barracks",
+      "description": "Yech!  As you continue forward, the smell just keeps getting worse.\nWhat are you DOING here?\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1583,
+          "description": "You see a large room"
+        }
+      }
+    },
+    {
+      "vnum": 1585,
+      "name": "Mess Hall",
+      "description": "You stand in the hobgoblin eating area.  There are a few rotting tables\nand many broken dishes scattered around the room.  You almost slip on a\nrotten piece of meat, but catch yourself just in time.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1586,
+          "description": "You see a small room.\n"
+        },
+        "east": {
+          "toRoom": 1587,
+          "description": "You see a kitchen.\n"
+        },
+        "west": {
+          "toRoom": 1583,
+          "description": "You see a large room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1586,
+      "name": "A Store Room",
+      "description": "You stand in a small room filled with flour, grain, fruit, and bat droppings.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1585,
+          "description": "You see the mess hall.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1587,
+      "name": "The Kitchen",
+      "description": "This kitchen hasn't been cleaned since the creation of humans.  The trash and\nspoiled food laying on the floor reach up to your knees.  Off to the side a\npot is boiling over.  A human hand floats in it.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 1585,
+          "description": "You see the mess hall.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1588,
+      "name": "A Small Mine Shaft",
+      "description": "You come to a place in the mine shaft where a tunnel leads down.  The\nsmall passage continues north and south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1589,
+          "description": "You see an almost caved in area.\n"
+        },
+        "south": {
+          "toRoom": 1582,
+          "description": "You see a small mine shaft.\n"
+        },
+        "down": {
+          "toRoom": 1590,
+          "description": "You see a hole.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1589,
+      "name": "Hermit's Lair",
+      "description": "You are in a small section where the mine wall has collapsed to reveal a\ntiny one-room cave.  The area is barely lit, but you can make out something\nmoving towards you.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1588,
+          "description": "You see a small mine shaft.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1590,
+      "name": "A Hole",
+      "description": "You are in a hole.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 1588,
+          "description": "You see a small mine shaft.\n"
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Door",
+      "roomVnum": 1536,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 1537,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 1545,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 1546,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1502,
+      "roomVnum": 1503,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1503,
+      "wearLocation": "Wield",
+      "maxInWorld": 20
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1502,
+      "roomVnum": 1505,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1503,
+      "wearLocation": "Wield",
+      "maxInWorld": 20
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1502,
+      "roomVnum": 1506,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1503,
+      "wearLocation": "Wield",
+      "maxInWorld": 20
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1500,
+      "roomVnum": 1509,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1502,
+      "maxInWorld": 20
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1501,
+      "roomVnum": 1509,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1500,
+      "roomVnum": 1510,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1502,
+      "maxInWorld": 20
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1501,
+      "roomVnum": 1510,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1500,
+      "roomVnum": 1511,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1502,
+      "maxInWorld": 20
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1501,
+      "roomVnum": 1511,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1503,
+      "roomVnum": 1513,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1511,
+      "maxInWorld": 12
+    },
+    {
+      "type": "Put",
+      "objectVnum": 1513,
+      "containerVnum": 1511,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1503,
+      "roomVnum": 1514,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1511,
+      "maxInWorld": 12
+    },
+    {
+      "type": "Put",
+      "objectVnum": 1512,
+      "containerVnum": 1511,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1503,
+      "roomVnum": 1515,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1514,
+      "wearLocation": "Wield",
+      "maxInWorld": 12
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1504,
+      "roomVnum": 1519,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1500,
+      "maxInWorld": 3
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1506,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1507,
+      "wearLocation": "Neck1",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1508,
+      "roomVnum": 1522,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1508,
+      "roomVnum": 1522,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1507,
+      "roomVnum": 1524,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1504,
+      "roomVnum": 1527,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1504,
+      "wearLocation": "Wield",
+      "maxInWorld": 20
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1504,
+      "roomVnum": 1530,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1504,
+      "wearLocation": "Wield",
+      "maxInWorld": 20
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1504,
+      "roomVnum": 1530,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1504,
+      "wearLocation": "Wield",
+      "maxInWorld": 20
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1504,
+      "roomVnum": 1534,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1504,
+      "wearLocation": "Wield",
+      "maxInWorld": 12
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1509,
+      "roomVnum": 1541,
+      "maxInWorld": 3,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1505,
+      "wearLocation": "Shield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1510,
+      "roomVnum": 1542,
+      "maxInWorld": 3,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1503,
+      "wearLocation": "Wield",
+      "maxInWorld": 12
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1511,
+      "roomVnum": 1543,
+      "maxInWorld": 3,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1512,
+      "roomVnum": 1545,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1501,
+      "maxInWorld": 4
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 1548,
+      "door": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1513,
+      "roomVnum": 1548,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1514,
+      "roomVnum": 1548,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 1549,
+      "door": 4
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 1550,
+      "door": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1513,
+      "roomVnum": 1550,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1514,
+      "roomVnum": 1550,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 1551,
+      "door": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1513,
+      "roomVnum": 1551,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1514,
+      "roomVnum": 1551,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 1552,
+      "door": 4
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 1553,
+      "door": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1513,
+      "roomVnum": 1553,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1514,
+      "roomVnum": 1553,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 1554,
+      "door": 4
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 1555,
+      "door": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1513,
+      "roomVnum": 1555,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1514,
+      "roomVnum": 1555,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1515,
+      "roomVnum": 1556,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1505,
+      "maxInWorld": 18
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1512,
+      "maxInWorld": 20
+    },
+    {
+      "type": "Give",
+      "objectVnum": 1516,
+      "maxInWorld": 3
+    },
+    {
+      "type": "Object",
+      "objectVnum": 1517,
+      "roomVnum": 1557,
+      "maxInWorld": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1505,
+      "roomVnum": 1558,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1508,
+      "wearLocation": "FingerLeft",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1509,
+      "wearLocation": "Neck1",
+      "maxInWorld": 12
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1510,
+      "wearLocation": "Wield",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1520,
+      "roomVnum": 1563,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1520,
+      "roomVnum": 1565,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1518,
+      "roomVnum": 1569,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1521,
+      "wearLocation": "Wield",
+      "maxInWorld": 30
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1518,
+      "roomVnum": 1569,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1521,
+      "wearLocation": "Wield",
+      "maxInWorld": 30
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1518,
+      "roomVnum": 1569,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1521,
+      "wearLocation": "Wield",
+      "maxInWorld": 30
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1518,
+      "roomVnum": 1569,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1521,
+      "wearLocation": "Wield",
+      "maxInWorld": 30
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1518,
+      "roomVnum": 1569,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1521,
+      "wearLocation": "Wield",
+      "maxInWorld": 30
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1519,
+      "roomVnum": 1569,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1520,
+      "wearLocation": "Body",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1521,
+      "roomVnum": 1570,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 1516,
+      "roomVnum": 1570,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Object",
+      "objectVnum": 1517,
+      "roomVnum": 1570,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1571,
+      "maxInWorld": 30,
+      "maxInRoom": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1524,
+      "wearLocation": "Wield",
+      "maxInWorld": 40
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1571,
+      "maxInWorld": 30,
+      "maxInRoom": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1524,
+      "wearLocation": "Wield",
+      "maxInWorld": 40
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1571,
+      "maxInWorld": 30,
+      "maxInRoom": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1524,
+      "wearLocation": "Wield",
+      "maxInWorld": 40
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1571,
+      "maxInWorld": 30,
+      "maxInRoom": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1524,
+      "wearLocation": "Wield",
+      "maxInWorld": 40
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1572,
+      "maxInWorld": 30,
+      "maxInRoom": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1524,
+      "wearLocation": "Wield",
+      "maxInWorld": 40
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1572,
+      "maxInWorld": 30,
+      "maxInRoom": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1524,
+      "wearLocation": "Wield",
+      "maxInWorld": 40
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1572,
+      "maxInWorld": 30,
+      "maxInRoom": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1524,
+      "wearLocation": "Wield",
+      "maxInWorld": 40
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1572,
+      "maxInWorld": 30,
+      "maxInRoom": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 1524,
+      "wearLocation": "Wield",
+      "maxInWorld": 40
+    },
+    {
+      "type": "Object",
+      "objectVnum": 1521,
+      "roomVnum": 1573,
+      "maxInWorld": 40
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1522,
+      "roomVnum": 1577,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1522,
+      "roomVnum": 1578,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1522,
+      "roomVnum": 1579,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1523,
+      "roomVnum": 1580,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1523,
+      "roomVnum": 1581,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1583,
+      "maxInWorld": 30,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1583,
+      "maxInWorld": 30,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1584,
+      "maxInWorld": 30,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1517,
+      "roomVnum": 1584,
+      "maxInWorld": 30,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1526,
+      "roomVnum": 1587,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1524,
+      "roomVnum": 1589,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1520,
+      "roomVnum": 1590,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 1503,
+      "procedure": "CastMage"
+    },
+    {
+      "mobileVnum": 1505,
+      "procedure": "CastCleric"
+    },
+    {
+      "mobileVnum": 1509,
+      "procedure": "Poison"
+    },
+    {
+      "mobileVnum": 1510,
+      "procedure": "Poison"
+    },
+    {
+      "mobileVnum": 1511,
+      "procedure": "Poison"
+    },
+    {
+      "mobileVnum": 1513,
+      "procedure": "BreathAcid"
+    },
+    {
+      "mobileVnum": 1514,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 1515,
+      "procedure": "BreathFire"
+    },
+    {
+      "mobileVnum": 1519,
+      "procedure": "CastMage"
+    }
+  ]
+}

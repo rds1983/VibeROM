@@ -40,3 +40,19 @@ entries short and link to the code or task that owns them.
 - ROM adds race act/affect/offence/immunity/form/part defaults and
   `ACT_IS_NPC` when mobiles are created. The importer stores only the file
   flags, so the loader must add the race and NPC defaults.
+
+## T012 - ROM 2.4b6 corpus migration
+
+- **`thanos.are` is omitted.** It is listed in the source `area.lst` but is not
+  present in the available corpus. `Data/areas/index.json` contains the 52
+  areas that exist; the missing area is documented in `Data/README.md`.
+- **`proto.are` is omitted.** It is the unlisted Merc prototype template with
+  empty sections, so importing it would add no entities and no load-order entry.
+- **Ten invalid exit keys are cleared.** The source uses room vnums or a
+  missing object as key vnums. ROM can never match those keys, so the importer
+  sets them to "no key" and records the change in the report's `repairs` list.
+  This is behaviour-preserving and keeps `--check` deterministic.
+- **Reserved flag bits and source quirks remain warnings.** The 166 warnings
+  are unnamed act/room bits, two `-1` sectors mapped to `Inside`, and two
+  negative food/money values clamped to `0`. There are no unknown canonical
+  names and no errors.

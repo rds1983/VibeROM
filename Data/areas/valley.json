@@ -1,0 +1,4744 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "valley.are",
+  "name": "Valley of the Elves",
+  "credits": "{ 5 20} Hatchet Valley of the Elves",
+  "vnumRange": {
+    "low": 7800,
+    "high": 7899
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 7800,
+      "keywords": "oldstyle dog cooshee",
+      "shortDescription": "a cooshee",
+      "longDescription": "A rather large dog is here, wandering the valley.\n",
+      "description": "A beast is the size of the largest common dog.  It has a greenish coat with\nbrown spots.  Its shape, along with its colors, make this cooshee almost\nundetectable as it moves.\n",
+      "race": "Dog",
+      "actFlags": [
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Fast",
+        "Trip",
+        "AssistRace"
+      ],
+      "form": [
+        "Edible",
+        "Animal",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Feet",
+        "Ear",
+        "Eye",
+        "Claws",
+        "Fangs"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7801,
+      "keywords": "oldstyle elf valley",
+      "shortDescription": "a valley elf",
+      "longDescription": "A valley elf wanders here, cautious of your intrusion.\n",
+      "description": "This elf is almost as tall as you are, but much slimmer and agile.  You see\nhatred in his eyes, and you try to avoid his stare.  His tense body looks ready\nto spring upon you, like a mountain lion stalking its prey.  He sees you\nnoticing him, and quietly disappears.\n",
+      "race": "Elf",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Infrared",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm"
+      ],
+      "vulnerabilities": [
+        "Iron"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7802,
+      "keywords": "oldstyle elf valley",
+      "shortDescription": "a valley elf",
+      "longDescription": "A female valley elf wanders here, skirting between the tall grasses.\n",
+      "description": "This elf is almost as tall as you are, but much slimmer and more agile.\nShe glares at you, then quickly disappears before you see more of her.\n",
+      "race": "Elf",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Infrared",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm"
+      ],
+      "vulnerabilities": [
+        "Iron"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7803,
+      "keywords": "oldstyle elf sentry valley",
+      "shortDescription": "a valley elf sentry",
+      "longDescription": "A valley elf sentry stands here, then noticing you, attacks quickly!\n",
+      "description": "This elf is almost as tall as you are, but much slimmer and more agile.\nHe glares at your intrusion and attacks with menace.\n",
+      "race": "Elf",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "Infrared",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm"
+      ],
+      "vulnerabilities": [
+        "Iron"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7804,
+      "keywords": "oldstyle elf sentry valley",
+      "shortDescription": "a valley elf sentry",
+      "longDescription": "A valley elf sentry stands here, then noticing you, attacks quickly!\n",
+      "description": "This elf is almost as tall as you are, but much slimmer and more agile.\nShe glares at your intrusion and attacks with menace.\n",
+      "race": "Elf",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "Infrared",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm"
+      ],
+      "vulnerabilities": [
+        "Iron"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7805,
+      "keywords": "oldstyle elf scout valley",
+      "shortDescription": "a valley elf scout",
+      "longDescription": "A valley elf scout wanders the valley, searching for intruders like you!\n",
+      "description": "The elf notices your intrusion and attacks with determination.\n",
+      "race": "Elf",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Infrared",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm"
+      ],
+      "vulnerabilities": [
+        "Iron"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7806,
+      "keywords": "oldstyle elf valley",
+      "shortDescription": "a valley elf",
+      "longDescription": "A valley elf is here, doing her duties.\n",
+      "description": "She is currently doing some menial chores, and ignores your intrusion except\nwhen you are in her way.\n",
+      "race": "Elf",
+      "actFlags": [
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Infrared",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm"
+      ],
+      "vulnerabilities": [
+        "Iron"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7807,
+      "keywords": "oldstyle elf elder valley",
+      "shortDescription": "a valley elf elder",
+      "longDescription": "A valley elf elder is here, studying.  He notices you.\nA valley elf elder shouts 'You have intruded wrongly.  Be prepared to die!'\n",
+      "description": "This elf looks quite old, probably twenty or more times your age.  He looks\nquite potent, though.\n",
+      "race": "Elf",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "Sanctuary",
+        "Infrared",
+        "ProtectEvil"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm"
+      ],
+      "vulnerabilities": [
+        "Iron"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 15,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 208
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 5,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -2,
+        "bash": -2,
+        "slash": -2,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7808,
+      "keywords": "oldstyle elf elder valley",
+      "shortDescription": "a valley elf elder",
+      "longDescription": "A valley elf elder is here, studying.  She notices you.\nA valley elf elder says 'Your arrogance will be your end, human.'\n",
+      "description": "This elf looks quite old, probably twenty or more times your age.  She looks\nquite potent, though.\n",
+      "race": "Elf",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "Mage"
+      ],
+      "affectedBy": [
+        "Infrared",
+        "ProtectEvil"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm"
+      ],
+      "vulnerabilities": [
+        "Iron"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 15,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 190
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -1,
+        "bash": -1,
+        "slash": -1,
+        "exotic": 5
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7809,
+      "keywords": "oldstyle pyrohydra pyro hydra",
+      "shortDescription": "the pyrohydra",
+      "longDescription": "A big beast with many heads, each breathing fire, stares at you with malice.\n",
+      "description": "This big beast looks like a small red dragon, but has many more heads than a\nregular dragon, too.  It doesn't look happy.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 20,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 333
+      },
+      "manaDice": {
+        "count": 10,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 8,
+        "bonus": 5,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": -4,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7810,
+      "keywords": "oldstyle hermit man old",
+      "shortDescription": "an old hermit",
+      "longDescription": "An old hermit sits here, smoking a pipe.\n",
+      "description": "He looks old and feeble.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Wimpy"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7811,
+      "keywords": "oldstyle talemon wizard mage",
+      "shortDescription": "Talemon",
+      "longDescription": "An old mage busies himself with some chemicals.\n",
+      "description": "Talemon looks harmless, but the fireballs he throws at you don't.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "Mage"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 25,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 500
+      },
+      "manaDice": {
+        "count": 25,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 4,
+        "bonus": 6,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -6,
+        "bash": -6,
+        "slash": -6,
+        "exotic": 2
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 50,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7812,
+      "keywords": "oldstyle guardian daemon",
+      "shortDescription": "the guardian daemon",
+      "longDescription": "A huge guardian daemon is here, watching the treasure.\n",
+      "description": "This daemon is unhappy with its summoned job, and is willing to take out it's\nanger at you!\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 25,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 550
+      },
+      "manaDice": {
+        "count": 12,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 10,
+        "bonus": 7,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -7,
+        "bash": -7,
+        "slash": -7,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7813,
+      "keywords": "oldstyle wolf",
+      "shortDescription": "a wolf",
+      "longDescription": "A wolf is here, looking for small prey.\n",
+      "description": "The wolf is covered with brown hair.  It looks at you with fright.\n",
+      "race": "Wolf",
+      "actFlags": [
+        "Aggressive",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "DarkVision"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Fast",
+        "Trip",
+        "AssistRace"
+      ],
+      "form": [
+        "Edible",
+        "Animal",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Ear",
+        "Eye",
+        "Tail",
+        "Fangs"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 4,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 46
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 7814,
+      "keywords": "oldstyle antelope",
+      "shortDescription": "an antelope",
+      "longDescription": "An antelope is here, peacefully munching on grass.\n",
+      "description": "With horns and spots over coarse, brown hair, this beast is the spit and\nimage of ... an antelope.\n",
+      "race": "Human",
+      "actFlags": [
+        "Wimpy"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 7800,
+      "keywords": "chainmail elven chain mail",
+      "shortDescription": "elven chainmail",
+      "longDescription": "A shiny metallic shirt is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Body"
+      ],
+      "level": 5,
+      "weightPounds": 3,
+      "costCopper": 1080,
+      "condition": 100,
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 2
+      }
+    },
+    {
+      "vnum": 7801,
+      "keywords": "boots elven",
+      "shortDescription": "elven boots",
+      "longDescription": "Some soft boots are on the floor.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Feet"
+      ],
+      "level": 7,
+      "weightPounds": 3,
+      "costCopper": 390,
+      "condition": 100,
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 0
+      },
+      "affects": [
+        {
+          "location": "Move",
+          "modifier": 5
+        }
+      ]
+    },
+    {
+      "vnum": 7802,
+      "keywords": "longsword elven sword long",
+      "shortDescription": "an elven longsword",
+      "longDescription": "A shiny blade is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 7,
+      "weightPounds": 3,
+      "costCopper": 670,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 3,
+        "diceSize": 3,
+        "attackType": "Slash"
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 7803,
+      "keywords": "cloak brown",
+      "shortDescription": "a brown cloak",
+      "longDescription": "A pile of brown cloth is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Neck"
+      ],
+      "level": 7,
+      "weightPounds": 3,
+      "costCopper": 900,
+      "condition": 100,
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 0
+      },
+      "affects": [
+        {
+          "location": "Dexterity",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 7804,
+      "keywords": "key",
+      "shortDescription": "a key",
+      "longDescription": "A shiny key is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        7846,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 7805,
+      "keywords": "key",
+      "shortDescription": "a key",
+      "longDescription": "A shiny key is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        7880,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 7806,
+      "keywords": "ring gold",
+      "shortDescription": "a gold ring",
+      "longDescription": "A shiny ring is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Finger"
+      ],
+      "level": 5,
+      "weightPounds": 1,
+      "costCopper": 110,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Mana",
+          "modifier": 10
+        }
+      ]
+    },
+    {
+      "vnum": 7807,
+      "keywords": "quarterstaff staff two-handed",
+      "shortDescription": "a quarterstaff",
+      "longDescription": "A quarterstaff is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 21,
+      "weightPounds": 5,
+      "costCopper": 670,
+      "condition": 100,
+      "weapon": {
+        "class": "Spear",
+        "diceCount": 4,
+        "diceSize": 5,
+        "attackType": "Pound",
+        "specialFlags": [
+          "TwoHands"
+        ]
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 7808,
+      "keywords": "potion",
+      "shortDescription": "a potion",
+      "longDescription": "A potion is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 200,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7809,
+      "keywords": "potion",
+      "shortDescription": "a potion",
+      "longDescription": "A potion is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 8,
+      "weightPounds": 1,
+      "costCopper": 580,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7810,
+      "keywords": "potion",
+      "shortDescription": "a potion",
+      "longDescription": "A potion is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 4,
+      "weightPounds": 1,
+      "costCopper": 290,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7811,
+      "keywords": "potion",
+      "shortDescription": "a potion",
+      "longDescription": "A potion is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 6,
+      "weightPounds": 1,
+      "costCopper": 1380,
+      "condition": 100,
+      "spells": {
+        "level": 50,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7812,
+      "keywords": "potion",
+      "shortDescription": "a potion",
+      "longDescription": "A potion is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 2,
+      "weightPounds": 1,
+      "costCopper": 240,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7813,
+      "keywords": "potion",
+      "shortDescription": "a potion",
+      "longDescription": "A potion is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 1,
+      "weightPounds": 1,
+      "costCopper": 250,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7814,
+      "keywords": "potion",
+      "shortDescription": "a potion",
+      "longDescription": "A potion is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 1,
+      "weightPounds": 1,
+      "costCopper": 220,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7815,
+      "keywords": "potion",
+      "shortDescription": "a potion",
+      "longDescription": "A potion is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 5,
+      "weightPounds": 1,
+      "costCopper": 330,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7816,
+      "keywords": "potion",
+      "shortDescription": "a potion",
+      "longDescription": "A potion is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 6,
+      "weightPounds": 1,
+      "costCopper": 420,
+      "condition": 100,
+      "spells": {
+        "level": 14,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7817,
+      "keywords": "scroll",
+      "shortDescription": "a scroll",
+      "longDescription": "A scroll is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 5,
+      "weightPounds": 1,
+      "costCopper": 660,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7818,
+      "keywords": "scroll",
+      "shortDescription": "a scroll",
+      "longDescription": "A scroll is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 8,
+      "weightPounds": 1,
+      "costCopper": 1090,
+      "condition": 100,
+      "spells": {
+        "level": 16,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7819,
+      "keywords": "scroll",
+      "shortDescription": "a scroll",
+      "longDescription": "A scroll is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 400,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7820,
+      "keywords": "scroll",
+      "shortDescription": "a scroll",
+      "longDescription": "A scroll is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 400,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7821,
+      "keywords": "scroll",
+      "shortDescription": "a scroll",
+      "longDescription": "A scroll is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 400,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7822,
+      "keywords": "scroll",
+      "shortDescription": "a scroll",
+      "longDescription": "A scroll is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 400,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7823,
+      "keywords": "scroll",
+      "shortDescription": "a scroll",
+      "longDescription": "A scroll is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 11,
+      "weightPounds": 1,
+      "costCopper": 1360,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 7824,
+      "keywords": "rod light",
+      "shortDescription": "the Rod of Neutrality",
+      "longDescription": "A dull iron shaft is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Light",
+      "extraFlags": [
+        "Magic",
+        "AntiGood",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 20,
+      "weightPounds": 1,
+      "costCopper": 1150,
+      "condition": 100,
+      "light": {
+        "duration": 999
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 7825,
+      "keywords": "quarterstaff staff two-handed",
+      "shortDescription": "a quarterstaff",
+      "longDescription": "A quarterstaff is on the floor.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 14,
+      "weightPounds": 5,
+      "costCopper": 310,
+      "condition": 100,
+      "weapon": {
+        "class": "Spear",
+        "diceCount": 3,
+        "diceSize": 5,
+        "attackType": "Pound",
+        "specialFlags": [
+          "TwoHands"
+        ]
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 1
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 7800,
+      "name": "A Path from the Plains",
+      "description": "You are on a path away from the Plains of Ofcol.  The path doesn't look well\ntread, but it is relatively well kept.  To the south are the Plains of Ofcol,\nwhile this path leads north.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7801,
+          "description": "The path continues north.\n"
+        },
+        "south": {
+          "toRoom": 323,
+          "description": "You see the Plains of Ofcol.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7801,
+      "name": "Along the Path",
+      "description": "You are on the path away from the Plains of Ofcol.  The main path leads north\nto an overlook and south back toward the Plains of Ofcol.  Western and eastern\nside paths can be seen, probably deer trails by the width of them.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7804,
+          "description": "You see the overlook.\n"
+        },
+        "east": {
+          "toRoom": 7803,
+          "description": "You see the small trail.\n"
+        },
+        "south": {
+          "toRoom": 7800,
+          "description": "You see the path back toward Ofcol.\n"
+        },
+        "west": {
+          "toRoom": 7802,
+          "description": "You see the small trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7802,
+      "name": "A Small Trail",
+      "description": "This small deer trail leads north and east.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7867,
+          "description": "The trail continues north.\n"
+        },
+        "east": {
+          "toRoom": 7801,
+          "description": "The main path is to the east.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7803,
+      "name": "A Small Trail",
+      "description": "This small deer trail leads north and west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7849,
+          "description": "The trail continues north.\n"
+        },
+        "west": {
+          "toRoom": 7801,
+          "description": "The main path is to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7804,
+      "name": "The Overlook",
+      "description": "You are above a large valley.  Below you, you see humanoid forms wandering\naround the valley.  Rich green grass covers the valley, with some small trees\ndotting the landscape.  To the south is the trail back toward Ofcol.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7801,
+          "description": "You see the path back toward Ofcol.\n"
+        },
+        "down": {
+          "toRoom": 7805,
+          "description": "You see the entrance to the valley.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7805,
+      "name": "The Entrance to the Valley of the Elves",
+      "description": "You are at the entrance to the Valley of the Elves.  Elves stare at your\nintrusion, but most are too busy to bother with you.  The valley spreads to\nthe north, while enlarging toward the east and west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7810,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7807,
+          "description": "The valley continues east.\n"
+        },
+        "west": {
+          "toRoom": 7806,
+          "description": "The valley continues west.\n"
+        },
+        "up": {
+          "toRoom": 7804,
+          "description": "The overlook is above you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7806,
+      "name": "The Edge of the Valley",
+      "description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\ntrail circling the entire valley.  The valley continues north and east.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7809,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7805,
+          "description": "The entrance to the valley is to the east.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7807,
+      "name": "The Edge of the Valley",
+      "description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\ntrail circling the entire valley.  The valley continues north and west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7811,
+          "description": "The valley continues north.\n"
+        },
+        "west": {
+          "toRoom": 7805,
+          "description": "The entrance to the valley is to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7808,
+      "name": "The Edge of the Valley",
+      "description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\ntrail circling the entire valley.  The valley continues north and east.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7813,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7809,
+          "description": "The valley continues east.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7809,
+      "name": "The Valley of the Elves",
+      "description": "You are in the Valley of the Elves.  The valley continues in all directions.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7814,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7810,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7806,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7808,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7810,
+      "name": "The Valley of the Elves",
+      "description": "You are in the Valley of the Elves.  The valley continues in all directions.\nThe entrance to the valley is towards the south.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7815,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7811,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7805,
+          "description": "You see the entrance to the valley.\n"
+        },
+        "west": {
+          "toRoom": 7809,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7811,
+      "name": "The Valley of the Elves",
+      "description": "You are in the Valley of the Elves.  The valley continues in all directions.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7816,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7812,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7807,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7810,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7812,
+      "name": "The Edge of the Valley",
+      "description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\ntrail circling the entire valley.  The valley continues north and west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7817,
+          "description": "The valley continues north.\n"
+        },
+        "west": {
+          "toRoom": 7811,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7813,
+      "name": "The Edge of the Valley",
+      "description": "You are at the edge of the Valley of the Elves.  A steep trail leads up toward\nthe deer trail circling the valley.  The valley continues north, south, and\neast.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7818,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7814,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7808,
+          "description": "The valley continues south.\n"
+        },
+        "up": {
+          "toRoom": 7863,
+          "description": "The steep trail leads up.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7814,
+      "name": "The Valley of the Elves",
+      "description": "You are in the Valley of the Elves.  The valley continues in all directions.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7819,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7815,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7809,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7813,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7815,
+      "name": "The Valley of the Elves",
+      "description": "You are in the Valley of the Elves.  The valley continues in all directions.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7820,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7816,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7810,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7814,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7816,
+      "name": "The Valley of the Elves",
+      "description": "You are in the Valley of the Elves.  The valley continues in all directions.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7821,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7817,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7811,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7815,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7817,
+      "name": "The Edge of the Valley",
+      "description": "You are at the edge of the Valley of the Elves.  A steep trail leads up toward\nthe deer trail circling the valley.  The valley continues north, south, and\nwest.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7822,
+          "description": "The valley continues north.\n"
+        },
+        "south": {
+          "toRoom": 7812,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7816,
+          "description": "The valley continues west.\n"
+        },
+        "up": {
+          "toRoom": 7853,
+          "description": "The steep trail leads up.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7818,
+      "name": "The Edge of the Valley",
+      "description": "You are at the edge of the Valley of the Elves.  High above you, you see a\nsmall trail circling the entire valley.  The valley continues south and east.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7819,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7813,
+          "description": "The valley continues south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7819,
+      "name": "The Valley of the Elves",
+      "description": "You are in the Valley of the Elves.  The valley continues in all directions.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7823,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7820,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7814,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7818,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7820,
+      "name": "The Valley of the Elves",
+      "description": "You are in the Valley of the Elves.  The valley continues in all directions.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7824,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7821,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7815,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7819,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7821,
+      "name": "The Valley of the Elves",
+      "description": "You are in the Valley of the Elves.  The valley continues in all directions.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7825,
+          "description": "The valley continues north.\n"
+        },
+        "east": {
+          "toRoom": 7822,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7816,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7820,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7822,
+      "name": "The Edge of the Valley",
+      "description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\ntrail circling the entire valley.  The valley continues south and west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7817,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7821,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7823,
+      "name": "The Edge of the Valley",
+      "description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\ntrail circling the entire valley.  The valley continues south and east.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7824,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7819,
+          "description": "The valley continues south\n"
+        }
+      }
+    },
+    {
+      "vnum": 7824,
+      "name": "The Edge of the Valley",
+      "description": "You are in the Valley of the Elves.  The valley continues in all directions.\nTo the north, a small, narrow trail leads away from the valley.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7826,
+          "description": "A small trail leads away from the valley.\n"
+        },
+        "east": {
+          "toRoom": 7825,
+          "description": "The valley continues east.\n"
+        },
+        "south": {
+          "toRoom": 7820,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7823,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7825,
+      "name": "The Edge of the Valley",
+      "description": "You are at the edge of the Valley of the Elves.  High above you, you see a small\ntrail circling the entire valley.  The valley continues south and west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7821,
+          "description": "The valley continues south.\n"
+        },
+        "west": {
+          "toRoom": 7824,
+          "description": "The valley continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7826,
+      "name": "A Trail Leading from the Valley",
+      "description": "You are on a narrow trail leading away from the Valley of the Elves.  This\ntrail leads north and south.  A rope ladder leads up to a rope bridge.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7827,
+          "description": "The trail continues north.\n"
+        },
+        "south": {
+          "toRoom": 7824,
+          "description": "The trail leads back to the valley.\n"
+        },
+        "up": {
+          "toRoom": 7858,
+          "description": "You see the rope bridge above you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7827,
+      "name": "Along the Trail",
+      "description": "You are on the trail away from the Valley of the Elves.  The hills around you\nkeep this trail narrow.  The trail continues east, south, and west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7828,
+          "description": "The trail continues east.\n"
+        },
+        "south": {
+          "toRoom": 7826,
+          "description": "The trail continues south back toward the valley.\n"
+        },
+        "west": {
+          "toRoom": 7868,
+          "description": "The trail continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7828,
+      "name": "A Bend in the Trail",
+      "description": "You are on the trail away from the Valley of the Elves.  The hills around you\nkeep this trail narrow.  The trail continues north and back west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7829,
+          "description": "You see a small valley north.\n"
+        },
+        "west": {
+          "toRoom": 7827,
+          "description": "The trail goes back to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7829,
+      "name": "A Smaller Valley",
+      "description": "You are in another valley within these hills. To the north, you can see a\nbuilding, and to the south you see the trail away from this valley.  The\nwest and east paths surround this building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7834,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see the building.\n"
+        },
+        "east": {
+          "toRoom": 7831,
+          "description": "You see the trail around the building.\n"
+        },
+        "south": {
+          "toRoom": 7828,
+          "description": "You see the trail leading away from this valley.\n"
+        },
+        "west": {
+          "toRoom": 7830,
+          "description": "You see the trail around the building.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7830,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads north and\neast.  To the north-east is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7832,
+          "description": "You see the trail.\n"
+        },
+        "east": {
+          "toRoom": 7829,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7831,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads west and\neast.  To the north is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7833,
+          "description": "You see the trail.\n"
+        },
+        "west": {
+          "toRoom": 7829,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7832,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads north and\nsouth.  To the east is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7837,
+          "description": "You see the trail.\n"
+        },
+        "south": {
+          "toRoom": 7830,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7833,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads north and\nwest.  To the north-west is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7836,
+          "description": "You see the trail.\n"
+        },
+        "west": {
+          "toRoom": 7831,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7834,
+      "name": "The Elf Home",
+      "description": "You are in the home of the valley elves.  The building continues to the north\nand the east, and the exit is to the south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7838,
+          "description": "The building continues to the north.\n"
+        },
+        "east": {
+          "toRoom": 7835,
+          "description": "The building continues to the east.\n"
+        },
+        "south": {
+          "toRoom": 7829,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "The exit is to the south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7835,
+      "name": "The Kitchen",
+      "description": "You are in a community kitchen for this valley elven home.  Pots and pans line\nthe walls, along with shelves filled with many foodstuffs.  A big oven is to one\nside, and you can smell elfcakes being baked.\nThere is a doorway to the north and one to the west.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7839,
+          "description": "The building continues to the north.\n"
+        },
+        "west": {
+          "toRoom": 7834,
+          "description": "The building continues to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7836,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads north and\nsouth.  To the west is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7840,
+          "description": "You see the trail.\n"
+        },
+        "south": {
+          "toRoom": 7833,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7837,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads north and\nsouth.  To the east is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7841,
+          "description": "You see the trail.\n"
+        },
+        "south": {
+          "toRoom": 7832,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7838,
+      "name": "The Living Room",
+      "description": "You are in the living room of the elven home.  Mats cover the floor, and a\non a table is a bowl full of fruits.  Through the window you can see the\nvalley, with its wild flowers and tall, green grasses.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7839,
+          "description": "The building continues to the east.\n"
+        },
+        "south": {
+          "toRoom": 7834,
+          "description": "The entrance is to the south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7839,
+      "name": "The Storage Room",
+      "description": "You are in the storage room of the elven home.  Sacks of flour cover one side,\nand cleaning accessories cover the other side.  You find nothing of use here.\nA staircase leads up.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7835,
+          "description": "The building continues to the south.\n"
+        },
+        "west": {
+          "toRoom": 7838,
+          "description": "The building continues to the west.\n"
+        },
+        "up": {
+          "toRoom": 7848,
+          "description": "You see the second floor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7840,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads north and\nsouth.  To the west is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7844,
+          "description": "You see the trail.\n"
+        },
+        "south": {
+          "toRoom": 7836,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7841,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads south and\neast.  To the south-east is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7842,
+          "description": "You see the trail.\n"
+        },
+        "south": {
+          "toRoom": 7837,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7842,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads west and\neast.  To the south is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7843,
+          "description": "You see the trail.\n"
+        },
+        "west": {
+          "toRoom": 7841,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7843,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads east and\nwest.  To the south is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7844,
+          "description": "You see the trail.\n"
+        },
+        "west": {
+          "toRoom": 7842,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7844,
+      "name": "A Trail in the Valley",
+      "description": "You are on the trail in the Valley of the Elves.  This trail leads south and\nwest.  To the south-west is a building.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7840,
+          "description": "You see the trail.\n"
+        },
+        "west": {
+          "toRoom": 7843,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7845,
+      "name": "The Elders' Room",
+      "description": "You are in the room of the valley elf elders.  Books written in strange\nlanguages line the numerous shelves, and scrolls cover a table.  There is a\nsmooth spheric object in the center of the room.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7847,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see another room.\n"
+        },
+        "east": {
+          "toRoom": 7846,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 7804,
+          "description": "You see another room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7846,
+      "name": "The Storage Room",
+      "description": "You are in a storage room.  Many useless (to you) items fill this room.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7848,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 7804,
+          "description": "You see another room.\n"
+        },
+        "west": {
+          "toRoom": 7845,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 7804,
+          "description": "You see another room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7847,
+      "name": "The Sleeping Quarters",
+      "description": "You are in the sleeping quarters of the valley elves.  Cots line the floor,\nwith two windows showing a view of the valley.  Books in strange languages\nline the shelves, but nothing of interest is here.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7848,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see another room.\n"
+        },
+        "south": {
+          "toRoom": 7845,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see another room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7848,
+      "name": "Study",
+      "description": "You are in the study room of the valley elves.  Comfortable mats are on the\nfloor, and musical instruments are neatly stacked on shelves.  Books in\nstrange languages line some other elves.  A stairway leads down to the\nfirst floor.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7846,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 7804,
+          "description": "You see another room.\n"
+        },
+        "west": {
+          "toRoom": 7847,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see another room.\n"
+        },
+        "down": {
+          "toRoom": 7839,
+          "description": "You see the first floor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7849,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7850
+        },
+        "south": {
+          "toRoom": 7803
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7850,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7851
+        },
+        "west": {
+          "toRoom": 7849
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7851,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7852
+        },
+        "south": {
+          "toRoom": 7850
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7852,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7853
+        },
+        "west": {
+          "toRoom": 7851
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7853,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\nA safe trail leads down into the valley.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7854
+        },
+        "south": {
+          "toRoom": 7852
+        },
+        "down": {
+          "toRoom": 7817,
+          "description": "The trail down looks safe.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7854,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7853
+        },
+        "west": {
+          "toRoom": 7855
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7855,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7856
+        },
+        "east": {
+          "toRoom": 7854
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7856,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7855
+        },
+        "west": {
+          "toRoom": 7857
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7857,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7856
+        },
+        "west": {
+          "toRoom": 7858,
+          "description": "You see a rope bridge"
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7858,
+      "name": "On the Rope Bridge",
+      "description": "You are on the rope bridge.  From here, you can see the whole Valley of the\nElves.  To the south, you see the main valley.  To the north-east, you see a\nsmaller valley with a building in the center of it.  To the north-west, you\ncan see a very small valley with a shack in it's center.  A rope ladder\nleads down into a trail.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7857
+        },
+        "west": {
+          "toRoom": 7859
+        },
+        "down": {
+          "toRoom": 7826,
+          "description": "You see the trail.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7859,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7858,
+          "description": "You see a rope bridge.\n"
+        },
+        "west": {
+          "toRoom": 7860
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7860,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7859
+        },
+        "south": {
+          "toRoom": 7861
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7861,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7860
+        },
+        "west": {
+          "toRoom": 7862
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7862,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7861
+        },
+        "south": {
+          "toRoom": 7863
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7863,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\nA safe trail leads down into the valley.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7862
+        },
+        "south": {
+          "toRoom": 7864
+        },
+        "down": {
+          "toRoom": 7813,
+          "description": "The trail down looks safe.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7864,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7863
+        },
+        "east": {
+          "toRoom": 7865
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7865,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7866
+        },
+        "west": {
+          "toRoom": 7864
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7866,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7865
+        },
+        "east": {
+          "toRoom": 7867
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7867,
+      "name": "Along a Windy Trail on the Rim of the Valley",
+      "description": "You are on a narrow trail on the rim of the Valley of the Elves.  Below you,\nyou can see the valley, filled with wild flowers and tall, green grasses.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7802
+        },
+        "west": {
+          "toRoom": 7866
+        },
+        "down": {
+          "toRoom": 7883,
+          "description": "The trail down doesn't look safe to travel on at all.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7868,
+      "name": "A Bend in the Trail",
+      "description": "You are on a bend in the trail leading from the main valley.  The hills around\nyou make this trail quite narrow.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7869,
+          "description": "The trail continues north.\n"
+        },
+        "east": {
+          "toRoom": 7827,
+          "description": "The trail continues east.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7869,
+      "name": "A Bend in the Trail",
+      "description": "You are on a bend in the trail leading from the main valley.  The hills around\nyou make this trail quite narrow.  To the west, you can see an even smaller\nvalley, with looks like a small shack in the center of it.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7868,
+          "description": "The trail continues south.\n"
+        },
+        "west": {
+          "toRoom": 7870,
+          "description": "The entrance to the small valley is to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7870,
+      "name": "The Small Valley",
+      "description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\nmagic was used to help them grow.  The exit from this valley is to the east, and\nthe entrance to the shack is to the west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7871,
+          "description": "The valley continues to the north.\n"
+        },
+        "east": {
+          "toRoom": 7869,
+          "description": "The exit from this small valley is to the east.\n"
+        },
+        "south": {
+          "toRoom": 7872,
+          "description": "The valley continues to the south.\n"
+        },
+        "west": {
+          "toRoom": 7878,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see the small shack.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7871,
+      "name": "The Small Valley",
+      "description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\nmagic was used to help them grow.  To the south-west is a small shack.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7870,
+          "description": "The valley continues to the south.\n"
+        },
+        "west": {
+          "toRoom": 7873,
+          "description": "The valley continues to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7872,
+      "name": "The Small Valley",
+      "description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\nmagic was used to help them grow.  To the north-west is a small shack.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7870,
+          "description": "The valley continues to the north.\n"
+        },
+        "west": {
+          "toRoom": 7877,
+          "description": "The valley continues to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7873,
+      "name": "The Small Valley",
+      "description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\nmagic was used to help them grow.  To the south is a small shack.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7871,
+          "description": "The valley continues to the east.\n"
+        },
+        "west": {
+          "toRoom": 7874,
+          "description": "The valley continues to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7874,
+      "name": "The Small Valley",
+      "description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\nmagic was used to help them grow.  To the south-east is a small shack.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7873,
+          "description": "The valley continues to the east.\n"
+        },
+        "south": {
+          "toRoom": 7875,
+          "description": "The valley continues to the south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7875,
+      "name": "The Small Valley",
+      "description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\nmagic was used to help them grow.  To the east is a small shack.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7874,
+          "description": "The valley continues to the north.\n"
+        },
+        "south": {
+          "toRoom": 7876,
+          "description": "The valley continues to the south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7876,
+      "name": "The Small Valley",
+      "description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\nmagic was used to help them grow.  To the north-east is a small shack.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7875,
+          "description": "The valley continues to the north.\n"
+        },
+        "east": {
+          "toRoom": 7877,
+          "description": "The valley continues to the east.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7877,
+      "name": "The Small Valley",
+      "description": "You are in the small valley.  Strangely, tall trees grow here, almost as if some\nmagic was used to help them grow.  To the north is a small shack.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7872,
+          "description": "The valley continues to the east.\n"
+        },
+        "west": {
+          "toRoom": 7876,
+          "description": "The valley continues to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7878,
+      "name": "Inside the Small Shack",
+      "description": "You are inside the small shack.  A small stove is on the side, with soup\ncooking over it.  You see nothing valuable.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7870,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see the valley outside.\n"
+        },
+        "down": {
+          "toRoom": 7879,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see a trap door!\n"
+        }
+      }
+    },
+    {
+      "vnum": 7879,
+      "name": "Beneath the Small Shack",
+      "description": "You are beneath the small shack, in a tunnel that leads south.  It feels\nquite warm down here.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 7880,
+          "description": "The room looks reddish down there.\n"
+        },
+        "up": {
+          "toRoom": 7878,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "Back to known territory!\n"
+        }
+      }
+    },
+    {
+      "vnum": 7880,
+      "name": "The Den of the Pyrohydra",
+      "description": "You are in the den of the pyrohydra.  All the walls are charred, and this\nroom is filled with a smell close to that of burning tar.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7879,
+          "description": "You see the relative safety to the north.\n"
+        },
+        "east": {
+          "toRoom": 7882,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 7805,
+          "description": "You see breaks in the charred rock to the east.\n"
+        },
+        "west": {
+          "toRoom": 7881,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 7805,
+          "description": "You see a door to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 7881,
+      "name": "The Workroom",
+      "description": "This room looks like it is used for magical studies.  Potions bubble over\nburners, and the whole room spells of herbs and dead animal flesh.  A furnace\nto the side casts a bright light in this room.  The whole room radiates with\na magical aura.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 7880,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 7805
+        }
+      }
+    },
+    {
+      "vnum": 7882,
+      "name": "The Storage Room",
+      "description": "This room is used to store scrolls, potions, and other magical items.  The\nwhole room radiates with a magical aura.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 7880,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 7805
+        }
+      }
+    },
+    {
+      "vnum": 7883,
+      "name": "WAY Far Down into the Valley",
+      "description": "You have fallen trying to go down this steep hill.  Maybe that wasn't that\ngood an idea, huh?\n\n\nYou've fallen, and you can't get up!\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0
+    }
+  ],
+  "resets": [
+    {
+      "type": "Door",
+      "roomVnum": 7829,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7834,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7845,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7845,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7846,
+      "direction": "North",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7846,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7847,
+      "direction": "East",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7847,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7848,
+      "direction": "South",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7848,
+      "direction": "West",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7870,
+      "direction": "West",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7878,
+      "direction": "East",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7878,
+      "direction": "Down",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7879,
+      "direction": "Up",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7880,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7880,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7881,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 7882,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7801,
+      "roomVnum": 7805,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7800,
+      "roomVnum": 7806,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7800,
+      "roomVnum": 7807,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7802,
+      "roomVnum": 7811,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7814,
+      "roomVnum": 7815,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7801,
+      "roomVnum": 7816,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7801,
+      "roomVnum": 7818,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7813,
+      "roomVnum": 7818,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7801,
+      "roomVnum": 7820,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7802,
+      "roomVnum": 7820,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7800,
+      "roomVnum": 7823,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7814,
+      "roomVnum": 7825,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7805,
+      "roomVnum": 7827,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7813,
+      "roomVnum": 7830,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7800,
+      "roomVnum": 7833,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7806,
+      "roomVnum": 7835,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7800,
+      "roomVnum": 7837,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7806,
+      "roomVnum": 7838,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7806,
+      "roomVnum": 7839,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7802,
+      "roomVnum": 7842,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7805,
+      "roomVnum": 7842,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7801,
+      "roomVnum": 7844,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7807,
+      "roomVnum": 7845,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 7804,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7806,
+      "wearLocation": "FingerLeft",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7825,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7808,
+      "roomVnum": 7845,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7806,
+      "wearLocation": "FingerLeft",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7825,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7809,
+      "roomVnum": 7846,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7823,
+      "roomVnum": 7846,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7820,
+      "roomVnum": 7846,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7817,
+      "roomVnum": 7846,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7815,
+      "roomVnum": 7846,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7816,
+      "roomVnum": 7846,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7819,
+      "roomVnum": 7846,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7806,
+      "roomVnum": 7847,
+      "maxInWorld": 5,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7806,
+      "roomVnum": 7847,
+      "maxInWorld": 5,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7803,
+      "roomVnum": 7848,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7800,
+      "wearLocation": "Body",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7804,
+      "roomVnum": 7848,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7800,
+      "wearLocation": "Body",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7804,
+      "roomVnum": 7850,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7800,
+      "wearLocation": "Body",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7805,
+      "roomVnum": 7852,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7814,
+      "roomVnum": 7852,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7803,
+      "roomVnum": 7853,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7800,
+      "wearLocation": "Body",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7802,
+      "roomVnum": 7854,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7804,
+      "roomVnum": 7856,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7800,
+      "wearLocation": "Body",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7803,
+      "roomVnum": 7860,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7800,
+      "wearLocation": "Body",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7813,
+      "roomVnum": 7860,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7805,
+      "roomVnum": 7862,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7804,
+      "roomVnum": 7863,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7800,
+      "wearLocation": "Body",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7802,
+      "roomVnum": 7865,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7803,
+      "roomVnum": 7866,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7800,
+      "wearLocation": "Body",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7802,
+      "roomVnum": 7868,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7800,
+      "roomVnum": 7873,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7805,
+      "roomVnum": 7876,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7801,
+      "wearLocation": "Feet",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7803,
+      "wearLocation": "Neck1",
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7801,
+      "roomVnum": 7877,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7802,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7810,
+      "roomVnum": 7878,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7809,
+      "roomVnum": 7880,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 7805,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7811,
+      "roomVnum": 7881,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7806,
+      "wearLocation": "FingerLeft",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7807,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 7824,
+      "wearLocation": "Light",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7808,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7822,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7821,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7810,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7812,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7811,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7820,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7815,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7818,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7814,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7813,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Object",
+      "objectVnum": 7823,
+      "roomVnum": 7882,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 7812,
+      "roomVnum": 7882,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 7807,
+      "procedure": "CastCleric"
+    },
+    {
+      "mobileVnum": 7808,
+      "procedure": "CastMage"
+    },
+    {
+      "mobileVnum": 7809,
+      "procedure": "BreathFire"
+    },
+    {
+      "mobileVnum": 7811,
+      "procedure": "CastMage"
+    }
+  ]
+}

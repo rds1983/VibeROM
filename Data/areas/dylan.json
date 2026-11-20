@@ -1,0 +1,2835 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "dylan.are",
+  "name": "Dylan's Area",
+  "credits": "{15 25} Dylan   Dylan's Area",
+  "vnumRange": {
+    "low": 9100,
+    "high": 9199
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 9101,
+      "keywords": "oldstyle harpy",
+      "shortDescription": "the screaming, filthy harpy",
+      "longDescription": "The screaming, filthy harpy claws madly at your face!\n",
+      "description": "The harpy looks at you with blood in her eyes.  Her entire body is\ncaked in filth and grime and she stinks to high heaven.  Her razor-\nsharp talons flex as she considers you for her dinner.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 20,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 333
+      },
+      "manaDice": {
+        "count": 10,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 8,
+        "bonus": 5,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": -4,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 1525,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9102,
+      "keywords": "oldstyle harpy leader",
+      "shortDescription": "the screaming harpy leader",
+      "longDescription": "The screaming harpy leader tries to scratch your eyes out!\n",
+      "description": "The harpy leader looks at you and grins menacingly.  She stretches\nher wings and you see insects crawling around them.  Her hair is\nmatted and greasy and you are sickened by the stench that pervades\nher presence.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -750,
+      "group": 0,
+      "level": 23,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 450
+      },
+      "manaDice": {
+        "count": 11,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 3,
+        "size": 6,
+        "bonus": 6,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -6,
+        "bash": -6,
+        "slash": -6,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 2125,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9103,
+      "keywords": "oldstyle air elemental",
+      "shortDescription": "the ghostly air elemental",
+      "longDescription": "The ghostly air elemental.\n",
+      "description": "The air elemental is hard to see.  You know that it is there\nbecause objects behind it seem to waver and are slightly blurred.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden",
+        "Sneak",
+        "Hide"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 25,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 550
+      },
+      "manaDice": {
+        "count": 12,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 10,
+        "bonus": 7,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -7,
+        "bash": -7,
+        "slash": -7,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 50,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9104,
+      "keywords": "oldstyle mysterious efreeti",
+      "shortDescription": "the mysterious efreeti",
+      "longDescription": "The mysterious efreeti grins in delight at its new prey.\n",
+      "description": "The efreeti towers menacingly over you.  It is dressed in the\nfinest ghostly silks and a headdress with an elaborate brooch.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Sanctuary",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -100,
+      "group": 0,
+      "level": 27,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 650
+      },
+      "manaDice": {
+        "count": 13,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 5,
+        "size": 4,
+        "bonus": 7,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -8,
+        "bash": -8,
+        "slash": -8,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 2500,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9105,
+      "keywords": "oldstyle roc",
+      "shortDescription": "the gigantic roc",
+      "longDescription": "The gigantic roc.\n",
+      "description": "This bird has a wingspan that stretches several spear-lengths.  It\nmoves surprisingly fast for something of its size.",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 50,
+      "group": 0,
+      "level": 24,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 500
+      },
+      "manaDice": {
+        "count": 12,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 10,
+        "bonus": 6,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -6,
+        "bash": -6,
+        "slash": -6,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9106,
+      "keywords": "oldstyle roc",
+      "shortDescription": "the gigantic roc",
+      "longDescription": "The gigantic roc stares menacingly at you.\n",
+      "description": "This bird has a wingspan that stretches several spear-lengths.  It\nmoves surprisingly fast for something of its size.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 50,
+      "group": 0,
+      "level": 28,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 703
+      },
+      "manaDice": {
+        "count": 14,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 5,
+        "size": 4,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -8,
+        "bash": -8,
+        "slash": -8,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 2000,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9107,
+      "keywords": "oldstyle wicked witch",
+      "shortDescription": "the ugly, wicked witch",
+      "longDescription": "The ugly, wicked witch cackles maniacally.\n",
+      "description": "The witch has jet black hair and sickly green skin.  She is covered\nwith warts and boils.  Her nails are long and sharp and look like\nthey would be quite painful.  Her eyes pierce your very soul.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Sanctuary"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -600,
+      "group": 0,
+      "level": 31,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 928
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 6,
+        "bonus": 9,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -10,
+        "bash": -10,
+        "slash": -10,
+        "exotic": 5
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 3000,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 9101,
+      "keywords": "winged boots",
+      "shortDescription": "a pair of winged boots",
+      "longDescription": "A pair of winged boots flutters about",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Feet"
+      ],
+      "level": 13,
+      "weightPounds": 10,
+      "costCopper": 2800,
+      "condition": 100,
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 0
+      },
+      "affects": [
+        {
+          "location": "Saves",
+          "modifier": 1
+        },
+        {
+          "location": "Dexterity",
+          "modifier": 2
+        },
+        {
+          "location": "None",
+          "modifier": 0
+        }
+      ]
+    },
+    {
+      "vnum": 9102,
+      "keywords": "bronze bracer",
+      "shortDescription": "A carved bronze bracer",
+      "longDescription": "A carved bronze bracer lies here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Wrist"
+      ],
+      "level": 10,
+      "weightPounds": 20,
+      "costCopper": 820,
+      "condition": 100,
+      "armor": {
+        "pierce": 3,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 2
+      }
+    },
+    {
+      "vnum": 9103,
+      "keywords": "ornate brooch",
+      "shortDescription": "an ornate brooch",
+      "longDescription": "An ornate brooch was carelessly left here.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Invis"
+      ],
+      "wearFlags": [
+        "Take",
+        "Neck"
+      ],
+      "level": 7,
+      "weightPounds": 10,
+      "costCopper": 1140,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Wisdom",
+          "modifier": 1
+        },
+        {
+          "location": "Intelligence",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 9104,
+      "keywords": "magenta potion",
+      "shortDescription": "magenta potion",
+      "longDescription": "Bright magenta potion gathers dust.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "AntiGood"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 3,
+      "weightPounds": 2,
+      "costCopper": 320,
+      "condition": 100,
+      "spells": {
+        "level": 8,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 9105,
+      "keywords": "ancient parchment",
+      "shortDescription": "an ancient illustrated parchment",
+      "longDescription": "An ancient illustrated parchment in the corner",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Glow",
+        "NoDrop"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 12,
+      "weightPounds": 5,
+      "costCopper": 1330,
+      "condition": 100,
+      "spells": {
+        "level": 5,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 9101,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n\nA floating sign says:\n\n\"Scubdu's Area--Tread carefully! Only high levels should attempt\nthis place. Leave messages on the board if you have problems.\"\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 7900,
+          "description": "The way back to solid footing, it seems.\n"
+        },
+        "up": {
+          "toRoom": 9102,
+          "description": "There is another cloud above you.  If you jump you might make it...\n"
+        }
+      }
+    },
+    {
+      "vnum": 9102,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9103,
+          "description": "There is another cloud east of you.\n"
+        },
+        "down": {
+          "toRoom": 9101,
+          "description": "There is another cloud below you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9103,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9128,
+          "description": "You can barely make out a cloud to the north.\n"
+        },
+        "south": {
+          "toRoom": 9104,
+          "description": "You see a cloud somewhere south of you.\n"
+        },
+        "west": {
+          "toRoom": 9102,
+          "description": "You see a cloud somewhere west of you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9104,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9103,
+          "description": "You can barely make out a cloud to the north.\n"
+        },
+        "east": {
+          "toRoom": 9105,
+          "description": "There is another cloud east of you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9105,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9106,
+          "description": "There is another cloud east of you.\n"
+        },
+        "west": {
+          "toRoom": 9104,
+          "description": "You spy a tiny cloud.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9106,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9107,
+          "description": "You can barely make out a cloud to the north.\n"
+        },
+        "west": {
+          "toRoom": 9105,
+          "description": "You spy a tiny cloud.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9107,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9108,
+          "description": "There is another cloud east of you.\n"
+        },
+        "south": {
+          "toRoom": 9106,
+          "description": "You see a cloud somewhere south of you.\n"
+        },
+        "down": {
+          "toRoom": 9126,
+          "description": "There is another cloud below you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9108,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9109,
+          "description": "An ominous storm cloud looms to the east.\n"
+        },
+        "west": {
+          "toRoom": 9107,
+          "description": "You spy a tiny cloud.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9109,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9108,
+          "description": "You spy a tiny cloud.\n"
+        },
+        "down": {
+          "toRoom": 9110,
+          "description": "An ominous storm cloud looms below you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9110,
+      "name": "An ominous storm cloud.",
+      "description": "You find yourself in a storm.  Lightning flashes and thunder\ncrashes, making you wish you were dry and warm.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9111,
+          "description": "There is a crag, high and rocky.\n"
+        },
+        "west": {
+          "toRoom": 9125,
+          "description": "You spy a tiny cloud.\n"
+        },
+        "up": {
+          "toRoom": 9109,
+          "description": "There is another cloud above you.  If you jump you might make it...\n"
+        }
+      }
+    },
+    {
+      "vnum": 9111,
+      "name": "High and perilous cliff",
+      "description": "You are on a high and rocky cliff.  To the west you see a huge\nominous storm cloud moving this way.  You might want to take cover\nbefore the storm hits.  You think that there is a narrow trail\nleading to the south.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9112
+        },
+        "west": {
+          "toRoom": 9110,
+          "description": "An ominous storm cloud looms to the east.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9112,
+      "name": "Narrow rocky trail.",
+      "description": "A narrow trail leads down towards the mountain and north toward the\ncliff.  It seems to fade in and out as it winds up the hill.\nObviously, it has not been maintained in years.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9111
+        },
+        "down": {
+          "toRoom": 9113
+        }
+      }
+    },
+    {
+      "vnum": 9113,
+      "name": "Small valley.",
+      "description": "You are in a lush valley full of trees and other vegetation and the\nodd carcass or two.  The trail leads south and it leads up.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9114
+        },
+        "up": {
+          "toRoom": 9112
+        }
+      }
+    },
+    {
+      "vnum": 9114,
+      "name": "Small valley.",
+      "description": "You are in a lush valley full of trees and other vegetation and the\nodd carcass or three.  The trail leads north and it leads down into\na crevasse.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9113
+        },
+        "down": {
+          "toRoom": 9115,
+          "description": "The crevice looks a little slippery.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9115,
+      "name": "Deep, slippery crevice.",
+      "description": "The crevice is deep and a little dim and it is hard to make your\nway around.  A mist makes everything a little damp and slippery.\nBetter take your time climbing through here.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9117
+        },
+        "west": {
+          "toRoom": 9116,
+          "description": "The mist looks thicker in this direction.\n"
+        },
+        "up": {
+          "toRoom": 9114
+        }
+      }
+    },
+    {
+      "vnum": 9116,
+      "name": "Incredibly slippery crevice.",
+      "description": "The crevice is getting more and more slippery.  You are getting\nincredibly nervous and want to turn back.  To the east is the\ncrevice and trail you were following.  Below, you can just see the\nedge of a cliff through the mist.  There is no trail leading there,\njust a smooth, flat, dew-covered rock that almost resembles a\nslide ...\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9115,
+          "description": "The way back to safety.\n"
+        },
+        "down": {
+          "toRoom": 9199,
+          "description": "Only fools would dare tread here!\n"
+        }
+      }
+    },
+    {
+      "vnum": 9117,
+      "name": "Steep mountainside.",
+      "description": "From here, you can see forever.  Clouds, birds, the forest.\nMidgaard is far, far to the west.  What a postcard perfect view!\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9115
+        },
+        "up": {
+          "toRoom": 9118
+        }
+      }
+    },
+    {
+      "vnum": 9118,
+      "name": "Steep mountainside.",
+      "description": "From here, you can see forever.  Clouds, birds, the forest.\nMidgaard is far, far to the west.  What a postcard perfect view!\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9119
+        },
+        "down": {
+          "toRoom": 9117
+        }
+      }
+    },
+    {
+      "vnum": 9119,
+      "name": "Treacherous Cliff.",
+      "description": "The cliff is rocky and difficult to negotiate.  One wrong slip and\nyou could fall and break a leg or impale yourself or something else\nnasty.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9118
+        },
+        "up": {
+          "toRoom": 9120,
+          "description": "Above you is an almost vertical cliff.  It looks dangerous but\nclimbable.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9120,
+      "name": "Cliff Face.",
+      "description": "You are more than a little nervous climbing on this almost vertical\ncliff face.  You miraculously find places to grab onto and little\nledges to rest on.  You see a small cave here.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9121,
+          "description": "A dank, dark, smelly hole.\n"
+        },
+        "up": {
+          "toRoom": 9122,
+          "description": "A large ledge that looks pretty safe.\n"
+        },
+        "down": {
+          "toRoom": 9119
+        }
+      }
+    },
+    {
+      "vnum": 9121,
+      "name": "Dank, dark, smelly hole.",
+      "description": "This hole must have been used as a lair or nest.  There are\nfeathers and bones everywhere and the floor is covered with\nsomething disgusting.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9120
+        }
+      }
+    },
+    {
+      "vnum": 9122,
+      "name": "Large, sturdy ledge.",
+      "description": "You are on a ledge above a steep cliff face.  You can climb down\nif you want, but be careful!  After viewing the scenery, you notice\ntwo small caves here, one north and one west.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9124
+        },
+        "west": {
+          "toRoom": 9123
+        },
+        "down": {
+          "toRoom": 9120
+        }
+      }
+    },
+    {
+      "vnum": 9123,
+      "name": "Absolutely disgusting lair.",
+      "description": "The stench in here is quite foul.  There are feathers, bones and\nrotting carcasses everywhere.  This place is absolutely gross and\nyou have to strain yourself not to lose your lunch.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9122,
+          "description": "Your only hope to keep your lunch down is to head this way...\n"
+        }
+      }
+    },
+    {
+      "vnum": 9124,
+      "name": "Absolutely disgusting lair.",
+      "description": "The stench in here is quite foul.  There are feathers, bones and\nrotting carcasses everywhere.  This place is absolutely gross and\nyou have to strain yourself not to lose your lunch.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9122,
+          "description": "Your only hope to keep your lunch down is to head this way...\n"
+        }
+      }
+    },
+    {
+      "vnum": 9125,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9110,
+          "description": "An ominous storm cloud looms to the east.\n"
+        },
+        "up": {
+          "toRoom": 9126,
+          "description": "There is another cloud above you.  If you jump you might make it...\n"
+        }
+      }
+    },
+    {
+      "vnum": 9126,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9131,
+          "description": "A cirrus cloud hums peacefully to itself.\n"
+        },
+        "west": {
+          "toRoom": 9127,
+          "description": "You spy a tiny cloud.\n"
+        },
+        "up": {
+          "toRoom": 9107,
+          "description": "There is another cloud above you.  If you jump you might make it...\n"
+        },
+        "down": {
+          "toRoom": 9125,
+          "description": "There is another cloud below you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9127,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9130,
+          "description": "To the north you see an angry cloud lashing out.\n"
+        },
+        "east": {
+          "toRoom": 9126,
+          "description": "There is another cloud east of you.\n"
+        },
+        "up": {
+          "toRoom": 9128,
+          "description": "There is another cloud above you.  If you jump you might make it...\n"
+        }
+      }
+    },
+    {
+      "vnum": 9128,
+      "name": "A fluffy white cloud.",
+      "description": "You find yourself standing on a small cloud.  The cloud feels kind\nof spongy beneath your feet.  You find it hard to see anything in\nthe distance as wisps of cloud blow over your face.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9103,
+          "description": "You see a cloud somewhere south of you.\n"
+        },
+        "down": {
+          "toRoom": 9127,
+          "description": "There is another cloud below you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9129,
+      "name": "Sleepy little cloud.",
+      "description": "This cloud is peacefully snoozing away, enjoying himself.  There\nis grumpy cloud to the east and a rather shy cloud north of here.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9132,
+          "description": "The cloud to the north blushes and tries to hide when you look at\nit.\n"
+        },
+        "east": {
+          "toRoom": 9130,
+          "description": "The cloud to the east mutters and grumbles at you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9130,
+      "name": "Grumpy little cloud.",
+      "description": "This cloud mutters and grumbles at you.  You have to jump quickly\nto avoid a lightning bolt that passes by your toe.  Your aren't\nsure but you think you hear the cloud snicker.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9131,
+          "description": "A happy little cloud is humming peacefully to itself.\n"
+        },
+        "south": {
+          "toRoom": 9127,
+          "description": "You see a cloud somewhere south of you.\n"
+        },
+        "west": {
+          "toRoom": 9129,
+          "description": "A sleepy little cloud to the west yawns and rolls over.  You hear\nsnoring.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9131,
+      "name": "Happy little cloud.",
+      "description": "You hear the cloud humming a little song to itself, but you can't\nfigure out the song.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9136,
+          "description": "There is a pure white cloud north of you.  It is snowing!\n"
+        },
+        "south": {
+          "toRoom": 9126,
+          "description": "You see a cloud somewhere south of you.\n"
+        },
+        "west": {
+          "toRoom": 9130,
+          "description": "You see an angry little cloud muttering and grumbling to itself.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9132,
+      "name": "Bashful little cloud.",
+      "description": "This cloud blushes and tries to avoid your glance as you look at\nyour surroundings.  You decide that overall it is a peaceful little\ncloud.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9133,
+          "description": "The cloud to the north sneezes!\n"
+        },
+        "south": {
+          "toRoom": 9129,
+          "description": "A sleepy little cloud to the south yawns and rolls over.  You hear\nsnoring.\n"
+        },
+        "west": {
+          "toRoom": 9142,
+          "description": "An isolated little raincloud.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9133,
+      "name": "Sneezing little cloud.",
+      "description": "The cloud is wracked with sneezes.  At first you thought you were\nin an earthquake before you realize where you are!\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9145
+        },
+        "east": {
+          "toRoom": 9134,
+          "description": "This cloud is, like, totally lost, you know?\n"
+        },
+        "south": {
+          "toRoom": 9132,
+          "description": "The cloud to the south blushes and tries to hide when you look at\nit.\n"
+        },
+        "west": {
+          "toRoom": 9143,
+          "description": "You see a cirrus maximus cloud.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9134,
+      "name": "Dopey little cloud.",
+      "description": "This cloud is too busy daydreaming to watch where its going.  It\ndoesn't even notice you landing on it.  It looks like it couldn't\nfigure its way out of an open box.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9135,
+          "description": "You see a very scientific cloud.\n"
+        },
+        "west": {
+          "toRoom": 9133,
+          "description": "The cloud sneezes!  Yuck.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9135,
+      "name": "Doc-like little cloud.",
+      "description": "The cloud looks at you through its Lennon like specs and examines\nyou quite scientifically.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9136,
+          "description": "There is a pure white cloud south of you.  It is snowing!\n"
+        },
+        "west": {
+          "toRoom": 9134,
+          "description": "This cloud is, like, totally lost, you know?\n"
+        }
+      }
+    },
+    {
+      "vnum": 9136,
+      "name": "Snowy, white cloud.",
+      "description": "You shiver as you stand here.  This beautiful, fluffy, pure white\ncloud is snowing.  The snow is pure and sweet as it melts in your\nmouth.  What a nifty cloud to be on.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9135,
+          "description": "You see a very scientific cloud.\n"
+        },
+        "south": {
+          "toRoom": 9131,
+          "description": "A happy, peaceful little cloud humming to itself.\n"
+        },
+        "west": {
+          "toRoom": 9137
+        }
+      }
+    },
+    {
+      "vnum": 9137,
+      "name": "Cold, damp cloud.",
+      "description": "Your mood grows grumpy as you find yourself cold and wet from this\ndismal cloud.  You notice a rock outcropping above you.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9136,
+          "description": "There is a pure white cloud east of you.  It is snowing!\n"
+        },
+        "up": {
+          "toRoom": 9138
+        }
+      }
+    },
+    {
+      "vnum": 9138,
+      "name": "Mysterious rock outcropping.",
+      "description": "This rock outcropping just seems to hang in midair.  To the north\nyou see a house and if you ease yourself down, you can land on a\nrather damp, dismal cloud.  The door to the house is closed.\n",
+      "roomFlags": [
+        "Dark",
+        "NoMob"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9139,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "Eerie looking house.\n"
+        },
+        "down": {
+          "toRoom": 9137
+        }
+      }
+    },
+    {
+      "vnum": 9139,
+      "name": "Foyer.",
+      "description": "Shadows play tricks on your eyes.  Everytime you think you see\nsomething in a corner and turn to get a better look, nothing is\nthere.  The place is very dark.  Even with a torch, you have\ntrouble making out the room to the east.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9140
+        },
+        "south": {
+          "toRoom": 9138
+        }
+      }
+    },
+    {
+      "vnum": 9140,
+      "name": "Tower.",
+      "description": "You are in a musty old tower.  The smell of mold and mildew is\nalmost overpowering.  You hear strange creaks and groans ... is it\nthe wind or did someone (something?) make that noise.  To the west\nis the house and there is a stairway leading up into the tower.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9139
+        },
+        "up": {
+          "toRoom": 9141
+        }
+      }
+    },
+    {
+      "vnum": 9141,
+      "name": "Witches Tower",
+      "description": "Here you see strange things of arcane value.  There is a cauldron in the\ncorner bubbling madly, belching a foul brew that must have come from hell.\nOn shelves lie jars of strange creatures you have never seen before, or\nhope to again.  A picture of a familiar temple hangs on the east wall.\n",
+      "roomFlags": [
+        "Dark",
+        "NoMob",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3001,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        },
+        "down": {
+          "toRoom": 9140
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "picture",
+          "description": "The picture is in on the east wall.  It is very complex in detail, and you\nalmost see people walking around the temple in the picture.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 9142,
+      "name": "Suspicious little raincloud.",
+      "description": "On second glance, this cloud doesn't seem much like a raincloud.\nA balloon sticks out of the top and you think you hear it humming\nsomething like, 'Tut, tut!  It looks like rain!'\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9143
+        },
+        "east": {
+          "toRoom": 9132,
+          "description": "A bashful little cloud that tries to avoid your notice.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9143,
+      "name": "Cirrus maximus cloud.",
+      "description": "This cloud looks like it is of the cirrus maximus genre of clouds.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9133,
+          "description": "The cloud to the east sneezes!\n"
+        },
+        "south": {
+          "toRoom": 9142,
+          "description": "A suspicious little raincloud with a balloon.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9144,
+      "name": "Raging hurricane.",
+      "description": "You are buffeted and knocked about by the almost godlike strength\nof the raging hurricane.  It is hard to see and hear anything.\nYour only thought is to seek refuge from the storm.\n",
+      "roomFlags": [
+        "Dark",
+        "NoRecall"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9148
+        },
+        "down": {
+          "toRoom": 9146
+        }
+      }
+    },
+    {
+      "vnum": 9145,
+      "name": "Raging hurricane.",
+      "description": "You are buffeted and knocked about by the almost godlike strength\nof the raging hurricane.  It is hard to see and hear anything.\nYour only thought is to seek refuge from the storm.\n",
+      "roomFlags": [
+        "Dark",
+        "NoRecall"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9133,
+          "description": "You see a sneezy little cloud.\n"
+        },
+        "west": {
+          "toRoom": 9150
+        },
+        "down": {
+          "toRoom": 9148
+        }
+      }
+    },
+    {
+      "vnum": 9146,
+      "name": "Raging hurricane.",
+      "description": "You are buffeted and knocked about by the almost godlike strength\nof the raging hurricane.  It is hard to see and hear anything.\nYour only thought is to seek refuge from the storm.\n",
+      "roomFlags": [
+        "Dark",
+        "NoRecall"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9147
+        },
+        "east": {
+          "toRoom": 9144
+        }
+      }
+    },
+    {
+      "vnum": 9147,
+      "name": "Raging hurricane.",
+      "description": "You are buffeted and knocked about by the almost godlike strength\nof the raging hurricane.  It is hard to see and hear anything.\nYour only thought is to seek refuge from the storm.\n",
+      "roomFlags": [
+        "Dark",
+        "NoRecall"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9148
+        },
+        "south": {
+          "toRoom": 9146
+        }
+      }
+    },
+    {
+      "vnum": 9148,
+      "name": "Raging hurricane.",
+      "description": "You are buffeted and knocked about by the almost godlike strength\nof the raging hurricane.  It is hard to see and hear anything.\nYour only thought is to seek refuge from the storm.\n",
+      "roomFlags": [
+        "Dark",
+        "NoRecall"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9144
+        },
+        "west": {
+          "toRoom": 9147
+        },
+        "up": {
+          "toRoom": 9145
+        }
+      }
+    },
+    {
+      "vnum": 9149,
+      "name": "Raging hurricane.",
+      "description": "You are buffeted and knocked about by the almost godlike strength\nof the raging hurricane.  It is hard to see and hear anything.\nYour only thought is to seek refuge from the storm.\n",
+      "roomFlags": [
+        "Dark",
+        "NoRecall"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9152
+        },
+        "east": {
+          "toRoom": 9150
+        },
+        "down": {
+          "toRoom": 9157,
+          "description": "You see a cumulative nimbus cloud.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9150,
+      "name": "Raging hurricane.",
+      "description": "You are buffeted and knocked about by the almost godlike strength\nof the raging hurricane.  It is hard to see and hear anything.\nYour only thought is to seek refuge from the storm.\n",
+      "roomFlags": [
+        "Dark",
+        "NoRecall"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9151
+        },
+        "east": {
+          "toRoom": 9145
+        },
+        "west": {
+          "toRoom": 9149
+        }
+      }
+    },
+    {
+      "vnum": 9151,
+      "name": "Raging hurricane.",
+      "description": "You are buffeted and knocked about by the almost godlike strength\nof the raging hurricane.  It is hard to see and hear anything.\nYour only thought is to seek refuge from the storm.\n",
+      "roomFlags": [
+        "Dark",
+        "NoRecall"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9150
+        },
+        "west": {
+          "toRoom": 9152
+        }
+      }
+    },
+    {
+      "vnum": 9152,
+      "name": "Raging hurricane.",
+      "description": "You are buffeted and knocked about by the almost godlike strength\nof the raging hurricane.  It is hard to see and hear anything.\nYour only thought is to seek refuge from the storm.\n",
+      "roomFlags": [
+        "Dark",
+        "NoRecall"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9151
+        },
+        "south": {
+          "toRoom": 9149
+        }
+      }
+    },
+    {
+      "vnum": 9153,
+      "name": "Calm cloud.",
+      "description": "This cloud is just outside the hurricane.  It looks like it might\nget sucked in, but you feel safe for the moment.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9154
+        },
+        "up": {
+          "toRoom": 9152
+        }
+      }
+    },
+    {
+      "vnum": 9154,
+      "name": "Mountainside.",
+      "description": "You find yourself on the side of a huge granite mountain.  The air\nis quite thin so you know you are at a very high altitude.  There\nis no plant life beyond moss and lichen in this lonely, barren\nplace.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9153
+        },
+        "west": {
+          "toRoom": 9155
+        }
+      }
+    },
+    {
+      "vnum": 9155,
+      "name": "Mountainside.",
+      "description": "You find yourself on the side of a huge granite mountain.  The air\nis quite thin so you know you are at a very high altitude.  There\nis no plant life beyond moss and lichen in this lonely, barren\nplace.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9154
+        },
+        "up": {
+          "toRoom": 9156
+        }
+      }
+    },
+    {
+      "vnum": 9156,
+      "name": "Roc's Nest.",
+      "description": "You are standing in a nest.  It is huge, at least two spear-lengths\nwide.  You see three eggs in the center.  They are knee high, brown\nand look almost leathery.  Better hope mom isn't around!\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "down": {
+          "toRoom": 9155
+        }
+      }
+    },
+    {
+      "vnum": 9157,
+      "name": "Cumulative nimbus cloud.",
+      "description": "This cloud looks like it belongs to the phylum of cumulative nimbus clouds.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9159
+        },
+        "west": {
+          "toRoom": 9158
+        },
+        "up": {
+          "toRoom": 9149
+        }
+      }
+    },
+    {
+      "vnum": 9158,
+      "name": "Dark hidden cloud.",
+      "description": "This cloud looks like the perfect place to hide.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9157
+        }
+      }
+    },
+    {
+      "vnum": 9159,
+      "name": "Yet another cloud",
+      "description": "You find yourself in yet another cloud.  Will the madness never\nend?  There is a rope ladder leading up.\n",
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9157
+        },
+        "up": {
+          "toRoom": 9160
+        }
+      }
+    },
+    {
+      "vnum": 9160,
+      "name": "Front gate",
+      "description": "There is a gate here.  It is huge, towering over you.  It creaks\nas it sways in the breeze.  To the south you see a huge lawn.\nThere is a rope ladder leading down.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9161,
+          "description": "You see a huge lawn.\n"
+        },
+        "down": {
+          "toRoom": 9159,
+          "description": "There is a rope ladder leading down.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9161,
+      "name": "Lawn",
+      "description": "The lawn seems to stretch and stretch to the south and to the west.\nNorth of you is a gate.  The grass is emerald green and luscious,\nobviously well cared for.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9160
+        },
+        "south": {
+          "toRoom": 9163
+        },
+        "west": {
+          "toRoom": 9162
+        }
+      }
+    },
+    {
+      "vnum": 9162,
+      "name": "Croquet game",
+      "description": "A croquet game has been set up and carelessly left out.  Who ever\nwas playing blue was in the lead before they quit.  Benches have\nbeen set up for spectators and players to enjoy themselves.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9161
+        },
+        "south": {
+          "toRoom": 9164
+        }
+      }
+    },
+    {
+      "vnum": 9163,
+      "name": "Huge, gorgeous fountain.",
+      "description": "An enormous golden fountain is here.  You see swans, angels,\ngryphons and a host of other creatures in the fountain.  The\nfountain empties into a huge pool that looks quite inviting.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9161
+        },
+        "west": {
+          "toRoom": 9164
+        }
+      }
+    },
+    {
+      "vnum": 9164,
+      "name": "Patio.",
+      "description": "A huge patio overlooks the lawn area.  There are enough tables and\nchairs for a party of 100.  The tables and chairs are ornate and\nexpensive, tasteful and elegant.  Stairs lead up to the main\nhouse.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9162
+        },
+        "east": {
+          "toRoom": 9163
+        },
+        "up": {
+          "toRoom": 9165
+        }
+      }
+    },
+    {
+      "vnum": 9165,
+      "name": "Long stairway.",
+      "description": "This stairway is suspended on clouds.  It leads from the house to\nthe front lawn.  The banisters are made of ornate gold and silver\ninlays.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 9166
+        },
+        "down": {
+          "toRoom": 9164
+        }
+      }
+    },
+    {
+      "vnum": 9166,
+      "name": "Front door",
+      "description": "You stand at the front door of an immense, sprawling mansion made\nof granite and marble.  The door is at least 10 feet high and is\nmade of oak.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9173
+        },
+        "south": {
+          "toRoom": 9177,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "You see an ornate oak door.\n"
+        },
+        "west": {
+          "toRoom": 9167
+        },
+        "down": {
+          "toRoom": 9165
+        }
+      }
+    },
+    {
+      "vnum": 9167,
+      "name": "Lawn northwest of house.",
+      "description": "You stand just outside the northwest corner of the house.  You try\nto peek in a window, but it is a little too high to see anything.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9166
+        },
+        "south": {
+          "toRoom": 9168
+        }
+      }
+    },
+    {
+      "vnum": 9168,
+      "name": "Lawn west of house.",
+      "description": "You stand just outside the west corner of the house.  You try to\npeek in a window, but it is a little too high to see anything.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9167
+        },
+        "south": {
+          "toRoom": 9169
+        }
+      }
+    },
+    {
+      "vnum": 9169,
+      "name": "Lawn southwest of house.",
+      "description": "You stand just outside the southwest corner of the house.  You try\nto peek in a window, but it is a little too high to see anything.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9168
+        },
+        "east": {
+          "toRoom": 9170
+        },
+        "down": {
+          "toRoom": 9174
+        }
+      }
+    },
+    {
+      "vnum": 9170,
+      "name": "Lawn south of house.",
+      "description": "You stand just outside the south corner of the house.  You try to\npeek in a window, but it is a little too high to see anything.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9171
+        },
+        "west": {
+          "toRoom": 9169
+        }
+      }
+    },
+    {
+      "vnum": 9171,
+      "name": "Lawn southeast of house.",
+      "description": "You stand just outside the southeast corner of the house.  You try\nto peek in a window, but it is a little too high to see anything.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9172
+        },
+        "west": {
+          "toRoom": 9170
+        }
+      }
+    },
+    {
+      "vnum": 9172,
+      "name": "Lawn east of house.",
+      "description": "You stand just outside the east corner of the house.  You try to\npeek in a window, but it is a little too high to see anything.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9173
+        },
+        "south": {
+          "toRoom": 9171
+        }
+      }
+    },
+    {
+      "vnum": 9173,
+      "name": "Lawn northeast of house.",
+      "description": "You stand just outside the northeast corner of the house.  You try\nto peek in a window, but it is a little too high to see anything.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9172
+        },
+        "west": {
+          "toRoom": 9166
+        }
+      }
+    },
+    {
+      "vnum": 9174,
+      "name": "Dirty, dusty tunnel.",
+      "description": "This dirty dusty tunnel must lead somewhere.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9175
+        },
+        "up": {
+          "toRoom": 9169
+        }
+      }
+    },
+    {
+      "vnum": 9175,
+      "name": "Basement.",
+      "description": "This seems like your average basement.  Old Christmas decorations,\nsuitcases, bicycles litter your way.  You hear the squeaking of\nrats in the corners.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9176
+        },
+        "west": {
+          "toRoom": 9174
+        }
+      }
+    },
+    {
+      "vnum": 9176,
+      "name": "Bottom of the stairs.",
+      "description": "You stand at the bottom of a long staircase leading up to the main\nhouse.  To the south you can barely make out the accumulated\nclutter gathered throughout the years.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9175
+        },
+        "up": {
+          "toRoom": 9177
+        }
+      }
+    },
+    {
+      "vnum": 9177,
+      "name": "Foyer.",
+      "description": "\"Magnificent\" does not even begin to describe the foyer.  Lavishly\ndecorated, yet elegant, it gives an impression of indescribable\nwealth.  Paintings and tapestries line the walls depicting scenes\nfrom throughout history.  Antiques furnitures and oriental rugs are\ntastefully placed in ideal spots.  The door is at least 10 feet\nhigh and is made of oak.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9166,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "You see an ornate oak door.\n"
+        },
+        "east": {
+          "toRoom": 9183
+        },
+        "west": {
+          "toRoom": 9178
+        },
+        "down": {
+          "toRoom": 9176
+        }
+      }
+    },
+    {
+      "vnum": 9178,
+      "name": "Elegant hallway.",
+      "description": "You are in a long, sprawling hallway connecting the eastern and\nwestern wings of the house.  There are several chairs and sofas in\nthe hallway and some gorgeous, handwoven drapes.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9177
+        },
+        "south": {
+          "toRoom": 9179
+        },
+        "west": {
+          "toRoom": 9180
+        }
+      }
+    },
+    {
+      "vnum": 9179,
+      "name": "Library",
+      "description": "You are overwhelmed by the sheer volumes of books here.  The\nshelves stretch all the way to the ceiling and are on every wall,\neven above the doorway.  There are chairs for sitting and reading\nand a desk for more intense studies.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9178
+        }
+      }
+    },
+    {
+      "vnum": 9180,
+      "name": "Arboretum.",
+      "description": "A small indoor garden so that the residents don't have to go\noutside to enjoy plants and commune with nature.  There are several\ntrees, a small pond and flowers of every kind.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9178
+        },
+        "south": {
+          "toRoom": 9181
+        }
+      }
+    },
+    {
+      "vnum": 9181,
+      "name": "Western tower.",
+      "description": "You are in the bottom part of a tower.  A draft brings a chill to\nyour spine and causes creaks and groans.  Curtains flutter in the\nwind, causing quite a distraction.  When you go to shut the window,\nyou see that the window is closed.  An old, wooden staircase leads\nup into darkness.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9180
+        },
+        "up": {
+          "toRoom": 9182
+        }
+      }
+    },
+    {
+      "vnum": 9182,
+      "name": "Western tower.",
+      "description": "The tower creaks and groans, almost as if it were muttering to\nitself.  There are windows displaying a full moon, reigning over\nthe night sky.  The room is dark and there is almost a musty odor\nto it.  You are surprised that you can't detect any dust or dirt,\nalthough there are a couple of cobwebs in the corner.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "down": {
+          "toRoom": 9181
+        }
+      }
+    },
+    {
+      "vnum": 9183,
+      "name": "Elegant hallway.",
+      "description": "You are in a long, sprawling hallway connecting the eastern and\nwestern wings of the house.  There are several chairs and sofas in\nthe hallway and some gorgeous, handwoven drapes.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9185
+        },
+        "south": {
+          "toRoom": 9184
+        },
+        "west": {
+          "toRoom": 9177
+        }
+      }
+    },
+    {
+      "vnum": 9184,
+      "name": "Conservatory",
+      "description": "Here was the rehearsal and recital room for the residents of the\nestate.  There is a Steinway piano in the corner and various gilded\ninstruments are on display in a glass cabinet.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9183
+        }
+      }
+    },
+    {
+      "vnum": 9185,
+      "name": "Office",
+      "description": "You find yourself in a lavish office.  The desk is absolutely huge,\nat least ten feet by five feet and made of ebony and inlaid with\nmother of pearl.  A grandfather clock towers over the room,\nmechanically ticking and tocking the hours away.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9186
+        },
+        "west": {
+          "toRoom": 9183
+        }
+      }
+    },
+    {
+      "vnum": 9186,
+      "name": "Eastern tower.",
+      "description": "You are in the bottom part of a tower.  A draft brings a chill to\nyour spine and causes creaks and groans.  Curtains flutter in the\nwind, causing quite a distraction.  When you go to shut the window,\nyou see that the window is closed.  An old, wooden staircase leads\nup into darkness.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9185
+        },
+        "up": {
+          "toRoom": 9187
+        }
+      }
+    },
+    {
+      "vnum": 9187,
+      "name": "Eastern tower.",
+      "description": "The tower creaks and groans, almost as if it were muttering to\nitself.  There are windows displaying a full moon, reigning over\nthe night sky.  The room is dark and there is almost a musty odor\nto it.  You are surprised that you can't detect any dust or dirt,\nalthough there are a couple of cobwebs in the corner.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "down": {
+          "toRoom": 9186
+        }
+      }
+    },
+    {
+      "vnum": 9199,
+      "name": "Mid-Air.",
+      "description": "You slide down the moisture covered rock, gaining speed as you\napproach the cliff.  Realizing your foolish error, you madly claw\nat the rock, vainly trying to get a precious hold and save your\nworthless hide.  Next time, heed your conscience.\n\nYou've fallen, and you can't get up!!!\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0
+    }
+  ],
+  "resets": [
+    {
+      "type": "Door",
+      "roomVnum": 9138,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 9141,
+      "direction": "East",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 9166,
+      "direction": "South",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 9177,
+      "direction": "North",
+      "state": "Locked"
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9102,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9102,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9105,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9105,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9108,
+      "maxInWorld": 35,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9108,
+      "maxInWorld": 35,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9108,
+      "maxInWorld": 35,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9103,
+      "roomVnum": 9109,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9112,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9112,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9117,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9119,
+      "maxInWorld": 35,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9119,
+      "maxInWorld": 35,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9119,
+      "maxInWorld": 35,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9121,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9122,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9122,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9102,
+      "roomVnum": 9123,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 9104,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9102,
+      "roomVnum": 9124,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 9105,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9127,
+      "maxInWorld": 35,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9127,
+      "maxInWorld": 35,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9127,
+      "maxInWorld": 35,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9129,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9131,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9133,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9135,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9103,
+      "roomVnum": 9137,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9107,
+      "roomVnum": 9141,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9144,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9145,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9146,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9147,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9103,
+      "roomVnum": 9148,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9149,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9150,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9151,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9152,
+      "maxInWorld": 35,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9106,
+      "roomVnum": 9153,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9105,
+      "roomVnum": 9156,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9158,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9158,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9162,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9101,
+      "roomVnum": 9162,
+      "maxInWorld": 35,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9103,
+      "roomVnum": 9163,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9103,
+      "roomVnum": 9177,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9104,
+      "roomVnum": 9182,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 9102,
+      "maxInWorld": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9104,
+      "roomVnum": 9187,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 9103,
+      "maxInWorld": 20
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 9107,
+      "procedure": "CastUndead"
+    }
+  ]
+}

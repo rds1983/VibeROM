@@ -47,24 +47,7 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T012 — Migrate the ROM 2.4b6 corpus to JSON
-- Depends on: T011
-- Run the importer against the original ROM 2.4b6 area directory (the legacy
-  `.are` files are import input and are **not committed** to this repository).
-- Commit `Data/areas/*.json` and `Data/areas/index.json`; resolve the missing
-  `thanos.are` reference and the unlisted `proto.are` explicitly.
-- Review counts, unknown canonical flag names (must be zero; reserved unnamed
-  bits are reported and dropped), duplicate vnums, sample areas, and human
-  readability of the output. Document the exact import command and source
-  provenance in `Data/README.md`.
-- T009 reference validation found 10 dangling exit-key references in the
-  current corpus (see the T009 report); resolve them here, including the
-  objects expected from the missing `thanos.are`.
-- **Done when:** all 52 areas referenced by `area.lst` (including `help.json`
-  and `social.json`) exist, the report is clean, and a spot-check of large and
-  small areas is approved.
-
-### [ ] T013 — JSON world loader
+### [ ] T013 - JSON world loader
 - Depends on: T010, T012
 - Load `Data/areas/index.json` then each area JSON in order through
   `AreaJson.Deserialize(json, areaSchema)`; reject duplicate vnums or invalid
@@ -560,3 +543,8 @@ Last reviewed: 2026-11-20
   schema validation, atomic directory swap, `--check` drift detection,
   `--strict` warning promotion, JSON import report, NLog diagnostics and
   CLI/runner tests.
+- **T012 — Migrate the ROM 2.4b6 corpus to JSON** (2026-11-20)
+  Committed 52 canonical area JSON files and `index.json`; documented
+  provenance, totals, excluded `thanos.are`/`proto.are`, ten deterministic
+  exit-key repairs and 166 source-data warnings; added committed-corpus schema,
+  round-trip, totals and dangling-key tests.

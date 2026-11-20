@@ -1,0 +1,4106 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "thalos.are",
+  "name": "Thalos",
+  "credits": "{10 25} Drkside Thalos",
+  "vnumRange": {
+    "low": 5200,
+    "high": 5299
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 5200,
+      "keywords": "oldstyle beholder",
+      "shortDescription": "The mighty beholder",
+      "longDescription": "You meet a beholder's deadly gaze!\n",
+      "description": "It has a large central eye that projects an anti-magic ray and ten\neyestalks atop the round body which can do anything from charm you\nto disintegrate you.  Beholders are not known for their personality.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "Wimpy",
+        "Mage"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -870,
+      "group": 0,
+      "level": 25,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 500
+      },
+      "manaDice": {
+        "count": 25,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 4,
+        "bonus": 6,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -6,
+        "bash": -6,
+        "slash": -6,
+        "exotic": 2
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 1128,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5201,
+      "keywords": "oldstyle lamia beast",
+      "shortDescription": "The lamia",
+      "longDescription": "A strange lamia stands here waiting for her next meal.\n",
+      "description": "This is a creature with the upper torso of a beautiful woman, but the lower\nbody of a four-legged beast.  She licks her lips as she looks at you greedily.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -999,
+      "group": 0,
+      "level": 9,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 110
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 2,
+        "bash": 2,
+        "slash": 2,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 50,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5202,
+      "keywords": "oldstyle mimic chest",
+      "shortDescription": "The mimic",
+      "longDescription": "A strong chest lies in one corner of the room.\n",
+      "description": "A strong, wooden chest bound with iron straps and a heavy pad-lock on the\nfront.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 10,
+      "group": 0,
+      "level": 11,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 8,
+        "bonus": 134
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5203,
+      "keywords": "oldstyle mimic boulder",
+      "shortDescription": "The mimic",
+      "longDescription": "Two skeletons lie crushed under a large boulder.\n",
+      "description": "",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -10,
+      "group": 0,
+      "level": 11,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 8,
+        "bonus": 134
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5204,
+      "keywords": "oldstyle mimic floor",
+      "shortDescription": "The mimic",
+      "longDescription": "The stone floor of this house has been ripped apart.\n",
+      "description": "",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -140,
+      "group": 0,
+      "level": 11,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 8,
+        "bonus": 134
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5205,
+      "keywords": "oldstyle mimic pottery",
+      "shortDescription": "The mimic",
+      "longDescription": "Some broken shards of pottery lie strewn about the floor.\n",
+      "description": "",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 200,
+      "group": 0,
+      "level": 11,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 8,
+        "bonus": 134
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5206,
+      "keywords": "oldstyle mimic planks",
+      "shortDescription": "The mimic",
+      "longDescription": "A few wooden planks lie stacked on a low shelf.\n",
+      "description": "",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 11,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 8,
+        "bonus": 134
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5207,
+      "keywords": "oldstyle lizard horned",
+      "shortDescription": "The horned lizard",
+      "longDescription": "A small horned lizard flicks his tongue and slithers away.\n",
+      "description": "A cute little lizard, that is, if you like reptiles!\n",
+      "race": "Lizard",
+      "actFlags": [
+        "Wimpy"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Poison"
+      ],
+      "vulnerabilities": [
+        "Cold"
+      ],
+      "form": [
+        "Edible",
+        "Animal",
+        "Reptile",
+        "ColdBlood"
+      ],
+      "parts": [
+        "Head",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Feet",
+        "Eye",
+        "Tail",
+        "Fangs"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5208,
+      "keywords": "oldstyle golem stone",
+      "shortDescription": "The stone golem",
+      "longDescription": "In the corner you see a large, stone golem faithfully standing watch.\n",
+      "description": "It is a big chunk of rock that has been magically formed into a giant\nstone creature. He stands here still guarding the city.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "affectedBy": [
+        "ProtectEvil"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 600,
+      "group": 0,
+      "level": 25,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 550
+      },
+      "manaDice": {
+        "count": 12,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 10,
+        "bonus": 7,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -7,
+        "bash": -7,
+        "slash": -7,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 212,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 5200,
+      "keywords": "mithril vest",
+      "shortDescription": "a mithril vest",
+      "longDescription": "A vest made of mithril plates lies heaped on the floor.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Body"
+      ],
+      "level": 26,
+      "weightPounds": 30,
+      "costCopper": 7600,
+      "condition": 100,
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Strength",
+          "modifier": 2
+        },
+        {
+          "location": "DamageRoll",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5201,
+      "keywords": "helm mithril",
+      "shortDescription": "a mithril helm",
+      "longDescription": "Here lies a large mithril helm.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Head"
+      ],
+      "level": 27,
+      "weightPounds": 10,
+      "costCopper": 3400,
+      "condition": 100,
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 5202,
+      "keywords": "gauntlets mithril",
+      "shortDescription": "a pair of mithril gauntlets",
+      "longDescription": "A pair of mithril gauntlets rests on the ground.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hands"
+      ],
+      "level": 25,
+      "weightPounds": 10,
+      "costCopper": 2700,
+      "condition": 100,
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 1
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5203,
+      "keywords": "sleeves mithril",
+      "shortDescription": "some mithril sleeves",
+      "longDescription": "A set of mithril sleeves lies on the ground.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Arms"
+      ],
+      "level": 25,
+      "weightPounds": 10,
+      "costCopper": 2700,
+      "condition": 100,
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 1
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5204,
+      "keywords": "boots mithril",
+      "shortDescription": "a pair of mithril boots",
+      "longDescription": "A pair of mithril boots stands has been left here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Feet"
+      ],
+      "level": 25,
+      "weightPounds": 6,
+      "costCopper": 3100,
+      "condition": 100,
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Dexterity",
+          "modifier": 1
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5205,
+      "keywords": "leggings mithril",
+      "shortDescription": "a set of mithril leggings",
+      "longDescription": "A set of mithril leggings lie here unattended.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Legs"
+      ],
+      "level": 25,
+      "weightPounds": 10,
+      "costCopper": 3100,
+      "condition": 100,
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Dexterity",
+          "modifier": 1
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5206,
+      "keywords": "girth mithril",
+      "shortDescription": "a mithril girth",
+      "longDescription": "A large iron girth lies at your feet.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Waist"
+      ],
+      "level": 26,
+      "weightPounds": 6,
+      "costCopper": 5200,
+      "condition": 100,
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Constitution",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 5207,
+      "keywords": "breast plate iron",
+      "shortDescription": "a battered iron breast plate",
+      "longDescription": "A battered iron breast plate lies here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Body"
+      ],
+      "level": 4,
+      "weightPounds": 45,
+      "costCopper": 9100,
+      "condition": 100,
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 0
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": -6
+        }
+      ]
+    },
+    {
+      "vnum": 5208,
+      "keywords": "shield iron",
+      "shortDescription": "a sturdy iron shield",
+      "longDescription": "A small, but sturdy, iron shield has been left here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic",
+        "AntiGood"
+      ],
+      "wearFlags": [
+        "Take",
+        "Shield"
+      ],
+      "level": 24,
+      "weightPounds": 5,
+      "costCopper": 4400,
+      "condition": 100,
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 3
+      },
+      "affects": [
+        {
+          "location": "Saves",
+          "modifier": -2
+        },
+        {
+          "location": "Saves",
+          "modifier": -2
+        }
+      ]
+    },
+    {
+      "vnum": 5210,
+      "keywords": "potion black",
+      "shortDescription": "a black potion",
+      "longDescription": "A jet black potion sits upright waiting to be taken.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Invis",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 11,
+      "weightPounds": 5,
+      "costCopper": 880,
+      "condition": 100,
+      "spells": {
+        "level": 16,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 5211,
+      "keywords": "potion orange",
+      "shortDescription": "an orange potion",
+      "longDescription": "A small orange potion lies here.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Invis",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 4,
+      "weightPounds": 10,
+      "costCopper": 400,
+      "condition": 100,
+      "spells": {
+        "level": 20,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 5214,
+      "keywords": "ball quartz",
+      "shortDescription": "a smooth quartz ball",
+      "longDescription": "A smooth quartz ball lies here gleaming.",
+      "material": "oldstyle",
+      "itemType": "Light",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 30,
+      "costCopper": 50,
+      "condition": 100,
+      "light": {
+        "duration": 72
+      }
+    },
+    {
+      "vnum": 5215,
+      "keywords": "scroll tattered",
+      "shortDescription": "a tattered scroll",
+      "longDescription": "A worn and tattered scroll has been left here.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 8,
+      "weightPounds": 15,
+      "costCopper": 1280,
+      "condition": 100,
+      "spells": {
+        "level": 24,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 5216,
+      "keywords": "scroll bound",
+      "shortDescription": "a bound scroll",
+      "longDescription": "A bound scroll of detection lies at your feet.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 15,
+      "costCopper": 500,
+      "condition": 100,
+      "spells": {
+        "level": 15,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 5217,
+      "keywords": "flute silver",
+      "shortDescription": "a silver flute",
+      "longDescription": "A brilliant silver flute glimmers from beneath a rock.",
+      "material": "oldstyle",
+      "itemType": "Staff",
+      "extraFlags": [
+        "Glow",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 9,
+      "weightPounds": 1,
+      "costCopper": 3300,
+      "condition": 100,
+      "charges": {
+        "level": 17,
+        "total": 1,
+        "remaining": 1,
+        "spell": "charm person"
+      },
+      "affects": [
+        {
+          "location": "Dexterity",
+          "modifier": -2
+        }
+      ]
+    },
+    {
+      "vnum": 5218,
+      "keywords": "talisman demon",
+      "shortDescription": "a demon-faced talisman",
+      "longDescription": "A demon-faced talisman glares at you angrily.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Glow",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Neck"
+      ],
+      "level": 0,
+      "weightPounds": 11,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Dexterity",
+          "modifier": -8
+        },
+        {
+          "location": "Strength",
+          "modifier": -10
+        }
+      ]
+    },
+    {
+      "vnum": 5219,
+      "keywords": "venison chunk",
+      "shortDescription": "a chunk of venison",
+      "longDescription": "A large chunk of venison sits here ready to be eaten.",
+      "material": "oldstyle",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 20,
+      "costCopper": 0,
+      "condition": 100,
+      "food": {
+        "hours": 24,
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 5220,
+      "keywords": "fountain water",
+      "shortDescription": "a large cracked fountain",
+      "longDescription": "Some stagnant water lies in the bottom of the fountain.",
+      "material": "oldstyle",
+      "itemType": "Fountain",
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "fountain": {
+        "capacity": 10,
+        "remaining": 10,
+        "liquid": "Water",
+        "poisoned": true
+      }
+    },
+    {
+      "vnum": 5221,
+      "keywords": "two-handed two sword",
+      "shortDescription": "a two-handed sword",
+      "longDescription": "A nice two-handed sword hangs on a hook in the wall.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 26,
+      "weightPounds": 24,
+      "costCopper": 3300,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 2,
+        "diceSize": 12,
+        "attackType": "Chop",
+        "specialFlags": [
+          "TwoHands"
+        ]
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 3
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 5222,
+      "keywords": "robe black silk",
+      "shortDescription": "a black silk robe",
+      "longDescription": "A black silk robe lies heaped in one corner.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "About"
+      ],
+      "level": 5,
+      "weightPounds": 6,
+      "costCopper": 410,
+      "condition": 100,
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 5
+      },
+      "affects": [
+        {
+          "location": "Mana",
+          "modifier": 10
+        }
+      ]
+    },
+    {
+      "vnum": 5223,
+      "keywords": "cloak green",
+      "shortDescription": "a dark green cloak",
+      "longDescription": "A beautiful dark green cloak has been dropped by someone.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic",
+        "AntiGood"
+      ],
+      "wearFlags": [
+        "Take",
+        "Neck"
+      ],
+      "level": 20,
+      "weightPounds": 12,
+      "costCopper": 1600,
+      "condition": 100,
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Hit",
+          "modifier": 5
+        }
+      ]
+    },
+    {
+      "vnum": 5224,
+      "keywords": "seal ebony",
+      "shortDescription": "an engraved ebony seal",
+      "longDescription": "A small, engraved ebony seal is here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        30,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 5225,
+      "keywords": "desk curved",
+      "shortDescription": "the desk",
+      "longDescription": "A dirty, crumbling curved desk is here.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 100,
+        "flags": [
+          "Closeable",
+          "Closed",
+          "Locked"
+        ],
+        "keyVnum": 5224
+      }
+    },
+    {
+      "vnum": 5226,
+      "keywords": "seal ivory",
+      "shortDescription": "an engraved ivory seal",
+      "longDescription": "A small, engraved ivory seal lies here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        31,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 5227,
+      "keywords": "cabinet glass",
+      "shortDescription": "the glass cabinet",
+      "longDescription": "A broken glass cabinet is here.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 500,
+        "flags": [
+          "Closeable",
+          "Closed",
+          "Locked"
+        ],
+        "keyVnum": 5226
+      }
+    },
+    {
+      "vnum": 5228,
+      "keywords": "arm rotted",
+      "shortDescription": "a rotten arm",
+      "longDescription": "A rotted arm floats lazily by your feet.",
+      "material": "oldstyle",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 20,
+      "costCopper": 0,
+      "condition": 100,
+      "food": {
+        "hours": 50,
+        "poisoned": true
+      }
+    },
+    {
+      "vnum": 5230,
+      "keywords": "stone pale blue",
+      "shortDescription": "a pale blue stone",
+      "longDescription": "A pale blue stone sits here.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Float"
+      ],
+      "level": 5,
+      "weightPounds": 1,
+      "costCopper": 550,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Strength",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5231,
+      "keywords": "stone scarlet blue",
+      "shortDescription": "a scarlet and blue stone",
+      "longDescription": "A pretty scarlet and blue stone has been dropped here.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Float"
+      ],
+      "level": 5,
+      "weightPounds": 1,
+      "costCopper": 550,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Intelligence",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5232,
+      "keywords": "stone blue incandescent",
+      "shortDescription": "an incandescent blue stone",
+      "longDescription": "A small incandescent blue stone lies here.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Float"
+      ],
+      "level": 5,
+      "weightPounds": 1,
+      "costCopper": 550,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Wisdom",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5233,
+      "keywords": "stone red deep",
+      "shortDescription": "a deep red stone",
+      "longDescription": "Someone has left a deep red stone here.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Float"
+      ],
+      "level": 5,
+      "weightPounds": 1,
+      "costCopper": 550,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Dexterity",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5234,
+      "keywords": "stone pink",
+      "shortDescription": "a pink stone",
+      "longDescription": "A tiny pink stone lies at your feet.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Float"
+      ],
+      "level": 5,
+      "weightPounds": 1,
+      "costCopper": 550,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Constitution",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5235,
+      "keywords": "stone pearly white",
+      "shortDescription": "a pearly white stone",
+      "longDescription": "This pearly white stone would probably sell for a good price.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Float"
+      ],
+      "level": 5,
+      "weightPounds": 1,
+      "costCopper": 11,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Hit",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5237,
+      "keywords": "stone lavender green",
+      "shortDescription": "a lavender and green stone",
+      "longDescription": "A stunning lavender and green stone rests on the ground.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Float"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 150,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Saves",
+          "modifier": -1
+        }
+      ]
+    },
+    {
+      "vnum": 5239,
+      "keywords": "stone grey dull",
+      "shortDescription": "a dull grey stone",
+      "longDescription": "You can barely make out a dull grey stone on the ground.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 10,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 5241,
+      "keywords": "stone pink green",
+      "shortDescription": "a pink and green stone",
+      "longDescription": "A bright pink and green stone has been left here.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Float"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 500,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": -5
+        }
+      ]
+    },
+    {
+      "vnum": 5243,
+      "keywords": "stone clear",
+      "shortDescription": "a clear stone",
+      "longDescription": "A odd clear stone lies at your feet.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Float"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 100,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "ArmorClass",
+          "modifier": 3
+        }
+      ]
+    },
+    {
+      "vnum": 5250,
+      "keywords": "mandolin",
+      "shortDescription": "a mandolin",
+      "longDescription": "A mandolin lies against the wall.",
+      "material": "oldstyle",
+      "itemType": "Staff",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 9,
+      "weightPounds": 10,
+      "costCopper": 2500,
+      "condition": 100,
+      "charges": {
+        "level": 13,
+        "total": 3,
+        "remaining": 3,
+        "spell": "cure critical"
+      }
+    },
+    {
+      "vnum": 5251,
+      "keywords": "harp golden",
+      "shortDescription": "a golden harp",
+      "longDescription": "A battered golden harp has been tipped over.",
+      "material": "oldstyle",
+      "itemType": "Staff",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 7,
+      "weightPounds": 50,
+      "costCopper": 2700,
+      "condition": 100,
+      "charges": {
+        "level": 18,
+        "total": 1,
+        "remaining": 1,
+        "spell": "call lightning"
+      },
+      "affects": [
+        {
+          "location": "Dexterity",
+          "modifier": -2
+        }
+      ]
+    },
+    {
+      "vnum": 5252,
+      "keywords": "long dagger slim",
+      "shortDescription": "a long slim dagger",
+      "longDescription": "A long slim dagger has been left here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 8,
+      "weightPounds": 1,
+      "costCopper": 590,
+      "condition": 100,
+      "weapon": {
+        "class": "Dagger",
+        "diceCount": 2,
+        "diceSize": 5,
+        "attackType": "Pierce"
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 1
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 5200,
+      "name": "The Grand Gate of Thalos",
+      "description": "You stand in the archway of a gigantic stone archway. The two\nsteel gates have been forced open and have rusted in place. A hollow\ngust of wind blows by you into the deserted, and seemingly destroyed,\ncity.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5256,
+          "description": "You see a trail out of this blasted place.\n"
+        },
+        "west": {
+          "toRoom": 5201,
+          "description": "You see devastation everywhere. Houses lie in ruin and skeletons litter\nthe streets. You see strange beasts stalking the shadows.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5201,
+      "name": "Main Street",
+      "description": "This was once a magnificent street, but now is in total ruin. The\nstreets are barren and windswept and the silence is unending.  A dark alley\nleads north and south.  Howls and screams echo through the deserted city.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5239,
+          "description": "It's a dark alley.\n"
+        },
+        "east": {
+          "toRoom": 5200,
+          "description": "The entrance to the city lies this way.\n"
+        },
+        "south": {
+          "toRoom": 5255,
+          "description": "It's a dark alley.\n"
+        },
+        "west": {
+          "toRoom": 5202,
+          "description": "Main Street lies this way.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5202,
+      "name": "Main Street",
+      "description": "This was once a magnificent street, but now is in total ruin. The\nstreets are barren and windswept and the silence is unending. On one\nside is a collapsed house while on the other is the entrance to a large\nruined mansion. Eerie sounds echo within the mansion. Near the center of\ntown you see a large domed building, relatively intact.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5236,
+          "description": "The remnants of a store lie this way.\n"
+        },
+        "east": {
+          "toRoom": 5201
+        },
+        "south": {
+          "toRoom": 5232,
+          "description": "It looks like what used to be the main building in the city.\n"
+        },
+        "west": {
+          "toRoom": 5203,
+          "description": "A withered garden path lies this way.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5203,
+      "name": "A Garden Path",
+      "description": "A circular path surrounds a magnificent domed temple in the center of\nthe city. Flowers have withered away and the once lush trees are bare.\nVines and ivy snake up the sides of the temple and entangle themselves\naround your feet. A sudden volley of howls pierces the air.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5204,
+          "description": "The garden path continues around the building.\n"
+        },
+        "east": {
+          "toRoom": 5202,
+          "description": "This is the main street leading to the city's entrance\n"
+        },
+        "south": {
+          "toRoom": 5206,
+          "description": "The garden path continues around the building.\n"
+        },
+        "west": {
+          "toRoom": 5250,
+          "description": "Inside the temple, small patches of light shoot through each doorway as\nwell as a few holes in the ceiling.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5204,
+      "name": "A Garden Path",
+      "description": "A circular path surrounds a magnificent domed temple in the center of\nthe city. Flowers have withered away and the once lush trees are bare.\nVines and ivy snake up the sides of the temple and entangle themselves\naround your feet. A sudden volley of howls pierces the air.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5211,
+          "description": "A side street leads off to the northern half of the city.\n"
+        },
+        "south": {
+          "toRoom": 5203,
+          "description": "The garden path continues around the building.\n"
+        },
+        "west": {
+          "toRoom": 5205,
+          "description": "The garden path continues around the building.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5205,
+      "name": "A Garden Path",
+      "description": "A circular path surrounds a magnificent domed temple in the center of\nthe city. Flowers have withered away and the once lush trees are bare.\nVines and ivy snake up the sides of the temple and entangle themselves\naround your feet. A sudden volley of howls pierces the air.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5204,
+          "description": "The garden path continues around the building.\n"
+        },
+        "south": {
+          "toRoom": 5250,
+          "description": "Inside the temple, small patches of light shoot through each doorway as\nwell as a few holes in the ceiling.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5206,
+      "name": "A Garden Path",
+      "description": "A circular path surrounds a magnificent domed temple in the center of\nthe city. Flowers have withered away and the once lush trees are bare.\nVines and ivy snake up the sides of the temple and entangle themselves\naround your feet. A sudden volley of howls pierces the air.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5203,
+          "description": "The garden path continues around the building.\n"
+        },
+        "south": {
+          "toRoom": 5212,
+          "description": "A small side street leads to the southern half of the city.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5207,
+      "name": "The market place",
+      "description": "You stand in the middle of a large square lined on each side with\nbaskets, carts, and stands of all shapes and sizes. Abandoned, these\nlittle shops still contain some of their goods once sold to a demanding\npublic.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5225,
+          "description": "A small table has been toppled over, spilling fine jewelery and gems\nonto the ground.\n"
+        },
+        "south": {
+          "toRoom": 5220,
+          "description": "Rotted remains of fruits and vegetables lie strewn about.\n"
+        },
+        "west": {
+          "toRoom": 5208,
+          "description": "The market place continues.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5208,
+      "name": "The market place",
+      "description": "You stand at the end of the market square. Stands and carts line\neach side, filled with remnants of fine foods and exquisite goods.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5222,
+          "description": "Tattered carpets and ruined bales of silk sit idly by a run down stand.\n"
+        },
+        "east": {
+          "toRoom": 5207,
+          "description": "The center of the market lies this way.\n"
+        },
+        "south": {
+          "toRoom": 5217,
+          "description": "From the massive stench, this must have been a meat and poultry stand.\nIt lies totally bare.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5209,
+      "name": "A Side Street",
+      "description": "This small side street leads east and west into back alleys while\nto the south you see the temple. The incessant howling tears at your mind.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5243
+        },
+        "south": {
+          "toRoom": 5210
+        },
+        "west": {
+          "toRoom": 5228
+        }
+      }
+    },
+    {
+      "vnum": 5210,
+      "name": "A Side Street",
+      "description": "You are in the common section of the city. Ruined buildings made of\nclay and stone is all the view has to offer. Most of these homes are\nnothing but piles of rubble, but some look almost safe enough to venture\ninto. The street continues north and south and buildings line the street.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5209
+        },
+        "east": {
+          "toRoom": 5244,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "A small doorway leads into a partially collapsed house.\n"
+        },
+        "south": {
+          "toRoom": 5211
+        },
+        "west": {
+          "toRoom": 5226,
+          "description": "A small clay dwelling sits here.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5211,
+      "name": "A Side Street",
+      "description": "This small side street leads away from the garden path to the south.\nAround you stand large piles or rubble where the houses of commoners\nused to be. A lone howl makes you worry greatly about your safety here.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5210
+        },
+        "east": {
+          "toRoom": 5237,
+          "description": "An unusually tall dwelling stands looming over you.\n"
+        },
+        "south": {
+          "toRoom": 5204,
+          "description": "A garden path circles around the temple.\n"
+        },
+        "west": {
+          "toRoom": 5227,
+          "description": "Here lies a small stone house with a thatched roof.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5212,
+      "name": "A side street",
+      "description": "This small side street leads south away from the temple into the\nbusiness section of town. The destruction that leveled this city was not\nbiased; these important looking buildings have been almost totally\ndestroyed. There is a hole in the wall of a very large structure to the\neast.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5206,
+          "description": "A small garden path encircles the temple.\n"
+        },
+        "east": {
+          "toRoom": 5232,
+          "description": "This possibly could be the city hall.\n"
+        },
+        "south": {
+          "toRoom": 5213
+        },
+        "west": {
+          "toRoom": 5221,
+          "description": "Inside the building you see long pieces of metal, an oven, and some\nanvils.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5213,
+      "name": "A side street",
+      "description": "This small side street is lined with the remains of once great\nbuildings. To the north is a dark, foreboding structure while to the\neast lies the entrance to a small tavern. The street continues north\nand south.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5212
+        },
+        "east": {
+          "toRoom": 5230,
+          "description": "From the looks of it, this was once a two story abode. The entire second\nfloor has collapsed leaving a very little part of the bar still free\nfrom debris.\n"
+        },
+        "south": {
+          "toRoom": 5214
+        },
+        "west": {
+          "toRoom": 5219,
+          "description": "This seems to be the only guild house in the entire city. Its dark nature\nmakes you wonder about its origins.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5214,
+      "name": "A side street",
+      "description": "You are at the end of a long street leading to the center of the city.\nA long dark alley runs east and west.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5213
+        },
+        "east": {
+          "toRoom": 5251
+        },
+        "south": {
+          "toRoom": 5229
+        },
+        "west": {
+          "toRoom": 5218
+        }
+      }
+    },
+    {
+      "vnum": 5215,
+      "name": "Under a ruined watchtower",
+      "description": "You stand at the base of a tall watchtower built to protect the city\nfrom invaders. From the looks of things, it did not do a good job.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5216
+        },
+        "east": {
+          "toRoom": 5218
+        },
+        "up": {
+          "toRoom": 5247
+        }
+      }
+    },
+    {
+      "vnum": 5216,
+      "name": "A back alley",
+      "description": "This alley leads to the rear of what used to be a meat stand. You wince\nat the stench. South is one of the city watchtowers.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5217,
+          "description": "You see the back-side of the market place meat stand.\n"
+        },
+        "south": {
+          "toRoom": 5215,
+          "description": "A tall watchtower stands a silent vigil over the city.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5217,
+      "name": "The meat stand",
+      "description": "A large stand has been set up here with metal hooks and wooden racks\nin the background. Hanging on the hooks are very small scraps of meat\nand other game. This stand is relatively empty, and a sudden burst of\nhowling and screaming makes you realize why this is so.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5208,
+          "description": "The market place lies this way.\n"
+        },
+        "east": {
+          "toRoom": 5220,
+          "description": "This is a cart full of rotted vegetables and fruits.\n"
+        },
+        "south": {
+          "toRoom": 5216
+        }
+      }
+    },
+    {
+      "vnum": 5218,
+      "name": "A back alley",
+      "description": "A narrow alley leads east to a wider street and west to one of\nthe city watchtowers.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5214,
+          "description": "A small side street greets you.\n"
+        },
+        "west": {
+          "toRoom": 5215,
+          "description": "A tall watchtower stands a silent vigil over the city.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5219,
+      "name": "The guild house",
+      "description": "You are standing in what once was this city's ONLY guild house.\nTables and chairs have been smashed and broken weapons lie strewn about\nthe floor as if some massive battle had taken place here. Draped along\nthe back wall is a tattered, jet-black banner with the symbol of the\nDarkside set upon it.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5213,
+          "description": "A small side street runs past the building.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5220,
+      "name": "The produce stand",
+      "description": "A large cart sits here carrying rotted fruit and vegetables. Flys\nswarm all about what seems to be the last remaining bits of food left\nin the city.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5207,
+          "description": "The market place is deserted.\n"
+        },
+        "west": {
+          "toRoom": 5217,
+          "description": "A strong stench emanates from the meat stand next to you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5221,
+      "name": "The smithy",
+      "description": "In here you find tools and anvils used to make various weapons\nand items. The walls have been stripped clean and only a few incomplete\npieces of armor and weaponry are left.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5212,
+          "description": "A small side street runs past the building.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5222,
+      "name": "The tapestry stand",
+      "description": "Tattered and torn tapestries and rugs lie heaped in piles. Fancy\nrobes and various articles of clothing are now just rags. You stare at\nthe strange piles for a long time until a piercing howl makes you\nthink these might be beds.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5223
+        },
+        "east": {
+          "toRoom": 5225,
+          "description": "A fine jewelry stand lies in ruin next to you.\n"
+        },
+        "south": {
+          "toRoom": 5208,
+          "description": "The market place is deserted.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5223,
+      "name": "A back alley",
+      "description": "A narrow alley leads north to one of the city watchtowers while\nto the south there lies a market stand full of torn clothes and rugs.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5224,
+          "description": "A tall watchtower stands a silent vigil over the city.\n"
+        },
+        "south": {
+          "toRoom": 5222
+        }
+      }
+    },
+    {
+      "vnum": 5224,
+      "name": "Under the watchtower",
+      "description": "You stand under one of the city watchtowers built to protect\nthe city from invaders. Obviously, it failed.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5228
+        },
+        "south": {
+          "toRoom": 5223
+        },
+        "up": {
+          "toRoom": 5246,
+          "description": "Above you looms a tall watchtower.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5225,
+      "name": "The jewelery stand",
+      "description": "A table has been tipped over, spilling fine jewelery and gems\nacross the market place. Most of these trinkets are battered and\ntarnished and few would have any value anymore.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5207,
+          "description": "The market place is deserted.\n"
+        },
+        "west": {
+          "toRoom": 5222,
+          "description": "Next to you is a stand full of ruined clothes and rugs.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5226,
+      "name": "A ruined clay dwelling",
+      "description": "This was once a very plain house with nothing more than a few chairs\nand a bed. A cold fireplace suggests that the city has been abandoned\nfor quite a while. Almost nothing remains of this humble abode.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5210,
+          "description": "Outside is a small side street.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5227,
+      "name": "A collapsed stone dwelling",
+      "description": "This small house has completely collapsed upon itself leaving piles\nof debris here and there. A few rafters still stand with thatched straw\nhanging down and a hot wind gusts through the hollow dwelling.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5211,
+          "description": "A small side street runs past the house.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5228,
+      "name": "A back alley",
+      "description": "A narrow alley leads east to one of the city watchtowers and west to\na small side street.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5209
+        },
+        "west": {
+          "toRoom": 5224
+        }
+      }
+    },
+    {
+      "vnum": 5229,
+      "name": "An abandoned shop",
+      "description": "From the outside this place looks like an ordinary pile of rubble,\nbut inside these cramped quarters you discover what used to be a shop\nfilled with armor, weapons, and various other goods. A small sign flutters\nin the wind.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5214,
+          "description": "A small side street runs past the shop.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5230,
+      "name": "The Tavern of the Sun",
+      "description": "A glorious place in it's prime, this tavern now lies in ruin; tables\nand chairs are broken scattered, bottles and glasses shattered, and\na small performance stage crushed. Musical instruments and personal\nbelongings lie under the rubble, but the people they once belonged to are\nnot with them. Looking up you see that the entire second floor and roof\nhas fallen in, leaving a gaping hole above.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 5213,
+          "description": "A small side street runs past the tavern.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5231,
+      "name": "South wing of the city hall",
+      "description": "You stand in a large room attached to this end of the hallway which\nleads back north to the reception area.  Pedestals and columns have fallen\nand most of the valuable items have been taken, leaving worthless debris.\nA few chairs have survived, as well as a large curved desk. To the east\nis a vine-covered archway leading out into a private courtyard.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5232,
+          "description": "The long hallway leads back to the main reception area of the city hall.\n"
+        },
+        "east": {
+          "toRoom": 5234
+        }
+      }
+    },
+    {
+      "vnum": 5232,
+      "name": "The city hall",
+      "description": "This is the main reception area of Thalos' city hall. The walls have\nbeen charred and scored massively and debris is spread from wall to wall.\nA large gaping hole in the west wall allows you to see out to one of\nthe city's side streets. Obviously no one will be seeing you through today.\nHallways lead south and east.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5202,
+          "description": "Main street runs past the city hall.\n"
+        },
+        "east": {
+          "toRoom": 5233,
+          "description": "A hallway leads to the east wing of the city hall.\n"
+        },
+        "south": {
+          "toRoom": 5231,
+          "description": "A hallway leads to the south wing of the city hall.\n"
+        },
+        "west": {
+          "toRoom": 5212
+        }
+      }
+    },
+    {
+      "vnum": 5233,
+      "name": "East wing of the city hall",
+      "description": "Here lies the remnants of a fancy office, possibly the mayor's. A few\nwithered plants and broken pieces of furniture make this place anything\nbut fancy, though. The only thing remaining intact here is a large\nglass cabinet. A long hallway leads west back to the reception area and\nan ivy-covered archway leads south into a private courtyard.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5234
+        },
+        "west": {
+          "toRoom": 5232
+        }
+      }
+    },
+    {
+      "vnum": 5234,
+      "name": "The private gardens and courtyard of Thalos",
+      "description": "What a shame that this mass destruction also touched this once\nbeautiful place. The temple's garden path has nothing on this garden.\nFlowers and trees have been smashed into the ground and lawn benches\nthrown through walls. A large marble fountain in the center of the\ncourtyard still stands, though, defying any attempts to destroy its\nbeauty. Above stands the remnants of one of the watchtowers. Archways\nnorth and west lead back into the city hall.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5233
+        },
+        "west": {
+          "toRoom": 5231
+        }
+      }
+    },
+    {
+      "vnum": 5235,
+      "name": "A small guard house",
+      "description": "This was once the barracks for Thalos' cityguards. Now just an empty\nshell, this small shack still stands guarding the entrance both to the\ncity and to the city hall.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5255,
+          "description": "The alley runs by this building.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5236,
+      "name": "A collapsed home",
+      "description": "All that's left of this house is a few scattered piles of rubble\nand a very large blast crater. Obviously someone or something important\nwas once housed here. A shrieking howl chills your blood.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5202,
+          "description": "Main street runs past this ruined home.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5237,
+      "name": "A tall dwelling",
+      "description": "This seems to be the tallest structure remaining in the city. At\none time this could have been an inn of some sort, but now it's just\na mess. The back wall as been completely knocked down revealing an\nentrance into another building through yet another collapsed wall.\nBetween the two buildings are a few blast craters and boulders. An old\nset of wooden steps leads up to a creaking second floor.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5238
+        },
+        "west": {
+          "toRoom": 5211,
+          "description": "A small side street winds past the dwelling.\n"
+        },
+        "up": {
+          "toRoom": 5245,
+          "description": "The stairs and even the entire second floor itself looks very unsafe\nfor travel. Gusts of wind make them creak and shudder.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5238,
+      "name": "A small shack",
+      "description": "This cramped dwelling could not have housed more than one person. Now\nwith the back wall missing, it could hold many more. Looking around you\nfind broken shelves and workbenches with various vials and pouches spilling\ncontents all across the floor. This was possibly the magic shop of the\ncity. The doorway to the east is blocked, making the only exit back west.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 5237
+        }
+      }
+    },
+    {
+      "vnum": 5239,
+      "name": "A back alley",
+      "description": "A narrow back alley goes south to main street and north towards\na watchtower. A mass of howls catches you off guard.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5240
+        },
+        "south": {
+          "toRoom": 5201,
+          "description": "Main street runs past here.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5240,
+      "name": "A back alley",
+      "description": "A narrow back alley leads north to one of the city watchtowers\nand south towards main street. To the west is a doorway to a small\nhouse blocked by debris.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5241,
+          "description": "A tall watchtower stands a silent vigil over the city.\n"
+        },
+        "south": {
+          "toRoom": 5239
+        }
+      }
+    },
+    {
+      "vnum": 5241,
+      "name": "Under a watchtower",
+      "description": "You stand under a tall watchtower. Narrow back alleys lead west and\nsouth and a very weak looking ladder leads up into the tower.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5240
+        },
+        "west": {
+          "toRoom": 5243
+        },
+        "up": {
+          "toRoom": 5248,
+          "description": "Winds howl high above your head in the tower above.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5242,
+      "name": "A bath house",
+      "description": "This was once the bath house for the commoners of the city. Hot\nsteamy water still wells up from a hole in the floor. Obviously there\nis a hot spring located under the city (making the decision to put\na city here seem much more reasonable). Closer inspection of the water\nyields a dead body floating around in it, skin melted away from months\nof floating in there. The west wall has collapsed revealing another\ncollapsed house.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5243
+        },
+        "west": {
+          "toRoom": 5244,
+          "description": "The wall has collapsed on the adjoining house, creating a new opening\nin it.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5243,
+      "name": "A back alley",
+      "description": "A narrow back alley leads west to a small side street and east to one\nof the city watchtowers. Great amounts of steam issue forth from the\nbuilding to the south.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5241,
+          "description": "A watchtower stands a silent vigil over the city.\n"
+        },
+        "south": {
+          "toRoom": 5242
+        },
+        "west": {
+          "toRoom": 5209,
+          "description": "A side street runs by here.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5244,
+      "name": "An upright house",
+      "description": "This home is practically the only one around that is still standing.\nExcept for the massive hole in the east wall, everything else looks\nintact, including the windows. Great amounts of steam issue forth from\nthe hole in the east wall.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5242
+        },
+        "west": {
+          "toRoom": 5210,
+          "description": "A small side street runs past the house.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5245,
+      "name": "On the second floor",
+      "description": "The minute you step off onto this floor you realize it was a mistake.\nThe old rotted floorboards suddenly give way and you fall down, impaling\nyourself on jagged boards below.\n\nYou've fallen, and you can't get up!!!\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0
+    },
+    {
+      "vnum": 5246,
+      "name": "The north-west watchtower",
+      "description": "You stand atop one of the city watchtowers. The view is magnificent\nfrom here and you can see all the way to the western mountains. No wonder\nthis place stood for so long.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "down": {
+          "toRoom": 5224,
+          "description": "The city lies below.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5247,
+      "name": "The south-west watchtower",
+      "description": "You stand atop one of the city watchtowers. The view is magnificent\nfrom here and you can see all the way to the western mountains. To the\nsouth the desert stretches to the horizon. No wonder this place stood\nfor so long.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "down": {
+          "toRoom": 5215,
+          "description": "The city lies below.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5248,
+      "name": "The north-east watchtower",
+      "description": "You stand atop one of the city watchtowers. The view is magnificent\nfrom here and you can see a great floating pyramid to the north-east.\nDesert sand stretches to the horizon. No wonder this place stood for so\nlong.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "down": {
+          "toRoom": 5241,
+          "description": "The city lies below.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5250,
+      "name": "The Temple of Thalos",
+      "description": "You stand within one of the most holy places in the realm. This\nstunning domed temple once housed the city's worshipers en masse.\nUnfortunately, it succumbed to the destruction brought on this city.\nLong benches lie toppled and the altar desecrated. Large chunks of stone\nhave fallen from the walls and roof, sending sunlight streaming in on\nyou. A few books lie about, conveying to you a holy message in a\nstrange tongue.\n     Wind gusts through the four archways and howls and screams can be\nheard from all parts of the city.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5205,
+          "description": "A side street leads to the northern half of the city.\n"
+        },
+        "east": {
+          "toRoom": 5203,
+          "description": "Main street leads out to the main gate of the city.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5251,
+      "name": "A back alley",
+      "description": "A narrow alley leads east to a wider street and west to one of\nthe city watchtowers.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5252,
+          "description": "A tall watchtower stands a silent vigil over the city.\n"
+        },
+        "west": {
+          "toRoom": 5214,
+          "description": "A small side street greets you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5252,
+      "name": "Under a ruined watchtower",
+      "description": "You stand at the base of a tall watchtower built to protect the city\nfrom invaders. From the looks of things, it did not do a good job.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5253
+        },
+        "west": {
+          "toRoom": 5251
+        },
+        "up": {
+          "toRoom": 5254
+        }
+      }
+    },
+    {
+      "vnum": 5253,
+      "name": "A back alley",
+      "description": "A narrow alley leads south to one of the city watchtowers.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5255,
+          "description": "The alley continues to the north.\n"
+        },
+        "south": {
+          "toRoom": 5252,
+          "description": "A tall watchtower stands a silent vigil over the city.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5254,
+      "name": "The south-east watchtower",
+      "description": "You stand atop one of the city watchtowers. The view is magnificent\nfrom here and you can see all the way to the western mountains. To the\nsouth the desert stretches to the horizon. No wonder this place stood\nfor so long.  There is a small plaque on the stones.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "down": {
+          "toRoom": 5252,
+          "description": "The city lies below.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sign plaque",
+          "description": "This extension to Thalos, along with the dwarf forest, is made by Hatchet for\nany Merc Mud.\ncopyright 1992\n"
+        }
+      ]
+    },
+    {
+      "vnum": 5255,
+      "name": "A back alley",
+      "description": "A narrow alley leads north to the main street, and south toward a tall\nwatchtower.  A ruined building is to the west.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5201,
+          "description": "You see main street.\n"
+        },
+        "south": {
+          "toRoom": 5253
+        },
+        "west": {
+          "toRoom": 5235,
+          "description": "It looks in bad shape inside, but structurally intact.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5256,
+      "name": "A trail at the end of the dwarf forest",
+      "description": "The trail ends here, with short, dry stumps of trees all around you.\nTo the west, you can see the ruins of a huge city.  Something about it gives\nyou an uneasy feeling.  To the east is your way back to home and safety.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5257,
+          "description": "You see the trail.\n"
+        },
+        "west": {
+          "toRoom": 5200,
+          "description": "You see Thalos!\n"
+        }
+      }
+    },
+    {
+      "vnum": 5257,
+      "name": "A trail at the end of the dwarf forest",
+      "description": "A side trail here leads from the dwarf forest.  It is definitely drier\nand hotter here.  The trail continues to the west, and to the east, you see\nthe T-intersection.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5258,
+          "description": "You see the intersection.\n"
+        },
+        "west": {
+          "toRoom": 5256,
+          "description": "You see the trail continue on.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5258,
+      "name": "The dwarf forest",
+      "description": "You see more stunted trees here.  A side trail leads west from here.\nTo the east, you THINK you see a trail, but you can never be sure.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5259,
+          "description": "You see the trail lead back north.\n"
+        },
+        "east": {
+          "toRoom": 5262,
+          "description": "You can't see into the gloom of this forest.\n"
+        },
+        "west": {
+          "toRoom": 5257,
+          "description": "You see the trail branch off.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5259,
+      "name": "The dwarf forest",
+      "description": "You see more stunted trees here.  It looks almost as if this place was\ncursed by a god to be short and dry.  The trail leads north and south.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5260,
+          "description": "You see the trail continue north.\n"
+        },
+        "south": {
+          "toRoom": 5258,
+          "description": "You see the trail continue south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5260,
+      "name": "The dwarf forest",
+      "description": "You see more stunted trees here.  It looks almost as if this place was\ncursed by a god to be short and dry.  The trail leads north and south.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5261,
+          "description": "You see the trail continue north.\n"
+        },
+        "south": {
+          "toRoom": 5259,
+          "description": "You see the trail continue south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5261,
+      "name": "The dwarf forest",
+      "description": "You see many stunted trees here.  You don't see any leaves on these barren\ntrees.  No grass grows on the ground.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3502,
+          "description": "You see the trail continue north.\n"
+        },
+        "south": {
+          "toRoom": 5260,
+          "description": "You see the trail continue south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5262,
+      "name": "The dwarf forest",
+      "description": "You see more stunted trees here.  It looks almost as if this place was\ncursed by a god to be short and dry.  The trail leads east and west.  It looks\ndark toward the east.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5263,
+          "description": "You see a darker part of the forest.\n"
+        },
+        "west": {
+          "toRoom": 5258,
+          "description": "You see the lighter forest and the T-intersection west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5263,
+      "name": "The darker dwarf forest",
+      "description": "You see a more dense foliage in these stunted trees.  The gloom caused\nby them is enhanced by a draft coming from all around.  The trail turns south\nfrom the west.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5264,
+          "description": "You see nothing in the gloom south of you.\n"
+        },
+        "west": {
+          "toRoom": 5262,
+          "description": "You see the dwarf forest.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5264,
+      "name": "The darker dwarf forest",
+      "description": "You see a more dense foliage in these stunted trees.  The gloom caused\nby them is enhanced by a draft coming from all around.  The trail turns east\nfrom the north.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5263,
+          "description": "You see nothing in the gloom north of you.\n"
+        },
+        "east": {
+          "toRoom": 5265,
+          "description": "You see nothing in the gloom east of you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5265,
+      "name": "The darker dwarf forest",
+      "description": "You see a more dense foliage in these stunted trees.  The gloom caused\nby them is enhanced by a draft coming from all around.  The trail leads\neast and west.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5266,
+          "description": "You see nothing in the gloom east of you.\n"
+        },
+        "west": {
+          "toRoom": 5264,
+          "description": "You see nothing in the gloom west of you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5266,
+      "name": "The darker dwarf forest",
+      "description": "You see a more dense foliage in these stunted trees.  The gloom caused\nby them is enhanced by a draft coming from all around.  The trail leads\ndown into a valley and west.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 5265,
+          "description": "You see nothing in the gloom west of you.\n"
+        },
+        "down": {
+          "toRoom": 5267,
+          "description": "You see the trail lead down into gloom.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5267,
+      "name": "A valley in the dark dwarf forest",
+      "description": "You are in a valley in the dark dwarf forest.  Short black grass grows\naround you.  Trails lead in all directions.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5271
+        },
+        "east": {
+          "toRoom": 1701
+        },
+        "south": {
+          "toRoom": 9201,
+          "description": "You see a large mountain on the far side of a canyon.\n"
+        },
+        "west": {
+          "toRoom": 5268,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see a dark fox hole.\n"
+        },
+        "up": {
+          "toRoom": 5266
+        }
+      }
+    },
+    {
+      "vnum": 5268,
+      "name": "A small ugly cave",
+      "description": "You see a small cave.  Skeletons of many types of creatures litter the area.\nObviously, no fox lives here!  The oppression makes you want to leave and\nvomit.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5267,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see the exit from here!\n"
+        },
+        "south": {
+          "toRoom": 5269,
+          "description": "You see more of the cave.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "skeleton skeletons",
+          "description": "Something is strange about these skeletons.  Upon further investigation, these\nskeletons appear illusionary.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 5269,
+      "name": "A small ugly cave",
+      "description": "You are in a small ugly cave.  More skeletons lie around.  It is obvious\nthat the owner doesn't want you here.  The exit north is still visible.\nSome writings are on this wall.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5268,
+          "description": "You see more of the cave.\n"
+        },
+        "down": {
+          "toRoom": 5270,
+          "description": "You see a path leading down into the dark gloom.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "skeleton skeletons",
+          "description": "Something is strange about these skeletons.  Upon further investigation, these\nskeletons appear illusionary.\n"
+        },
+        {
+          "keywords": "writings writing words",
+          "description": "This cave along with the valley and dwarf forest is made by Hatchet for any\nMerc Mud.\ncopyright 1992\n"
+        }
+      ]
+    },
+    {
+      "vnum": 5270,
+      "name": "Down the path into a dead end",
+      "description": "You are down the path.  There is no obvious exit in this place, exit the\none back up north.  All around you, you see skeletons.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 5269,
+          "description": "You see your only way back up.\n"
+        },
+        "down": {
+          "toRoom": 5100,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see nothing on the floor except skeletons.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "skeleton skeletons",
+          "description": "Something is strange about these skeletons.  Upon further investigation, these\nskeletons appear illusionary.  In fact, through the skeletons, you see a\nsecret door!!\n"
+        }
+      ]
+    },
+    {
+      "vnum": 5271,
+      "name": "The Valley in the dark dwarf forest",
+      "description": "You are in a valley in the forest.  To the north is a trail out of this\ndark valley.  South is more of this valley.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5272,
+          "description": "You see a trail away from this gloomy valley.\n"
+        },
+        "south": {
+          "toRoom": 5267,
+          "description": "You see more of this gloomy valley.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5272,
+      "name": "A dim trail in the dwarf forest",
+      "description": "You are in a dim trail in the dwarf forest.  Not much light passes through\nhere.  To the south is a gloomy valley, while to the north the light grows\nbrighter.\n",
+      "roomFlags": [
+        "Dark"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5273,
+          "description": "You can actually see the trail north of you!\n"
+        },
+        "south": {
+          "toRoom": 5271,
+          "description": "You can barely see the gloomy valley south of you.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5273,
+      "name": "A dim trail in the dwarf forest",
+      "description": "You are in a dim trail in the dwarf forest.  Not much light passes through\nhere.  The trail runs north and south, and the light seems to come from the\nnorth.  To the east, you see a small path into darkness.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5274,
+          "description": "You see the dim trail lead north.\n"
+        },
+        "east": {
+          "toRoom": 5280,
+          "description": "You see the small path.\n"
+        },
+        "south": {
+          "toRoom": 5272,
+          "description": "You see the dim trail lead south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5274,
+      "name": "A dim trail in the dwarf forest",
+      "description": "You are in a dim trail in the dwarf forest.  Not much light passes through\nhere.  The trail runs north and south, and the light seems to come from the\nnorth.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5275,
+          "description": "You see the dim trail lead north.\n"
+        },
+        "south": {
+          "toRoom": 5273,
+          "description": "You see the dim trail lead south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5275,
+      "name": "A bend in the dim trail in the dwarf forest",
+      "description": "You are in a dim trail in the dwarf forest.  Not much light passes through\nhere.  The trail runs south and west.  The trail west looks much friendlier\nthan the one leading south.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5274,
+          "description": "You see the dim trail lead south.\n"
+        },
+        "west": {
+          "toRoom": 5276,
+          "description": "You see the trail lead west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5276,
+      "name": "A trail in the dwarf forest",
+      "description": "You are in a trail in the dwarf forest.  The trees are stunted and it\nlooks dry around here.  The trail leads east and west.  It looks dimmer to\nthe east.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5275,
+          "description": "The trail continues east to the dimmer parts of the forest.\n"
+        },
+        "west": {
+          "toRoom": 5277,
+          "description": "The trail continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5277,
+      "name": "A trail in the dwarf forest",
+      "description": "You are in a trail in the dwarf forest.  The trees are stunted and it\nlooks dry around here.  The trail leads east and west.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5276,
+          "description": "The trail continues east.\n"
+        },
+        "west": {
+          "toRoom": 5278,
+          "description": "The trail continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5278,
+      "name": "A trail in the dwarf forest",
+      "description": "You are in a trail in the dwarf forest.  The trees are stunted and it\nlooks dry around here.  The trail leads east and west.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5277,
+          "description": "The trail continues east.\n"
+        },
+        "west": {
+          "toRoom": 5279,
+          "description": "The trail continues west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5279,
+      "name": "The bend in the trail in the dwarf forest",
+      "description": "You are in a bend in the trail in the forest.  The trees are stunted, but\nnot so dry around here.  The trail leads east, and to the south, you see a\nwaterfall.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5278,
+          "description": "The trail continues east.\n"
+        },
+        "south": {
+          "toRoom": 5281,
+          "description": "You see a beautiful waterfall.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5280,
+      "name": "A dark bend in the forest",
+      "description": "You are in a dark bend in the forest.  To the west, you see the trail\nleading back to the dwarven forest, and to the south, you see a dark and\ndismal path.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 2300,
+          "description": "You see the dark path.\n"
+        },
+        "west": {
+          "toRoom": 5273,
+          "description": "You see the trail back to the Dwarven Forest.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5281,
+      "name": "By the beautiful waterfall",
+      "description": "You see a VERY beautiful waterfall here.  It looks almost as if diamonds are\nfalling down the mountain.  (You reach out and grab and no, it IS only water.)\nIt looks so nice here, you feel like taking a nap.\nThe trail leads north and south.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5279,
+          "description": "You see the trail leading north.\n"
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Door",
+      "roomVnum": 5210,
+      "direction": "East",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 5267,
+      "direction": "West",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 5268,
+      "direction": "East",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 5270,
+      "direction": "Down",
+      "state": "Closed"
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5204,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5251,
+      "wearLocation": "Hold",
+      "maxInWorld": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5205,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5230,
+      "wearLocation": "Hold",
+      "maxInWorld": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5216,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5233,
+      "wearLocation": "Hold",
+      "maxInWorld": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5219,
+      "roomVnum": 5217,
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5207,
+      "roomVnum": 5217,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5218,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5250,
+      "wearLocation": "Hold",
+      "maxInWorld": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5219,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5231,
+      "wearLocation": "Hold",
+      "maxInWorld": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5204,
+      "roomVnum": 5219,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5218,
+      "maxInWorld": 8
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5211,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5220,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5224,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5243,
+      "wearLocation": "Hold",
+      "maxInWorld": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5226,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5235,
+      "wearLocation": "Hold",
+      "maxInWorld": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5203,
+      "roomVnum": 5226,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5215,
+      "maxInWorld": 8
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5239,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5207,
+      "roomVnum": 5227,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5207,
+      "roomVnum": 5229,
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5202,
+      "roomVnum": 5229,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5210,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5214,
+      "wearLocation": "Hold",
+      "maxInWorld": 4
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5225,
+      "roomVnum": 5231,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5215,
+      "containerVnum": 5225,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5216,
+      "containerVnum": 5225,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5232,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5217,
+      "wearLocation": "Hold",
+      "maxInWorld": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5207,
+      "roomVnum": 5232,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5227,
+      "roomVnum": 5233,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 3105,
+      "containerVnum": 5227,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5234,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5232,
+      "wearLocation": "Hold",
+      "maxInWorld": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5220,
+      "roomVnum": 5234,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5236,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5237,
+      "wearLocation": "Hold",
+      "maxInWorld": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5206,
+      "roomVnum": 5236,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5222,
+      "wearLocation": "About",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5205,
+      "roomVnum": 5238,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5214,
+      "wearLocation": "Hold",
+      "maxInWorld": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5201,
+      "roomVnum": 5240,
+      "maxInWorld": 12,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5241,
+      "wearLocation": "Hold",
+      "maxInWorld": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5252,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5228,
+      "roomVnum": 5242,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5207,
+      "roomVnum": 5244,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5208,
+      "roomVnum": 5246,
+      "maxInWorld": 8,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5221,
+      "wearLocation": "Wield",
+      "maxInWorld": 80
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5226,
+      "wearLocation": "Hold",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5203,
+      "wearLocation": "Arms",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5208,
+      "roomVnum": 5247,
+      "maxInWorld": 8,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5221,
+      "wearLocation": "Wield",
+      "maxInWorld": 80
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5224,
+      "wearLocation": "Hold",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5200,
+      "wearLocation": "Body",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5204,
+      "wearLocation": "Feet",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5208,
+      "roomVnum": 5248,
+      "maxInWorld": 8,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5221,
+      "wearLocation": "Wield",
+      "maxInWorld": 80
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5205,
+      "wearLocation": "Legs",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5206,
+      "wearLocation": "Waist",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5200,
+      "roomVnum": 5250,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5208,
+      "wearLocation": "Shield",
+      "maxInWorld": 3
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5223,
+      "wearLocation": "Neck1",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5208,
+      "roomVnum": 5254,
+      "maxInWorld": 8,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5221,
+      "wearLocation": "Wield",
+      "maxInWorld": 80
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5201,
+      "wearLocation": "Head",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5202,
+      "wearLocation": "Hands",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5111,
+      "roomVnum": 5267,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5100,
+      "wearLocation": "Wield",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5110,
+      "roomVnum": 5270,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5100,
+      "wearLocation": "Wield",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5110,
+      "roomVnum": 5270,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5100,
+      "wearLocation": "Wield",
+      "maxInWorld": 99
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5111,
+      "roomVnum": 5272,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5100,
+      "wearLocation": "Wield",
+      "maxInWorld": 99
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 5200,
+      "procedure": "CastMage"
+    }
+  ]
+}

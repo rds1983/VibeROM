@@ -29,6 +29,7 @@ public sealed record ImportReport(
     string ReleaseDate,
     string SourceDirectory,
     IReadOnlyList<ImportedArea> Areas,
+    IReadOnlyList<ImportMessage> Repairs,
     IReadOnlyList<ImportMessage> Warnings,
     IReadOnlyList<ImportMessage> Errors)
 {

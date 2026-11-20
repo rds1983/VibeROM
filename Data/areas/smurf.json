@@ -1,0 +1,2061 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "smurf.are",
+  "name": "Smurfville",
+  "credits": "{ 1 10} Generic Smurf Village",
+  "vnumRange": {
+    "low": 100,
+    "high": 199
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 101,
+      "keywords": "oldstyle smurf",
+      "shortDescription": "a smurf",
+      "longDescription": "A smurf is singing and walking along.\n",
+      "description": "A cute little blue smurf with a white hat and white boots.  You have a sudden\nurge to crush him.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 1,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 4,
+        "bonus": 2
+      },
+      "manaDice": {
+        "count": 0,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 2,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 10,
+        "bash": 10,
+        "slash": 10,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 102,
+      "keywords": "oldstyle smurf",
+      "shortDescription": "a smurf",
+      "longDescription": "A smurf is here, picking berries.\n",
+      "description": "A small smurf is quietly picking berries.  He seems to hardly notice you.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Wimpy",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 1,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 4,
+        "bonus": 2
+      },
+      "manaDice": {
+        "count": 0,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 2,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 10,
+        "bash": 10,
+        "slash": 10,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 103,
+      "keywords": "oldstyle brainy smurf",
+      "shortDescription": "Brainy Smurf",
+      "longDescription": "Brainy Smurf is here, mumbling something to himself.\n",
+      "description": "Brainy Smurf has on his usual glasses.  Brainy Smurf isn't liked much by the\nother smurfs.  They fear his knowledge.  Knowledge is power!\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 21
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 104,
+      "keywords": "oldstyle handy smurf",
+      "shortDescription": "Handy Smurf",
+      "longDescription": "Handy Smurf is building something here.\n",
+      "description": "Handy is always building something.  He never takes a break.  Why don't you\ngive him a break, like all of his bones.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 21
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 105,
+      "keywords": "oldstyle sleepy smurf",
+      "shortDescription": "Sleepy Smurf",
+      "longDescription": "Sleepy Smurf is sleep walking here.\n",
+      "description": "Sleepy never gets enough sleep.  You would think he goes to college.  I wonder\nif he has ever stayed up a whole night without sleeping.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 21
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 106,
+      "keywords": "oldstyle hefty smurf",
+      "shortDescription": "Hefty Smurf",
+      "longDescription": "Hefty Smurf is lifting weights here.\n",
+      "description": "Hefty is a total health nut.  He lifts weights, eats right, and exercises all\nthe time.  Won't do him much good when he's DEAD.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 21
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 107,
+      "keywords": "oldstyle grumpy smurf",
+      "shortDescription": "Grumpy Smurf",
+      "longDescription": "Grumpy Smurf is here, swearing.\n",
+      "description": "Grumpy has never been happy in his whole life.  So why don't you just end it?\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 21
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 108,
+      "keywords": "oldstyle jokey smurf",
+      "shortDescription": "Jokey Smurf",
+      "longDescription": "Jokey Smurf is here, holding a present.\n",
+      "description": "Jokey loves to give people presents.  Too bad the present explodes when opened.\nOh well, to each his own.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 21
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 109,
+      "keywords": "oldstyle smurfette",
+      "shortDescription": "Smurfette",
+      "longDescription": "Smurfette is here, looking beautiful.\n",
+      "description": "Smurfette is the cutest little smurf you've ever seen.  If only she were your\nsize.  I wonder how much she charges the other smurfs.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 21
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 110,
+      "keywords": "oldstyle papa smurf",
+      "shortDescription": "Papa Smurf",
+      "longDescription": "Papa Smurf is practicing magic here.\n",
+      "description": "Yep, its Papa Smurf all right.  Red hat and boots and the funny little white\nbeard.  Papa Smurf treats his fellow smurfs with dignity and respect.  That\nis why Papa Smurf is so popular among the ladies.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy",
+        "Mage"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 10,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 110
+      },
+      "manaDice": {
+        "count": 10,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 2,
+        "bash": 2,
+        "slash": 2,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 2,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 111,
+      "keywords": "oldstyle gargamel",
+      "shortDescription": "Gargamel",
+      "longDescription": "Gargamel is here, cursing out the smurfs.\n",
+      "description": "Gargamel has never done anything right in his life.  He has caught smurfs\nbefore but always lets them escape.  He brings true meaning to the word moron.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Wimpy",
+        "Cleric"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -100,
+      "group": 0,
+      "level": 10,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 121
+      },
+      "manaDice": {
+        "count": 10,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 2,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 112,
+      "keywords": "oldstyle azreal cat",
+      "shortDescription": "Azreal",
+      "longDescription": "Azreal is here, licking himself.\n",
+      "description": "Gargamel's worthless cat.  He is just about as dumb as Gargamel.  He should\njust grab a smurf in his teeth and chew away.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Wimpy"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -100,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 100,
+      "keywords": "bunch berries smurfberries",
+      "shortDescription": "a bunch of smurfberries",
+      "longDescription": "A bunch of delicious looking smurfberries lie here.",
+      "material": "oldstyle",
+      "itemType": "Pill",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 180,
+      "condition": 100,
+      "spells": {
+        "level": 8,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 101,
+      "keywords": "glasses",
+      "shortDescription": "a pair of glasses",
+      "longDescription": "An odd pair of glasses has been left here.",
+      "material": "oldstyle",
+      "itemType": "Clothing",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Head"
+      ],
+      "level": 3,
+      "weightPounds": 2,
+      "costCopper": 270,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Wisdom",
+          "modifier": 1
+        },
+        {
+          "location": "Dexterity",
+          "modifier": -1
+        }
+      ]
+    },
+    {
+      "vnum": 102,
+      "keywords": "smurf hat",
+      "shortDescription": "a smurf hat",
+      "longDescription": "A smurf hat has been left here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Head"
+      ],
+      "level": 3,
+      "weightPounds": 2,
+      "costCopper": 310,
+      "condition": 100,
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 0
+      }
+    },
+    {
+      "vnum": 103,
+      "keywords": "axe small",
+      "shortDescription": "a small axe",
+      "longDescription": "A small axe has been dropped here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 3,
+      "weightPounds": 2,
+      "costCopper": 370,
+      "condition": 100,
+      "weapon": {
+        "class": "Axe",
+        "diceCount": 1,
+        "diceSize": 7,
+        "attackType": "Slash"
+      }
+    },
+    {
+      "vnum": 104,
+      "keywords": "necklace",
+      "shortDescription": "a small necklace",
+      "longDescription": "A small necklace is lying on the ground.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Neck"
+      ],
+      "level": 5,
+      "weightPounds": 2,
+      "costCopper": 550,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Intelligence",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 105,
+      "keywords": "pink potion",
+      "shortDescription": "a pink potion",
+      "longDescription": "A pink potion is barely visible on the ground.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 160,
+      "condition": 100,
+      "spells": {
+        "level": 6,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 106,
+      "keywords": "wand",
+      "shortDescription": "a small wand",
+      "longDescription": "A small wand lies on the ground.",
+      "material": "oldstyle",
+      "itemType": "Wand",
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 3,
+      "weightPounds": 2,
+      "costCopper": 540,
+      "condition": 100,
+      "charges": {
+        "level": 5,
+        "total": 1,
+        "remaining": 1,
+        "spell": "burning hands"
+      }
+    },
+    {
+      "vnum": 107,
+      "keywords": "key",
+      "shortDescription": "a tiny key",
+      "longDescription": "A tiny key is lying on the ground.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 108,
+      "keywords": "well",
+      "shortDescription": "a smurf well",
+      "longDescription": "A small smurfy well is here.",
+      "material": "oldstyle",
+      "itemType": "Fountain",
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "fountain": {
+        "capacity": 50,
+        "remaining": 50,
+        "liquid": "Water",
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 109,
+      "keywords": "key",
+      "shortDescription": "a small key",
+      "longDescription": "A key to Gargamel's door lies here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 101,
+      "name": "Dimly Lit Path",
+      "description": "This path is made of crushed granite with curious blue streaks in it.\nThe path continues north to a village, or south to the eastern road.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 102,
+          "description": "The path continues toward the village.\n"
+        },
+        "south": {
+          "toRoom": 3525,
+          "description": "The path heads back toward the eastern road.\n"
+        }
+      }
+    },
+    {
+      "vnum": 102,
+      "name": "Dimly Lit Path",
+      "description": "This section of the road is badly worn and frequently traversed.  There is\nfaint singing to the north.  The path back to the road lies to the south.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 103,
+          "description": "The path continues toward the village.\n"
+        },
+        "south": {
+          "toRoom": 101,
+          "description": "The dimly lit path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 103,
+      "name": "Dimly Lit Path",
+      "description": "This section of the road is badly worn and frequently traversed.  Singing is\ngetting stronger to the north.  The path back to the road lies to the south.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 104,
+          "description": "The entrance to smurf village.\n"
+        },
+        "south": {
+          "toRoom": 102,
+          "description": "The dimly lit path.\n"
+        }
+      }
+    },
+    {
+      "vnum": 104,
+      "name": "Entrance to Smurf Village",
+      "description": "You stand at the entrance to a tiny village.  You can see across the whole\nvillage easily.  Little blue creatures with white hats and boots and little \nfluffy tails scamper about.  They sing continuously.  The singing is getting\non your nerves and you have the urge to squash them.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 105,
+          "description": "Smurfy Road\n"
+        },
+        "south": {
+          "toRoom": 103,
+          "description": "Dimly Lit Path\n"
+        }
+      }
+    },
+    {
+      "vnum": 105,
+      "name": "Smurfy Road",
+      "description": "You are way too big to be using this road.  But who cares.  Who's gonna stop\nyou?  These little blue smurfs?  The singing is growing intense.  Your ears\nare starting to ring.  Smurfy Road continues to the north, west, and east.\nThere is still time to turn back and go south.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 106,
+          "description": "Smurfy Road\n"
+        },
+        "east": {
+          "toRoom": 110,
+          "description": "Smurfy Road\n"
+        },
+        "south": {
+          "toRoom": 104,
+          "description": "Entrance to smurf village\n"
+        },
+        "west": {
+          "toRoom": 111,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 106,
+      "name": "Smurfy Road",
+      "description": "You continue to travel down Smurfy Road.  Isn't it just smurfy?  Smurfy road\ncontinues its smurfy path to the smurfy north, smurfy west, and smurfy south.\nA smurfy home lies to the smurfy east.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 107,
+          "description": "Smurfy Road\n"
+        },
+        "east": {
+          "toRoom": 120,
+          "description": "Smurfy Home\n"
+        },
+        "south": {
+          "toRoom": 105,
+          "description": "Smurfy Road\n"
+        },
+        "west": {
+          "toRoom": 112,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 107,
+      "name": "Smurfy Road",
+      "description": "Oh boy, another smurfy road!  Smurfy Road goes north and south here.  There\nis a smurfy, mushroom home to the west.  A beautiful smurfberry patch is to\nthe east.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 108,
+          "description": "Smurfy Road\n"
+        },
+        "east": {
+          "toRoom": 116,
+          "description": "Smurfberry Patch\n"
+        },
+        "south": {
+          "toRoom": 106,
+          "description": "Smurfy Road\n"
+        },
+        "west": {
+          "toRoom": 129,
+          "description": "A Smurfy Home\n"
+        }
+      }
+    },
+    {
+      "vnum": 108,
+      "name": "Smurfy Road",
+      "description": "Smurfy Road continues to smurf here.  It smurfs to the south and smurfs to\nan end to the north.  A smurfberry patch is to the east.  A stone path lies\nto the west.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 109,
+          "description": "Smurfy Road\n"
+        },
+        "east": {
+          "toRoom": 117,
+          "description": "Smurfberry patch\n"
+        },
+        "south": {
+          "toRoom": 107,
+          "description": "Smurfy Road\n"
+        },
+        "west": {
+          "toRoom": 113,
+          "description": "A stone path\n"
+        }
+      }
+    },
+    {
+      "vnum": 109,
+      "name": "Smurfy Road",
+      "description": "A smurfy well lies here in the middle of Smurfy Road.  A fence separates\nthe smurfs from harm to the north.  A berry patch is to the east.  Smurfy\nRoad continues to to the south and west.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 118,
+          "description": "Smurfberry Patch\n"
+        },
+        "south": {
+          "toRoom": 108,
+          "description": "Smurfy Road\n"
+        },
+        "west": {
+          "toRoom": 114,
+          "description": "Smurfy Road\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "smurfy well",
+          "description": "A small well is here.  Just the right size if you're a smurf.  But big\nenough for you to get some water from.  I'm sure the smurfs wont mind.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 110,
+      "name": "Smurfy Road",
+      "description": "A corner of smurfy road is where you stand.  A smurfy fence blocks passage\nto the east or south.  A smurfy home is to the north.  Smurfy Road goes back\nto the west.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 119,
+          "description": "Smurfy Home\n"
+        },
+        "west": {
+          "toRoom": 105,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 111,
+      "name": "Smurfy Road",
+      "description": "Western corner of Smurfy Road.  You can continue to smurf down the road\nto the east and north.  You can also smurf into a smurfy home to the south.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 112,
+          "description": "Smurfy Road\n"
+        },
+        "east": {
+          "toRoom": 105,
+          "description": "Smurfy Road\n"
+        },
+        "south": {
+          "toRoom": 121,
+          "description": "Smurfy Home\n"
+        }
+      }
+    },
+    {
+      "vnum": 112,
+      "name": "Smurfy Road",
+      "description": "There's no place like smurf.  There's no place like smurf.  Sorry wrong\nmovie.  A smurfy home is to the west.  Papa Smurf's backyard is to the\nnorth but you can't go there.  Smurfy Road continues to the south and\neast.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 106,
+          "description": "Smurfy Road\n"
+        },
+        "south": {
+          "toRoom": 111,
+          "description": "Smurfy Road\n"
+        },
+        "west": {
+          "toRoom": 122,
+          "description": "Smurfy Home\n"
+        }
+      }
+    },
+    {
+      "vnum": 113,
+      "name": "Stone Path",
+      "description": "You are walking along a cute little stone path.  To the south lies Papa\nSmurf's house.  A Smurfy house is to the west.  Smurfy road is to the east.\nEverything is so peaceful here.  You could stay forever.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 108,
+          "description": "Smurfy Road\n"
+        },
+        "south": {
+          "toRoom": 125,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "keyVnum": 107,
+          "description": "Papa Smurf's House\n"
+        },
+        "west": {
+          "toRoom": 123,
+          "description": "Smurfy House\n"
+        }
+      }
+    },
+    {
+      "vnum": 114,
+      "name": "Smurfy Road",
+      "description": "Yet another part of Smurfy Road.  Hey if you go west its the last\nsection of Smurfy Road.  You can go back to the smurfy well to the east.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 109,
+          "description": "Smurfy Road\n"
+        },
+        "west": {
+          "toRoom": 115,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 115,
+      "name": "Smurfy Road",
+      "description": "The last piece of Smurfy Road.  You can go back to Smurfy Road to the east.\nA nice, beautiful, smurfy, mushroom home is to the south.  In the distance to\nthe north you can see Gargamel's Castle.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 126,
+          "description": "Path to Gargamel's Castle\n"
+        },
+        "east": {
+          "toRoom": 114,
+          "description": "Smurfy Road\n"
+        },
+        "south": {
+          "toRoom": 124,
+          "description": "Smurfy Home\n"
+        }
+      }
+    },
+    {
+      "vnum": 116,
+      "name": "Smurfberry Patch",
+      "description": "Delicious smurfberries grow here.  You could probably eat a year's worth of\nsmurfberries in one sitting.  Smurfy Road is back to the west.  Another\nsmurfberry patch is to the north.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 117,
+          "description": "Smurfberry Patch\n"
+        },
+        "west": {
+          "toRoom": 107,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 117,
+      "name": "Smurfberry Patch",
+      "description": "Another patch of smurfberries is growing here.  The smell is driving your\nnostrils crazy.  It almost, ALMOST, makes you forget all the singing going\non.  Smurfy Road is to the west, while smurfberry patches are to the north\nand south.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 118,
+          "description": "Smurfberry Patch\n"
+        },
+        "south": {
+          "toRoom": 116,
+          "description": "Smurfberry Patch\n"
+        },
+        "west": {
+          "toRoom": 108,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 118,
+      "name": "Smurfberry Patch",
+      "description": "The northernmost of the smurfberry patches grows here.  It looks just\nas scrumptious as all the rest.  Just take a few; they'll never know.  Smurfy\nRoad is to the west.  A smurfberry patch is to the south.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 117,
+          "description": "Smurfberry Patch\n"
+        },
+        "west": {
+          "toRoom": 109,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 119,
+      "name": "Brainy Smurf's Home",
+      "description": "You rip the roof of the home to get a good look inside.  You see\nmany smurfy books.  The print is so small you couldn't even read it\nwith a magnifying glass.  I wonder if Brainy Smurf minds if you\ndestroy his home?  Smurfy Road is back to the south.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 110,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 120,
+      "name": "Handy Smurf's Home",
+      "description": "This home was well built.  Of course, until you rip it apart you big meany\nyou.  Tools are all over the place.  Too small for you to use.  Smurfy Road is\nback to the west.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 106,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 121,
+      "name": "Hefty Smurf's Home",
+      "description": "Hefty is anything but wimpy.  So is his house.  It actually took you a \ncouple of minutes to destroy his house.  Better watch out -- he might be\na little mad at you.  Smurfy Road is back to the north.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 111,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 122,
+      "name": "Sleepy Smurf's Home",
+      "description": "Be vewy vewy quiet.  Sleepy Smurf is probably sleeping.  You see so many\nbeds you can't even tell if he is here.  Maybe you should quietly go back to\nSmurfy Road to the east.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 112,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 123,
+      "name": "Grumpy Smurf's Home",
+      "description": "This is Grumpy Smurf's home.  He is pissed at you.  Of course, he is pissed\nat everyone.  So don't take it bad.  Maybe you'd better leave before he really\ngets mad.  Smurfy Road to the east is your only salvation.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 113,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 124,
+      "name": "Jokey Smurf's Home",
+      "description": "You pull the top of his house and it explodes in your face.  That Jokey\nSmurf, what a kidder.  You can hear his laughter as you wipe the ashes off\nyour face.  You better get even.  Smurfy Road is to the north.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 115,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 125,
+      "name": "Papa Smurf's Home",
+      "description": "It's the home of the leader of the smurfs.  Papa Smurf has a nicely decorated\nhome.  He takes pride in his work.  You could get to know him or just squash\nhim.  If Papa Smurf is not here he is probably at Smurfette's putting the\nmoves on her.  A stone path lies to the north.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 113,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "keyVnum": 107,
+          "description": "Stone Path\n"
+        }
+      }
+    },
+    {
+      "vnum": 126,
+      "name": "Path to Gargamel's Castle",
+      "description": "You are walking along a path to Gargamel's Castle to the North.\nSmurfy Road lies to the south.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 127,
+          "description": "Outside Gargamel's Castle\n"
+        },
+        "south": {
+          "toRoom": 115,
+          "description": "Smurfy Road\n"
+        }
+      }
+    },
+    {
+      "vnum": 127,
+      "name": "Outside Gargamel's Castle",
+      "description": "You are standing outside Gargamel's Castle.  You can hear him screaming at\nAzreal from inside.  You can also him cursing out those wretched smurfs.\nHis Castle is to the north while Smurfy Road is to the south.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 128,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "keyVnum": 109,
+          "description": "Gargamel's Castle\n"
+        },
+        "south": {
+          "toRoom": 126,
+          "description": "Path to Gargamel's Castle\n"
+        }
+      }
+    },
+    {
+      "vnum": 128,
+      "name": "Gargamel's Castle",
+      "description": "This is Gargamel's Castle.  His big black kettle is in the middle of the room.\nWhere else would he put it?  The place has only one room.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 127,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "keyVnum": 109,
+          "description": "Outside Gargamel's Castle\n"
+        }
+      }
+    },
+    {
+      "vnum": 129,
+      "name": "Smurfette's House",
+      "description": "This house is conveniently next to Papa Smurfs.  Makes it easier for Papa\nSmurf to sneak over at night.  I hope he uses protection.  I would hate to\nhave little smurfs running around.  The only exit is to the east.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 107,
+          "description": "Smurfy Road\n"
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Door",
+      "roomVnum": 113,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 125,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 127,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 128,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 101,
+      "roomVnum": 104,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 102,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 101,
+      "roomVnum": 105,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 101,
+      "roomVnum": 107,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 101,
+      "roomVnum": 108,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 102,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Object",
+      "objectVnum": 108,
+      "roomVnum": 109,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 101,
+      "roomVnum": 109,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 101,
+      "roomVnum": 110,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 102,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 101,
+      "roomVnum": 111,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 101,
+      "roomVnum": 112,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 102,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 102,
+      "roomVnum": 116,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 100,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 102,
+      "roomVnum": 117,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 100,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 102,
+      "roomVnum": 118,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 100,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 103,
+      "roomVnum": 119,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 101,
+      "wearLocation": "Head",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 104,
+      "roomVnum": 120,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 103,
+      "wearLocation": "Wield",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 106,
+      "roomVnum": 121,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 103,
+      "wearLocation": "Wield",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 105,
+      "roomVnum": 122,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 107,
+      "roomVnum": 123,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 108,
+      "roomVnum": 124,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 110,
+      "roomVnum": 125,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 105,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Give",
+      "objectVnum": 109,
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 111,
+      "roomVnum": 128,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 106,
+      "wearLocation": "Hold",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 112,
+      "roomVnum": 128,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 109,
+      "roomVnum": 129,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 104,
+      "wearLocation": "Neck1",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Give",
+      "objectVnum": 107,
+      "maxInWorld": 8
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 101,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 102,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 103,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 104,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 105,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 106,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 107,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 108,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 109,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 110,
+      "procedure": "CastMage"
+    },
+    {
+      "mobileVnum": 111,
+      "procedure": "CastCleric"
+    },
+    {
+      "mobileVnum": 112,
+      "procedure": "Poison"
+    }
+  ]
+}

@@ -57,6 +57,9 @@ Exit codes: `0` success, `1` data error (nothing written), `2` usage error.
   "areas": [
     { "legacyFile": "midgaard.are", "jsonFile": "midgaard.json", "mobiles": 65, ... }
   ],
+  "repairs": [
+    { "file": "hitower.are", "line": 4936, "column": 4, "message": "Exit key vnum 1473 is not an object; using no key." }
+  ],
   "warnings": [
     { "file": "tohell.are", "line": 168, "column": 7, "message": "..." }
   ],
@@ -64,8 +67,11 @@ Exit codes: `0` success, `1` data error (nothing written), `2` usage error.
 }
 ```
 
-Counts are per area; warnings and errors carry file, line and column when the
-source location is known. The report is written even when the import fails.
+Counts are per area; repairs, warnings and errors carry file, line and column
+when the source location is known. The report is written even when the import
+fails. Repairs are deliberate normalisations of invalid source data (currently
+exit keys that name a room or a missing object); they are not errors and do not
+appear in the warning list.
 
 ### Check and strict modes
 

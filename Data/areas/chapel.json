@@ -1,0 +1,4412 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "chapel.are",
+  "name": "Chapel",
+  "credits": "{15 25} Copper  Chapel Catacombs",
+  "vnumRange": {
+    "low": 3400,
+    "high": 3499
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 3400,
+      "keywords": "oldstyle skeleton bony",
+      "shortDescription": "the bony skeleton",
+      "longDescription": "A bony skeleton is here.\n",
+      "description": "Brown bones with tufts of clothing still hanging from them.  This\nskeleton looks very mindless but still dangerous ...\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 1,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 10
+      },
+      "manaDice": {
+        "count": 0,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 4,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3401,
+      "keywords": "oldstyle undead zombie",
+      "shortDescription": "the undead zombie",
+      "longDescription": "An undead zombie sits here munching on something ...\n",
+      "description": "His body is totally white and slowly rotting away.  Each Zombie looks\nquite different from the next because they were, of course, once alive and\nhuman.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -100,
+      "group": 0,
+      "level": 4,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 46
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 2,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3402,
+      "keywords": "oldstyle undead ghoul",
+      "shortDescription": "The ghoul",
+      "longDescription": "A ghoul is here staring at you hungrily.\n",
+      "description": "The ghoul no longer resembles the adventurer he once was.  Nonetheless\nhe looks like he hasn't forgot his fighting skills.\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 7,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3403,
+      "keywords": "oldstyle undead wraith",
+      "shortDescription": "The wraith",
+      "longDescription": "You spot a wraith advancing towards you from the shadows.\n",
+      "description": "The wraith no longer has a material form.  He is wearing a tattered\nblack robe which hides all but the darkness of his face and the glimmer\nin his eyes.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "Invisible",
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -750,
+      "group": 0,
+      "level": 12,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 150
+      },
+      "manaDice": {
+        "count": 6,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 0,
+        "bash": 0,
+        "slash": 0,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 50,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3404,
+      "keywords": "oldstyle undead guardian vampire",
+      "shortDescription": "The guardian vampire",
+      "longDescription": "A vampire is here hiding his face from your light source.\n",
+      "description": "The guardian vampire looks quite EVIL.  Just by looking at him the hair on your\narms raises. He looks mighty tough to be just a minor minion.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -1000,
+      "group": 0,
+      "level": 28,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 703
+      },
+      "manaDice": {
+        "count": 14,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 5,
+        "size": 4,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -8,
+        "bash": -8,
+        "slash": -8,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 750,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3405,
+      "keywords": "oldstyle priest",
+      "shortDescription": "the priest",
+      "longDescription": "A priest of God stands here solemnly speaking words of praise.\n",
+      "description": "Obviously a goodly man, you feel closer to God just by gazing upon this man.\nDressed in white, fine white hair, and a soft slightly wrinkled face ...\nthis man has a sacred beauty.  You see a halo around his head.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden",
+        "Sanctuary"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 1000,
+      "group": 0,
+      "level": 15,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 208
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 5,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -2,
+        "bash": -2,
+        "slash": -2,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 20,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3406,
+      "keywords": "oldstyle Mi-Go Fungi",
+      "shortDescription": "the Mi-Go",
+      "longDescription": "A Mi-Go is crawling here.\n",
+      "description": "Mi-Go, the Fungi from Yuggoth ... it is a pinkish being about five feet long;\nwith a crustaceous body bearing a vast pair of membranous wings and several\nsets of articulate limbs, body a sort of convoluted ellipsoid, covered with\nmultitudes of very small antennae, where a head would ordinarily be.  These\nbeings sometimes walk on all their legs and sometimes on the hind pair only.\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 12,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 150
+      },
+      "manaDice": {
+        "count": 6,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 0,
+        "bash": 0,
+        "slash": 0,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 32,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3407,
+      "keywords": "oldstyle nightgaunt",
+      "shortDescription": "The nightgaunt",
+      "longDescription": "A nightgaunt is standing here\n",
+      "description": "... shocking and uncouth black thing with smooth, oily, skin, unpleasant horns\nthat curve inward toward each other, bat wings whose beating make no sound,\nugly prehensile paws, and a barbed tail that lashes disquietingly.  And worst\nof all, it makes absolutely no sound or speech and smiles not at all because\nit has no face, only a suggestive blackness where a face ought to be ...\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Sneak",
+        "Hide"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -1000,
+      "group": 0,
+      "level": 10,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 121
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 4,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 7,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3408,
+      "keywords": "oldstyle hunting horror",
+      "shortDescription": "The hunting horror",
+      "longDescription": "The hunting horror is here in wait of an unwary traveler.\n",
+      "description": "Serving Nyarlathotep and Roch'tar, these beings are hunting for victims.\nThey resemble enormous ropy black serpents or worms possessing bat-like or\numbrella-like wings.  Their forms continually shift and change, twitching\nand writhing, so it is hard to look at them.  They speak in great harsh\nvoices.  A hunting horror is HUGE, normally around 40 feet long.\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -1000,
+      "group": 0,
+      "level": 20,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 333
+      },
+      "manaDice": {
+        "count": 10,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 8,
+        "bonus": 5,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": -4,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 100,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3409,
+      "keywords": "oldstyle weeds",
+      "shortDescription": "some cave weeds",
+      "longDescription": "Some weeds are creeping across the floor.\n",
+      "description": "Just some unpleasant looking vine-like growths ...\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Sneak",
+        "Hide"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 4,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3410,
+      "keywords": "oldstyle snapper joe",
+      "shortDescription": "Snapper Joe",
+      "longDescription": "Snapper Joe is standing here leering at you chillingly.\n",
+      "description": "What an ugly fiend! He is about 6'6'' and has mostly greenish skin with\nbright red hair. Half his face is burnt off and he has a perpetual smile.\nHe is called up from his service in hell in order to aid the Undying One.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -750,
+      "group": 0,
+      "level": 20,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 333
+      },
+      "manaDice": {
+        "count": 10,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 8,
+        "bonus": 5,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": -4,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 111,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3411,
+      "keywords": "oldstyle X-ist eater",
+      "shortDescription": "The X-ist flesh eater",
+      "longDescription": "An X-ist flesh eater is sitting here munching on some coffin remains\n",
+      "description": "A large hairy monstrous beast, the only LIVE thing you have seen down here.\nIt stands approximately 8 feet tall and hunches over to fit in this\nsmall room.  It has a pair of tremendous claws that it uses to rip and tear.\nIt has dog-like face except ... different.  Bright glowing eyes and a grimace\nlead you to believe that he knew that you were coming.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -1000,
+      "group": 0,
+      "level": 17,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 258
+      },
+      "manaDice": {
+        "count": 8,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 3,
+        "size": 4,
+        "bonus": 4,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -3,
+        "bash": -3,
+        "slash": -3,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 78,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3412,
+      "keywords": "oldstyle spirit ghost king crotus",
+      "shortDescription": "the spirit of King Crotus",
+      "longDescription": "The spirit of King Crotus is floating lazily above the floor.\n",
+      "description": "Floating above the ground here and looking a bit dead, he whispers\nsoftly into the air:\n\n    The forces of evil have unlocked my spirit as\n    well as one other.  Free me from this misery,\n    anyone that can hear. The peace of the grave\n    calls me but I am blocked from its quiet.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Mage"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 350,
+      "group": 0,
+      "level": 20,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 308
+      },
+      "manaDice": {
+        "count": 20,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 3,
+        "size": 4,
+        "bonus": 4,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": -4,
+        "exotic": 3
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 2,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3413,
+      "keywords": "oldstyle rock slug",
+      "shortDescription": "the rock slug",
+      "longDescription": "A rock slug is slowly creeping along, leaving a slime trail behind it.\n",
+      "description": "It is a large brownish slug.  Got any salt?  Didn't think so ...\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3414,
+      "keywords": "oldstyle etcher",
+      "shortDescription": "The mad etcher",
+      "longDescription": "The mad etcher is sitting here babbling to himself and working on the wall.\n",
+      "description": "Quite insane, the mad etcher has been here for two decades.  His hair is\nwhite; he babbles nonsense to himself; a layer of dust covers his out-of-date\nclothing; and he seems to be working on the same portion of the wall near\nthe base ... oh and he seems quite blind.\n\nHe leers insanely at you and says 'heh heh what can I do for you children?\nPlease don't mind my wife, she is always like that ... hello dear can you\nmake some tea for our company?  Oh good!  Now sit right down will you?\nWould you like hot or cold tea?  Yes the weather is ...'\n\nAnd on he babbles ...\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Mage"
+      ],
+      "affectedBy": [
+        "Blind"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 1000,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 46
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 8
+      },
+      "startPosition": "Sitting",
+      "defaultPosition": "Sitting",
+      "sex": "Male",
+      "gold": 2,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3415,
+      "keywords": "oldstyle wife ghost specter",
+      "shortDescription": "The spectral etcher's wife",
+      "longDescription": "The spectral wife of the etcher is very faintly floating here.\n",
+      "description": "You can barely make her out ... though it almost makes you vomit.\nShe is missing half her head.  The remaining half is smashed in horribly like\nshe took a nasty fall.  Her one damaged eye hangs on its own.  She smiles\ninsanely at you thru a broken jaw and missing teeth.  One hand of hers is\nresting on the shoulder of the etcher ... her husband.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "affectedBy": [
+        "Hide"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 1000,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 6,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 3416,
+      "keywords": "oldstyle body",
+      "shortDescription": "The half-decomposed body",
+      "longDescription": "A half-decomposed body is lying in the corner here.\n",
+      "description": "YUK! It's ugly, disgusting ... it smells ... it also moves a bit!\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -350,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 4,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 3400,
+      "keywords": "candlestick",
+      "shortDescription": "a candlestick",
+      "longDescription": "A pewter candlestick is standing here.",
+      "material": "oldstyle",
+      "itemType": "Light",
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 5,
+      "costCopper": 50,
+      "condition": 100,
+      "light": {
+        "duration": 24
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "candlestick",
+          "description": "It is a rather old-looking three-armed candlestick made from pewter.  Its\ncandles are a yellowish white colour.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3402,
+      "keywords": "tickler",
+      "shortDescription": "a nightgaunt's tickler",
+      "longDescription": "A nightgaunt's tickler has been left here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "NoDrop"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 7,
+      "weightPounds": 8,
+      "costCopper": 540,
+      "condition": 100,
+      "weapon": {
+        "class": "Whip",
+        "diceCount": 2,
+        "diceSize": 4,
+        "attackType": "Slime"
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 2
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "tickler",
+          "description": "A horrid black mass of gooey tentacles obviously ripped from the corpse\nof a nightgaunt ... disgusting.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3403,
+      "keywords": "plasma webbing",
+      "shortDescription": "disgusting pinkish plasma webbing",
+      "longDescription": "A pile of pink material is lying here",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "AntiGood",
+        "AntiNeutral"
+      ],
+      "wearFlags": [
+        "Take",
+        "Body"
+      ],
+      "level": 10,
+      "weightPounds": 10,
+      "costCopper": 1800,
+      "condition": 100,
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 4
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "plasma webbing",
+          "description": "Yuck, mossy and wet.  It looks like some sort of webbing.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3410,
+      "keywords": "rod key",
+      "shortDescription": "a queerly shaped rod",
+      "longDescription": "A queerly shaped rod is lying here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 5,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "rod key",
+          "description": "This rod looks sort of octagonal, and sort of like a key and crowbar.  You\nrecognize that it will probably fit the lock at the entrance of the tombs.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3411,
+      "keywords": "large black dirty key",
+      "shortDescription": "a large black dirty key",
+      "longDescription": "A large black dirty key is lying here",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 3,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "large black dirty key",
+          "description": "One of those traditional old lock type keys ... except huge, black and\nfilthy ... hmm ... like it has been buried for some time ...\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3412,
+      "keywords": "head jubal mummy",
+      "shortDescription": "the mummified head of Jubal the Benevolent",
+      "longDescription": "The mummified head of Jubal the Benevolent is lolling back and forth.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "extraFlags": [
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 20,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 3,
+        "flags": [
+          "Closeable",
+          "Closed"
+        ],
+        "keyVnum": -1
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "head jubal mummy",
+          "description": "ACK! It's half eaten away ... yet it is whole ... in fact I think it can be\nopened and closed ... is there something in its teeth!?!?!? ACK you do it!\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3413,
+      "keywords": "ring black marble",
+      "shortDescription": "a black marble ring",
+      "longDescription": "A black marble ring is lying here on the ground.",
+      "material": "oldstyle",
+      "itemType": "Treasure",
+      "extraFlags": [
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Finger"
+      ],
+      "level": 3,
+      "weightPounds": 2,
+      "costCopper": 26,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Saves",
+          "modifier": 1
+        },
+        {
+          "location": "Move",
+          "modifier": 10
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "black marble ring",
+          "description": "It is pitch black and has beautiful swirls characteristic of marble all\nthrough it.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3414,
+      "keywords": "rapier thin",
+      "shortDescription": "a whisper thin rapier",
+      "longDescription": "A rapier is lying here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Hum"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 16,
+      "weightPounds": 4,
+      "costCopper": 3500,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 4,
+        "diceSize": 2,
+        "attackType": "Pierce"
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        },
+        {
+          "location": "Dexterity",
+          "modifier": 2
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "thin rapier",
+          "description": "It seems so thin that it would be useless but at the same time it looks deadly.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3415,
+      "keywords": "sarcophagus coffin",
+      "shortDescription": "a stone sarcophagus",
+      "longDescription": "A stone sarcophagus is sitting here.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 400,
+        "flags": [
+          "Closeable",
+          "PickProof",
+          "Closed",
+          "Locked"
+        ],
+        "keyVnum": 3416
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sarcophagus coffin",
+          "description": "A well crafted, if dusty and ancient, home for the afterworld, it seems\nto be able to be opened but needs a key.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3416,
+      "keywords": "iron heavy key",
+      "shortDescription": "a heavy iron key",
+      "longDescription": "A heavy iron key is lying here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 4,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "key iron heavy",
+          "description": "It looks to be a very heavy old iron key.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3417,
+      "keywords": "flask wineflask",
+      "shortDescription": "a wineflask",
+      "longDescription": "A wineflask has been been left here.",
+      "material": "oldstyle",
+      "itemType": "DrinkContainer",
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 400,
+      "condition": 100,
+      "drink": {
+        "capacity": 30,
+        "remaining": 30,
+        "liquid": "RedWine",
+        "poisoned": false
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "wineflask flask",
+          "description": "A nice leather wineflask that has somehow survived the ages in a coffin.\nThe wine should be nicely aged.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3418,
+      "keywords": "coins",
+      "shortDescription": "a mound of coins fit for a dead king",
+      "longDescription": "You see a mound of coins fit for a dead king here",
+      "material": "oldstyle",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 50,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 8,
+        "silver": 400
+      }
+    },
+    {
+      "vnum": 3419,
+      "keywords": "key",
+      "shortDescription": "key to the coffin",
+      "longDescription": "The key to the coffin is lying here",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 3,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "key",
+          "description": "Neat you have the key to the coffin...is is a soft orange color\nand burns in your hand a bit.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3420,
+      "keywords": "rathcor",
+      "shortDescription": "a hidden compartment in the room",
+      "longDescription": "",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "extraFlags": [
+        "Dark"
+      ],
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 10,
+        "flags": [
+          "Closeable",
+          "Closed"
+        ],
+        "keyVnum": 0
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "rathcor",
+          "description": "Ah HA!  A hidden compartment!\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3421,
+      "keywords": "rusty sword curved scimitar",
+      "shortDescription": "a rusty curved scimitar",
+      "longDescription": "A sword has been left lying here",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 3,
+      "weightPounds": 6,
+      "costCopper": 370,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 2,
+        "diceSize": 3,
+        "attackType": "Slash"
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "rusty sword scimitar",
+          "description": "Very rusty and old...it has a wide blade and chunks missing from\nits cutting edge.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3422,
+      "keywords": "piece slime",
+      "shortDescription": "a piece of slime",
+      "longDescription": "You step on a piece of slime...your foot squishes a bit",
+      "material": "oldstyle",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "food": {
+        "hours": 15,
+        "poisoned": false
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "slime piece",
+          "description": "ICK! This is a piece of slug-like brownish green slime...\nBlech!\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3423,
+      "keywords": "smock",
+      "shortDescription": "an artist's smock",
+      "longDescription": "An artist's smock is lying here on the floor.",
+      "material": "oldstyle",
+      "itemType": "Clothing",
+      "wearFlags": [
+        "Take",
+        "Body"
+      ],
+      "level": 0,
+      "weightPounds": 7,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "smock",
+          "description": "It has paint and little shavings of different materials all over it.\nIt is very old an smells of paint, mildew, and rot.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3424,
+      "keywords": "scroll tightly rolled",
+      "shortDescription": "a tightly rolled scroll",
+      "longDescription": "A yellowing tightly rolled scroll is here",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 8,
+      "weightPounds": 5,
+      "costCopper": 1070,
+      "condition": 100,
+      "spells": {
+        "level": 15,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "scroll tightly rolled",
+          "description": "It is tightly wound. The writing on the inside when opened up is very\nunreadable but the scroll has a seal on it with a grey :\n\n    88\n    88\n8888  8888\n    88\n    88\n\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3425,
+      "keywords": "auburn orb",
+      "shortDescription": "an auburn-colored orb",
+      "longDescription": "An orb is here",
+      "material": "oldstyle",
+      "itemType": "Staff",
+      "extraFlags": [
+        "Hum",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 15,
+      "weightPounds": 10,
+      "costCopper": 4700,
+      "condition": 100,
+      "charges": {
+        "level": 10,
+        "total": 2,
+        "remaining": 2,
+        "spell": "charm person"
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "auburn orb",
+          "description": "You gaze into the orb and are almost lost in the swirling mists of color\ninside of this rare and beautiful object.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3426,
+      "keywords": "bar gold",
+      "shortDescription": "a bar of gold",
+      "longDescription": "A bar of gold is lying here",
+      "material": "oldstyle",
+      "itemType": "Treasure",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 3,
+      "costCopper": 1000,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "bar gold",
+          "description": "A nice little brick of gold...very dusty and old... it has some emblem\non it...The emblem is a large 'J'\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3427,
+      "keywords": "cape dark black",
+      "shortDescription": "a dark black cape",
+      "longDescription": "A dark black cape is lying here",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "About"
+      ],
+      "level": 0,
+      "weightPounds": 10,
+      "costCopper": 100,
+      "condition": 100,
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 0
+      },
+      "affects": [
+        {
+          "location": "ArmorClass",
+          "modifier": 10
+        },
+        {
+          "location": "Hit",
+          "modifier": 10
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "dark black cape",
+          "description": "The cape is gently flows and pulls in the light so evenly and perfectly\nthat the cape seems to be simply a void of blackness. It is quite beautiful\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3428,
+      "keywords": "flaming black sword long longsword",
+      "shortDescription": "the pitch-black flaming longsword",
+      "longDescription": "A pitch-black long swor here",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 28,
+      "weightPounds": 20,
+      "costCopper": 2200,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 2,
+        "diceSize": 12,
+        "attackType": "Slash",
+        "specialFlags": [
+          "Flaming",
+          "Vampiric"
+        ]
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "flaming sword long longsword",
+          "description": "This sword is amazing! It almost wields itself! As you test it out, the\nflames seems to roar brighter as you go thru basic swordsman routines.\nit is obviously a great find!\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3429,
+      "keywords": "breast plate dented worn",
+      "shortDescription": "a worn and dented breast plate",
+      "longDescription": "A piece of armour is here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Body"
+      ],
+      "level": 15,
+      "weightPounds": 50,
+      "costCopper": 2100,
+      "condition": 100,
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 0
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "breast dented plate worn",
+          "description": "Though this piece of armour is worn and dented it looks very usable.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3430,
+      "keywords": "key silver",
+      "shortDescription": "a silver key",
+      "longDescription": "You see a silver key here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "key silver",
+          "description": "for the altar...\n"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 3405,
+      "name": "Inside the Chapel",
+      "description": "You are in a small, dark chapel.  The dark brown glass in the tiny windows\ndo not let much light through.  A few rows of worn wooden benches stand here.\n",
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3604,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "The chapel door is made of dark wood.\n"
+        },
+        "down": {
+          "toRoom": 3421,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 3430
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "benches rows",
+          "description": "The benches are not of the comfortable kind.\n"
+        },
+        {
+          "keywords": "glass windows",
+          "description": "The windows must be meant to be dark.  At least they are completely clean.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3408,
+      "name": "Stairwell into Darkness",
+      "description": "You sense even more danger coming from below but are urged onward ...\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 3449,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 3411
+        },
+        "down": {
+          "toRoom": 3450
+        }
+      }
+    },
+    {
+      "vnum": 3409,
+      "name": "The Acolyte's Bedroom",
+      "description": "This is why you were not welcomed at the entrance by the tomb's faithful\nservants ... blood and gore is ankle deep in here.\nOh NO! the door shut behind you!  It's a trap!\nA bloodied corpse of an acolyte is lying here ...\nA bloodied corpse of an acolyte is lying here ...\nA bloodied corpse of an acolyte is lying here ...\n",
+      "roomFlags": [
+        "Dark",
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "extraDescriptions": [
+        {
+          "keywords": "corpse corpses",
+          "description": "Mauled and torn apart ... throats were ripped out and guts spilled on the\nfloor ... you slip and land, planting yourself firmly in the slick wetness\nand splattering yourself with offal.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3410,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3415
+        },
+        "south": {
+          "toRoom": 3411
+        }
+      }
+    },
+    {
+      "vnum": 3411,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3410
+        }
+      }
+    },
+    {
+      "vnum": 3412,
+      "name": "The Grand Hall of Kings",
+      "description": "You are at the west end of the Grand Hall of Kings.  There is a doorway to the\nsouth with something strange written above it.  Also on the floor are dried\nblood stains, but their color seems a little wrong.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3417
+        },
+        "south": {
+          "toRoom": 3413,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "A door to the south\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "door writing",
+          "description": "Above the door is some strange writing!  It is worn with age, but it refers\nto an ancient ruler named 'Shohan'.\n"
+        },
+        {
+          "keywords": "stain stains",
+          "description": "That's odd ... they seem a little GREEN.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3413,
+      "name": "The Shrine of Shohan",
+      "description": "BLOOD EVERYWHERE!\nThe walls are coated with blood, bits of bloody flesh lie at your feet,\nand torn clothing is scattered about.  It wouldn't disturb you in the least\nexcept that it is all FRESH!  What ever used to pass as an altar here,\nlies overturned and smashed.  Doors lead to the south and to the north.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3412,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        },
+        "south": {
+          "toRoom": 3414,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        }
+      }
+    },
+    {
+      "vnum": 3414,
+      "name": "The Tomb of Shohan",
+      "description": "Once beautiful, this place has been turned into a slaughterhouse by the hands\nof evil beings ... even more blood and dead, rotting flesh.  This place looks\nlike the feeding grounds of beasts and monsters.  The overturned sarcophagus\nof the once powerful King Shohan lies here.  A door leads to the north and a\ndoorway has been hewn to the east.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3413,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        },
+        "east": {
+          "toRoom": 3419
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "coffin sarcophagus",
+          "description": "Now destroyed ... there is writing on it: 'All hail the new king; we serve\nthe Roch'tar, the Undying One!  Those who decline his worship shall be\nslaughtered!'\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3415,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3420
+        },
+        "south": {
+          "toRoom": 3416
+        },
+        "west": {
+          "toRoom": 3410
+        }
+      }
+    },
+    {
+      "vnum": 3416,
+      "name": "Entrance to the Lower Chambers",
+      "description": "You can tell that this area wasn't a part of the original construction.\nThe walls have been hewn by a mighty force look as though they were CLAWED.\nThe passage slopes upward here and also continues to the north.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3415
+        },
+        "up": {
+          "toRoom": 3418,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "walls",
+          "description": "Something BIG must have done this job!  There are traces of BLOOD in the\nclaw marks.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3417,
+      "name": "The Grand Hall of Kings",
+      "description": "This is the western wing of the Grand Hall of Kings.  Your only exits are to\nthe east and west in this gloomy hallway.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3422
+        },
+        "west": {
+          "toRoom": 3412
+        }
+      }
+    },
+    {
+      "vnum": 3418,
+      "name": "The Shrine of Cristis",
+      "description": "Different than the rest, this place has not been desecrated.  An altar still\nstands here and the walls show scenes from the life of Cristis the Kind,\na ruler of the outlying regions west of Midgaard.  There is a stone staircase\nleading down.  The Ghost of Cristis the Kind stands here.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 3419
+        },
+        "down": {
+          "toRoom": 3416,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "ghost cristis",
+          "description": "His rest has been disturbed by evil creatures who have invaded his domain\nand grave.  He holds up a parchment for you to read:\n\n     Hello stranger and last hope for Midgaard and this tomb!\n   This is a plea for aid by a man long since dead from this Earth.\n     The forces of evil have taken control of this tomb and the\n   Kings of old need your aid to free us and deliver us to peace\n   once again.  I think that I alone have been able to appear and\n   communicate with the mortal world.\n     Roch'tar, the reincarnate Vampire, now rules these tombs.\n   You must find and defeat him and his minions!\n     May God bless you on your Quest!\n"
+        },
+        {
+          "keywords": "altar",
+          "description": "It stands 2 feet high with the remnants of candle-wax on top.  There is\nan inscription on the side:  'Praise the almighty Cristis the bringer of\ngood and justice to the world.  He who fought the evilest finally is at\npeace.  May the Gods remember him forever ...'\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3419,
+      "name": "The Tomb of Cristis",
+      "description": "Everything here has simply been destroyed.   Exits lead north and west.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3418
+        },
+        "west": {
+          "toRoom": 3414
+        }
+      }
+    },
+    {
+      "vnum": 3420,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3425
+        },
+        "west": {
+          "toRoom": 3415
+        }
+      }
+    },
+    {
+      "vnum": 3421,
+      "name": "Entrance Chamber to the Grand Hall of Kings",
+      "description": "Whoever built this place must have been very rich indeed!  Though you did\nenter through a rather small door this place has enough room to hold several\nscore of people.  The floor has a beautifully woven carpet, and the walls are\ncovered in finely crafted tapestries. You can tell that these things must have\nbeen worth much but they have not lasted well throughout the ages.  Massive\ndoors lead off to the south and a large stone staircase leads up.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 3422,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "Finely polished oak doors stand to the south.\n"
+        },
+        "up": {
+          "toRoom": 3405,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 3410,
+          "description": "You see a large set of stone stairs leading upwards to a small stone door at\nthe top. \n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "letters graffiti",
+          "description": "'Beware here all of man, because past here lies only death.'\n\n    Insho'rkthon brsskra-lehsn Roch'tar\n\nBeneath, there are two criss-crossing scratchmarks in an X formation that\nlook like someone (or something) raked their claws across the wood.\n"
+        },
+        {
+          "keywords": "oak",
+          "description": "They're HUGE!  They are at least 12 feet tall and about 10 feet wide.\nIf not for one thing they would be perfectly preserved.  There appears\nto be some letters crudely scratched into the wood.\n"
+        },
+        {
+          "keywords": "staircase stairs",
+          "description": "Though quite cracked they do look very stable.\n"
+        },
+        {
+          "keywords": "tapestry tapestries",
+          "description": "The tapestries were woven into beautiful and exciting scenes of battles\nlong ago.  One on the left your shows the historic battle between Jubal the\nBenevolent and Hroth Kragen's forces that eventually Jubal's army won (of\ncourse).\n"
+        },
+        {
+          "keywords": "stone door trapdoor",
+          "description": "It's rather small and looks quite heavy but maybe with some kind of leverage\nyou could move it.  It has a queerly shaped hole that looks big enough\nfor an equally queerly shaped pole to fit inside.  If only you had it!\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3422,
+      "name": "The Grand Hall of Kings",
+      "description": "A long hallway stretches east and west.  On the southern side of the hall\nthere are many doors, each with the name of a king who has died and is\nentombed here.  The hallway is beautiful yet chilling.  Even though the area\nhas been kept well by acolytes, there remains a stench of the undead.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3421,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        },
+        "east": {
+          "toRoom": 3427
+        },
+        "south": {
+          "toRoom": 3423,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "The door has written above it: 'May all the lands thank Crotus the Victor.\nWithout his guidance this kingdom would not have stood.'\n"
+        },
+        "west": {
+          "toRoom": 3417
+        }
+      }
+    },
+    {
+      "vnum": 3423,
+      "name": "The Shrine of Crotus",
+      "description": "Mostly rubble, this place used to be the shrine of the famous king Crotus,\nwho saved the northern regions from being overrun by the goblin hordes of\n100 years ago.  If not for him, Midgaard of course would have eventually been\nconquered as well.  Though Crotus was a goodly king, it was rumored that he\nturned to the dark ways in his dying years ... and died an evil man.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3422,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        },
+        "south": {
+          "toRoom": 3424
+        }
+      }
+    },
+    {
+      "vnum": 3424,
+      "name": "The Tomb of Crotus",
+      "description": "A sarcophagus lies in the middle of the room and seems undisturbed.\nA hole has been knocked into the east wall.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3423
+        },
+        "east": {
+          "toRoom": 3429
+        }
+      }
+    },
+    {
+      "vnum": 3425,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 3426
+        },
+        "west": {
+          "toRoom": 3420
+        }
+      }
+    },
+    {
+      "vnum": 3426,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3425
+        },
+        "east": {
+          "toRoom": 3430
+        }
+      }
+    },
+    {
+      "vnum": 3427,
+      "name": "The Grand Hall of Kings",
+      "description": "You are in the western part of the Grand Hall of Kings.  To the south is a\ndoor and to the east and west the hall continues.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3432
+        },
+        "south": {
+          "toRoom": 3428,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        },
+        "west": {
+          "toRoom": 3422
+        }
+      }
+    },
+    {
+      "vnum": 3428,
+      "name": "The Shrine of Mitnar",
+      "description": "Mitnar was a gruesome beast of a man ... he loved battle ... and nothing\nelse.  Warriors did love Mitnar, and all fighting men honored him.\nOn the wall is depicted battle after battle after battle.\nA small opening has been shaped carefully to the east.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3427,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        },
+        "east": {
+          "toRoom": 3433
+        },
+        "south": {
+          "toRoom": 3429
+        }
+      }
+    },
+    {
+      "vnum": 3429,
+      "name": "The Tomb of Mitnar",
+      "description": "The wall paintings show men and women warriors alike bowing down to Mitnar,\nprisoners of war being put to the sword by Mitnar, and great heaps of gold\nand weapons under the feet of Mitnar.  Where his coffin was, there is now\nonly a rectangular blemish on the floor of the dusty room.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3428
+        },
+        "west": {
+          "toRoom": 3424
+        }
+      }
+    },
+    {
+      "vnum": 3430,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3435
+        },
+        "south": {
+          "toRoom": 3431
+        },
+        "west": {
+          "toRoom": 3426
+        }
+      }
+    },
+    {
+      "vnum": 3431,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3430
+        },
+        "east": {
+          "toRoom": 3436
+        }
+      }
+    },
+    {
+      "vnum": 3432,
+      "name": "The Grand Hall of Kings",
+      "description": "You are still walking through the gloomy hallway.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3437
+        },
+        "west": {
+          "toRoom": 3427
+        }
+      }
+    },
+    {
+      "vnum": 3433,
+      "name": "The Shrine of Frath",
+      "description": "Little chunks of dried meat are spattered throughout this room.  The walls\nare covered in gore.  Almost as if they were painted ... ICK!  You can\nalmost make out the design!\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3438
+        },
+        "west": {
+          "toRoom": 3428
+        }
+      }
+    },
+    {
+      "vnum": 3434,
+      "name": "The Tomb of Frath",
+      "description": "UGH!  The sarcophagus is opened up and the mummified body lies out in the\nopen, ripped to pieces.  Gnawed pieces of flesh and bone are strewn here.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "down": {
+          "toRoom": 3439
+        }
+      }
+    },
+    {
+      "vnum": 3435,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3440
+        },
+        "south": {
+          "toRoom": 3436
+        },
+        "west": {
+          "toRoom": 3430
+        }
+      }
+    },
+    {
+      "vnum": 3436,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3435
+        },
+        "east": {
+          "toRoom": 3441
+        },
+        "west": {
+          "toRoom": 3431
+        }
+      }
+    },
+    {
+      "vnum": 3437,
+      "name": "The Grand Hall of Kings",
+      "description": "You are at the western end of the Grand Hall of Kings.  There is a\ndoor leading north and the hallway continues west.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3409,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ]
+        },
+        "west": {
+          "toRoom": 3432
+        }
+      }
+    },
+    {
+      "vnum": 3438,
+      "name": "The Shrine of Jubal",
+      "description": "This was once beautiful.  Now the huge tapestries have been torn down and the\ncarpeting pulled up ... the paintings on the ceiling are unreadable and the\naltar is crumbled.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 3439
+        },
+        "west": {
+          "toRoom": 3433
+        }
+      }
+    },
+    {
+      "vnum": 3439,
+      "name": "The Tomb of Jubal",
+      "description": "The smell coming off of the opened sarcophagus is nauseating.  The floor is\nslightly crumpled and walls are raked ... but the worst part is the mummy ...\nJubal the Benevolent is missing his head!\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3438
+        },
+        "up": {
+          "toRoom": 3434
+        }
+      }
+    },
+    {
+      "vnum": 3440,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3445
+        },
+        "south": {
+          "toRoom": 3441
+        },
+        "west": {
+          "toRoom": 3435
+        }
+      }
+    },
+    {
+      "vnum": 3441,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3440
+        },
+        "east": {
+          "toRoom": 3446
+        },
+        "west": {
+          "toRoom": 3436
+        }
+      }
+    },
+    {
+      "vnum": 3442,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3447
+        },
+        "south": {
+          "toRoom": 3443
+        }
+      }
+    },
+    {
+      "vnum": 3443,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3442
+        },
+        "south": {
+          "toRoom": 3444
+        }
+      }
+    },
+    {
+      "vnum": 3444,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3443
+        },
+        "east": {
+          "toRoom": 3449
+        }
+      }
+    },
+    {
+      "vnum": 3445,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 3446
+        },
+        "west": {
+          "toRoom": 3440
+        }
+      }
+    },
+    {
+      "vnum": 3446,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3445
+        },
+        "south": {
+          "toRoom": 3447
+        },
+        "west": {
+          "toRoom": 3441
+        }
+      }
+    },
+    {
+      "vnum": 3447,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3446
+        },
+        "south": {
+          "toRoom": 3448
+        },
+        "west": {
+          "toRoom": 3442
+        }
+      }
+    },
+    {
+      "vnum": 3448,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "This room has been totally hollowed out and smoothed, and a pit has been\ndrilled in the center of the floor.  There are extensive gruesome paintings\nof beasts and monsters terrorizing the countryside; vampires sucking the\nblood of beasts and humans alike.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3447
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "painting paintings mural",
+          "description": "There is a tiny painting of a vault in this mural ... and it seems to be a\nreflected picture of the vault ... the word in tiny print is 'rathcor'.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3449,
+      "name": "The Lower Chambers and Tombs of the Undead",
+      "description": "The stench of death is heavy in these caverns.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3408,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 3411
+        },
+        "west": {
+          "toRoom": 3444
+        }
+      }
+    },
+    {
+      "vnum": 3450,
+      "name": "Entrance to the Forbidden Catacombs",
+      "description": "You have entered the forbidden catacombs.  This cave system must have been\nbuilt long ago.  The air is dank and smells of something dead ...  or maybe\nundead.  Enter here at your own risk ... something evil abides.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3451,
+          "description": "Too dark to tell.\n"
+        },
+        "east": {
+          "toRoom": 3452,
+          "description": "Too dark to tell.\n"
+        },
+        "south": {
+          "toRoom": 3453,
+          "description": "Too dark to tell.\n"
+        },
+        "west": {
+          "toRoom": 3454,
+          "description": "Too dark to tell.\n"
+        },
+        "up": {
+          "toRoom": 3408
+        }
+      }
+    },
+    {
+      "vnum": 3451,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3455,
+          "description": "Too dark to tell.\n"
+        },
+        "south": {
+          "toRoom": 3450,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3452,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3461,
+          "description": "Too dark to tell.\n"
+        },
+        "west": {
+          "toRoom": 3450,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3453,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3450,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3454,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3450,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3455,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 3456,
+          "description": "Too dark to tell.\n"
+        },
+        "west": {
+          "toRoom": 3451,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3456,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3455,
+          "description": "Too dark to tell.\n"
+        },
+        "east": {
+          "toRoom": 3457,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3457,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 3458,
+          "description": "Too dark to tell.\n"
+        },
+        "west": {
+          "toRoom": 3456,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3458,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3457
+        },
+        "south": {
+          "toRoom": 3472,
+          "description": "You see unfathomable blackness to the south ...\n"
+        },
+        "west": {
+          "toRoom": 3459,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3459,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3458,
+          "description": "Too dark to tell.\n"
+        },
+        "west": {
+          "toRoom": 3460,
+          "description": "You see something's den.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3460,
+      "name": "Den of the Vampire",
+      "description": "Your mind whirls in the hideous madness of this place.  The stench\nis horrendous and dead bodies, sucked of life, lay all over.  One coffin\nlies in the center of the room ... waiting for YOU!\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3459,
+          "description": "Too dark to tell.\n"
+        },
+        "down": {
+          "toRoom": 3475,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 3419,
+          "description": "A jet black coffin ... who knows what lurks beneath.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3461,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3462,
+          "description": "Too dark to tell.\n"
+        },
+        "south": {
+          "toRoom": 3452,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3462,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 3463,
+          "description": "Too dark to tell.\n"
+        },
+        "west": {
+          "toRoom": 3461,
+          "description": "Too dark too tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3463,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3462,
+          "description": "Too dark to tell.\n"
+        },
+        "east": {
+          "toRoom": 3464,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3464,
+      "name": "The Catacombs",
+      "description": "Stone walls, musty air ... the earth seems to moan softly.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors",
+        "NoRecall"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 3470,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "There is a secret door here."
+        },
+        "south": {
+          "toRoom": 3465,
+          "description": "Too dark to tell.\n"
+        },
+        "west": {
+          "toRoom": 3463,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3465,
+      "name": "The Gilded Hallway",
+      "description": "Wow!  Although this hallway is quite filthy and dusty, it is noticeably\ndifferent than the rest of the catacombs ... but you don't feel safe yet.\nThe walls faintly show ancient detailed etchings in gold and silver of\nancient rituals ... not all of which seem pleasant.  The hallway continues\nnorth into the catacombs and further south as long as you can see.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3464,
+          "description": "The glow of your light reflects off the walls and you see the catacombs.\n"
+        },
+        "south": {
+          "toRoom": 3466,
+          "description": "The glow of your light reflects off the walls ... the gilded hallway.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "etchings",
+          "description": "Beautiful yet disturbing, they urge you to move onward.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3466,
+      "name": "The Gilded Hallway",
+      "description": "Ancient etchings and writing in intricate gold and silver designs fill these\nwalls.  You are tempted to linger and examine them closely.  Your light source\nflickers off the walls showing you exits north and south.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3465,
+          "description": "Your light reveals more of the hallway.\n"
+        },
+        "south": {
+          "toRoom": 3467,
+          "description": "Your light reveals more of the hallway.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "etchings",
+          "description": "Beautiful yet disturbing, they urge you to move onward.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3467,
+      "name": "The Gilded Hallway",
+      "description": "Ancient etchings and writing in intricate gold and silver designs fill these\nwalls.  You are tempted to linger and examine them closely.  Your light source\nflickers off the walls showing you exits north and south.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3466,
+          "description": "Your light reveals more of the hallway.\n"
+        },
+        "south": {
+          "toRoom": 3468,
+          "description": "Your light reveals more of the hallway.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "etchings",
+          "description": "Beautiful yet disturbing, they urge you to move onward.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3468,
+      "name": "The Gilded Hallway",
+      "description": "Ancient etchings and writing in intricate gold and silver designs fill these\nwalls.  You are tempted to linger and examine them closely.  Your light source\nflickers off the walls showing you exits north and south.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3467,
+          "description": "Your light reveals more of the hallway.\n"
+        },
+        "south": {
+          "toRoom": 3469,
+          "description": "Your light reveals more of the hallway.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "etchings",
+          "description": "Beautiful yet disturbing, they urge you to move onward.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3469,
+      "name": "The Gilded Hallway",
+      "description": "Ancient etchings and writing in intricate gold and silver designs fill these\nwalls.  You are tempted to linger and examine them closely.  Your light source\nflickers off the walls showing you exits north.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3468,
+          "description": "Your light reveals more of the hallway.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "etchings",
+          "description": "Beautiful yet disturbing, they urge you to move onward.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3470,
+      "name": "A Secret Passageway",
+      "description": "A secret passage!  You wonder where it may lead!\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 3471,
+          "description": "Too dark to tell.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "east secret door",
+          "description": "The door closed on you so softly that you didn't even notice!\n"
+        }
+      ]
+    },
+    {
+      "vnum": 3471,
+      "name": "A Secret Passageway",
+      "description": "A secret passage!  You wonder where it may lead!\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 3470,
+          "description": "Too dark to tell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 3472,
+      "name": "The Short Way to Hell ...",
+      "description": "You fall ...\n            hmm .... it's getting really HOT!\nYou fall ...\n                        you fall ...\n     Slowly you are cooking as you fall further ... your skin is burning and\nyour hair evaporates ...\n\n                                           you fall ...\n\n                 and fall ...\n\n                                     and STOP...!!\n\nWelcome to HELL!\n\nBut even in Hell we give you another chance.\n\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 10401,
+          "description": "The fires of hell grow hotter to the north...\n"
+        }
+      }
+    },
+    {
+      "vnum": 3475,
+      "name": "Inside the coffin",
+      "description": "You are inside a coffin.  It seems rather cramped in here.  You can climb\nup out of the coffin, or you can wait for here the real occupant to join you.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 3460,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 3419
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Door",
+      "roomVnum": 3405,
+      "direction": "North",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3405,
+      "direction": "Down",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3408,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3412,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3413,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3413,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3414,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3416,
+      "direction": "Up",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3418,
+      "direction": "Down",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3421,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3421,
+      "direction": "Up",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3422,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3422,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3423,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3427,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3428,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3437,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3449,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3460,
+      "direction": "Down",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3464,
+      "direction": "East",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 3475,
+      "direction": "Up",
+      "state": "Locked"
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3405,
+      "roomVnum": 3405,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 3430,
+      "maxInWorld": 99
+    },
+    {
+      "type": "Object",
+      "objectVnum": 3400,
+      "roomVnum": 3405,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3401,
+      "roomVnum": 3409,
+      "maxInWorld": 7,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3401,
+      "roomVnum": 3409,
+      "maxInWorld": 7,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3401,
+      "roomVnum": 3409,
+      "maxInWorld": 7,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3402,
+      "roomVnum": 3409,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3400,
+      "roomVnum": 3410,
+      "maxInWorld": 8,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3421,
+      "wearLocation": "Wield",
+      "maxInWorld": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3403,
+      "roomVnum": 3411,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3425,
+      "wearLocation": "Hold",
+      "maxInWorld": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3416,
+      "roomVnum": 3411,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3401,
+      "roomVnum": 3414,
+      "maxInWorld": 7,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3401,
+      "roomVnum": 3414,
+      "maxInWorld": 7,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3401,
+      "roomVnum": 3414,
+      "maxInWorld": 7,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3401,
+      "roomVnum": 3414,
+      "maxInWorld": 7,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3413,
+      "roomVnum": 3417,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 3422,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3413,
+      "roomVnum": 3418,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 3422,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3400,
+      "roomVnum": 3419,
+      "maxInWorld": 8,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3421,
+      "wearLocation": "Wield",
+      "maxInWorld": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3412,
+      "roomVnum": 3424,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3416,
+      "wearLocation": "Hold",
+      "maxInWorld": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 3415,
+      "roomVnum": 3424,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 3417,
+      "containerVnum": 3415,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 3418,
+      "containerVnum": 3415,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3409,
+      "roomVnum": 3426,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3409,
+      "roomVnum": 3426,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3416,
+      "roomVnum": 3426,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3400,
+      "roomVnum": 3430,
+      "maxInWorld": 8,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3421,
+      "wearLocation": "Wield",
+      "maxInWorld": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3413,
+      "roomVnum": 3432,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 3422,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3411,
+      "roomVnum": 3434,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3414,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Give",
+      "objectVnum": 3412,
+      "maxInWorld": 2
+    },
+    {
+      "type": "Put",
+      "objectVnum": 3413,
+      "containerVnum": 3412,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3402,
+      "roomVnum": 3437,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3400,
+      "roomVnum": 3441,
+      "maxInWorld": 8,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3421,
+      "wearLocation": "Wield",
+      "maxInWorld": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3413,
+      "roomVnum": 3441,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 3422,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3416,
+      "roomVnum": 3442,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3409,
+      "roomVnum": 3444,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3409,
+      "roomVnum": 3444,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3402,
+      "roomVnum": 3447,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3416,
+      "roomVnum": 3448,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 3420,
+      "roomVnum": 3448,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 3410,
+      "containerVnum": 3420,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3410,
+      "roomVnum": 3449,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3414,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3429,
+      "wearLocation": "Body",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3411,
+      "wearLocation": "Hold",
+      "maxInWorld": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3413,
+      "roomVnum": 3450,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 3422,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3407,
+      "roomVnum": 3452,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3402,
+      "wearLocation": "Wield",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3407,
+      "roomVnum": 3453,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3402,
+      "wearLocation": "Wield",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3402,
+      "roomVnum": 3454,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3406,
+      "roomVnum": 3455,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3403,
+      "wearLocation": "Body",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3407,
+      "roomVnum": 3457,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3402,
+      "wearLocation": "Wield",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3404,
+      "roomVnum": 3460,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3428,
+      "wearLocation": "Wield",
+      "maxInWorld": 3
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3427,
+      "wearLocation": "About",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3419,
+      "wearLocation": "Hold",
+      "maxInWorld": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 3424,
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3402,
+      "roomVnum": 3462,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3406,
+      "roomVnum": 3463,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3403,
+      "wearLocation": "Body",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3407,
+      "roomVnum": 3465,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3402,
+      "wearLocation": "Wield",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3407,
+      "roomVnum": 3465,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3402,
+      "wearLocation": "Wield",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3406,
+      "roomVnum": 3466,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3403,
+      "wearLocation": "Body",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3414,
+      "roomVnum": 3468,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3423,
+      "wearLocation": "Body",
+      "maxInWorld": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3415,
+      "roomVnum": 3468,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 3408,
+      "roomVnum": 3471,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3425,
+      "wearLocation": "Hold",
+      "maxInWorld": 3
+    },
+    {
+      "type": "Give",
+      "objectVnum": 3426,
+      "maxInWorld": 10
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 3400,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 3401,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 3402,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 3403,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 3404,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 3405,
+      "procedure": "CastCleric"
+    },
+    {
+      "mobileVnum": 3407,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 3408,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 3410,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 3411,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 3412,
+      "procedure": "CastMage"
+    },
+    {
+      "mobileVnum": 3414,
+      "procedure": "CastMage"
+    },
+    {
+      "mobileVnum": 3415,
+      "procedure": "CastUndead"
+    },
+    {
+      "mobileVnum": 3416,
+      "procedure": "CastUndead"
+    }
+  ]
+}

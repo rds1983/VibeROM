@@ -1,0 +1,1294 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "mobfact.are",
+  "name": "Mob Factory",
+  "credits": "{ 5 15} PinkF   Mob Factory",
+  "vnumRange": {
+    "low": 9400,
+    "high": 9499
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 9401,
+      "keywords": "oldstyle fido mutant dog",
+      "shortDescription": "The mutant beastly fido",
+      "longDescription": "The mutant beastly fido is here, his eyes glowing green!\n",
+      "description": "You see a mutant beastly fido, glaring at you with green eyes!  You wonder if\nthis factory meets ASPCA guidlines....\n",
+      "race": "Fido",
+      "actFlags": [
+        "Aggressive",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "vulnerabilities": [
+        "Magic"
+      ],
+      "form": [
+        "Edible",
+        "Poison",
+        "Animal",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Feet",
+        "Ear",
+        "Eye",
+        "Tail",
+        "Fangs"
+      ],
+      "alignment": -700,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9402,
+      "keywords": "oldstyle foreman floyd",
+      "shortDescription": "Foreman Floyd",
+      "longDescription": "Foreman Floyd is here, making plans for the factory's future.\n",
+      "description": "You see Foreman Floyd of the Mob factory -- a sterling example of what comes\nof dedicated Mudding!  Rewarded for his years of dedication as a monster\nslayer, Floyd now creates the beasts for other adventurers to fight.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden",
+        "Sanctuary"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 2,
+      "group": 0,
+      "level": 12,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 150
+      },
+      "manaDice": {
+        "count": 6,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 0,
+        "bash": 0,
+        "slash": 0,
+        "exotic": 8
+      },
+      "startPosition": "Sitting",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 50,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9403,
+      "keywords": "oldstyle cityguard guard head",
+      "shortDescription": "The Cityguard head",
+      "longDescription": "The Cityguard head floats around aimlessly.\n",
+      "description": "You see a Cityguard head floating around without a care in the world.\nObviously, this one got past quality control!  Careful, those teeth look\nsharp...\n",
+      "race": "Unique",
+      "actFlags": [
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Flying"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Brains",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 9,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 110
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 2,
+        "bash": 2,
+        "slash": 2,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9404,
+      "keywords": "oldstyle revolving drunk",
+      "shortDescription": "The revolving drunk",
+      "longDescription": "The Revolving drunk is here, spinning in place.\n",
+      "description": "You see and smell a drunk who looks much like other drunks...but he is spinning\nin place!  Someone should tell him that he is a REVOLTING drunk.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "StayArea",
+        "Wimpy"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 1,
+      "group": 0,
+      "level": 2,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 21
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 2,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9405,
+      "keywords": "oldstyle toxic slime",
+      "shortDescription": "The toxic slime",
+      "longDescription": "A pool of toxic slime lies on  the floor.\n",
+      "description": "Yick.  Looks like someone had digestion problems!  Either that, or the \nhydraulic fluid is leaking again.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 4,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 46
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 9
+      },
+      "startPosition": "Sitting",
+      "defaultPosition": "Sitting",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9406,
+      "keywords": "oldstyle worker",
+      "shortDescription": "The factory worker",
+      "longDescription": "A Mob Factory worker is standing here, looking bored.\n",
+      "description": "The worker wears a bright orange pair of overalls, with the words \"Mob\nFactory\" written in a bright purple starburst.  Fashion plate, he's not.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 2,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9407,
+      "keywords": "oldstyle worker",
+      "shortDescription": "The factory worker",
+      "longDescription": "A Mob Factory worker is here, asleep in a chair.\n",
+      "description": "If Floyd walks in, you can bet there'll be trouble.  Guess she shouldn't have\nworked the late shift!\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Wimpy"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 150,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Sleeping",
+      "defaultPosition": "Sitting",
+      "sex": "Female",
+      "gold": 3,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 9400,
+      "name": "Entrance to the Mob Factory",
+      "description": "You find that you have entered a strange factory. This factory doesn't\nmake cars or computers or something - it makes mobs! The sound of\nmachinery can be heard in the background; the grinding gears drive you\ncrazy! To the north you see the storage area, to the south the\nforeman's office, to the east the entrance hallway, and to the west the\nfamiliar paving of wall road.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9401
+        },
+        "east": {
+          "toRoom": 9407
+        },
+        "south": {
+          "toRoom": 9403
+        },
+        "west": {
+          "toRoom": 3047
+        }
+      }
+    },
+    {
+      "vnum": 9401,
+      "name": "Mob Factory Storage Area",
+      "description": "This is where the raw materials from which mobs are manufactured are\nstored. You see sacks of sawdust, cans of pink paint, a large box\ncontaining wigs and a bottle mysteriously labelled \"solution x\". Exits\nare more of storage to the east and north, and entrance to the mob\nfactory to the south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9402
+        },
+        "east": {
+          "toRoom": 9406
+        },
+        "south": {
+          "toRoom": 9400
+        }
+      }
+    },
+    {
+      "vnum": 9402,
+      "name": "Mob Factory Storage Area",
+      "description": "This is where the raw materials from which mobs are manufactured are\nstored. You see sacks of sawdust, cans of pink paint, a large box\ncontaining wigs and a bottle mysteriously labelled \"solution X\". Exits\nare more of storage to the east and south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9405
+        },
+        "south": {
+          "toRoom": 9401
+        }
+      }
+    },
+    {
+      "vnum": 9403,
+      "name": "Foreman's Office",
+      "description": "This is the office of the mob factory foreman. The room is sparsely\nfurnished with a metal desk, a couple of chairs, a shelf with helmets\nof various sizes and a Sports Illustrated Swimsuit calendar on the west\nwall. Exits lead north to the mob factory entrance and south to the\nforeman's bathroom.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9400
+        },
+        "south": {
+          "toRoom": 9404
+        }
+      }
+    },
+    {
+      "vnum": 9404,
+      "name": "Foreman's Bathroom",
+      "description": "This is the place where the foreman makes frequent visits. The smell\nhere is very strong and reminds you of bovine excrement! There is a\nshower to the back, and a urinal to the left. On the floor you can\nsee stains of a very suspicious nature. The only exit leads north to\nthe foreman's office.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9403
+        }
+      }
+    },
+    {
+      "vnum": 9405,
+      "name": "Mob Factory Storage Area",
+      "description": "This is where the raw materials from which mobs are manufactured are\nstored. You see sacks of sawdust, cans of pink paint, a large box\ncontaining wigs and a bottle mysteriously labelled \"solution X\". Exits\nare more of storage to the west and south, and an inspection room to\nthe east.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9410
+        },
+        "south": {
+          "toRoom": 9406
+        },
+        "west": {
+          "toRoom": 9402
+        }
+      }
+    },
+    {
+      "vnum": 9406,
+      "name": "Mob Factory Storage Area",
+      "description": "This is where the raw materials from which mobs are manufactured are\nstored. You see sacks of sawdust, cans of pink paint, a large box\ncontaining wigs and a bottle mysteriously labelled \"solution X\". Exits\nare more of storage to the west and north, an inspection room to the\neast and the entrance hallway to the south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9405
+        },
+        "east": {
+          "toRoom": 9411
+        },
+        "south": {
+          "toRoom": 9407
+        },
+        "west": {
+          "toRoom": 9401
+        }
+      }
+    },
+    {
+      "vnum": 9407,
+      "name": "Entrance Hallway to Mob Factory",
+      "description": "You are standing in the entrance hallway of the mob factory. The sound\nof machinery gets louder now, and you can hear people shouting in the\ndistance. Every once in a while you get creepy feeling that a pair of\neyes is observing you...... Exits are north to the storage area, east\nto the entrance hallway, south to the cafeteria and west to the mob\nfactory entrance.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9406
+        },
+        "east": {
+          "toRoom": 9412
+        },
+        "south": {
+          "toRoom": 9408
+        },
+        "west": {
+          "toRoom": 9400
+        }
+      }
+    },
+    {
+      "vnum": 9408,
+      "name": "Mob Factory Cafeteria",
+      "description": "You find that you have entered the cafeteria of the mob factory. There\nare many workers eating at the numerous tables placed around the room.\nThe food doesn't look too appetising, but the factory workers don't\nseem to care. There are many places where food and drink have been\nspilled on the ground. Exits are north to the entrance hallway and\nsouth to the mob factory cafeteria.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9407
+        },
+        "south": {
+          "toRoom": 9409
+        }
+      }
+    },
+    {
+      "vnum": 9409,
+      "name": "Mob Factory Cafeteria",
+      "description": "You find that you have entered the cafeteria of the mob factory. There\nare many workers eating at the numerous tables placed around the room.\nThe food doesn't look too appetising, but the factory workers don't\nseem to care. There are many places where food and drink have been\nspilled on the ground. The only exit is north to the mob factory\ncafeteria.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9408
+        }
+      }
+    },
+    {
+      "vnum": 9410,
+      "name": "Mob Factory Inspection Room",
+      "description": "You have entered the mob factory inspections room. This is where the\nmobs manufactured on the assembly lines are inspected for defects. A\nwhole team of inspectors from the Midgaard Inspections Bureau is\nstanding around, trying to look busy. Exits are south to the mob\nfactory inspection room, east to the primary assembly line and west to\nthe storage area.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9415
+        },
+        "south": {
+          "toRoom": 9411
+        },
+        "west": {
+          "toRoom": 9405
+        }
+      }
+    },
+    {
+      "vnum": 9411,
+      "name": "Mob Factory Inspection Room",
+      "description": "You have entered the mob factory inspections room. This is where the\nmobs manufactured on the assembly lines are inspected for defects. A\nwhole team of inspectors from the Midgaard Inspections Bureau is\nstanding around, trying to look busy. Exits are south to the mob\nfactory inspection room, east to the primary assembly line and west to\nthe storage area.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9410
+        },
+        "east": {
+          "toRoom": 9416
+        },
+        "south": {
+          "toRoom": 9412
+        },
+        "west": {
+          "toRoom": 9406
+        }
+      }
+    },
+    {
+      "vnum": 9412,
+      "name": "Entrance Hallway to Mob Factory",
+      "description": "You are standing in the entrance hallway of the mob factory. The sound\nof machinery gets louder now, and you can hear people shouting in the\ndistance. Every once in a while you get creepy feeling that a pair of\neyes is observing you...... Exits are north to the inspection room,\neast to the primary assembly line, south to the reject room and west\nto the entrance hallway.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9411
+        },
+        "east": {
+          "toRoom": 9417
+        },
+        "south": {
+          "toRoom": 9413
+        },
+        "west": {
+          "toRoom": 9407
+        }
+      }
+    },
+    {
+      "vnum": 9413,
+      "name": "Mob Factory Reject Room",
+      "description": "This is the factory reject room. All the mobs that are manufactured\nincorrectly or have some defect are placed here before subsequent\ndestruction. You shudder at the many deformed and grotesque shapes\npresent before you. Exits are south to the reject room and north to\nthe entrance hallway.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9412
+        },
+        "south": {
+          "toRoom": 9414
+        }
+      }
+    },
+    {
+      "vnum": 9414,
+      "name": "Mob Factory Reject Room",
+      "description": "This is the factory reject room. All the mobs that are manufactured\nincorrectly or have some defect are placed here before subsequent\ndestruction. You shudder at the many deformed and grotesque shapes\npresent before you. The only exit is north to the reject room.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9413
+        }
+      }
+    },
+    {
+      "vnum": 9415,
+      "name": "Primary Assembly Line",
+      "description": "This is the primary assembly line of the mob factory. Here, all the\nmobs seen roaming around the city of Midgaard are manufactured from\nraw materials. There is a big conveyor belt present which makes a lot\nof noise! It seems that the workers are making drunks today. Exits are\neast to the secondary assembly line, south to the primary assembly\nline and west to the inspection room.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9420
+        },
+        "south": {
+          "toRoom": 9416
+        },
+        "west": {
+          "toRoom": 9410
+        }
+      }
+    },
+    {
+      "vnum": 9416,
+      "name": "Primary Assembly Line",
+      "description": "This is the primary assembly line of the mob factory. Here, all the\nmobs seen roaming around the city of Midgaard are manufactured from\nraw materials. There is a big conveyor belt present which makes a lot\nof noise! It seems that the workers are making drunks today. Exits are\neast to the secondary assembly line, north and south to the primary\nassembly line and west to the inspection room.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9415
+        },
+        "east": {
+          "toRoom": 9421
+        },
+        "south": {
+          "toRoom": 9417
+        },
+        "west": {
+          "toRoom": 9411
+        }
+      }
+    },
+    {
+      "vnum": 9417,
+      "name": "Primary Assembly Line",
+      "description": "This is the primary assembly line of the mob factory. Here, all the\nmobs seen roaming around the city of Midgaard are manufactured from\nraw materials. There is a big conveyor belt present which makes a lot\nof noise! It seems that the workers are making drunks today. Exits are\neast to the secondary assembly line, north and south to the primary\nassembly line and west to the entrance hallway.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9416
+        },
+        "east": {
+          "toRoom": 9422
+        },
+        "south": {
+          "toRoom": 9418
+        },
+        "west": {
+          "toRoom": 9412
+        }
+      }
+    },
+    {
+      "vnum": 9418,
+      "name": "Primary Assembly Line",
+      "description": "This is the primary assembly line of the mob factory. Here, all the\nmobs seen roaming around the city of Midgaard are manufactured from\nraw materials. There is a big conveyor belt present which makes a lot\nof noise! It seems that the workers are making drunks today. Exits are\neast to the secondary assembly line, north and south to the primary\nassembly line.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9417
+        },
+        "east": {
+          "toRoom": 9423
+        },
+        "south": {
+          "toRoom": 9419
+        }
+      }
+    },
+    {
+      "vnum": 9419,
+      "name": "Primary Assembly Line",
+      "description": "This is the primary assembly line of the mob factory. Here, all the\nmobs seen roaming around the city of Midgaard are manufactured from\nraw materials. There is a big conveyor belt present which makes a lot\nof noise! It seems that the workers are making drunks today. Exits are\neast to the secondary assembly line and north to the primary\nassembly line.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9418
+        },
+        "east": {
+          "toRoom": 9424
+        }
+      }
+    },
+    {
+      "vnum": 9420,
+      "name": "Secondary Assembly Line",
+      "description": "This is the secondary asembly line of the mob factory. You are\nsurprised to see cityguard heads come floating on the conveyor belt!\nThe very sight is sickening, but the workers seem to be quite\ncheerful about their work. Exits are south to the secondary assembly\nline and west to the primary assembly line.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9421
+        },
+        "west": {
+          "toRoom": 9415
+        }
+      }
+    },
+    {
+      "vnum": 9421,
+      "name": "Secondary Assembly Line",
+      "description": "This is the secondary asembly line of the mob factory. You are\nsurprised to see cityguard heads come floating on the conveyor belt!\nThe very sight is sickening, but the workers seem to be quite\ncheerful about their work. Exits are north and south to the secondary\nassembly line and west to the primary assembly line.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9420
+        },
+        "south": {
+          "toRoom": 9422
+        },
+        "west": {
+          "toRoom": 9416
+        }
+      }
+    },
+    {
+      "vnum": 9422,
+      "name": "Secondary Assembly Line",
+      "description": "This is the secondary asembly line of the mob factory. You are\nsurprised to see cityguard heads come floating on the conveyor belt!\nThe very sight is sickening, but the workers seem to be quite\ncheerful about their work. Exits are north and south to the secondary\nassembly line and west to the primary assembly line.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9421
+        },
+        "south": {
+          "toRoom": 9423
+        },
+        "west": {
+          "toRoom": 9417
+        }
+      }
+    },
+    {
+      "vnum": 9423,
+      "name": "Secondary Assembly Line",
+      "description": "This is the secondary asembly line of the mob factory. You are\nsurprised to see cityguard heads come floating on the conveyor belt!\nThe very sight is sickening, but the workers seem to be quite\ncheerful about their work. Exits are north and south to the secondary\nassembly line and west to the primary assembly line.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9422
+        },
+        "south": {
+          "toRoom": 9424
+        },
+        "west": {
+          "toRoom": 9418
+        }
+      }
+    },
+    {
+      "vnum": 9424,
+      "name": "Secondary Assembly Line",
+      "description": "This is the secondary asembly line of the mob factory. You are\nsurprised to see cityguard heads come floating on the conveyor belt!\nThe very sight is sickening, but the workers seem to be quite\ncheerful about their work. Exits are north to the secondary\nassembly line and west to the primary assembly line.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9423
+        },
+        "west": {
+          "toRoom": 9419
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Mobile",
+      "mobileVnum": 9405,
+      "roomVnum": 9401,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9401,
+      "roomVnum": 9402,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9402,
+      "roomVnum": 9403,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9405,
+      "roomVnum": 9404,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9403,
+      "roomVnum": 9406,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9405,
+      "roomVnum": 9408,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9401,
+      "roomVnum": 9408,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9405,
+      "roomVnum": 9409,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9407,
+      "roomVnum": 9410,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9404,
+      "roomVnum": 9410,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9403,
+      "roomVnum": 9410,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9407,
+      "roomVnum": 9411,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9401,
+      "roomVnum": 9411,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9404,
+      "roomVnum": 9413,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9403,
+      "roomVnum": 9414,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9405,
+      "roomVnum": 9415,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9406,
+      "roomVnum": 9415,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9406,
+      "roomVnum": 9416,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9406,
+      "roomVnum": 9417,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9406,
+      "roomVnum": 9418,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9401,
+      "roomVnum": 9418,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9406,
+      "roomVnum": 9419,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9406,
+      "roomVnum": 9420,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9407,
+      "roomVnum": 9420,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9405,
+      "roomVnum": 9421,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9403,
+      "roomVnum": 9421,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9401,
+      "roomVnum": 9422,
+      "maxInWorld": 5,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9403,
+      "roomVnum": 9422,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9406,
+      "roomVnum": 9423,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9403,
+      "roomVnum": 9423,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9403,
+      "roomVnum": 9424,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9406,
+      "roomVnum": 9424,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9405,
+      "roomVnum": 9424,
+      "maxInWorld": 7,
+      "maxInRoom": 1
+    }
+  ]
+}

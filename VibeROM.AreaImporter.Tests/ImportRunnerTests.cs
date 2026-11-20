@@ -58,6 +58,32 @@ public sealed class ImportRunnerTests
     }
 
     [Fact]
+    public void RepairsExitKeysThatPointAtRooms()
+    {
+        using var temp = new TempDirectory();
+        var source = temp.CreateDirectory("source");
+        var output = temp.CreateDirectory("output");
+        CopyFixture(source, "modern.are");
+        var area = File.ReadAllText(Path.Combine(source, "modern.are"))
+            .Replace("0 -1 1001", "0 7777 1001", StringComparison.Ordinal);
+        File.WriteAllText(Path.Combine(source, "modern.are"), area);
+        WriteAreaList(source, "modern.are");
+
+        var result = AreaImportRunner.Run(new ImportRequest(source, output, null, null, false, false));
+
+        Assert.Equal(0, result.ExitCode);
+        var repair = Assert.Single(result.Report.Repairs);
+        Assert.Contains("7777", repair.Message, StringComparison.Ordinal);
+        var json = JsonNode.Parse(File.ReadAllText(Path.Combine(output, "modern.json")))!.AsObject();
+        var exit = json["rooms"]!.AsArray()[0]!["exits"]!["north"]!.AsObject();
+        Assert.False(exit.ContainsKey("keyVnum"));
+
+        Assert.Equal(
+            0,
+            AreaImportRunner.Run(new ImportRequest(source, output, null, null, false, true)).ExitCode);
+    }
+
+    [Fact]
     public void CheckPassesThenDetectsDriftWithoutWriting()
     {
         using var temp = new TempDirectory();

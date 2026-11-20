@@ -1,0 +1,5877 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "canyon.are",
+  "name": "Elemental Canyon",
+  "credits": "{ 5 30} Raff    Elemental Canyon",
+  "vnumRange": {
+    "low": 9200,
+    "high": 9299
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 9201,
+      "keywords": "mountain climber mountainclimber",
+      "shortDescription": "the mountain climber",
+      "longDescription": "A mountain climber is making the same trek that you are.\n",
+      "description": "He wants to see what's on the other side of the mountain too.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "StayArea",
+        "Warrior"
+      ],
+      "offensiveFlags": [
+        "KickDirt",
+        "Trip"
+      ],
+      "resistances": [
+        "Fire",
+        "Cold",
+        "Lightning",
+        "Drowning"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 500,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 1,
+      "hitDice": {
+        "count": 10,
+        "size": 5,
+        "bonus": 15
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 1,
+        "bonus": 99
+      },
+      "damage": {
+        "count": 1,
+        "size": 4,
+        "bonus": 1,
+        "attackType": "Punch"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 30,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9202,
+      "keywords": "cyclops",
+      "shortDescription": "the cyclops",
+      "longDescription": "A hungry cyclops snarls at you!\n",
+      "description": "He looks like he's about to have dinner (maybe it's you?).\n",
+      "race": "Giant",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "Cleric",
+        "Warrior"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "AreaAttack",
+        "Bash",
+        "Berserk",
+        "Kick",
+        "Crush"
+      ],
+      "immunities": [
+        "Summon",
+        "Charm"
+      ],
+      "resistances": [
+        "Magic",
+        "Weapon",
+        "Fire",
+        "Cold"
+      ],
+      "vulnerabilities": [
+        "Lightning",
+        "Mental"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -700,
+      "group": 0,
+      "level": 22,
+      "hitRoll": 7,
+      "hitDice": {
+        "count": 10,
+        "size": 10,
+        "bonus": 600
+      },
+      "manaDice": {
+        "count": 10,
+        "size": 10,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 6,
+        "size": 4,
+        "bonus": 10,
+        "attackType": "Smash"
+      },
+      "armor": {
+        "pierce": -7,
+        "bash": -7,
+        "slash": -7,
+        "exotic": -2
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 600,
+      "size": "Huge",
+      "material": "none"
+    },
+    {
+      "vnum": 9203,
+      "keywords": "oldstyle tiny elemental",
+      "shortDescription": "a tiny elemental",
+      "longDescription": "A tiny elemental form wanders about.\n",
+      "description": "Rather small for an elemental form, looks like a reject.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 1,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 10
+      },
+      "manaDice": {
+        "count": 0,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 4,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9204,
+      "keywords": "oldstyle elemental guardian",
+      "shortDescription": "the elemental guardian",
+      "longDescription": "The elemental guardian of the canyon.\n",
+      "description": "You can't tell which kind of elemental it is, maybe it's a bit o' all of them?\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 20,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 333
+      },
+      "manaDice": {
+        "count": 10,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 8,
+        "bonus": 5,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": -4,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 500,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9205,
+      "keywords": "oldstyle small elemental",
+      "shortDescription": "a small elemental",
+      "longDescription": "A small, rather non-descript elemental.\n",
+      "description": "A small elemental, a resident of the canyon.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 12,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9206,
+      "keywords": "oldstyle medium elemental",
+      "shortDescription": "a medium elemental",
+      "longDescription": "A medium-sized elemental.\n",
+      "description": "A medium elemental, a resident of the canyon.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 10,
+      "group": 0,
+      "level": 10,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 121
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 4,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 37,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9207,
+      "keywords": "oldstyle large elemental",
+      "shortDescription": "a large elemental",
+      "longDescription": "A large elemental.\n",
+      "description": "A large elemental, a resident of the canyon.",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 20,
+      "group": 0,
+      "level": 15,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 208
+      },
+      "manaDice": {
+        "count": 7,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 6,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -2,
+        "bash": -2,
+        "slash": -2,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 100,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9208,
+      "keywords": "oldstyle earth elemental ruler",
+      "shortDescription": "the Earth Ruler",
+      "longDescription": "The Ruler of the earth elementals.\n",
+      "description": "He looks as old as the earth itself.  He seems to know all the \nsecrets and knowledge of the Earth.  You can't really tell where \nhe begins and the rock wall ends.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "Sanctuary"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 30,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 853
+      },
+      "manaDice": {
+        "count": 30,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 5,
+        "size": 4,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -9,
+        "bash": -9,
+        "slash": -9,
+        "exotic": 4
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 5000,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9209,
+      "keywords": "oldstyle fire elemental ruler",
+      "shortDescription": "the Fire Ruler",
+      "longDescription": "The Ruler of the fire elementals.\n",
+      "description": "As you look at him he seems to blend in with the fire in his throne.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "affectedBy": [
+        "Sanctuary"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 30,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 853
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 6,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -9,
+        "bash": -9,
+        "slash": -9,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 5000,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9210,
+      "keywords": "oldstyle air elemental ruler",
+      "shortDescription": "The Air Ruler",
+      "longDescription": "The Ruler of the air elementals.\n",
+      "description": "As you peer at him you seem to be looking at the sky itself.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "affectedBy": [
+        "Sanctuary"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 30,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 853
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 6,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -9,
+        "bash": -9,
+        "slash": -9,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 5000,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9211,
+      "keywords": "oldstyle lightning elemental ruler",
+      "shortDescription": "The Lightning Ruler",
+      "longDescription": "The Ruler of the lightning elementals.\n",
+      "description": "As you examine him there is a blinding flash of light and a deafening boom!\nYou rub your eyes and look and the ruler is there grinning at you.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "affectedBy": [
+        "Sanctuary"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 30,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 853
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 6,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -9,
+        "bash": -9,
+        "slash": -9,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 5000,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9212,
+      "keywords": "oldstyle water elemental ruler",
+      "shortDescription": "The Water Ruler",
+      "longDescription": "The Ruler of the water elementals.\n",
+      "description": "As you look at him he changes to mist, which swirls around you.  Just\nas you get scared, it reforms in elemental form.\n",
+      "race": "WaterFowl",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "affectedBy": [
+        "Sanctuary",
+        "Flying",
+        "Swim"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Drowning"
+      ],
+      "form": [
+        "Edible",
+        "Animal",
+        "Bird"
+      ],
+      "parts": [
+        "Head",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Feet",
+        "Eye",
+        "Wings"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 30,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 853
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 6,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -9,
+        "bash": -9,
+        "slash": -9,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 5000,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9214,
+      "keywords": "oldstyle water puddle elemental",
+      "shortDescription": "a puddle",
+      "longDescription": "A small puddle of water elemental.\n",
+      "description": "It trickles along the ground and gets your feet wet.\n",
+      "race": "WaterFowl",
+      "actFlags": [
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Flying",
+        "Swim"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Drowning"
+      ],
+      "form": [
+        "Edible",
+        "Animal",
+        "Bird"
+      ],
+      "parts": [
+        "Head",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Feet",
+        "Eye",
+        "Wings"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 11,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9215,
+      "keywords": "oldstyle fire flame elemental",
+      "shortDescription": "a flame",
+      "longDescription": "A small flickering flame elemental.\n",
+      "description": "It smolders along the grass aimlessly.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 4,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 46
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 7,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9216,
+      "keywords": "oldstyle snowflake snow flake ice elemental",
+      "shortDescription": "a small snowflake",
+      "longDescription": "A frozen snowflake water elemental.\n",
+      "description": "It looks a little blue.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 520,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9217,
+      "keywords": "oldstyle pebble rock earth stone elemental",
+      "shortDescription": "a small rock",
+      "longDescription": "A small rock.\n",
+      "description": "It seems to be a small living pebble!\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 4,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9218,
+      "keywords": "oldstyle spark lightning energy elemental",
+      "shortDescription": "a small spark",
+      "longDescription": "A small spark of electricity fizzles here.\n",
+      "description": "Zipping from place to place at the speed of light is tough work.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 4,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 46
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 7,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9219,
+      "keywords": "oldstyle acid blob elemental",
+      "shortDescription": "a small blob of acid",
+      "longDescription": "A small blob of acid aimlessly eats away at the stone.\n",
+      "description": "The magical blob of acid is a cross between lightning and water.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 9,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 110
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 2,
+        "bash": 2,
+        "slash": 2,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 50,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9220,
+      "keywords": "oldstyle lava elemental",
+      "shortDescription": "a lava beast",
+      "longDescription": "A lava beast spews from place to place.\n",
+      "description": "The magical lava beast is a cross between fire and earth.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 15,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9221,
+      "keywords": "oldstyle mud elemental",
+      "shortDescription": "a mud monster",
+      "longDescription": "A mud monster slops around.\n",
+      "description": "The magical mud monster is a cross between water and earth.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 20,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9222,
+      "keywords": "oldstyle mist elemental",
+      "shortDescription": "an elemental mist",
+      "longDescription": "The air is magically misty here.\n",
+      "description": "The magical mist is a cross between water and air.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 15,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9223,
+      "keywords": "oldstyle particle elemental",
+      "shortDescription": "a particle",
+      "longDescription": "A sub-atomic particle is too small for you to see.\n",
+      "description": "The magical manifestation of energy.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9224,
+      "keywords": "oldstyle dust elemental",
+      "shortDescription": "a dust cloud",
+      "longDescription": "A dust cloud blowing by makes you sneeze.\n",
+      "description": "The magical dust cloud is a cross between air and earth.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 5,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9225,
+      "keywords": "oldstyle eddie elemental",
+      "shortDescription": "an eddie",
+      "longDescription": "A small eddie current swirls junk around here.\n",
+      "description": "The magical eddie current is a manifestation of an air elemental.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 2,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 10
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 4,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9226,
+      "keywords": "oldstyle blue flame",
+      "shortDescription": "the Blue Flame",
+      "longDescription": "The Blue Flame burns mysteriously here.\n",
+      "description": "As you look you see what seems to be a face and almost a \nhumanoid figure somehow trapped in the fire.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -100,
+      "group": 0,
+      "level": 26,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 600
+      },
+      "manaDice": {
+        "count": 13,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 3,
+        "size": 7,
+        "bonus": 7,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -7,
+        "bash": -7,
+        "slash": -7,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 1250,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9227,
+      "keywords": "oldstyle magneto",
+      "shortDescription": "the Magneto",
+      "longDescription": "The Magneto considers zapping you for the heck of it.\n",
+      "description": "A humanoid figure seems to be trapped in the field of the Magneto.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -150,
+      "group": 0,
+      "level": 22,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 400
+      },
+      "manaDice": {
+        "count": 11,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 4,
+        "bonus": 6,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -5,
+        "bash": -5,
+        "slash": -5,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 500,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9228,
+      "keywords": "oldstyle ice bandit",
+      "shortDescription": "the Ice Bandit",
+      "longDescription": "The Ice Bandit strikes cold fear in your heart.\n",
+      "description": "A humanoid figure encased in ice but still apparently alive.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -250,
+      "group": 0,
+      "level": 24,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 500
+      },
+      "manaDice": {
+        "count": 12,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 10,
+        "bonus": 6,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -6,
+        "bash": -6,
+        "slash": -6,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 1500,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9229,
+      "keywords": "oldstyle rock monster",
+      "shortDescription": "the Rock Monster",
+      "longDescription": "The Rock Monster considers you in stoney silence.\n",
+      "description": "A humanoid figure trapped in stone seems alive.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -310,
+      "group": 0,
+      "level": 23,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 450
+      },
+      "manaDice": {
+        "count": 11,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 3,
+        "size": 6,
+        "bonus": 6,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -6,
+        "bash": -6,
+        "slash": -6,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 950,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9230,
+      "keywords": "oldstyle hurricane",
+      "shortDescription": "the Hurricane",
+      "longDescription": "A Hurricane rages across the sky.\n",
+      "description": "A humanoid figure is trapped in the rushing wind.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -10,
+      "group": 0,
+      "level": 28,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 703
+      },
+      "manaDice": {
+        "count": 14,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 5,
+        "size": 4,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -8,
+        "bash": -8,
+        "slash": -8,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 2054,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9231,
+      "keywords": "oldstyle magician",
+      "shortDescription": "an elemental magician",
+      "longDescription": "An elemental magician seeks magical stones for a spell.\n",
+      "description": "The elemental magician has come here in search of the fabled\nStone of Surrender which can be used to render opponents senseless.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea",
+        "Mage"
+      ],
+      "affectedBy": [
+        "Invisible"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -50,
+      "group": 0,
+      "level": 17,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 233
+      },
+      "manaDice": {
+        "count": 17,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 12,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -2,
+        "bash": -2,
+        "slash": -2,
+        "exotic": 4
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 400,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9232,
+      "keywords": "oldstyle rainbow warrior",
+      "shortDescription": "a rainbow warrior",
+      "longDescription": "A warrior of the Rainbow Cult swears his loyalty.\n",
+      "description": "The Rainbow Cult has received special powers for their service to \nthe elemental forces.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Cleric"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 150,
+      "group": 0,
+      "level": 18,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 283
+      },
+      "manaDice": {
+        "count": 18,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 6,
+        "bonus": 4,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -3,
+        "bash": -3,
+        "slash": -3,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 400,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9233,
+      "keywords": "oldstyle illusionist",
+      "shortDescription": "an illusionist",
+      "longDescription": "The illusionist seeks the aid of the elemental forces.\n",
+      "description": "He seeks their aid for a powerful new spell of deception.\n\n<wielded>            The Sword of Illusions\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea",
+        "Mage"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -50,
+      "group": 0,
+      "level": 12,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 8,
+        "bonus": 134
+      },
+      "manaDice": {
+        "count": 12,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 95,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9234,
+      "keywords": "oldstyle alchemist",
+      "shortDescription": "an alchemist",
+      "longDescription": "An alchemist wanders by in search of magical herbs.\n",
+      "description": "Rare herbs are rumored to grow only in the canyon.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -50,
+      "group": 0,
+      "level": 13,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 150
+      },
+      "manaDice": {
+        "count": 6,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 0,
+        "bash": 0,
+        "slash": 0,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 95,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9235,
+      "keywords": "oldstyle baby rainbow dragon",
+      "shortDescription": "a baby rainbow dragon",
+      "longDescription": "A baby rainbow dragon plays among the elements here.\n",
+      "description": "It's only a baby by dragon standards.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 16,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 233
+      },
+      "manaDice": {
+        "count": 8,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 6,
+        "bonus": 4,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -2,
+        "bash": -2,
+        "slash": -2,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 500,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9236,
+      "keywords": "oldstyle imp",
+      "shortDescription": "a little imp",
+      "longDescription": "A little imp runs along being annoying.\n",
+      "description": "The little bugger steals stuff and is generally obnoxious.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Sneak",
+        "Hide"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9237,
+      "keywords": "oldstyle HUGE elemental",
+      "shortDescription": "a HUGE elemental",
+      "longDescription": "A HUGE elemental form stands here.\n",
+      "description": "HUGE, need i say more?\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 30,
+      "group": 0,
+      "level": 20,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 333
+      },
+      "manaDice": {
+        "count": 10,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 8,
+        "bonus": 5,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": -4,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 500,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9238,
+      "keywords": "oldstyle vendor",
+      "shortDescription": "the elixir vendor",
+      "longDescription": "A vendor is willing to sell you elixirs.\n",
+      "description": "I WOULD NOT suggest you attack me ...!\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "StayArea",
+        "Mage"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "immunities": [
+        "Summon",
+        "Charm",
+        "Magic",
+        "Weapon"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 900,
+      "group": 0,
+      "level": 30,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 778
+      },
+      "manaDice": {
+        "count": 30,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 5,
+        "size": 4,
+        "bonus": 7,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -9,
+        "bash": -9,
+        "slash": -9,
+        "exotic": 1
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 9201,
+      "keywords": "ring earth",
+      "shortDescription": "the earth ring",
+      "longDescription": "A dark ring which seems to absorb all the light around it lies here.",
+      "material": "oldstyle",
+      "itemType": "Furniture",
+      "extraFlags": [
+        "Bless"
+      ],
+      "wearFlags": [
+        "Take",
+        "Finger"
+      ],
+      "level": 7,
+      "weightPounds": 5,
+      "costCopper": 1140,
+      "condition": 100,
+      "furniture": {
+        "maxPeople": 0,
+        "flags": []
+      },
+      "affects": [
+        {
+          "location": "Wisdom",
+          "modifier": 1
+        },
+        {
+          "location": "Intelligence",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 9202,
+      "keywords": "breastplate stoney breast plate",
+      "shortDescription": "a stoney breastplate",
+      "longDescription": "A breastplate made of the stone from deep within the earth lies here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Body"
+      ],
+      "level": 31,
+      "weightPounds": 70,
+      "costCopper": 5500,
+      "condition": 100,
+      "armor": {
+        "pierce": 10,
+        "bash": 10,
+        "slash": 10,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Constitution",
+          "modifier": 1
+        },
+        {
+          "location": "Dexterity",
+          "modifier": -2
+        }
+      ]
+    },
+    {
+      "vnum": 9203,
+      "keywords": "dagger fiery",
+      "shortDescription": "a fiery dagger",
+      "longDescription": "A dagger made of fire crackles mysteriously here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 29,
+      "weightPounds": 2,
+      "costCopper": 2800,
+      "condition": 100,
+      "weapon": {
+        "class": "Dagger",
+        "diceCount": 5,
+        "diceSize": 4,
+        "attackType": "Pierce",
+        "specialFlags": [
+          "Flaming"
+        ]
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 4
+        }
+      ]
+    },
+    {
+      "vnum": 9204,
+      "keywords": "cape flame flaming red",
+      "shortDescription": "a flame red cape",
+      "longDescription": "A cape made of ethereal red fiber lies neatly folded on the ground here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Neck"
+      ],
+      "level": 30,
+      "weightPounds": 3,
+      "costCopper": 3100,
+      "condition": 100,
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 3
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 9205,
+      "keywords": "boots wind",
+      "shortDescription": "the wind boots",
+      "longDescription": "A pair of boots that look fast standing still are here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Feet"
+      ],
+      "level": 26,
+      "weightPounds": 1,
+      "costCopper": 5200,
+      "condition": 100,
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Dexterity",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 9206,
+      "keywords": "helmet hurricane",
+      "shortDescription": "a hurricane helmet",
+      "longDescription": "A helmet that looks like it has weathered many storms has been set here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Hum"
+      ],
+      "wearFlags": [
+        "Take",
+        "Head"
+      ],
+      "level": 31,
+      "weightPounds": 4,
+      "costCopper": 3800,
+      "condition": 100,
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 3
+      },
+      "affects": [
+        {
+          "location": "Saves",
+          "modifier": -2
+        }
+      ]
+    },
+    {
+      "vnum": 9207,
+      "keywords": "sword lightning bolt",
+      "shortDescription": "a sparking lightning sword",
+      "longDescription": "A lightning bolt fashioned into a sword spits sparks here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Glow",
+        "Hum"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 25,
+      "weightPounds": 10,
+      "costCopper": 2200,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 5,
+        "diceSize": 4,
+        "attackType": "Slash",
+        "specialFlags": [
+          "Poison"
+        ]
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 2
+        },
+        {
+          "location": "HitRoll",
+          "modifier": -1
+        }
+      ]
+    },
+    {
+      "vnum": 9208,
+      "keywords": "shield electric",
+      "shortDescription": "an electric shield",
+      "longDescription": "A shield made entirely of energy buzzes here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Hum"
+      ],
+      "wearFlags": [
+        "Take",
+        "Shield"
+      ],
+      "level": 28,
+      "weightPounds": 8,
+      "costCopper": 4500,
+      "condition": 100,
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 4
+      },
+      "affects": [
+        {
+          "location": "Constitution",
+          "modifier": 1
+        },
+        {
+          "location": "Strength",
+          "modifier": -1
+        }
+      ]
+    },
+    {
+      "vnum": 9209,
+      "keywords": "girth icy",
+      "shortDescription": "an icy girth",
+      "longDescription": "A girth made of magical ice has been left here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Waist"
+      ],
+      "level": 31,
+      "weightPounds": 10,
+      "costCopper": 1540,
+      "condition": 100,
+      "armor": {
+        "pierce": 10,
+        "bash": 10,
+        "slash": 10,
+        "exotic": 3
+      },
+      "affects": [
+        {
+          "location": "Constitution",
+          "modifier": -2
+        }
+      ]
+    },
+    {
+      "vnum": 9210,
+      "keywords": "cloak waterfall",
+      "shortDescription": "a waterfall cloak",
+      "longDescription": "A cloak fashioned from a small magical waterfall is here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "About"
+      ],
+      "level": 30,
+      "weightPounds": 6,
+      "costCopper": 3000,
+      "condition": 100,
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": -2
+        },
+        {
+          "location": "Mana",
+          "modifier": 25
+        }
+      ]
+    },
+    {
+      "vnum": 9211,
+      "keywords": "amulet elemental",
+      "shortDescription": "an elemental amulet",
+      "longDescription": "An amulet depicting fire, water, lightning, earth, and air lies here.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Neck"
+      ],
+      "level": 20,
+      "weightPounds": 1,
+      "costCopper": 860,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Saves",
+          "modifier": -2
+        }
+      ]
+    },
+    {
+      "vnum": 9212,
+      "keywords": "bracelet elemental",
+      "shortDescription": "an elemental bracelet",
+      "longDescription": "A bracelet made of elemental magic lies here.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "wearFlags": [
+        "Take",
+        "Wrist"
+      ],
+      "level": 20,
+      "weightPounds": 4,
+      "costCopper": 580,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Hit",
+          "modifier": 20
+        }
+      ]
+    },
+    {
+      "vnum": 9213,
+      "keywords": "armband platinum band",
+      "shortDescription": "a platinum arm band",
+      "longDescription": "A platinum arm band, once worn by the Cyclops, lie here.",
+      "material": "platinum",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Wrist"
+      ],
+      "level": 26,
+      "weightPounds": 4,
+      "costCopper": 1700,
+      "condition": 100,
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Wisdom",
+          "modifier": -2
+        },
+        {
+          "location": "Strength",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 9214,
+      "keywords": "legbands platinum bands",
+      "shortDescription": "some platinum leg bands",
+      "longDescription": "A pair of platinum leg bands, once worn by the Cyclops, lie here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Legs"
+      ],
+      "level": 26,
+      "weightPounds": 4,
+      "costCopper": 1700,
+      "condition": 100,
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Intelligence",
+          "modifier": -2
+        },
+        {
+          "location": "Dexterity",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 9215,
+      "keywords": "wand",
+      "shortDescription": "elemental wand of fire",
+      "longDescription": "A fire wand lies forgotten on the ground.",
+      "material": "oldstyle",
+      "itemType": "Wand",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 16,
+      "weightPounds": 7,
+      "costCopper": 3900,
+      "condition": 100,
+      "charges": {
+        "level": 15,
+        "total": 3,
+        "remaining": 3,
+        "spell": "fireball"
+      }
+    },
+    {
+      "vnum": 9216,
+      "keywords": "staff ice",
+      "shortDescription": "an ice staff",
+      "longDescription": "An ice staff lies forgotten on the ground.",
+      "material": "oldstyle",
+      "itemType": "Wand",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 25,
+      "weightPounds": 7,
+      "costCopper": 13700,
+      "condition": 100,
+      "charges": {
+        "level": 12,
+        "total": 3,
+        "remaining": 3,
+        "spell": "frost breath"
+      }
+    },
+    {
+      "vnum": 9217,
+      "keywords": "rod earthquake",
+      "shortDescription": "an elemental rod of earthquake",
+      "longDescription": "An earthquake rod lies forgotten on the ground.",
+      "material": "oldstyle",
+      "itemType": "Wand",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 7,
+      "weightPounds": 7,
+      "costCopper": 1000,
+      "condition": 100,
+      "charges": {
+        "level": 7,
+        "total": 3,
+        "remaining": 3,
+        "spell": "earthquake"
+      }
+    },
+    {
+      "vnum": 9218,
+      "keywords": "wand air wind",
+      "shortDescription": "elemental wand of wind and air",
+      "longDescription": "An air wand lies forgotten on the ground.",
+      "material": "oldstyle",
+      "itemType": "Wand",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 27,
+      "weightPounds": 7,
+      "costCopper": 12600,
+      "condition": 100,
+      "charges": {
+        "level": 11,
+        "total": 1,
+        "remaining": 1,
+        "spell": "gas breath"
+      }
+    },
+    {
+      "vnum": 9219,
+      "keywords": "wand",
+      "shortDescription": "elemental wand of lightning",
+      "longDescription": "A lightning wand lies forgotten on the ground.",
+      "material": "oldstyle",
+      "itemType": "Wand",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 7,
+      "weightPounds": 7,
+      "costCopper": 1420,
+      "condition": 100,
+      "charges": {
+        "level": 9,
+        "total": 1,
+        "remaining": 1,
+        "spell": "lightning bolt"
+      }
+    },
+    {
+      "vnum": 9220,
+      "keywords": "stone club two-handed",
+      "shortDescription": "a stone club",
+      "longDescription": "A large stone club lies on the ground.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 13,
+      "weightPounds": 16,
+      "costCopper": 730,
+      "condition": 100,
+      "weapon": {
+        "class": "Mace",
+        "diceCount": 2,
+        "diceSize": 8,
+        "attackType": "Pound",
+        "specialFlags": [
+          "TwoHands"
+        ]
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 1
+        },
+        {
+          "location": "HitRoll",
+          "modifier": -2
+        }
+      ]
+    },
+    {
+      "vnum": 9221,
+      "keywords": "lode load lodestone loadstone stone",
+      "shortDescription": "a lodestone",
+      "longDescription": "A dull red rock lies here amid the weeds.",
+      "material": "oldstyle",
+      "itemType": "Wand",
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 13,
+      "weightPounds": 2,
+      "costCopper": 2800,
+      "condition": 100,
+      "charges": {
+        "level": 19,
+        "total": 2,
+        "remaining": 2,
+        "spell": "harm"
+      },
+      "affects": [
+        {
+          "location": "Strength",
+          "modifier": -2
+        }
+      ]
+    },
+    {
+      "vnum": 9222,
+      "keywords": "lava lamp",
+      "shortDescription": "a lava lamp",
+      "longDescription": "A lantern which glows with a red glowing light has been dumped.",
+      "material": "oldstyle",
+      "itemType": "Light",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 4,
+      "costCopper": 250,
+      "condition": 100,
+      "light": {
+        "duration": 1000
+      }
+    },
+    {
+      "vnum": 9223,
+      "keywords": "energy scroll",
+      "shortDescription": "an energy scroll",
+      "longDescription": "A scroll of energy replacement lies here.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "extraFlags": [
+        "Hum"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 5,
+      "weightPounds": 1,
+      "costCopper": 860,
+      "condition": 100,
+      "spells": {
+        "level": 19,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 9224,
+      "keywords": "water jug",
+      "shortDescription": "a water jug",
+      "longDescription": "A large but surprisingly light jug of water stands here.",
+      "material": "oldstyle",
+      "itemType": "DrinkContainer",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 200,
+      "condition": 100,
+      "drink": {
+        "capacity": 150,
+        "remaining": 150,
+        "liquid": "Water",
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 9225,
+      "keywords": "dust",
+      "shortDescription": "magic dust",
+      "longDescription": "A pile of dust of appearance has gathered here.",
+      "material": "oldstyle",
+      "itemType": "Pill",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 300,
+      "condition": 100,
+      "spells": {
+        "level": 20,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 9226,
+      "keywords": "flame lance",
+      "shortDescription": "a flame lance",
+      "longDescription": "A lance of blue flame burns the ground around it.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 29,
+      "weightPounds": 14,
+      "costCopper": 220,
+      "condition": 100,
+      "weapon": {
+        "class": "Spear",
+        "diceCount": 2,
+        "diceSize": 15,
+        "attackType": "Thrust",
+        "specialFlags": [
+          "Flaming"
+        ]
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 2
+        },
+        {
+          "location": "Hit",
+          "modifier": -20
+        }
+      ]
+    },
+    {
+      "vnum": 9227,
+      "keywords": "icicle dagger ice",
+      "shortDescription": "an icicle",
+      "longDescription": "A glowing icicle dagger lies here amid a patch of frost.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 28,
+      "weightPounds": 1,
+      "costCopper": 1630,
+      "condition": 100,
+      "weapon": {
+        "class": "Dagger",
+        "diceCount": 7,
+        "diceSize": 3,
+        "attackType": "Pierce",
+        "specialFlags": [
+          "Frost"
+        ]
+      },
+      "affects": [
+        {
+          "location": "Strength",
+          "modifier": -1
+        },
+        {
+          "location": "DamageRoll",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 9228,
+      "keywords": "avalanche",
+      "shortDescription": "the avalanche",
+      "longDescription": "An avalanche is about to crush you!",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 24,
+      "weightPounds": 16,
+      "costCopper": 3000,
+      "condition": 100,
+      "weapon": {
+        "class": "Exotic",
+        "diceCount": 1,
+        "diceSize": 25,
+        "attackType": "Blast"
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": -1
+        }
+      ]
+    },
+    {
+      "vnum": 9229,
+      "keywords": "star morning",
+      "shortDescription": "the morning star",
+      "longDescription": "A chain with a star on the end lies here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 23,
+      "weightPounds": 11,
+      "costCopper": 3300,
+      "condition": 100,
+      "weapon": {
+        "class": "Flail",
+        "diceCount": 6,
+        "diceSize": 3,
+        "attackType": "Crush"
+      },
+      "affects": [
+        {
+          "location": "ArmorClass",
+          "modifier": -3
+        },
+        {
+          "location": "Saves",
+          "modifier": -2
+        }
+      ]
+    },
+    {
+      "vnum": 9230,
+      "keywords": "shock whip",
+      "shortDescription": "the Shock Whip",
+      "longDescription": "A whip hums innocently too itself.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Hum"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 20,
+      "weightPounds": 10,
+      "costCopper": 64,
+      "condition": 100,
+      "weapon": {
+        "class": "Whip",
+        "diceCount": 4,
+        "diceSize": 5,
+        "attackType": "Stab"
+      },
+      "affects": [
+        {
+          "location": "Strength",
+          "modifier": -2
+        },
+        {
+          "location": "DamageRoll",
+          "modifier": 3
+        }
+      ]
+    },
+    {
+      "vnum": 9231,
+      "keywords": "elixir anti",
+      "shortDescription": "anti-cyclops elixir",
+      "longDescription": "An elixir to ward off cyclopi has been bought then left behind here.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 250,
+      "condition": 100,
+      "spells": {
+        "level": 15,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 9201,
+      "name": "A Mountain Path",
+      "description": "You are on a mountain path which ascends a steep mountainside.  The trail\ncurves around the mountain so that you cannot really see what lies ahead.\nYou do sense great power though coming from the area behind the mountain.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5267
+        },
+        "up": {
+          "toRoom": 9202
+        }
+      }
+    },
+    {
+      "vnum": 9202,
+      "name": "A Mountain Path",
+      "description": "You are on a rocky mountain path leading up and around a steep mountainside.\nYou sense a glow from the area beyond the mountain, which you cannot see yet.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 9203
+        },
+        "down": {
+          "toRoom": 9201
+        }
+      }
+    },
+    {
+      "vnum": 9203,
+      "name": "Mountainside Tombs",
+      "description": "There are a few stone heaps here and there, the tombs of those who did not\nlast the arduous journey up the mountain.  Curiously you notice a few\nuncovered bodies which don't seem to have died of exhaustion.  The path curves\neast around the mountain.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 9204
+        },
+        "down": {
+          "toRoom": 9202
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "bodies body dead",
+          "description": "They look as if their necks have been broken and their flesh, chewed.\n"
+        },
+        {
+          "keywords": "heaps stones tombs",
+          "description": "You are sure glad that YOU aren't under one of those piles!\nMany of the tombstones have the same name on them, 'Raff'.  He must come\nhere a lot.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 9204,
+      "name": "A Blind Curve on the Mountain Path.",
+      "description": "This looks like a normal mountain path, but it is NOT!  This section of the\npath is habitated by a huge (and of course, man-eating) Cyclops.  The path\nmakes its final ascent to an overlook.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 9205
+        },
+        "down": {
+          "toRoom": 9203
+        }
+      }
+    },
+    {
+      "vnum": 9205,
+      "name": "Vista",
+      "description": "This is a stunning vista overlooking a canyon.  There is a sign here that says:\n\n\tBEHOLD -- ELEMENTAL CANYON\n\nFire leaps up from firepits in the western part of the canyon.  The sky looks\nfunny, and the air seems hazy to the northwest.  Electricity sparks\nintermittently in the northeast.  To the east you see a strong, magic-looking\nriver flowing through the canyon.  Also to the east you spy a cave entrance\nleading into the canyon wall.  The path descends to the north to another\noverlook.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9206
+        },
+        "down": {
+          "toRoom": 9204
+        }
+      }
+    },
+    {
+      "vnum": 9206,
+      "name": "The Overlook",
+      "description": "You see various elemental servants wandering around the canyon.  The noise of\nhumming coming from the canyon gets louder.  The path makes a steep descent\ninto the canyon here.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9205
+        },
+        "down": {
+          "toRoom": 9207
+        }
+      }
+    },
+    {
+      "vnum": 9207,
+      "name": "Entrance to Elemental Canyon",
+      "description": "You are awed by the sounds and sights of great powers at works here.\nElemental servants bustle back and forth doing the biddings of the elemental\nrulers.  You see a sort of cross roads to the north, and you can climb up to\nthe overlook here.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9209
+        },
+        "up": {
+          "toRoom": 9206
+        }
+      }
+    },
+    {
+      "vnum": 9208,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at all.\nIn general, it is calm, yet there is always a incessant buzz of things\ngoing on about.  The canyon continues north and east.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9211
+        },
+        "east": {
+          "toRoom": 9209
+        }
+      }
+    },
+    {
+      "vnum": 9209,
+      "name": "Elemental Gateway",
+      "description": "To the west a path dips and winds among some flowing firepits.  To the\nnortheast a path goes toward the river.  Beyond toward the northeast and\nnorthwest are outcrops which rise up from the canyon floor. To the east there\nis a cave mouth which leads into the canyon wall.  And to the south the path\nleads up, away, and out of the canyon.  Various pure and cross-breeds of\nelemental forms wander the canyon floor, which extends in a wide swath\nnorthwards.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9212
+        },
+        "east": {
+          "toRoom": 9210
+        },
+        "south": {
+          "toRoom": 9207
+        },
+        "west": {
+          "toRoom": 9208
+        }
+      }
+    },
+    {
+      "vnum": 9210,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at\nall.  In general, it is calm, yet there is always a incessant buzz of\nthings going on about.  The canyon floor extends north and west.  There is a\ncave mouth set into the canyon wall to the east.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9213
+        },
+        "east": {
+          "toRoom": 9220
+        },
+        "west": {
+          "toRoom": 9209
+        }
+      }
+    },
+    {
+      "vnum": 9211,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at\nall.  In general, it is calm, yet there is always an incessant buzz of\nthings going on about.  The canyon floor extends off to the north, east,\nand south.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9214
+        },
+        "east": {
+          "toRoom": 9212
+        },
+        "south": {
+          "toRoom": 9208
+        }
+      }
+    },
+    {
+      "vnum": 9212,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at\nall.  In general, it is calm, yet there is always an incessant buzz of\nthings going on about.  The canyon floor extends in all directions.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9215
+        },
+        "east": {
+          "toRoom": 9213
+        },
+        "south": {
+          "toRoom": 9209
+        },
+        "west": {
+          "toRoom": 9211
+        }
+      }
+    },
+    {
+      "vnum": 9213,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at\nall.  In general, it is calm, yet there is always an incessant buzz of\nthings going on about.  The canyon floor extends north, south, and west.\nA path follows a stream to the east.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9216
+        },
+        "east": {
+          "toRoom": 9228
+        },
+        "south": {
+          "toRoom": 9210
+        },
+        "west": {
+          "toRoom": 9212
+        }
+      }
+    },
+    {
+      "vnum": 9214,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at\nall.  In general, it is calm, yet there is always an incessant buzz of\nthings going on about. The canyon floor extends north, east, and south.\nTo the west a garden is on fire.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9217
+        },
+        "east": {
+          "toRoom": 9215
+        },
+        "south": {
+          "toRoom": 9211
+        },
+        "west": {
+          "toRoom": 9237
+        }
+      }
+    },
+    {
+      "vnum": 9215,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at\nall.  In general, it is calm, yet there is always an incessant buzz of\nthings going on about.  The canyon floor extends in all directions.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9218
+        },
+        "east": {
+          "toRoom": 9216
+        },
+        "south": {
+          "toRoom": 9212
+        },
+        "west": {
+          "toRoom": 9214
+        }
+      }
+    },
+    {
+      "vnum": 9216,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at\nall.  In general, it is calm, yet there is always an incessant buzz of\nthings going on about.  The Canyon floor extends north, south and west.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9219
+        },
+        "south": {
+          "toRoom": 9213
+        },
+        "west": {
+          "toRoom": 9215
+        }
+      }
+    },
+    {
+      "vnum": 9217,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at\nall.  In general, it is calm, yet there is always an incessant buzz of\nthings going on about. The canyon floor extends east and south.  You can\nclimb a rise in the canyon floor to the north.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9253
+        },
+        "east": {
+          "toRoom": 9218
+        },
+        "south": {
+          "toRoom": 9214
+        }
+      }
+    },
+    {
+      "vnum": 9218,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at\nall.  In general, it is calm, yet there is always an incessant buzz of\nthings going on about.  The canyon floor extends east, south, and west.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9219
+        },
+        "south": {
+          "toRoom": 9215
+        },
+        "west": {
+          "toRoom": 9217
+        }
+      }
+    },
+    {
+      "vnum": 9219,
+      "name": "The Floor of the Canyon",
+      "description": "Various elemental forms wander the floor of the canyon.  Some seem to be\ngoing about their business, while others seem to have no business at\nall.  In general, it is calm, yet there is always an incessant buzz of\nthings going on about.  The canyon floor extends south and west.  You can\nclimb a rise in the canyon floor to the north.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9254
+        },
+        "south": {
+          "toRoom": 9216
+        },
+        "west": {
+          "toRoom": 9218
+        }
+      }
+    },
+    {
+      "vnum": 9220,
+      "name": "Dark Cave",
+      "description": "You notice a path winding east among some huge boulders.  You feel a powerful\nsource of energy from that direction.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9221
+        },
+        "west": {
+          "toRoom": 9210
+        }
+      }
+    },
+    {
+      "vnum": 9221,
+      "name": "Darker Caves",
+      "description": "You can barely see your way even with a light source.  The rocks of the cave\nare even darker than the darkness.  You hear a powerful humming all around\nyou.  Cave paths go south and east roughly, its hard to tell exactly when you\ncan't see where you are going.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9222
+        },
+        "south": {
+          "toRoom": 9223
+        },
+        "west": {
+          "toRoom": 9220
+        }
+      }
+    },
+    {
+      "vnum": 9222,
+      "name": "Darker Caves",
+      "description": "You can barely see your way even with a light source.  The rocks of the cave\nare even darker than the darkness.  You hear a powerful humming all around\nyou.  Cave paths go south and west roughly; it's hard to tell exactly when you\ncan't see where you are going.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9224
+        },
+        "west": {
+          "toRoom": 9221
+        }
+      }
+    },
+    {
+      "vnum": 9223,
+      "name": "Darker Caves",
+      "description": "You can barely see your way even with a light source.  The rocks of the cave\nare even darker than the darkness.  You hear a powerful humming all around you.\nCave paths go north, south and east roughly; it's hard to tell exactly when\nyou can't see where you are going.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9221
+        },
+        "east": {
+          "toRoom": 9224
+        },
+        "south": {
+          "toRoom": 9225
+        }
+      }
+    },
+    {
+      "vnum": 9224,
+      "name": "Darker Caves",
+      "description": "You can barely see your way even with a light source.  The rocks of the cave\nare even darker than the darkness.  You hear a powerful humming all around you.\nCave paths go north, south and west roughly, it's hard to tell exactly when you\ncan't see where you are going.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9222
+        },
+        "south": {
+          "toRoom": 9226
+        },
+        "west": {
+          "toRoom": 9223
+        }
+      }
+    },
+    {
+      "vnum": 9225,
+      "name": "Darkest Caves",
+      "description": "Your light doesn't even seem to work here.  Even magical light sources seem\nonly to illuminate about a foot ahead of you.  You suddenly realize that the\npath has descended quite a bit but you didn't notice before because of the\ndarkness.  You sense a great presence off to the east aways.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9223
+        },
+        "east": {
+          "toRoom": 9226
+        }
+      }
+    },
+    {
+      "vnum": 9226,
+      "name": "Darkest Caves",
+      "description": "Your light doesn't even seem to work here.  Even magical light sources seem\nonly to illuminate about a foot ahead of you.  You suddenly realize that the\npath has descended quite a bit but you didn't notice before because of the\ndarkness.  You sense a great presence directly to the east.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9224
+        },
+        "east": {
+          "toRoom": 9227
+        },
+        "west": {
+          "toRoom": 9225
+        }
+      }
+    },
+    {
+      "vnum": 9227,
+      "name": "Earth Chamber",
+      "description": "This is the abode of the Earth Ruler.  He decides about earthquakes,\nlandslides, and avalanches.  The Earth Ruler sits upon a huge marble throne\ncarved into the wall.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9226
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "marble throne",
+          "description": "The ruler notices your stare, and doesn't like it one bit!  The whole\nearth seems to shake with his emotion.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 9228,
+      "name": "By the River",
+      "description": "The water in the river seems to bubble and froth with magic.  Though it\nsplashes playfully on you, it does not seem wet.  The path leads north closer\nto the water. To the west you see a T-intersection.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9229
+        },
+        "west": {
+          "toRoom": 9213
+        }
+      }
+    },
+    {
+      "vnum": 9229,
+      "name": "In the River",
+      "description": "To continue you had to walk right in the river.  Though you walk along in\nwater up to your knees, you do not seem to get wet.  A bay stretches out to\nthe north and the river goes south.\n",
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9230
+        },
+        "south": {
+          "toRoom": 9228
+        }
+      }
+    },
+    {
+      "vnum": 9230,
+      "name": "Elemental Bay",
+      "description": "The water is crystal clear here and you can see the bottom of the bay 30 feet\nbelow you.  Then you realize you are walking on the water itself.  Truly\nmagical water indeed.  Though you splash through the bay you do not get wet.\n",
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9233
+        },
+        "east": {
+          "toRoom": 9231
+        },
+        "south": {
+          "toRoom": 9229
+        }
+      }
+    },
+    {
+      "vnum": 9231,
+      "name": "Elemental Bay",
+      "description": "The water is crystal clear here and you can see the bottom of the bay 30 feet\nbelow you.  Then you realize you are walking on the water itself.  Truly\nmagical water indeed.  Though you splash through the bay you do not get wet.\n",
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9234
+        },
+        "east": {
+          "toRoom": 9232
+        },
+        "west": {
+          "toRoom": 9230
+        }
+      }
+    },
+    {
+      "vnum": 9232,
+      "name": "Elemental Bay",
+      "description": "The water is crystal clear here and you can see the bottom of the bay 30 feet\nbelow you.  Then you realize you are walking on the water itself.  Truly\nmagical water indeed.  Though you splash through the bay you do not get wet.\n",
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9235
+        },
+        "west": {
+          "toRoom": 9231
+        }
+      }
+    },
+    {
+      "vnum": 9233,
+      "name": "Elemental Bay",
+      "description": "The water is crystal clear here and you can see the bottom of the bay 30 feet\nbelow you.  Then you realize you are walking on the water itself.  Truly\nmagical water indeed.  Though you splash through the bay you do not get wet.\n",
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9234
+        },
+        "south": {
+          "toRoom": 9230
+        }
+      }
+    },
+    {
+      "vnum": 9234,
+      "name": "Elemental Bay",
+      "description": "The water is crystal clear here and you can see the bottom of the bay 30 feet\nbelow you.  Then you realize you are walking on the water itself.  Truly\nmagical water indeed.  Though you splash through the bay you do not get wet.\n",
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9235
+        },
+        "south": {
+          "toRoom": 9231
+        },
+        "west": {
+          "toRoom": 9233
+        }
+      }
+    },
+    {
+      "vnum": 9235,
+      "name": "Elemental Bay",
+      "description": "The water is crystal clear here and you can see the bottom of the bay 30 feet\nbelow you.  Then you realize you are walking on the water itself.  Truly\nmagical water indeed.  Though you splash through the bay you do not get wet.\n",
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9232
+        },
+        "west": {
+          "toRoom": 9234
+        },
+        "down": {
+          "toRoom": 9236
+        }
+      }
+    },
+    {
+      "vnum": 9236,
+      "name": "Water Chamber",
+      "description": "This chamber was magically created here on the floor of the bay.  It looks\nlike it's been here for a long, long time.  Though you are 'under water' there\nis no difficulty breathing normally, and oddly you do not feel the pressure of\nthe water above you.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 9235
+        }
+      }
+    },
+    {
+      "vnum": 9237,
+      "name": "A Fiery Pathway",
+      "description": "You tread carefully along a path which dips and turns among geysers of fire.\nMiniature volcanoes spew lava in rivers.  The fire is hot but not altogether\ndangerous.  The path extends east and south.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9214
+        },
+        "south": {
+          "toRoom": 9238
+        }
+      }
+    },
+    {
+      "vnum": 9238,
+      "name": "A Fiery Pathway",
+      "description": "You tread carefully along a path which dips and turns among pits of fire and\nbeds of coals.  A garden to the west glows with an everlasting fire.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9237
+        },
+        "west": {
+          "toRoom": 9242
+        }
+      }
+    },
+    {
+      "vnum": 9242,
+      "name": "The Burning Gardens",
+      "description": "Everywhere around you the landscape is afire; the rocks, the shrubs and even\nthe air seems to be aflame.  Curiously, the magical fire does not seem to\nconsume its hosts.  A path leads east among some fire pits.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9238
+        },
+        "west": {
+          "toRoom": 9245
+        }
+      }
+    },
+    {
+      "vnum": 9245,
+      "name": "The Fire Chamber",
+      "description": "The fire ruler sits upon a throne made of blue flame.  Little flickers of\nflame dance to and fro for the entertainment of the ruler.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9242
+        }
+      }
+    },
+    {
+      "vnum": 9246,
+      "name": "Electric Pathway",
+      "description": "The pathway glows and hums because of the electricity pulsing through it.\nIt seems almost soothing to your weary feet.  To the north there is a\nsunken-in area.  A path leads east also.\n",
+      "sector": "Forest",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9248
+        },
+        "east": {
+          "toRoom": 9253
+        }
+      }
+    },
+    {
+      "vnum": 9247,
+      "name": "The Electric Playground",
+      "description": "Though there is a seemingly carefree atmosphere here, you sense that\nsomething much more important takes place near by.  The electric playground\nextends north and east.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9249
+        },
+        "east": {
+          "toRoom": 9248
+        }
+      }
+    },
+    {
+      "vnum": 9248,
+      "name": "The Electric Playground",
+      "description": "Though there is a seemingly carefree atmosphere here, you sense that\nsomething much more important takes place near by.  There is an electric\npath heading away south.  The playground extends north and west.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9250
+        },
+        "south": {
+          "toRoom": 9246
+        },
+        "west": {
+          "toRoom": 9247
+        }
+      }
+    },
+    {
+      "vnum": 9249,
+      "name": "The Electric Playground",
+      "description": "Though there is a seemingly carefree atmosphere here, you sense that\nsomething much more important takes place near by.  The playground continues\nsouth and east.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9250
+        },
+        "south": {
+          "toRoom": 9247
+        }
+      }
+    },
+    {
+      "vnum": 9250,
+      "name": "The Electric Playground",
+      "description": "Though there is a seemingly carefree atmosphere here, you sense that\nsomething much more important takes place near by.  The playground is\nsouth and west.  Something more important catches your eye to the east.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9251
+        },
+        "south": {
+          "toRoom": 9248
+        },
+        "west": {
+          "toRoom": 9249
+        }
+      }
+    },
+    {
+      "vnum": 9251,
+      "name": "Lightning Causeway",
+      "description": "Up a set of stairs carved into the hill you see intermittent flashes of\nlightning.  A continuous hum also comes form that direction.  To the west\nis the electric playground.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9250
+        },
+        "up": {
+          "toRoom": 9252
+        }
+      }
+    },
+    {
+      "vnum": 9252,
+      "name": "Lightning Chamber",
+      "description": "There is some sort of control panel here. Apparently the Lightning Ruler\nobserves and controls electric forces from here.  A set of steps carved into\nthe hill lead down to a causeway.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "down": {
+          "toRoom": 9251
+        }
+      }
+    },
+    {
+      "vnum": 9253,
+      "name": "Mesa West",
+      "description": "An electric path starts to the west.  The mesa continues to the east.\nOr you can climb down to the canyon floor to the south.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9254
+        },
+        "south": {
+          "toRoom": 9217
+        },
+        "west": {
+          "toRoom": 9246
+        }
+      }
+    },
+    {
+      "vnum": 9254,
+      "name": "Mesa East",
+      "description": "A path starts to the north.  The mesa continues to the west.\nOr you can climb down to the canyon floor to the south.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9255
+        },
+        "south": {
+          "toRoom": 9219
+        },
+        "west": {
+          "toRoom": 9253
+        }
+      }
+    },
+    {
+      "vnum": 9255,
+      "name": "Floating in Air",
+      "description": "Last you knew, you were walking on the mesa.  Abruptly the path dropped\nfrom beneath your feet much to quick for you to recover.  Instead of\nplunging to your death, you seemingly miss the ground and begin walking\non air.  The space to the north and east seems just thin air, but you can\nwalk there.  The pathway you came from is to the south.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9257
+        },
+        "east": {
+          "toRoom": 9256
+        },
+        "south": {
+          "toRoom": 9254
+        }
+      }
+    },
+    {
+      "vnum": 9256,
+      "name": "Floating in Air",
+      "description": "You look down and see the ground 100 feet below you.  The wind whispering\nin your ear seems to reassure you that this is fine.  To the north aways\nyou spy a portal of sorts.  To the west is more thin air.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9258
+        },
+        "west": {
+          "toRoom": 9255
+        }
+      }
+    },
+    {
+      "vnum": 9257,
+      "name": "Floating in Air",
+      "description": "You look down and see the ground 100 feet below you.  The wind whispering\nin your ear seems to reassure you that this is fine.  To the east aways\nyou spy a portal of sorts.  To the south is more thin air.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9258
+        },
+        "south": {
+          "toRoom": 9255
+        }
+      }
+    },
+    {
+      "vnum": 9258,
+      "name": "Floating in Air",
+      "description": "You look down and see the ground 100 feet below you.  The wind whispering\nin your ear seems to reassure you that this is fine. There is a portal\nhanging in midair here. It is to the east.  You can float south or west\nif you'd like.\n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9259
+        },
+        "south": {
+          "toRoom": 9256
+        },
+        "west": {
+          "toRoom": 9257
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "portal",
+          "description": "Through the portal you see a tunnel.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 9259,
+      "name": "Windy Tunnel",
+      "description": "A tunnel leads east.  To the west you can enter a portal. The wind in\nthis tunnel is quite fierce, it seems as if it's forced.  \n",
+      "sector": "Hills",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9260
+        },
+        "west": {
+          "toRoom": 9258
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "portal",
+          "description": "Through the portal you see nothing but sky.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 9260,
+      "name": "Air Chamber",
+      "description": "Tiny tornadoes come and go and dance along the ground here.  At the back\nof the chamber you notice a huge throne made of swirling clouds.\nA tunnel leads west.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9259
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "throne clouds",
+          "description": "Although the cloud throne appears solid enough to sit on, I wouldn't try\nit if I were you!\n"
+        }
+      ]
+    }
+  ],
+  "resets": [
+    {
+      "type": "Mobile",
+      "mobileVnum": 9231,
+      "roomVnum": 9216,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9215,
+      "wearLocation": "Hold",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9203,
+      "roomVnum": 9217,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9203,
+      "roomVnum": 9218,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9205,
+      "roomVnum": 9218,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9207,
+      "roomVnum": 9218,
+      "maxInWorld": 6,
+      "maxInRoom": 6
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9207,
+      "roomVnum": 9218,
+      "maxInWorld": 6,
+      "maxInRoom": 6
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9223,
+      "wearLocation": "Hold",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9233,
+      "roomVnum": 9218,
+      "maxInWorld": 7,
+      "maxInRoom": 7
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9203,
+      "roomVnum": 9219,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9225,
+      "wearLocation": "Hold",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9236,
+      "roomVnum": 9220,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9220,
+      "roomVnum": 9220,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9222,
+      "wearLocation": "Hold",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9217,
+      "roomVnum": 9221,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9220,
+      "roomVnum": 9221,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9223,
+      "roomVnum": 9221,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9205,
+      "roomVnum": 9222,
+      "maxInWorld": 12,
+      "maxInRoom": 12
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9224,
+      "wearLocation": "Hold",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9217,
+      "roomVnum": 9222,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9221,
+      "roomVnum": 9222,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9221,
+      "roomVnum": 9222,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9224,
+      "roomVnum": 9222,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9225,
+      "wearLocation": "Body",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9217,
+      "roomVnum": 9223,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9217,
+      "wearLocation": "Hold",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9217,
+      "roomVnum": 9224,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9206,
+      "roomVnum": 9225,
+      "maxInWorld": 9,
+      "maxInRoom": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9219,
+      "wearLocation": "Hold",
+      "maxInWorld": 7
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9217,
+      "roomVnum": 9225,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9216,
+      "roomVnum": 9225,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9217,
+      "roomVnum": 9226,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9208,
+      "roomVnum": 9227,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9201,
+      "wearLocation": "FingerLeft",
+      "maxInWorld": 6
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9202,
+      "wearLocation": "Body",
+      "maxInWorld": 6
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9217,
+      "roomVnum": 9227,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9217,
+      "roomVnum": 9227,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9224,
+      "roomVnum": 9227,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9236,
+      "roomVnum": 9228,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9219,
+      "roomVnum": 9228,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9219,
+      "roomVnum": 9229,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9234,
+      "roomVnum": 9230,
+      "maxInWorld": 6,
+      "maxInRoom": 6
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9218,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9214,
+      "roomVnum": 9230,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9214,
+      "roomVnum": 9231,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9221,
+      "roomVnum": 9231,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9221,
+      "roomVnum": 9231,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9214,
+      "roomVnum": 9232,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9216,
+      "roomVnum": 9232,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9216,
+      "roomVnum": 9232,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9222,
+      "roomVnum": 9232,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9214,
+      "roomVnum": 9233,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9216,
+      "wearLocation": "Hold",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9205,
+      "roomVnum": 9234,
+      "maxInWorld": 12,
+      "maxInRoom": 12
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9214,
+      "roomVnum": 9234,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9214,
+      "roomVnum": 9235,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9224,
+      "wearLocation": "Hold",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9212,
+      "roomVnum": 9236,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9209,
+      "wearLocation": "Waist",
+      "maxInWorld": 6
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9210,
+      "wearLocation": "About",
+      "maxInWorld": 6
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9214,
+      "roomVnum": 9236,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9214,
+      "roomVnum": 9236,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9236,
+      "roomVnum": 9237,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9226,
+      "roomVnum": 9238,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9226,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9227,
+      "roomVnum": 9238,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9230,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9234,
+      "roomVnum": 9238,
+      "maxInWorld": 6,
+      "maxInRoom": 6
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9217,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9219,
+      "roomVnum": 9238,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9220,
+      "roomVnum": 9238,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9207,
+      "roomVnum": 9242,
+      "maxInWorld": 6,
+      "maxInRoom": 6
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9228,
+      "roomVnum": 9242,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9227,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9229,
+      "roomVnum": 9242,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9228,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9230,
+      "roomVnum": 9242,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9229,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9215,
+      "roomVnum": 9242,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9215,
+      "roomVnum": 9242,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9215,
+      "wearLocation": "Hold",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9215,
+      "roomVnum": 9242,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9220,
+      "roomVnum": 9242,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9209,
+      "roomVnum": 9245,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9203,
+      "wearLocation": "Wield",
+      "maxInWorld": 6
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9204,
+      "wearLocation": "Neck1",
+      "maxInWorld": 6
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9215,
+      "roomVnum": 9245,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9215,
+      "wearLocation": "Hold",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9215,
+      "roomVnum": 9245,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9215,
+      "roomVnum": 9245,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9206,
+      "roomVnum": 9246,
+      "maxInWorld": 9,
+      "maxInRoom": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9236,
+      "roomVnum": 9246,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9218,
+      "roomVnum": 9246,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9219,
+      "roomVnum": 9246,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9218,
+      "roomVnum": 9247,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9218,
+      "roomVnum": 9248,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9223,
+      "roomVnum": 9248,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9235,
+      "roomVnum": 9249,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9218,
+      "roomVnum": 9249,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9205,
+      "roomVnum": 9250,
+      "maxInWorld": 12,
+      "maxInRoom": 12
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9218,
+      "roomVnum": 9250,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9219,
+      "wearLocation": "Hold",
+      "maxInWorld": 7
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9218,
+      "roomVnum": 9251,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9211,
+      "roomVnum": 9252,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9207,
+      "wearLocation": "Wield",
+      "maxInWorld": 6
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9208,
+      "wearLocation": "Shield",
+      "maxInWorld": 6
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9218,
+      "roomVnum": 9252,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9218,
+      "wearLocation": "Hold",
+      "maxInWorld": 7
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9218,
+      "roomVnum": 9252,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9233,
+      "roomVnum": 9253,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9223,
+      "roomVnum": 9253,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9206,
+      "roomVnum": 9254,
+      "maxInWorld": 9,
+      "maxInRoom": 9
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9222,
+      "roomVnum": 9254,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9233,
+      "roomVnum": 9255,
+      "maxInWorld": 7,
+      "maxInRoom": 7
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9236,
+      "roomVnum": 9255,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9225,
+      "roomVnum": 9255,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9218,
+      "wearLocation": "Hold",
+      "maxInWorld": 7
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9225,
+      "roomVnum": 9255,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9225,
+      "wearLocation": "Hold",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9222,
+      "roomVnum": 9255,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9225,
+      "roomVnum": 9256,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9235,
+      "roomVnum": 9257,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9216,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9225,
+      "roomVnum": 9257,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9224,
+      "roomVnum": 9257,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9225,
+      "roomVnum": 9258,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9225,
+      "roomVnum": 9259,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9224,
+      "roomVnum": 9259,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9210,
+      "roomVnum": 9260,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9205,
+      "wearLocation": "Feet",
+      "maxInWorld": 6
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9206,
+      "wearLocation": "Head",
+      "maxInWorld": 6
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9207,
+      "roomVnum": 9260,
+      "maxInWorld": 6,
+      "maxInRoom": 6
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9220,
+      "wearLocation": "Wield",
+      "maxInWorld": 16
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9225,
+      "roomVnum": 9260,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9225,
+      "roomVnum": 9260,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9201,
+      "roomVnum": 9201,
+      "maxInWorld": 3,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9201,
+      "roomVnum": 9202,
+      "maxInWorld": 3,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Give",
+      "objectVnum": 9231,
+      "maxInWorld": 30
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9236,
+      "roomVnum": 9202,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9201,
+      "roomVnum": 9203,
+      "maxInWorld": 3,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9238,
+      "roomVnum": 9203,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 9231,
+      "maxInWorld": 30
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9202,
+      "roomVnum": 9204,
+      "maxInWorld": 0,
+      "maxInRoom": 0
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9213,
+      "wearLocation": "Arms",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9214,
+      "wearLocation": "Legs",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9205,
+      "roomVnum": 9207,
+      "maxInWorld": 12,
+      "maxInRoom": 12
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9236,
+      "roomVnum": 9207,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9203,
+      "roomVnum": 9208,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9232,
+      "roomVnum": 9208,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9204,
+      "roomVnum": 9209,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9211,
+      "wearLocation": "Neck1",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9212,
+      "wearLocation": "WristLeft",
+      "maxInWorld": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9205,
+      "roomVnum": 9209,
+      "maxInWorld": 12,
+      "maxInRoom": 12
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9207,
+      "roomVnum": 9209,
+      "maxInWorld": 6,
+      "maxInRoom": 6
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9232,
+      "roomVnum": 9209,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9220,
+      "wearLocation": "Wield",
+      "maxInWorld": 16
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9203,
+      "roomVnum": 9210,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9223,
+      "roomVnum": 9210,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9231,
+      "roomVnum": 9211,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9215,
+      "wearLocation": "Hold",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9206,
+      "roomVnum": 9212,
+      "maxInWorld": 9,
+      "maxInRoom": 9
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9221,
+      "wearLocation": "Hold",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9216,
+      "roomVnum": 9212,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9222,
+      "roomVnum": 9213,
+      "maxInWorld": 8,
+      "maxInRoom": 8
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9203,
+      "roomVnum": 9215,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9203,
+      "roomVnum": 9215,
+      "maxInWorld": 15,
+      "maxInRoom": 15
+    }
+  ],
+  "shops": [
+    {
+      "keeperVnum": 9238,
+      "buyTypes": [],
+      "profitBuy": 105,
+      "profitSell": 15,
+      "openHour": 0,
+      "closeHour": 23
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 9219,
+      "procedure": "BreathAcid"
+    },
+    {
+      "mobileVnum": 9223,
+      "procedure": "BreathLightning"
+    },
+    {
+      "mobileVnum": 9224,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 9225,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 9226,
+      "procedure": "BreathFire"
+    },
+    {
+      "mobileVnum": 9227,
+      "procedure": "BreathLightning"
+    },
+    {
+      "mobileVnum": 9228,
+      "procedure": "BreathFrost"
+    },
+    {
+      "mobileVnum": 9230,
+      "procedure": "BreathGas"
+    },
+    {
+      "mobileVnum": 9231,
+      "procedure": "CastMage"
+    },
+    {
+      "mobileVnum": 9232,
+      "procedure": "CastCleric"
+    },
+    {
+      "mobileVnum": 9233,
+      "procedure": "CastMage"
+    },
+    {
+      "mobileVnum": 9234,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 9235,
+      "procedure": "BreathAny"
+    },
+    {
+      "mobileVnum": 9237,
+      "procedure": "BreathAny"
+    },
+    {
+      "mobileVnum": 9238,
+      "procedure": "CastMage"
+    },
+    {
+      "mobileVnum": 9202,
+      "procedure": "CastCleric"
+    },
+    {
+      "mobileVnum": 9204,
+      "procedure": "BreathAny"
+    },
+    {
+      "mobileVnum": 9207,
+      "procedure": "BreathAny"
+    },
+    {
+      "mobileVnum": 9208,
+      "procedure": "CastCleric"
+    },
+    {
+      "mobileVnum": 9209,
+      "procedure": "BreathFire"
+    },
+    {
+      "mobileVnum": 9210,
+      "procedure": "BreathGas"
+    },
+    {
+      "mobileVnum": 9211,
+      "procedure": "BreathLightning"
+    },
+    {
+      "mobileVnum": 9212,
+      "procedure": "BreathAcid"
+    }
+  ]
+}

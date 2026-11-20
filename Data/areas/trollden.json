@@ -1,0 +1,1163 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "trollden.are",
+  "name": "Troll Den",
+  "credits": "{10 15} Merc    Troll Den",
+  "vnumRange": {
+    "low": 2800,
+    "high": 2899
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 2800,
+      "keywords": "oldstyle guardian beast",
+      "shortDescription": "the guardian beast",
+      "longDescription": "A guardian beast stares at you and snarls in rage.\n",
+      "description": "Jet black fur covers this beast.  You stare at his two huge red eyes.  You can\ncount at least 50 teeth on this monster.  You can't tell whether it is blood or\nsaliva dripping from the beast's jaw.  The guardian beast snarls again.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Sneak",
+        "Hide"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -200,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 2801,
+      "keywords": "oldstyle young troll",
+      "shortDescription": "the young troll",
+      "longDescription": "A young troll is sitting down, chewing on a bone.\n",
+      "description": "He is a tall, wiry, furry humanoid.\nYour eyes lock with his.  He smiles, puts down his bone, and reaches for one\nof yours!!\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Sitting",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 25,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 2802,
+      "keywords": "oldstyle medium troll",
+      "shortDescription": "the medium troll",
+      "longDescription": "A troll is grooming his pet, a guardian beast.\n",
+      "description": "He is a tall, lean, furry humanoid.\nHe is busy licking the ticks off of his beast.\nHis eyes dart toward you, as he realizes you are one third his size.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 75,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 2803,
+      "keywords": "oldstyle baby troll",
+      "shortDescription": "a baby troll",
+      "longDescription": "A baby troll is playing Doctor with a cadaver.\n",
+      "description": "He is a large, chubby, furry humanoid.\nHe is trying to stuff an arm in a hole in the wall.\nHe notices you and gargles \"WANNA JOIN?\".\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -100,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Sitting",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 12,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 2804,
+      "keywords": "oldstyle giant troll",
+      "shortDescription": "the giant troll",
+      "longDescription": "A giant troll is lying on a pile of carnage, pleasing his mistress.\n",
+      "description": "He is a gigantic, muscular, furry humanoid.\nHe gasps as he notices your intrusion.\nYou gasp as you realize you have intruded upon his acts of passion!\n",
+      "race": "Giant",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Fire",
+        "Cold"
+      ],
+      "vulnerabilities": [
+        "Lightning",
+        "Mental"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -1000,
+      "group": 0,
+      "level": 13,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 170
+      },
+      "manaDice": {
+        "count": 6,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 5,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -1,
+        "bash": -1,
+        "slash": -1,
+        "exotic": 8
+      },
+      "startPosition": "Resting",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 150,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 2805,
+      "keywords": "oldstyle large troll female",
+      "shortDescription": "the large female troll",
+      "longDescription": "A large female troll is lying on the pile of carnage, blissfully writhing.\n",
+      "description": "She is a huge, grotesque, furry humanoid.\nShe moans in passion but gasps as she notices you.\nHer smiles turn into snarls as she screams at you!\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -800,
+      "group": 0,
+      "level": 11,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 8,
+        "bonus": 134
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Resting",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 125,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 2806,
+      "keywords": "oldstyle fat worm",
+      "shortDescription": "a fat worm",
+      "longDescription": "A fat worm scurries around, looking for food.\n",
+      "description": "It is thick and long.  You can't find a head on this thing.\nIt moves quickly, from corpse to corpse.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Sneak",
+        "Hide"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 2807,
+      "keywords": "oldstyle roving beast",
+      "shortDescription": "the roving beast",
+      "longDescription": "A roving beast is searching for prey.\n",
+      "description": "Jet black fur covers this beast.\nYou stare at his two huge red eyes.  You can count at least 50 teeth on this\nbeast.  You can't tell whether it is blood or saliva dripping from the beast's\njaw.  The roving beast snarls at you.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -200,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 2808,
+      "keywords": "oldstyle medium troll",
+      "shortDescription": "the medium troll",
+      "longDescription": "A troll is wandering around, attending to his duties.\n",
+      "description": "He is a tall, lean, furry humanoid.\nHe notices you, and is satisfied to find what he is looking for.\nHe advances toward you.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -500,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 75,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 2800,
+      "keywords": "corpse cadaver",
+      "shortDescription": "the cadaver-toy",
+      "longDescription": "A half eaten corpse is laying here",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 50,
+      "costCopper": 1,
+      "condition": 100,
+      "container": {
+        "capacity": 30,
+        "flags": [],
+        "keyVnum": 0
+      }
+    },
+    {
+      "vnum": 2801,
+      "keywords": "pile rotting heap bed",
+      "shortDescription": "the heap of carnage",
+      "longDescription": "There is a bed made of carnage here.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 30,
+        "flags": [],
+        "keyVnum": 0
+      }
+    },
+    {
+      "vnum": 2802,
+      "keywords": "trollskin troll skin",
+      "shortDescription": "the troll skin",
+      "longDescription": "The filthy hide of a beast is laying here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "About"
+      ],
+      "level": 12,
+      "weightPounds": 20,
+      "costCopper": 1380,
+      "condition": 100,
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 0
+      },
+      "affects": [
+        {
+          "location": "Strength",
+          "modifier": 1
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "troll skin",
+          "description": "This is the skin from a huge (and dead) beast.  It looks bad, smells bad,\nand feels bad.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 2803,
+      "keywords": "ring opal",
+      "shortDescription": "an opal ring",
+      "longDescription": "A ring of black opal lies here gathering dust.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Finger"
+      ],
+      "level": 20,
+      "weightPounds": 1,
+      "costCopper": 1150,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 2
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "ring opal",
+          "description": "It is a full circle of opal, smooth and simple.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 2804,
+      "keywords": "leather belt",
+      "shortDescription": "a leather belt",
+      "longDescription": "An old leather belt is left on the floor.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Waist"
+      ],
+      "level": 15,
+      "weightPounds": 5,
+      "costCopper": 1050,
+      "condition": 100,
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 0
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "leather belt",
+          "description": "This old, smelly belt looks like it is barely better than rotting cloth.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 2805,
+      "keywords": "bone cracked",
+      "shortDescription": "a cracked bone",
+      "longDescription": "A cracked piece of bone lies here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 6,
+      "weightPounds": 3,
+      "costCopper": 350,
+      "condition": 100,
+      "weapon": {
+        "class": "Mace",
+        "diceCount": 3,
+        "diceSize": 3,
+        "attackType": "Pound"
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": -1
+        },
+        {
+          "location": "DamageRoll",
+          "modifier": -1
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "bone",
+          "description": "This piece of bone looks sturdy enough to be used as a weapon, but you\nwouldn't want to entrust your life to it.\n"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 2801,
+      "name": "Wastedump",
+      "description": "This room is filled with bone shards and fragments.  Something (or things)\nvery big lives here.  A small plaque is on the wall.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 6124,
+          "description": "You reach civilization again.\n"
+        },
+        "south": {
+          "toRoom": 2803,
+          "description": "You find the stench is stronger inside.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "plaque",
+          "description": "This zone (trollden) is created by MERC for any MERC Mud.\ncopyright 1992\n"
+        }
+      ]
+    },
+    {
+      "vnum": 2802,
+      "name": "Troll's Larder",
+      "description": "This room has blood and grime all over the walls.  You see maggots and other\ninsects crawling up them.  The resident is definitely uncivilized.  Half-eaten\nand rotting body parts scatter the floor, each having its own colony of flies,\nworms, and maggots.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 2803,
+          "description": "You welcome the fresh breeze coming from the east, but wrinkle your nose when\nthe stench bears down on you once more.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "Half-eaten body rotting corpse",
+          "description": "YUCK!  You find worms crawling in and out this poor unfortunate former human.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 2803,
+      "name": "Troll's Living Room",
+      "description": "This small cave opens to the north, south, east, and west.  You are\novercome by the stench and consider turning around.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 2801,
+          "description": "There is a trail of bone shards and fragments leading north.\n"
+        },
+        "east": {
+          "toRoom": 2804,
+          "description": "Good God!  You spy corpses all over the floor in there.  It looks like a\nvirtual graveyard in there.\n"
+        },
+        "south": {
+          "toRoom": 2805,
+          "description": "Whoa!  You reel back from the stench.  You believe you have found the source\nof this bad smell.\n"
+        },
+        "west": {
+          "toRoom": 2802,
+          "description": "You puke as you watch worms crawl between this room and the room west of here\nas they bore new holes into a corpse laying on the far wall of the west room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 2804,
+      "name": "The Playpen",
+      "description": "The walls are covered with blood (and body parts!?!?).  Plastered on the far\nwall you see what looks like a human arm.  A half-eaten body lies here with\nits chest ripped out.  The predator seems disinterested in it.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 2803,
+          "description": "You welcome the fresh breeze coming from the west, but wrinkle your nose when\nthe stench bears down on you once more.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "arm rotting",
+          "description": "This reminds you of what a baby would do to its formula during dinnertime,\nplastering it on the wall.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 2805,
+      "name": "Troll's Bedroom",
+      "description": "Obviously something REALLY big lives here.  The stench is quite unbearable.\nThere are piles and piles of rotten and half-eaten body parts of animals,\norcs, (and humans?) strewn across the floor.  There is a larger, more\nprominent pile of rotten parts over in a corner.  It seems to have been\nflattened by something.\n",
+      "roomFlags": [
+        "Dark",
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 2803,
+          "description": "You welcome the fresh breeze coming from the north, but wrinkle your nose when\nthe stench bears down on you once more.\n"
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Mobile",
+      "mobileVnum": 2800,
+      "roomVnum": 2801,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 2805,
+      "roomVnum": 2801,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2801,
+      "roomVnum": 2802,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2801,
+      "roomVnum": 2802,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2806,
+      "roomVnum": 2802,
+      "maxInWorld": 10,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2806,
+      "roomVnum": 2802,
+      "maxInWorld": 10,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2807,
+      "roomVnum": 2802,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2802,
+      "roomVnum": 2803,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2800,
+      "roomVnum": 2803,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2806,
+      "roomVnum": 2803,
+      "maxInWorld": 10,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2806,
+      "roomVnum": 2803,
+      "maxInWorld": 10,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2808,
+      "roomVnum": 2803,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 2800,
+      "roomVnum": 2804,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Put",
+      "objectVnum": 2804,
+      "containerVnum": 2800,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2803,
+      "roomVnum": 2804,
+      "maxInWorld": 4,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2803,
+      "roomVnum": 2804,
+      "maxInWorld": 4,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2803,
+      "roomVnum": 2804,
+      "maxInWorld": 4,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2803,
+      "roomVnum": 2804,
+      "maxInWorld": 4,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2806,
+      "roomVnum": 2804,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2804,
+      "roomVnum": 2805,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 2802,
+      "wearLocation": "About",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 2805,
+      "roomVnum": 2805,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 2801,
+      "roomVnum": 2805,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Put",
+      "objectVnum": 2803,
+      "containerVnum": 2801,
+      "maxInWorld": 1
+    }
+  ]
+}

@@ -1,0 +1,3555 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "eastern.are",
+  "name": "Sands of Sorrow",
+  "credits": "{10 20} Anon    Sands of Sorrow",
+  "vnumRange": {
+    "low": 5000,
+    "high": 5099
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 5000,
+      "keywords": "oldstyle dervish raggity",
+      "shortDescription": "The dervish",
+      "longDescription": "The raggity dervish walks on aimlessly.\n",
+      "description": "Dressed in loose fitting rags, this man looks like he could use\nsome rest.\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 900,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 3,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5001,
+      "keywords": "oldstyle dervish large",
+      "shortDescription": "The dervish",
+      "longDescription": "The large dervish watches for signs of trouble.\n",
+      "description": "Dressed in loose fitting rags, this man looks like he could use\nLOTS of rest.\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 650,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 7,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5002,
+      "keywords": "oldstyle snake coral",
+      "shortDescription": "The coral snake",
+      "longDescription": "A brightly colored snake slithers along the sands.\n",
+      "description": "This relatively harmless snake has bright alternating bands of red, yellow\nand black.\n",
+      "race": "Snake",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Poison"
+      ],
+      "vulnerabilities": [
+        "Cold"
+      ],
+      "form": [
+        "Edible",
+        "Animal",
+        "Reptile",
+        "Snake",
+        "ColdBlood"
+      ],
+      "parts": [
+        "Head",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Eye",
+        "LongTongue",
+        "Tail",
+        "Fangs",
+        "Scales"
+      ],
+      "alignment": -10,
+      "group": 0,
+      "level": 4,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 46
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5003,
+      "keywords": "oldstyle scorpion small",
+      "shortDescription": "The small scorpion",
+      "longDescription": "A small, red scorpion scuttles away at your approach.\n",
+      "description": "The little tail is mighty dangerous for such a small creature.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -50,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5004,
+      "keywords": "oldstyle worm giant purple",
+      "shortDescription": "The giant, purple sand worm",
+      "longDescription": "A giant, purple sand worm thrusts up out of the sand and attacks!\n",
+      "description": "He's big, mean, and purple. Watch out!\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -100,
+      "group": 0,
+      "level": 18,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 283
+      },
+      "manaDice": {
+        "count": 9,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 7,
+        "bonus": 4,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -3,
+        "bash": -3,
+        "slash": -3,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 127,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5005,
+      "keywords": "oldstyle dragon brass",
+      "shortDescription": "the brass dragon",
+      "longDescription": "The brass dragon steps out of the darkness and says 'Hello'.\nThen adds to it, 'Prepare to die, have a nice day!'\n",
+      "description": "",
+      "race": "Dragon",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Sanctuary",
+        "Infrared",
+        "Flying"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistRace"
+      ],
+      "resistances": [
+        "Charm",
+        "Bash",
+        "Fire"
+      ],
+      "vulnerabilities": [
+        "Pierce",
+        "Cold"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Dragon"
+      ],
+      "parts": [
+        "Head",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye",
+        "Wings",
+        "Tail",
+        "Claws",
+        "Fangs",
+        "Scales"
+      ],
+      "alignment": 450,
+      "group": 0,
+      "level": 30,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 853
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 6,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -9,
+        "bash": -9,
+        "slash": -9,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 275,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5006,
+      "keywords": "oldstyle nomad leader",
+      "shortDescription": "The nomad leader",
+      "longDescription": "The nomad leader sits silently in prayer.\n",
+      "description": "He is clad in silk robes lined with gold thread. At his side\nis a large, engraved cutlass. He has an especially haughty air\nabout him.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 950,
+      "group": 0,
+      "level": 14,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 190
+      },
+      "manaDice": {
+        "count": 7,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 12,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -1,
+        "bash": -1,
+        "slash": -1,
+        "exotic": 8
+      },
+      "startPosition": "Sitting",
+      "defaultPosition": "Sitting",
+      "sex": "Male",
+      "gold": 50,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5007,
+      "keywords": "oldstyle nomad commander",
+      "shortDescription": "The nomad commander",
+      "longDescription": "The nomad commander stands here staring suspiciously at you.\n",
+      "description": "This is the nomad leader's second in command. His clothes are richly\nwoven of silk and gold thread. A nasty cutlass hangs at his side.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 900,
+      "group": 0,
+      "level": 12,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 150
+      },
+      "manaDice": {
+        "count": 6,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 0,
+        "bash": 0,
+        "slash": 0,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 30,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5008,
+      "keywords": "oldstyle nomad warrior",
+      "shortDescription": "The nomad warrior",
+      "longDescription": "A proud nomad warrior stands here.\n",
+      "description": "",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 700,
+      "group": 0,
+      "level": 10,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 121
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 4,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 15,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5009,
+      "keywords": "oldstyle slave young",
+      "shortDescription": "The slave",
+      "longDescription": "A young slave sits here staring at you with pleading eyes.\n",
+      "description": "",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Wimpy"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 1000,
+      "group": 0,
+      "level": 3,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 35
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 10
+      },
+      "startPosition": "Resting",
+      "defaultPosition": "Resting",
+      "sex": "Female",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5010,
+      "keywords": "oldstyle dracolich lich",
+      "shortDescription": "The dracolich",
+      "longDescription": "A pile of bones rises up to form a skeletal dracolich.\n",
+      "description": "The dracolich is now only bone with pieces of flesh hanging from it.\nObviously it no longer fears death.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Sanctuary"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -1000,
+      "group": 0,
+      "level": 30,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 6,
+        "size": 12,
+        "bonus": 853
+      },
+      "manaDice": {
+        "count": 15,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 6,
+        "bonus": 8,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -9,
+        "bash": -9,
+        "slash": -9,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 3750,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5011,
+      "keywords": "oldstyle drider drow",
+      "shortDescription": "The drider",
+      "longDescription": "The drider looks at you viciously while it draws its sword.\n",
+      "description": "This half-spider, half-drow creature is a formidable opponent.\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -1000,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 10,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5012,
+      "keywords": "oldstyle duergar dwarf",
+      "shortDescription": "The dark dwarf",
+      "longDescription": "A duergar is here mining precious stones with his pick.\n",
+      "description": "The duergar could crush your head as easily as it does those rocks.\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -850,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 8,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5013,
+      "keywords": "oldstyle myconoid",
+      "shortDescription": "the myconoid",
+      "longDescription": "A myconoid lumbers along peacefully.\n",
+      "description": "The myconoid looks something like a giant mushroom (and probably\nhas the same effect).\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 850,
+      "group": 0,
+      "level": 6,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 71
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 2,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5014,
+      "keywords": "oldstyle myconoid shaman",
+      "shortDescription": "The myconoid shaman",
+      "longDescription": "A rather large myconoid stands here chanting in a strange tongue.\n",
+      "description": "The shaman shoots spores into the air.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Wimpy",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Sanctuary"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 850,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 8,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 75,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5015,
+      "keywords": "oldstyle dustdigger",
+      "shortDescription": "The dustdigger",
+      "longDescription": "A small oasis invites you to dive in.\n",
+      "description": "",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Scavenger",
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -200,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 22,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 5017,
+      "keywords": "oldstyle camel",
+      "shortDescription": "The rabid camel",
+      "longDescription": "A very dangerous rabid camel snorts at you.\n",
+      "description": "Don't mess with this animal.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -351,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 13,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 5000,
+      "keywords": "pick",
+      "shortDescription": "a small mining pick",
+      "longDescription": "A small mining pick made of what appears to be silver lies on the ground.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "AntiGood"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 5,
+      "weightPounds": 3,
+      "costCopper": 320,
+      "condition": 100,
+      "weapon": {
+        "class": "Mace",
+        "diceCount": 1,
+        "diceSize": 9,
+        "attackType": "Pierce"
+      }
+    },
+    {
+      "vnum": 5001,
+      "keywords": "banded mail",
+      "shortDescription": "a glowing suit of banded mail",
+      "longDescription": "A glowing suit of banded mail lies on the ground.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Glow",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Body"
+      ],
+      "level": 23,
+      "weightPounds": 0,
+      "costCopper": 7300,
+      "condition": 100,
+      "armor": {
+        "pierce": 7,
+        "bash": 7,
+        "slash": 7,
+        "exotic": 0
+      },
+      "affects": [
+        {
+          "location": "ArmorClass",
+          "modifier": -4
+        },
+        {
+          "location": "Dexterity",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 5002,
+      "keywords": "halberd",
+      "shortDescription": "the halberd",
+      "longDescription": "A mighty halberd lies against the wall.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Magic",
+        "Bless"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 29,
+      "weightPounds": 16,
+      "costCopper": 1620,
+      "condition": 100,
+      "weapon": {
+        "class": "Polearm",
+        "diceCount": 2,
+        "diceSize": 14,
+        "attackType": "Cleave",
+        "specialFlags": [
+          "TwoHands"
+        ]
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 2
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 5003,
+      "keywords": "amulet",
+      "shortDescription": "the amulet",
+      "longDescription": "A mushroom shaped amulet lies on the ground.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Neck"
+      ],
+      "level": 5,
+      "weightPounds": 2,
+      "costCopper": 550,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Constitution",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5005,
+      "keywords": "bone",
+      "shortDescription": "a large leg bone",
+      "longDescription": "A large leg bone rests on the ground.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 0,
+      "weightPounds": 5,
+      "costCopper": 140,
+      "condition": 100,
+      "weapon": {
+        "class": "Mace",
+        "diceCount": 1,
+        "diceSize": 4,
+        "attackType": "Pound"
+      }
+    },
+    {
+      "vnum": 5006,
+      "keywords": "cactus",
+      "shortDescription": "a small cactus cup",
+      "longDescription": "A small cactus cup lies on the ground.",
+      "material": "oldstyle",
+      "itemType": "DrinkContainer",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 6,
+      "costCopper": 5,
+      "condition": 100,
+      "drink": {
+        "capacity": 5,
+        "remaining": 5,
+        "liquid": "Water",
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 5007,
+      "keywords": "basket",
+      "shortDescription": "a small wicker basket",
+      "longDescription": "A small wicker basket sits on the ground.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 20,
+      "condition": 100,
+      "container": {
+        "capacity": 100,
+        "flags": [
+          "Closeable",
+          "Closed"
+        ],
+        "keyVnum": 0
+      }
+    },
+    {
+      "vnum": 5008,
+      "keywords": "basket",
+      "shortDescription": "a small wicker basket",
+      "longDescription": "A small wicker basket sits on the ground.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 20,
+      "condition": 100,
+      "container": {
+        "capacity": 100,
+        "flags": [
+          "Closeable",
+          "Closed"
+        ],
+        "keyVnum": 0
+      }
+    },
+    {
+      "vnum": 5009,
+      "keywords": "basket",
+      "shortDescription": "a small wicker basket",
+      "longDescription": "A small wicker basket sits on the ground.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 20,
+      "condition": 100,
+      "container": {
+        "capacity": 100,
+        "flags": [
+          "Closeable",
+          "Closed"
+        ],
+        "keyVnum": 0
+      }
+    },
+    {
+      "vnum": 5010,
+      "keywords": "basket",
+      "shortDescription": "a small wicker basket",
+      "longDescription": "A small wicker basket sits on the ground.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 100,
+        "flags": [
+          "Closeable",
+          "Closed"
+        ],
+        "keyVnum": 0
+      }
+    },
+    {
+      "vnum": 5011,
+      "keywords": "rope",
+      "shortDescription": "a coil of rope",
+      "longDescription": "A long coil of rope lies on the ground.",
+      "material": "oldstyle",
+      "itemType": "Furniture",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 12,
+      "costCopper": 20,
+      "condition": 100,
+      "furniture": {
+        "maxPeople": 0,
+        "flags": []
+      }
+    },
+    {
+      "vnum": 5012,
+      "keywords": "stakes",
+      "shortDescription": "a bunch of stakes",
+      "longDescription": "A small bundle of stakes lies here.",
+      "material": "oldstyle",
+      "itemType": "Furniture",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 6,
+      "costCopper": 20,
+      "condition": 100,
+      "furniture": {
+        "maxPeople": 0,
+        "flags": []
+      }
+    },
+    {
+      "vnum": 5013,
+      "keywords": "map",
+      "shortDescription": "an old, tattered map",
+      "longDescription": "An old, tattered, and much faded map lies here.",
+      "material": "oldstyle",
+      "itemType": "Furniture",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 5,
+      "condition": 100,
+      "furniture": {
+        "maxPeople": 0,
+        "flags": []
+      }
+    },
+    {
+      "vnum": 5014,
+      "keywords": "turban",
+      "shortDescription": "a thick padded turban",
+      "longDescription": "A thick padded turban lies here.",
+      "material": "oldstyle",
+      "itemType": "Clothing",
+      "extraFlags": [
+        "Magic",
+        "NoDrop"
+      ],
+      "wearFlags": [
+        "Take",
+        "Head"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 10,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "ArmorClass",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5015,
+      "keywords": "coins",
+      "shortDescription": "a great pile of treasure",
+      "longDescription": "A great, gleaming pile of treasure lies at your feet.",
+      "material": "oldstyle",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 12,
+        "silver": 427
+      }
+    },
+    {
+      "vnum": 5016,
+      "keywords": "sabre",
+      "shortDescription": "a long, curved sabre",
+      "longDescription": "A long, curved sabre stands upright in the ground.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "AntiNeutral"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 16,
+      "weightPounds": 7,
+      "costCopper": 1410,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 2,
+        "diceSize": 8,
+        "attackType": "Slash"
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 5017,
+      "keywords": "scimitar",
+      "shortDescription": "a curved scimitar",
+      "longDescription": "A curved scimitar lies at your feet.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "AntiNeutral"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 12,
+      "weightPounds": 6,
+      "costCopper": 990,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 2,
+        "diceSize": 7,
+        "attackType": "Slash"
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5018,
+      "keywords": "cutlass",
+      "shortDescription": "a long, pointed cutlass",
+      "longDescription": "A long, pointed cutlass lies here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "AntiNeutral"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 12,
+      "weightPounds": 5,
+      "costCopper": 930,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 2,
+        "diceSize": 7,
+        "attackType": "Slash"
+      }
+    },
+    {
+      "vnum": 5019,
+      "keywords": "potion pink",
+      "shortDescription": "a pink potion",
+      "longDescription": "A pink potion stands here.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 13,
+      "weightPounds": 6,
+      "costCopper": 1220,
+      "condition": 100,
+      "spells": {
+        "level": 25,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 5020,
+      "keywords": "wand platinum",
+      "shortDescription": "a platinum wand",
+      "longDescription": "A platinum wand lies here.",
+      "material": "oldstyle",
+      "itemType": "Wand",
+      "extraFlags": [
+        "Hum"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 2,
+      "weightPounds": 8,
+      "costCopper": 990,
+      "condition": 100,
+      "charges": {
+        "level": 30,
+        "total": 10,
+        "remaining": 10,
+        "spell": "magic missile"
+      }
+    },
+    {
+      "vnum": 5021,
+      "keywords": "bow energy strange",
+      "shortDescription": "a strange energy bow",
+      "longDescription": "A strange energy bow lies here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Glow",
+        "Hum",
+        "Magic",
+        "Bless"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 21,
+      "weightPounds": 20,
+      "costCopper": 2600,
+      "condition": 100,
+      "weapon": {
+        "class": "Exotic",
+        "diceCount": 4,
+        "diceSize": 5,
+        "attackType": "Blast"
+      }
+    },
+    {
+      "vnum": 5022,
+      "keywords": "scroll encrypted",
+      "shortDescription": "an encrypted scroll",
+      "longDescription": "An encrypted scroll lies at your feet.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 11,
+      "weightPounds": 7,
+      "costCopper": 1730,
+      "condition": 100,
+      "spells": {
+        "level": 22,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "vnum": 5023,
+      "keywords": "chest",
+      "shortDescription": "an iron bound chest",
+      "longDescription": "An iron bound chest with a shiny lock sits here.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 200,
+        "flags": [
+          "Closeable",
+          "Closed",
+          "Locked"
+        ],
+        "keyVnum": 5024
+      }
+    },
+    {
+      "vnum": 5024,
+      "keywords": "key golden",
+      "shortDescription": "a golden key",
+      "longDescription": "A shiny golden key lies here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        10,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 5025,
+      "keywords": "bracelet copper",
+      "shortDescription": "a copper bracelet",
+      "longDescription": "A tarnished copper bracelet lies at your feet.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Magic",
+        "NoDrop"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wrist"
+      ],
+      "level": 20,
+      "weightPounds": 10,
+      "costCopper": 1300,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 2
+        },
+        {
+          "location": "Hit",
+          "modifier": 10
+        }
+      ]
+    },
+    {
+      "vnum": 5026,
+      "keywords": "gem ruby",
+      "shortDescription": "a large ruby",
+      "longDescription": "A large ruby lies on the ground collecting dust.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 0.1,
+      "costCopper": 5000,
+      "condition": 100,
+      "rawValues": [
+        20,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 5027,
+      "keywords": "gem diamond glittering",
+      "shortDescription": "a glittering diamond",
+      "longDescription": "A glittering diamond lies at your feet.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 0.1,
+      "costCopper": 6000,
+      "condition": 100,
+      "rawValues": [
+        21,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 5028,
+      "keywords": "gem sapphire",
+      "shortDescription": "a brilliant sapphire",
+      "longDescription": "A brilliant sapphire lies here twinkling.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 0.1,
+      "costCopper": 2000,
+      "condition": 100,
+      "rawValues": [
+        22,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 5029,
+      "keywords": "gem lapis",
+      "shortDescription": "a deep blue lapis lazuli",
+      "longDescription": "A deep blue lapis lazuli gem lies here.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 0.1,
+      "costCopper": 800,
+      "condition": 100,
+      "rawValues": [
+        24,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 5030,
+      "keywords": "jewel tiger",
+      "shortDescription": "the tiger jewel",
+      "longDescription": "The Tiger Jewel lies here blazing.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "extraFlags": [
+        "Bless"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 5,
+      "weightPounds": 0.1,
+      "costCopper": 550,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Dexterity",
+          "modifier": 1
+        }
+      ]
+    },
+    {
+      "vnum": 5031,
+      "keywords": "jewel red-eyed",
+      "shortDescription": "the red-eyed jewel",
+      "longDescription": "The red-eyed jewel glares at you greedily.",
+      "material": "oldstyle",
+      "itemType": "Gem",
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 15,
+      "weightPounds": 0.1,
+      "costCopper": 2600,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Intelligence",
+          "modifier": 2
+        }
+      ]
+    },
+    {
+      "vnum": 5032,
+      "keywords": "gem emerald",
+      "shortDescription": "a fiery green emerald",
+      "longDescription": "A fiery green emerald sits here.",
+      "material": "oldstyle",
+      "itemType": "WarpStone",
+      "extraFlags": [
+        "NoLocate"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 0.1,
+      "costCopper": 4000,
+      "condition": 100,
+      "rawValues": [
+        23,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 5001,
+      "name": "A long tunnel",
+      "description": "You encounter some rapids as you enter this tunnel cut out of\nthe mountains by the river.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "WaterNoSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5002
+        },
+        "west": {
+          "toRoom": 3205
+        }
+      }
+    },
+    {
+      "vnum": 5002,
+      "name": "A long tunnel",
+      "description": "The tunnel branches off north.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "WaterNoSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5008
+        },
+        "east": {
+          "toRoom": 5003
+        },
+        "west": {
+          "toRoom": 5001
+        }
+      }
+    },
+    {
+      "vnum": 5003,
+      "name": "A long tunnel",
+      "description": "The tunnel branches off south.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "WaterNoSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5004
+        },
+        "south": {
+          "toRoom": 5017
+        },
+        "west": {
+          "toRoom": 5002
+        }
+      }
+    },
+    {
+      "vnum": 5004,
+      "name": "A long tunnel",
+      "description": "The tunnel branches off to the south.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "WaterNoSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5005
+        },
+        "south": {
+          "toRoom": 5018
+        },
+        "west": {
+          "toRoom": 5003
+        }
+      }
+    },
+    {
+      "vnum": 5005,
+      "name": "An underground lake",
+      "description": "You are floating on a jet-black underground lake fed by dripping\nwater and lime from above. The tunnel continues to the east and the river\nleads back west. To the north is a roughly-hewn hallway. There is also\na tunnel south.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "WaterNoSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5016
+        },
+        "east": {
+          "toRoom": 5006
+        },
+        "south": {
+          "toRoom": 5023
+        },
+        "west": {
+          "toRoom": 5004
+        }
+      }
+    },
+    {
+      "vnum": 5006,
+      "name": "A long narrow tunnel",
+      "description": "The tunnel rises sharply to the east.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5007
+        },
+        "west": {
+          "toRoom": 5005
+        }
+      }
+    },
+    {
+      "vnum": 5007,
+      "name": "A wide tunnel",
+      "description": "The tunnel continues east and west. To the east the tunnel dives\ndown into a bright light.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5027
+        },
+        "west": {
+          "toRoom": 5006
+        }
+      }
+    },
+    {
+      "vnum": 5008,
+      "name": "Cave-in",
+      "description": "You stand at the edge of a large pile of rubble created from the last\nrockslide.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5002
+        },
+        "down": {
+          "toRoom": 5009,
+          "description": "You can easily slide down the rocks without getting hurt."
+        }
+      }
+    },
+    {
+      "vnum": 5009,
+      "name": "At the foot of the rubble",
+      "description": "You are at the bottom of a large pile of rubble. A tunnel branches\noff to the north and east.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5010
+        },
+        "east": {
+          "toRoom": 5012
+        },
+        "up": {
+          "toRoom": 5008
+        }
+      }
+    },
+    {
+      "vnum": 5010,
+      "name": "Cave entrance",
+      "description": "You stand in the middle of a large and beautiful cave. A path leads\ndeeper into the darkness.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5009
+        },
+        "down": {
+          "toRoom": 5011,
+          "description": "You look down into the cave. Bones are strewn about everywhere."
+        }
+      }
+    },
+    {
+      "vnum": 5011,
+      "name": "Giant cave",
+      "description": "This cavern overwhelms you. The walls and ceiling seem miles away.\nBones of previous adventurers lie strewn on the cavern floor.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 5010
+        }
+      }
+    },
+    {
+      "vnum": 5012,
+      "name": "Narrow bend",
+      "description": "The tunnel turns to the south and west.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5013
+        },
+        "west": {
+          "toRoom": 5009
+        }
+      }
+    },
+    {
+      "vnum": 5013,
+      "name": "Large cave",
+      "description": "You are standing in a large cave. Many furs are spread out on the floor.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5012
+        },
+        "east": {
+          "toRoom": 5014
+        }
+      }
+    },
+    {
+      "vnum": 5014,
+      "name": "Damp hallway",
+      "description": "The walls here are extremely damp, as well as the floor.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5015,
+          "description": "You hear drops of water."
+        },
+        "west": {
+          "toRoom": 5013
+        }
+      }
+    },
+    {
+      "vnum": 5015,
+      "name": "Underground pool",
+      "description": "You are wading in a knee deep pool of lime-water.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "WaterSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5016
+        },
+        "west": {
+          "toRoom": 5014
+        }
+      }
+    },
+    {
+      "vnum": 5016,
+      "name": "Damp hallway",
+      "description": "The walls of the tunnel are extremely damp here. You hear the faint\nsound of running water to the south.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5015,
+          "description": "You hear drops of water."
+        },
+        "south": {
+          "toRoom": 5005
+        }
+      }
+    },
+    {
+      "vnum": 5017,
+      "name": "Narrow crawlway",
+      "description": "This crawlway is just big enough for a human to crawl through or a\nhalfling to walk through.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5003
+        },
+        "east": {
+          "toRoom": 5018
+        },
+        "south": {
+          "toRoom": 5019,
+          "description": "You smell the fragrant odor of fungus."
+        }
+      }
+    },
+    {
+      "vnum": 5018,
+      "name": "Large cavern",
+      "description": "You have entered a very large cavern. The rock formations would amaze\nalmost any dwarf.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5004
+        },
+        "west": {
+          "toRoom": 5017
+        }
+      }
+    },
+    {
+      "vnum": 5019,
+      "name": "Fungus patch",
+      "description": "As you walk through the fungus patch, you are shot at by many millions of\nspores. You can hardly breathe.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5017
+        },
+        "east": {
+          "toRoom": 5020,
+          "description": "The fragrant smell of fungus spores continues to the east"
+        }
+      }
+    },
+    {
+      "vnum": 5020,
+      "name": "Fungus path",
+      "description": "As you walk along the path, millions of spores are shot at you. You can\nhardly breathe.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5021,
+          "description": "A giant mushroom temple stands to the south."
+        },
+        "west": {
+          "toRoom": 5019,
+          "description": "The fragrant smell of spores continues to the west."
+        }
+      }
+    },
+    {
+      "vnum": 5021,
+      "name": "Fungus temple",
+      "description": "You find yourself standing inside of a giant mushroom. The inside\nis decorated in the fashion of a temple.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5020
+        },
+        "east": {
+          "toRoom": 5022
+        }
+      }
+    },
+    {
+      "vnum": 5022,
+      "name": "Sloping passage",
+      "description": "You follow a path sloping down from the fungus temple.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 5021
+        },
+        "down": {
+          "toRoom": 5023
+        }
+      }
+    },
+    {
+      "vnum": 5023,
+      "name": "Sloping passage",
+      "description": "You are on a path that gently slopes up from the underground pool.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5005,
+          "description": "You hear sounds of trickling water."
+        },
+        "up": {
+          "toRoom": 5022
+        }
+      }
+    },
+    {
+      "vnum": 5024,
+      "name": "The Sands of Sorrow",
+      "description": "A vast desert stretches for miles, the sand constantly shifting around you.\nYou feel lost.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5030,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "east": {
+          "toRoom": 5025,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 5027,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 5026,
+          "description": "Sand as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5025,
+      "name": "The Sands of Sorrow",
+      "description": "A vast desert stretches for miles, the sand constantly shifting around you.\nYou feel lost.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5056,
+          "description": "You see a nomad camp by an oasis.\n"
+        },
+        "east": {
+          "toRoom": 5026,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 5028,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 5024,
+          "description": "Sand as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5026,
+      "name": "The Sands of Sorrow",
+      "description": "A vast desert stretches for miles, the sand constantly shifting around you.\nYou feel lost.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5032,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "east": {
+          "toRoom": 5024,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 5029,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 5025,
+          "description": "Sand as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5027,
+      "name": "The Sands of Sorrow",
+      "description": "A vast desert stretches for miles, the sand constantly shifting around you.\nYou feel lost.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5024,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "east": {
+          "toRoom": 5028,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 5030,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 5007,
+          "description": "You see a river flowing into the mountain.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5028,
+      "name": "The Sands of Sorrow",
+      "description": "A vast desert stretches for miles, the sand constantly shifting around you.\nYou feel lost.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5025,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "east": {
+          "toRoom": 5029,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 5031,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 5027,
+          "description": "Sand as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5029,
+      "name": "The Sands of Sorrow",
+      "description": "A vast desert stretches for miles, the sand constantly shifting around you.\nYou feel lost.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5026,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "east": {
+          "toRoom": 5062,
+          "description": "The sand is glowing in this direction.\n"
+        },
+        "south": {
+          "toRoom": 5032,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 5028,
+          "description": "Sand as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5030,
+      "name": "The Sands of Sorrow",
+      "description": "A vast desert stretches for miles, the sand constantly shifting around you.\nYou feel lost.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5027,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "east": {
+          "toRoom": 5031,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 5024,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 5032,
+          "description": "Sand as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5031,
+      "name": "The Sands of Sorrow",
+      "description": "A vast desert stretches for miles, the sand constantly shifting around you.\nYou feel lost.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5028,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "east": {
+          "toRoom": 5032,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 5063,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 5030,
+          "description": "Sand as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5032,
+      "name": "The Sands of Sorrow",
+      "description": "A vast desert stretches for miles, the sand constantly shifting around you.\nYou feel lost.\n",
+      "roomFlags": [
+        "NoRecall"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5029,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "east": {
+          "toRoom": 5030,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 5026,
+          "description": "You see a tiny ledge.\n"
+        },
+        "west": {
+          "toRoom": 5031,
+          "description": "Sand as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5056,
+      "name": "A nomad camp",
+      "description": "This small group of desert nomads has stopped for the day to rest\nand refresh themselves beside this beautiful oasis. Three tents and some\ncamels make up the party. From within two of the tents you hear muffled\nvoices, obviously surprised at your visit.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5058,
+          "description": "You see ill-tempered camels.\n"
+        },
+        "east": {
+          "toRoom": 5057,
+          "description": "You see inside one of the tents a huddled mass of people, probably slaves.\n"
+        },
+        "south": {
+          "toRoom": 5025,
+          "description": "Sand as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5057,
+      "name": "Inside a small tent",
+      "description": "This is a small and simple tent with few possessions in sight. Lying\nhere and there are young-looking men and women, possibly slaves to the\nleader of this band.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8700,
+          "description": "Waving in the heat over the sand you see a HUGE pyramid.\n"
+        },
+        "west": {
+          "toRoom": 5056,
+          "description": "You see the center of the nomad camp.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5058,
+      "name": "Beside the camels",
+      "description": "Here stand about ten camels, all hitched to some stakes plugged into\nthe ground. To the east you see a small tent while to the north you see a\nlarger, fancier tent.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5060,
+          "description": "This tent seems to be the temporary abode of the nomad leader. You make a\nmental note to visit it before you leave."
+        },
+        "east": {
+          "toRoom": 5059,
+          "description": "In this tent there are very large men, all carrying weapons.\n"
+        },
+        "south": {
+          "toRoom": 5056,
+          "description": "You see the center of the nomad camp.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5059,
+      "name": "The warrior's tent.",
+      "description": "This tent has a few furnishings, but mainly it holds the band's\nprotectors. They all stare at you coldly as you enter.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 5058,
+          "description": "Outside you see some peaceful camels.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5060,
+      "name": "The main tent",
+      "description": "This tent is as lavishly decorated on the inside as it is on the\noutside. A fancy carpet lies on the sand and numerous baskets line the\nwalls.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5061
+        },
+        "south": {
+          "toRoom": 5058,
+          "description": "You see some peaceful camels.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5061,
+      "name": "The main tent",
+      "description": "This is where the leader of this band of nomads resides. He is\ndefinitely rich as you inspect the tapestries, baskets, and a few\npaintings as well.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 5060,
+          "description": "You see the entrance to this tent.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5062,
+      "name": "Strange Glowing Sand",
+      "description": "A vast desert stretches for miles, the sand constantly shifting around\nyou.  But this patch of desert looks different...the sand glows.  You see a\nfuturistic city to the south.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 8001,
+          "description": "You see a futuristic city.\n"
+        },
+        "west": {
+          "toRoom": 5029,
+          "description": "Sand as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5063,
+      "name": "The wind-swept ledge",
+      "description": "Being very careful not to lose your balance, you look around and\nfind that this canyon is about a half a kilometer deep. To the west is\na dark cave leading under the desert sands.\n",
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5031,
+          "description": "Sand as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 5064,
+          "description": "You see a dark cave.\n"
+        }
+      }
+    },
+    {
+      "vnum": 5064,
+      "name": "The cave mouth",
+      "description": "The air in here is MUCH cooler than outside. From the west you hear\nstrange sounds, but can see nothing. The cave slopes down into the\ndarkness.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5063,
+          "description": "Outside is lighter and very windy."
+        },
+        "west": {
+          "toRoom": 5065
+        }
+      }
+    },
+    {
+      "vnum": 5065,
+      "name": "The mysterious lair.",
+      "description": "You have stumbled upon the home of something. From the treasure\nhaphazardly strewn about and the rotting carcasses, you would guess that\nthis is a dragon's lair. As to what type, you can't really say. The cave\nnarrows out into a tunnel to the west.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5064
+        },
+        "west": {
+          "toRoom": 5066,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 5024
+        }
+      }
+    },
+    {
+      "vnum": 5066,
+      "name": "A wide tunnel",
+      "description": "This tunnel seems to go on forever into the darkness. You carefully\nfeel your way along the walls.\n",
+      "roomFlags": [
+        "Dark",
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5065,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 5024
+        },
+        "west": {
+          "toRoom": 5067
+        }
+      }
+    },
+    {
+      "vnum": 5067,
+      "name": "A narrower tunnel",
+      "description": "The tunnel becomes very narrow and you fight to squeeze your way through.\nThe floor seems to level off a little.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 5066
+        },
+        "south": {
+          "toRoom": 5068
+        }
+      }
+    },
+    {
+      "vnum": 5068,
+      "name": "A narrow crack",
+      "description": "This part of the tunnel is the hardest to move through as the walls\nmove in to meet you.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5067
+        },
+        "west": {
+          "toRoom": 5069
+        }
+      }
+    },
+    {
+      "vnum": 5069,
+      "name": "A small cavern.",
+      "description": "It is dark and damp and bats hang from the ceiling. A narrow crack is\nin the east wall. The floor now slopes upwards.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 5070
+        },
+        "east": {
+          "toRoom": 5068
+        }
+      }
+    },
+    {
+      "vnum": 5070,
+      "name": "A small shaft",
+      "description": "From within this shaft you can see a narrow hole in the roof just\nlarge enough for one person. Back south is the cavern.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Mountain",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 5069
+        },
+        "up": {
+          "toRoom": 5009
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Door",
+      "roomVnum": 5065,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 5066,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5011,
+      "roomVnum": 5009,
+      "maxInWorld": 3,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3022,
+      "wearLocation": "Wield",
+      "maxInWorld": 50
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5010,
+      "roomVnum": 5011,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5001,
+      "maxInWorld": 8
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5002,
+      "maxInWorld": 8
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5005,
+      "roomVnum": 5011,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5012,
+      "roomVnum": 5014,
+      "maxInWorld": 3,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5000,
+      "wearLocation": "Wield",
+      "maxInWorld": 15
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5013,
+      "roomVnum": 5021,
+      "maxInWorld": 4,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5014,
+      "roomVnum": 5021,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5003,
+      "wearLocation": "Neck1",
+      "maxInWorld": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5015,
+      "roomVnum": 5024,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5000,
+      "roomVnum": 5025,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3021,
+      "wearLocation": "Wield",
+      "maxInWorld": 25
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5015,
+      "roomVnum": 5026,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5000,
+      "roomVnum": 5027,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3021,
+      "wearLocation": "Wield",
+      "maxInWorld": 25
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5003,
+      "roomVnum": 5028,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5004,
+      "roomVnum": 5028,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5019,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5020,
+      "maxInWorld": 5
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5021,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5000,
+      "roomVnum": 5029,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3021,
+      "wearLocation": "Wield",
+      "maxInWorld": 25
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5015,
+      "roomVnum": 5030,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5001,
+      "roomVnum": 5031,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3022,
+      "wearLocation": "Wield",
+      "maxInWorld": 25
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5002,
+      "roomVnum": 5031,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5015,
+      "roomVnum": 5032,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5009,
+      "roomVnum": 5057,
+      "maxInWorld": 6,
+      "maxInRoom": 6
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5017,
+      "roomVnum": 5058,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5008,
+      "roomVnum": 5059,
+      "maxInWorld": 5,
+      "maxInRoom": 5
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5018,
+      "wearLocation": "Wield",
+      "maxInWorld": 25
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5007,
+      "roomVnum": 5060,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5017,
+      "wearLocation": "Wield",
+      "maxInWorld": 15
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5007,
+      "roomVnum": 5060,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5012,
+      "containerVnum": 5007,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5011,
+      "containerVnum": 5007,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5006,
+      "roomVnum": 5061,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 5016,
+      "wearLocation": "Wield",
+      "maxInWorld": 10
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5008,
+      "roomVnum": 5061,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5014,
+      "containerVnum": 5008,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5009,
+      "roomVnum": 5061,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5010,
+      "roomVnum": 5061,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5013,
+      "containerVnum": 5010,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 5005,
+      "roomVnum": 5065,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5024,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 5022,
+      "maxInWorld": 10
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5023,
+      "roomVnum": 5070,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5025,
+      "containerVnum": 5023,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5026,
+      "containerVnum": 5023,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5027,
+      "containerVnum": 5023,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5028,
+      "containerVnum": 5023,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5029,
+      "containerVnum": 5023,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5030,
+      "containerVnum": 5023,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5031,
+      "containerVnum": 5023,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 5032,
+      "containerVnum": 5023,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 5015,
+      "roomVnum": 5070,
+      "maxInWorld": 1
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 5005,
+      "procedure": "BreathAny"
+    },
+    {
+      "mobileVnum": 5010,
+      "procedure": "BreathFire"
+    },
+    {
+      "mobileVnum": 5014,
+      "procedure": "CastCleric"
+    }
+  ]
+}

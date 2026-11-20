@@ -50,6 +50,11 @@ dotnet run --project VibeROM.AreaImporter -- \
 `--strict` promotes warnings (reserved flag bits, clamped values, dangling
 references, alternative sector fallbacks) to errors and writes no output.
 
+In normal mode the importer also clears exit keys that point at a room or a
+missing object and records each change in the report's `repairs` list. The ROM
+data cannot match such keys, so clearing them is behaviour-preserving and keeps
+the JSON free of dangling references.
+
 ## Exit codes
 
 | Code | Meaning |

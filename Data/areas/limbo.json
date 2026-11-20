@@ -1,0 +1,418 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "limbo.are",
+  "name": "Limbo",
+  "credits": "{None } Diku    Limbo",
+  "vnumRange": {
+    "low": 1,
+    "high": 25
+  },
+  "builders": "None",
+  "objects": [
+    {
+      "vnum": 1,
+      "keywords": "coin silver gcash",
+      "shortDescription": "a silver coin",
+      "longDescription": "One miserable silver coin.",
+      "material": "silver",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 0,
+        "silver": 1
+      }
+    },
+    {
+      "vnum": 2,
+      "keywords": "coin gold gcash",
+      "shortDescription": "a gold coin",
+      "longDescription": "One valuable gold coin.",
+      "material": "gold",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 1,
+        "silver": 0
+      }
+    },
+    {
+      "vnum": 3,
+      "keywords": "coins gold gcash",
+      "shortDescription": "%d gold coins",
+      "longDescription": "A pile of gold coins.",
+      "material": "gold",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 0,
+        "silver": 0
+      }
+    },
+    {
+      "vnum": 4,
+      "keywords": "coins silver gcash",
+      "shortDescription": "%d silver coins",
+      "longDescription": "A pile of silver coins.",
+      "material": "silver",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 0,
+        "silver": 0
+      }
+    },
+    {
+      "vnum": 5,
+      "keywords": "coins silver gold gcash",
+      "shortDescription": "%d silver coins and %d gold coins",
+      "longDescription": "A pile of coins.",
+      "material": "gold",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 0,
+        "silver": 0
+      }
+    },
+    {
+      "vnum": 10,
+      "keywords": "corpse",
+      "shortDescription": "the corpse of %s",
+      "longDescription": "The corpse of %s is lying here.",
+      "material": "meat",
+      "itemType": "NpcCorpse",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 100,
+      "costCopper": 0,
+      "condition": 25,
+      "rawValues": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "vnum": 11,
+      "keywords": "corpse",
+      "shortDescription": "the corpse of %s",
+      "longDescription": "The corpse of %s is lying here.",
+      "material": "meat",
+      "itemType": "PcCorpse",
+      "extraFlags": [
+        "NoPurge"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 100,
+      "costCopper": 0,
+      "condition": 25,
+      "rawValues": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "vnum": 12,
+      "keywords": "head",
+      "shortDescription": "the head of %s",
+      "longDescription": "The severed head of %s is lying here.",
+      "material": "meat",
+      "itemType": "Trash",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 5,
+      "costCopper": 0,
+      "condition": 25,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "vnum": 13,
+      "keywords": "heart",
+      "shortDescription": "the heart of %s",
+      "longDescription": "The torn-out heart of %s is lying here.",
+      "material": "meat",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 0,
+      "condition": 25,
+      "food": {
+        "hours": 16,
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 14,
+      "keywords": "arm",
+      "shortDescription": "the arm of %s",
+      "longDescription": "The sliced-off arm of %s is lying here.",
+      "material": "meat",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 5,
+      "costCopper": 0,
+      "condition": 25,
+      "food": {
+        "hours": 20,
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 15,
+      "keywords": "leg",
+      "shortDescription": "the leg of %s",
+      "longDescription": "The sliced-off leg of %s is lying here.",
+      "material": "meat",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 5,
+      "costCopper": 0,
+      "condition": 25,
+      "food": {
+        "hours": 20,
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 16,
+      "keywords": "guts entrails",
+      "shortDescription": "the guts of %s",
+      "longDescription": "A steaming pile of %s's entrails is lying here.",
+      "material": "meat",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 0,
+      "condition": 25,
+      "food": {
+        "hours": 5,
+        "poisoned": true
+      }
+    },
+    {
+      "vnum": 17,
+      "keywords": "brains brain",
+      "shortDescription": "the brains of %s",
+      "longDescription": "The splattered brains of %s are lying here.",
+      "material": "meat",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 2,
+      "costCopper": 0,
+      "condition": 25,
+      "food": {
+        "hours": 10,
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 20,
+      "keywords": "mushroom",
+      "shortDescription": "a Magic Mushroom",
+      "longDescription": "A delicious magic mushroom is here.",
+      "material": "food",
+      "itemType": "Food",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "food": {
+        "hours": 8,
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 21,
+      "keywords": "ball light",
+      "shortDescription": "a bright ball of light",
+      "longDescription": "A bright ball of light shimmers in the air.",
+      "material": "energy",
+      "itemType": "Light",
+      "extraFlags": [
+        "Glow"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "light": {
+        "duration": 999
+      }
+    },
+    {
+      "vnum": 22,
+      "keywords": "spring",
+      "shortDescription": "a magical spring",
+      "longDescription": "A magical spring flows from the ground here.",
+      "material": "water",
+      "itemType": "Fountain",
+      "extraFlags": [
+        "Magic"
+      ],
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "fountain": {
+        "capacity": 100000,
+        "remaining": 100000,
+        "liquid": "Water",
+        "poisoned": false
+      }
+    },
+    {
+      "vnum": 23,
+      "keywords": "disc disk floating black",
+      "shortDescription": "a floating disc",
+      "longDescription": "A floating black disc hangs in the air.",
+      "material": "energy",
+      "itemType": "Container",
+      "extraFlags": [
+        "Magic",
+        "NoRemove",
+        "RotDeath",
+        "MeltDrop",
+        "BurnProof",
+        "NoUncurse"
+      ],
+      "wearFlags": [
+        "Take",
+        "Float"
+      ],
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 0,
+        "flags": [
+          "PutOn"
+        ],
+        "keyVnum": 0
+      }
+    },
+    {
+      "vnum": 25,
+      "keywords": "gate portal",
+      "shortDescription": "a shimmering gate",
+      "longDescription": "A shimmering black gate rises from the ground, leading to parts unknown.",
+      "material": "shadow",
+      "itemType": "Portal",
+      "extraFlags": [
+        "Magic",
+        "NoPurge",
+        "NoLocate"
+      ],
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "portal": {
+        "exitFlags": [],
+        "gateFlags": [],
+        "toRoomVnum": 0
+      }
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 1,
+      "name": "The Void",
+      "description": "You are floating in nothing.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0
+    },
+    {
+      "vnum": 2,
+      "name": "Limbo",
+      "description": "You are floating in a formless void, detached from all sensation of physical\nmatter, surrounded by swirling glowing light, which fades into the relative\ndarkness around you without any trace of edges or shadow.\n   There is a \"No Tipping\" notice pinned to the darkness.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "City",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 3001
+        }
+      }
+    }
+  ]
+}

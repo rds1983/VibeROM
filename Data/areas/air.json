@@ -1,0 +1,1326 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "air.are",
+  "name": "In the Air",
+  "credits": "{ 5 10} Copper  In the Air",
+  "vnumRange": {
+    "low": 1000,
+    "high": 1099
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 1000,
+      "keywords": "oldstyle fairy dragon",
+      "shortDescription": "A fairy dragon",
+      "longDescription": "A fairy dragon is fluttering around here looking for something to do...\n",
+      "description": "It's a cute little multi-colored dragon...about 2 foot long.\nIt gracefully dances around your head.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Mage"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectMagic"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 500,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 46
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 5,
+        "bonus": 0,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 6,
+        "bash": 6,
+        "slash": 6,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 1001,
+      "keywords": "oldstyle griffin",
+      "shortDescription": "A griffin",
+      "longDescription": "A large black winged griffin swoops into an attack.\n",
+      "description": "Golden maned and black all over.  It's quite a beautiful creature if not\nfor the fact it is hungry and is attacking you!\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 25,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 1001,
+      "keywords": "rose",
+      "shortDescription": "a red rose",
+      "longDescription": "A red rose is lying on the ground.",
+      "material": "oldstyle",
+      "itemType": "Treasure",
+      "wearFlags": [
+        "Take",
+        "Head"
+      ],
+      "level": 0,
+      "weightPounds": 8,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        6,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "rose",
+          "description": "It's a beautiful red rose, with a soft and romantic fragrance.\n"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 1001,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above the ground north of the city.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1006,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1002,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1021,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1002,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 20 meters above the inside wall of West Midgaard.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1001,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1007,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1003,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1022,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1003,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 20 meters above the west gate of Midgaard.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1002,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1008,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1004,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1023,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1004,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above Wall Road.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1003,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1009,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1005,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1024,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1005,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above Wall Road.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1004,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1010,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1025,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1006,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above the ground north of Midgaard.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1011,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1007,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1001,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1026,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1007,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 20 meters above the magic shop.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1006,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1012,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1008,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1002,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1027,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1008,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above Main Street.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1007,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1013,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1009,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1003,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1028,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1009,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 20 meters above the Mage Guild Hall.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1008,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1014,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1010,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1004,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1029,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1010,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above Poor Alley.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1009,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1015,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1005,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1030,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1011,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above the ground north of Midgaard.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1016,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1012,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1006,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1031,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1012,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 20 meters above the bakery.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1011,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1017,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1013,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1007,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1032,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1013,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above Main Street.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1012,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1018,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1014,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1008,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1033,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1014,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 20 meters above Armoury.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1013,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1019,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1015,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1009,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1034,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1015,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above Poor Alley.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1014,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1020,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1010,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1035,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1016,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 10 meters above the temple spire of Midgaard\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1017,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1011,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1036,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1017,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above the Temple Square.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1016,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1018,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1012,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1037,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 3057,
+          "description": "More of the same\n"
+        }
+      }
+    },
+    {
+      "vnum": 1018,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above Market Square.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1017,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1019,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1013,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1038,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1019,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above Market and Commons.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1018,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1020,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1014,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1039,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1020,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above ground, overlooking the Common Square.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1019,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1015,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 1040,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1021,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above the ground just north of Midgaard.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1026,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1022,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1001,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1022,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above the west gate of Midgaard.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1021,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1027,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1023,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1002,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1023,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above west gate of Midgaard.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1022,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1028,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1024,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1003,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1024,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above wall road.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1023,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1029,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1025,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1004,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1025,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above wall road.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1024,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1030,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1005,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1026,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above the ground north of Midgaard.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1031,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1027,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1021,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1006,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1027,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above the magic shop.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1026,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1032,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1028,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1022,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1007,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1028,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above main street.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1027,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1033,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1029,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1023,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1008,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1029,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above the mage guild.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1028,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1034,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1030,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1024,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1009,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1030,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above poor alley.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1029,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1035,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1025,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1010,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1031,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above the ground north of Midgaard.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 1036,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1032,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1026,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1011,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1032,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above bakery and cleric guild.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1031,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1037,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1033,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1027,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1012,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1033,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above main street.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1032,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1038,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1034,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1028,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1013,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1034,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 40 meters above the armoury.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1033,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1039,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1035,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1029,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1014,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1035,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above poor alley.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1034,
+          "description": "More of the same.\n"
+        },
+        "east": {
+          "toRoom": 1040,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1030,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1015,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1036,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 30 meters above the temple spire.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 1037,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1031,
+          "description": "More of the same.\n"
+        },
+        "up": {
+          "toRoom": 7700,
+          "description": "The rainbow leads onward and upward into the sky.\nIt looks safe to travel on.\n"
+        },
+        "down": {
+          "toRoom": 1016,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1037,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above the temple square.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1036,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1038,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1032,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1017,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1038,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above market square.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1037,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1039,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1033,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1018,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1039,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above market square and commons square.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1038,
+          "description": "More of the same.\n"
+        },
+        "south": {
+          "toRoom": 1040,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1034,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1019,
+          "description": "More of the same.\n"
+        }
+      }
+    },
+    {
+      "vnum": 1040,
+      "name": "In the air ...",
+      "description": "You are flying!\nCurrently you are about 60 meters above commoners square and the dump.\nIt seems like you can see forever!\n",
+      "sector": "Air",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 1039,
+          "description": "More of the same.\n"
+        },
+        "west": {
+          "toRoom": 1035,
+          "description": "More of the same.\n"
+        },
+        "down": {
+          "toRoom": 1020,
+          "description": "More of the same.\n"
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Mobile",
+      "mobileVnum": 1001,
+      "roomVnum": 1034,
+      "maxInWorld": 3,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1000,
+      "roomVnum": 1005,
+      "maxInWorld": 10,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1000,
+      "roomVnum": 1019,
+      "maxInWorld": 10,
+      "maxInRoom": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 1000,
+      "roomVnum": 1022,
+      "maxInWorld": 10,
+      "maxInRoom": 4
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 1000,
+      "procedure": "CastMage"
+    }
+  ]
+}

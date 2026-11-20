@@ -20,6 +20,7 @@ public static class AreaImportRunner
     public static ImportResult Run(ImportRequest request)
     {
         var messages = new List<string>();
+        var repairs = new List<ImportMessage>();
         var warnings = new List<ImportMessage>();
         var errors = new List<ImportMessage>();
         var areas = new List<ImportedArea>();
@@ -36,7 +37,7 @@ public static class AreaImportRunner
         catch (Exception exception) when (exception is ArgumentException or NotSupportedException or PathTooLongException)
         {
             errors.Add(new ImportMessage(request.SourceDirectory, 0, 0, exception.Message));
-            return Finish(request, request.SourceDirectory, messages, areas, warnings, errors);
+            return Finish(request, request.SourceDirectory, messages, areas, repairs, warnings, errors);
         }
 
         if (!Directory.Exists(sourceDirectory))
@@ -89,7 +90,9 @@ public static class AreaImportRunner
                 areas,
                 documents,
                 warnings,
-                errors);
+                errors,
+                request.Strict,
+                repairs);
         }
 
         if (errors.Count == 0)
@@ -163,7 +166,7 @@ public static class AreaImportRunner
             messages.Add($"Import failed with {errors.Count} error(s); no output was written.");
         }
 
-        return Finish(request, sourceDirectory, messages, areas, warnings, errors);
+        return Finish(request, sourceDirectory, messages, areas, repairs, warnings, errors);
     }
 
     private static void ImportAreas(
@@ -174,10 +177,11 @@ public static class AreaImportRunner
         ICollection<ImportedArea> areas,
         IDictionary<string, string> documents,
         ICollection<ImportMessage> warnings,
-        ICollection<ImportMessage> errors)
+        ICollection<ImportMessage> errors,
+        bool strict,
+        ICollection<ImportMessage> repairs)
     {
         var parser = new LegacyAreaParser();
-        var jsonNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
         foreach (var name in areaNames)
         {
@@ -208,19 +212,64 @@ public static class AreaImportRunner
                     warnings.Add(new ImportMessage(name, warning.Position.Line, warning.Position.Column, warning.Message));
                 }
 
-                var area = result.Area;
-                var areaErrors = area.Validate();
-                if (areaErrors.Count > 0)
+                foreach (var error in result.Area.Validate())
                 {
-                    foreach (var error in areaErrors)
-                    {
-                        errors.Add(new ImportMessage(name, 0, 0, error));
-                    }
-
-                    continue;
+                    errors.Add(new ImportMessage(name, 0, 0, error));
                 }
+            }
+            catch (LegacyFormatException exception)
+            {
+                errors.Add(new ImportMessage(
+                    exception.FileName,
+                    exception.Line,
+                    exception.Column,
+                    StripLocation(exception)));
+            }
+            catch (DataFormatException exception)
+            {
+                foreach (var error in exception.Errors)
+                {
+                    errors.Add(new ImportMessage(name, 0, 0, error));
+                }
+            }
+        }
 
-                var json = AreaJson.Serialize(area);
+        if (errors.Count > 0)
+        {
+            return;
+        }
+
+        var parsedList = parsed.ToList();
+        if (!strict && parsedList.Count > 0)
+        {
+            var objectVnums = parsedList
+                .SelectMany(area => area.Area.Objects)
+                .Select(obj => obj.Vnum)
+                .ToHashSet();
+            for (var index = 0; index < parsedList.Count; index++)
+            {
+                var repaired = AreaRepairer.RepairDanglingExitKeys(parsedList[index], objectVnums);
+                parsedList[index] = repaired.Result;
+                foreach (var repair in repaired.Repairs)
+                {
+                    repairs.Add(repair);
+                }
+            }
+
+            parsed.Clear();
+            foreach (var item in parsedList)
+            {
+                parsed.Add(item);
+            }
+        }
+
+        var jsonNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var result in parsedList)
+        {
+            var name = result.Area.LegacyFile ?? result.Area.Name;
+            try
+            {
+                var json = AreaJson.Serialize(result.Area);
                 var schemaErrors = JsonSchemaValidator.Validate(areaSchema, json);
                 if (schemaErrors.Count > 0)
                 {
@@ -243,22 +292,14 @@ public static class AreaImportRunner
                 areas.Add(new ImportedArea(
                     name,
                     jsonFile,
-                    area.Helps.Count,
-                    area.Mobiles.Count,
-                    area.Objects.Count,
-                    area.Rooms.Count,
-                    area.Resets.Count,
-                    area.Shops.Count,
-                    area.Specials.Count,
-                    area.Socials.Count));
-            }
-            catch (LegacyFormatException exception)
-            {
-                errors.Add(new ImportMessage(
-                    exception.FileName,
-                    exception.Line,
-                    exception.Column,
-                    StripLocation(exception)));
+                    result.Area.Helps.Count,
+                    result.Area.Mobiles.Count,
+                    result.Area.Objects.Count,
+                    result.Area.Rooms.Count,
+                    result.Area.Resets.Count,
+                    result.Area.Shops.Count,
+                    result.Area.Specials.Count,
+                    result.Area.Socials.Count));
             }
             catch (DataFormatException exception)
             {
@@ -539,6 +580,7 @@ public static class AreaImportRunner
         string sourceDirectory,
         IReadOnlyList<string> messages,
         IReadOnlyList<ImportedArea> areas,
+        IReadOnlyList<ImportMessage> repairs,
         IReadOnlyList<ImportMessage> warnings,
         IReadOnlyList<ImportMessage> errors)
     {
@@ -548,6 +590,7 @@ public static class AreaImportRunner
             GameInfo.RomReleaseDate,
             sourceDirectory,
             areas,
+            repairs,
             warnings,
             errors);
 

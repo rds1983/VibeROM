@@ -1,0 +1,4740 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "pyramid.are",
+  "name": "Pyramid",
+  "credits": "{ 5-50} Andersen The Great Pyramid",
+  "vnumRange": {
+    "low": 8700,
+    "high": 8799
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 8700,
+      "keywords": "oldstyle asp snake",
+      "shortDescription": "A horrible asp",
+      "longDescription": "A small, poisonous asp slithers over your feet.\n",
+      "description": "The asp is a small, smooth-scaled snake the color of worn pottery.\nThe poison bite of this snake has felled many a mighty pharoah.\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 5,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 60
+      },
+      "manaDice": {
+        "count": 2,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 6,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8701,
+      "keywords": "oldstyle cobra snake",
+      "shortDescription": "A hooded cobra snake",
+      "longDescription": "A cobra snake rears up and opens its fearsome hood.\n",
+      "description": "The cobra snake waves back and forth before you, its hood displaying brilliant\ncolors designed to serve notice to its prey that it is about to strike.\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive",
+        "StayArea"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 7,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 85
+      },
+      "manaDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 1,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 1,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8702,
+      "keywords": "oldstyle mongoose",
+      "shortDescription": "A wily little mongoose",
+      "longDescription": "A small mongoose slinks along the ground, hunting snakes.\n",
+      "description": "The mongoose is a wily rodent, a quick hunter of nasty poisonous snakes.\nShe sniffs you and appears to be looking for food in your hand.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 10,
+      "group": 0,
+      "level": 11,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 8,
+        "bonus": 134
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 1,
+        "slash": 1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 5,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8703,
+      "keywords": "oldstyle pyramid watcher",
+      "shortDescription": "A pyramid watcher",
+      "longDescription": "The pyramid watcher protects the tombs from intruders.\n",
+      "description": "The pyramid watcher has made a pledge to destroy any would-be looters of\nthe tombs of the pharoahs.  He is clad from head to foot in utilitarian\nsand-colored clothing.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 250,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 7,
+        "bonus": 96
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 7,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 3,
+        "bash": 3,
+        "slash": 3,
+        "exotic": 9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 10,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8704,
+      "keywords": "oldstyle thief tomb",
+      "shortDescription": "A tomb thief",
+      "longDescription": "A sneaky tomb thief moves about in search of treasure.\n",
+      "description": "The thief brushes against you briefly, then slinks back into the shadows.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea",
+        "Wimpy",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -250,
+      "group": 0,
+      "level": 10,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 110
+      },
+      "manaDice": {
+        "count": 5,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 2,
+        "bash": 2,
+        "slash": 2,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 25,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8705,
+      "keywords": "oldstyle ali baba thief",
+      "shortDescription": "Ali Baba",
+      "longDescription": "Ali Baba is here, hunting for the pharoah's tomb.\n",
+      "description": "You see a tall, full-bearded man with a mischevious glint in his eye.  Ali Baba\nhas made his life from stealing things from others, including many items stolen\nrecently from under the nose of the hapless guardians of this pyramid.  Someday\nhe might get caught, but not today...\n",
+      "race": "Human",
+      "actFlags": [
+        "Scavenger",
+        "StayArea",
+        "Thief"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden",
+        "Sneak"
+      ],
+      "offensiveFlags": [
+        "Backstab",
+        "Disarm",
+        "Dodge",
+        "KickDirt",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -300,
+      "group": 0,
+      "level": 18,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 258
+      },
+      "manaDice": {
+        "count": 9,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 3,
+        "size": 4,
+        "bonus": 4,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -3,
+        "bash": -3,
+        "slash": -3,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 50,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8706,
+      "keywords": "oldstyle magic carpet",
+      "shortDescription": "The magic carpet",
+      "longDescription": "A small woven carpet lies under your feet.\n",
+      "description": "The carpet is simply beautiful, made from intricately woven silken material.  \nIt seems to rise up at the touch of your feet.  Wait, it is rising, a few feet\nabove the ground!  In fact, it seems to be ALIVE!\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 500,
+      "group": 0,
+      "level": 9,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 6,
+        "bonus": 110
+      },
+      "manaDice": {
+        "count": 4,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 8,
+        "bonus": 2,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 2,
+        "bash": 2,
+        "slash": 2,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 12,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8707,
+      "keywords": "oldstyle mummy corpse",
+      "shortDescription": "A mummy",
+      "longDescription": "A mummy reaches for you, disturbed by your presence.\n",
+      "description": "You only see the disfigured, rotting features of decaying human flesh,\nanimated by the distempered spirit of a long-deceased person.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -600,
+      "group": 0,
+      "level": 12,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 150
+      },
+      "manaDice": {
+        "count": 6,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 10,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": 0,
+        "bash": 0,
+        "slash": 0,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 37,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8708,
+      "keywords": "oldstyle sand man sandman",
+      "shortDescription": "A sandman",
+      "longDescription": "A sandman rises up from the desert floor.\n",
+      "description": "The sandman is exactly that -- some sort of strange being formed from the sands\nof the desert floor.  It seems quite large and strong and at home in the heat\nand sandy winds.\n",
+      "race": "Human",
+      "actFlags": [
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 14,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 2,
+        "size": 10,
+        "bonus": 190
+      },
+      "manaDice": {
+        "count": 7,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 1,
+        "size": 12,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -1,
+        "bash": -1,
+        "slash": -1,
+        "exotic": 8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 75,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8709,
+      "keywords": "oldstyle efreeti efreet",
+      "shortDescription": "The efreeti",
+      "longDescription": "The efreeti stands here, sheathed in a column of fire.\n",
+      "description": "The efreeti is a mighty being formed from living fire.  He gazes down at you \nwith disdain and scorn, arms folded across his mighty chest.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -600,
+      "group": 0,
+      "level": 20,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 333
+      },
+      "manaDice": {
+        "count": 10,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 8,
+        "bonus": 5,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": -4,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 550,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8710,
+      "keywords": "oldstyle caryatid column",
+      "shortDescription": "A caryatid",
+      "longDescription": "A sandstone column stands here, carved into a feminine figure.\n",
+      "description": "The column has been carved into a set of four shapely women, each facing\noutward into the room.  The sandstone of the caryatid is smooth with age,\nbut you can still make out a deadly stone sword in the hands of each figure.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "affectedBy": [
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 24,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 500
+      },
+      "manaDice": {
+        "count": 12,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 10,
+        "bonus": 6,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -6,
+        "bash": -6,
+        "slash": -6,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 1750,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8711,
+      "keywords": "oldstyle djinn genie",
+      "shortDescription": "The djinn",
+      "longDescription": "The djinn issues forth from the confines of a small lamp.\n",
+      "description": "The djinn is a mighty being formed from the air itself and frequently\nimprisoned in a small lamp, used to do the bidding of those who find him.\nHe smiles down at you congenially, arms folded across his blue-tinged \nskin, and strokes his goatee.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Mage"
+      ],
+      "affectedBy": [
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Dodge",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 600,
+      "group": 0,
+      "level": 28,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 650
+      },
+      "manaDice": {
+        "count": 28,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 10,
+        "bonus": 7,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -8,
+        "bash": -8,
+        "slash": -8,
+        "exotic": 1
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 3000,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8712,
+      "keywords": "oldstyle hieracosphinx sphinx",
+      "shortDescription": "A hieracosphinx",
+      "longDescription": "A hieracosphinx looks at you cunningly.\n",
+      "description": "The hieracosphinx are cunning, small, but nasty creatures, having the heads\nof birds, mighty wingspans, and a full set of four paws to rend their victims\nto pieces.  They tend to be quite jealous of the sharper wits of their older\ncousins.\n",
+      "race": "Human",
+      "actFlags": [
+        "Aggressive",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": -200,
+      "group": 0,
+      "level": 15,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 208
+      },
+      "manaDice": {
+        "count": 7,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 6,
+        "bonus": 3,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -2,
+        "bash": -2,
+        "slash": -2,
+        "exotic": 7
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 375,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8713,
+      "keywords": "oldstyle gynosphinx sphinx",
+      "shortDescription": "A gynosphinx",
+      "longDescription": "A gynosphinx sits here, befuddled by a riddle.\n",
+      "description": "The gynosphinx is a crafty but gentle creature, having the body of a\nbeautiful dark-skinned woman from the waist up, a feathery set of wings\nand the hind legs of a mighty cat.  Right now she is confused, having \njust heard a puzzling riddle from a cousin criosphinx.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 100,
+      "group": 0,
+      "level": 19,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 9,
+        "bonus": 308
+      },
+      "manaDice": {
+        "count": 19,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 3,
+        "size": 4,
+        "bonus": 5,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": -4,
+        "exotic": 6
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Female",
+      "gold": 500,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8714,
+      "keywords": "oldstyle criosphinx sphinx",
+      "shortDescription": "A criosphinx",
+      "longDescription": "A criosphinx calmly watches you.\n",
+      "description": "The criosphinx is a calm and friendly creature, having the head of a ram atop\nthe body of a well-furred feline with eagle-like wings.  He delights in riddles,\nand in poking occasional fun at his easily confused lesser cousins.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 23,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 450
+      },
+      "manaDice": {
+        "count": 23,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 4,
+        "bonus": 6,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -6,
+        "bash": -6,
+        "slash": -6,
+        "exotic": 5
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 1250,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8715,
+      "keywords": "oldstyle androsphinx sphinx",
+      "shortDescription": "An androsphinx",
+      "longDescription": "A mighty androsphinx tosses its lion-like mane.\n",
+      "description": "The mighty androsphinx is a huge creature, with the body of a lion whose\nface  is quite man-like, perhaps even handsome, and a massive pair of feathered\nwings.  Tales are told of pharoahs that were rendered permanently deaf by the \nmighty roar of this sphinx.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "DetectInvis"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 400,
+      "group": 0,
+      "level": 27,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 5,
+        "size": 10,
+        "bonus": 650
+      },
+      "manaDice": {
+        "count": 27,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 2,
+        "size": 10,
+        "bonus": 7,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -8,
+        "bash": -8,
+        "slash": -8,
+        "exotic": 4
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 2500,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8716,
+      "keywords": "oldstyle great sphinx",
+      "shortDescription": "The great sphinx",
+      "longDescription": "A mighty sphinx rests here in the sand, dormant now for centuries.\nThe great sphinx appears to be indestructible!\n",
+      "description": "The great sphinx towers tens of feet above you, resting here in a state of \ndormancy.  It has become almost indistinguishable from the sand that surrounds\nit, although you can still make out the features of the handsome face that once\nadvised many rulers.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectMagic",
+        "Sanctuary",
+        "ProtectEvil"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 500,
+      "group": 0,
+      "level": 41,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 25,
+        "size": 10,
+        "bonus": 2000
+      },
+      "manaDice": {
+        "count": 20,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 8,
+        "bonus": 14,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -14,
+        "bash": -14,
+        "slash": -14,
+        "exotic": 4
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 6250,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 8717,
+      "keywords": "oldstyle ramses mummy",
+      "shortDescription": "Ramses the Damned",
+      "longDescription": "You have awakened the mighty servant to the pharoahs, Ramses.\n",
+      "description": "As your light spills over his face and body, you can see his features begin\nto fill out, swell, and harden, until an apparently healthy man stands before\nyou, clad only in the raiments he was left in when he last slept.  His hair is\na soft black, his skin a deep chocolate, and his tall frame is totally still, \nhis chest not even moving to breathe.\n",
+      "race": "Human",
+      "actFlags": [
+        "Sentinel",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectMagic",
+        "Sanctuary",
+        "Infrared",
+        "ProtectEvil"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Kick",
+        "Parry",
+        "AssistVnum"
+      ],
+      "form": [
+        "Edible",
+        "Sentient",
+        "Biped",
+        "Mammal"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Heart",
+        "Brains",
+        "Guts",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 150,
+      "group": 0,
+      "level": 38,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 10,
+        "size": 10,
+        "bonus": 1600
+      },
+      "manaDice": {
+        "count": 38,
+        "size": 9,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 3,
+        "size": 10,
+        "bonus": 12,
+        "attackType": "Hit"
+      },
+      "armor": {
+        "pierce": -13,
+        "bash": -13,
+        "slash": -13,
+        "exotic": 3
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Male",
+      "gold": 4400,
+      "size": "Medium",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 8700,
+      "keywords": "egyptian mace",
+      "shortDescription": "an egyptian mace",
+      "longDescription": "A hierogylph-engraved mace has been left here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 6,
+      "weightPounds": 10,
+      "costCopper": 370,
+      "condition": 100,
+      "weapon": {
+        "class": "Mace",
+        "diceCount": 1,
+        "diceSize": 10,
+        "attackType": "Pound"
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "egyptian mace",
+          "description": "The mace is formed from solid brass, and engraved in strange hieroglyphs.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8701,
+      "keywords": "sand robes",
+      "shortDescription": "sand-colored robes",
+      "longDescription": "Sand-colored robes lie here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "About"
+      ],
+      "level": 5,
+      "weightPounds": 5,
+      "costCopper": 480,
+      "condition": 100,
+      "armor": {
+        "pierce": 4,
+        "bash": 4,
+        "slash": 4,
+        "exotic": 0
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sand robes",
+          "description": "The robes are colored a sandy off-white, and are in fact caked and covered\nwith sand as well.  You don't seem to be able to remove all of the sand, no\nmatter how much you try.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8702,
+      "keywords": "obsidian dirk",
+      "shortDescription": "an obsidian dirk",
+      "longDescription": "A flat dirk made of chipped obsidian lies here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 15,
+      "weightPounds": 1,
+      "costCopper": 910,
+      "condition": 100,
+      "weapon": {
+        "class": "Dagger",
+        "diceCount": 2,
+        "diceSize": 8,
+        "attackType": "Pierce"
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "obsidian dirk",
+          "description": "The blade of the dirk is black, glassy obsidian, chipped razor sharp.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8703,
+      "keywords": "cloth turban",
+      "shortDescription": "a dirty cloth turban",
+      "longDescription": "A dirty cloth turban has been forgotten here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Head"
+      ],
+      "level": 13,
+      "weightPounds": 10,
+      "costCopper": 1470,
+      "condition": 100,
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 0
+      },
+      "affects": [
+        {
+          "location": "Hit",
+          "modifier": 5
+        },
+        {
+          "location": "Dexterity",
+          "modifier": 1
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "cloth turban",
+          "description": "The turban used to be white cloth, now it is covered with oil and dirt from\nthe head and hair of its previous owner, who must not have bathed much.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8704,
+      "keywords": "cloth wrappings",
+      "shortDescription": "some cloth wrappings",
+      "longDescription": "Long cloth wrappings lie on the ground in a pile.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "wearFlags": [
+        "Take",
+        "Body"
+      ],
+      "level": 10,
+      "weightPounds": 15,
+      "costCopper": 1450,
+      "condition": 100,
+      "armor": {
+        "pierce": 5,
+        "bash": 5,
+        "slash": 5,
+        "exotic": 0
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "cloth wrappings",
+          "description": "The cloth wrappings are old, wrinkled, and stink of embalming fluid.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8705,
+      "keywords": "bottle fluid",
+      "shortDescription": "a bottle of embalming fluid",
+      "longDescription": "A dusty bottle lies here on the ground.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 3,
+      "weightPounds": 5,
+      "costCopper": 270,
+      "condition": 100,
+      "spells": {
+        "level": 5,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "bottle fluid",
+          "description": "The bottle is dusty and the fluid has a strange sickly-sweet smell to it.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8706,
+      "keywords": "jar formaldehyde",
+      "shortDescription": "a jar of formaldehyde",
+      "longDescription": "A small jar lies here on the ground.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 6,
+      "costCopper": 200,
+      "condition": 100,
+      "spells": {
+        "level": 10,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "jar formaldehyde",
+          "description": "The jar is sticky and smells really bad.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8707,
+      "keywords": "ball fire",
+      "shortDescription": "a small hot ball of fire",
+      "longDescription": "A little ball of fire hovers in the air before your eyes.",
+      "material": "oldstyle",
+      "itemType": "Light",
+      "extraFlags": [
+        "Glow",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 20,
+      "weightPounds": 10,
+      "costCopper": 720,
+      "condition": 100,
+      "light": {
+        "duration": 999
+      },
+      "affects": [
+        {
+          "location": "Move",
+          "modifier": 20
+        },
+        {
+          "location": "Hit",
+          "modifier": 10
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "ball fire",
+          "description": "The ball of fire is hot to the touch and very very bright.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8708,
+      "keywords": "stone scimitar",
+      "shortDescription": "a stone scimitar",
+      "longDescription": "A curved scimitar made of stone rests on the ground.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Hum",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 20,
+      "weightPounds": 18,
+      "costCopper": 1820,
+      "condition": 100,
+      "weapon": {
+        "class": "Axe",
+        "diceCount": 3,
+        "diceSize": 6,
+        "attackType": "Slash"
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 2
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "stone scimitar",
+          "description": "The scimitar is formed from solid stone, chipped and carved to perfection,\nwith a sharp, cold blade that is marred only by a few nicks here and there.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8709,
+      "keywords": "stone key",
+      "shortDescription": "a stone key",
+      "longDescription": "A stone key has been dropped here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 15,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "stone key",
+          "description": "The key is made from stone, but is otherwise unremarkable.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8710,
+      "keywords": "stone sarcophagus",
+      "shortDescription": "a mighty stone sarcophagus",
+      "longDescription": "A mighty stone sarcophagus lies in the center of the tomb.",
+      "material": "oldstyle",
+      "itemType": "Container",
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 0,
+      "condition": 100,
+      "container": {
+        "capacity": 500,
+        "flags": [
+          "Closeable",
+          "PickProof",
+          "Closed",
+          "Locked"
+        ],
+        "keyVnum": 8709
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "stone sarcophagus",
+          "description": "The sarcophagus is engraved on the sides with the images of pharoahs,\ngreat wars fought long ago, mighty pyramids being constructed...\n\nA raised image atop the sarcophagus is formed in the visage of one of\nthe mighty pharoahs, painted in gold and studded with precious gems.\n\nYou see a small keyhole in the side of the sarcophagus.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8711,
+      "keywords": "dust",
+      "shortDescription": "some ancient dust",
+      "longDescription": "A small pile of dust is being scattered by the breeze.",
+      "material": "oldstyle",
+      "itemType": "Trash",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "dust",
+          "description": "The dust is old.  As you sift it through your hands you find tiny chips\nof aged bone inside -- it must be the ancient remains of something.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8712,
+      "keywords": "scarab",
+      "shortDescription": "a small emerald scarab",
+      "longDescription": "A small emerald scarab lies here on the ground.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 5,
+      "costCopper": 3000,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "scarab",
+          "description": "The scarab is intricately detailed, down to the tiny hairs on its\ninsectile legs and the faceting of the emeralds in its eyes.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8713,
+      "keywords": "lamp",
+      "shortDescription": "the lamp",
+      "longDescription": "A small, tarnished, battered lamp has been dropped here.",
+      "material": "oldstyle",
+      "itemType": "Staff",
+      "extraFlags": [
+        "Glow",
+        "Hum",
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 20,
+      "weightPounds": 10,
+      "costCopper": 4700,
+      "condition": 100,
+      "charges": {
+        "level": 25,
+        "total": 5,
+        "remaining": 5,
+        "spell": "fly"
+      },
+      "affects": [
+        {
+          "location": "HitRoll",
+          "modifier": 1
+        },
+        {
+          "location": "ArmorClass",
+          "modifier": -5
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "lamp",
+          "description": "The lamp is quite old and tarnished.  You rub at it to get some of the\ngrime off, but it doesn't seem like anybody is home.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8714,
+      "keywords": "ankh",
+      "shortDescription": "an ankh",
+      "longDescription": "A small brass ankh has been left here.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Bless",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 14,
+      "weightPounds": 9,
+      "costCopper": 2100,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Wisdom",
+          "modifier": 1
+        },
+        {
+          "location": "Intelligence",
+          "modifier": 1
+        },
+        {
+          "location": "ArmorClass",
+          "modifier": -3
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "ankh",
+          "description": "The ankh is a small brass symbol of an ancient religion.\nIt glows with a soft bright light that is soothing to you.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8715,
+      "keywords": "book riddles",
+      "shortDescription": "a book of riddles",
+      "longDescription": "A medium-sized parchment book with well-worn pages lies here.",
+      "material": "oldstyle",
+      "itemType": "Scroll",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 10,
+      "weightPounds": 15,
+      "costCopper": 1540,
+      "condition": 100,
+      "spells": {
+        "level": 21,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "book riddles",
+          "description": "The book has well-worn pages, containing many befuddling riddles\nto surprise, confuse, and amuse you.  You find yourself bewildered\nby its contents and put it down to sort your head out.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8716,
+      "keywords": "lion paw",
+      "shortDescription": "a lion's paw",
+      "longDescription": "The mighty paw of a lion-like creature has been dropped here.",
+      "material": "oldstyle",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 26,
+      "weightPounds": 20,
+      "costCopper": 4400,
+      "condition": 100,
+      "weapon": {
+        "class": "Exotic",
+        "diceCount": 5,
+        "diceSize": 4,
+        "attackType": "Claw"
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 2
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 2
+        },
+        {
+          "location": "Constitution",
+          "modifier": 1
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "lion paw",
+          "description": "The massive paw has straps on it formed of bronze, so that it will\nfit snugly over your hand.  As you put it on, it melds with your hand,\nbecoming an extension of your arm.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8717,
+      "keywords": "answer",
+      "shortDescription": "the answer",
+      "longDescription": "A small piece of parchment covered in hieroglyphics lies here.",
+      "material": "oldstyle",
+      "itemType": "Key",
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "answer hieroglyphics",
+          "description": "You cannot decipher the strange hieroglyphics that cover the\nsheet of parchment.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8718,
+      "keywords": "treasure",
+      "shortDescription": "the treasure of the sphinx",
+      "longDescription": "The massive treasure of the sphinx lies here in a big pile.",
+      "material": "oldstyle",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 20,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 23,
+        "silver": 1850
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "treasure",
+          "description": "The treasure is incredibly large, filled with gold coins and valuables, more \nwealth than you could ever possibly imagine accumulated in one place.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8719,
+      "keywords": "pile sand",
+      "shortDescription": "a pile of sand",
+      "longDescription": "You see a small pile of sand.",
+      "material": "oldstyle",
+      "itemType": "Money",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "money": {
+        "gold": 0,
+        "silver": 129
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "pile sand",
+          "description": "You think you see some coins and valuables glinting amongst the grains of sand.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8720,
+      "keywords": "curse mummy",
+      "shortDescription": "the curse of the mummy",
+      "longDescription": "Some fortunate soul has escaped the mummy's curse, for now.",
+      "material": "oldstyle",
+      "itemType": "Trash",
+      "extraFlags": [
+        "Evil",
+        "Magic",
+        "NoDrop",
+        "NoRemove"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 1,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Move",
+          "modifier": -100
+        },
+        {
+          "location": "Hit",
+          "modifier": -50
+        },
+        {
+          "location": "Constitution",
+          "modifier": -3
+        },
+        {
+          "location": "Dexterity",
+          "modifier": -3
+        },
+        {
+          "location": "Strength",
+          "modifier": -3
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "curse mummy",
+          "description": "Rumor has it that whomever disturbs the grave of the mummy shall be \ncursed for all eternity, and that the descendents of that person shall\nlikewise be cursed for ten generations to follow.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8721,
+      "keywords": "small elixir",
+      "shortDescription": "a small elixir",
+      "longDescription": "A small glass elixir lies under your feet.",
+      "material": "oldstyle",
+      "itemType": "Potion",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 16,
+      "weightPounds": 2,
+      "costCopper": 1820,
+      "condition": 100,
+      "spells": {
+        "level": 30,
+        "names": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "small elixir",
+          "description": "The elixir is deceptively small.  Something tells you that its\ncontents are truly quite potent.  Perhaps too potent for ordinary\nmortals to attempt to consume.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8722,
+      "keywords": "golden mask",
+      "shortDescription": "a golden mask",
+      "longDescription": "A beautiful, intricately detailed mask has been forgotten here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Head"
+      ],
+      "level": 33,
+      "weightPounds": 10,
+      "costCopper": 5500,
+      "condition": 100,
+      "armor": {
+        "pierce": 8,
+        "bash": 8,
+        "slash": 8,
+        "exotic": 3
+      },
+      "affects": [
+        {
+          "location": "Saves",
+          "modifier": -1
+        },
+        {
+          "location": "Move",
+          "modifier": 30
+        },
+        {
+          "location": "Hit",
+          "modifier": 10
+        },
+        {
+          "location": "Mana",
+          "modifier": 25
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "golden mask",
+          "description": "This beautiful mask was shaped from solid gold and magically enchanted\nto perfectly fit the face of any who choose to wear it, its golden features\nand turquoise highlights even moving to match the expressions of the face\nof the wearer.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8723,
+      "keywords": "diamond",
+      "shortDescription": "the diamond",
+      "longDescription": "",
+      "material": "oldstyle",
+      "itemType": "Trash",
+      "wearFlags": [
+        "Take"
+      ],
+      "level": 0,
+      "weightPounds": 5,
+      "costCopper": 0,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "diamond",
+          "description": "Aha!\n\nYou see a multifaceted gemstone, which strangely reflects no\nlight, making it very hard to see when it lies on the ground.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8724,
+      "keywords": "sun wand",
+      "shortDescription": "a blazing sun wand",
+      "longDescription": "A small length of brass shines here with its own light.",
+      "material": "oldstyle",
+      "itemType": "Wand",
+      "extraFlags": [
+        "Glow",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 24,
+      "weightPounds": 10,
+      "costCopper": 29800,
+      "condition": 100,
+      "charges": {
+        "level": 35,
+        "total": 25,
+        "remaining": 25,
+        "spell": "harm"
+      },
+      "affects": [
+        {
+          "location": "Saves",
+          "modifier": -2
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "sun wand",
+          "description": "This small brass shaft is a holy weapon used by the ancient people of \nthis land to defend against the deadliest of foes.  It shines with the \nbrilliant blazing light of the sun.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8725,
+      "keywords": "sandy ring",
+      "shortDescription": "a sandy-colored ring",
+      "longDescription": "A small sandy-colored ring has been carelessly dropped here.",
+      "material": "oldstyle",
+      "itemType": "Jewelry",
+      "extraFlags": [
+        "Hum",
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Finger"
+      ],
+      "level": 20,
+      "weightPounds": 5,
+      "costCopper": 1300,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Mana",
+          "modifier": 20
+        },
+        {
+          "location": "Intelligence",
+          "modifier": 1
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "sandy ring",
+          "description": "The ring is small, smooth, sandy-colored and unremarkable, save that\nit gives off a continuous low humming noise that tickles your fingertips.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8726,
+      "keywords": "golden sphinx",
+      "shortDescription": "a small golden sphinx",
+      "longDescription": "A small golden sphinx glints in the light.",
+      "material": "oldstyle",
+      "itemType": "Treasure",
+      "extraFlags": [
+        "Magic"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 5,
+      "weightPounds": 5,
+      "costCopper": 550,
+      "condition": 100,
+      "rawValues": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "affects": [
+        {
+          "location": "Wisdom",
+          "modifier": 1
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "golden sphinx",
+          "description": "The golden sphinx is incredibly detailed and very small, fitting easily\ninto the palm of your hand.  You can even make out the expression\nof wisdom and peace on its face.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8727,
+      "keywords": "spinhxian leggings",
+      "shortDescription": "a pair of sphinxian leggings",
+      "longDescription": "Massive leggings formed from the body of a sphinx stand here.",
+      "material": "oldstyle",
+      "itemType": "Armor",
+      "extraFlags": [
+        "Magic",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Legs"
+      ],
+      "level": 32,
+      "weightPounds": 20,
+      "costCopper": 7800,
+      "condition": 100,
+      "armor": {
+        "pierce": 9,
+        "bash": 9,
+        "slash": 9,
+        "exotic": 2
+      },
+      "affects": [
+        {
+          "location": "Move",
+          "modifier": 30
+        },
+        {
+          "location": "Strength",
+          "modifier": 2
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "sphinxian leggings",
+          "description": "These magically fashioned leggings impart the strength and stamina\nof the mightiest of the ancient sphinxes.  You feel ancient power \nemanating from them; they seem to be almost alive.\n"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 8700,
+      "name": "The Great Eastern Desert",
+      "description": "A vast desert stretches for miles, the sands constantly shifting around you.\nRising out of the sand to the east you see a mighty pyramid.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8700,
+          "description": "Nothing but sand as far as the eye can see.\n"
+        },
+        "east": {
+          "toRoom": 8701,
+          "description": "The sands of the desert continue onward towards the pyramid.\n"
+        },
+        "south": {
+          "toRoom": 8700,
+          "description": "Nothing but sand as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 5057,
+          "description": "Across the hot burning sands you see a small oasis and some tents.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "pyramid",
+          "description": "The massive pyramid rises out of the sand, a monument to long-dead pharoahs.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8701,
+      "name": "At the Base of the Pyramid",
+      "description": "The mighty pyramid towers above you out of the hot desert sands, made from\nhuge blocks of stone that have been coated over with a rough sandy plaster-like\nsubstance.  The face of the pyramid is steep, but you think you might be able\nto climb it.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 8700,
+          "description": "To the east you see the hot sands of the Great Eastern Desert.\n"
+        },
+        "up": {
+          "toRoom": 8702,
+          "description": "The steep slope of the pyramid rises up before you.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "pyramid",
+          "description": "You wonder how anyone could have built such a massive thing out in this heat.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8702,
+      "name": "Climbing the Great Pyramid",
+      "description": "Hot air rises off the sides of the pyramid, and the wind chokes you with a\nflurry of sand and dust.  So far you have made it halfway up the side.  The\nwalls of the pyramid are quite steep.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8703,
+          "description": "If you are daring you could try to skirt around to the northern side.\n"
+        },
+        "south": {
+          "toRoom": 8704,
+          "description": "If you are daring you could try to skirt around to the southern side.\n"
+        },
+        "up": {
+          "toRoom": 8707,
+          "description": "It looks too dangerous to try to climb any higher.\n"
+        },
+        "down": {
+          "toRoom": 8701,
+          "description": "Far below you are the burning sands of the desert.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "pyramid",
+          "description": "You wonder how anyone could have built such a massive thing out in this heat.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8703,
+      "name": "Climbing the Great Pyramid",
+      "description": "Hot air rises off the sides of the pyramid, and the wind chokes you with a\nflurry of sand and dust.  The walls of the pyramid are quite steep, and you\nare having trouble keeping from sliding down into the sands below.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8705,
+          "description": "If you are daring you could try to skirt around to the eastern side.\n"
+        },
+        "west": {
+          "toRoom": 8702,
+          "description": "If you are daring you could try to skirt around to the western side.\n"
+        },
+        "up": {
+          "toRoom": 8707,
+          "description": "It looks too dangerous to try to climb any higher.\n"
+        },
+        "down": {
+          "toRoom": 8707,
+          "description": "This side of the pyramid has a dangerous drop before the sandy floor.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "pyramid",
+          "description": "You wonder how anyone could have built such a massive thing out in this heat.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8704,
+      "name": "Climbing the Great Pyramid",
+      "description": "Hot air rises off the sides of the pyramid, and the wind chokes you with a\nflurry of sand and dust.  The walls of the pyramid are quite steep, and you\nare having trouble keeping from sliding down into the sands below.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8705,
+          "description": "If you are daring you could try to skirt around to the eastern side.\n"
+        },
+        "west": {
+          "toRoom": 8702,
+          "description": "If you are daring you could try to skirt around to the western side.\n"
+        },
+        "up": {
+          "toRoom": 8707,
+          "description": "It looks too dangerous to try to climb any higher.\n"
+        },
+        "down": {
+          "toRoom": 8707,
+          "description": "This side of the pyramid has a dangerous drop before the sandy floor.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "pyramid",
+          "description": "You wonder how anyone could have built such a massive thing out in this heat.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8705,
+      "name": "Climbing the Great Pyramid",
+      "description": "Here on the eastern side of the pyramid there is a little more shelter\nfrom the heat and wind.  The stone side is not nearly so slippery smooth\nfrom the ravages of time, and you think you may be able to even reach the\ntop from here.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8703,
+          "description": "If you are daring you could try to skirt around to the northern side.\n"
+        },
+        "south": {
+          "toRoom": 8704,
+          "description": "If you are daring you could try to skirt around to the southern side.\n"
+        },
+        "up": {
+          "toRoom": 8706,
+          "description": "You see the apex of the pyramid many yards above you.\n"
+        },
+        "down": {
+          "toRoom": 8707,
+          "description": "This side of the pyramid has a dangerous drop before the sandy floor.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "pyramid",
+          "description": "You wonder how anyone could have built such a massive thing out in this heat.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8706,
+      "name": "The Apex of the Great Pyramid",
+      "description": "Bathed in sweat, you have managed to reach the summit of the great pyramid.\nThe four sides of the pyramid slope sharply down into the hot sands in all four\ncardinal directions.\n   A plaque has been set into the sandy stones beneath your feet.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8707,
+          "description": "The north side of the pyramid slopes down into the sands.\nIt looks really dangerous.  I wouldn't go that way.\n"
+        },
+        "east": {
+          "toRoom": 8705,
+          "description": "The east side of the pyramid slopes down into the sands.\n"
+        },
+        "south": {
+          "toRoom": 8707,
+          "description": "The south side of the pyramid slopes down into the sands.\nIt looks really dangerous.  I wouldn't go that way.\n"
+        },
+        "west": {
+          "toRoom": 8707,
+          "description": "The west side of the pyramid slopes down into the sands.\nIt looks really dangerous.  I wouldn't go that way.\n"
+        },
+        "down": {
+          "toRoom": 8708,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see some sandy stones pressed closely together to form a hard surface.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "plaque",
+          "description": "The plaque reads:\nThis area (Great Pyramid) written by Andersen.\n"
+        },
+        {
+          "keywords": "stones",
+          "description": "As you look closer you can make out a crack in the center of the stones\nbeneath your feet.  With some effort you might be able to lift that \nsection up and get inside!\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8707,
+      "name": "Climbing the Great Pyramid",
+      "description": "Here the elements have carved away at the sides of the pyramid quite a \nbit.  You aren't so sure of your footing anymore...\n\nSuddenly the wind picks up, and you lose your balance!\nYou tumble down the side of the pyramid, and fall to your death!\n\nSPLAT.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0
+    },
+    {
+      "vnum": 8708,
+      "name": "A Ladder",
+      "description": "You are climbing an ancient ladder that leads down into the depths of\nthe pyramid.  The air around is thick with layers of dust and a strange\nmusty smell.  Above you you see tiny beams of light coming through the\nstones of the ceiling.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 8706,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see the sandy stones of the ceiling.\n"
+        },
+        "down": {
+          "toRoom": 8709,
+          "description": "You see a small dusty chamber.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "stones",
+          "description": "As you look closer you can make out a crack in the center of the stones\nabove your head.  With some effort you might be able to lift that \nsection up and get outside!\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8709,
+      "name": "A Musty Chamber",
+      "description": "You are standing in a dank, musty chamber just inside the pyramid. \nFootprints and other strange marks are set into the dusty floor here.\nIt would seem that some of the tenants of this monument are still alive.\n   Exits lead in all directions.   The door to the west is covered with\ninscriptions.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8712,
+          "description": "You see a tiny crawlway raised about three feet off the ground.\n"
+        },
+        "east": {
+          "toRoom": 8739,
+          "description": "A dust-covered hallway leads off to the east.\n"
+        },
+        "south": {
+          "toRoom": 8724,
+          "description": "You see a small crack in the wall through which you might be able to slide.\n"
+        },
+        "west": {
+          "toRoom": 8710,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see a large stone door, covered in sigils and hieroglyphs.\n"
+        },
+        "up": {
+          "toRoom": 8708,
+          "description": "A small rickety ladder leads up.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sigils hieroglyphs inscriptions writing",
+          "description": "You cannot understand the strange glyphs that cover the door, but most of\nthem seem to depict scenes of fire and massive creatures of apparently\ntremendous strength.  You have a feeling that the glyphs are serving as a\nwarning.\n"
+        },
+        {
+          "keywords": "door stone",
+          "description": "The stone door is covered in strange inscriptions and hieroglyphs that warn\nyou not to proceed any further.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8710,
+      "name": "The Fire Pool",
+      "description": "This room is dominated by a massive raised pool that is filled with\nnot water but flames of intense heat.  The multicoloured flames lick out\nat you, searching for things to burn.\n   The pool proceeds to the west into a small chamber.\n",
+      "roomFlags": [
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8709,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see a large stone door.\n"
+        },
+        "west": {
+          "toRoom": 8711,
+          "description": "You see a small chamber filled with fire.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8711,
+      "name": "The Chamber of the Efreet",
+      "description": "You make your way across the fire pool, and into a small stone chamber.\nHere the flames are nearly as high as your head, singeing your face and \nevaporating your sweat instantaneously.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "WaterNoSwim",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8710,
+          "description": "The pool of fire ends to the east.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8712,
+      "name": "A Tiny Crawlway",
+      "description": "You have to go down onto your hands and knees to fit inside this tiny\nspace.  The crawlway is thick with sand and dust, and markings of the\npassage of other creatures.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8713,
+          "description": "The crawlway continues to the north.\n"
+        },
+        "south": {
+          "toRoom": 8709,
+          "description": "The crawlway ends to the south in a musty chamber.\n"
+        },
+        "up": {
+          "toRoom": 8737,
+          "description": "A small hole above your head leads into a dank chamber.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8713,
+      "name": "A Tiny Crawlway",
+      "description": "You are on your hands and knees, inside a small crawlway that winds\nthrough the inside of the pyramid.  The crawlway is thick with sand, dust, \nand markings of the passage of other creatures.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 8712,
+          "description": "The crawlway continues to the south.\n"
+        },
+        "west": {
+          "toRoom": 8714,
+          "description": "The crawlway continues to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8714,
+      "name": "A Tiny Crawlway",
+      "description": "You are on your hands and knees, inside a small crawlway that winds\nthrough the inside of the pyramid.  The crawlway is thick with sand, dust, \nand markings of the passage of other creatures.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8713,
+          "description": "The crawlway continues to the east.\n"
+        },
+        "west": {
+          "toRoom": 8715,
+          "description": "The crawlway gets a little tighter to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8715,
+      "name": "A Tightening in the Crawlway",
+      "description": "Here you are forced to slide on your belly through a particularly tight\nsection of the crawlway, as the stones of the pyramid close together\nabout you.  Below you is a small, slippery-looking hole that plummets into\nblackness.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8714,
+          "description": "The crawlway gets a little larger to the east.\n"
+        },
+        "south": {
+          "toRoom": 8716,
+          "description": "The crawlway continues to diminish in size to the south.\n"
+        },
+        "down": {
+          "toRoom": 8717,
+          "description": "The hole looks very slippery and very dark.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8716,
+      "name": "The Crawlway's End",
+      "description": "The crawlway shrinks away to nothing as the sandy stones of the pyramid\nclose together into a space through which only a snake could fit.   There is\nbarely enough space to turn around and make your way back through the tiny\ncrawlway to the north.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8715,
+          "description": "The crawlway gets a little larger to the north.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8717,
+      "name": "A Slippery Hole",
+      "description": "The sides of this hole are slippery-smooth.  You lower yourself in, and \nproceed to move downward... when suddenly you lose your purchase!\n\nYou fall for what seems like an eternity, and smash into the stones below...\n\nUnder the Hole\n   You are in a small chamber underneath the slippery hole, far below\nthe pyramid now.   The floor is strewn with bones.  To the south is a\nsmall rocky crevasse.\n",
+      "roomFlags": [
+        "Dark",
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 8719,
+          "description": "You see a rocky crevasse that proceeds deep under the pyramid.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "bones",
+          "description": "The bones have whitened and cracked in the dry air, apparently the remains \nof adventurers, thieves, and creatures that did not survive the fall.\n"
+        },
+        {
+          "keywords": "u up",
+          "description": "The hole looks far too slippery to climb back up.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8718,
+      "name": "Under the Hole",
+      "description": "You are in a small chamber underneath the slippery hole, far below\nthe pyramid now.   The floor is strewn with bones.  To the south is a\nsmall rocky crevasse.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 8719,
+          "description": "You see a rocky crevasse that proceeds deep under the pyramid.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "bones",
+          "description": "The bones have whitened and cracked in the dry air, apparently the remains \nof adventurers, thieves, and creatures that did not survive the fall.\n"
+        },
+        {
+          "keywords": "u up",
+          "description": "The hole looks far too slippery to climb back up.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8719,
+      "name": "A Rough Crevasse",
+      "description": "You are now exploring deep within a strange rocky crevasse that plunges\ndown into the rock on which the pyramid was constructed.  To the south you\nsee the flickering light of a fire, and the crevasse proceeds downward.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8718,
+          "description": "You see a small stone chamber littered with bones.\n"
+        },
+        "south": {
+          "toRoom": 8720,
+          "description": "You see the flickering light of a small fire.\n"
+        },
+        "down": {
+          "toRoom": 8721,
+          "description": "The crevasse continues downward into total darkness.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "rough",
+          "description": "As you look through the rough terrain, your eyes catch a small glint of light!\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8720,
+      "name": "A Small Fire",
+      "description": "Here a small fire burns in a nook in the rocks, providing some warmth and\ncomforting light in the cold, dark, dry air.\n\nStanding here is a strange-looking old man, who stares at you balefully.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8719,
+          "description": "You see a massive crevasse that plunges into darkness.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "man old",
+          "description": "The old man looks like he has been trapped down here far too long, and\nhas begun to lose his mind.  He moves about slowly, cackling to himself.\n\nHe turns to you and shouts, 'nope measse!  nope measse!', then turns \nback and stares into the fire.\n\n'What a strange person,' you think to yourself.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8721,
+      "name": "Down the Crevasse",
+      "description": "The crevasse proceeds downward into the dark depths of the earth.\nThe air about you is now cold and quite dry, and your light source\ngutters in a cool breeze that wafts up from below.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 8719,
+          "description": "It is too dark for you to see any further along the crevasse.\n"
+        },
+        "down": {
+          "toRoom": 8722,
+          "description": "It is too dark for you to see any further along the crevasse.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8722,
+      "name": "At the Crevasse's End",
+      "description": "Here the crevasse comes to an abrupt end.  A chilling wind howls\nat your face from a black shape to the south, but the light from your\nsource is too dim to see exactly what it is.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 8723,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 8723,
+          "description": "You see a strange-looking black shape.\n"
+        },
+        "up": {
+          "toRoom": 8721,
+          "description": "It is too dark for you to see anything along the crevasse.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "tiger head animal sesame",
+          "description": "You are now certain that the wind is the cold breath of some unearthly\ngiant animal, whose voice rumbles lowly on the breeze, and whose\nmassive jaws could easily swallow you whole.\n\nYou move closer for a better look, when suddenly a pair of eyes flashes.\nA cold voice echoes: 'SEEK YE THE DIAMOND... IN THE ROUGH...'\n\n... Then all is silent.\n"
+        },
+        {
+          "keywords": "black shape",
+          "description": "Wind howls about your ears like the roar of a tiger.  As your eyes\nadjust to the light the shape to the south almost seems to take the\nform of a massive animal head.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8723,
+      "name": "The Vault of the Lamp",
+      "description": "The jaws of the massive stone tiger part wide to reveal a great vault.\nAn arched ceiling lies far above your head... and all about you is a low\nguttural rumbling noise and a chill wind.\n\nGiant heaps of ancient treasure, gold coins, and valuables surround you\non all sides.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8722,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 8723,
+          "description": "Through the jaws of the tiger you see the blackness of the crevasse.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "treasure gold coins valuables",
+          "description": "You reach for some of the tasty goodies, when you hear a loud rumbling\nsound and see a bright flash of light...\n\nThen the words: 'TAKE ONLY THE LAMP... TOUCH NOTHING ELSE.'\n\n... All is silent once again.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8724,
+      "name": "A Crack in the Wall",
+      "description": "You exhale, and squeeze yourself into the narrow crack in the wall.\nDust fills your eyes as you disturb it, and chunks of mortar and stone\nmixed with a touch of sand fall on you as you scrape your way through.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8709,
+          "description": "You see a musty chamber.\n"
+        },
+        "south": {
+          "toRoom": 8725,
+          "description": "You see a tomb.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8725,
+      "name": "A Looted Tomb",
+      "description": "The floor of this small tomb is littered with the lids of \nsmashed sarcophagi, bits of treasure dropped by thieves and\nlooters, and corpses pulled from their resting places.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8724,
+          "description": "You see a small crack in the wall through which you might be able to slide.\n"
+        },
+        "east": {
+          "toRoom": 8733,
+          "description": "To the east is another tomb.\n"
+        },
+        "west": {
+          "toRoom": 8726,
+          "description": "To the west is another tomb.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8726,
+      "name": "A Demolished Tomb",
+      "description": "This tomb has been utterly destroyed by thieves and looters in search of\nthe treasures of the pharoahs.  Nothing of interest remains in this room,\nexcept a large stone coffin that leans against the western wall.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8725,
+          "description": "To the east is another tomb.\n"
+        },
+        "west": {
+          "toRoom": 8727,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 8712,
+          "description": "You see a large stone coffin.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "man garments pharoah",
+          "description": "As you look closer at the figure sculpted into the stone coffin you notice a\nsmall marking carved into its chest.  It looks like a scarab or small beetle\nwould fit into the small space, if properly sized.\n\nHmm.\n"
+        },
+        {
+          "keywords": "coffin lid",
+          "description": "The coffin is sculpted into the form of a man, standing several heads above\nyou, and clad in the garments of pharoahs.  It has apparently been untouched\nby the ravages of time and the activities of looters.  Several markings on the \nside indicate spots where unsuccessful attempts were made to open the coffin.\n\nYou can't see any way to open it.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8727,
+      "name": "A Stairway",
+      "description": "You stand now at the head of a stairway that goes down into darkness.\nThe steps and walls are smooth sandy stone, covered with a thick layer\nof dust.  Some inscriptions are carved into the wall here.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8726,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "You see the backside of the coffin lid, featureless stone.\n"
+        },
+        "down": {
+          "toRoom": 8728,
+          "description": "It is too dark to see down the stairway.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "coffin lid",
+          "description": "On this side the coffin lid is smooth featureless stone.\n"
+        },
+        {
+          "keywords": "inscriptions",
+          "description": "You blow dust away from the inscriptions to read:\n'Beware the curse of the mummy.'\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8728,
+      "name": "A Stairway",
+      "description": "You are on a stairway that disappears into darkness in both directions.\nThe smooth, uneven steps of the stairway have not been travelled in what\nappears to be centuries.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 8727,
+          "description": "It is too dark to see up the stairway.\n"
+        },
+        "down": {
+          "toRoom": 8729,
+          "description": "It is too dark to see down the stairway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8729,
+      "name": "A Stairway",
+      "description": "You stand now at the base of the uneven stairway.  The walls, floor,\nand ceiling of this small landing are covered with strange hieroglyphics.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 8730,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see a seam in the stone wall.\n"
+        },
+        "up": {
+          "toRoom": 8728,
+          "description": "It is too dark to see up the stairway.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "walls floor ceiling hieroglyphics",
+          "description": "The hieroglyphics are covered with a thick layer of dust.  You clear the\ndust away with your hand, and find that you cannot comprehend them.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8730,
+      "name": "The Ancient Hall",
+      "description": "Here the air is deathly still, motes of dust thickly obscuring your\nvision.  Several stone statues line the walls of the hall, depicting the \ngods of an ancient society.  Strange glyphs and sigils cover the walls, a \npeculiar pictorial form of written language that you don't understand.\n   Some steps lead to a raised dais to the south.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8729,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see a seam in the stone wall.\n"
+        },
+        "south": {
+          "toRoom": 8731,
+          "description": "You see a small raised dais.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "writings glyphs sigils hieroglyphics symbols",
+          "description": "You don't understand the meaning of these symbols.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8731,
+      "name": "A Raised Dais",
+      "description": "You are at the southern end of the ancient hall, the dust and darkness\nabsorbing your light so that you cannot see past the steps of the dais.\nA low pedestal rests here.  You see something written into the face of it.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8730,
+          "description": "You cannot see past the steps of the dais.\n"
+        },
+        "down": {
+          "toRoom": 8732,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see a seam in the stone floor.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "pedestal writings",
+          "description": "The writings are covered in sand and worn nearly away by the passage\nof time: 'I am Ramses the Damned, once counselor and aide to the mightiest\nof pharoahs and queens of this land.  Much time has passed since I last\nwalked the earth.  Disturb my rest at your peril.'\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8732,
+      "name": "The Tomb of Ramses",
+      "description": "You stand in an empty tomb, a cubicle no more then ten feet to a side.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 8731,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "That leads back the way you came.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8733,
+      "name": "A Ransacked Tomb",
+      "description": "This tomb has been completely ransacked and destroyed by the actions\nof pyramid thieves and looters.  The floor is littered with junk.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8734,
+          "description": "To the east is a low-ceilinged tunnel.\n"
+        },
+        "west": {
+          "toRoom": 8725,
+          "description": "To the west is another tomb.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8734,
+      "name": "A Tunnel",
+      "description": "The low-ceilinged tunnel runs east-west.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8735,
+          "description": "You cannot see into the darkness of the low tunnel.\n"
+        },
+        "west": {
+          "toRoom": 8733,
+          "description": "You see a tomb.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8735,
+      "name": "A Fork in the Tunnel",
+      "description": "Here the tunnel forks off through a gaping hole down in the\nsouthern wall, continuing onward to the east and west as well.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8736,
+          "description": "You cannot see into the darkness of the low tunnel.\n"
+        },
+        "west": {
+          "toRoom": 8734,
+          "description": "You cannot see into the darkness of the low tunnel.\n"
+        },
+        "down": {
+          "toRoom": 8746,
+          "description": "Through the hole you see rubble and sand.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "s south hole",
+          "description": "The hole is low, at the floor of the southern wall.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8736,
+      "name": "A Tunnel",
+      "description": "The low-ceilinged tunnel makes a turn to the west and ends\nto the north as it spills out into a dusty hallway.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8742,
+          "description": "The mouth of the tunnel is stone that has been torn away by looters.\n"
+        },
+        "west": {
+          "toRoom": 8735,
+          "description": "You cannot see into the darkness of the low tunnel.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8737,
+      "name": "A Dank Chamber",
+      "description": "This chamber has a dank, dusty, musty smell to it.  Small footprints\nin the dust betray the recent passage of some sort of creatures.  A hole \nin the floor lies to the west and a stairway is to the east.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8738,
+          "description": "You see a spiral stone stairway.\n"
+        },
+        "west": {
+          "toRoom": 8712,
+          "description": "You see only blackness through the hole in the floor.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8738,
+      "name": "A Spiral Stairway",
+      "description": "Some dusty, broken stone stairs here spiral slowly in a constricted\nspace down towards a dusty hallway.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 8737,
+          "description": "The stairs spiral up into a dank chamber.\n"
+        },
+        "down": {
+          "toRoom": 8741,
+          "description": "The stairs spiral down into a dusty hallway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8739,
+      "name": "A Dust-Covered Hallway",
+      "description": "This hallway is covered with dust that has accumulated over the\ncenturies that the pyramid has stood.  Small markings and footprints\nin the dust betray the recent passage of others -- perhaps thieves?\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8740,
+          "description": "The hallway proceeds to the east towards a strange smell.\n"
+        },
+        "west": {
+          "toRoom": 8709,
+          "description": "The hallway proceeds towards the west towards a musty smell.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8740,
+      "name": "A Smelly Chamber",
+      "description": "This small chamber has a sickly putrescent smell to it, the\nsmell of formaldehyde and other ointments used to preserve the\ncorpses of those who died ages ago.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8741,
+          "description": "You see a dusty hallway.\n"
+        },
+        "west": {
+          "toRoom": 8739,
+          "description": "You a dusty hallway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8741,
+      "name": "A Dust-Covered Hallway",
+      "description": "This hallway is covered with a thick, choking dust that rises\nup to obscure your light source and sting your eyes.  Small marks\nand footprints in the dust betray the recent passage of others.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8742,
+          "description": "The hallway turns to the north.\n"
+        },
+        "west": {
+          "toRoom": 8740,
+          "description": "You smell something peculiar over there.\n"
+        },
+        "up": {
+          "toRoom": 8738,
+          "description": "A tightly spiralling stone stairway leads up.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8742,
+      "name": "A Turn in the Hallway",
+      "description": "You are standing in an elbow turn in a dust-covered stone hallway,\nthat dead ends to the north and continues on to the west.  To the south\nthe stones of the pyramid have been torn asunder by thieves, making\na low-ceilinged tunnel.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8743,
+          "description": "The hallway ends to the north.\n"
+        },
+        "south": {
+          "toRoom": 8736,
+          "description": "The tunnel is dark.\n"
+        },
+        "west": {
+          "toRoom": 8741,
+          "description": "The dust-covered hallway continues to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8743,
+      "name": "A Dead End",
+      "description": "The dust-covered hallway has come to an abrupt end at a stony,\nfeatureless wall.  Here and there are signs of the recent passage\nof others in the dust.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 8742,
+          "description": "The dusty hall continues to the south.\n"
+        },
+        "down": {
+          "toRoom": 8744,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "The floor is quite dusty, and made of stone.  You see some cracks.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "cracks",
+          "description": "The cracks look like you might be able to pull away some pieces of\nthe floor, perhaps even fit your body through the space you make.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8744,
+      "name": "The Tomb Entrance",
+      "description": "You are in a small, dark chamber that has stood undisturbed for\nmany years.  To the north stands a massive stone tomb, which is\ncovered in hieroglyphics and gold-lined carvings that mark it as the\nfinal resting place of the mighty pharoahs of this land.\n",
+      "roomFlags": [
+        "Dark",
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8745,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "You see the tomb of the pharoahs.\n"
+        },
+        "up": {
+          "toRoom": 8743,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "The stone ceiling has some cracks in it, through which a dim light streams.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "hieroglyphics carvings",
+          "description": "The markings indicate that this tomb is indeed the tomb of the greatest\npharoahs of the ancient civilization that built this massive pyramid.\n"
+        },
+        {
+          "keywords": "tomb",
+          "description": "The tomb looks like it has stood for many years, much like the pyramid\nwhich encloses it.  It is covered in small hieroglyphics.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8745,
+      "name": "The Tomb of the Pharoahs",
+      "description": "Great golden sarcophogai line the walls of this massive tomb.  It has\nwithstood the passage of time intact, untouched by the hands of thieves\nand looters.  The treasures taken by the pharoahs to their graves still\nlie before your feet.\n",
+      "roomFlags": [
+        "Dark",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 8744,
+          "flags": [
+            "IsDoor",
+            "Closed"
+          ],
+          "description": "That way leads back out of the tomb.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "treasures",
+          "description": "The treasures are dusty and fragile, but still seem quite valuable.\nYou decide not to take them out of respect for the ancient dead.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8746,
+      "name": "A Rubble-Strewn Hallway",
+      "description": "This hallway formerly had a beautiful arch to the ceiling, now\ncollapsed under the weight of the slowly settling stones of the\npyramid.  Now, a massive pile of rubble leads up into a hole high \nin the northern portion of the hallway.  To the south, through the \nrubble and fallen stones you see a sandstone crypt.\n",
+      "roomFlags": [
+        "Dark",
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 8747,
+          "description": "You see a sandstone crypt.\n"
+        },
+        "up": {
+          "toRoom": 8735,
+          "description": ">From here you see only darkness.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8747,
+      "name": "A Sandstone Crypt",
+      "description": "This small crypt is lit by a hole in the wall to the south, through\nwhich sand pours from the desert outside.  A hot wind blows in from the\ndesert, drying your skin instantly.  To the east and north the arched\nhallway continues.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8746,
+          "description": "The arched hallway collapses into rubble shortly to the north.\n"
+        },
+        "east": {
+          "toRoom": 8748,
+          "description": "You see a beautifully arched hallway.\n"
+        },
+        "south": {
+          "toRoom": 8753,
+          "description": "You see a lot of sand.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8748,
+      "name": "An Arched Hall",
+      "description": "This hallway has a beautiful arch to it, formed painstakingly and\nexquisitely out of the sandy stones of the pyramid.  The dust that\ncovers most of the rest of the pyramid interior is not present here,\nscoured away by the blowing of the desert winds that howl about\nyour ears.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 8749,
+          "description": "The arched hall proceeds to the east, making a sharp southward turn.\n"
+        },
+        "west": {
+          "toRoom": 8747,
+          "description": "The arched hall proceeds into a sandstone crypt.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8749,
+      "name": "An Arched Hall",
+      "description": "This hallway has a beautiful arch to it, formed painstakingly and\nexquisitely out of the sandy stones of the pyramid.  To the east is\na small, golden-coloured crypt, and the hall proceeds to the south\nand north.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8748,
+          "description": "The arched hall proceeds to the north, making a sharp westward turn.\n"
+        },
+        "east": {
+          "toRoom": 8750,
+          "description": "A small golden crypt lies to the east.\n"
+        },
+        "south": {
+          "toRoom": 8751,
+          "description": "The arched hall proceeds to the south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8750,
+      "name": "A Golden Crypt",
+      "description": "You stand inside a small crypt with walls and ceiling made of\ngolden bricks that obscure the large sandy stones of the pyramid.\nSmall rugs and tapestries are scattered about the floor here, and\nthey appear to have been used recently.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 8749,
+          "description": "You see an arched hall.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "bricks",
+          "description": "The small golden bricks are very smooth and also quite soft.\n"
+        },
+        {
+          "keywords": "rug rugs tapestry tapestries",
+          "description": "The rugs and tapestries are very fine and worn with age, their colors\nnow faded.  They depict scenes of life in an ancient desert city.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8751,
+      "name": "An Arched Hall",
+      "description": "This hallway has a beautiful arch to it, formed painstakingly and\nexquisitely out of the sandy stones of the pyramid.  The arched\nhall proceeds to the north and ends to the south in a small vault.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8749,
+          "description": "The arched hall continues to the north.\n"
+        },
+        "south": {
+          "toRoom": 8752,
+          "description": "You see a small vault from which a shining light issues.\n"
+        }
+      }
+    },
+    {
+      "vnum": 8752,
+      "name": "A Shining Vault",
+      "description": "The stones of the pyramid here take on a strange, twinkling quality,\nalmost seeming to shine with an internal light.  As you look closer you\nsee tiny glass-like glittery particles within the stones, that reflect\nthe light from your light source so perfectly that they seem to shine.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8751,
+          "description": "You see a hall with a beautifully arched ceiling.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "particles glass",
+          "description": "The glassy particles reflect and refract your light source in a myriad\nof dazzling colours that dance across your eyes and make you giggle.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8753,
+      "name": "A Massive Sand Dune",
+      "description": "You stand now on a massive sand dune on the southern side of\nthe pyramid.  At the foot of the sand dune to the north you see a\nsmall hole where the stones of the pyramid have collapsed.  Not\nfar to the south is a massive roiling sandstorm; the wind from the\nstorm howls and bites at your face even here.\n",
+      "roomFlags": [
+        "NoMob"
+      ],
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8747,
+          "description": "You see a small hole leading back into the pyramid.\n"
+        },
+        "south": {
+          "toRoom": 8754,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sand dune sandstorm",
+          "description": "The sand is very white, and very sandy.  There sure is a lot of it.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8754,
+      "name": "A Swirling Sandstorm",
+      "description": "You are caught in the midst of a massive sandstorm.  Howling winds\nbuffet you from all sides, and the sand tears at your skin, blinding\nyou and choking you.  You have lost all sense of direction.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8753,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "east": {
+          "toRoom": 8754,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "south": {
+          "toRoom": 8755,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "west": {
+          "toRoom": 8754,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sand",
+          "description": "Sand is about all you CAN see right now.  Unfortunately, it isn't very\ninteresting sand, only white, dry, and blowing all over the place.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8755,
+      "name": "A Swirling Sandstorm",
+      "description": "You are caught in the midst of a massive sandstorm.  Howling winds\nbuffet you from all sides, and the sand tears at your skin, blinding\nyou and choking you.  You have lost all sense of direction.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8754,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "east": {
+          "toRoom": 8755,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "south": {
+          "toRoom": 8756,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "west": {
+          "toRoom": 8755,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sand",
+          "description": "Sand is about all you CAN see right now.  Unfortunately, it isn't very\ninteresting sand, only white, dry, and blowing all over the place.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8756,
+      "name": "A Swirling Sandstorm",
+      "description": "You are caught in the midst of a massive sandstorm.  Howling winds\nbuffet you from all sides, and the sand tears at your skin, blinding\nyou and choking you.  You have lost all sense of direction.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8755,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "east": {
+          "toRoom": 8756,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "south": {
+          "toRoom": 8757,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "west": {
+          "toRoom": 8756,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sand",
+          "description": "Sand is about all you CAN see right now.  Unfortunately, it isn't very\ninteresting sand, only white, dry, and blowing all over the place.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8757,
+      "name": "A Swirling Sandstorm",
+      "description": "You are caught in the midst of a massive sandstorm.  Howling winds\nbuffet you from all sides, and the sand tears at your skin, blinding\nyou and choking you.  You have lost all sense of direction.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8756,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "east": {
+          "toRoom": 8757,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "south": {
+          "toRoom": 8758,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "west": {
+          "toRoom": 8757,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sand",
+          "description": "Sand is about all you CAN see right now.  Unfortunately, it isn't very\ninteresting sand, only white, dry, and blowing all over the place.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8758,
+      "name": "A Massive Sand Dune",
+      "description": "Somehow you managed to make your way through the howling winds\nof the sandstorm, and clamber up on this sand dune.  You can see the\nstorm to the north of you, and presumably the pyramid is somewhere\nbeyond it.  Nothing but flat, featureless, open dunes of sand lie in\nevery other direction.\n",
+      "sector": "Desert",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 8757,
+          "description": "You see only a wall of whirling, blowing, dry sand.\n"
+        },
+        "south": {
+          "toRoom": 8759,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "keyVnum": 8717,
+          "description": "On the southern side of the sand dune is a small hole in the sand.\nFor some reason you seem unable to get to it.\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "hieroglyphics symbols",
+          "description": "Like most of the ancient hieroglyphics of this land, the symbols are\ntotally incomprehensible to you.  Perhaps the Sphinx has the answer\nto this ancient riddle.\n"
+        },
+        {
+          "keywords": "riddle",
+          "description": "A vision forms before your eyes, in glowing hieroglyphic symbols.\n"
+        },
+        {
+          "keywords": "sand dune",
+          "description": "The sand is very white, and very sandy.  There sure is a lot of it.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 8759,
+      "name": "Through the Hole in the Sand",
+      "description": "You squeeze through the small hole in the sand and land in a small\nwhite chamber.  Above you is a small hole, reachable by climbing up\nthe small sandy slope down which you slid.\n",
+      "roomFlags": [
+        "Dark",
+        "NoMob",
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "up": {
+          "toRoom": 8753,
+          "description": "You see a sand dune.\n"
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Door",
+      "roomVnum": 8706,
+      "direction": "Down",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8708,
+      "direction": "Up",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8709,
+      "direction": "West",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8710,
+      "direction": "East",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8722,
+      "direction": "South",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8723,
+      "direction": "North",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8726,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8727,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8729,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8730,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8731,
+      "direction": "Down",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8732,
+      "direction": "Up",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8743,
+      "direction": "Down",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8744,
+      "direction": "North",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8744,
+      "direction": "Up",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8745,
+      "direction": "South",
+      "state": "Closed"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 8758,
+      "direction": "South",
+      "state": "Locked"
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8700,
+      "roomVnum": 8702,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8701,
+      "roomVnum": 8703,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8700,
+      "roomVnum": 8705,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8702,
+      "roomVnum": 8706,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8703,
+      "roomVnum": 8709,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8700,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8703,
+      "roomVnum": 8709,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8701,
+      "wearLocation": "About",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8709,
+      "roomVnum": 8711,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8707,
+      "wearLocation": "Light",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8700,
+      "roomVnum": 8713,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8702,
+      "roomVnum": 8716,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8723,
+      "roomVnum": 8719,
+      "maxInWorld": 0
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8706,
+      "roomVnum": 8723,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8711,
+      "roomVnum": 8723,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8713,
+      "wearLocation": "Hold",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8704,
+      "roomVnum": 8725,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3351,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8707,
+      "roomVnum": 8725,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8704,
+      "wearLocation": "Body",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 8706,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8707,
+      "roomVnum": 8725,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8704,
+      "wearLocation": "Body",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 8705,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8702,
+      "roomVnum": 8726,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8704,
+      "roomVnum": 8726,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3351,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8717,
+      "roomVnum": 8732,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 8719,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 8720,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 8721,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 8721,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8722,
+      "wearLocation": "Head",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8704,
+      "roomVnum": 8733,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3351,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8704,
+      "roomVnum": 8734,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3351,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8704,
+      "roomVnum": 8735,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3351,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8703,
+      "roomVnum": 8737,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8700,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8703,
+      "roomVnum": 8737,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8701,
+      "wearLocation": "About",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8707,
+      "roomVnum": 8737,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8704,
+      "wearLocation": "Body",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8700,
+      "roomVnum": 8740,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8703,
+      "roomVnum": 8740,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8700,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8703,
+      "roomVnum": 8740,
+      "maxInWorld": 6,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8701,
+      "wearLocation": "About",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8701,
+      "roomVnum": 8741,
+      "maxInWorld": 4,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8707,
+      "roomVnum": 8741,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8704,
+      "wearLocation": "Body",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8704,
+      "roomVnum": 8742,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 3351,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8705,
+      "roomVnum": 8743,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8703,
+      "wearLocation": "Head",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8702,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8710,
+      "roomVnum": 8745,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8708,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8710,
+      "roomVnum": 8745,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8708,
+      "wearLocation": "Wield",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 8709,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8710,
+      "roomVnum": 8745,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 8711,
+      "containerVnum": 8710,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Put",
+      "objectVnum": 8712,
+      "containerVnum": 8710,
+      "maxInWorld": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8715,
+      "roomVnum": 8747,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 8716,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8712,
+      "roomVnum": 8748,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8712,
+      "roomVnum": 8749,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8713,
+      "roomVnum": 8750,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8713,
+      "roomVnum": 8750,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Give",
+      "objectVnum": 8714,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8712,
+      "roomVnum": 8751,
+      "maxInWorld": 3,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8714,
+      "roomVnum": 8752,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8714,
+      "roomVnum": 8752,
+      "maxInWorld": 2,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Give",
+      "objectVnum": 8715,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8754,
+      "door": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8708,
+      "roomVnum": 8754,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8755,
+      "door": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8708,
+      "roomVnum": 8755,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8756,
+      "door": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8708,
+      "roomVnum": 8756,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Randomize",
+      "roomVnum": 8757,
+      "door": 4
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8708,
+      "roomVnum": 8757,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 8716,
+      "roomVnum": 8758,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 8717,
+      "wearLocation": "Hold",
+      "maxInWorld": -1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8718,
+      "roomVnum": 8759,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8724,
+      "roomVnum": 8759,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8725,
+      "roomVnum": 8759,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8726,
+      "roomVnum": 8759,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Object",
+      "objectVnum": 8727,
+      "roomVnum": 8759,
+      "maxInWorld": -1
+    }
+  ],
+  "specials": [
+    {
+      "mobileVnum": 8700,
+      "procedure": "Poison"
+    },
+    {
+      "mobileVnum": 8701,
+      "procedure": "Poison"
+    },
+    {
+      "mobileVnum": 8704,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 8705,
+      "procedure": "Thief"
+    },
+    {
+      "mobileVnum": 8709,
+      "procedure": "BreathFire"
+    },
+    {
+      "mobileVnum": 8711,
+      "procedure": "CastMage"
+    },
+    {
+      "mobileVnum": 8713,
+      "procedure": "CastCleric"
+    },
+    {
+      "mobileVnum": 8714,
+      "procedure": "CastCleric"
+    },
+    {
+      "mobileVnum": 8715,
+      "procedure": "CastCleric"
+    },
+    {
+      "mobileVnum": 8716,
+      "procedure": "BreathAny"
+    },
+    {
+      "mobileVnum": 8717,
+      "procedure": "CastCleric"
+    }
+  ]
+}

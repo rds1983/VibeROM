@@ -1,0 +1,2838 @@
+{
+  "formatVersion": 1,
+  "legacyFile": "nirvana.are",
+  "name": "Nirvana",
+  "credits": "{30 35} Fstall  Nirvana",
+  "vnumRange": {
+    "low": 9000,
+    "high": 9099
+  },
+  "builders": "None",
+  "mobiles": [
+    {
+      "vnum": 9000,
+      "keywords": "tridrone",
+      "shortDescription": "the tridrone",
+      "longDescription": "A tridrone is here doing a menial task.\n",
+      "description": "You see what appears to be a 3 sided pyramid with spidery arms and legs.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Scavenger",
+        "StayArea"
+      ],
+      "affectedBy": [
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Trip",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Charm",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease"
+      ],
+      "resistances": [
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "form": [
+        "Sentient"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 8,
+      "hitRoll": 0,
+      "hitDice": {
+        "count": 3,
+        "size": 20,
+        "bonus": 80
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 1,
+        "bonus": 99
+      },
+      "damage": {
+        "count": 2,
+        "size": 5,
+        "bonus": 3,
+        "attackType": "Pound"
+      },
+      "armor": {
+        "pierce": 4,
+        "bash": 3,
+        "slash": 4,
+        "exotic": 5
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9001,
+      "keywords": "quadrone",
+      "shortDescription": "the quadrone",
+      "longDescription": "A quadrone is here watching for trespassers.\n",
+      "description": "A cubic creature, with spiny arms and legs.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Aggressive",
+        "StayArea",
+        "Warrior"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Bash",
+        "Disarm",
+        "Parry",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Charm",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease"
+      ],
+      "resistances": [
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "form": [
+        "Sentient"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 11,
+      "hitRoll": 3,
+      "hitDice": {
+        "count": 14,
+        "size": 10,
+        "bonus": 70
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 1,
+        "bonus": 99
+      },
+      "damage": {
+        "count": 3,
+        "size": 4,
+        "bonus": 2,
+        "attackType": "Beating"
+      },
+      "armor": {
+        "pierce": 1,
+        "bash": 0,
+        "slash": 1,
+        "exotic": 2
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9002,
+      "keywords": "pentadrone",
+      "shortDescription": "the pentadrone",
+      "longDescription": "The pentadrone is here policing the area.\n",
+      "description": "A five-armed creature which resembles a starfish on thin stilt-like legs.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "StayArea",
+        "Warrior"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Bash",
+        "Disarm",
+        "Dodge",
+        "Rescue",
+        "Trip",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Charm",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease",
+        "Drowning"
+      ],
+      "resistances": [
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "form": [
+        "Sentient"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Ear",
+        "Eye",
+        "Tentacles"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 14,
+      "hitRoll": 3,
+      "hitDice": {
+        "count": 15,
+        "size": 12,
+        "bonus": 110
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 1,
+        "bonus": 99
+      },
+      "damage": {
+        "count": 4,
+        "size": 4,
+        "bonus": 3,
+        "attackType": "Slap"
+      },
+      "armor": {
+        "pierce": -2,
+        "bash": -2,
+        "slash": 0,
+        "exotic": -1
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9003,
+      "keywords": "decaton",
+      "shortDescription": "the decaton",
+      "longDescription": "A decaton is here overseeing the other modrons.\n",
+      "description": "The decaton is a large, ten-tentacled sphere on stumpy legs.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "StayArea",
+        "Cleric",
+        "Warrior"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "AreaAttack",
+        "Bash",
+        "Disarm",
+        "Parry",
+        "Trip",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Charm",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease",
+        "Drowning"
+      ],
+      "resistances": [
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "form": [
+        "Sentient",
+        "Biped"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Ear",
+        "Eye",
+        "Tentacles"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 17,
+      "hitRoll": 4,
+      "hitDice": {
+        "count": 25,
+        "size": 10,
+        "bonus": 70
+      },
+      "manaDice": {
+        "count": 17,
+        "size": 8,
+        "bonus": 50
+      },
+      "damage": {
+        "count": 4,
+        "size": 5,
+        "bonus": 3,
+        "attackType": "Pound"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": 0,
+        "exotic": -2
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9004,
+      "keywords": "nonaton",
+      "shortDescription": "the nonaton",
+      "longDescription": "A nonaton is here preserving law and order.\n",
+      "description": "A cylidrical modron with 9 tentacles and stubby legs.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "StayArea",
+        "Cleric",
+        "Warrior"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Sanctuary",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "AreaAttack",
+        "Disarm",
+        "Dodge",
+        "Trip",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Charm",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease",
+        "Drowning"
+      ],
+      "resistances": [
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "vulnerabilities": [
+        "Slash"
+      ],
+      "form": [
+        "Sentient",
+        "Biped"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Ear",
+        "Eye",
+        "Tentacles"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 20,
+      "hitRoll": 5,
+      "hitDice": {
+        "count": 11,
+        "size": 8,
+        "bonus": 250
+      },
+      "manaDice": {
+        "count": 20,
+        "size": 8,
+        "bonus": 75
+      },
+      "damage": {
+        "count": 4,
+        "size": 6,
+        "bonus": 4,
+        "attackType": "Pound"
+      },
+      "armor": {
+        "pierce": -4,
+        "bash": -4,
+        "slash": -2,
+        "exotic": -3
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Large",
+      "material": "none"
+    },
+    {
+      "vnum": 9005,
+      "keywords": "octon",
+      "shortDescription": "the octon",
+      "longDescription": "An octon is here governing his ward of responsilbility.\n",
+      "description": "The octon has a collar at shoulder level with 8 tentacled arms growing out of\nit.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "StayArea",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "AreaAttack",
+        "Bash",
+        "Disarm",
+        "Fast",
+        "Parry",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Charm",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease",
+        "Drowning"
+      ],
+      "resistances": [
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "vulnerabilities": [
+        "Slash"
+      ],
+      "form": [
+        "Sentient",
+        "Biped"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Ear",
+        "Eye",
+        "Tentacles"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 22,
+      "hitRoll": 5,
+      "hitDice": {
+        "count": 25,
+        "size": 10,
+        "bonus": 300
+      },
+      "manaDice": {
+        "count": 18,
+        "size": 10,
+        "bonus": 75
+      },
+      "damage": {
+        "count": 4,
+        "size": 6,
+        "bonus": 5,
+        "attackType": "Crush"
+      },
+      "armor": {
+        "pierce": -5,
+        "bash": -5,
+        "slash": -3,
+        "exotic": -4
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Large",
+      "material": "none"
+    },
+    {
+      "vnum": 9006,
+      "keywords": "septon",
+      "shortDescription": "the septon",
+      "longDescription": "A septon is here preserving order.\n",
+      "description": "The septon appears as a human with a large bald head. It has a shoulder collar\nwith 7 tentacles coming from it.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "StayArea",
+        "Cleric",
+        "Mage"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "AreaAttack",
+        "Dodge",
+        "Parry",
+        "Crush",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Charm",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease",
+        "Drowning"
+      ],
+      "resistances": [
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "form": [
+        "Sentient",
+        "Biped"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye",
+        "Tentacles"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 24,
+      "hitRoll": 5,
+      "hitDice": {
+        "count": 30,
+        "size": 10,
+        "bonus": 350
+      },
+      "manaDice": {
+        "count": 20,
+        "size": 10,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 6,
+        "size": 4,
+        "bonus": 5,
+        "attackType": "Beating"
+      },
+      "armor": {
+        "pierce": -6,
+        "bash": -6,
+        "slash": -6,
+        "exotic": -4
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Medium",
+      "material": "none"
+    },
+    {
+      "vnum": 9007,
+      "keywords": "hexton",
+      "shortDescription": "the hexton",
+      "longDescription": "A hexton is here watching over his armies.\n",
+      "description": "A hexton appears as a humanoid with 6 arms: 2 large human arms with 6 fingers,\nand 4 tentacles below tipped with sharp claws.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "StayArea",
+        "Cleric",
+        "Warrior"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden",
+        "Sanctuary",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "AreaAttack",
+        "Bash",
+        "Disarm",
+        "Dodge",
+        "Fast",
+        "Kick",
+        "Parry",
+        "Rescue",
+        "Trip",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Summon",
+        "Charm",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease",
+        "Drowning"
+      ],
+      "resistances": [
+        "Magic",
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "form": [
+        "Sentient",
+        "Biped"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye",
+        "Tentacles",
+        "Wings"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 26,
+      "hitRoll": 7,
+      "hitDice": {
+        "count": 35,
+        "size": 20,
+        "bonus": 300
+      },
+      "manaDice": {
+        "count": 20,
+        "size": 10,
+        "bonus": 75
+      },
+      "damage": {
+        "count": 4,
+        "size": 8,
+        "bonus": 6,
+        "attackType": "Slash"
+      },
+      "armor": {
+        "pierce": -8,
+        "bash": -8,
+        "slash": -8,
+        "exotic": -4
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Large",
+      "material": "none"
+    },
+    {
+      "vnum": 9008,
+      "keywords": "quinton",
+      "shortDescription": "the quinton",
+      "longDescription": "A quinton is here keeping records.\n",
+      "description": "Quintons look like tall, stocky humanoids with 4 flexible arms jutting from the\nshoulders.  A prehensile tail serves as the creature's 5th arm, and they have\nfan-like wings attached to their shoulders.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "StayArea",
+        "Cleric"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "AreaAttack",
+        "Parry",
+        "Tail",
+        "Crush",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Summon",
+        "Charm",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease",
+        "Drowning"
+      ],
+      "resistances": [
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "form": [
+        "Sentient",
+        "Biped"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye",
+        "Tentacles",
+        "Wings",
+        "Tail"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 28,
+      "hitRoll": 6,
+      "hitDice": {
+        "count": 10,
+        "size": 100,
+        "bonus": 150
+      },
+      "manaDice": {
+        "count": 20,
+        "size": 12,
+        "bonus": 100
+      },
+      "damage": {
+        "count": 4,
+        "size": 8,
+        "bonus": 7,
+        "attackType": "Beating"
+      },
+      "armor": {
+        "pierce": -7,
+        "bash": -8,
+        "slash": -6,
+        "exotic": -8
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Large",
+      "material": "none"
+    },
+    {
+      "vnum": 9009,
+      "keywords": "tertian",
+      "shortDescription": "the tertian",
+      "longDescription": "A tertian is here administering the law.\n",
+      "description": "Tertians look very human, save for their 12 foot size, the horns jutting from\nthe sides of their bald heads, and the long prehensile tail ending in a mace-\nlike ball.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "StayArea",
+        "Cleric",
+        "Mage",
+        "Warrior"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Bash",
+        "Disarm",
+        "Dodge",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Summon",
+        "Charm",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease",
+        "Drowning"
+      ],
+      "resistances": [
+        "Magic",
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "form": [
+        "Sentient",
+        "Biped"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye",
+        "Horns"
+      ],
+      "alignment": 300,
+      "group": 0,
+      "level": 33,
+      "hitRoll": 12,
+      "hitDice": {
+        "count": 1,
+        "size": 1,
+        "bonus": 999
+      },
+      "manaDice": {
+        "count": 20,
+        "size": 20,
+        "bonus": 50
+      },
+      "damage": {
+        "count": 8,
+        "size": 6,
+        "bonus": 12,
+        "attackType": "Pound"
+      },
+      "armor": {
+        "pierce": -11,
+        "bash": -13,
+        "slash": -10,
+        "exotic": -9
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Huge",
+      "material": "none"
+    },
+    {
+      "vnum": 9010,
+      "keywords": "secundus",
+      "shortDescription": "secundus",
+      "longDescription": "A Secundus, one of the Viceroys of Nirvana, is here.\n",
+      "description": "The secundi is an incredibly thin, tall humanoids with long, narrow faces\nand deepset eyes. It radiates intense power.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "StayArea",
+        "Cleric",
+        "Mage",
+        "Warrior"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden",
+        "Sanctuary",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "Disarm",
+        "Dodge",
+        "Fast",
+        "Kick",
+        "Parry",
+        "Trip",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Summon",
+        "Charm",
+        "Fire",
+        "Cold",
+        "Acid",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease",
+        "Drowning"
+      ],
+      "resistances": [
+        "Magic",
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "form": [
+        "Sentient",
+        "Biped"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 36,
+      "hitRoll": 15,
+      "hitDice": {
+        "count": 1,
+        "size": 1,
+        "bonus": 1599
+      },
+      "manaDice": {
+        "count": 40,
+        "size": 20,
+        "bonus": 50
+      },
+      "damage": {
+        "count": 7,
+        "size": 8,
+        "bonus": 15,
+        "attackType": "Punch"
+      },
+      "armor": {
+        "pierce": -11,
+        "bash": -14,
+        "slash": -11,
+        "exotic": -12
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Huge",
+      "material": "none"
+    },
+    {
+      "vnum": 9011,
+      "keywords": "Primus",
+      "shortDescription": "Primus",
+      "longDescription": "Primus, ruler of the Plane of Nirvana, forms out of an energy pool.\n",
+      "description": "Primus is a huge being who rises out of the energy pool and glares at you with\nviolet eyes. His right hand is wreathed in darkness, his left in light, and\nhe looks very displeased to see you.\n",
+      "race": "Modron",
+      "actFlags": [
+        "Sentinel",
+        "Aggressive",
+        "StayArea",
+        "Cleric",
+        "Mage",
+        "Warrior"
+      ],
+      "affectedBy": [
+        "DetectInvis",
+        "DetectHidden",
+        "Sanctuary",
+        "Infrared"
+      ],
+      "offensiveFlags": [
+        "AreaAttack",
+        "Fast",
+        "AssistAlign",
+        "AssistRace"
+      ],
+      "immunities": [
+        "Summon",
+        "Charm",
+        "Fire",
+        "Cold",
+        "Acid",
+        "Negative",
+        "Holy",
+        "Mental",
+        "Disease",
+        "Drowning",
+        "Light"
+      ],
+      "resistances": [
+        "Magic",
+        "Fire",
+        "Cold",
+        "Acid"
+      ],
+      "form": [
+        "Sentient",
+        "Biped"
+      ],
+      "parts": [
+        "Head",
+        "Arms",
+        "Legs",
+        "Hands",
+        "Feet",
+        "Fingers",
+        "Ear",
+        "Eye"
+      ],
+      "alignment": 0,
+      "group": 0,
+      "level": 40,
+      "hitRoll": 20,
+      "hitDice": {
+        "count": 1,
+        "size": 1,
+        "bonus": 3999
+      },
+      "manaDice": {
+        "count": 1,
+        "size": 1,
+        "bonus": 3999
+      },
+      "damage": {
+        "count": 6,
+        "size": 10,
+        "bonus": 25,
+        "attackType": "Wrath"
+      },
+      "armor": {
+        "pierce": -15,
+        "bash": -15,
+        "slash": -15,
+        "exotic": -15
+      },
+      "startPosition": "Standing",
+      "defaultPosition": "Standing",
+      "sex": "Neutral",
+      "gold": 0,
+      "size": "Giant",
+      "material": "none"
+    }
+  ],
+  "objects": [
+    {
+      "vnum": 9000,
+      "keywords": "sword long the",
+      "shortDescription": "THE long sword",
+      "longDescription": "THE long sword of Primus is here.",
+      "material": "adamantite",
+      "itemType": "Weapon",
+      "extraFlags": [
+        "Glow",
+        "Magic",
+        "AntiGood",
+        "AntiEvil"
+      ],
+      "wearFlags": [
+        "Take",
+        "Wield"
+      ],
+      "level": 39,
+      "weightPounds": 40,
+      "costCopper": 8800,
+      "condition": 100,
+      "weapon": {
+        "class": "Sword",
+        "diceCount": 5,
+        "diceSize": 6,
+        "attackType": "Slash",
+        "specialFlags": [
+          "Vorpal",
+          "TwoHands"
+        ]
+      },
+      "affects": [
+        {
+          "location": "DamageRoll",
+          "modifier": 5
+        },
+        {
+          "location": "HitRoll",
+          "modifier": 5
+        }
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "sword long the",
+          "description": "This is an extremely long and heavy sword, with many magical runes inscribed\non it.  It glows with the power of Primus, Lord of the Plane of Nirvana.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 9001,
+      "keywords": "moonstone moon stone white",
+      "shortDescription": "a luminescent moonstone",
+      "longDescription": "A softly glowing white stone rests on the floor.",
+      "material": "gem",
+      "itemType": "WarpStone",
+      "extraFlags": [
+        "Glow",
+        "NoLocate"
+      ],
+      "wearFlags": [
+        "Take",
+        "Hold"
+      ],
+      "level": 0,
+      "weightPounds": 0,
+      "costCopper": 500,
+      "condition": 100,
+      "rawValues": [
+        24,
+        0,
+        0,
+        0,
+        0
+      ],
+      "extraDescriptions": [
+        {
+          "keywords": "moonstone moon stone white",
+          "description": "Looking into the smooth surface of this moonstone, you feel strangely at \npeace and balance with the world around you.\n"
+        }
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "vnum": 9000,
+      "name": "Entrance to the Plane of Nirvana",
+      "description": "You stand before the entrance to a plane of absolute balance and order.  It is\nequally hot and cold, equally light and dark, and made of equal parts of solid\nand liquid.\n \nThe plane extends to the west and east, while an exit lies downward.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9001,
+          "description": "To the east, the plane extends for what seems to be forever.\n"
+        },
+        "west": {
+          "toRoom": 9002,
+          "description": "To the west, the plane extends for what seems to be forever.\n"
+        },
+        "down": {
+          "toRoom": 8905,
+          "description": "Downwards, you see the portal leading back to home.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9001,
+      "name": "The Plane of Nirvana",
+      "description": "You are traveling the Plane of Nirvana.  It has endless boundaries to the east\nand west\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9003,
+          "description": "To the east, there seems to be a bend in direction of travel.\n"
+        },
+        "west": {
+          "toRoom": 9000,
+          "description": "To the west, the plane seems to extend forever.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9002,
+      "name": "The Plane of Nirvana",
+      "description": "You are on a western strech of the plane.  Boundaries to the east and west seem \nnonexistent.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9000,
+          "description": "The plane seems to strech forever to the east\n"
+        },
+        "west": {
+          "toRoom": 9004,
+          "description": "The plane continues to the west where is appears to change direction\n"
+        }
+      }
+    },
+    {
+      "vnum": 9003,
+      "name": "A Change in Direction",
+      "description": "Here, the plane seems to direct you to the north.  Also, the plane continues \nto the west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9005,
+          "description": "The plane continues to the north with no end in sight\n"
+        },
+        "west": {
+          "toRoom": 9001,
+          "description": "The plane contiues to the west with no end in sight\n"
+        }
+      }
+    },
+    {
+      "vnum": 9004,
+      "name": "A Change in Direction",
+      "description": "Here, the plane goes to the north and bends to the east\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9006,
+          "description": "The vast plane seems to have no end to the north\n"
+        },
+        "east": {
+          "toRoom": 9002,
+          "description": "To the east, the plane has no visible end\n"
+        }
+      }
+    },
+    {
+      "vnum": 9005,
+      "name": "A North-South direction of the plane",
+      "description": "The plane continues to the north and south\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9012,
+          "description": "To the north, the plane stretches as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 9003,
+          "description": "To the south, the plane stretches as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9006,
+      "name": "A North-South stretch of the plane",
+      "description": "The plane continues to the north and the south\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9013,
+          "description": "To the north, the plane stretches as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 9004,
+          "description": "To the south, the plane stretches as far as the eye can see.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9007,
+      "name": "In the Tower of Nirvana",
+      "description": "Entering the tower, there seems to be enough light to see by, but no source is \nvisible.  The hall continues to the east, while a door lies to the west.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9010,
+          "description": "The hall continues east into oblivion.\n"
+        },
+        "west": {
+          "toRoom": 9013,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "A great door lies to the west\n"
+        }
+      }
+    },
+    {
+      "vnum": 9008,
+      "name": "A hallway in the Tower of Nirvana",
+      "description": "You are in a east-west hallway in the tower.  to the west, the hall continues \nand a door lies to the east.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9012,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "A great door lies to the east\n"
+        },
+        "west": {
+          "toRoom": 9009,
+          "description": "the hallway continues west into oblivion.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9009,
+      "name": "An east-west hallway in the Tower of Nirvana",
+      "description": "The hallway continues to the east, and stretches to the west.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9008,
+          "description": "The hallway continues east into oblivion.\n"
+        },
+        "west": {
+          "toRoom": 9011,
+          "description": "The Hallway continues west into oblivion.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9010,
+      "name": "An east-west passage in the Tower of Nirvana",
+      "description": "",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9011,
+          "description": "The Hallway contiues east into oblivion\n"
+        },
+        "west": {
+          "toRoom": 9007,
+          "description": "The Hallway contiues west into oblivion\n"
+        }
+      }
+    },
+    {
+      "vnum": 9011,
+      "name": "An intersection in the Tower of Nirvana",
+      "description": "You are at an intersection where the east-west passage continues, but a large \npassage leads to the north.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9023,
+          "description": "The passage continues to the north where it seems to get wider.\n"
+        },
+        "east": {
+          "toRoom": 9009,
+          "description": "The passage ontinues eastward into oblivion.\n"
+        },
+        "west": {
+          "toRoom": 9010,
+          "description": "The passage continues westward into oblivion.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9012,
+      "name": "At the door to the Tower of Nirvana",
+      "description": "You stand on the plane where a mighty door lies to the west.\nThe plane also continues north and southward.  There is a large sign on the \ndoor.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9014,
+          "description": "The plane continues northward as far as the eye can see.\n"
+        },
+        "south": {
+          "toRoom": 9005,
+          "description": "The plane continues southward as far as the eye can see.\n"
+        },
+        "west": {
+          "toRoom": 9008,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "A mighty door lies to the west\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sign",
+          "description": "The sign reads:\n                     WARNING\nOnly those brave of heart and high of level should\nenter the Tower of Nirvana.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 9013,
+      "name": "At the door to the Tower of Nirvana",
+      "description": "The plane continue to the north and south, while a mighty door lies to the \neast.  There is a sign on the door.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9015,
+          "description": "The plane stretches to the north as far as the eye can see.\n"
+        },
+        "east": {
+          "toRoom": 9007,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "A mighty door sits to the east\n"
+        },
+        "south": {
+          "toRoom": 9006,
+          "description": "The plane continues to the south as far as the eye can see\n"
+        }
+      },
+      "extraDescriptions": [
+        {
+          "keywords": "sign",
+          "description": "The sign reads:\n                  WARNING!\nOnly those brave of heart and high of level\nshould attempt to enter the Tower of Nirvana.\n"
+        }
+      ]
+    },
+    {
+      "vnum": 9014,
+      "name": "A north-south area of the Plane of Nirvana",
+      "description": "The plane continues to the north and southward.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9027,
+          "description": "The plane continues endlessly to the north.\n"
+        },
+        "south": {
+          "toRoom": 9012,
+          "description": "The plane continues endlessly to the south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9015,
+      "name": "A north-south area on the Plane of Nirvana",
+      "description": "the plane continues to the north and south\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9028,
+          "description": "The plane continues endlessly to the north\n"
+        },
+        "south": {
+          "toRoom": 9013,
+          "description": "The plane continues endlessly to the south\n"
+        }
+      }
+    },
+    {
+      "vnum": 9016,
+      "name": "Dead End",
+      "description": "You stand at a dead end where the only exit appears to be west.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9018,
+          "description": "The passage continue to the west.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9017,
+      "name": "Dead End",
+      "description": "You are at what appears to be a dead end.  The only exit is back east.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9019,
+          "description": "The passage continues to the east.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9018,
+      "name": "A Tertain's lair",
+      "description": "You quite possibly have made a terrible mistake coming in here.\nExits lead east and west.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9016,
+          "description": "The passage continues to the east\n"
+        },
+        "west": {
+          "toRoom": 9020,
+          "description": "The passage leads west where you can see a bright light ahead.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9019,
+      "name": "A Tertian's lair",
+      "description": "You might have made a terrible mistake coming into here.\nExits lead east and west.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9020,
+          "description": "The passage continues eastward where you can see a bright light.\n"
+        },
+        "west": {
+          "toRoom": 9017,
+          "description": "The passage continues westward into oblivion.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9020,
+      "name": "The Lair of Primus",
+      "description": "You are in a large hall, with a massive pool of what appears to be pure energy \nin the center of the room.  Exits lead in all the cardinal directions.  From \nthe pool rises the master of the Plane of Nirvana....\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9024,
+          "description": "A passage leads north into the unknown.\n"
+        },
+        "east": {
+          "toRoom": 9018,
+          "description": "A passage leads east into the unknown.\n"
+        },
+        "south": {
+          "toRoom": 9021,
+          "description": "A passage leads south into the unknown.\n"
+        },
+        "west": {
+          "toRoom": 9019,
+          "description": "A passage leads west into the unknown.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9021,
+      "name": "A Tertian's lair",
+      "description": "Maybe coming here wasn't such a hot idea.  You feel very unwelcome here.  \nExits lead north and south\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9020,
+          "description": "The passage leads north where you can see a bright light.\n"
+        },
+        "south": {
+          "toRoom": 9022,
+          "description": "The passage leads south into the unknown.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9022,
+      "name": "The office of a Quinton",
+      "description": "You have stumbled upon the office of a page to Primus.\nScrolls lie about the room along with many strange objects...you can't imagine \nwhat kind of creature would use them.  Exits lead in all the cardinal \ndirections.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9021,
+          "description": "The passage heads northward where you can see nothing.\n"
+        },
+        "east": {
+          "toRoom": 9046,
+          "description": "The passage goes east where you feel it might be bad to go.\n"
+        },
+        "south": {
+          "toRoom": 9023,
+          "description": "The passage goes south into oblivion.\n"
+        },
+        "west": {
+          "toRoom": 9053,
+          "description": "The passage heads westward into oblivion.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9023,
+      "name": "A wide north-south passageway",
+      "description": "you find yourself in a passage where the exits are north and south\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9022,
+          "description": "To the north, you spy an intersection of tunnels.\n"
+        },
+        "south": {
+          "toRoom": 9011,
+          "description": "To the south you can barely make out a junction of passageways.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9024,
+      "name": "A Tertian's lair",
+      "description": "You find yourself in a lair of a Tertian.  Exits lead north and south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9025,
+          "description": "To the north, you can make out a intersection of tunnels.\n"
+        },
+        "south": {
+          "toRoom": 9020,
+          "description": "To the south, you can see a bright light.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9025,
+      "name": "A north south tunnel",
+      "description": "You are in a passage where the only exits are north and south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9026,
+          "description": "Far to the north you can see a door.\n"
+        },
+        "south": {
+          "toRoom": 9024,
+          "description": "To the south you stare into darkness.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9026,
+      "name": "An intersection of passages",
+      "description": "You stand at an intersection.  Exits lead off to the east and south. \nA door lies to the north\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9031,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "you see a massive door\n"
+        },
+        "east": {
+          "toRoom": 9032,
+          "description": "To the east, you spy a dark passage\n"
+        },
+        "south": {
+          "toRoom": 9025,
+          "description": "To the south you stare into oblivion.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9027,
+      "name": "A change of direction",
+      "description": "The plane curves from the south to west\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9014,
+          "description": "looking south, you see the plane extending beyond view.\n"
+        },
+        "west": {
+          "toRoom": 9030,
+          "description": "looking west, you can't fathom how far the plane extends.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9028,
+      "name": "A change of direction",
+      "description": "Here, the plane takes a turm from the south to heading east.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9029,
+          "description": "The plane heads east from here. You can't see the end of it.\n"
+        },
+        "south": {
+          "toRoom": 9015,
+          "description": "Looking south, you view the plane extending for miles.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9029,
+      "name": "An east-west route on the Plane of Nirvana",
+      "description": "Exits lead east and west.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9031,
+          "description": "looking east, you spy a door far off in the distance.\n"
+        },
+        "west": {
+          "toRoom": 9028,
+          "description": "looking west, in the distance you can spy a curve south.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9030,
+      "name": "An east-west route on The Plane of Nirvana",
+      "description": "Exits lead east and west\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9027,
+          "description": "looking east, you can see a bend in the distance.\n"
+        },
+        "west": {
+          "toRoom": 9031,
+          "description": "glancing west, you can spy a door far off in the distance.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9031,
+      "name": "A large door in the passage",
+      "description": "The passages goes east and west, with a large door to the south.\n",
+      "sector": "Field",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9030,
+          "description": "looking east, you see more of the passage.\n"
+        },
+        "south": {
+          "toRoom": 9026,
+          "flags": [
+            "IsDoor",
+            "Closed",
+            "Locked"
+          ],
+          "description": "A large door blocks the way to the south.\n"
+        },
+        "west": {
+          "toRoom": 9029,
+          "description": "looking west, you see more of the passage.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9032,
+      "name": "A Junction in the passage",
+      "description": "Here, passages lead off in all cardinal directions.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9033,
+          "description": "Looking north, you spy a small room in the distance\n"
+        },
+        "east": {
+          "toRoom": 9035,
+          "description": "Eastward, the passage continues in the darkness.\n"
+        },
+        "south": {
+          "toRoom": 9034,
+          "description": "South of here is a small room.\n"
+        },
+        "west": {
+          "toRoom": 9026,
+          "description": "West, you spy an intersection.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9033,
+      "name": "The office of the Octon",
+      "description": "you are in a small room, the only exit is south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9032,
+          "description": "looking south, you see an intersection.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9034,
+      "name": "A small room",
+      "description": "The only exit is north\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9032,
+          "description": "Looking north, you spy an intersection.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9035,
+      "name": "A passageway",
+      "description": "Exits lead in all cardinal directions.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9036,
+          "description": "Looking north you spy a average sized room.\n"
+        },
+        "east": {
+          "toRoom": 9038,
+          "description": "Looking east, you can make out a large room\n"
+        },
+        "south": {
+          "toRoom": 9037,
+          "description": "Looking south, you can see an average room.\n"
+        },
+        "west": {
+          "toRoom": 9032,
+          "description": "Looking west, you can see an intersection ahead.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9036,
+      "name": "Lair of a Hexton",
+      "description": "You are in a room that is in complete disrepair.  Items are thrown throughout \nthe room making them worthless piles of junk.\nThe only exit is back south\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9035,
+          "description": "Looking south, you can make out a passage.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9037,
+      "name": "Office of a Hexton",
+      "description": "A makeshift desk forms the center of this room.  The only exit is north.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9035,
+          "description": "Looking north, you can make out a hallway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9038,
+      "name": "Office of a Secundus",
+      "description": "You are standing in a office of one of the Viceroys of the Plane of Nirvana.  \nThe occupant doesn't look real thrilled with your presence.  The only exits is \nwest.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9035,
+          "description": "Looking west you can see a long hallway\n"
+        }
+      }
+    },
+    {
+      "vnum": 9039,
+      "name": "A Junction in the hallway",
+      "description": "Your are standing in a junction, exits lead in all the cardinal directions.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9040,
+          "description": "To the north, you spy a small room\n"
+        },
+        "east": {
+          "toRoom": 9025,
+          "description": "To the east, you see a quadruple junction\n"
+        },
+        "south": {
+          "toRoom": 9041,
+          "description": "To the south you see a small room\n"
+        },
+        "west": {
+          "toRoom": 9042,
+          "description": "To the west, the passageway continues\n"
+        }
+      }
+    },
+    {
+      "vnum": 9040,
+      "name": "Office of an Octon",
+      "description": "You see a messy room with papers scattered everywhere.\nThe only exit leads back to the south\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9039,
+          "description": "To the south you can make out a junction.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9041,
+      "name": "Office of a Septon",
+      "description": "A neat and tidy room, it appear to be inhabited my a neatenss freak.  The only \nexit lies to the north.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9039,
+          "description": "To the north you see a junction.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9042,
+      "name": "An east-west passage",
+      "description": "In east west passage is here with exits in all of the cardinal directions.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9043,
+          "description": "You can see a room to the north.\n"
+        },
+        "east": {
+          "toRoom": 9039,
+          "description": "To the east you can see a junction\n"
+        },
+        "south": {
+          "toRoom": 9044,
+          "description": "To the south you can make out a averaged sized room.\n"
+        },
+        "west": {
+          "toRoom": 9045,
+          "description": "To the west you can see what appears to be a cavernous room.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9043,
+      "name": "The Barracks",
+      "description": "A dusty room, with a almost untolerable odor, the barracks are being inspected \nby a Hexton and his personal enterage.\nThe only exit lies to the south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9042,
+          "description": "To the south you can see junction\n"
+        }
+      }
+    },
+    {
+      "vnum": 9044,
+      "name": "The Commander's Post",
+      "description": "You have stumbled on to the office of the Commander of the forces in the Plane \nOf Nirvana.  The room is well furnished and a sense of courage and bravery \novertakes you as you enter the room.  The only exit lies to the north.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9042,
+          "description": "To the north you can visualize a junction of passages.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9045,
+      "name": "The chamber of the second Secundus",
+      "description": "This huge room is furnished with the finest, and a personal legion guards the \nSecundus. the only exit is to the east.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9042,
+          "description": "To the east you can see a junction\n"
+        }
+      }
+    },
+    {
+      "vnum": 9046,
+      "name": "A Passageway",
+      "description": "You are in a well lit passage.  A sense of forboding danger envelopes you.  \nExits lead in all cardinal directions.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9047,
+          "description": "To the north you can see a small chamber\n"
+        },
+        "east": {
+          "toRoom": 9049,
+          "description": "To the east, the passage continues,.\n"
+        },
+        "south": {
+          "toRoom": 9048,
+          "description": "To the south, a chamber can be seen\n"
+        },
+        "west": {
+          "toRoom": 9022,
+          "description": "To the west, a large tunnel can be found.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9047,
+      "name": "Chamber of the Octon",
+      "description": "A small room, sparsely furnished, it leaves you with a sense of fear.  The \nonly exit is to the south\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9046,
+          "description": "To the south you can see a passage.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9048,
+      "name": "Chamber of the Nonaton",
+      "description": "You have entered the chamber of the principal law and order overseers.  The \nonly exit lies to the north\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9046,
+          "description": "To the north you can see a passageway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9049,
+      "name": "End of the passageway",
+      "description": "You have reached the end of a long east-west passage.  The passage contiues to \nthe west, and rooms lie to the north, south, and east.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9050,
+          "description": "To the north you can see a room\n"
+        },
+        "east": {
+          "toRoom": 9052,
+          "description": "To the east you can make out a large chamber\n"
+        },
+        "south": {
+          "toRoom": 9051,
+          "description": "To the south, a room can be seen.\n"
+        },
+        "west": {
+          "toRoom": 9046,
+          "description": "to the west, the passageway continues\n"
+        }
+      }
+    },
+    {
+      "vnum": 9050,
+      "name": "Chamber of a Hexton",
+      "description": "You have entered the chamber of a Hexton.  Trophies adorn the walls, some of \nwhich are human. the only exit is to the south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9049,
+          "description": "To the south you can see a passageway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9051,
+      "name": "Chamber of a Hexton",
+      "description": "You have entered a room where you are not very popular. The only exit lies \nnorthbound.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9049,
+          "description": "To the north you can see a passage.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9052,
+      "name": "Chamber of the Secudus",
+      "description": "A large canvernous room, this chamber serves as the sleeping quarters for the \nthird Secudus, Viceroy to Primus. The only exit lies to the west.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "west": {
+          "toRoom": 9049,
+          "description": "To the west you can see a passageway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9053,
+      "name": "A passageway",
+      "description": "You are in a passagway where you may go in any cardinal direction.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9054,
+          "description": "To the north lies a small chamber\n"
+        },
+        "east": {
+          "toRoom": 9022,
+          "description": "To the east, a main passage forms a junction.\n"
+        },
+        "south": {
+          "toRoom": 9055,
+          "description": "To the south, you can spot a small room\n"
+        },
+        "west": {
+          "toRoom": 9059,
+          "description": "To the west, the passageway continues\n"
+        }
+      }
+    },
+    {
+      "vnum": 9054,
+      "name": "A small chamber",
+      "description": "You are in a small cramped chamber.  The only exit lies to the south.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9053,
+          "description": "To the south you can see a passage\n"
+        }
+      }
+    },
+    {
+      "vnum": 9055,
+      "name": "A cramped room",
+      "description": "You are in a small, crowded room.  The only exit appears to lie to the north.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9053,
+          "description": "To the north, you can see a passageway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9056,
+      "name": "A large room",
+      "description": "You have entered a room where you are not wanted.  The only exit lies to the \nsouth.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "south": {
+          "toRoom": 9059,
+          "description": "To the south you can visualize a east-west passage.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9057,
+      "name": "A room",
+      "description": "You have entered a room where there was obviously a hurried move going on.  \nThe only exit lies to the north.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9059,
+          "description": "To the north you can make out a passageway.\n"
+        }
+      }
+    },
+    {
+      "vnum": 9058,
+      "name": "Chamber of The First Secundus",
+      "description": "You have disturbed the rest of the First Viceroy to Primus the Prime, The \nSecundus.  He does not look like a happy camper. The only exit lies to the \neast.\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "east": {
+          "toRoom": 9059,
+          "description": "To the east you can spot a hallway\n"
+        }
+      }
+    },
+    {
+      "vnum": 9059,
+      "name": "Junction in the hallway",
+      "description": "Exits lead off in all of the cardinal directions\n",
+      "roomFlags": [
+        "Indoors"
+      ],
+      "sector": "Inside",
+      "healRate": 100,
+      "manaRate": 100,
+      "clan": 0,
+      "exits": {
+        "north": {
+          "toRoom": 9056,
+          "description": "To the north lies a large chamber\n"
+        },
+        "east": {
+          "toRoom": 9053,
+          "description": "To the east , the passage continues.\n"
+        },
+        "south": {
+          "toRoom": 9057,
+          "description": "To the south, a small chamber can be found.\n"
+        },
+        "west": {
+          "toRoom": 9058,
+          "description": "To the west, lies a monstrous room.\n"
+        }
+      }
+    }
+  ],
+  "resets": [
+    {
+      "type": "Door",
+      "roomVnum": 9007,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 9008,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 9012,
+      "direction": "West",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 9013,
+      "direction": "East",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 9026,
+      "direction": "North",
+      "state": "Locked"
+    },
+    {
+      "type": "Door",
+      "roomVnum": 9031,
+      "direction": "South",
+      "state": "Locked"
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9001,
+      "roomVnum": 9001,
+      "maxInWorld": 9,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9000,
+      "roomVnum": 9002,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9000,
+      "roomVnum": 9003,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9002,
+      "roomVnum": 9011,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9001,
+      "roomVnum": 9012,
+      "maxInWorld": 9,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9000,
+      "roomVnum": 9013,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9008,
+      "roomVnum": 9016,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9008,
+      "roomVnum": 9017,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9009,
+      "roomVnum": 9018,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9009,
+      "roomVnum": 9019,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9011,
+      "roomVnum": 9020,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Equip",
+      "objectVnum": 9000,
+      "wearLocation": "Wield",
+      "maxInWorld": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9009,
+      "roomVnum": 9021,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9008,
+      "roomVnum": 9022,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9009,
+      "roomVnum": 9024,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9008,
+      "roomVnum": 9025,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9000,
+      "roomVnum": 9027,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9001,
+      "roomVnum": 9028,
+      "maxInWorld": 9,
+      "maxInRoom": 3
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9000,
+      "roomVnum": 9029,
+      "maxInWorld": 10,
+      "maxInRoom": 2
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9002,
+      "roomVnum": 9031,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9005,
+      "roomVnum": 9033,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9006,
+      "roomVnum": 9034,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9007,
+      "roomVnum": 9036,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9007,
+      "roomVnum": 9037,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9002,
+      "roomVnum": 9038,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9010,
+      "roomVnum": 9038,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9005,
+      "roomVnum": 9040,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9006,
+      "roomVnum": 9041,
+      "maxInWorld": 2,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9007,
+      "roomVnum": 9043,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9007,
+      "roomVnum": 9044,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9002,
+      "roomVnum": 9045,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9010,
+      "roomVnum": 9045,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9005,
+      "roomVnum": 9047,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9004,
+      "roomVnum": 9048,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Give",
+      "objectVnum": 9001,
+      "maxInWorld": -1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9007,
+      "roomVnum": 9050,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9007,
+      "roomVnum": 9051,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9002,
+      "roomVnum": 9052,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9010,
+      "roomVnum": 9052,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9005,
+      "roomVnum": 9054,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9003,
+      "roomVnum": 9055,
+      "maxInWorld": 1,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9007,
+      "roomVnum": 9056,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9007,
+      "roomVnum": 9057,
+      "maxInWorld": 8,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9002,
+      "roomVnum": 9058,
+      "maxInWorld": 6,
+      "maxInRoom": 1
+    },
+    {
+      "type": "Mobile",
+      "mobileVnum": 9010,
+      "roomVnum": 9058,
+      "maxInWorld": 4,
+      "maxInRoom": 1
+    }
+  ]
+}
