@@ -25,6 +25,7 @@ public sealed class World
         var mobiles = new Dictionary<int, MobilePrototype>();
         var objects = new Dictionary<int, ObjectPrototype>();
         var rooms = new Dictionary<int, RoomPrototype>();
+        var shops = new Dictionary<int, ShopData>();
         var helps = new List<HelpEntry>();
 
         foreach (var area in areaList)
@@ -55,6 +56,14 @@ public sealed class World
                 }
             }
 
+            foreach (var shop in area.Shops)
+            {
+                if (!shops.TryAdd(shop.KeeperVnum, shop))
+                {
+                    errors.Add($"Duplicate shop keeper vnum {shop.KeeperVnum} in area '{area.Name}'.");
+                }
+            }
+
             helps.AddRange(area.Helps);
         }
 
@@ -67,6 +76,7 @@ public sealed class World
         Mobiles = mobiles;
         ObjectPrototypes = objects;
         RoomPrototypes = rooms;
+        Shops = shops;
         Helps = helps;
         Rooms = rooms.ToDictionary(pair => pair.Key, pair => new Room(pair.Value));
 
@@ -92,6 +102,9 @@ public sealed class World
     public IReadOnlyDictionary<int, ObjectPrototype> ObjectPrototypes { get; }
 
     public IReadOnlyDictionary<int, RoomPrototype> RoomPrototypes { get; }
+
+    /// <summary>Shop definitions indexed by keeper mobile vnum.</summary>
+    public IReadOnlyDictionary<int, ShopData> Shops { get; }
 
     /// <summary>Runtime room instances keyed by vnum.</summary>
     public IReadOnlyDictionary<int, Room> Rooms { get; }
@@ -160,6 +173,17 @@ public sealed class World
 
         Logger.Warn("Unknown room vnum {Vnum}", vnum);
         throw new KeyNotFoundException($"Unknown room vnum {vnum}.");
+    }
+
+    public ShopData GetShop(int keeperVnum)
+    {
+        if (Shops.TryGetValue(keeperVnum, out var shop))
+        {
+            return shop;
+        }
+
+        Logger.Warn("Unknown shop keeper vnum {Vnum}", keeperVnum);
+        throw new KeyNotFoundException($"Unknown shop keeper vnum {keeperVnum}.");
     }
 
     public bool TryGetRoom(int vnum, out Room room) => Rooms.TryGetValue(vnum, out room!);
@@ -471,6 +495,16 @@ public sealed class World
             {
                 errors.Add($"room {vnum} has no matching runtime room.");
             }
+        }
+
+        foreach (var (keeperVnum, shop) in Shops)
+        {
+            if (!Mobiles.ContainsKey(keeperVnum))
+            {
+                errors.Add($"shop keeper {keeperVnum} is not a known mobile.");
+            }
+
+            errors.AddRange(shop.Validate($"shop keeper {keeperVnum}"));
         }
 
         foreach (var room in Rooms.Values)

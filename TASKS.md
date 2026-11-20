@@ -47,20 +47,10 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T013 - JSON world loader
-- Depends on: T010, T012
-- Load `Data/areas/index.json` then each area JSON in order through
-  `AreaJson.Deserialize(json, areaSchema)`; reject duplicate vnums or invalid
-  references with precise messages. Build a `World`, then apply ROM fix-ups
-  (object levels, material defaults, shop keeper indexing) and run
-  `World.Validate()`.
-- **Done when:** the server loads the full JSON corpus with zero errors, and the
-  server assembly has no reference to legacy `.are` parsing.
-
-### [ ] T014 — Data validation and hardening
+### [ ] T014 - Data validation and hardening
 - Depends on: T013
-- Cross-reference every exit, reset, shop keeper, special and vnum range; fail
-  on unknown enum/flag names; add corrupt/truncated JSON and schema-violation
+- Extend `WorldReferenceValidator` with vnum-range/overlap checks; fail on
+  unknown enum/flag names; add corrupt/truncated JSON and schema-violation
   fixtures. Provide a `--check` / startup `--validate-data` mode.
 - **Done when:** the full corpus validates, corrupt-input tests never throw
   unhandled exceptions, and CI runs data validation.
@@ -548,3 +538,8 @@ Last reviewed: 2026-11-20
   provenance, totals, excluded `thanos.are`/`proto.are`, ten deterministic
   exit-key repairs and 166 source-data warnings; added committed-corpus schema,
   round-trip, totals and dangling-key tests.
+- **T013 — JSON world loader** (2026-11-20)
+  Validated index reader, schema-checked area loading through `AreaJson`,
+  cross-reference validation, material/shop fix-ups, `World.Shops` indexing,
+  server startup load and full-corpus load tests; server has no importer
+  dependency.

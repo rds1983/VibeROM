@@ -116,11 +116,15 @@ ownership:
 
 - Constructor takes `AreaData` objects, validates them, rejects duplicate vnums
   across areas, and builds prototype indexes:
-  `Mobiles`, `ObjectPrototypes`, `RoomPrototypes`, `Rooms` (runtime), `Helps`.
+  `Mobiles`, `ObjectPrototypes`, `RoomPrototypes`, `Rooms` (runtime), `Helps`,
+  and `Shops` (by keeper vnum).
 - `TopArea`, `TopMobIndex`, `TopObjectIndex`, `TopRoom`, `TopHelp` are collection
   counts; `TopVnumMob/Obj/Room` are the highest vnums.
-- `GetMobile`, `GetObjectPrototype`, `GetRoomPrototype`, `GetRoom` throw
-  `KeyNotFoundException` and log a warning for unknown vnums.
+- `GetMobile`, `GetObjectPrototype`, `GetRoomPrototype`, `GetRoom` and
+  `GetShop` throw `KeyNotFoundException` and log a warning for unknown vnums.
+- `WorldReferenceValidator` checks exits, keys, container/portal/map
+  destinations, reset targets, shop keepers and specials after a load.
+  `WorldLoader` uses it before returning a validated world.
   `TryGetRoom` is the non-throwing variant.
 - `FindHelp(keyword)` is a case-insensitive keyword index built from every token
   in help keywords.
@@ -147,6 +151,7 @@ ownership:
 - T007 adds vnum indexes and attach/detach lifecycle helpers.
 - T010 maps the model to/from JSON, including typed `ObjectTypeData` and reset
   variants.
-- T013/T014 resolve cross-references and enforce consistency across areas.
+- T013 adds the validated JSON world loader and reference checks; T014 hardens
+  startup validation and corrupt-input handling.
 - T015/T052 apply resets and race defaults.
 - T027 replaces `AllVisibleVisibilityService` with real visibility rules.

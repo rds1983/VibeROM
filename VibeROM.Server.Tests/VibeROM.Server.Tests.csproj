@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <IsPackable>false</IsPackable>
@@ -13,6 +13,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\VibeROM.Server\VibeROM.Server.csproj" />
+    <Content Include="..\Data\areas\*.json" Link="areas\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="..\Data\schema\*.json" Link="schema\%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>

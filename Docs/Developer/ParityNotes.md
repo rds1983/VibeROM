@@ -56,3 +56,14 @@ entries short and link to the code or task that owns them.
   are unnamed act/room bits, two `-1` sectors mapped to `Inside`, and two
   negative food/money values clamped to `0`. There are no unknown canonical
   names and no errors.
+
+## T013 - JSON world loader
+
+- **Object levels are already final.** ROM's `convert_objects()` rewrites levels
+  only for old-format objects; the imported 2.4b6 corpus contains none. The
+  loader does not guess levels from resets. If old-format areas are imported in
+  future, level conversion belongs in the importer (T009) where the format is
+  still known.
+- **Empty object materials become `none` at runtime.** The JSON may keep an
+  empty string (donation pits, fountains); the loader logs a warning and uses
+  `none` in the prototype instance.

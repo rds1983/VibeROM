@@ -3,6 +3,7 @@ using VibeROM.Common;
 using VibeROM.Common.Configuration;
 using VibeROM.Common.Logging;
 using VibeROM.Common.Rom;
+using VibeROM.Common.Serialization;
 
 namespace VibeROM.Server;
 
@@ -75,6 +76,24 @@ public static class Program
                 RomTables.RaceDefinitions.Count,
                 RomTables.Skills.Count,
                 RomTables.Groups.Count);
+
+            var loadedWorld = WorldLoader.Load(paths.AreasDirectory, paths.SchemaDirectory);
+            foreach (var warning in loadedWorld.Warnings)
+            {
+                logger.Warn("{WorldWarning}", warning);
+            }
+
+            logger.Info(
+                "World loaded: {Areas} areas, {Mobiles} mobiles, {Objects} objects, {Rooms} rooms, " +
+                "{Resets} resets, {Shops} shops, {Specials} specials, {Helps} helps.",
+                loadedWorld.World.TopArea,
+                loadedWorld.World.TopMobIndex,
+                loadedWorld.World.TopObjectIndex,
+                loadedWorld.World.TopRoom,
+                loadedWorld.World.Areas.Sum(area => area.Resets.Count),
+                loadedWorld.World.Shops.Count,
+                loadedWorld.World.Areas.Sum(area => area.Specials.Count),
+                loadedWorld.World.TopHelp);
 
             logger.Info("Scaffold only: server bootstrap is implemented in T020 and T024.");
             return 0;

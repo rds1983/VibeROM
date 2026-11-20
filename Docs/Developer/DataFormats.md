@@ -514,6 +514,28 @@ Two values differ between JSON and the runtime model:
 - Mobile `armor` is in area-file units and the model stores ROM's internal
   scale (ten times larger).
 
+## World loading
+
+`VibeROM.Common.Serialization.WorldLoader.Load(areasDirectory, schemaDirectory)`
+is the runtime entry point:
+
+1. Reads and validates `areas/index.json` with `index.schema.json`.
+2. Loads each file in index order through `AreaJson.Deserialize(json,
+   area.schema.json)`.
+3. Applies prototype fix-ups: empty object materials become `none`, and shops
+   are indexed by keeper mobile vnum (`World.Shops`).
+4. Builds a `World` (rejecting duplicate vnums across areas) and runs
+   `WorldReferenceValidator` plus `World.Validate()`.
+
+`WorldReferenceValidator` checks exits, exit keys, container keys, portal/map
+destinations, every reset target, shop keepers and special-procedure mobiles,
+and reports the area, room/reset and missing vnum. The server calls the loader
+during startup and logs the entity totals; no legacy `.are` parsing is involved.
+
+Object levels are already final prototype data in JSON. ROM's
+`convert_objects()` only rewrites old-format objects; the imported 2.4b6 corpus
+contains none.
+
 ## Versioning and migration
 
 - A non-breaking addition keeps `formatVersion = 1`.
