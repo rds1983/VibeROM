@@ -107,6 +107,39 @@ The model uses strong references, not vnums, for live objects:
 - `VisibilityExtensions.ToActVisibility` converts the service into the
   `ActVisibility` used by `ActFormatter`.
 
+## World indexes and lifecycle
+
+`World` is the runtime aggregate and the only supported place to change
+ownership:
+
+- Constructor takes `AreaData` objects, validates them, rejects duplicate vnums
+  across areas, and builds prototype indexes:
+  `Mobiles`, `ObjectPrototypes`, `RoomPrototypes`, `Rooms` (runtime), `Helps`.
+- `TopArea`, `TopMobIndex`, `TopObjectIndex`, `TopRoom`, `TopHelp` are collection
+  counts; `TopVnumMob/Obj/Room` are the highest vnums.
+- `GetMobile`, `GetObjectPrototype`, `GetRoomPrototype`, `GetRoom` throw
+  `KeyNotFoundException` and log a warning for unknown vnums.
+  `TryGetRoom` is the non-throwing variant.
+- `FindHelp(keyword)` is a case-insensitive keyword index built from every token
+  in help keywords.
+- `CreateMobile`, `CreatePlayer` and `CreateObject` register runtime entities.
+  `CreateObject` accepts at most one initial destination: room, container or
+  carrier.
+- `MoveCharacterToRoom`, `MoveObjectToRoom`, `MoveObjectToCharacter` and
+  `MoveObjectToContainer` detach from the previous owner before attaching.
+  Container cycles are rejected.
+- `EquipObject`/`UnequipObject` maintain `Character.Equipment` and
+  `GameObject.WearLocation`; equipment items always remain in inventory.
+- `DestroyObject` detaches, recursively destroys contents, clears affects/extra
+  descriptions and removes the object from the world.
+- `DestroyCharacter` removes the character from its room, breaks follower/pet
+  and fighting/reply links, destroys inventory/equipment, clears affects and
+  removes the character from the world.
+- `Validate()` re-checks prototypes, runtime rooms, characters, objects,
+  ownership back-references and duplicate registrations. The fuzz test in
+  `WorldTests` performs thousands of random moves/equips/destroys and asserts a
+  clean world.
+
 ## Planned follow-ups
 
 - T007 adds vnum indexes and attach/detach lifecycle helpers.

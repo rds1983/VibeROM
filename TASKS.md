@@ -47,20 +47,6 @@ Last reviewed: 2026-11-20
 
 ## Milestone 0 — Foundation and data migration
 
-### [ ] T007 — World indexes and entity lifecycle
-- Depends on: T006
-- Vnum lookups for mobiles/objects/rooms/helps, `top_*` counters, area list,
-  object/character create-destroy paths, equipment/container unlinking, affect
-  cleanup.
-- Create live `Room`/`Character`/`GameObject` instances from prototypes and
-  enforce the ownership/back-reference invariants in
-  `Docs/Developer/DomainModel.md`.
-- Build vnum -> prototype indexes from `AreaData`, plus attach/detach helpers
-  for room, inventory, container and equipment moves.
-- **Done when:** fuzz-style tests create and destroy thousands of entities with
-  no leaked references or inconsistent counters; attach/detach operations
-  maintain every back-reference; lookup errors are logged.
-
 ### [ ] T008 — Legacy area tokenizer (importer only)
 - Depends on: T004
 - In `VibeROM.AreaImporter`, implement `fread_letter/word/number/string/to_eol`
@@ -70,7 +56,7 @@ Last reviewed: 2026-11-20
   and valid fixtures round-trip; the server project contains no such parser.
 
 ### [ ] T009 — Legacy section parsers (importer only)
-- Depends on: T007, T008
+- Depends on: T006, T008
 - Parse `#AREA`, `#AREADATA`, `#HELPS`, `#MOBILES`, `#MOBOLD`, `#OBJECTS`,
   `#OBJOLD`, `#ROOMS`, `#RESETS` (`M/O/P/G/E/D/R`), `#SHOPS`, `#SPECIALS`,
   `#SOCIALS`, including OLC `VNUMs`/`End` blocks.
@@ -127,9 +113,9 @@ Last reviewed: 2026-11-20
 - Depends on: T010, T012
 - Load `Data/areas/index.json` then each area JSON in order; validate against
   the schema and reject duplicate vnums or invalid references with precise
-  messages. Deserialize into `AreaData`/prototype records, then create runtime
-  `Room` instances and apply ROM fix-ups (object levels, material defaults,
-  shop keeper indexing, weight/armor unit conversions).
+  messages. Deserialize into `AreaData`/prototype records, build a `World`,
+  then apply ROM fix-ups (object levels, material defaults, shop keeper
+  indexing, weight/armor unit conversions) and run `World.Validate()`.
 - **Done when:** the server loads the full JSON corpus with zero errors, and the
   server assembly has no reference to legacy `.are` parsing.
 
@@ -146,15 +132,16 @@ Last reviewed: 2026-11-20
 - Port `reset_area`/`reset_room`: mob/object/put/give/equip/door resets,
   percent and random resets, "last mob" references, and reset state cleanup on
   area repop.
-- Consume the typed `Reset` variants from `AreaData.Resets`.
+- Consume the typed `Reset` variants from `AreaData.Resets` and the `World`
+  create/attach helpers for mob/object/equip/put/door resets.
 - **Done when:** deterministic seeded tests reproduce reset graphs for several
   real areas; repop twice yields an identical world snapshot.
 
 ### [ ] T016 — World bootstrap and full-load test
 - Depends on: T013, T015
-- Build the world from JSON, report totals per entity type and per area, and
-  assert the complete corpus in an integration test. Record inventory in
-  `Docs/Developer/DataInventory.md`.
+- Build the world from JSON, report totals per entity type and per area using
+  `World` counters, and assert the complete corpus in an integration test.
+  Record inventory in `Docs/Developer/DataInventory.md`.
 - **Done when:** every area loads and resets in one test run; totals are
   asserted; a startup smoke test logs a clean world summary.
 
@@ -264,9 +251,10 @@ Last reviewed: 2026-11-20
   handles levels, keywords and aliases like the original.
 
 ### [ ] T032 — Object manipulation and encumbrance
-- Depends on: T027
+- Depends on: T007, T027
 - get/drop/give/put/wear/remove/wield/hold/take/sacrifice/junk/donate, `all`
   semantics, weight/count limits, item affects on equip, coins and splitting.
+- Use `World` attach/detach/equip helpers; do not mutate owners directly.
 - **Done when:** inventory invariant tests (no duplicate ownership, correct
   weight/carry limits, equipment slots) pass across thousands of random actions.
 
@@ -397,7 +385,8 @@ Last reviewed: 2026-11-20
 - Mobile update: wandering, scavenging, aggressive/pursuit, follower recall,
   special-room behaviour, charm/fear, and idle/mob act flags.
 - Apply `RaceDefinitions` defaults (act/affect/offensive/immunity/resistance/
-  vulnerability/form/part masks) when mobiles are created.
+  vulnerability/form/part masks) when mobiles are created, using `World`
+  lifecycle helpers and indexes.
 - **Done when:** scenario tests show mobs wander within their area, pursue
   correctly, return home and never leak from the world.
 
@@ -591,3 +580,7 @@ Last reviewed: 2026-11-20
   Immutable area/mobile/object/room/exit/reset/shop/help/social prototypes,
   typed item data and resets, mutable characters/objects/rooms/descriptors,
   ownership invariants, `IActActor`/`IActObject` adapters and visibility hooks.
+- **T007 — World indexes and entity lifecycle** (2026-11-20)
+  `World` prototype/runtime indexes, top counters, help lookup, create/move/
+  equip/destroy lifecycle helpers, ownership back-reference validation and a
+  5,000-operation fuzz test.
